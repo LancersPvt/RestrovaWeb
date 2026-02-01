@@ -66,15 +66,16 @@ export default function AshAndBeansLinktree() {
         <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
           <div className="flex items-center gap-4">
             {/* Logo placeholder */}
-            <div className="relative h-14 w-14 overflow-hidden rounded-2xl bg-white/10">
+<div className="relative h-14 w-14 overflow-hidden rounded-2xl bg-white/10">
   <Image
     src={logo}
     alt="Ash & Beans logo"
     fill
-    className="object-contain p-2"
+    className="object-cover"
     priority
   />
 </div>
+
 
             <div>
               <h1 className="text-xl font-semibold tracking-tight">
