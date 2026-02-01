@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* Optional: keep dark UI hints for browser widgets */
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background: #09090b; /* zinc-950 */
+  color: #fafafa;      /* near-white */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
