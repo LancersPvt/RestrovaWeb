@@ -6,6 +6,8 @@ import {
   BadgePercent,
   ArrowRight,
 } from "lucide-react";
+import Image from "next/image";
+import logo from "./logo.png"; // <-- update if your filename differs
 
 const LINKS = {
   // Replace these with real URLs:
@@ -64,9 +66,16 @@ export default function AshAndBeansLinktree() {
         <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
           <div className="flex items-center gap-4">
             {/* Logo placeholder */}
-            <div className="grid h-14 w-14 place-items-center rounded-2xl bg-white/10 text-white/80">
-              A&B
-            </div>
+            <div className="relative h-14 w-14 overflow-hidden rounded-2xl bg-white/10">
+  <Image
+    src={logo}
+    alt="Ash & Beans logo"
+    fill
+    className="object-contain p-2"
+    priority
+  />
+</div>
+
             <div>
               <h1 className="text-xl font-semibold tracking-tight">
                 Ash & Beans

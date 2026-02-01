@@ -50,7 +50,7 @@ export default function Home() {
         </div>
 
         <p className="mt-10 text-xs text-white/45">
-          Tip: Your link page is live at <span className="text-white/70">/linktree/ashandbeans</span>
+          Build by <span className="text-white/70">lancers.dev</span>
         </p>
       </section>
     </main>
