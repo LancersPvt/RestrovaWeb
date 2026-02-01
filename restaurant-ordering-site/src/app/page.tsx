@@ -37,10 +37,10 @@ export default function Home() {
             <p className="text-sm font-medium text-white/80">Contact</p>
             <a
               className="mt-2 inline-flex items-center gap-2 text-sm text-white/70 hover:text-white"
-              href="mailto:hello@domain.com"
+              href="mailto:info@lancers.dev"
             >
               <Mail className="h-4 w-4" />
-              hello@domain.com
+              info@lancers.dev
               <ArrowRight className="h-4 w-4 opacity-70" />
             </a>
             <p className="mt-2 text-xs text-white/45">

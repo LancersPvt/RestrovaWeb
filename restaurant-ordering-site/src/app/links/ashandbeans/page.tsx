@@ -12,7 +12,7 @@ const LINKS = {
   playStore: "https://play.google.com/store/apps/details?id=YOUR_APP_ID",
   appStore: "https://apps.apple.com/app/idYOUR_APP_ID",
   facebook: "https://facebook.com/YOUR_PAGE",
-  instagram: "https://instagram.com/YOUR_HANDLE",
+  instagram: "https://instagram.com/ash_beans",
 };
 
 function LinkButton({
