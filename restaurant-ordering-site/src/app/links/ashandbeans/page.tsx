@@ -7,7 +7,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import Image from "next/image";
-import logo from "./logo.png"; // <-- update if your filename differs
+import logo from "./logo.jpeg"; // <-- update if your filename differs
 
 const LINKS = {
   // Replace these with real URLs:
