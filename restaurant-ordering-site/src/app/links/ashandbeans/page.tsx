@@ -5,7 +5,10 @@ import {
   Smartphone,
   BadgePercent,
   ArrowRight,
+  MapPin,
+  MessageCircle,
 } from "lucide-react";
+
 import Image from "next/image";
 import logo from "./logo.jpeg"; // <-- update if your filename differs
 
@@ -15,6 +18,11 @@ const LINKS = {
   appStore: "https://apps.apple.com/app/idYOUR_APP_ID",
   facebook: "https://facebook.com/YOUR_PAGE",
   instagram: "https://instagram.com/ash_beans",
+
+    // NEW:
+  googleMaps: "https://share.google/LmWOjk85C8nZY3Oz9", // or your full Google Maps share link
+  whatsapp: "https://wa.me/923318226835", // use country code, no +, no spaces
+
 };
 
 function LinkButton({
@@ -129,6 +137,25 @@ export default function AshAndBeansLinktree() {
             sublabel="Photos, reels, and stories"
           />
         </div>
+
+        <p className="mt-6 px-1 text-xs font-medium uppercase tracking-wider text-white/45">
+  Contact
+</p>
+
+<LinkButton
+  href={LINKS.googleMaps}
+  icon={<MapPin className="h-5 w-5 text-white/80" />}
+  label="Find us on Google Maps"
+  sublabel="Tap to open directions"
+/>
+
+<LinkButton
+  href={LINKS.whatsapp}
+  icon={<MessageCircle className="h-5 w-5 text-white/80" />}
+  label="WhatsApp"
+  sublabel="Chat with us for orders & queries"
+/>
+
 
         <footer className="mt-auto pt-10 text-center text-xs text-white/45">
           © {new Date().getFullYear()} Ash & Beans
