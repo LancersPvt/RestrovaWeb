@@ -19,10 +19,9 @@ const LINKS = {
   facebook: "https://facebook.com/YOUR_PAGE",
   instagram: "https://instagram.com/ash_beans",
 
-    // NEW:
+  // NEW:
   googleMaps: "https://share.google/LmWOjk85C8nZY3Oz9", // or your full Google Maps share link
   whatsapp: "https://wa.me/923318226835", // use country code, no +, no spaces
-
 };
 
 function LinkButton({
@@ -74,16 +73,15 @@ export default function AshAndBeansLinktree() {
         <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
           <div className="flex items-center gap-4">
             {/* Logo placeholder */}
-<div className="relative h-14 w-14 overflow-hidden rounded-2xl bg-white/10">
-  <Image
-    src={logo}
-    alt="Ash & Beans logo"
-    fill
-    className="object-cover"
-    priority
-  />
-</div>
-
+            <div className="relative h-14 w-14 overflow-hidden rounded-2xl bg-white/10">
+              <Image
+                src={logo}
+                alt="Ash & Beans logo"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
 
             <div>
               <h1 className="text-xl font-semibold tracking-tight">
@@ -136,27 +134,26 @@ export default function AshAndBeansLinktree() {
             label="Instagram"
             sublabel="Photos, reels, and stories"
           />
+
+                  <p className="mt-6 px-1 text-xs font-medium uppercase tracking-wider text-white/45">
+          Contact
+        </p>
+
+        <LinkButton
+          href={LINKS.googleMaps}
+          icon={<MapPin className="h-5 w-5 text-white/80" />}
+          label="Find us on Google Maps"
+          sublabel="Tap to open directions"
+        />
+
+        <LinkButton
+          href={LINKS.whatsapp}
+          icon={<MessageCircle className="h-5 w-5 text-white/80" />}
+          label="WhatsApp"
+          sublabel="Chat with us for orders & queries"
+        />
+
         </div>
-
-        <p className="mt-6 px-1 text-xs font-medium uppercase tracking-wider text-white/45">
-  Contact
-</p>
-
-<LinkButton
-  href={LINKS.googleMaps}
-  icon={<MapPin className="h-5 w-5 text-white/80" />}
-  label="Find us on Google Maps"
-  sublabel="Tap to open directions"
-/>
-
-<LinkButton
-  href={LINKS.whatsapp}
-  icon={<MessageCircle className="h-5 w-5 text-white/80" />}
-  label="WhatsApp"
-  sublabel="Chat with us for orders & queries"
-/>
-
-
         <footer className="mt-auto pt-10 text-center text-xs text-white/45">
           © {new Date().getFullYear()} Ash & Beans
         </footer>
