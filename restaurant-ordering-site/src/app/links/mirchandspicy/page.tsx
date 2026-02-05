@@ -16,12 +16,12 @@ const LINKS = {
   // Replace these with real URLs:
   playStore: "https://play.google.com/store/apps/details?id=YOUR_APP_ID",
   appStore: "https://apps.apple.com/app/idYOUR_APP_ID",
-  facebook: "https://facebook.com/YOUR_PAGE",
-  instagram: "https://instagram.com/ash_beans",
+  facebook: "https://facebook.com/Mirchnspicy",
+  instagram: "https://instagram.com/mirchnspicy",
 
   // NEW:
-  googleMaps: "https://share.google/LmWOjk85C8nZY3Oz9", // or your full Google Maps share link
-  whatsapp: "https://wa.me/923318226835", // use country code, no +, no spaces
+  googleMaps: "https://share.google/lASRgpreehX6jfVyJ", // or your full Google Maps share link
+  whatsapp: "https://wa.me/9234657643397", // use country code, no +, no spaces
 };
 
 function LinkButton({
