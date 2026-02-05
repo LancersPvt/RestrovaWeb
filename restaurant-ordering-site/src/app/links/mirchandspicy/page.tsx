@@ -14,7 +14,7 @@ import logo from "./mirchandspicylogo.png"; // <-- update if your filename diffe
 
 const LINKS = {
   // Replace these with real URLs:
-  playStore: "https://play.google.com/store/apps/details?id=YOUR_APP_ID",
+  playStore: "https://play.google.com/store/apps/details?id=com.restrova.ashandbeans",
   appStore: "https://apps.apple.com/app/idYOUR_APP_ID",
   facebook: "https://facebook.com/Mirchnspicy",
   instagram: "https://instagram.com/mirchnspicy",
@@ -111,12 +111,12 @@ export default function MirchAndSpicyLinktree() {
             label="Google Play Store"
             sublabel="Exclusive deals and discounts"
           />
-          <LinkButton
+          {/* <LinkButton
             href={LINKS.appStore}
             icon={<Store className="h-5 w-5 text-white/80" />}
             label="Apple App Store"
             sublabel="Exclusive deals and discounts"
-          />
+          /> */}
 
           <p className="mt-6 px-1 text-xs font-medium uppercase tracking-wider text-white/45">
             Follow us on social media
