@@ -2,8 +2,6 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-import SiteFooter from "@/components/SiteFooter";
-import SiteHeader from "@/components/SiteHeader";
 import { siteConfig } from "@/lib/site";
 
 const inter = Inter({
@@ -62,11 +60,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} antialiased`}>
-        <div className="min-h-dvh bg-background text-foreground">
-          <SiteHeader />
-          {children}
-          <SiteFooter />
-        </div>
+        {children}
       </body>
     </html>
   );
