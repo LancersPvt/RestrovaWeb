@@ -1,6 +1,6 @@
 import {
   Facebook,
-  Tiktok,
+  TicketIcon,
   Store,
   Smartphone,
   BadgePercent,
@@ -130,7 +130,7 @@ export default function MirchAndSpicyLinktree() {
           />
           <LinkButton
             href={LINKS.tiktok}
-            icon={<Tiktok className="h-5 w-5 text-white/80" />}
+            icon={<TicketIcon className="h-5 w-5 text-white/80" />}
             label="TikTok"
             sublabel="Photos, reels, and stories"
           />
