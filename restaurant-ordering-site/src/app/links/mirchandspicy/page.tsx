@@ -1,6 +1,6 @@
 import {
   Facebook,
-  Instagram,
+  Tiktok,
   Store,
   Smartphone,
   BadgePercent,
@@ -14,13 +14,13 @@ import logo from "./mirchandspicylogo.png"; // <-- update if your filename diffe
 
 const LINKS = {
   // Replace these with real URLs:
-  playStore: "https://play.google.com/store/apps/details?id=YOUR_APP_ID",
+  playStore: "https://play.google.com/store/apps/details?id=com.restrova.mirchnspicy",
   appStore: "https://apps.apple.com/app/idYOUR_APP_ID",
   facebook: "https://facebook.com/Mirchnspicy",
-  instagram: "https://instagram.com/mirchnspicy",
+  tiktok: "https://www.tiktok.com/@mirchnspicy3?_r=1&_d=f1l7405da5ac7j&sec_uid=MS4wLjABAAAA0iPuPB_jNLJfX9hkNJAYmlJwD8To5LIHf61MoKv4bJRg2JsG8aRUoNt2OwWkttpc&share_author_id=7602769255004013569&sharer_language=en&source=h5_m&u_code=f1l75f8mgdg190&timestamp=1771945523&user_id=7602769255004013569&sec_user_id=MS4wLjABAAAA0iPuPB_jNLJfX9hkNJAYmlJwD8To5LIHf61MoKv4bJRg2JsG8aRUoNt2OwWkttpc&item_author_type=1&utm_source=whatsapp&utm_campaign=client_share&utm_medium=android&share_iid=7604379345659037447&share_link_id=21418b17-8811-473f-a29b-1b18454d559e&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b8727%2Cb7360&social_share_type=5&enable_checksum=1",
 
   // NEW:
-  googleMaps: "https://share.google/lASRgpreehX6jfVyJ", // or your full Google Maps share link
+  googleMaps: "https://maps.app.goo.gl/PXe4o8oAiAcAkxkw6", // or your full Google Maps share link
   whatsapp: "https://wa.me/9234657643397", // use country code, no +, no spaces
 };
 
@@ -111,12 +111,12 @@ export default function MirchAndSpicyLinktree() {
             label="Google Play Store"
             sublabel="Exclusive deals and discounts"
           />
-          <LinkButton
+          {/* <LinkButton
             href={LINKS.appStore}
             icon={<Store className="h-5 w-5 text-white/80" />}
             label="Apple App Store"
             sublabel="Exclusive deals and discounts"
-          />
+          /> */}
 
           <p className="mt-6 px-1 text-xs font-medium uppercase tracking-wider text-white/45">
             Follow us on social media
@@ -129,9 +129,9 @@ export default function MirchAndSpicyLinktree() {
             sublabel="News, offers, and updates"
           />
           <LinkButton
-            href={LINKS.instagram}
-            icon={<Instagram className="h-5 w-5 text-white/80" />}
-            label="Instagram"
+            href={LINKS.tiktok}
+            icon={<Tiktok className="h-5 w-5 text-white/80" />}
+            label="TikTok"
             sublabel="Photos, reels, and stories"
           />
 
