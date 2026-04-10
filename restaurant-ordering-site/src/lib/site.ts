@@ -9,7 +9,7 @@ function getSiteUrl() {
   const vercel = process.env.VERCEL_URL;
   if (vercel) return `https://${vercel}`;
 
-  return "http://localhost:3000";
+  return "https://www.restrova.com";
 }
 
 export const siteConfig = {

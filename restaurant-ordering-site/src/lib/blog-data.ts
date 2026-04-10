@@ -6,6 +6,7 @@ export interface BlogPost {
     content: string;
     category: string;
     author: string;
+    authorExpertise: string; // E-A-T: Author expertise/credentials
     date: string;
     readTime: string;
     image: string;
@@ -70,6 +71,7 @@ Third-party marketplaces served a purpose in getting restaurants online quickly.
 Ready to take control of your online ordering? Contact us to learn how Restrova can help you build a profitable direct ordering system.`,
         category: "Business Strategy",
         author: "Sarah Ahmed",
+        authorExpertise: "Restaurant Operations Manager with 8 years in F&B technology and online ordering strategy.",
         date: "2026-02-01",
         readTime: "5 min read",
         image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&q=80",
@@ -150,6 +152,7 @@ The restaurant app market is competitive, but the right features can set you apa
 At Restrova, we build all these features into our restaurant ordering platforms. Get in touch to see how we can create a custom app that drives real results for your business.`,
         category: "Technology",
         author: "Ali Hassan",
+        authorExpertise: "Product Manager at Restrova with 6 years in restaurant technology and mobile app design.",
         date: "2026-01-28",
         readTime: "7 min read",
         image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop&q=80",
@@ -254,6 +257,7 @@ Digital loyalty programs aren't just nice-to-have anymore—they're essential fo
 Ready to build a loyalty program that actually drives results? Contact Restrova to see how we integrate powerful rewards systems into our restaurant platforms.`,
         category: "Marketing",
         author: "Fatima Khan",
+        authorExpertise: "Restaurant Owner and Customer Success Consultant with over 10 years experience in hospitality marketing.",
         date: "2026-01-25",
         readTime: "6 min read",
         image: "https://images.unsplash.com/photo-1556742111-a301076d9d18?w=800&h=600&fit=crop&q=80",

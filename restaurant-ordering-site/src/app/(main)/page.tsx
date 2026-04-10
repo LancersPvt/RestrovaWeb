@@ -216,6 +216,31 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Trusted Partners Belt */}
+      <section className="bg-white py-12 border-b border-gray-100">
+        <div className="mx-auto max-w-7xl px-6">
+          <p className="text-center text-sm font-semibold text-gray-500 uppercase tracking-widest mb-8">
+            Built on Industry-Leading Infrastructure
+          </p>
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500">
+            {[
+              { name: "AWS", logo: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" },
+              { name: "Stripe", logo: "https://upload.wikimedia.org/wikipedia/commons/b/ba/Stripe_Logo%2C_revised_2016.svg" },
+              { name: "Google Cloud", logo: "https://upload.wikimedia.org/wikipedia/commons/5/51/Google_Cloud_Logo.svg" },
+              { name: "Next.js", logo: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" },
+              { name: "React", logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" },
+            ].map((partner) => (
+              <img 
+                key={partner.name} 
+                src={partner.logo} 
+                alt={`${partner.name} Logo`} 
+                className="h-8 md:h-10 w-auto object-contain"
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Platform Section */}
       <section id="platform" className="border-y border-gray-200 bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6">
