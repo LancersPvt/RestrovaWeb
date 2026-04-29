@@ -12,7 +12,7 @@ export default function SiteFooter() {
 
       <div className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-1">
             <p className="text-2xl font-bold bg-gradient-to-r from-[#FF6B6B] to-[#F4A261] bg-clip-text text-transparent">
               {siteConfig.name}
             </p>
@@ -22,8 +22,39 @@ export default function SiteFooter() {
           </div>
 
           <div>
+            <p className="text-sm font-bold text-white mb-4">Industries</p>
+            <ul className="space-y-3 text-sm text-gray-400">
+              <li>
+                <Link href="/industries/pizza-italian" className="transition hover:text-[#F4A261] hover:translate-x-1 inline-block">
+                  Pizza & Italian
+                </Link>
+              </li>
+              <li>
+                <Link href="/industries/fast-food-qsr" className="transition hover:text-[#F4A261] hover:translate-x-1 inline-block">
+                  Fast Food (QSR)
+                </Link>
+              </li>
+              <li>
+                <Link href="/industries/fine-dining" className="transition hover:text-[#F4A261] hover:translate-x-1 inline-block">
+                  Fine Dining
+                </Link>
+              </li>
+              <li>
+                <Link href="/industries/bakery-cafe" className="transition hover:text-[#F4A261] hover:translate-x-1 inline-block">
+                  Bakery & Cafe
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
             <p className="text-sm font-bold text-white mb-4">Quick links</p>
             <ul className="space-y-3 text-sm text-gray-400">
+              <li>
+                <Link href="/compare-marketplaces" className="transition hover:text-[#F4A261] hover:translate-x-1 inline-block font-semibold text-[#FF6B6B]">
+                  Restrova vs Marketplaces
+                </Link>
+              </li>
               <li>
                 <Link
                   href="/#platform"
@@ -46,14 +77,6 @@ export default function SiteFooter() {
                   className="transition hover:text-[#F4A261] hover:translate-x-1 inline-block"
                 >
                   How it works
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/#contact"
-                  className="transition hover:text-[#F4A261] hover:translate-x-1 inline-block"
-                >
-                  Contact
                 </Link>
               </li>
             </ul>

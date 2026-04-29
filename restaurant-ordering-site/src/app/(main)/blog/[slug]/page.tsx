@@ -58,11 +58,16 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         "@type": "BlogPosting",
         headline: post.title,
         description: post.excerpt,
+        image: post.image,
         author: {
             "@type": "Person",
             name: post.author,
+            description: post.authorExpertise,
+            jobTitle: post.category === "Technology" ? "Product Lead" : "Hospitality Expert",
+            url: `${siteConfig.url}`,
         },
         datePublished: post.date,
+        dateModified: post.date,
         publisher: {
             "@type": "Organization",
             name: siteConfig.name,
@@ -70,6 +75,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 "@type": "ImageObject",
                 url: `${siteConfig.url}/logo.png`,
             },
+        },
+        mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id": `${siteConfig.url}/blog/${post.slug}`,
         },
     };
 
@@ -175,6 +184,19 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                                 .join('\n')
                         }}
                     />
+                </div>
+ 
+                {/* Author Bio Section */}
+                <div className="mt-12 flex flex-col sm:flex-row items-center gap-6 p-8 rounded-3xl border-2 border-[#F4A261]/20 bg-white shadow-sm">
+                    <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#FF6B6B] to-[#F4A261] text-3xl font-bold text-white shadow-lg">
+                        {post.author.charAt(0)}
+                    </div>
+                    <div className="text-center sm:text-left">
+                        <h4 className="text-xl font-bold text-slate-900">About {post.author}</h4>
+                        <p className="mt-2 text-gray-700 leading-relaxed italic">
+                            {post.authorExpertise}
+                        </p>
+                    </div>
                 </div>
 
                 {/* CTA Section */}

@@ -93,6 +93,77 @@ export const locationData: Record<string, CountryData> = {
             { slug: "edmonton", label: "Edmonton" },
         ],
     },
+    india: {
+        label: "India",
+        currency: "INR",
+        phone: "+91",
+        cities: [
+            { slug: "delhi", label: "Delhi" },
+            { slug: "mumbai", label: "Mumbai" },
+            { slug: "bangalore", label: "Bangalore" },
+            { slug: "hyderabad", label: "Hyderabad" },
+            { slug: "kolkata", label: "Kolkata" },
+            { slug: "pune", label: "Pune" },
+            { slug: "chennai", label: "Chennai" },
+            { slug: "ahmedabad", label: "Ahmedabad" },
+        ],
+    },
+    egypt: {
+        label: "Egypt",
+        currency: "EGP",
+        phone: "+20",
+        cities: [
+            { slug: "cairo", label: "Cairo" },
+            { slug: "alexandria", label: "Alexandria" },
+            { slug: "giza", label: "Giza" },
+            { slug: "helwan", label: "Helwan" },
+            { slug: "suez", label: "Suez" },
+        ],
+    },
+    turkey: {
+        label: "Turkey",
+        currency: "TRY",
+        phone: "+90",
+        cities: [
+            { slug: "istanbul", label: "Istanbul" },
+            { slug: "ankara", label: "Ankara" },
+            { slug: "izmir", label: "Izmir" },
+            { slug: "bursa", label: "Bursa" },
+            { slug: "antalya", label: "Antalya" },
+        ],
+    },
+    malaysia: {
+        label: "Malaysia",
+        currency: "MYR",
+        phone: "+60",
+        cities: [
+            { slug: "kuala-lumpur", label: "Kuala Lumpur" },
+            { slug: "george-town", label: "George Town" },
+            { slug: "johor-bahru", label: "Johor Bahru" },
+            { slug: "kota-kinabalu", label: "Kota Kinabalu" },
+            { slug: "petaling-jaya", label: "Petaling Jaya" },
+        ],
+    },
+    indonesia: {
+        label: "Indonesia",
+        currency: "IDR",
+        phone: "+62",
+        cities: [
+            { slug: "jakarta", label: "Jakarta" },
+            { slug: "surabaya", label: "Surabaya" },
+            { slug: "bandung", label: "Bandung" },
+            { slug: "medan", label: "Medan" },
+            { slug: "bali", label: "Bali" },
+        ],
+    },
+    singapore: {
+        label: "Singapore",
+        currency: "SGD",
+        phone: "+65",
+        cities: [
+            { slug: "central", label: "Singapore" },
+        ],
+    },
 };
 
 export function getAllCountries(): string[] {

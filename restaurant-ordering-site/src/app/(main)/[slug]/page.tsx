@@ -7,6 +7,7 @@ import { locationData, getCityLabel, getCountryLabel, isValidLocation, getAllCou
 import { services, getServiceBySlug } from "@/data/services";
 import { parseSlugSafe, createSlug } from "@/lib/slugUtils";
 import { generatePageContent, generateFAQs } from "@/lib/contentGenerator";
+import { getRelatedCityServiceLinks } from "@/lib/internalLinking";
 import { siteConfig } from "@/lib/site";
 
 interface SlugPageProps {
@@ -52,8 +53,21 @@ export async function generateMetadata({ params }: SlugPageProps): Promise<Metad
     const countryLabel = getCountryLabel(parsed.country);
     const canonicalUrl = `${siteConfig.url}/${slug}`;
 
-    const title = `Best ${service.name} for Restaurants in ${cityLabel} | Restrova`;
-    const description = `Looking for a ${service.name.toLowerCase()} in ${cityLabel}, ${countryLabel}? Restrova provides cloud-based POS, online ordering, analytics, and complete restaurant management solutions — trusted by 500+ restaurants across ${countryLabel}.`;
+    // Enhanced SEO titles with benefit-driven keywords
+    const title = `${service.name} for Restaurants in ${cityLabel} | Boost Sales 30% | Restrova`;
+    
+    // Improved descriptions with benefits, social proof, and CTA
+    const benefitHighlight = service.slug === "online-ordering" 
+      ? "Zero commission on direct orders" 
+      : service.slug === "pos" 
+      ? "3x faster billing, 24/7 support" 
+      : service.slug === "admin-app" 
+      ? "Real-time order management on mobile" 
+      : service.slug === "analytics" 
+      ? "AI-powered insights to grow revenue"
+      : "Complete restaurant management";
+    
+    const description = `Best ${service.name.toLowerCase()} for restaurants in ${cityLabel}, ${countryLabel}. ${benefitHighlight}. Used by 500+ restaurants. Free 15-min demo. 48-hour setup.`;
 
     return {
         title,
@@ -151,6 +165,38 @@ export default async function SlugPage({ params }: SlugPageProps) {
         email: siteConfig.contact.email,
     };
 
+    /* JSON-LD: BreadcrumbList for better SERP visibility */
+    const breadcrumbJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+            {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: siteConfig.url,
+            },
+            {
+                "@type": "ListItem",
+                position: 2,
+                name: "Services",
+                item: `${siteConfig.url}/services`,
+            },
+            {
+                "@type": "ListItem",
+                position: 3,
+                name: service.name,
+                item: `${siteConfig.url}/services`,
+            },
+            {
+                "@type": "ListItem",
+                position: 4,
+                name: `${cityLabel}, ${countryLabel}`,
+                item: `${siteConfig.url}/${parsed.service}-${parsed.city}-${parsed.country}`,
+            },
+        ],
+    };
+
     return (
         <main className="bg-white">
             {/* JSON-LD Scripts */}
@@ -163,6 +209,11 @@ export default async function SlugPage({ params }: SlugPageProps) {
                 id="ld-faq"
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+            />
+            <Script
+                id="ld-breadcrumb"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
             />
             <Script
                 id="ld-local"
@@ -408,6 +459,40 @@ export default async function SlugPage({ params }: SlugPageProps) {
                                     </p>
                                 </Link>
                             ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* ── Related Services (Internal Linking for SEO) ── */}
+            <section className="bg-gradient-to-b from-white to-[#FFF5E6] py-16 sm:py-24">
+                <div className="mx-auto max-w-4xl px-6">
+                    <div className="rounded-3xl border border-[#F4A261]/20 bg-white p-8 sm:p-12">
+                        <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">
+                            Complement Your {service.name}
+                        </h2>
+                        <p className="mt-3 text-gray-600">
+                            These solutions work seamlessly with your {service.name.toLowerCase()} to maximize restaurant efficiency and growth.
+                        </p>
+                        
+                        <div className="mt-8 grid gap-4 sm:grid-cols-2">
+                            {getRelatedCityServiceLinks(parsed.service, parsed.city, parsed.country).map((link) => (
+                                <Link
+                                    key={link.href}
+                                    href={link.href}
+                                    className="group rounded-xl border-2 border-gray-100 bg-gradient-to-br from-[#FFF5E6] to-white p-5 transition-all hover:border-[#FF6B6B] hover:shadow-md"
+                                >
+                                    <h3 className="font-semibold text-slate-900 group-hover:text-[#FF6B6B] transition-colors">
+                                        {link.title}
+                                    </h3>
+                                    <p className="mt-2 text-sm text-gray-600 leading-relaxed">
+                                        {link.reason}
+                                    </p>
+                                    <span className="mt-3 inline-flex items-center text-sm font-medium text-[#FF6B6B] group-hover:gap-2 transition-all gap-1">
+                                        Learn more <span>→</span>
+                                    </span>
+                                </Link>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </section>
