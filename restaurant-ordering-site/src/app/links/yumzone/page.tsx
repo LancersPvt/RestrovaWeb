@@ -20,7 +20,7 @@ const LINKS = {
   instagram: "https://www.instagram.com/yumzone553/",
 
   // NEW:
-  googleMaps: "https://share.google/LmWOjk85C8nZY3Oz9", // or your full Google Maps share link
+  googleMaps: "https://maps.app.goo.gl/yR8KmTXk7GRKw1Fn9", // or your full Google Maps share link
   whatsapp: "https://wa.me/923325532222", // use country code, no +, no spaces
 };
 
