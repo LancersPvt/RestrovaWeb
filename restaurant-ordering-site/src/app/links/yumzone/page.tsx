@@ -14,7 +14,7 @@ import logo from "./logo.jpeg"; // <-- update if your filename differs
 
 const LINKS = {
   // Replace these with real URLs:
-  playStore: "https://play.google.com/store/apps/details?id=com.restrova.ashandbeans",
+  playStore: "https://play.google.com/store/apps/details?id=com.restrova.yumzone",
   appStore: "https://apps.apple.com/pk/app/ash-beans/id6759486466",
   facebook: "https://facebook.com/YOUR_PAGE",
   instagram: "https://instagram.com/ash_beans",
@@ -58,7 +58,7 @@ function LinkButton({
   );
 }
 
-export default function AshAndBeansLinktree() {
+export default function yumzoneLinktree() {
   return (
     <main className="relative min-h-screen overflow-hidden">
       {/* Background */}
