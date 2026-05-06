@@ -43,7 +43,7 @@ export default function SiteHeader() {
             href="/#contact"
             className="inline-flex h-11 items-center justify-center rounded-full bg-gradient-to-r from-[#FF6B6B] to-[#F4A261] px-7 text-sm font-semibold text-white shadow-lg shadow-coral-500/30 transition-all hover:shadow-xl hover:shadow-coral-500/40 hover:scale-105"
           >
-            Request demo
+            Book a free demo
           </Link>
         </div>
 

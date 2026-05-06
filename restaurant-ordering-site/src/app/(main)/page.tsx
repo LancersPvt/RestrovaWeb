@@ -14,7 +14,7 @@ const services = [
   {
     title: "Online Ordering System",
     description:
-      "Branded online ordering for pickup, delivery, and dine‑in — optimized for fast ordering and repeat customers.",
+      "Branded online ordering for pickup, delivery, and dine-in — optimized for fast ordering and repeat customers.",
     iconName: "ordering",
   },
   {
@@ -56,7 +56,7 @@ const services = [
   {
     title: "Digital Menu Boards & Kiosk",
     description:
-      "Optional add-ons like digital menu boards and self‑ordering kiosk workflows for dine‑in efficiency.",
+      "Optional add-ons like digital menu boards and self-ordering kiosk workflows for dine-in efficiency.",
     iconName: "kiosk",
   },
 ];
@@ -85,6 +85,65 @@ const benefits = [
     description:
       "We stay available after launch to handle improvements, fixes, and ongoing enhancements.",
     iconName: "support",
+  },
+];
+
+const platformFeatures = [
+  {
+    title: "Online Ordering Website",
+    description:
+      "Pickup, delivery, dine-in QR ordering, digital menu, cart, checkout, and a fast branded ordering flow.",
+    iconName: "ordering",
+    gradient: "from-[#FF6B6B] to-[#E07A5F]",
+  },
+  {
+    title: "Customer Mobile App",
+    description:
+      "Android and iOS branded app with reorder, loyalty, offers, push notifications, and customer accounts.",
+    iconName: "mobile",
+    gradient: "from-[#F4A261] to-[#E07A5F]",
+  },
+  {
+    title: "Restaurant Admin App",
+    description:
+      "Receive orders, accept or reject requests, update order status, and control preparation time in real time.",
+    iconName: "admin",
+    gradient: "from-[#E07A5F] to-[#FF6B6B]",
+  },
+  {
+    title: "Menu & Branch Management",
+    description:
+      "Manage items, categories, modifiers, availability, branch-level pricing, and multi-branch menu controls.",
+    iconName: "tools",
+    gradient: "from-[#8FBC8F] to-[#F4A261]",
+  },
+  {
+    title: "Delivery Management",
+    description:
+      "Create delivery zones, assign riders, track live orders, and manage dispatch operations from one dashboard.",
+    iconName: "delivery",
+    gradient: "from-[#FF6B6B] to-[#F4A261]",
+  },
+  {
+    title: "POS / RMS Integrations",
+    description:
+      "Connect billing, inventory, kitchen flow, cashier workflows, and third-party restaurant integrations.",
+    iconName: "pos",
+    gradient: "from-[#F4A261] to-[#8FBC8F]",
+  },
+  {
+    title: "Analytics & Customer Data",
+    description:
+      "Track sales trends, repeat customers, peak hours, customer behavior, and restaurant performance insights.",
+    iconName: "analytics",
+    gradient: "from-[#E07A5F] to-[#F4A261]",
+  },
+  {
+    title: "Marketing & Loyalty",
+    description:
+      "Run coupons, wallet rewards, points, push campaigns, customer offers, and abandoned cart recovery.",
+    iconName: "loyalty",
+    gradient: "from-[#FF6B6B] to-[#8FBC8F]",
   },
 ];
 
@@ -135,11 +194,16 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-[#FFF5E6] via-[#F8E9D0] to-[#FFE5D9]">
-        {/* Animated Background Elements */}
         <div className="pointer-events-none absolute inset-0 -z-10">
           <div className="absolute top-20 left-10 h-72 w-72 rounded-full bg-[#FF6B6B]/20 blur-3xl animate-float" />
-          <div className="absolute top-40 right-20 h-96 w-96 rounded-full bg-[#F4A261]/20 blur-3xl animate-float" style={{ animationDelay: '1s' }} />
-          <div className="absolute bottom-20 left-1/3 h-80 w-80 rounded-full bg-[#8FBC8F]/15 blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+          <div
+            className="absolute top-40 right-20 h-96 w-96 rounded-full bg-[#F4A261]/20 blur-3xl animate-float"
+            style={{ animationDelay: "1s" }}
+          />
+          <div
+            className="absolute bottom-20 left-1/3 h-80 w-80 rounded-full bg-[#8FBC8F]/15 blur-3xl animate-float"
+            style={{ animationDelay: "2s" }}
+          />
         </div>
 
         <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32">
@@ -150,7 +214,7 @@ export default function Home() {
               </span>
 
               <h1 className="mt-8 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl leading-tight">
-                Build your own{" "}
+                Launch your own{" "}
                 <span className="bg-gradient-to-r from-[#FF6B6B] to-[#F4A261] bg-clip-text text-transparent">
                   restaurant ordering platform
                 </span>{" "}
@@ -168,11 +232,22 @@ export default function Home() {
                   href="#contact"
                   className="group inline-flex h-16 items-center justify-center rounded-full bg-gradient-to-r from-[#FF6B6B] to-[#F4A261] px-10 text-lg font-bold text-white shadow-2xl shadow-[#FF6B6B]/30 transition-all hover:shadow-2xl hover:shadow-[#F4A261]/40 hover:scale-110"
                 >
-                  <span>Request a demo</span>
-                  <svg className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  <span>Book a free demo</span>
+                  <svg
+                    className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
                   </svg>
                 </a>
+
                 <a
                   href="#platform"
                   className="inline-flex h-16 items-center justify-center rounded-full border-2 border-[#FF6B6B] bg-white px-10 text-lg font-bold text-[#FF6B6B] shadow-lg transition-all hover:bg-[#FF6B6B] hover:text-white hover:scale-105 hover:shadow-xl"
@@ -191,15 +266,21 @@ export default function Home() {
                     key={item.t}
                     className="group rounded-2xl border-2 border-[#F4A261]/30 bg-white/95 p-5 backdrop-blur hover-lift hover:border-[#FF6B6B]/50 hover:shadow-lg transition-all"
                   >
-                    <dt className="font-bold text-slate-900 group-hover:text-[#FF6B6B] transition-colors">{item.t}</dt>
+                    <dt className="font-bold text-slate-900 group-hover:text-[#FF6B6B] transition-colors">
+                      {item.t}
+                    </dt>
                     <dd className="mt-1 text-sm text-slate-600">{item.d}</dd>
                   </div>
                 ))}
               </dl>
             </div>
 
-            <div className="relative animate-fade-in lg:flex lg:justify-center" style={{ animationDelay: '0.2s' }}>
+            <div
+              className="relative animate-fade-in lg:flex lg:justify-center"
+              style={{ animationDelay: "0.2s" }}
+            >
               <div className="absolute -inset-4 -z-10 rounded-3xl bg-gradient-to-r from-[#FF6B6B] to-[#F4A261] opacity-20 blur-2xl" />
+
               <div className="rounded-3xl border border-[#F4A261]/30 bg-white/95 p-8 shadow-2xl backdrop-blur">
                 <Image
                   src="/hero-mockup.png"
@@ -210,7 +291,6 @@ export default function Home() {
                   priority
                 />
               </div>
-
             </div>
           </div>
         </div>
@@ -222,18 +302,34 @@ export default function Home() {
           <p className="text-center text-sm font-semibold text-gray-500 uppercase tracking-widest mb-8">
             Built on Industry-Leading Infrastructure
           </p>
+
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500">
             {[
-              { name: "AWS", logo: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" },
-              { name: "Stripe", logo: "https://upload.wikimedia.org/wikipedia/commons/b/ba/Stripe_Logo%2C_revised_2016.svg" },
-              { name: "Google Cloud", logo: "https://upload.wikimedia.org/wikipedia/commons/5/51/Google_Cloud_Logo.svg" },
-              { name: "Next.js", logo: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" },
-              { name: "React", logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" },
+              {
+                name: "AWS",
+                logo: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
+              },
+              {
+                name: "Stripe",
+                logo: "https://upload.wikimedia.org/wikipedia/commons/b/ba/Stripe_Logo%2C_revised_2016.svg",
+              },
+              {
+                name: "Google Cloud",
+                logo: "https://www.vectorlogo.zone/logos/google_cloud/google_cloud-ar21.svg",
+              },
+              {
+                name: "Next.js",
+                logo: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg",
+              },
+              {
+                name: "React",
+                logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+              },
             ].map((partner) => (
-              <img 
-                key={partner.name} 
-                src={partner.logo} 
-                alt={`${partner.name} Logo`} 
+              <img
+                key={partner.name}
+                src={partner.logo}
+                alt={`${partner.name} Logo`}
                 className="h-8 md:h-10 w-auto object-contain"
               />
             ))}
@@ -241,54 +337,52 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Platform Section */}
-      <section id="platform" className="border-y border-gray-200 bg-white py-24 sm:py-32">
+      {/* Create a Platform Section */}
+      <section
+        id="platform"
+        className="border-y border-gray-200 bg-white py-24 sm:py-32"
+      >
         <div className="mx-auto max-w-7xl px-6">
-          <div className="max-w-2xl">
-            <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-              What we deliver
+          <div className="mx-auto max-w-3xl text-center">
+            <span className="inline-flex rounded-full border border-[#F4A261]/30 bg-[#FFF5E6] px-5 py-2 text-sm font-bold uppercase tracking-widest text-[#FF6B6B]">
+              Create a Platform
+            </span>
+
+            <h2 className="mt-5 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+              Build your complete restaurant ordering ecosystem
             </h2>
+
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              A complete system your customers can use and your team can operate.
-              Start with ordering and scale into POS, delivery management, loyalty,
-              and analytics.
+              Restrova gives your restaurant everything needed to take direct
+              orders, manage operations, run delivery, connect systems, track
+              customers, and grow repeat sales from one branded platform.
             </p>
           </div>
 
-          <div className="mt-16 grid gap-8 md:grid-cols-3">
-            {[
-              {
-                t: "Customer App",
-                d: "Android & iOS app for customers with a smooth, branded ordering experience.",
-                iconName: "mobile",
-                gradient: "from-[#FF6B6B] to-[#E07A5F]",
-              },
-              {
-                t: "Personalized Website",
-                d: "Branded personalized website for pickup/delivery/dine‑in, linked to your app.",
-                iconName: "ordering",
-                gradient: "from-[#F4A261] to-[#E07A5F]",
-              },
-              {
-                t: "Admin App",
-                d: "Order receiving, status management, and operations dashboards for your staff.",
-                iconName: "admin",
-                gradient: "from-[#E07A5F] to-[#F4A261]",
-              },
-            ].map((x, idx) => (
+          <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {platformFeatures.map((feature, idx) => (
               <ScrollAnimationWrapper
-                key={x.t}
+                key={feature.title}
                 animation="fade"
-                className={`stagger-${idx + 1}`}
+                className={`stagger-${idx + 1} h-full`}
               >
-                <div className="group rounded-3xl border border-gray-200 bg-white p-8 shadow-lg hover-glow card-3d">
-                  <div className={`inline-flex p-3 rounded-2xl bg-gradient-to-br ${x.gradient} shadow-lg`}>
-                    <CustomIcon name={x.iconName} className="h-8 w-8 text-white" />
+                <div className="group h-full rounded-3xl border border-gray-200 bg-white p-6 shadow-lg transition-all hover:-translate-y-1 hover:shadow-2xl hover-glow card-3d">
+                  <div
+                    className={`mb-5 inline-flex rounded-2xl bg-gradient-to-br ${feature.gradient} p-3 shadow-lg transition-transform group-hover:scale-110`}
+                  >
+                    <CustomIcon
+                      name={feature.iconName}
+                      className="h-7 w-7 text-white"
+                    />
                   </div>
-                  <h3 className="mt-6 text-xl font-bold text-gray-900">
-                    {x.t}
+
+                  <h3 className="text-lg font-bold text-gray-900">
+                    {feature.title}
                   </h3>
-                  <p className="mt-3 text-base leading-7 text-gray-600">{x.d}</p>
+
+                  <p className="mt-3 text-sm leading-6 text-gray-600">
+                    {feature.description}
+                  </p>
                 </div>
               </ScrollAnimationWrapper>
             ))}
@@ -297,26 +391,39 @@ export default function Home() {
       </section>
 
       {/* Benefits Section */}
-      <section id="benefits" className="bg-gradient-to-br from-[#FFF5E6] to-[#F8E9D0] py-24 sm:py-32">
+      <section
+        id="benefits"
+        className="bg-gradient-to-br from-[#FFF5E6] to-[#F8E9D0] py-24 sm:py-32"
+      >
         <div className="mx-auto max-w-7xl px-6">
           <div className="max-w-2xl">
             <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
               Built for restaurants — not marketplaces
             </h2>
+
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Everything is designed around your restaurant operations: ordering,
-              order receiving, reporting, and scale.
+              Everything is designed around your restaurant operations:
+              ordering, order receiving, reporting, and scale.
             </p>
           </div>
 
           <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-4 md:grid-rows-2 lg:grid-rows-1">
             {benefits.map((b, idx) => (
-              <ScrollAnimationWrapper key={b.title} animation="fade" className={`stagger-${idx + 1} h-full`}>
+              <ScrollAnimationWrapper
+                key={b.title}
+                animation="fade"
+                className={`stagger-${idx + 1} h-full`}
+              >
                 <div className="h-full flex flex-col rounded-3xl border border-[#F4A261]/30 bg-white p-7 shadow-lg hover-glow card-3d">
-                  <CustomIcon name={b.iconName} className="h-14 w-14 text-[#FF6B6B] flex-shrink-0" />
+                  <CustomIcon
+                    name={b.iconName}
+                    className="h-14 w-14 text-[#FF6B6B] flex-shrink-0"
+                  />
+
                   <h3 className="mt-6 text-lg font-bold text-slate-900 flex-shrink-0">
                     {b.title}
                   </h3>
+
                   <p className="mt-3 text-sm leading-7 text-slate-600 flex-grow">
                     {b.description}
                   </p>
@@ -328,14 +435,19 @@ export default function Home() {
       </section>
 
       {/* Clients Section */}
-      <section id="clients" className="border-y border-gray-200 bg-white py-24 sm:py-32">
+      <section
+        id="clients"
+        className="border-y border-gray-200 bg-white py-24 sm:py-32"
+      >
         <div className="mx-auto max-w-7xl px-6">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-              Trusted by restaurant owners
+              Restaurants growing with us
             </h2>
+
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              See what our clients say about their experience with Restrova.
+              Some restaurant brands building stronger digital ordering
+              experiences with Restrova.
             </p>
           </div>
 
@@ -353,60 +465,71 @@ export default function Home() {
         </div>
       </section>
 
-
       {/* Why Your Restaurant Needs an App Section */}
-      <section id="why-app" className="bg-gradient-to-br from-[#FFF5E6] to-[#F8E9D0] py-24 sm:py-32">
+      <section
+        id="why-app"
+        className="bg-gradient-to-br from-[#FFF5E6] to-[#F8E9D0] py-24 sm:py-32"
+      >
         <div className="mx-auto max-w-7xl px-6">
-          {/* Header */}
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-              Restaurants That Go <span className="bg-gradient-to-r from-[#FF6B6B] to-[#F4A261] bg-clip-text text-transparent">Digital</span> Grow <span className="bg-gradient-to-r from-[#F4A261] to-[#E07A5F] bg-clip-text text-transparent">Faster.</span>
+              Restaurants That Go{" "}
+              <span className="bg-gradient-to-r from-[#FF6B6B] to-[#F4A261] bg-clip-text text-transparent">
+                Digital
+              </span>{" "}
+              Grow{" "}
+              <span className="bg-gradient-to-r from-[#F4A261] to-[#E07A5F] bg-clip-text text-transparent">
+                Faster.
+              </span>
             </h2>
+
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Restaurants using branded ordering apps see measurable improvements in sales, loyalty, and operational efficiency — powered by real-time data and automation.
+              Restaurants using branded ordering apps see measurable improvements
+              in sales, loyalty, and operational efficiency — powered by
+              real-time data and automation.
             </p>
           </div>
 
-          {/* Main Content Grid */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left: Dashboard Image */}
             <div className="relative">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-[#F4A261]/30 bg-gradient-to-br from-[#FFF5E6] to-[#F8E9D0]">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/grow-chart.png"
                   alt="Restaurant Analytics Dashboard showing growth metrics"
                   className="w-full h-auto"
                 />
               </div>
-              {/* Floating decorative elements */}
+
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-[#FF6B6B]/20 to-[#F4A261]/20 rounded-full blur-2xl" />
               <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-[#F4A261]/20 to-[#E07A5F]/20 rounded-full blur-2xl" />
             </div>
 
-            {/* Right: Key Stats */}
             <div className="space-y-6">
               {[
                 {
                   stat: "+30%",
                   label: "Revenue Growth",
-                  description: "Average revenue increase for restaurants with branded apps"
+                  description:
+                    "Average revenue increase for restaurants with branded apps",
                 },
                 {
                   stat: "+25%",
                   label: "Higher Repeat Customers",
-                  description: "Customer retention rate improvement with app loyalty programs"
+                  description:
+                    "Customer retention rate improvement with app loyalty programs",
                 },
                 {
                   stat: "40%",
                   label: "Faster Order Processing",
-                  description: "Reduction in order processing time with integrated systems"
+                  description:
+                    "Reduction in order processing time with integrated systems",
                 },
                 {
                   stat: "2x",
                   label: "Customer Data Insights",
-                  description: "More actionable customer behavior data vs. third-party platforms"
-                }
+                  description:
+                    "More actionable customer behavior data vs. third-party platforms",
+                },
               ].map((item, idx) => (
                 <ScrollAnimationWrapper
                   key={item.label}
@@ -419,10 +542,12 @@ export default function Home() {
                         {item.stat}
                       </div>
                     </div>
+
                     <div>
                       <h3 className="text-lg font-bold text-slate-900 mb-1">
                         {item.label}
                       </h3>
+
                       <p className="text-sm text-slate-600 leading-relaxed">
                         {item.description}
                       </p>
@@ -433,15 +558,18 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Bottom CTA */}
           <div className="mt-16 mx-auto max-w-3xl rounded-3xl border border-[#F4A261]/30 bg-white p-8 sm:p-12 shadow-xl">
             <div className="text-center">
               <h3 className="text-2xl font-bold text-slate-900">
                 Ready to Transform Your Restaurant?
               </h3>
+
               <p className="mt-4 text-lg leading-relaxed text-slate-600">
-                Join hundreds of restaurants that have increased revenue, improved customer loyalty, and gained complete control over their ordering platform.
+                Join hundreds of restaurants that have increased revenue,
+                improved customer loyalty, and gained complete control over
+                their ordering platform.
               </p>
+
               <a
                 href="#contact"
                 className="mt-6 inline-flex h-12 items-center justify-center rounded-full bg-gradient-to-r from-[#FF6B6B] to-[#F4A261] px-8 text-sm font-semibold text-white shadow-lg transition-all hover:shadow-xl hover:scale-105"
@@ -453,16 +581,20 @@ export default function Home() {
         </div>
       </section>
 
-
       {/* Blog Section */}
-      <section id="blog" className="border-y border-gray-200 bg-white py-24 sm:py-32">
+      <section
+        id="blog"
+        className="border-y border-gray-200 bg-white py-24 sm:py-32"
+      >
         <div className="mx-auto max-w-7xl px-6">
           <div className="max-w-2xl">
             <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
               Latest insights
             </h2>
+
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Tips, strategies, and industry insights to help you grow your restaurant business.
+              Tips, strategies, and industry insights to help you grow your
+              restaurant business.
             </p>
           </div>
 
@@ -481,13 +613,17 @@ export default function Home() {
       </section>
 
       {/* How It Works Section */}
-      <section id="how" className="bg-gradient-to-br from-[#FFF5E6] to-[#F8E9D0] py-24 sm:py-32">
+      <section
+        id="how"
+        className="bg-gradient-to-br from-[#FFF5E6] to-[#F8E9D0] py-24 sm:py-32"
+      >
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-16 lg:grid-cols-2">
             <div>
               <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
                 How we build your system
               </h2>
+
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 We don't ship a one-size-fits-all SaaS. We design, build, and
                 customize the ordering platform around your operations.
@@ -522,10 +658,12 @@ export default function Home() {
                     <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[#FF6B6B] to-[#F4A261] text-lg font-bold text-white shadow-lg">
                       {idx + 1}
                     </span>
+
                     <div>
                       <p className="text-lg font-bold text-slate-900">
                         {step.t}
                       </p>
+
                       <p className="mt-2 text-sm leading-7 text-slate-600">
                         {step.d}
                       </p>
@@ -539,11 +677,15 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section id="faq" className="border-y border-gray-200 bg-white py-24 sm:py-32">
+      <section
+        id="faq"
+        className="border-y border-gray-200 bg-white py-24 sm:py-32"
+      >
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
             FAQs
           </h2>
+
           <div className="mt-16 grid gap-6">
             {faqs.map((f, idx) => (
               <details
@@ -553,13 +695,27 @@ export default function Home() {
               >
                 <summary className="flex cursor-pointer items-center justify-between text-lg font-bold text-gray-900 list-none">
                   <span>{f.q}</span>
+
                   <span className="ml-4 flex h-8 w-8 items-center justify-center rounded-full bg-[#F8E9D0] text-[#F4A261] transition-transform group-open:rotate-180">
-                    <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    <svg
+                      className="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M19 9l-7 7-7-7"
+                      />
                     </svg>
                   </span>
                 </summary>
-                <p className="mt-4 text-base leading-7 text-gray-600">{f.a}</p>
+
+                <p className="mt-4 text-base leading-7 text-gray-600">
+                  {f.a}
+                </p>
               </details>
             ))}
           </div>
@@ -567,32 +723,47 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="bg-gradient-to-br from-[#FFF5E6] to-[#F8E9D0] py-24 sm:py-32">
+      <section
+        id="contact"
+        className="bg-gradient-to-br from-[#FFF5E6] to-[#F8E9D0] py-24 sm:py-32"
+      >
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-16 lg:grid-cols-2">
             <div>
               <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
                 Let's build your ordering platform
               </h2>
+
               <p className="mt-6 max-w-xl text-lg leading-8 text-gray-600">
-                Tell us about your restaurant and we'll respond with a recommended
-                setup (ordering, apps, admin workflows, POS modules, and
-                analytics).
+                Tell us about your restaurant and we'll respond with a
+                recommended setup ordering, apps, admin workflows, POS modules,
+                and analytics.
               </p>
 
               <div className="mt-8 rounded-3xl border border-[#F4A261]/30 bg-white p-6 shadow-lg">
-                <p className="text-sm font-bold text-slate-900">What you'll get</p>
+                <p className="text-sm font-bold text-slate-900">
+                  What you'll get
+                </p>
+
                 <ul className="mt-4 space-y-3 text-sm text-slate-600">
                   <li className="flex items-center gap-3">
-                    <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F8E9D0] text-[#F4A261]">✓</span>
+                    <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F8E9D0] text-[#F4A261]">
+                      ✓
+                    </span>
                     A tailored feature plan
                   </li>
+
                   <li className="flex items-center gap-3">
-                    <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F8E9D0] text-[#F4A261]">✓</span>
+                    <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F8E9D0] text-[#F4A261]">
+                      ✓
+                    </span>
                     Estimated timeline and cost range
                   </li>
+
                   <li className="flex items-center gap-3">
-                    <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F8E9D0] text-[#F4A261]">✓</span>
+                    <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F8E9D0] text-[#F4A261]">
+                      ✓
+                    </span>
                     Demo + next steps
                   </li>
                 </ul>
@@ -608,6 +779,3 @@ export default function Home() {
     </main>
   );
 }
-
-
-

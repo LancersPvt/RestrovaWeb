@@ -1,53 +1,85 @@
 export interface ClientTestimonial {
-    id: string;
-    name: string;
-    company: string;
-    role: string;
-    testimonial: string;
-    rating: number;
-    logo: string;
-    industry: string;
+  id: string;
+  name: string;
+  company: string;
+  role: string;
+  testimonial: string;
+  rating: number;
+  logo: string;
+  industry: string;
+  source?: string;
 }
 
 export const clientTestimonials: ClientTestimonial[] = [
-    {
-        id: "1",
-        name: "Ahmed Malik",
-        company: "Spice Garden",
-        role: "Owner",
-        testimonial: "Restrova transformed our business. We went from relying on expensive third-party apps to having our own branded platform. Orders increased by 40% in just 3 months!",
-        rating: 5,
-        logo: "/clients/spice-garden.png",
-        industry: "Fine Dining",
-    },
-    {
-        id: "2",
-        name: "Zainab Raza",
-        company: "Quick Bites",
-        role: "Operations Manager",
-        testimonial: "The admin app makes managing multiple branches so easy. Real-time order tracking and analytics help us make better decisions every day.",
-        rating: 5,
-        logo: "/clients/quick-bites.png",
-        industry: "Fast Food",
-    },
-    {
-        id: "3",
-        name: "Usman Ali",
-        company: "Desi Delights",
-        role: "CEO",
-        testimonial: "Best investment we made. The customer app is smooth, the POS integration works perfectly, and our customers love the loyalty program.",
-        rating: 5,
-        logo: "/clients/desi-delights.png",
-        industry: "Casual Dining",
-    },
-    {
-        id: "4",
-        name: "Ayesha Siddiqui",
-        company: "Café Aroma",
-        role: "Founder",
-        testimonial: "Professional team, beautiful design, and excellent support. Our online orders have tripled since launching with Restrova.",
-        rating: 5,
-        logo: "/clients/cafe-aroma.png",
-        industry: "Café",
-    },
+  {
+    id: "1",
+    name: "Yum Zone",
+    company: "Yum Zone",
+    role: "Restaurant",
+    testimonial:
+      "Yum Zone is a fast-food restaurant brand offering pizza, zinger items, pasta, wraps, and family meal deals.",
+    rating: 5,
+    logo: "/clients/yum-zone.png",
+    industry: "Pizza & Fast Food",
+  
+  },
+  {
+    id: "2",
+    name: "Mirch N Spicy",
+    company: "Mirch N Spicy",
+    role: "Restaurant",
+    testimonial:
+      "Mirch N Spicy serves a mixed menu that includes Pakistani food, burgers, wraps, Chinese dishes, and Western-style fast food.",
+    rating: 5,
+    logo: "/clients/mirch-n-spicy.png",
+    industry: "Pakistani / Fast Food",
+    
+  },
+  {
+    id: "3",
+    name: "Wok & Grill",
+    company: "Wok & Grill",
+    role: "Restaurant",
+    testimonial:
+      "Wok & Grill is a restaurant brand focused on grilled food, desi flavors, and delivery-friendly meals.",
+    rating: 5,
+    logo: "/clients/wok-and-grill.png",
+    industry: "Grill / Desi Cuisine",
+   
+  },
+  {
+    id: "4",
+    name: "Ash & Beans",
+    company: "Ash & Beans",
+    role: "Restaurant",
+    testimonial:
+      "Ash & Beans is a cafe-style food brand offering coffee, tea, snacks, desserts, and refreshing drinks.",
+    rating: 5,
+    logo: "/clients/ashandbeans.png",
+    industry: "Cafe",
+    
+  },
+  {
+    id: "5",
+    name: "Chill & Grill",
+    company: "Chill & Grill",
+    role: "Restaurant",
+    testimonial:
+      "Chill & Grill offers a broad restaurant menu with BBQ, burgers, shawarma, karahi, and fast-food options.",
+    rating: 5,
+    logo: "/clients/chill-and-grill.png",
+    industry: "BBQ / Fast Food",
+   
+  },
+  {
+    id: "6",
+    name: "The Spanish Pizza",
+    company: "The Spanish Pizza",
+    role: "Restaurant",
+    testimonial:
+      "The Spanish Pizza is a pizza-focused restaurant brand offering pizzas, burgers, and fast-food items.",
+    rating: 5,
+    logo: "/clients/the-spanish-pizza.png",
+    industry: "Pizza",
+  },
 ];
