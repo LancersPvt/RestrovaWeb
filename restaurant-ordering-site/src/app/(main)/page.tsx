@@ -206,7 +206,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 pt-14 pb-24 sm:pt-20 sm:pb-32">
           <div className="grid items-center gap-16 lg:grid-cols-2">
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 rounded-full border-2 border-[#F4A261]/30 bg-white/95 px-6 py-3 text-sm font-semibold text-[#FF6B6B] shadow-lg shadow-[#F4A261]/20 backdrop-blur animate-bounce-slow">

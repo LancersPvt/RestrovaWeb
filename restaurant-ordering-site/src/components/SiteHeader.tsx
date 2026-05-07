@@ -22,9 +22,9 @@ export default function SiteHeader() {
           <Image
             src="/logo.png"
             alt="Restrova"
-            width={240}
-            height={60}
-            className="h-16 w-auto"
+            width={300}
+            height={80}
+            className="h-20 w-auto object-contain mix-blend-multiply"
             priority
           />
         </Link>
