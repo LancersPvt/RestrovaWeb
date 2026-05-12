@@ -15,13 +15,16 @@ export default function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-amber-200/30 bg-white/80 backdrop-blur-xl shadow-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <Link href="/" className="flex items-center transition-transform hover:scale-105">
+        <Link
+          href="/"
+          className="flex items-center transition-transform hover:scale-105"
+        >
           <Image
             src="/logo.png"
             alt="Restrova"
-            width={240}
-            height={60}
-            className="h-16 w-auto"
+            width={300}
+            height={80}
+            className="h-20 w-auto object-contain mix-blend-multiply"
             priority
           />
         </Link>
@@ -38,39 +41,87 @@ export default function SiteHeader() {
           ))}
         </nav>
 
-        <div className="hidden lg:block">
+        <div className="hidden items-center gap-4 lg:flex">
+          <a
+            href="tel:+923111588439"
+            className="inline-flex h-11 items-center gap-2 rounded-full border border-[#F4A261]/40 bg-white px-5 text-sm font-semibold text-slate-800 shadow-sm transition-all hover:border-[#FF6B6B] hover:text-[#FF6B6B] hover:shadow-md"
+          >
+            <svg
+              className="h-4 w-4 text-[#FF6B6B]"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.95.684l1.5 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.5a1 1 0 01.684.95V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+              />
+            </svg>
+            +92 311 1588439
+          </a>
+
           <Link
             href="/#contact"
             className="inline-flex h-11 items-center justify-center rounded-full bg-gradient-to-r from-[#FF6B6B] to-[#F4A261] px-7 text-sm font-semibold text-white shadow-lg shadow-coral-500/30 transition-all hover:shadow-xl hover:shadow-coral-500/40 hover:scale-105"
           >
-            Request demo
+            Book a free demo
           </Link>
         </div>
 
         <details className="relative lg:hidden">
           <summary className="flex cursor-pointer items-center gap-2 rounded-full border border-amber-300 bg-white px-5 py-2.5 text-sm font-medium text-slate-900 shadow-sm transition hover:bg-amber-50 list-none">
             <span>Menu</span>
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            <svg
+              className="h-4 w-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             </svg>
           </summary>
+
           <div className="absolute right-0 mt-3 w-64 rounded-2xl border border-gray-200 bg-white p-2 shadow-2xl animate-fade-in">
             <div className="flex flex-col">
               <div className="flex items-center justify-between px-4 py-2 border-b border-gray-100">
-                <span className="text-sm font-semibold text-slate-900">Menu</span>
+                <span className="text-sm font-semibold text-slate-900">
+                  Menu
+                </span>
+
                 <button
                   onClick={(e) => {
-                    const details = e.currentTarget.closest('details');
+                    const details = e.currentTarget.closest("details");
                     if (details) details.open = false;
                   }}
                   className="rounded-lg p-1.5 text-slate-400 hover:bg-coral-50 hover:text-coral-600 transition"
                   aria-label="Close menu"
                 >
-                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  <svg
+                    className="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M6 18L18 6M6 6l12 12"
+                    />
                   </svg>
                 </button>
               </div>
+
               {nav.map((item) => (
                 <Link
                   key={item.href}
@@ -80,6 +131,14 @@ export default function SiteHeader() {
                   {item.label}
                 </Link>
               ))}
+
+              <a
+                href="tel:+923111588439"
+                className="mt-2 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-center text-sm font-semibold text-slate-800 transition hover:bg-amber-100"
+              >
+                Call: +92 311 1588439
+              </a>
+
               <Link
                 href="/#contact"
                 className="mt-2 rounded-xl bg-gradient-to-r from-[#FF6B6B] to-[#F4A261] px-4 py-3 text-center text-sm font-semibold text-white shadow-lg transition hover:shadow-xl"
@@ -93,6 +152,3 @@ export default function SiteHeader() {
     </header>
   );
 }
-
-
-
