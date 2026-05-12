@@ -58,7 +58,7 @@ function LinkButton({
   );
 }
 
-export default function theSpanishPizzaLinktree() {
+export default function mcCafeLinktree() {
   return (
     <main className="relative min-h-screen overflow-hidden">
       {/* Background */}
@@ -76,7 +76,7 @@ export default function theSpanishPizzaLinktree() {
             <div className="relative h-14 w-14 overflow-hidden rounded-2xl bg-white/10">
               <Image
                 src={logo}
-                alt="The Spanish Pizza logo"
+                alt="McCafe logo"
                 fill
                 className="object-cover"
                 priority
@@ -85,7 +85,7 @@ export default function theSpanishPizzaLinktree() {
 
             <div>
               <h1 className="text-xl font-semibold tracking-tight">
-                The Spanish Pizza
+                McCafe
               </h1>
               <p className="mt-1 text-sm text-white/65">
                 Official links • deals • updates
@@ -155,7 +155,7 @@ export default function theSpanishPizzaLinktree() {
 
         </div>
         <footer className="mt-auto pt-10 text-center text-xs text-white/45">
-          © {new Date().getFullYear()} The Spanish Pizza
+          © {new Date().getFullYear()} McCafe
         </footer>
       </section>
     </main>
