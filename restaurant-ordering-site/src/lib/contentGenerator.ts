@@ -98,7 +98,7 @@ online ordering, and analytics in one platform. Perfect for restaurants in ${cit
         {
             question: `Can I use Restrova alongside Foodpanda or UberEats in ${cityLabel}?`,
             answer: `Absolutely! Many restaurants in ${cityLabel} use Restrova for direct orders while maintaining presence on Foodpanda and UberEats. \
-This hybrid approach lets you reach more customers while keeping 100% commission on direct orders through Restrova. \
+This hybrid approach lets you reach more customers while keeping 99% commission on direct orders through Restrova. \
 Most restaurants see 40% of orders come through their own platform within 3 months.`,
         },
         {

@@ -11,7 +11,7 @@ export default function CompareMarketplacesPage() {
         {
             feature: "Commission Fees",
             marketplace: "20% - 35% per order",
-            restrova: "0% Commission (Fixed Monthly)",
+            restrova: "1% Commission (Fixed Monthly)",
             winner: "restrova",
         },
         {
@@ -100,8 +100,8 @@ export default function CompareMarketplacesPage() {
                         </div>
                         <div className="rounded-3xl border-2 border-[#FF6B6B] bg-white p-8 shadow-lg">
                             <p className="text-[#FF6B6B] font-bold">On Restrova (Direct)</p>
-                            <p className="mt-2 text-4xl font-bold text-gray-900">$10,000</p>
-                            <p className="mt-1 text-sm text-green-600">You keep 100% of your revenue*</p>
+                            <p className="mt-2 text-4xl font-bold text-gray-900">$9,900</p>
+                            <p className="mt-1 text-sm text-green-600">You keep 99% of your revenue*</p>
                         </div>
                     </div>
                     <p className="mt-8 text-sm text-gray-500">*Exclusive of payment gateway charges and fixed monthly tier.</p>
