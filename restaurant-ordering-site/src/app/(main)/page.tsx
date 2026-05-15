@@ -9,6 +9,7 @@ import ScrollAnimationWrapper from "@/components/ScrollAnimationWrapper";
 import { siteConfig } from "@/lib/site";
 import { blogPosts } from "@/lib/blog-data";
 import { clientTestimonials } from "@/lib/client-data";
+import Link from "next/link";
 
 const services = [
   {
@@ -223,11 +224,11 @@ export default function Home() {
 
               <p className="mt-6 max-w-xl text-lg leading-8 text-gray-600">
                 Restrova delivers a complete ordering system: customer app
-                (Android/iOS), personalized website, and an admin app to
-                receive orders and analyze performance. We're not a marketplace.
+                (Android/iOS), personalized website, and an admin app to receive
+                orders and analyze performance. We're not a marketplace.
               </p>
 
-              <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+              <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
                 <a
                   href="#contact"
                   className="group inline-flex h-16 items-center justify-center rounded-full bg-gradient-to-r from-[#FF6B6B] to-[#F4A261] px-10 text-lg font-bold text-white shadow-2xl shadow-[#FF6B6B]/30 transition-all hover:shadow-2xl hover:shadow-[#F4A261]/40 hover:scale-110"
@@ -254,6 +255,13 @@ export default function Home() {
                 >
                   What we deliver
                 </a>
+
+                <Link
+                  href="/download/"
+                  className="inline-flex h-16 items-center justify-center rounded-full border-2 border-slate-900 bg-slate-900 px-10 text-lg font-bold text-white shadow-lg transition-all hover:scale-105 hover:bg-slate-800 hover:shadow-xl"
+                >
+                  Download Admin App
+                </Link>
               </div>
 
               <dl className="mt-12 grid grid-cols-2 gap-4 text-sm sm:grid-cols-3">
@@ -484,9 +492,9 @@ export default function Home() {
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Restaurants using branded ordering apps see measurable improvements
-              in sales, loyalty, and operational efficiency — powered by
-              real-time data and automation.
+              Restaurants using branded ordering apps see measurable
+              improvements in sales, loyalty, and operational efficiency —
+              powered by real-time data and automation.
             </p>
           </div>
 
@@ -713,9 +721,7 @@ export default function Home() {
                   </span>
                 </summary>
 
-                <p className="mt-4 text-base leading-7 text-gray-600">
-                  {f.a}
-                </p>
+                <p className="mt-4 text-base leading-7 text-gray-600">{f.a}</p>
               </details>
             ))}
           </div>
