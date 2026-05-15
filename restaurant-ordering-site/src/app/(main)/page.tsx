@@ -228,41 +228,49 @@ export default function Home() {
                 orders and analyze performance. We're not a marketplace.
               </p>
 
-              <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-                <a
-                  href="#contact"
-                  className="group inline-flex h-16 items-center justify-center rounded-full bg-gradient-to-r from-[#FF6B6B] to-[#F4A261] px-10 text-lg font-bold text-white shadow-2xl shadow-[#FF6B6B]/30 transition-all hover:shadow-2xl hover:shadow-[#F4A261]/40 hover:scale-110"
-                >
-                  <span>Book a free demo</span>
-                  <svg
-                    className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M13 7l5 5m0 0l-5 5m5-5H6"
-                    />
-                  </svg>
-                </a>
+<div className="mt-10 flex flex-col gap-4">
+  <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+    <a
+      href="#contact"
+      className="group inline-flex h-16 items-center justify-center rounded-full bg-gradient-to-r from-[#FF6B6B] to-[#F4A261] px-10 text-lg font-bold text-white shadow-2xl shadow-[#FF6B6B]/30 transition-all hover:shadow-2xl hover:shadow-[#F4A261]/40 hover:scale-110"
+    >
+      <span>Book a free demo</span>
+      <svg
+        className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M13 7l5 5m0 0l-5 5m5-5H6"
+        />
+      </svg>
+    </a>
 
-                <a
-                  href="#platform"
-                  className="inline-flex h-16 items-center justify-center rounded-full border-2 border-[#FF6B6B] bg-white px-10 text-lg font-bold text-[#FF6B6B] shadow-lg transition-all hover:bg-[#FF6B6B] hover:text-white hover:scale-105 hover:shadow-xl"
-                >
-                  What we deliver
-                </a>
+    <a
+      href="#platform"
+      className="inline-flex h-16 items-center justify-center rounded-full border-2 border-[#FF6B6B] bg-white px-10 text-lg font-bold text-[#FF6B6B] shadow-lg transition-all hover:bg-[#FF6B6B] hover:text-white hover:scale-105 hover:shadow-xl"
+    >
+      What we deliver
+    </a>
+  </div>
 
-                <Link
-                  href="/download/"
-                  className="inline-flex h-16 items-center justify-center rounded-full border-2 border-slate-900 bg-slate-900 px-10 text-lg font-bold text-white shadow-lg transition-all hover:scale-105 hover:bg-slate-800 hover:shadow-xl"
-                >
-                  Download Admin App
-                </Link>
-              </div>
+  <div>
+    <p className="mb-3 text-sm font-semibold text-slate-600">
+      Already using Restrova?
+    </p>
+
+    <Link
+      href="/download/"
+      className="inline-flex h-16 items-center justify-center rounded-full border-2 border-slate-900 bg-slate-900 px-10 text-lg font-bold text-white shadow-lg transition-all hover:scale-105 hover:bg-slate-800 hover:shadow-xl"
+    >
+      Download Admin App
+    </Link>
+  </div>
+</div>
 
               <dl className="mt-12 grid grid-cols-2 gap-4 text-sm sm:grid-cols-3">
                 {[
