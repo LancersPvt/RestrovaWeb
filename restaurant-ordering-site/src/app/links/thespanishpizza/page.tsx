@@ -10,18 +10,18 @@ import {
 } from "lucide-react";
 
 import Image from "next/image";
-import logo from "./logo.jpeg"; // <-- update if your filename differs
+import logo from "./logo.png"; // <-- update if your filename differs
 
 const LINKS = {
   // Replace these with real URLs:
-  playStore: "https://play.google.com/store/apps/details?id=com.restrova.ashandbeans",
-  appStore: "https://apps.apple.com/pk/app/ash-beans/id6759486466",
-  facebook: "https://facebook.com/YOUR_PAGE",
-  instagram: "https://instagram.com/ash_beans",
+  playStore: "https://play.google.com/store/apps/details?id=com.restrova.spanishpizza",
+  //appStore: "https://apps.apple.com/pk/app/ash-beans/id6759486466",
+  facebook: "https://www.facebook.com/thespanishpizzarangeroad",
+  instagram: "https://www.instagram.com/thespanishpizzarangeroad/",
 
   // NEW:
-  googleMaps: "https://share.google/LmWOjk85C8nZY3Oz9", // or your full Google Maps share link
-  whatsapp: "https://wa.me/923318226835", // use country code, no +, no spaces
+  googleMaps: "https://share.google/kMXM31hrGqrXGAmuG", // or your full Google Maps share link
+  whatsapp: "https://wa.me/923152222146", // use country code, no +, no spaces
 };
 
 function LinkButton({
@@ -58,7 +58,7 @@ function LinkButton({
   );
 }
 
-export default function AshAndBeansLinktree() {
+export default function theSpanishPizzaLinktree() {
   return (
     <main className="relative min-h-screen overflow-hidden">
       {/* Background */}
@@ -76,7 +76,7 @@ export default function AshAndBeansLinktree() {
             <div className="relative h-14 w-14 overflow-hidden rounded-2xl bg-white/10">
               <Image
                 src={logo}
-                alt="Ash & Beans logo"
+                alt="The Spanish Pizza logo"
                 fill
                 className="object-cover"
                 priority
@@ -85,7 +85,7 @@ export default function AshAndBeansLinktree() {
 
             <div>
               <h1 className="text-xl font-semibold tracking-tight">
-                Ash & Beans
+                The Spanish Pizza
               </h1>
               <p className="mt-1 text-sm text-white/65">
                 Official links • deals • updates
@@ -111,12 +111,12 @@ export default function AshAndBeansLinktree() {
             label="Google Play Store"
             sublabel="Exclusive deals and discounts"
           />
-          { <LinkButton
+          {/* { <LinkButton
             href={LINKS.appStore}
             icon={<Store className="h-5 w-5 text-white/80" />}
             label="Apple App Store"
             sublabel="Exclusive deals and discounts"
-          /> }
+          /> } */}
 
           <p className="mt-6 px-1 text-xs font-medium uppercase tracking-wider text-white/45">
             Follow us on social media
@@ -155,7 +155,7 @@ export default function AshAndBeansLinktree() {
 
         </div>
         <footer className="mt-auto pt-10 text-center text-xs text-white/45">
-          © {new Date().getFullYear()} Ash & Beans
+          © {new Date().getFullYear()} The Spanish Pizza
         </footer>
       </section>
     </main>
