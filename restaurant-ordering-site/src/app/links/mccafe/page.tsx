@@ -16,7 +16,7 @@ const LINKS = {
   // Replace these with real URLs:
   playStore: "https://play.google.com/store/apps/details?id=com.restrova.mccafe",
   //appStore: "https://apps.apple.com/pk/app/ash-beans/id6759486466",
-  facebook: "https://www.facebook.com/GkPizaaHut/",
+  facebook: "https://www.facebook.com/share/18cdVoqDtC/",
   //instagram: "https://www.instagram.com/thespanishpizzarangeroad/",
 
   // NEW:
