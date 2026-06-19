@@ -33,8 +33,8 @@ When you rely on third-party platforms, you're not just paying commission fees. 
 
 Building your own ordering platform with Restrova gives you complete control:
 
-### 1. Keep 100% of Your Revenue
-No commission fees means every order contributes directly to your bottom line. A restaurant doing $50,000 in monthly online orders could save $10,000-15,000 per month by going direct.
+### 1. Keep 99% of Your Revenue
+At just 1% commission, every order contributes significantly more to your bottom line. A restaurant doing $50,000 in monthly online orders could save $14,000+ per month by going direct.
 
 ### 2. Own Your Customer Data
 Build a database of customer preferences, order history, and contact information. Use this data to:
