@@ -87,19 +87,88 @@ function SectionTitle({ children }: { children: React.ReactNode }) {
   );
 }
 
+function BackgroundLines() {
+  return (
+    <svg
+      className="absolute inset-0 h-full w-full"
+      viewBox="0 0 1440 1800"
+      preserveAspectRatio="none"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      {[
+        80, 210, 340, 470, 600, 730, 860, 990, 1120, 1250, 1380, 1510, 1640,
+      ].map((y, i) => (
+        <path
+          key={i}
+          d={`
+            M -100 ${y}
+            C 80 ${y - 70}, 170 ${y + 90}, 340 ${y + 10}
+            S 620 ${y - 80}, 790 ${y + 20}
+            S 1080 ${y + 110}, 1260 ${y + 5}
+            S 1500 ${y - 90}, 1600 ${y + 30}
+          `}
+          stroke="#FF5B99"
+          strokeWidth="8"
+          strokeLinecap="round"
+          opacity="0.8"
+        />
+      ))}
+    </svg>
+  );
+}
+
+function FruitSticker({
+  emoji,
+  className,
+}: {
+  emoji: string;
+  className: string;
+}) {
+  return (
+    <div
+      className={`pointer-events-none absolute z-0 flex h-16 w-16 items-center justify-center rounded-full border-[3px] border-[#111111] bg-white/80 text-3xl shadow-[5px_5px_0_#111111] backdrop-blur-sm ${className}`}
+    >
+      <span className="translate-y-[1px]">{emoji}</span>
+    </div>
+  );
+}
+
+function SlashMark({ className }: { className: string }) {
+  return (
+    <div
+      className={`pointer-events-none absolute z-0 h-3 w-20 rotate-[-28deg] rounded-full border-2 border-[#111111] bg-[#FF3F8E] shadow-[3px_3px_0_#111111] ${className}`}
+    />
+  );
+}
+
 export default function FruitNinjaPakistanLinktree() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-[#FFC21A] text-[#111111]">
-      {/* Theme background */}
-      <div className="pointer-events-none absolute inset-0">
-        <div className="absolute inset-0 opacity-70 [background-image:url('data:image/svg+xml,%3Csvg%20width=%22800%22%20height=%22800%22%20viewBox=%220%200%20800%20800%22%20xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cg%20fill=%22none%22%20stroke=%22%23ff3f8e%22%20stroke-width=%229%22%20stroke-linecap=%22round%22%3E%3Cpath%20d=%22M-90%20107C54%20143%20142%200%20291%2054c105%2038%20100%20167%20228%20171%20141%204%20214-122%20372-65%22/%3E%3Cpath%20d=%22M-104%20200C47%20246%20137%2099%20286%20152c119%2042%20121%20170%20243%20176%20152%207%20231-116%20379-59%22/%3E%3Cpath%20d=%22M-90%20300C52%20344%20143%20206%20293%20254c115%2037%20119%20161%20244%20169%20152%2010%20229-101%20370-49%22/%3E%3Cpath%20d=%22M-82%20402C60%20443%20145%20312%20296%20359c112%2035%20114%20152%20243%20160%20141%209%20218-89%20358-41%22/%3E%3Cpath%20d=%22M-80%20505C59%20547%20153%20418%20294%20461c113%2035%20111%20146%20242%20157%20138%2012%20217-78%20351-34%22/%3E%3Cpath%20d=%22M-76%20608C73%20652%20151%20523%20298%20566c111%2032%20110%20137%20242%20148%20139%2012%20212-66%20341-28%22/%3E%3Cpath%20d=%22M-80%20710C64%20751%20157%20632%20298%20669c118%2031%20110%20129%20241%20139%20133%2010%20208-52%20335-20%22/%3E%3C/g%3E%3C/svg%3E')] [background-size:680px_680px]" />
+      {/* Background */}
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        <BackgroundLines />
 
-        <div className="absolute -left-20 top-28 h-44 w-44 rounded-full bg-[#FF3F8E]/60 blur-3xl" />
-        <div className="absolute -right-20 top-64 h-48 w-48 rounded-full bg-[#87D957]/70 blur-3xl" />
-        <div className="absolute bottom-10 left-1/2 h-52 w-52 -translate-x-1/2 rounded-full bg-[#FF8A1F]/70 blur-3xl" />
+        {/* soft glow blobs */}
+        <div className="absolute -left-16 top-24 h-56 w-56 rounded-full bg-[#FF8A1F]/35 blur-3xl" />
+        <div className="absolute right-0 top-40 h-52 w-52 rounded-full bg-[#87D957]/30 blur-3xl" />
+        <div className="absolute bottom-20 left-1/2 h-64 w-64 -translate-x-1/2 rounded-full bg-[#FF3F8E]/20 blur-3xl" />
+
+        {/* fruit stickers */}
+        <FruitSticker emoji="🍉" className="left-[5%] top-[10%] hidden md:flex" />
+        <FruitSticker emoji="🍇" className="right-[8%] top-[14%] hidden md:flex" />
+        <FruitSticker emoji="🥝" className="left-[8%] top-[55%] hidden md:flex" />
+        <FruitSticker emoji="🍊" className="right-[10%] top-[62%] hidden md:flex" />
+        <FruitSticker emoji="🍍" className="left-[14%] bottom-[10%] hidden md:flex" />
+        <FruitSticker emoji="🍓" className="right-[16%] bottom-[12%] hidden md:flex" />
+
+        {/* slash marks for fruit-ninja vibe */}
+        <SlashMark className="left-[12%] top-[34%] hidden md:block" />
+        <SlashMark className="right-[14%] top-[44%] hidden md:block rotate-[18deg]" />
+        <SlashMark className="left-[18%] bottom-[26%] hidden md:block rotate-[12deg]" />
       </div>
 
-      <section className="relative mx-auto flex min-h-screen max-w-xl flex-col px-5 py-10 sm:px-6 sm:py-12">
+      <section className="relative z-10 mx-auto flex min-h-screen max-w-xl flex-col px-5 py-10 sm:px-6 sm:py-12">
         {/* Main logo card */}
         <div className="relative rounded-[2rem] border-[5px] border-[#111111] bg-white p-4 shadow-[10px_10px_0_#111111]">
           <div className="rounded-[1.5rem] border-[3px] border-[#FF3F8E] bg-[#FFF8E8] p-5">
