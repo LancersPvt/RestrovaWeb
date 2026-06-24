@@ -444,13 +444,13 @@ export default function AshAndBeansLinktree() {
             <SectionTitle>Follow us</SectionTitle>
           </div>
 
-          <LinkButton
+          {/* <LinkButton
             href={LINKS.facebook}
             icon={<Facebook className="h-5 w-5" />}
             label="Facebook"
             sublabel="News, offers, and updates"
             variant="cream"
-          />
+          /> */}
 
           <LinkButton
             href={LINKS.instagram}
