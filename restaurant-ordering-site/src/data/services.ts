@@ -32,9 +32,9 @@ export const services: Record<string, ServiceData> = {
     "online-ordering": {
         name: "Online Ordering System",
         slug: "online-ordering",
-        tagline: "Get direct orders from your website and app — zero commission",
+        tagline: "Get direct orders from your website and app — only 1% commission",
         benefits: [
-            "Increase revenue with zero third-party commission",
+            "Increase revenue with only 1% platform commission",
             "Own your customer data and relationships",
             "Seamless ordering experience on mobile and web",
             "Higher average order values through smart upselling",
@@ -161,7 +161,7 @@ export const services: Record<string, ServiceData> = {
         tagline: "Your own branded restaurant app — iOS, Android, and web",
         benefits: [
             "Stand out with a branded app customers love",
-            "Own your ordering channel — no marketplace fees",
+            "Own your ordering channel — only 1% platform fee",
             "Push notifications for direct customer engagement",
             "Compete with large chains at a fraction of the cost",
             "Integrate loyalty, ordering, and CRM in one app",

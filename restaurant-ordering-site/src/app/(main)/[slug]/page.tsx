@@ -58,7 +58,7 @@ export async function generateMetadata({ params }: SlugPageProps): Promise<Metad
     
     // Improved descriptions with benefits, social proof, and CTA
     const benefitHighlight = service.slug === "online-ordering" 
-      ? "Zero commission on direct orders" 
+      ? "Only 1% commission on direct orders" 
       : service.slug === "pos" 
       ? "3x faster billing, 24/7 support" 
       : service.slug === "admin-app" 
