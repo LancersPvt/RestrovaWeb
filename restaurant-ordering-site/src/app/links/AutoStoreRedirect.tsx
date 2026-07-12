@@ -37,6 +37,17 @@ const STORE_LINKS: Record<string, StoreLinks> = {
   },
 };
 
+function getAndroidStoreIntent(playStoreUrl: string) {
+  const appId = new URL(playStoreUrl).searchParams.get("id");
+  if (!appId) return playStoreUrl;
+
+  return `intent://details?id=${encodeURIComponent(appId)}#Intent;scheme=market;package=com.android.vending;S.browser_fallback_url=${encodeURIComponent(playStoreUrl)};end`;
+}
+
+function getIOSStoreUrl(appStoreUrl: string) {
+  return appStoreUrl.replace(/^https?:\/\//, "itms-apps://");
+}
+
 export default function AutoStoreRedirect() {
   const pathname = usePathname();
 
@@ -49,7 +60,12 @@ export default function AutoStoreRedirect() {
     const isIOS =
       /iPhone|iPad|iPod/i.test(userAgent) ||
       (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
-    const storeUrl = isAndroid ? links.android : isIOS ? links.ios : undefined;
+    const storeUrl =
+      isAndroid && links.android
+        ? getAndroidStoreIntent(links.android)
+        : isIOS && links.ios
+          ? getIOSStoreUrl(links.ios)
+          : undefined;
 
     if (storeUrl) window.location.assign(storeUrl);
   }, [pathname]);
