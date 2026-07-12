@@ -1,3 +1,5 @@
+import AutoStoreRedirect from "./AutoStoreRedirect";
+
 export default function LinksLayout({
     children,
 }: {
@@ -12,6 +14,7 @@ export default function LinksLayout({
                 colorScheme: "dark",
             }}
         >
+            <AutoStoreRedirect />
             {children}
         </div>
     );

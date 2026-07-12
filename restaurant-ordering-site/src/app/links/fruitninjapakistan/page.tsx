@@ -29,6 +29,7 @@ const bodyFont = Fredoka({
 const LINKS = {
   playStore:
     "https://play.google.com/store/apps/details?id=com.restrova.fruitninjapakistan",
+  appStore: "https://apps.apple.com/pk/app/fruit-ninja-pakistan/id6783385415",
   facebook: "https://www.facebook.com/profile.php?id=61573797485797",
   instagram: "https://www.instagram.com/fruitninjapakistan/",
   googleMaps: "https://maps.app.goo.gl/3PMDGZdCtqUWESHQ7",
@@ -385,6 +386,14 @@ export default function FruitNinjaPakistanLinktree() {
             href={LINKS.playStore}
             icon={<Download className="h-5 w-5" />}
             label="Google Play Store"
+            sublabel="Exclusive deals and discounts"
+            variant="black"
+          />
+
+          <LinkButton
+            href={LINKS.appStore}
+            icon={<Download className="h-5 w-5" />}
+            label="App Store"
             sublabel="Exclusive deals and discounts"
             variant="black"
           />
