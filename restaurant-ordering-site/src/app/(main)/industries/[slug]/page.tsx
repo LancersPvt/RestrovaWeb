@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getIndustryBySlug, getAllIndustrySlugs } from "@/data/industryData";
-import { siteConfig } from "@/lib/site";
 
 interface IndustryPageProps {
     params: Promise<{ slug: string }>;
@@ -20,7 +19,7 @@ export async function generateMetadata({ params }: IndustryPageProps) {
     if (!industry) return { title: "Not Found" };
 
     return {
-        title: `${industry.name} Ordering System | Boost ${industry.roiMetric.value} Performance | Restrova`,
+        title: `${industry.name} Ordering System`,
         description: industry.subheadline,
     };
 }
@@ -59,7 +58,7 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
                     <div className="flex flex-col items-center justify-center text-center">
                         <p className="text-sm font-bold text-gray-400 uppercase tracking-widest">{industry.roiMetric.label}</p>
                         <p className="mt-2 text-6xl font-black text-[#FF6B6B]">{industry.roiMetric.value}</p>
-                        <p className="mt-2 text-gray-600">Expected improvement with Restrova's specialized industry module.</p>
+                        <p className="mt-2 text-gray-600">A restaurant workflow Restrova can tailor to this service model.</p>
                     </div>
                 </div>
             </section>
@@ -101,7 +100,7 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
                 <div className="mx-auto max-w-3xl px-6 text-white">
                     <h2 className="text-4xl font-extrabold">Ready to take your {industry.name.toLowerCase()} business to the next level?</h2>
                     <p className="mt-6 text-lg opacity-90 leading-relaxed">
-                        Join 500+ restaurants that have boosted their revenue and brand control with Restrova.
+                        See how a direct ordering experience and connected operations could fit your restaurant.
                     </p>
                     <div className="mt-10">
                         <Link href="/#contact" className="inline-flex h-14 items-center justify-center rounded-full bg-white px-10 text-lg font-bold text-[#FF6B6B] shadow-2xl hover:scale-110 transition-all">

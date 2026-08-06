@@ -17,8 +17,8 @@ export const blogPosts: BlogPost[] = [
         id: "1",
         slug: "why-direct-ordering-beats-third-party-marketplaces",
         title: "Why Direct Ordering Beats Third-Party Marketplaces",
-        excerpt: "Discover how owning your ordering platform can increase profit margins by up to 30% and build stronger customer relationships.",
-        content: `The restaurant industry has seen a massive shift toward online ordering, but many restaurants are paying a heavy price—literally. Third-party marketplaces like Foodpanda and UberEats charge commission rates between 20-30%, eating into already thin profit margins.
+        excerpt: "Explore how a direct ordering channel can strengthen margins, branding, and customer relationships.",
+        content: `Online ordering has become essential for restaurants, but each channel plays a different role. Marketplaces can help with discovery, while a direct ordering channel gives regular customers a branded way to return.
 
 ## The Hidden Costs of Marketplaces
 
@@ -33,8 +33,8 @@ When you rely on third-party platforms, you're not just paying commission fees. 
 
 Building your own ordering platform with Restrova gives you complete control:
 
-### 1. Keep 99% of Your Revenue
-At just 1% commission, every order contributes significantly more to your bottom line. A restaurant doing $50,000 in monthly online orders could save $14,000+ per month by going direct.
+### 1. Keep More Control Over Direct-Order Economics
+A direct channel gives you a clearer view of platform, payment, marketing, and delivery costs. Compare the full cost of each channel using your own order mix before deciding where to invest.
 
 ### 2. Own Your Customer Data
 Build a database of customer preferences, order history, and contact information. Use this data to:
@@ -50,10 +50,10 @@ From menu presentation to checkout flow, you decide how customers interact with 
 
 ## Real Results
 
-Restaurants that switch to direct ordering typically see:
-- **30% increase in profit margins** on online orders
-- **25% higher average order values** through upselling
-- **40% improvement in repeat customer rate**
+Restaurants use direct ordering to improve:
+- **Control over the ordering journey and channel costs**
+- **Average order value opportunities** through relevant add-ons
+- **Repeat ordering** through loyalty and direct communication
 
 ## Making the Switch
 
@@ -70,8 +70,8 @@ Third-party marketplaces served a purpose in getting restaurants online quickly.
 
 Ready to take control of your online ordering? Contact us to learn how Restrova can help you build a profitable direct ordering system.`,
         category: "Business Strategy",
-        author: "Sarah Ahmed",
-        authorExpertise: "Restaurant Operations Manager with 8 years in F&B technology and online ordering strategy.",
+        author: "Restrova Team",
+        authorExpertise: "Restaurant ordering, product, and operations guidance from the Restrova team.",
         date: "2026-02-01",
         readTime: "5 min read",
         image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&q=80",
@@ -93,7 +93,7 @@ The pandemic permanently changed customer expectations around hygiene and conven
 - **Digital receipts**: Email or SMS confirmations
 - **Contactless pickup**: Curbside and locker systems
 
-**Why it matters**: 78% of customers prefer contactless options even post-pandemic. It's not just about safety—it's about speed and convenience.
+**Why it matters**: Contactless options can make ordering and payment faster and more convenient when they fit the restaurant’s service model.
 
 ## 2. AI-Powered Personalization
 
@@ -105,7 +105,7 @@ Generic menus are dead. Modern apps use AI to personalize the experience.
 - **Time-based suggestions**: Breakfast items in morning, dinner at night
 - **Upsell intelligence**: Relevant add-ons based on cart contents
 
-**Real impact**: Restaurants using AI personalization see 35% higher average order values and 50% more repeat orders.
+**Practical value**: Relevant recommendations can make a large menu easier to navigate and surface useful add-ons without overwhelming the customer.
 
 ## 3. Loyalty & Rewards Integration
 
@@ -118,7 +118,7 @@ Loyalty programs drive repeat business, but they need to be seamless.
 - **Referral programs**: Reward customers for bringing friends
 - **Gamification**: Challenges and achievements
 
-**The numbers**: Customers in loyalty programs order 2.5x more frequently and spend 40% more per order.
+**The opportunity**: A well-designed loyalty program can give regular customers a clear reason to choose your direct channel again.
 
 ## 4. Real-Time Order Tracking
 
@@ -130,7 +130,7 @@ Transparency builds trust. Customers want to know exactly where their order is.
 - **Driver location**: Live map for delivery orders
 - **Push notifications**: Updates at each stage
 
-**Customer satisfaction**: Apps with real-time tracking see 60% fewer "where's my order?" calls and 4.5+ star ratings.
+**Customer value**: Clear status updates can reduce uncertainty and unnecessary “where is my order?” calls.
 
 ## 5. Flexible Ordering Options
 
@@ -143,7 +143,7 @@ One size doesn't fit all. Give customers choice in how they receive their food.
 - **Catering**: Large orders with advance scheduling
 - **Scheduled orders**: Order now, receive later
 
-**Business benefit**: Restaurants offering all options see 45% higher order volume than delivery-only competitors.
+**Business benefit**: Offering the right mix of delivery, pickup, dine-in, and scheduled ordering can serve more customer occasions.
 
 ## Conclusion
 
@@ -151,8 +151,8 @@ The restaurant app market is competitive, but the right features can set you apa
 
 At Restrova, we build all these features into our restaurant ordering platforms. Get in touch to see how we can create a custom app that drives real results for your business.`,
         category: "Technology",
-        author: "Ali Hassan",
-        authorExpertise: "Product Manager at Restrova with 6 years in restaurant technology and mobile app design.",
+        author: "Restrova Team",
+        authorExpertise: "Restaurant ordering, product, and operations guidance from the Restrova team.",
         date: "2026-01-28",
         readTime: "7 min read",
         image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop&q=80",
@@ -166,7 +166,7 @@ At Restrova, we build all these features into our restaurant ordering platforms.
 
 ## The Loyalty Crisis in Restaurants
 
-The average restaurant loses 70% of first-time customers. They order once and never come back. Why?
+Many first-time customers order once and never build a direct habit with the restaurant. Why?
 
 - **No relationship building**: Transaction ends at payment
 - **Easy to forget**: Hundreds of restaurant options available
@@ -183,7 +183,7 @@ Effective loyalty programs tap into fundamental human psychology:
 People value things more once they own them. When customers have points in your system, they're psychologically invested in your brand.
 
 ### 2. Progress Motivation
-Seeing progress toward a reward (8/10 coffees purchased) motivates completion. Visual progress bars increase redemption rates by 40%.
+Seeing progress toward a reward (8/10 coffees purchased) can motivate completion and make the value of returning easier to understand.
 
 ### 3. Variable Rewards
 Surprise bonuses (double points days, random free items) create excitement and anticipation, similar to slot machines.
@@ -216,7 +216,7 @@ Tiered programs (Bronze/Silver/Gold) give customers status to maintain, increasi
 **Automatic Enrollment**
 - Join on first order, no forms needed
 - Points start accumulating immediately
-- 90% participation vs. 30% with manual signup
+- Removes extra signup friction compared with a separate manual form
 
 **Social Login**
 - Sign up with Google/Facebook
@@ -238,17 +238,16 @@ Tiered programs (Bronze/Silver/Gold) give customers status to maintain, increasi
 **SMS Alerts**
 - "Your reward is ready to redeem!"
 - "Flash sale: 3x points for the next 2 hours"
-- High open rates (98%) drive immediate action
+- Reserve SMS for genuinely useful, consent-based, time-sensitive updates
 
-## Real-World Results
+## What to Measure
 
-**Case Study: Local Pizza Chain**
-- Implemented points-based loyalty program
-- Results after 6 months:
-  - 45% of customers enrolled
-  - Member order frequency: 3.2x higher
-  - Member average order value: 25% higher
-  - Overall revenue increase: 28%
+Measure the program against your own baseline instead of relying on generic benchmarks:
+- Enrollment and active-member rate
+- Reward redemption rate
+- Repeat-order frequency
+- Average order value for members and non-members
+- Cost of rewards compared with incremental gross profit
 
 ## Conclusion
 
@@ -256,8 +255,8 @@ Digital loyalty programs aren't just nice-to-have anymore—they're essential fo
 
 Ready to build a loyalty program that actually drives results? Contact Restrova to see how we integrate powerful rewards systems into our restaurant platforms.`,
         category: "Marketing",
-        author: "Fatima Khan",
-        authorExpertise: "Restaurant Owner and Customer Success Consultant with over 10 years experience in hospitality marketing.",
+        author: "Restrova Team",
+        authorExpertise: "Restaurant ordering, product, and operations guidance from the Restrova team.",
         date: "2026-01-25",
         readTime: "6 min read",
         image: "https://images.unsplash.com/photo-1556742111-a301076d9d18?w=800&h=600&fit=crop&q=80",

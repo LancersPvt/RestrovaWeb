@@ -1,125 +1,114 @@
+import type { Metadata } from "next";
 import Link from "next/link";
-import { siteConfig } from "@/lib/site";
+import { ArrowRight, Check, Search, Store } from "lucide-react";
 
-export const metadata = {
-    title: "Restrova vs. Marketplaces | Save 20-30% Commission",
-    description: "Compare Restrova with third-party marketplaces like Foodpanda and UberEats. See how much you can save with direct ordering.",
+export const metadata: Metadata = {
+  title: "Direct Ordering vs Restaurant Marketplaces",
+  description:
+    "See how restaurant marketplaces and Restrova serve different roles—and how a branded direct ordering channel can strengthen repeat business.",
 };
 
+const comparisons = [
+  {
+    feature: "Primary role",
+    marketplace: "Help new customers discover restaurants in a shared marketplace.",
+    restrova: "Give customers a direct, branded way to order from your restaurant.",
+  },
+  {
+    feature: "Brand experience",
+    marketplace: "Your menu appears inside the marketplace’s customer journey.",
+    restrova: "Your restaurant shapes the website, apps, offers, and ordering flow.",
+  },
+  {
+    feature: "Customer relationship",
+    marketplace: "The relationship is managed through the marketplace platform.",
+    restrova: "Your team manages the direct relationship and repeat-order experience.",
+  },
+  {
+    feature: "Menu and promotions",
+    marketplace: "Configured within the tools and rules offered by the marketplace.",
+    restrova: "Managed from your Restrova admin around your branches and campaigns.",
+  },
+  {
+    feature: "Restaurant operations",
+    marketplace: "Often adds a separate order channel to the team’s workflow.",
+    restrova: "Can connect ordering, menus, branches, delivery, and reporting workflows.",
+  },
+];
+
 export default function CompareMarketplacesPage() {
-    const comparisonPoints = [
-        {
-            feature: "Commission Fees",
-            marketplace: "20% - 35% per order",
-            restrova: "1% Commission (Fixed Monthly)",
-            winner: "restrova",
-        },
-        {
-            feature: "Customer Data",
-            marketplace: "Owned by Marketplace",
-            restrova: "100% Owned by You",
-            winner: "restrova",
-        },
-        {
-            feature: "Branding",
-            marketplace: "Listed among competitors",
-            restrova: "Your own branded App/Website",
-            winner: "restrova",
-        },
-        {
-            feature: "Payout Speed",
-            marketplace: "Weekly or Bi-weekly",
-            restrova: "Instant (Direct to your gateway)",
-            winner: "restrova",
-        },
-        {
-            feature: "Customer Loyalty",
-            marketplace: "Limited / Marketplace points",
-            restrova: "Custom integrated rewards",
-            winner: "restrova",
-        },
-    ];
+  return (
+    <main className="bg-[#fffaf4] text-[#171816]">
+      <section className="border-b border-black/5 bg-[#171816] py-16 text-white sm:py-24">
+        <div className="mx-auto max-w-6xl px-6 text-center">
+          <p className="text-sm font-black uppercase tracking-[.2em] text-[#ff8d75]">Use each channel for what it does best</p>
+          <h1 className="mx-auto mt-4 max-w-5xl text-balance text-4xl font-black leading-tight tracking-[-0.05em] sm:text-6xl">
+            Marketplaces help with discovery. Restrova helps with the next order.
+          </h1>
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/65">
+            You do not have to choose one or the other. Build a direct channel
+            for regular customers while keeping the discovery channels that work for your restaurant.
+          </p>
+          <Link href="/#contact" className="mt-8 inline-flex min-h-14 items-center gap-2 rounded-full bg-[#ff6247] px-7 font-black text-white transition hover:bg-[#ff735b]">
+            Plan my direct channel
+            <ArrowRight className="h-5 w-5" aria-hidden="true" />
+          </Link>
+        </div>
+      </section>
 
-    return (
-        <main className="bg-white">
-            {/* Hero */}
-            <section className="bg-gradient-to-br from-[#FFF5E6] via-[#F8E9D0] to-[#FFE5D9] py-16 sm:py-28">
-                <div className="mx-auto max-w-5xl px-6 text-center">
-                    <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
-                        Stop Paying <span className="text-[#FF6B6B]">30%</span> to Marketplaces
-                    </h1>
-                    <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-700 leading-relaxed">
-                        Take control of your restaurant's profits. Compare how Restrova helps you scale without the high commissions of third-party platforms.
+      <section className="py-16 sm:py-24">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="grid gap-5 md:grid-cols-2">
+            <article className="rounded-[1.75rem] border border-black/8 bg-white p-7">
+              <Search className="h-7 w-7 text-black/45" aria-hidden="true" />
+              <h2 className="mt-5 text-2xl font-black">Marketplaces are useful for reach.</h2>
+              <p className="mt-3 leading-7 text-black/60">They put your restaurant in front of people deciding where to order. That can make them a useful customer-acquisition channel.</p>
+            </article>
+            <article className="rounded-[1.75rem] bg-[#ffebe4] p-7">
+              <Store className="h-7 w-7 text-[#e45239]" aria-hidden="true" />
+              <h2 className="mt-5 text-2xl font-black">Restrova is built for the relationship.</h2>
+              <p className="mt-3 leading-7 text-black/60">It gives customers who already know your food a direct place to return, reorder, and stay connected to your brand.</p>
+            </article>
+          </div>
+
+          <div className="mt-10 overflow-hidden rounded-[2rem] border border-black/8 bg-white shadow-[0_20px_70px_rgba(30,24,18,.07)]">
+            <div className="hidden grid-cols-[.7fr_1fr_1fr] bg-[#f3ede4] text-xs font-black uppercase tracking-[.16em] text-black/45 md:grid">
+              <div className="p-5">What changes</div>
+              <div className="p-5">Marketplace channel</div>
+              <div className="p-5 text-[#e45239]">Restrova direct channel</div>
+            </div>
+            <div className="divide-y divide-black/8">
+              {comparisons.map((item) => (
+                <article key={item.feature} className="grid gap-4 p-6 md:grid-cols-[.7fr_1fr_1fr] md:gap-0 md:p-0">
+                  <h2 className="font-black md:p-6">{item.feature}</h2>
+                  <div className="md:border-l md:border-black/8 md:p-6">
+                    <p className="mb-1 text-xs font-black uppercase tracking-[.14em] text-black/35 md:hidden">Marketplace</p>
+                    <p className="leading-7 text-black/60">{item.marketplace}</p>
+                  </div>
+                  <div className="rounded-xl bg-[#fff7f3] p-4 md:rounded-none md:border-l md:border-black/8 md:p-6">
+                    <p className="mb-1 text-xs font-black uppercase tracking-[.14em] text-[#e45239] md:hidden">Restrova</p>
+                    <p className="flex gap-3 font-semibold leading-7">
+                      <Check className="mt-1 h-4 w-4 shrink-0 text-[#e45239]" aria-hidden="true" />
+                      {item.restrova}
                     </p>
-                </div>
-            </section>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Comparison Table */}
-            <section className="py-16 sm:py-24">
-                <div className="mx-auto max-w-5xl px-6">
-                    <div className="overflow-hidden rounded-3xl border border-gray-100 bg-white shadow-2xl">
-                        <table className="w-full text-left">
-                            <thead>
-                                <tr className="bg-gray-50">
-                                    <th className="px-6 py-6 text-sm font-bold uppercase tracking-wider text-gray-500">Feature</th>
-                                    <th className="px-6 py-6 text-sm font-bold uppercase tracking-wider text-gray-500">Marketplaces</th>
-                                    <th className="px-6 py-6 text-sm font-bold uppercase tracking-wider text-[#FF6B6B]">Restrova</th>
-                                </tr>
-                            </thead>
-                            <tbody className="divide-y divide-gray-100">
-                                {comparisonPoints.map((point) => (
-                                    <tr key={point.feature} className="hover:bg-gray-50 transition-colors">
-                                        <td className="px-6 py-6 font-semibold text-slate-900">{point.feature}</td>
-                                        <td className="px-6 py-6 text-gray-600">{point.marketplace}</td>
-                                        <td className="px-6 py-6 font-bold text-[#FF6B6B]">
-                                            <div className="flex items-center gap-2">
-                                                <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[#FF6B6B] text-[10px] text-white">✓</span>
-                                                {point.restrova}
-                                            </div>
-                                        </td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </section>
-
-            {/* ROI Math Section */}
-            <section className="bg-gradient-to-br from-[#FFF5E6] to-[#F8E9D0] py-16 sm:py-24 text-center">
-                <div className="mx-auto max-w-4xl px-6">
-                    <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl">The Real Math of Direct Ordering</h2>
-                    <p className="mt-6 text-lg text-gray-700">
-                        If your restaurant does $10,000/mo in online sales:
-                    </p>
-                    <div className="mt-10 grid gap-6 sm:grid-cols-2">
-                        <div className="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm">
-                            <p className="text-gray-500 font-medium">On Marketplaces (30%)</p>
-                            <p className="mt-2 text-4xl font-bold text-gray-900">$7,000</p>
-                            <p className="mt-1 text-sm text-red-500">You lose $3,000 in fees</p>
-                        </div>
-                        <div className="rounded-3xl border-2 border-[#FF6B6B] bg-white p-8 shadow-lg">
-                            <p className="text-[#FF6B6B] font-bold">On Restrova (Direct)</p>
-                            <p className="mt-2 text-4xl font-bold text-gray-900">$9,900</p>
-                            <p className="mt-1 text-sm text-green-600">You keep 99% of your revenue*</p>
-                        </div>
-                    </div>
-                    <p className="mt-8 text-sm text-gray-500">*Exclusive of payment gateway charges and fixed monthly tier.</p>
-                </div>
-            </section>
-
-            {/* CTA */}
-            <section className="bg-white py-16 sm:py-24 text-center">
-                <div className="mx-auto max-w-3xl px-6">
-                    <h2 className="text-3xl font-bold text-slate-900">Ready to boost your margins?</h2>
-                    <p className="mt-4 text-lg text-gray-600">Join 500+ restaurants that have taken back control of their brand.</p>
-                    <div className="mt-10 flex flex-wrap justify-center gap-4">
-                        <Link href="/#contact" className="inline-flex h-14 items-center justify-center rounded-full bg-gradient-to-r from-[#FF6B6B] to-[#F4A261] px-10 text-lg font-bold text-white shadow-xl hover:scale-105 transition-all">
-                            Switch to Restrova Today
-                        </Link>
-                    </div>
-                </div>
-            </section>
-        </main>
-    );
+      <section className="bg-[#f3ede4] py-16 text-center sm:py-20">
+        <div className="mx-auto max-w-3xl px-6">
+          <h2 className="text-3xl font-black tracking-[-0.03em] sm:text-4xl">Turn marketplace discovery into a direct relationship.</h2>
+          <p className="mt-4 text-lg leading-8 text-black/60">We’ll show you how Restrova can fit alongside your current order channels and give regulars a better way back.</p>
+          <Link href="/#contact" className="mt-7 inline-flex min-h-14 items-center gap-2 rounded-full bg-[#171816] px-7 font-black text-white transition hover:bg-[#e45239]">
+            Request a free walkthrough
+            <ArrowRight className="h-5 w-5" aria-hidden="true" />
+          </Link>
+        </div>
+      </section>
+    </main>
+  );
 }

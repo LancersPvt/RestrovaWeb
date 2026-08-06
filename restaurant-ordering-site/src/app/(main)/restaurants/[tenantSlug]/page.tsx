@@ -4,7 +4,7 @@ import Script from "next/script";
 import type { Metadata } from "next";
 
 import { getTenantBySlug, fetchActiveTenants } from "@/data/tenantsData";
-import { fetchBranches, fetchMenuCategories, Branch, Category } from "@/lib/restrovaApi";
+import { fetchBranches, fetchMenuCategories } from "@/lib/restrovaApi";
 import { siteConfig } from "@/lib/site";
 
 export const revalidate = 3600; // Revalidate cache every hour
@@ -31,16 +31,22 @@ export async function generateMetadata({ params }: RestaurantPageProps): Promise
     const tenant = await getTenantBySlug(tenantSlug);
 
     if (!tenant) {
-        return { title: "Restaurant Not Found | Restrova" };
+        return { title: "Restaurant Not Found" };
     }
 
-    const branches = await fetchBranches(tenant.id);
+    const [branches, categories] = await Promise.all([
+        fetchBranches(tenant.id),
+        fetchMenuCategories(tenant.id),
+    ]);
     const primaryBranch = branches[0];
     const cityText = primaryBranch ? `in ${primaryBranch.address.split(",").slice(-2, -1)[0]?.trim() || ""}` : "";
     const canonicalUrl = `${siteConfig.url}/restaurants/${tenantSlug}`;
+    const hasPublishedProfile = branches.some((branch) => branch.isActive) || categories.some((category) => category.isActive && category.items?.length);
 
-    const title = `${tenant.name} ${cityText} | Order Online | Restrova`;
-    const description = `Order online from ${tenant.name} ${cityText}. Check out their latest food menu, active branches, ratings, contact details, and timings. Fast delivery and premium service.`;
+    const title = `${tenant.name}${cityText ? ` ${cityText}` : ""} | Restaurant Profile`;
+    const description = hasPublishedProfile
+        ? `View published menu and branch information for ${tenant.name}${cityText ? ` ${cityText}` : ""} on Restrova.`
+        : `${tenant.name} is a Restrova restaurant partner. Its public menu and branch information are being prepared.`;
 
     return {
         title,
@@ -61,7 +67,7 @@ export async function generateMetadata({ params }: RestaurantPageProps): Promise
             description,
         },
         robots: {
-            index: true,
+            index: hasPublishedProfile,
             follow: true,
         },
     };
@@ -97,7 +103,7 @@ export default async function RestaurantPage({ params }: RestaurantPageProps) {
     const primaryBranch = activeBranches[0];
 
     // Cuisines extraction for metadata / page copy
-    const cuisineTags = activeCategories.slice(0, 3).map((c) => c.name).join(", ") || "Fast Food, Cafe";
+    const cuisineTags = activeCategories.slice(0, 3).map((c) => c.name).join(", ");
 
     /* ── JSON-LD: Restaurant Structured Data ── */
     const localBusinessJsonLd = activeBranches.map((branch, index) => ({
@@ -220,26 +226,31 @@ export default async function RestaurantPage({ params }: RestaurantPageProps) {
                                 <span className="inline-block rounded-full bg-gradient-to-r from-[#FF6B6B] to-[#F4A261] px-4 py-1.5 text-xs font-semibold text-white shadow-md">
                                     Restaurant Partner
                                 </span>
-                                <span className="flex items-center gap-1 text-sm font-medium text-amber-600">
-                                    ★ 5.0 (120+ ratings)
-                                </span>
                             </div>
                             <h1 className="mt-3 text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
                                 {tenant.name}
                             </h1>
                             <p className="mt-3 text-lg text-gray-600 font-medium max-w-2xl">
-                                Serving: <span className="text-slate-800">{cuisineTags}</span>
+                                {cuisineTags ? (
+                                    <>Published menu: <span className="text-slate-800">{cuisineTags}</span></>
+                                ) : (
+                                    "Restaurant partner profile"
+                                )}
                             </p>
                         </div>
 
                         {/* Fast Status Card */}
                         <div className="rounded-2xl border border-[#F4A261]/20 bg-white/80 p-5 shadow-lg backdrop-blur-md max-w-xs">
                             <div className="flex items-center gap-2">
-                                <span className="h-3 w-3 rounded-full bg-emerald-500 animate-pulse" />
-                                <span className="text-sm font-semibold text-emerald-600">Open & Accepting Orders</span>
+                                <span className={`h-3 w-3 rounded-full ${primaryBranch || activeCategories.length ? "bg-emerald-500" : "bg-amber-400"}`} />
+                                <span className="text-sm font-semibold text-slate-800">
+                                    {primaryBranch || activeCategories.length ? "Profile details available" : "Profile setup in progress"}
+                                </span>
                             </div>
                             <p className="mt-2 text-xs text-gray-500">
-                                Place your order directly and get super fast home delivery at your doorstep.
+                                {primaryBranch || activeCategories.length
+                                    ? "Browse the menu and branch information published by this restaurant."
+                                    : "This restaurant’s public menu and branch information will appear here once published."}
                             </p>
                             {primaryBranch && (
                                 <Link
@@ -261,7 +272,7 @@ export default async function RestaurantPage({ params }: RestaurantPageProps) {
                     <div className="border-b border-gray-200 bg-white rounded-2xl p-6 shadow-sm">
                         <h2 className="text-2xl font-bold text-slate-900 mb-6">Explore the Food Menu</h2>
                         {activeCategories.length === 0 ? (
-                            <p className="text-gray-500 italic">No menu items listed yet.</p>
+                            <p className="text-gray-500">This restaurant has not published a menu on this page yet.</p>
                         ) : (
                             <div className="space-y-12">
                                 {activeCategories.map((category) => (
@@ -293,17 +304,11 @@ export default async function RestaurantPage({ params }: RestaurantPageProps) {
                                                                 {formatPrice(item.basePrice)}
                                                             </span>
                                                         </div>
-                                                        <p className="mt-2 text-xs text-gray-500 line-clamp-2 leading-relaxed">
-                                                            {item.description || "Freshly prepared with pure, quality ingredients."}
-                                                        </p>
-                                                    </div>
-                                                    <div className="mt-4 flex items-center justify-between">
-                                                        <span className="text-[10px] font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">
-                                                            ✓ Fresh
-                                                        </span>
-                                                        <button className="text-xs font-bold text-[#FF6B6B] opacity-0 group-hover:opacity-100 transition-opacity hover:underline">
-                                                            Order Online →
-                                                        </button>
+                                                        {item.description ? (
+                                                            <p className="mt-2 text-xs text-gray-500 line-clamp-2 leading-relaxed">
+                                                                {item.description}
+                                                            </p>
+                                                        ) : null}
                                                     </div>
                                                 </div>
                                             ))}
@@ -321,7 +326,7 @@ export default async function RestaurantPage({ params }: RestaurantPageProps) {
                     <div className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
                         <h3 className="text-xl font-bold text-slate-900 mb-6">Our Branches</h3>
                         {activeBranches.length === 0 ? (
-                            <p className="text-gray-500 italic">No locations found.</p>
+                            <p className="text-gray-500">Branch details have not been published on this page yet.</p>
                         ) : (
                             <div className="space-y-6">
                                 {activeBranches.map((branch) => (
@@ -371,9 +376,9 @@ export default async function RestaurantPage({ params }: RestaurantPageProps) {
 
                     {/* Quick Call to Action Card */}
                     <div className="rounded-2xl bg-gradient-to-br from-[#FF6B6B] to-[#F4A261] p-6 text-white text-center shadow-lg">
-                        <h4 className="text-xl font-bold">Have Any Questions?</h4>
+                        <h3 className="text-xl font-bold">Need help with this profile?</h3>
                         <p className="mt-2 text-xs text-white/80 leading-relaxed">
-                            Our partner support and restaurant assistance lines are available to resolve order discrepancies instantly.
+                            Contact Restrova if you need help with the information shown on this page.
                         </p>
                         <Link
                             href="/contact"

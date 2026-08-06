@@ -4,7 +4,7 @@ import Script from "next/script";
 import type { Metadata } from "next";
 
 import { getTenantBySlug, fetchActiveTenants } from "@/data/tenantsData";
-import { fetchBranches, fetchMenuCategories, Branch, Category } from "@/lib/restrovaApi";
+import { fetchBranches, fetchMenuCategories } from "@/lib/restrovaApi";
 import { siteConfig } from "@/lib/site";
 
 export const revalidate = 3600; // Revalidate cache every hour
@@ -55,19 +55,19 @@ export async function generateMetadata({ params }: BranchPageProps): Promise<Met
     const tenant = await getTenantBySlug(tenantSlug);
 
     if (!tenant) {
-        return { title: "Restaurant Not Found | Restrova" };
+        return { title: "Restaurant Not Found" };
     }
 
     const branches = await fetchBranches(tenant.id);
     const branch = branches.filter((b) => b.isActive).find((b) => cleanSlug(b.name) === branchSlug);
 
     if (!branch) {
-        return { title: `Branch Not Found | ${tenant.name} | Restrova` };
+        return { title: `Branch Not Found | ${tenant.name}` };
     }
 
     const canonicalUrl = `${siteConfig.url}/restaurants/${tenantSlug}/${branchSlug}`;
-    const title = `${tenant.name} (${branch.name}) | Menu & Contact Details | Restrova`;
-    const description = `Order online from ${tenant.name} at ${branch.name}, located at ${branch.address}. View food menu, phone number (${branch.phone}), open timings, and get driving directions.`;
+    const title = `${tenant.name} (${branch.name}) | Menu & Branch Details`;
+    const description = `View published menu, contact information, operating hours, and directions for ${tenant.name} at ${branch.name}, ${branch.address}.`;
 
     return {
         title,
@@ -127,7 +127,7 @@ export default async function BranchPage({ params }: BranchPageProps) {
     }
 
     const activeCategories = categories.filter((c) => c.isActive && c.items && c.items.length > 0);
-    const cuisineTags = activeCategories.slice(0, 3).map((c) => c.name).join(", ") || "Fast Food, Cafe";
+    const cuisineTags = activeCategories.slice(0, 3).map((c) => c.name).join(", ") || "Restaurant";
 
     /* ── JSON-LD: Restaurant Structured Data ── */
     const restaurantJsonLd = {
@@ -273,11 +273,11 @@ export default async function BranchPage({ params }: BranchPageProps) {
                         {/* Status Card */}
                         <div className="rounded-2xl border border-[#F4A261]/20 bg-white/80 p-5 shadow-lg backdrop-blur-md max-w-xs">
                             <div className="flex items-center gap-2">
-                                <span className="h-3 w-3 rounded-full bg-emerald-500 animate-pulse" />
-                                <span className="text-sm font-semibold text-emerald-600">Open for Ordering</span>
+                                <span className="h-3 w-3 rounded-full bg-[#F4A261]" />
+                                <span className="text-sm font-semibold text-slate-800">Branch information</span>
                             </div>
                             <p className="mt-2 text-xs text-gray-500">
-                                Order from the {branch.name} outlet for instant delivery or pick-up.
+                                Contact the {branch.name} outlet to confirm current ordering and delivery availability.
                             </p>
                             <Link
                                 href={`tel:${branch.phone}`}
@@ -297,7 +297,7 @@ export default async function BranchPage({ params }: BranchPageProps) {
                     <div className="border-b border-gray-200 bg-white rounded-2xl p-6 shadow-sm">
                         <h2 className="text-2xl font-bold text-slate-900 mb-6">Menu Available at {branch.name}</h2>
                         {activeCategories.length === 0 ? (
-                            <p className="text-gray-500 italic">No menu items listed yet.</p>
+                            <p className="text-gray-500">This branch has not published a menu on this page yet.</p>
                         ) : (
                             <div className="space-y-10">
                                 {activeCategories.map((category) => (
@@ -324,9 +324,11 @@ export default async function BranchPage({ params }: BranchPageProps) {
                                                                 {formatPrice(item.basePrice)}
                                                             </span>
                                                         </div>
-                                                        <p className="mt-1.5 text-xs text-gray-500 line-clamp-2 leading-relaxed">
-                                                            {item.description || "Made using premium ingredients, freshly cooked."}
-                                                        </p>
+                                                        {item.description ? (
+                                                            <p className="mt-1.5 text-xs text-gray-500 line-clamp-2 leading-relaxed">
+                                                                {item.description}
+                                                            </p>
+                                                        ) : null}
                                                     </div>
                                                 </div>
                                             ))}

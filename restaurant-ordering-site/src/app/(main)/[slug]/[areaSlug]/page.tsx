@@ -146,7 +146,7 @@ export async function generateMetadata({ params }: ListingPageProps): Promise<Me
     const parsed = parseAreaSlug(areaSlug);
 
     if (!parsed) {
-        return { title: "Page Not Found | Restrova" };
+        return { title: "Page Not Found" };
     }
 
     const cityLabel = formatSlugLabel(slug);
@@ -399,7 +399,7 @@ export default async function ListingPage({ params }: ListingPageProps) {
                         <span className="text-4xl" role="img" aria-label="empty">🍽️</span>
                         <h3 className="mt-4 text-lg font-bold text-slate-800">No Ordering Partners Found</h3>
                         <p className="mt-2 text-sm text-gray-500 max-w-md mx-auto">
-                            We currently don't have active partner branches serving this combination. Check back soon as new outlets onboard!
+                            We currently don&apos;t have active partner branches serving this combination. Check back soon as new outlets onboard!
                         </p>
                         <Link
                             href="/"
@@ -416,7 +416,7 @@ export default async function ListingPage({ params }: ListingPageProps) {
                             </h2>
                         </div>
 
-                        {matchedRestaurants.map(({ tenant, branch, categories, seoText, specials }, index) => {
+                        {matchedRestaurants.map(({ tenant, branch, categories, seoText, specials }) => {
                             const tags = categories.slice(0, 3).map((c) => c.name).join(" · ");
                             return (
                                 <article

@@ -95,6 +95,7 @@ export default function ContactForm() {
       <div className="grid gap-5 sm:grid-cols-2">
         <Field
           id="contact-name"
+          name="name"
           label="Your name"
           value={form.name}
           onChange={(value) => setForm((current) => ({ ...current, name: value }))}
@@ -104,6 +105,7 @@ export default function ContactForm() {
         />
         <Field
           id="contact-restaurant"
+          name="restaurant"
           label="Restaurant name"
           value={form.restaurant}
           onChange={(value) =>
@@ -118,6 +120,7 @@ export default function ContactForm() {
       <div className="grid gap-5 sm:grid-cols-2">
         <Field
           id="contact-phone"
+          name="phone"
           label="Phone / WhatsApp"
           value={form.phone}
           onChange={(value) => setForm((current) => ({ ...current, phone: value }))}
@@ -129,6 +132,7 @@ export default function ContactForm() {
         />
         <Field
           id="contact-city"
+          name="city"
           label="City"
           value={form.city}
           onChange={(value) => setForm((current) => ({ ...current, city: value }))}
@@ -143,6 +147,7 @@ export default function ContactForm() {
         </label>
         <select
           id="contact-interest"
+          name="interest"
           value={form.message}
           onChange={(event) =>
             setForm((current) => ({ ...current, message: event.target.value }))
@@ -181,6 +186,7 @@ export default function ContactForm() {
 
 function Field({
   id,
+  name,
   label,
   value,
   onChange,
@@ -191,6 +197,7 @@ function Field({
   required,
 }: {
   id: string;
+  name: string;
   label: string;
   value: string;
   onChange: (value: string) => void;
@@ -207,6 +214,7 @@ function Field({
       </label>
       <input
         id={id}
+        name={name}
         className="mt-2 h-13 w-full rounded-xl border border-black/15 bg-white px-4 text-sm font-medium text-[#171816] outline-none transition placeholder:text-black/30 focus:border-[#ff6247] focus:ring-4 focus:ring-[#ff6247]/10"
         value={value}
         onChange={(event) => onChange(event.target.value)}

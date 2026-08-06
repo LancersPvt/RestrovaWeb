@@ -17,14 +17,16 @@ export default function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-black/8 bg-[#fffaf4]/95 backdrop-blur-xl">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
         <Link href="/" className="flex shrink-0 items-center" aria-label="Restrova home">
-          <Image
-            src="/logo.png"
-            alt="Restrova"
-            width={220}
-            height={86}
-            className="h-16 w-40 object-contain mix-blend-multiply sm:w-44"
-            priority
-          />
+          <span className="flex h-16 w-32 items-center justify-center overflow-hidden sm:w-36">
+            <Image
+              src="/logo.png"
+              alt="Restrova"
+              width={220}
+              height={220}
+              className="h-16 w-32 scale-[2.25] object-contain mix-blend-multiply sm:w-36"
+              priority
+            />
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-7 text-sm font-bold text-black/65 lg:flex" aria-label="Main navigation">

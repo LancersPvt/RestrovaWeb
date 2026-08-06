@@ -11,7 +11,7 @@ export const services: Record<string, ServiceData> = {
     pos: {
         name: "Restaurant POS System",
         slug: "pos",
-        tagline: "The fastest, most reliable POS built for restaurants",
+        tagline: "A fast, restaurant-focused POS for day-to-day operations",
         benefits: [
             "Faster billing and reduced wait times",
             "Cloud-based access from anywhere",
@@ -32,9 +32,9 @@ export const services: Record<string, ServiceData> = {
     "online-ordering": {
         name: "Online Ordering System",
         slug: "online-ordering",
-        tagline: "Get direct orders from your website and app — only 1% commission",
+        tagline: "Give customers a direct way to order from your website and app",
         benefits: [
-            "Increase revenue with only 1% platform commission",
+            "Build a direct ordering channel around your brand",
             "Own your customer data and relationships",
             "Seamless ordering experience on mobile and web",
             "Higher average order values through smart upselling",
@@ -56,7 +56,7 @@ export const services: Record<string, ServiceData> = {
         tagline: "Eliminate paper tickets — speed up your kitchen with digital KDS",
         benefits: [
             "Reduce order errors and miscommunication",
-            "Speed up kitchen throughput by up to 40%",
+            "Make kitchen order flow easier to monitor",
             "Real-time order status visibility for staff",
             "Prioritize rush orders instantly",
             "Reduce food waste with precise order timing",
@@ -74,7 +74,7 @@ export const services: Record<string, ServiceData> = {
     inventory: {
         name: "Inventory Management System",
         slug: "inventory",
-        tagline: "Never run out of stock — manage your restaurant inventory smarter",
+        tagline: "Manage restaurant inventory with clearer stock visibility",
         benefits: [
             "Reduce food waste and over-ordering costs",
             "Automated low-stock alerts",
@@ -139,7 +139,7 @@ export const services: Record<string, ServiceData> = {
         slug: "loyalty",
         tagline: "Turn first-time visitors into lifelong regulars",
         benefits: [
-            "Increase repeat order frequency by 2–3x",
+            "Give customers more reasons to order again",
             "Higher average order values from members",
             "Reduce customer acquisition costs",
             "Build a loyal base that markets for you",
@@ -161,7 +161,7 @@ export const services: Record<string, ServiceData> = {
         tagline: "Your own branded restaurant app — iOS, Android, and web",
         benefits: [
             "Stand out with a branded app customers love",
-            "Own your ordering channel — only 1% platform fee",
+            "Own your branded ordering experience",
             "Push notifications for direct customer engagement",
             "Compete with large chains at a fraction of the cost",
             "Integrate loyalty, ordering, and CRM in one app",

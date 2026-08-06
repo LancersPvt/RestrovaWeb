@@ -53,21 +53,20 @@ export async function generateMetadata({ params }: SlugPageProps): Promise<Metad
     const countryLabel = getCountryLabel(parsed.country);
     const canonicalUrl = `${siteConfig.url}/${slug}`;
 
-    // Enhanced SEO titles with benefit-driven keywords
-    const title = `${service.name} for Restaurants in ${cityLabel} | Boost Sales 30% | Restrova`;
+    const title = `${service.name} for Restaurants in ${cityLabel}`;
     
     // Improved descriptions with benefits, social proof, and CTA
     const benefitHighlight = service.slug === "online-ordering" 
-      ? "Only 1% commission on direct orders" 
+      ? "Branded direct ordering for web and mobile"
       : service.slug === "pos" 
-      ? "3x faster billing, 24/7 support" 
+      ? "Restaurant billing and operational workflows"
       : service.slug === "admin-app" 
       ? "Real-time order management on mobile" 
       : service.slug === "analytics" 
-      ? "AI-powered insights to grow revenue"
+      ? "Practical restaurant performance insights"
       : "Complete restaurant management";
     
-    const description = `Best ${service.name.toLowerCase()} for restaurants in ${cityLabel}, ${countryLabel}. ${benefitHighlight}. Used by 500+ restaurants. Free 15-min demo. 48-hour setup.`;
+    const description = `${service.name} for restaurants in ${cityLabel}, ${countryLabel}. ${benefitHighlight}. Request a free walkthrough and a setup recommendation tailored to your restaurant.`;
 
     return {
         title,
@@ -122,12 +121,6 @@ export default async function SlugPage({ params }: SlugPageProps) {
         applicationCategory: "BusinessApplication",
         operatingSystem: "Web, iOS, Android",
         description: `${service.name} for restaurants in ${cityLabel}, ${countryLabel}`,
-        offers: {
-            "@type": "Offer",
-            price: "0",
-            priceCurrency: "USD",
-            description: "Contact for pricing",
-        },
         provider: {
             "@type": "Organization",
             name: "Restrova",
@@ -161,7 +154,6 @@ export default async function SlugPage({ params }: SlugPageProps) {
             name: cityLabel,
         },
         serviceType: service.name,
-        telephone: "+92-300-0000000",
         email: siteConfig.contact.email,
     };
 
@@ -362,7 +354,7 @@ export default async function SlugPage({ params }: SlugPageProps) {
                             {
                                 icon: "⚡",
                                 title: "Fast Onboarding",
-                                desc: "Up and running in 24–48 hours with full support from our team",
+                                desc: "A guided rollout plan based on your menu, branches, apps, and integrations",
                             },
                             {
                                 icon: "🔒",
@@ -432,7 +424,7 @@ export default async function SlugPage({ params }: SlugPageProps) {
                         </Link>
                     </div>
                     <p className="mt-6 text-sm text-white/70">
-                        No commitment required · Free setup assistance · Local support in {countryLabel}
+                        No-pressure demo · Restaurant-specific scope · Support discussed upfront
                     </p>
                 </div>
             </section>

@@ -1,11 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
 import Script from "next/script";
 import {
   ArrowRight,
   BarChart3,
   Check,
-  ChevronRight,
   ClipboardCheck,
   Globe2,
   HeartHandshake,
@@ -84,14 +82,7 @@ const platformFeatures = [
   },
 ];
 
-const restaurants = [
-  { ...clientTestimonials[0], slug: "yum-zone" },
-  { ...clientTestimonials[1], slug: "mirch-n-spicy" },
-  { ...clientTestimonials[2], slug: "wok-n-grill" },
-  { ...clientTestimonials[3], slug: "ash-and-beans" },
-  { ...clientTestimonials[4], slug: undefined },
-  { ...clientTestimonials[5], slug: "the-spanish-pizza" },
-];
+const restaurantPartners = clientTestimonials;
 
 const faqs = [
   {
@@ -166,9 +157,9 @@ export default function Home() {
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <a
                 href="#contact"
-                className="group inline-flex min-h-14 items-center justify-center gap-2 rounded-full bg-[#ff6247] px-7 text-base font-bold text-white shadow-[0_14px_40px_rgba(255,98,71,.3)] transition hover:-translate-y-0.5 hover:bg-[#ff735b] focus:outline-none focus:ring-4 focus:ring-[#ff6247]/30"
+                className="group inline-flex min-h-14 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-[#ff6247] px-7 text-base font-bold text-white shadow-[0_14px_40px_rgba(255,98,71,.3)] transition hover:-translate-y-0.5 hover:bg-[#ff735b] focus:outline-none focus:ring-4 focus:ring-[#ff6247]/30"
               >
-                Get a free restaurant demo
+                Book my free demo
                 <ArrowRight
                   className="h-5 w-5 transition-transform group-hover:translate-x-1"
                   aria-hidden="true"
@@ -178,7 +169,7 @@ export default function Home() {
                 href="#restaurants"
                 className="inline-flex min-h-14 items-center justify-center rounded-full border border-white/20 bg-white/5 px-7 text-base font-bold text-white transition hover:bg-white/10 focus:outline-none focus:ring-4 focus:ring-white/10"
               >
-                See restaurants on Restrova
+                See restaurant partners
               </a>
             </div>
 
@@ -218,13 +209,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-b border-black/5 bg-white py-9" aria-label="Restaurant clients">
+      <section id="restaurants" className="scroll-mt-24 border-b border-black/5 bg-white py-9" aria-label="Restaurant partners">
         <div className="mx-auto max-w-7xl px-6">
           <p className="text-center text-xs font-bold uppercase tracking-[.22em] text-black/45">
-            Built with restaurants that are growing direct
+            Restaurant teams building direct with Restrova
           </p>
           <div className="mt-7 grid grid-cols-3 items-center gap-5 sm:grid-cols-6">
-            {restaurants.map((restaurant) => (
+            {restaurantPartners.map((restaurant) => (
               <div
                 key={restaurant.id}
                 className="flex h-16 items-center justify-center rounded-xl border border-black/5 bg-[#fffaf4] p-3"
@@ -370,53 +361,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="restaurants" className="scroll-mt-24 border-y border-black/5 bg-[#fffaf4] py-20 sm:py-28">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
-            <div className="max-w-2xl">
-              <p className="text-sm font-black uppercase tracking-[.2em] text-[#e45239]">
-                Real restaurants on Restrova
-              </p>
-              <h2 className="mt-4 text-4xl font-black tracking-[-0.04em] sm:text-5xl">
-                See the product in the wild.
-              </h2>
-            </div>
-            <p className="max-w-md leading-7 text-black/60">
-              Explore branded ordering experiences for different restaurant
-              formats, menus, and customer needs.
-            </p>
-          </div>
-
-          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {restaurants.filter((restaurant) => restaurant.slug).map((restaurant) => (
-              <Link
-                key={restaurant.id}
-                href={`/restaurants/${restaurant.slug!}`}
-                className="group flex items-center gap-5 rounded-2xl border border-black/8 bg-white p-5 transition hover:-translate-y-0.5 hover:border-[#ff6247]/40 hover:shadow-xl"
-              >
-                <span className="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-[#fffaf4] p-2">
-                  <Image
-                    src={restaurant.logo}
-                    alt={`${restaurant.company} logo`}
-                    width={64}
-                    height={64}
-                    className="h-full w-full object-contain"
-                  />
-                </span>
-                <span className="min-w-0 flex-1">
-                  <span className="block truncate font-black">{restaurant.company}</span>
-                  <span className="mt-1 block text-sm text-black/50">{restaurant.industry}</span>
-                  <span className="mt-2 inline-flex items-center gap-1 text-sm font-bold text-[#e45239]">
-                    View ordering site
-                    <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
-                  </span>
-                </span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section id="how" className="scroll-mt-24 bg-white py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-14 lg:grid-cols-[.8fr_1.2fr]">
@@ -532,14 +476,6 @@ export default function Home() {
         </div>
       </section>
 
-      <a
-        href="#contact"
-        className="fixed bottom-5 right-5 z-40 inline-flex h-14 items-center gap-2 rounded-full bg-[#ff6247] px-5 text-sm font-black text-white shadow-[0_16px_45px_rgba(23,24,22,.25)] transition hover:-translate-y-0.5 hover:bg-[#e45239] focus:outline-none focus:ring-4 focus:ring-[#ff6247]/30 lg:hidden"
-        aria-label="Request a free Restrova demo"
-      >
-        <MessageCircle className="h-5 w-5" aria-hidden="true" />
-        Free demo
-      </a>
     </main>
   );
 }

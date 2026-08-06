@@ -32,8 +32,8 @@ export const industries: Record<string, Industry> = {
             "Loyalty rewards for repeat customers"
         ],
         roiMetric: {
-            label: "Average Delivery Speed Increase",
-            value: "25%"
+            label: "Designed for",
+            value: "Complex menus"
         }
     },
     "fast-food-qsr": {
@@ -55,8 +55,8 @@ export const industries: Record<string, Industry> = {
             "Multi-branch inventory sync"
         ],
         roiMetric: {
-            label: "Average Order Turnover Increase",
-            value: "40%"
+            label: "Workflow focus",
+            value: "Peak hours"
         }
     },
     "fine-dining": {
@@ -78,8 +78,8 @@ export const industries: Record<string, Industry> = {
             "White-glove customer support"
         ],
         roiMetric: {
-            label: "Average VIP Retention Boost",
-            value: "35%"
+            label: "Experience focus",
+            value: "Guest-first"
         }
     },
     "bakery-cafe": {
@@ -101,8 +101,8 @@ export const industries: Record<string, Industry> = {
             "Custom branding for seasonal items"
         ],
         roiMetric: {
-            label: "Pre-order Volume Increase",
-            value: "50%"
+            label: "Ordering focus",
+            value: "Pre-orders"
         }
     }
 };
