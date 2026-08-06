@@ -14,7 +14,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Restrova — Innovative Restaurant Technology Solutions",
+    default: "Restrova | Direct Online Ordering for Restaurants",
     template: "%s | Restrova",
   },
   description: siteConfig.description,
@@ -26,13 +26,22 @@ export const metadata: Metadata = {
     type: "website",
     url: siteConfig.url,
     siteName: "Restrova",
-    title: "Restrova — Innovative Restaurant Technology Solutions",
+    title: "Your restaurant. Your customers. Your growth.",
     description: siteConfig.description,
+    images: [
+      {
+        url: "/og.png",
+        width: 1728,
+        height: 912,
+        alt: "Restrova — direct ordering, built around your restaurant brand",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Restrova — Innovative Restaurant Technology Solutions",
+    title: "Your restaurant. Your customers. Your growth.",
     description: siteConfig.description,
+    images: ["/og.png"],
   },
   robots: {
     index: true,
@@ -48,7 +57,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#FF6B6B",
+  themeColor: "#171816",
   colorScheme: "light",
 };
 

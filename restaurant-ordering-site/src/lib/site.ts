@@ -15,7 +15,7 @@ function getSiteUrl() {
 export const siteConfig = {
   name: "Restrova",
   description:
-    "Restrova builds customized restaurant ordering systems: customer apps (Android/iOS), admin order management, POS/RMS modules, and analytics — built for your brand, not a marketplace.",
+    "Restrova helps restaurants grow direct orders with a branded ordering website, customer apps, and simple tools for managing orders, menus, and customer relationships.",
   url: getSiteUrl(),
   contact: {
     email: "support@lancers.dev",

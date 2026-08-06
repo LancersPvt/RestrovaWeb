@@ -1,187 +1,219 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 type Status = "idle" | "submitting" | "success" | "error";
+
+const interests = [
+  "I want to grow direct online orders",
+  "I need a branded website and app",
+  "I need better order management",
+  "I want to discuss a complete restaurant system",
+];
 
 export default function ContactForm() {
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState<string | null>(null);
-
   const [form, setForm] = useState({
     name: "",
     restaurant: "",
-    city: "",
-    email: "",
     phone: "",
-    message: "",
+    city: "",
+    message: interests[0],
   });
 
-  const canSubmit = useMemo(() => {
-    const hasContact = form.email.trim() || form.phone.trim();
-    return Boolean(form.name.trim() && hasContact && form.message.trim());
-  }, [form]);
+  const canSubmit = useMemo(
+    () => Boolean(form.name.trim() && form.restaurant.trim() && form.phone.trim()),
+    [form],
+  );
 
-  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
+  async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
     setError(null);
 
     if (!canSubmit) {
-      setError("Please fill name, message, and at least email or phone.");
+      setError("Please add your name, restaurant, and phone number.");
       return;
     }
 
     setStatus("submitting");
 
     try {
-      const res = await fetch("/api/contact", {
+      const response = await fetch("/api/contact", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(form),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...form, email: "" }),
       });
 
-      if (!res.ok) {
-        const data = (await res.json().catch(() => null)) as
+      if (!response.ok) {
+        const data = (await response.json().catch(() => null)) as
           | { error?: string }
           | null;
-        throw new Error(data?.error ?? "Failed to submit.");
+        throw new Error(data?.error ?? "We could not send your request.");
       }
 
       setStatus("success");
       setForm({
         name: "",
         restaurant: "",
-        city: "",
-        email: "",
         phone: "",
-        message: "",
+        city: "",
+        message: interests[0],
       });
     } catch (err) {
       setStatus("error");
-      setError(err instanceof Error ? err.message : "Something went wrong.");
+      setError(
+        err instanceof Error
+          ? err.message
+          : "Something went wrong. Please try again.",
+      );
     }
+  }
+
+  if (status === "success") {
+    return (
+      <div className="rounded-2xl border border-emerald-200 bg-emerald-50 p-7 text-center" role="status">
+        <CheckCircle2 className="mx-auto h-10 w-10 text-emerald-600" aria-hidden="true" />
+        <p className="mt-4 text-xl font-black text-emerald-950">Your demo request is in.</p>
+        <p className="mt-2 text-sm leading-6 text-emerald-800">
+          Thanks—we’ll contact you shortly to arrange a convenient time.
+        </p>
+        <button
+          type="button"
+          onClick={() => setStatus("idle")}
+          className="mt-5 text-sm font-bold text-emerald-800 underline underline-offset-4"
+        >
+          Send another request
+        </button>
+      </div>
+    );
   }
 
   return (
     <form onSubmit={onSubmit} className="space-y-5">
       <div className="grid gap-5 sm:grid-cols-2">
         <Field
+          id="contact-name"
           label="Your name"
           value={form.name}
-          onChange={(v) => setForm((s) => ({ ...s, name: v }))}
-          placeholder="e.g. Ali"
+          onChange={(value) => setForm((current) => ({ ...current, name: value }))}
+          placeholder="Ali Khan"
+          autoComplete="name"
           required
         />
         <Field
+          id="contact-restaurant"
           label="Restaurant name"
           value={form.restaurant}
-          onChange={(v) => setForm((s) => ({ ...s, restaurant: v }))}
-          placeholder="e.g. Cheezious"
+          onChange={(value) =>
+            setForm((current) => ({ ...current, restaurant: value }))
+          }
+          placeholder="Your restaurant"
+          autoComplete="organization"
+          required
         />
       </div>
 
       <div className="grid gap-5 sm:grid-cols-2">
         <Field
-          label="City"
-          value={form.city}
-          onChange={(v) => setForm((s) => ({ ...s, city: v }))}
-          placeholder="e.g. Islamabad"
+          id="contact-phone"
+          label="Phone / WhatsApp"
+          value={form.phone}
+          onChange={(value) => setForm((current) => ({ ...current, phone: value }))}
+          placeholder="+92 3XX XXXXXXX"
+          autoComplete="tel"
+          type="tel"
+          inputMode="tel"
+          required
         />
         <Field
-          label="Email"
-          type="email"
-          value={form.email}
-          onChange={(v) => setForm((s) => ({ ...s, email: v }))}
-          placeholder="you@company.com"
+          id="contact-city"
+          label="City"
+          value={form.city}
+          onChange={(value) => setForm((current) => ({ ...current, city: value }))}
+          placeholder="Lahore"
+          autoComplete="address-level2"
         />
       </div>
 
-      <Field
-        label="Phone / WhatsApp"
-        value={form.phone}
-        onChange={(v) => setForm((s) => ({ ...s, phone: v }))}
-        placeholder="+92..."
-      />
-
       <div>
-        <label className="text-sm font-semibold text-gray-700">Message</label>
-        <textarea
-          className="mt-2 h-32 w-full resize-none rounded-2xl border-2 border-gray-200 bg-white px-5 py-3 text-sm text-gray-900 outline-none transition focus:border-purple-500 focus:ring-4 focus:ring-purple-100"
+        <label htmlFor="contact-interest" className="text-sm font-bold text-black/70">
+          What would help most?
+        </label>
+        <select
+          id="contact-interest"
           value={form.message}
-          onChange={(e) => setForm((s) => ({ ...s, message: e.target.value }))}
-          placeholder="Tell us what you need (online ordering, apps, POS workflows, analytics, etc.)"
-          required
-        />
+          onChange={(event) =>
+            setForm((current) => ({ ...current, message: event.target.value }))
+          }
+          className="mt-2 h-13 w-full rounded-xl border border-black/15 bg-white px-4 text-sm font-medium text-[#171816] outline-none transition focus:border-[#ff6247] focus:ring-4 focus:ring-[#ff6247]/10"
+        >
+          {interests.map((interest) => (
+            <option key={interest}>{interest}</option>
+          ))}
+        </select>
       </div>
 
       {error ? (
-        <div className="rounded-xl bg-red-50 border border-red-200 p-4">
-          <p className="text-sm text-red-700 font-medium" role="alert">
-            {error}
-          </p>
-        </div>
-      ) : null}
-
-      {status === "success" ? (
-        <div className="rounded-xl bg-emerald-50 border border-emerald-200 p-4">
-          <p className="text-sm text-emerald-700 font-medium" role="status">
-            ✓ Thanks! Your message has been sent. We'll contact you shortly.
-          </p>
-        </div>
+        <p className="rounded-xl border border-red-200 bg-red-50 p-4 text-sm font-semibold text-red-700" role="alert">
+          {error}
+        </p>
       ) : null}
 
       <button
         type="submit"
         disabled={!canSubmit || status === "submitting"}
-        className="inline-flex h-12 w-full items-center justify-center rounded-full bg-gradient-to-r from-purple-600 to-blue-500 px-8 text-sm font-semibold text-white shadow-lg shadow-purple-500/30 transition-all hover:shadow-xl hover:shadow-purple-500/40 hover:scale-[1.02] disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:scale-100"
+        className="group inline-flex min-h-14 w-full items-center justify-center gap-2 rounded-full bg-[#ff6247] px-7 text-base font-black text-white shadow-[0_12px_30px_rgba(255,98,71,.24)] transition hover:-translate-y-0.5 hover:bg-[#e45239] focus:outline-none focus:ring-4 focus:ring-[#ff6247]/20 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:translate-y-0"
       >
-        {status === "submitting" ? (
-          <span className="flex items-center gap-2">
-            <svg className="animate-spin h-4 w-4" fill="none" viewBox="0 0 24 24">
-              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-              <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-            </svg>
-            Sending…
-          </span>
-        ) : (
-          "Send message"
-        )}
+        {status === "submitting" ? "Sending your request…" : "Request my free demo"}
+        {status !== "submitting" ? (
+          <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+        ) : null}
       </button>
 
-      <p className="text-xs text-gray-500 text-center">
-        By submitting this form you agree that we may contact you about your
-        request.
+      <p className="text-center text-xs leading-5 text-black/45">
+        No pressure. We’ll only use your details to follow up about your request.
       </p>
     </form>
   );
 }
 
 function Field({
+  id,
   label,
   value,
   onChange,
   placeholder,
   type = "text",
+  inputMode,
+  autoComplete,
   required,
 }: {
+  id: string;
   label: string;
   value: string;
   onChange: (value: string) => void;
   placeholder?: string;
   type?: string;
+  inputMode?: "tel";
+  autoComplete?: string;
   required?: boolean;
 }) {
   return (
     <div>
-      <label className="text-sm font-semibold text-gray-700">{label}</label>
+      <label htmlFor={id} className="text-sm font-bold text-black/70">
+        {label}
+      </label>
       <input
-        className="mt-2 h-12 w-full rounded-full border-2 border-gray-200 bg-white px-5 text-sm text-gray-900 outline-none transition focus:border-purple-500 focus:ring-4 focus:ring-purple-100"
+        id={id}
+        className="mt-2 h-13 w-full rounded-xl border border-black/15 bg-white px-4 text-sm font-medium text-[#171816] outline-none transition placeholder:text-black/30 focus:border-[#ff6247] focus:ring-4 focus:ring-[#ff6247]/10"
         value={value}
-        onChange={(e) => onChange(e.target.value)}
+        onChange={(event) => onChange(event.target.value)}
         placeholder={placeholder}
         type={type}
+        inputMode={inputMode}
+        autoComplete={autoComplete}
         required={required}
       />
     </div>
