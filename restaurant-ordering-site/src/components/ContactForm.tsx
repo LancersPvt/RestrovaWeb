@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { siteConfig } from "@/lib/site";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -27,6 +28,19 @@ export default function ContactForm() {
     () => Boolean(form.name.trim() && form.restaurant.trim() && form.phone.trim()),
     [form],
   );
+
+  const fallbackEmailHref = useMemo(() => {
+    const subject = `Demo request from ${form.restaurant || form.name || "a restaurant"}`;
+    const body = [
+      `Name: ${form.name}`,
+      `Restaurant: ${form.restaurant}`,
+      `Phone / WhatsApp: ${form.phone}`,
+      `City: ${form.city}`,
+      `Interested in: ${form.message}`,
+    ].join("\n");
+
+    return `mailto:${siteConfig.contact.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  }, [form]);
 
   async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -161,9 +175,15 @@ export default function ContactForm() {
       </div>
 
       {error ? (
-        <p className="rounded-xl border border-red-200 bg-red-50 p-4 text-sm font-semibold text-red-700" role="alert">
-          {error}
-        </p>
+        <div className="rounded-xl border border-red-200 bg-red-50 p-4 text-sm text-red-800" role="alert">
+          <p className="font-semibold">{error}</p>
+          <a
+            href={fallbackEmailHref}
+            className="mt-2 inline-flex font-black underline underline-offset-4 transition hover:text-red-950"
+          >
+            Email {siteConfig.contact.email} instead
+          </a>
+        </div>
       ) : null}
 
       <button
