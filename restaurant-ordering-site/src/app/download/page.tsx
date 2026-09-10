@@ -45,9 +45,12 @@ const downloads = [
 ] as const;
 
 const features = [
-  "Receive and manage online orders",
-  "Update preparation and order statuses",
-  "Keep restaurant operations in one place",
+  "Online and POS order management",
+  "Inventory and stock control",
+  "Live rider tracking and assignment",
+  "Rider stats and payment reconciliation",
+  "Loyalty, discounts, and coupons",
+  "Custom admin colors and fonts",
 ];
 
 export default function DownloadPage() {
@@ -163,11 +166,14 @@ export default function DownloadPage() {
             </div>
 
             <div className="rounded-[1.5rem] border border-slate-200/80 bg-white/80 p-6 sm:p-7">
-              <p className="text-sm font-bold text-slate-950">Everything you need to stay on top of service</p>
-              <ul className="mt-4 grid gap-3">
+              <p className="text-sm font-bold text-slate-950">Your restaurant control center</p>
+              <p className="mt-2 text-sm leading-6 text-slate-600">
+                Run the daily operation from orders and stock to riders and repeat customers.
+              </p>
+              <ul className="mt-5 grid gap-3 sm:grid-cols-2">
                 {features.map((feature) => (
-                  <li key={feature} className="flex items-center gap-3 text-sm text-slate-600">
-                    <CheckCircle2 className="h-4 w-4 shrink-0 text-[#E0695F]" />
+                  <li key={feature} className="flex items-start gap-3 text-sm leading-5 text-slate-600">
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#E0695F]" />
                     {feature}
                   </li>
                 ))}

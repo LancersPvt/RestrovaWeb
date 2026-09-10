@@ -2,19 +2,21 @@ import Image from "next/image";
 import Script from "next/script";
 import {
   ArrowRight,
-  BarChart3,
+  Bike,
+  Boxes,
   Check,
+  CircleDollarSign,
   ClipboardCheck,
-  Globe2,
+  Gift,
   HeartHandshake,
   LayoutDashboard,
+  MapPin,
   MessageCircle,
+  Palette,
   Repeat2,
   Rocket,
-  ShoppingBag,
-  Smartphone,
+  ShoppingCart,
   Store,
-  Users,
   Zap,
 } from "lucide-react";
 
@@ -37,49 +39,93 @@ const outcomes = [
   },
   {
     icon: LayoutDashboard,
-    title: "Run orders from one place",
+    title: "Run the whole operation from one place",
     description:
-      "Manage orders, menus, branches, delivery, and performance without stitching together disconnected tools.",
+      "Connect orders, POS, stock, riders, promotions, and performance without stitching together disconnected tools.",
   },
 ];
 
 const platformFeatures = [
   {
-    icon: Globe2,
-    title: "Branded ordering website",
+    icon: ShoppingCart,
+    eyebrow: "Sell everywhere",
+    title: "Online, app, and POS ordering",
     description:
-      "A mobile-first menu and checkout designed around your brand, locations, delivery zones, and offers.",
+      "Let guests order through your branded website or apps, while staff can place walk-in and phone orders through POS.",
+    features: [
+      "Branded web and mobile ordering",
+      "POS ordering for your team",
+      "Menus, modifiers, and availability",
+    ],
   },
   {
-    icon: Smartphone,
-    title: "Customer mobile apps",
+    icon: MapPin,
+    eyebrow: "Deliver with confidence",
+    title: "Live tracking for everyone",
     description:
-      "Your own Android and iOS experience for convenient ordering, reordering, rewards, and notifications.",
+      "Give admins a live view of active riders and let customers follow their delivery without calling the restaurant.",
+    features: [
+      "Live rider tracking for admins",
+      "Customer delivery tracking",
+      "Rider assignment and statuses",
+    ],
   },
   {
-    icon: ClipboardCheck,
-    title: "Order management",
+    icon: Bike,
+    eyebrow: "Improve every shift",
+    title: "Rider stats and settlements",
     description:
-      "Receive, confirm, and update orders from a clear admin experience your team can learn quickly.",
+      "Understand rider performance and reconcile rider payments from one clear operational record.",
+    features: [
+      "Rider performance statistics",
+      "Rider payment reconciliation",
+      "Delivery operations reporting",
+    ],
   },
   {
-    icon: ShoppingBag,
-    title: "Menus and branches",
+    icon: Boxes,
+    eyebrow: "Protect availability",
+    title: "Inventory and stock control",
     description:
-      "Control items, modifiers, availability, pricing, and branch-specific menus from one place.",
+      "Keep a closer eye on ingredients and item stock so teams can act before availability becomes a customer problem.",
+    features: [
+      "Inventory and stock management",
+      "Item availability controls",
+      "Branch-ready menu operations",
+    ],
   },
   {
-    icon: Users,
-    title: "Customer engagement",
+    icon: Gift,
+    eyebrow: "Turn buyers into regulars",
+    title: "Loyalty, discounts, and coupons",
     description:
-      "Build direct relationships with loyalty, coupons, targeted offers, and a better repeat-order path.",
+      "Give customers a reason to order direct again with rewards and flexible promotions built into their journey.",
+    features: [
+      "Customer loyalty program",
+      "Discounts and coupon codes",
+      "Offers and repeat-order paths",
+    ],
   },
   {
-    icon: BarChart3,
-    title: "Insights and integrations",
+    icon: Palette,
+    eyebrow: "Make it feel familiar",
+    title: "An admin app made for your brand",
     description:
-      "See what is selling and connect the workflows that matter, from delivery operations to POS and reporting.",
+      "Tailor admin colors and fonts while keeping orders, preparation, and daily restaurant controls easy to navigate.",
+    features: [
+      "Custom admin colors and fonts",
+      "Order and preparation statuses",
+      "One connected control center",
+    ],
   },
+];
+
+const connectedJourney = [
+  { label: "Order", detail: "Website, app, or POS", icon: ShoppingCart },
+  { label: "Prepare", detail: "Orders and live stock", icon: ClipboardCheck },
+  { label: "Deliver", detail: "Riders tracked live", icon: Bike },
+  { label: "Settle", detail: "Payments reconciled", icon: CircleDollarSign },
+  { label: "Retain", detail: "Loyalty and offers", icon: Repeat2 },
 ];
 
 const restaurantPartners = clientTestimonials;
@@ -149,9 +195,9 @@ export default function Home() {
             </h1>
 
             <p className="mt-7 max-w-xl text-lg leading-8 text-white/70 sm:text-xl">
-              Restrova gives your restaurant a branded ordering website,
-              customer apps, and one simple admin hub—so you can sell directly,
-              serve faster, and build customer relationships that belong to you.
+              Restrova brings web, app, and POS orders into one admin hub—with
+              stock control, live rider tracking, loyalty, and promotions built
+              in to help you sell directly and serve with confidence.
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -202,7 +248,7 @@ export default function Home() {
                 One platform
               </p>
               <p className="mt-1 text-sm font-bold sm:text-base">
-                Orders, menus and insights—together.
+                Orders, stock, riders, and growth—together.
               </p>
             </div>
           </div>
@@ -335,28 +381,88 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-3xl text-center">
             <p className="text-sm font-black uppercase tracking-[.2em] text-[#e45239]">
-              Your restaurant, connected
+              From checkout to the next order
             </p>
             <h2 className="mt-4 text-balance text-4xl font-black tracking-[-0.04em] sm:text-5xl">
-              Everything needed to turn direct orders into a habit.
+              One connected system for service, delivery, and growth.
             </h2>
             <p className="mt-5 text-lg leading-8 text-black/60">
-              Start with the ordering experience you need now, then add the
-              operational tools that fit how your restaurant grows.
+              Take orders from every channel, keep stock visible, run your own
+              riders, and bring customers back without switching between
+              disconnected tools.
             </p>
           </div>
 
-          <div className="mt-14 grid gap-px overflow-hidden rounded-[2rem] border border-black/8 bg-black/8 md:grid-cols-2 lg:grid-cols-3">
+          <ol className="mt-12 grid overflow-hidden rounded-[1.75rem] bg-[#171816] text-white shadow-xl sm:grid-cols-5">
+            {connectedJourney.map((step, index) => {
+              const Icon = step.icon;
+
+              return (
+                <li
+                  key={step.label}
+                  className="relative flex items-center gap-4 border-white/10 px-5 py-6 not-last:border-b sm:block sm:border-b-0 sm:not-last:border-r"
+                >
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/10 text-[#ff9b84]">
+                    <Icon className="h-5 w-5" aria-hidden="true" />
+                  </div>
+                  <div className="sm:mt-5">
+                    <p className="text-xs font-black uppercase tracking-[.18em] text-white/35">
+                      0{index + 1}
+                    </p>
+                    <p className="mt-1 font-black">{step.label}</p>
+                    <p className="mt-1 text-xs leading-5 text-white/50">{step.detail}</p>
+                  </div>
+                </li>
+              );
+            })}
+          </ol>
+
+          <div className="mt-6 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {platformFeatures.map((feature) => {
               const Icon = feature.icon;
+
               return (
-                <article key={feature.title} className="bg-[#fffaf4] p-8 transition hover:bg-white sm:p-9">
-                  <Icon className="h-7 w-7 text-[#e45239]" strokeWidth={2.2} aria-hidden="true" />
+                <article
+                  key={feature.title}
+                  className="group flex flex-col rounded-[1.75rem] border border-black/8 bg-[#fffaf4] p-7 transition duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-[0_20px_55px_rgba(30,24,18,.09)] sm:p-8"
+                >
+                  <div className="flex items-start justify-between gap-4">
+                    <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#ffebe4] text-[#e45239] transition group-hover:bg-[#ff6247] group-hover:text-white">
+                      <Icon className="h-6 w-6" strokeWidth={2.2} aria-hidden="true" />
+                    </span>
+                    <p className="pt-1 text-right text-[.68rem] font-black uppercase tracking-[.17em] text-[#e45239]">
+                      {feature.eyebrow}
+                    </p>
+                  </div>
                   <h3 className="mt-7 text-xl font-black tracking-tight">{feature.title}</h3>
                   <p className="mt-3 leading-7 text-black/60">{feature.description}</p>
+                  <ul className="mt-6 space-y-3 border-t border-black/8 pt-5 text-sm font-semibold text-black/65">
+                    {feature.features.map((item) => (
+                      <li key={item} className="flex items-start gap-3">
+                        <Check className="mt-0.5 h-4 w-4 shrink-0 text-[#e45239]" aria-hidden="true" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
                 </article>
               );
             })}
+          </div>
+
+          <div className="mt-8 flex flex-col items-start justify-between gap-6 rounded-[1.75rem] bg-[#fff0e9] p-7 sm:flex-row sm:items-center sm:p-9">
+            <div>
+              <p className="text-xl font-black tracking-tight">Choose what your restaurant needs now.</p>
+              <p className="mt-2 max-w-2xl leading-7 text-black/60">
+                We can shape the ordering, operations, rider, and retention tools around your branches and workflow.
+              </p>
+            </div>
+            <a
+              href="#contact"
+              className="group inline-flex min-h-12 shrink-0 items-center gap-2 rounded-full bg-[#171816] px-6 text-sm font-black text-white transition hover:bg-[#e45239]"
+            >
+              See Restrova in action
+              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+            </a>
           </div>
         </div>
       </section>

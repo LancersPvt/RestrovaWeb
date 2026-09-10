@@ -15,7 +15,7 @@ function getSiteUrl() {
 export const siteConfig = {
   name: "Restrova",
   description:
-    "Restrova helps restaurants grow direct orders with a branded ordering website, customer apps, and simple tools for managing orders, menus, and customer relationships.",
+    "Restrova helps restaurants grow direct orders with branded web, app, and POS ordering plus inventory, live rider tracking, loyalty, promotions, and connected operations.",
   url: getSiteUrl(),
   contact: {
     email: "support@lancers.dev",

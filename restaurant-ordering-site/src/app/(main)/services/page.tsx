@@ -1,43 +1,64 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Check } from "lucide-react";
+import {
+  ArrowRight,
+  Bike,
+  Boxes,
+  Check,
+  Gift,
+  Globe2,
+  MapPin,
+  Palette,
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Restaurant Ordering and Operations Services",
   description:
-    "Explore Restrova’s branded online ordering, customer apps, order management, POS integrations, delivery tools, analytics, and loyalty capabilities.",
+    "Explore Restrova’s online and POS ordering, inventory, live rider tracking, rider reconciliation, loyalty, discounts, and branded admin tools.",
 };
 
 const services = [
   {
-    title: "Branded online ordering",
-    description: "Give customers a fast, direct way to order from your restaurant on any device.",
-    points: ["Delivery, pickup, and dine-in flows", "Menus, modifiers, deals, and checkout", "Your brand, domain, and customer journey"],
+    icon: Globe2,
+    value: "Open more ways to order",
+    title: "Direct and POS ordering",
+    description: "Serve customers online, in your apps, and at the counter through a connected ordering setup.",
+    points: ["Branded website and customer apps", "POS ordering for walk-ins and phone orders", "Delivery, pickup, and dine-in flows"],
   },
   {
-    title: "Customer apps",
-    description: "Create an Android and iOS experience that makes returning and reordering easy.",
-    points: ["Customer accounts and saved addresses", "Order history and quick reorder", "Offers, loyalty, and notifications"],
+    icon: Boxes,
+    value: "Reduce stock surprises",
+    title: "Inventory and menu control",
+    description: "Manage what is available and keep your menu operation aligned with the stock your team can actually sell.",
+    points: ["Inventory and stock management", "Items, modifiers, pricing, and availability", "Branch-specific menu operations"],
   },
   {
-    title: "Order management",
-    description: "Help your team receive and move orders through service with less friction.",
-    points: ["Accept and update order statuses", "Preparation-time and kitchen workflows", "Clear screens built for busy shifts"],
+    icon: MapPin,
+    value: "Fewer where-is-my-order calls",
+    title: "Live rider tracking",
+    description: "Keep dispatch informed and give customers the visibility they expect once an order leaves the restaurant.",
+    points: ["Live rider tracking for admins", "Customer-facing delivery tracking", "Rider assignment and status updates"],
   },
   {
-    title: "POS and restaurant integrations",
-    description: "Connect the systems your restaurant already depends on where the workflow requires it.",
-    points: ["Sales and operational workflows", "Inventory and reporting modules", "Custom integrations based on scope"],
+    icon: Bike,
+    value: "Run a more accountable fleet",
+    title: "Rider performance and payments",
+    description: "Turn delivery activity into a clear record your team can review, compare, and settle.",
+    points: ["Rider performance statistics", "Rider payment reconciliation", "Delivery operations reporting"],
   },
   {
-    title: "Delivery operations",
-    description: "Coordinate zones, dispatch, riders, and customer updates from a connected workflow.",
-    points: ["Delivery zones and fees", "Rider assignment and status updates", "Operational delivery reporting"],
+    icon: Gift,
+    value: "Give regulars a reason to return",
+    title: "Loyalty and promotions",
+    description: "Build repeat ordering into your direct channel with rewards and flexible ways to run an offer.",
+    points: ["Customer loyalty program", "Discounts and coupon codes", "Offers, rewards, and quick reorder"],
   },
   {
-    title: "Analytics and engagement",
-    description: "Use direct-order data to understand demand and give customers a reason to return.",
-    points: ["Sales and menu insights", "Branch and repeat-order trends", "Coupons, rewards, and campaigns"],
+    icon: Palette,
+    value: "Make the workspace your own",
+    title: "Branded admin operations",
+    description: "Give your team a clear control center that can match your brand and support the rhythm of busy service.",
+    points: ["Custom admin colors and fonts", "Order and preparation statuses", "Orders, branches, riders, and reporting"],
   },
 ];
 
@@ -51,8 +72,8 @@ export default function ServicesPage() {
             Build the direct ordering system your restaurant actually needs.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-white/65">
-            Start with a branded ordering experience, then connect the apps,
-            operations, delivery, and customer tools that fit your team.
+            Take orders online and at POS, manage stock, coordinate riders, and
+            bring customers back—all through a setup shaped around your team.
           </p>
           <Link href="/#contact" className="mt-8 inline-flex min-h-14 items-center gap-2 rounded-full bg-[#ff6247] px-7 font-black text-white transition hover:bg-[#ff735b]">
             Plan my Restrova setup
@@ -65,7 +86,11 @@ export default function ServicesPage() {
         <div className="mx-auto grid max-w-7xl gap-5 px-6 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
             <article key={service.title} className="rounded-[1.75rem] border border-black/8 bg-white p-7 shadow-[0_16px_50px_rgba(30,24,18,.06)]">
-              <h2 className="text-xl font-black tracking-tight">{service.title}</h2>
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#ffebe4] text-[#e45239]">
+                <service.icon className="h-6 w-6" aria-hidden="true" />
+              </div>
+              <p className="mt-7 text-xs font-black uppercase tracking-[.17em] text-[#e45239]">{service.value}</p>
+              <h2 className="mt-2 text-xl font-black tracking-tight">{service.title}</h2>
               <p className="mt-3 leading-7 text-black/60">{service.description}</p>
               <ul className="mt-6 space-y-3 border-t border-black/8 pt-5 text-sm text-black/60">
                 {service.points.map((point) => (
