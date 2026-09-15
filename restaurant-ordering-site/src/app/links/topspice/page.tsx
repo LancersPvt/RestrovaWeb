@@ -1,12 +1,13 @@
 import {
   ArrowRight,
   Download,
-  Flame,
   Smartphone,
   Sparkles,
 } from "lucide-react";
 
+import Image from "next/image";
 import { Bungee, Fredoka } from "next/font/google";
+import logo from "./logo.webp";
 
 const headingFont = Bungee({
   subsets: ["latin"],
@@ -140,8 +141,15 @@ export default function TopSpiceLinktree() {
 
           <div className="relative overflow-hidden rounded-[27px] border border-white/[0.08] bg-[#090605] px-5 pb-7 pt-7 sm:px-8 sm:pb-9 sm:pt-9">
             <div className="flex items-start justify-between gap-4">
-              <div className="grid h-20 w-20 shrink-0 place-items-center rounded-[26px] border border-[#E4472F]/45 bg-gradient-to-br from-[#E4472F]/20 to-[#F3B53F]/10 shadow-[0_16px_40px_rgba(228,71,47,0.14)] sm:h-24 sm:w-24">
-                <Flame className="h-10 w-10 text-[#F3B53F] sm:h-12 sm:w-12" strokeWidth={1.8} />
+              <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-[26px] border border-[#E4472F]/45 bg-white/[0.04] shadow-[0_16px_40px_rgba(228,71,47,0.14)] sm:h-24 sm:w-24">
+                <Image
+                  src={logo}
+                  alt="Top Spice Pakistan logo"
+                  fill
+                  priority
+                  sizes="(min-width: 640px) 96px, 80px"
+                  className="object-contain p-2"
+                />
               </div>
 
               <div className="mt-1 flex items-center gap-2 rounded-full border border-[#E4472F]/35 bg-[#E4472F]/10 px-3 py-1.5 text-[9px] font-bold uppercase tracking-[0.18em] text-[#F48A78] sm:text-[10px]">
