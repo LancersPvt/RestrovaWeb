@@ -60,14 +60,26 @@ export default function ContactForm() {
         body: JSON.stringify({ ...form, email: "" }),
       });
 
-      if (!response.ok) {
-        const data = (await response.json().catch(() => null)) as
-          | { error?: string }
-          | null;
+      const data = (await response.json().catch(() => null)) as
+        | { ok?: boolean; error?: string }
+        | null;
+
+      if (!response.ok || data?.ok !== true) {
         throw new Error(data?.error ?? "We could not send your request.");
       }
 
+      // Count a lead only after our backend has acknowledged the submission.
+      // Do not send names, phone numbers, or restaurant details to Pixel.
       setStatus("success");
+      try {
+        const metaWindow = window as Window & {
+          fbq?: (action: string, eventName: string) => void;
+        };
+        metaWindow.fbq?.("track", "Lead");
+      } catch {
+        // A blocked/failed tracking script must not fail a successful form.
+      }
+
       setForm({
         name: "",
         restaurant: "",
