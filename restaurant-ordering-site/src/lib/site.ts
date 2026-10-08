@@ -19,6 +19,7 @@ export const siteConfig = {
   url: getSiteUrl(),
   contact: {
     email: "support@lancers.dev",
+    whatsapp: "923231543394",
   },
 } as const;
 

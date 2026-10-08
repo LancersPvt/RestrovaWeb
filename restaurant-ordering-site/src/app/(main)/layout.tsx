@@ -1,5 +1,6 @@
 import SiteFooter from "@/components/SiteFooter";
 import SiteHeader from "@/components/SiteHeader";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function MainLayout({
     children,
@@ -11,6 +12,7 @@ export default function MainLayout({
             <SiteHeader />
             {children}
             <SiteFooter />
+            <WhatsAppButton />
         </div>
     );
 }
