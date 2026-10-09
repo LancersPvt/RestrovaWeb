@@ -4,7 +4,8 @@ import { useEffect, useMemo, useState } from "react";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { siteConfig } from "@/lib/site";
 
-type Status = "idle" | "submitting" | "success" | "error";
+type Step = "restaurant" | "demo-invite" | "contact" | "thank-you" | "demo-success";
+type RequestStatus = "idle" | "submitting" | "error";
 
 type Qualification = {
   businessType: string;
@@ -16,7 +17,14 @@ type Qualification = {
   timeline: string;
 };
 
-const initialQualification: Qualification = {
+type ContactDetails = {
+  name: string;
+  restaurant: string;
+  phone: string;
+  city: string;
+};
+
+const emptyQualification: Qualification = {
   businessType: "",
   completeSystem: "",
   branches: "",
@@ -26,13 +34,15 @@ const initialQualification: Qualification = {
   timeline: "",
 };
 
-const initialContact = {
+const emptyContact: ContactDetails = {
   name: "",
   restaurant: "",
   phone: "",
   city: "",
 };
 
+// Keep labels stable: Google Apps Script extracts these exact answers
+// from the message field sent to /api/contact.
 const businessTypes = [
   { value: "established", label: "Restaurant / dine-in" },
   { value: "takeaway", label: "Takeaway / fast food" },
@@ -40,34 +50,29 @@ const businessTypes = [
   { value: "home", label: "Home-based food business" },
   { value: "not_started", label: "Not started yet" },
 ];
-
 const branches = [
   { value: "1", label: "1 branch" },
   { value: "2", label: "2 branches" },
   { value: "3_5", label: "3–5 branches" },
   { value: "6_plus", label: "6+ branches" },
 ];
-
 const dailyOrders = [
   { value: "under_10", label: "Under 10 orders" },
   { value: "10_29", label: "10–29 orders" },
   { value: "30_99", label: "30–99 orders" },
   { value: "100_plus", label: "100+ orders" },
 ];
-
 const roles = [
   { value: "owner", label: "Owner / Founder" },
   { value: "partner", label: "Partner / Director" },
   { value: "manager", label: "Restaurant / Operations Manager" },
   { value: "other", label: "Other / Not involved in purchasing" },
 ];
-
 const budgetOptions = [
   { value: "ready", label: "Yes, I can pay the onboarding and monthly fees" },
   { value: "discuss", label: "I understand the pricing, but want to discuss it first" },
   { value: "no", label: "No, the onboarding and monthly fees are outside my budget" },
 ];
-
 const timelines = [
   { value: "immediately", label: "Immediately" },
   { value: "10_days", label: "Within 10 days" },
@@ -75,13 +80,6 @@ const timelines = [
   { value: "researching", label: "Only researching / no buying plan yet" },
 ];
 
-const styles = {
-  select:
-    "mt-2 h-13 w-full rounded-xl border border-black/15 bg-white px-4 text-sm font-medium text-[#171816] outline-none transition focus:border-[#ff6247] focus:ring-4 focus:ring-[#ff6247]/10",
-};
-
-// One complete package. Keep pricing details consistent across form stages.
-// Monthly fee = max(PKR 5,000, 1% of monthly sales made through Restrova).
 const includedFeatures = [
   "Client Application (iOS & Android)",
   "Admin Application",
@@ -89,6 +87,53 @@ const includedFeatures = [
   "Restaurant Website",
   "Inventory Management System",
 ];
+
+const selectClass =
+  "mt-2 h-13 w-full rounded-xl border border-black/15 bg-white px-4 text-sm font-medium text-[#171816] outline-none transition focus:border-[#ff6247] focus:ring-4 focus:ring-[#ff6247]/10";
+const buttonClass =
+  "group inline-flex min-h-14 w-full items-center justify-center gap-2 rounded-full bg-[#ff6247] px-7 text-base font-black text-white shadow-[0_12px_30px_rgba(255,98,71,.24)] transition hover:bg-[#e45239] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff6247] disabled:cursor-not-allowed disabled:opacity-50";
+
+function labelOf(options: { value: string; label: string }[], value: string) {
+  return options.find((item) => item.value === value)?.label ?? value;
+}
+
+// This decision never appears in the visitor-facing UI.
+function passesInitialScreen(q: Qualification) {
+  const operating = ["established", "takeaway", "chain"].includes(q.businessType);
+  const hasScale = q.branches !== "1" || q.dailyOrders !== "under_10";
+  const decisionMaker = ["owner", "partner", "manager"].includes(q.role);
+  const understandsPricing = ["ready", "discuss"].includes(q.onboardingBudget);
+  const readyToConsider = q.timeline !== "researching";
+  return (
+    operating && hasScale && decisionMaker && understandsPricing &&
+    readyToConsider && q.completeSystem === "yes"
+  );
+}
+
+function highPriority(q: Qualification) {
+  const scale = q.branches !== "1" || ["30_99", "100_plus"].includes(q.dailyOrders);
+  return passesInitialScreen(q) && scale && q.onboardingBudget === "ready";
+}
+
+// Keep key/value lines identical to the current Google Apps Script's
+// fieldFromMessage() parsing contract. No backend changes needed for this UI.
+function buildMessage(q: Qualification, attribution: string) {
+  return [
+    "REQUIRED PRODUCT: Restrova complete restaurant system (one package)",
+    `ONBOARDING PACKAGE INCLUDES: ${includedFeatures.join(", ")}`,
+    "ONE-TIME ONBOARDING: PKR 10,000",
+    "MONTHLY SERVICE: PKR 5,000 minimum OR 1% of monthly sales through Restrova (whichever is higher); excludes sales made outside Restrova",
+    `BUSINESS TYPE: ${labelOf(businessTypes, q.businessType)}`,
+    `NUMBER OF BRANCHES: ${labelOf(branches, q.branches)}`,
+    `DAILY ORDER VOLUME: ${labelOf(dailyOrders, q.dailyOrders)}`,
+    `BUYER ROLE: ${labelOf(roles, q.role)}`,
+    `COMPLETE SYSTEM INTENT: ${q.completeSystem === "yes" ? "Yes" : "No"}`,
+    `PRICING READINESS (ONBOARDING + MONTHLY): ${labelOf(budgetOptions, q.onboardingBudget)}`,
+    `PURCHASE TIMELINE: ${labelOf(timelines, q.timeline)}`,
+    `AUTOMATED SCREEN: ${highPriority(q) ? "HIGH PRIORITY (VERIFY WITH SALES)" : "POTENTIAL FIT (VERIFY WITH SALES)"}`,
+    attribution ? `AD ATTRIBUTION: ${attribution}` : "",
+  ].filter(Boolean).join("\n");
+}
 
 function PricingSummary({ compact = false }: { compact?: boolean }) {
   return (
@@ -100,379 +145,38 @@ function PricingSummary({ compact = false }: { compact?: boolean }) {
         Your entire restaurant system in one package
       </h3>
       {!compact && (
-        <>
-          <p className="mt-3 text-sm font-bold text-[#171816]">
-            Included with your PKR 10,000 onboarding:
-          </p>
-          <ul className="mt-3 grid gap-2 text-sm font-semibold text-[#171816] sm:grid-cols-2">
-            {includedFeatures.map((feature) => (
-              <li key={feature} className="flex items-start gap-2">
-                <CheckCircle2
-                  className="mt-0.5 h-4 w-4 shrink-0 text-emerald-600"
-                  aria-hidden="true"
-                />
-                <span>{feature}</span>
-              </li>
-            ))}
-          </ul>
-        </>
-      )}
-      {compact && (
-        <p className="mt-3 text-xs leading-5 text-black/75">
-          Includes Client App (iOS & Android), Admin App, Rider App,
-          Restaurant Website, and Inventory Management.
-        </p>
+        <ul className="mt-4 grid gap-2 text-sm font-semibold text-[#171816] sm:grid-cols-2">
+          {includedFeatures.map((feature) => (
+            <li key={feature} className="flex items-start gap-2">
+              <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-emerald-600" aria-hidden="true" />
+              <span>{feature}</span>
+            </li>
+          ))}
+        </ul>
       )}
       <div className="mt-4 grid gap-3 sm:grid-cols-2">
         <div className="rounded-xl bg-white p-4 ring-1 ring-black/10">
-          <p className="text-xs font-bold uppercase tracking-wide text-black/60">
-            One-time onboarding
-          </p>
+          <p className="text-xs font-bold uppercase tracking-wide text-black/60">One-time onboarding</p>
           <p className="mt-1 text-2xl font-black text-[#171816]">PKR 10,000</p>
         </div>
         <div className="rounded-xl bg-white p-4 ring-1 ring-black/10">
-          <p className="text-xs font-bold uppercase tracking-wide text-black/60">
-            Monthly service fee
-          </p>
-          <p className="mt-1 text-lg font-black text-[#171816]">
+          <p className="text-xs font-bold uppercase tracking-wide text-black/60">Monthly service fee</p>
+          <p className="mt-1 text-base font-black text-[#171816]">
             PKR 5,000 minimum OR 1% of sales through Restrova
           </p>
-          <p className="mt-1 text-xs font-bold text-[#c84931]">
-            Whichever is higher
-          </p>
+          <p className="mt-1 text-xs font-bold text-[#c84931]">Whichever is higher</p>
         </div>
       </div>
-      <p className="mt-3 text-sm leading-6 text-[#171816]">
-        Only sales made through the Restrova system count. If 1% of those
-        monthly sales is PKR 5,000 or less, your monthly fee is PKR 5,000.
-        If 1% is higher than PKR 5,000, you pay the full 1% of sales through
-        Restrova. This fee is separate from onboarding.
+      <p className="mt-3 text-xs leading-5 text-black/75">
+        The 1% applies only to monthly sales made through Restrova, not your restaurant’s
+        other sales. The monthly service fee is separate from onboarding.
       </p>
-      {!compact && (
-        <p className="mt-2 text-xs text-black/65">
-          For example: PKR 300,000 in Restrova sales = PKR 5,000/month;
-          PKR 800,000 in Restrova sales = PKR 8,000/month.
-        </p>
-      )}
     </div>
   );
 }
 
-function selectionLabel(options: { value: string; label: string }[], value: string) {
-  return options.find((option) => option.value === value)?.label ?? value;
-}
-
-function isEligible(q: Qualification) {
-  const operating = ["established", "takeaway", "chain"].includes(q.businessType);
-  const hasScale = q.branches !== "1" || q.dailyOrders !== "under_10";
-  const buyer = ["owner", "partner", "manager"].includes(q.role);
-  const budgetPossible = q.onboardingBudget === "ready" || q.onboardingBudget === "discuss";
-  const purchasePlan = q.timeline !== "researching";
-
-  return operating && hasScale && buyer && budgetPossible && purchasePlan && q.completeSystem === "yes";
-}
-
-function isHighPriority(q: Qualification) {
-  const hasScale = q.branches !== "1" || ["30_99", "100_plus"].includes(q.dailyOrders);
-  const buyingSoon = ["immediately", "10_days", "1_month"].includes(q.timeline);
-  return isEligible(q) && hasScale && q.onboardingBudget === "ready" && buyingSoon;
-}
-
-function buildMessage(q: Qualification, campaignParams: string) {
-  return [
-    "REQUIRED PRODUCT: Restrova complete restaurant system (one package)",
-    `ONBOARDING PACKAGE INCLUDES: ${includedFeatures.join(", ")}`,
-    "ONE-TIME ONBOARDING: PKR 10,000",
-    "MONTHLY SERVICE: PKR 5,000 minimum OR 1% of monthly sales through Restrova (whichever is higher); excludes sales made outside Restrova",
-    `BUSINESS TYPE: ${selectionLabel(businessTypes, q.businessType)}`,
-    `NUMBER OF BRANCHES: ${selectionLabel(branches, q.branches)}`,
-    `DAILY ORDER VOLUME: ${selectionLabel(dailyOrders, q.dailyOrders)}`,
-    `BUYER ROLE: ${selectionLabel(roles, q.role)}`,
-    `COMPLETE SYSTEM INTENT: ${q.completeSystem === "yes" ? "Yes" : "No"}`,
-    `PRICING READINESS (ONBOARDING + MONTHLY): ${selectionLabel(budgetOptions, q.onboardingBudget)}`,
-    `PURCHASE TIMELINE: ${selectionLabel(timelines, q.timeline)}`,
-    `AUTOMATED SCREEN: ${isHighPriority(q) ? "HIGH PRIORITY (VERIFY WITH SALES)" : "POTENTIAL FIT (VERIFY WITH SALES)"}`,
-    campaignParams ? `AD ATTRIBUTION: ${campaignParams}` : "",
-  ]
-    .filter(Boolean)
-    .join("\n");
-}
-
-export default function ContactForm() {
-  const [status, setStatus] = useState<Status>("idle");
-  const [error, setError] = useState<string | null>(null);
-  const [qualification, setQualification] = useState<Qualification>(initialQualification);
-  const [contact, setContact] = useState(initialContact);
-  const [campaignParams, setCampaignParams] = useState("");
-
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const keys = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_id", "adset_id", "ad_id"];
-    const attribution = keys
-      .filter((key) => params.has(key))
-      .map((key) => `${key}=${params.get(key) ?? ""}`)
-      .join("; ");
-    setCampaignParams(attribution.slice(0, 1000));
-  }, []);
-
-  const qualificationComplete = Object.values(qualification).every((answer) => answer.trim() !== "");
-  const eligible = qualificationComplete && isEligible(qualification);
-  const canSubmit = Boolean(
-    eligible && contact.name.trim() && contact.restaurant.trim() && contact.phone.trim(),
-  );
-
-  const leadMessage = useMemo(
-    () => buildMessage(qualification, campaignParams),
-    [qualification, campaignParams],
-  );
-
-  const fallbackEmailHref = useMemo(() => {
-    const subject = `Restrova complete system demo: ${contact.restaurant || contact.name || "restaurant"}`;
-    const body = [
-      `Name: ${contact.name}`,
-      `Restaurant: ${contact.restaurant}`,
-      `Phone / WhatsApp: ${contact.phone}`,
-      `City: ${contact.city}`,
-      leadMessage,
-    ].join("\n");
-    return `mailto:${siteConfig.contact.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-  }, [contact, leadMessage]);
-
-  async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    setError(null);
-
-    if (!canSubmit) {
-      setError("Please complete the qualification questions and contact details.");
-      return;
-    }
-
-    setStatus("submitting");
-
-    try {
-      // Keep the exact data structure expected by the existing /api/contact
-      // and Google Sheets integration. Qualification goes into "message".
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          ...contact,
-          email: "",
-          message: leadMessage,
-        }),
-      });
-
-      const data = (await response.json().catch(() => null)) as
-        | { ok?: boolean; error?: string }
-        | null;
-
-      if (!response.ok || data?.ok !== true) {
-        throw new Error(data?.error ?? "We could not send your request.");
-      }
-
-      // Only a successfully accepted, pre-screened demo enquiry counts as a
-      // Lead. Sales must still verify whether it is a real qualified prospect.
-      try {
-        const metaWindow = window as Window & {
-          fbq?: (action: string, eventName: string) => void;
-        };
-        metaWindow.fbq?.("track", "Lead");
-      } catch {
-        // An ad blocker must not prevent the confirmation UI.
-      }
-
-      setStatus("success");
-      setContact(initialContact);
-    } catch (err) {
-      setStatus("error");
-      setError(err instanceof Error ? err.message : "Something went wrong. Please try again.");
-    }
-  }
-
-  if (status === "success") {
-    return (
-      <div className="rounded-2xl border border-emerald-200 bg-emerald-50 p-7 text-center" role="status">
-        <CheckCircle2 className="mx-auto h-10 w-10 text-emerald-600" aria-hidden="true" />
-        <h3 className="mt-4 text-xl font-black text-emerald-950">Your Restrova demo request is in.</h3>
-        <p className="mt-2 text-sm leading-6 text-emerald-800">
-          Thanks. Our team will review your restaurant details and contact you about a complete-system demo.
-        </p>
-        <button
-          type="button"
-          onClick={() => {
-            setStatus("idle");
-            setQualification(initialQualification);
-            setError(null);
-          }}
-          className="mt-5 text-sm font-bold text-emerald-800 underline underline-offset-4"
-        >
-          Send another request
-        </button>
-      </div>
-    );
-  }
-
-  // Single-page form: qualification and contact details appear together.
-  // Unqualified visitors cannot submit; the backend API and Meta Lead event
-  // remain unchanged.
-  return (
-    <form onSubmit={onSubmit} className="space-y-6" aria-label="Restrova demo request">
-      <PricingSummary />
-
-      <div className="space-y-1">
-        <h3 className="text-lg font-black text-[#171816]">Tell us about your restaurant</h3>
-        <p className="text-sm leading-6 text-black/65">
-          Complete this single form to request a personalized Restrova demo.
-        </p>
-      </div>
-
-      <div className="grid gap-5 sm:grid-cols-2">
-        <SelectField
-          id="restaurant-type"
-          label="What type of food business do you operate?"
-          value={qualification.businessType}
-          options={businessTypes}
-          onChange={(value) => setQualification((current) => ({ ...current, businessType: value }))}
-        />
-        <SelectField
-          id="restaurant-branches"
-          label="How many operating branches?"
-          value={qualification.branches}
-          options={branches}
-          onChange={(value) => setQualification((current) => ({ ...current, branches: value }))}
-        />
-        <SelectField
-          id="restaurant-orders"
-          label="Approximately how many orders per day?"
-          value={qualification.dailyOrders}
-          options={dailyOrders}
-          onChange={(value) => setQualification((current) => ({ ...current, dailyOrders: value }))}
-        />
-        <SelectField
-          id="restaurant-role"
-          label="What is your role in the business?"
-          value={qualification.role}
-          options={roles}
-          onChange={(value) => setQualification((current) => ({ ...current, role: value }))}
-        />
-        <SelectField
-          id="restaurant-system"
-          label="Are you considering the complete Restrova system?"
-          value={qualification.completeSystem}
-          options={[
-            { value: "yes", label: "Yes, I need the complete system" },
-            { value: "no", label: "No, I am only researching individual tools" },
-          ]}
-          onChange={(value) => setQualification((current) => ({ ...current, completeSystem: value }))}
-        />
-        <SelectField
-          id="restaurant-budget"
-          label="Are you comfortable with the onboarding and monthly fees?"
-          value={qualification.onboardingBudget}
-          options={budgetOptions}
-          onChange={(value) => setQualification((current) => ({ ...current, onboardingBudget: value }))}
-        />
-      </div>
-      <SelectField
-        id="restaurant-timeline"
-        label="When are you planning to implement a new system?"
-        value={qualification.timeline}
-        options={timelines}
-        onChange={(value) => setQualification((current) => ({ ...current, timeline: value }))}
-      />
-
-      {qualificationComplete && !eligible ? (
-        <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm leading-6 text-amber-950" role="status">
-          Based on your answers, a personalized Restrova demo may not be the best fit right now.
-          We prioritize operating restaurants considering the complete system and its
-          onboarding and monthly fees, with a plan to get started. You can update your answers
-          or explore the website in the meantime.
-        </div>
-      ) : null}
-
-      <div className="space-y-1 border-t border-black/10 pt-5">
-        <h3 className="text-lg font-black text-[#171816]">Your contact details</h3>
-        <p className="text-sm leading-6 text-black/65">So our team can get in touch about your demo.</p>
-      </div>
-      <div className="grid gap-5 sm:grid-cols-2">
-        <Field
-          id="contact-name"
-          name="name"
-          label="Your name"
-          value={contact.name}
-          onChange={(value) => setContact((current) => ({ ...current, name: value }))}
-          placeholder="Ali Khan"
-          autoComplete="name"
-          required
-        />
-        <Field
-          id="contact-restaurant"
-          name="restaurant"
-          label="Restaurant name"
-          value={contact.restaurant}
-          onChange={(value) => setContact((current) => ({ ...current, restaurant: value }))}
-          placeholder="Your restaurant"
-          autoComplete="organization"
-          required
-        />
-        <Field
-          id="contact-phone"
-          name="phone"
-          label="Phone / WhatsApp"
-          value={contact.phone}
-          onChange={(value) => setContact((current) => ({ ...current, phone: value }))}
-          placeholder="+92 3XX XXXXXXX"
-          autoComplete="tel"
-          type="tel"
-          inputMode="tel"
-          required
-        />
-        <Field
-          id="contact-city"
-          name="city"
-          label="City"
-          value={contact.city}
-          onChange={(value) => setContact((current) => ({ ...current, city: value }))}
-          placeholder="Lahore"
-          autoComplete="address-level2"
-        />
-      </div>
-
-      {error ? (
-        <div className="rounded-xl border border-red-200 bg-red-50 p-4 text-sm text-red-800" role="alert">
-          <p className="font-semibold">{error}</p>
-          <a
-            href={fallbackEmailHref}
-            className="mt-2 inline-flex font-black underline underline-offset-4 transition hover:text-red-950"
-          >
-            Email {siteConfig.contact.email} instead
-          </a>
-        </div>
-      ) : null}
-
-      <button
-        type="submit"
-        disabled={!canSubmit || status === "submitting"}
-        className="group inline-flex min-h-14 w-full items-center justify-center gap-2 rounded-full bg-[#ff6247] px-7 text-base font-black text-white shadow-[0_12px_30px_rgba(255,98,71,.24)] transition hover:-translate-y-0.5 hover:bg-[#e45239] focus:outline-none focus:ring-4 focus:ring-[#ff6247]/20 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:translate-y-0"
-      >
-        {status === "submitting" ? "Sending your request…" : "Request My Restrova Demo"}
-        {status !== "submitting" ? (
-          <ArrowRight className="h-5 w-5 transition group-hover:translate-x-1" aria-hidden="true" />
-        ) : null}
-      </button>
-      <p className="text-center text-xs leading-5 text-black/55">
-        One form, one submission. No payment is taken here. We’ll use your details only to follow up about your demo request.
-      </p>
-    </form>
-  );
-}
-
 function SelectField({
-  id,
-  label,
-  value,
-  options,
-  onChange,
+  id, label, value, options, onChange,
 }: {
   id: string;
   label: string;
@@ -482,69 +186,298 @@ function SelectField({
 }) {
   return (
     <div>
-      <label htmlFor={id} className="text-sm font-bold text-black/70">
-        {label}
-      </label>
+      <label htmlFor={id} className="text-sm font-bold text-black/70">{label}</label>
       <select
         id={id}
         value={value}
         onChange={(event) => onChange(event.target.value)}
-        className={styles.select}
+        className={selectClass}
         required
       >
-        <option value="" disabled>
-          Select an option
-        </option>
+        <option value="" disabled>Select an option</option>
         {options.map((option) => (
-          <option key={option.value} value={option.value}>
-            {option.label}
-          </option>
+          <option key={option.value} value={option.value}>{option.label}</option>
         ))}
       </select>
     </div>
   );
 }
 
-function Field({
-  id,
-  name,
-  label,
-  value,
-  onChange,
-  placeholder,
-  type = "text",
-  inputMode,
-  autoComplete,
-  required,
+function ContactField({
+  id, label, name, value, onChange, placeholder, type = "text", autoComplete,
 }: {
   id: string;
-  name: string;
   label: string;
+  name: string;
   value: string;
   onChange: (value: string) => void;
-  placeholder?: string;
+  placeholder: string;
   type?: string;
-  inputMode?: "tel";
   autoComplete?: string;
-  required?: boolean;
 }) {
   return (
     <div>
-      <label htmlFor={id} className="text-sm font-bold text-black/70">
-        {label}
-      </label>
+      <label htmlFor={id} className="text-sm font-bold text-black/70">{label}</label>
       <input
         id={id}
         name={name}
-        className="mt-2 h-13 w-full rounded-xl border border-black/15 bg-white px-4 text-sm font-medium text-[#171816] outline-none transition placeholder:text-black/30 focus:border-[#ff6247] focus:ring-4 focus:ring-[#ff6247]/10"
         value={value}
         onChange={(event) => onChange(event.target.value)}
         placeholder={placeholder}
         type={type}
-        inputMode={inputMode}
         autoComplete={autoComplete}
-        required={required}
+        className="mt-2 h-13 w-full rounded-xl border border-black/15 bg-white px-4 text-sm font-medium text-[#171816] outline-none transition placeholder:text-black/30 focus:border-[#ff6247] focus:ring-4 focus:ring-[#ff6247]/10"
+        required
       />
     </div>
+  );
+}
+
+function Confirmation({ heading, message }: { heading: string; message?: string }) {
+  return (
+    <div className="rounded-2xl border border-emerald-200 bg-emerald-50 p-7 text-center" role="status" aria-live="polite">
+      <CheckCircle2 className="mx-auto h-10 w-10 text-emerald-600" aria-hidden="true" />
+      <h3 className="mt-4 text-xl font-black text-emerald-950">{heading}</h3>
+      {message && <p className="mt-2 text-sm leading-6 text-emerald-800">{message}</p>}
+    </div>
+  );
+}
+
+export default function ContactForm() {
+  const [step, setStep] = useState<Step>("restaurant");
+  const [status, setStatus] = useState<RequestStatus>("idle");
+  const [error, setError] = useState<string | null>(null);
+  const [qualification, setQualification] = useState<Qualification>(emptyQualification);
+  const [contact, setContact] = useState<ContactDetails>(emptyContact);
+  const [attribution, setAttribution] = useState("");
+
+  useEffect(() => {
+    const url = new URL(window.location.href);
+    const keys = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_id", "adset_id", "ad_id"];
+    const params = keys
+      .filter((key) => url.searchParams.has(key))
+      .map((key) => `${key}=${url.searchParams.get(key) ?? ""}`)
+      .join("; ");
+    setAttribution(params.slice(0, 1000));
+  }, []);
+
+  const answersComplete = Object.values(qualification).every((answer) => answer.trim() !== "");
+  const contactComplete = Object.values(contact).every((answer) => answer.trim() !== "");
+  const message = useMemo(() => buildMessage(qualification, attribution), [qualification, attribution]);
+  const fallbackEmailHref = useMemo(() => {
+    const subject = `Restrova demo request: ${contact.restaurant || contact.name || "restaurant"}`;
+    const body = [
+      `Full name: ${contact.name}`,
+      `Restaurant: ${contact.restaurant}`,
+      `Phone: ${contact.phone}`,
+      `City: ${contact.city}`,
+      message,
+    ].join("\n");
+    return `mailto:${siteConfig.contact.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  }, [contact, message]);
+
+  function submitRestaurantDetails(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    if (!answersComplete) return;
+
+    // Only qualified prospects can open the demo invitation/contact screen.
+    // Others see exactly the same neutral confirmation, without a rejection.
+    // Neither a Google Sheet row nor a Meta Lead event is generated here.
+    if (passesInitialScreen(qualification)) {
+      setStep("demo-invite");
+    } else {
+      setStep("thank-you");
+    }
+  }
+
+  async function submitDemoRequest(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    if (status === "submitting") return;
+    setError(null);
+    if (!contactComplete || !answersComplete || !passesInitialScreen(qualification)) {
+      setError("Please complete your restaurant and contact details.");
+      return;
+    }
+
+    setStatus("submitting");
+    try {
+      // Same /api/contact payload as the deployed integration.
+      // Qualified details are included in message for the existing Apps Script.
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...contact, email: "", message }),
+      });
+      const result = (await response.json().catch(() => null)) as
+        | { ok?: boolean; error?: string }
+        | null;
+      if (!response.ok || result?.ok !== true) {
+        throw new Error(result?.error ?? "Your request could not be submitted.");
+      }
+
+      // Fire ONE standard Meta Lead event only after API acknowledges a save.
+      // Never include name, restaurant, phone or city as raw Pixel parameters.
+      try {
+        const pixelWindow = window as Window & {
+          fbq?: (command: string, eventName: string) => void;
+        };
+        pixelWindow.fbq?.("track", "Lead");
+      } catch {
+        // An unavailable Pixel must never break the successful submission UI.
+      }
+      setStatus("idle");
+      setStep("demo-success");
+      setContact(emptyContact);
+    } catch (err) {
+      setStatus("error");
+      setError(err instanceof Error ? err.message : "Something went wrong. Please try again.");
+    }
+  }
+
+  if (step === "thank-you") {
+    return <Confirmation heading="Thank you! Your form has been submitted successfully." />;
+  }
+
+  if (step === "demo-success") {
+    return (
+      <Confirmation
+        heading="Thank you! Your demo request has been submitted successfully."
+        message="Our team will contact you about your Restrova demo."
+      />
+    );
+  }
+
+  if (step === "demo-invite") {
+    return (
+      <section className="space-y-5" aria-label="Restrova demo invitation">
+        <PricingSummary compact />
+        <div className="rounded-2xl border border-black/10 bg-white p-6 text-center">
+          <h3 className="text-xl font-black text-[#171816]">Ready to see Restrova in action?</h3>
+          <p className="mt-2 text-sm leading-6 text-black/65">
+            See how the complete restaurant system can work for your business.
+          </p>
+          <button type="button" className={`${buttonClass} mt-5`} onClick={() => setStep("contact")}>
+            Request a Demo <ArrowRight className="h-5 w-5" aria-hidden="true" />
+          </button>
+          <button
+            type="button"
+            className="mt-4 text-sm font-semibold text-[#171816] underline underline-offset-4"
+            onClick={() => setStep("restaurant")}
+          >
+            Edit restaurant details
+          </button>
+        </div>
+      </section>
+    );
+  }
+
+  if (step === "contact") {
+    return (
+      <form onSubmit={submitDemoRequest} className="space-y-5" aria-label="Request a Restrova demo">
+        <h3 className="text-xl font-black text-[#171816]">Request a Demo</h3>
+        <p className="text-sm leading-6 text-black/65">Tell us where we can reach you.</p>
+        <div className="grid gap-5 sm:grid-cols-2">
+          <ContactField
+            id="contact-name" name="name" label="Full Name" value={contact.name}
+            onChange={(value) => setContact((current) => ({ ...current, name: value }))}
+            placeholder="Ali Khan" autoComplete="name"
+          />
+          <ContactField
+            id="contact-restaurant" name="restaurant" label="Restaurant Name" value={contact.restaurant}
+            onChange={(value) => setContact((current) => ({ ...current, restaurant: value }))}
+            placeholder="Your restaurant" autoComplete="organization"
+          />
+          <ContactField
+            id="contact-phone" name="phone" label="Phone Number" value={contact.phone}
+            onChange={(value) => setContact((current) => ({ ...current, phone: value }))}
+            placeholder="+92 3XX XXXXXXX" type="tel" autoComplete="tel"
+          />
+          <ContactField
+            id="contact-city" name="city" label="City" value={contact.city}
+            onChange={(value) => setContact((current) => ({ ...current, city: value }))}
+            placeholder="Lahore" autoComplete="address-level2"
+          />
+        </div>
+        {error && (
+          <div className="rounded-xl border border-red-200 bg-red-50 p-4 text-sm text-red-800" role="alert">
+            <p>{error}</p>
+            <a className="mt-2 inline-block font-bold underline" href={fallbackEmailHref}>
+              Email {siteConfig.contact.email} instead
+            </a>
+          </div>
+        )}
+        <button type="submit" className={buttonClass} disabled={!contactComplete || status === "submitting"}>
+          {status === "submitting" ? "Submitting your request…" : "Submit Request"}
+          {status !== "submitting" && <ArrowRight className="h-5 w-5" aria-hidden="true" />}
+        </button>
+        <button
+          type="button"
+          className="text-sm font-semibold text-[#171816] underline underline-offset-4"
+          onClick={() => { setError(null); setStatus("idle"); setStep("restaurant"); }}
+        >
+          Edit restaurant details
+        </button>
+        <p className="text-center text-xs leading-5 text-black/55">
+          We use your contact information only to follow up about your demo request.
+        </p>
+      </form>
+    );
+  }
+
+  return (
+    <form onSubmit={submitRestaurantDetails} className="space-y-6" aria-label="Tell us about your restaurant">
+      <PricingSummary />
+      <div className="space-y-1">
+        <h3 className="text-lg font-black text-[#171816]">Tell Us About Your Restaurant</h3>
+        <p className="text-sm leading-6 text-black/65">A few quick questions about your restaurant.</p>
+      </div>
+      <div className="grid gap-5 sm:grid-cols-2">
+        <SelectField
+          id="restaurant-type" label="What type of food business do you operate?"
+          value={qualification.businessType} options={businessTypes}
+          onChange={(value) => setQualification((current) => ({ ...current, businessType: value }))}
+        />
+        <SelectField
+          id="restaurant-branches" label="How many operating branches?"
+          value={qualification.branches} options={branches}
+          onChange={(value) => setQualification((current) => ({ ...current, branches: value }))}
+        />
+        <SelectField
+          id="restaurant-orders" label="Approximately how many orders per day?"
+          value={qualification.dailyOrders} options={dailyOrders}
+          onChange={(value) => setQualification((current) => ({ ...current, dailyOrders: value }))}
+        />
+        <SelectField
+          id="restaurant-role" label="What is your role in the business?"
+          value={qualification.role} options={roles}
+          onChange={(value) => setQualification((current) => ({ ...current, role: value }))}
+        />
+        <SelectField
+          id="restaurant-system" label="Are you considering the complete Restrova system?"
+          value={qualification.completeSystem}
+          options={[
+            { value: "yes", label: "Yes, I need the complete system" },
+            { value: "no", label: "No, I am only researching individual tools" },
+          ]}
+          onChange={(value) => setQualification((current) => ({ ...current, completeSystem: value }))}
+        />
+        <SelectField
+          id="restaurant-budget" label="Are you comfortable with the onboarding and monthly fees?"
+          value={qualification.onboardingBudget} options={budgetOptions}
+          onChange={(value) => setQualification((current) => ({ ...current, onboardingBudget: value }))}
+        />
+        <SelectField
+          id="restaurant-timeline" label="When are you planning to implement a new system?"
+          value={qualification.timeline} options={timelines}
+          onChange={(value) => setQualification((current) => ({ ...current, timeline: value }))}
+        />
+      </div>
+      <button type="submit" className={buttonClass} disabled={!answersComplete}>
+        Submit Restaurant Details <ArrowRight className="h-5 w-5" aria-hidden="true" />
+      </button>
+      <p className="text-center text-xs leading-5 text-black/55">
+        Your answers help us understand your restaurant’s needs.
+      </p>
+    </form>
   );
 }

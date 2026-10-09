@@ -27,6 +27,44 @@ function isGoogleAppsScriptUrl(raw: string): boolean {
   }
 }
 
+/**
+ * Verify the restaurant assessment again on the server.
+ * Client-side navigation is for UX, not a security boundary.
+ * Google Sheets receives only demo enquiries with acceptable answers.
+ */
+function qualifiesForDemo(message: string): boolean {
+  const answers = new Map<string, string>();
+  for (const line of message.split(/\r?\n/)) {
+    const separator = line.indexOf(":");
+    if (separator <= 0) continue;
+    answers.set(line.slice(0, separator).trim(), line.slice(separator + 1).trim());
+  }
+
+  const business = answers.get("BUSINESS TYPE") ?? "";
+  const branch = answers.get("NUMBER OF BRANCHES") ?? "";
+  const orders = answers.get("DAILY ORDER VOLUME") ?? "";
+  const role = answers.get("BUYER ROLE") ?? "";
+  const completeSystem = answers.get("COMPLETE SYSTEM INTENT") ?? "";
+  const pricing = answers.get("PRICING READINESS (ONBOARDING + MONTHLY)") ?? "";
+  const timeline = answers.get("PURCHASE TIMELINE") ?? "";
+
+  const validBusiness = [
+    "Restaurant / dine-in", "Takeaway / fast food", "Restaurant with multiple branches",
+  ].includes(business);
+  const validBranch = ["1 branch", "2 branches", "3–5 branches", "6+ branches"].includes(branch);
+  const validOrders = ["Under 10 orders", "10–29 orders", "30–99 orders", "100+ orders"].includes(orders);
+  const sufficientActivity = branch !== "1 branch" || orders !== "Under 10 orders";
+  const decisionMaker = ["Owner / Founder", "Partner / Director", "Restaurant / Operations Manager"].includes(role);
+  const pricingReady = [
+    "Yes, I can pay the onboarding and monthly fees",
+    "I understand the pricing, but want to discuss it first",
+  ].includes(pricing);
+  const plannedTimeline = ["Immediately", "Within 10 days", "Within 1 month"].includes(timeline);
+
+  return validBusiness && validBranch && validOrders && sufficientActivity &&
+    decisionMaker && pricingReady && plannedTimeline && completeSystem === "Yes";
+}
+
 export async function POST(req: Request) {
   const body = (await req.json().catch(() => null)) as ContactPayload | null;
 
@@ -46,6 +84,15 @@ export async function POST(req: Request) {
     return NextResponse.json(
       { ok: false, error: "Please include your name, restaurant, phone and form answers." },
       { status: 400 },
+    );
+  }
+
+  // Safeguard: reject submissions that do not match the current qualification
+  // criteria, even if someone bypasses the client-side form.
+  if (message.length > 10000 || !qualifiesForDemo(message)) {
+    return NextResponse.json(
+      { ok: false, error: "This demo request cannot be processed." },
+      { status: 422 },
     );
   }
 
