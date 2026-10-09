@@ -5,7 +5,6 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { siteConfig } from "@/lib/site";
 
 type Status = "idle" | "submitting" | "success" | "error";
-type Stage = "qualification" | "contact";
 
 type Qualification = {
   businessType: string;
@@ -200,7 +199,6 @@ function buildMessage(q: Qualification, campaignParams: string) {
 }
 
 export default function ContactForm() {
-  const [stage, setStage] = useState<Stage>("qualification");
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState<string | null>(null);
   const [qualification, setQualification] = useState<Qualification>(initialQualification);
@@ -303,7 +301,6 @@ export default function ContactForm() {
           type="button"
           onClick={() => {
             setStatus("idle");
-            setStage("qualification");
             setQualification(initialQualification);
             setError(null);
           }}
@@ -315,96 +312,87 @@ export default function ContactForm() {
     );
   }
 
-  if (stage === "qualification") {
-    return (
-      <section className="space-y-5" aria-label="Restrova restaurant qualification">
-        <PricingSummary />
-
-        <div className="grid gap-5 sm:grid-cols-2">
-          <SelectField
-            id="restaurant-type"
-            label="What type of food business do you operate?"
-            value={qualification.businessType}
-            options={businessTypes}
-            onChange={(value) => setQualification((current) => ({ ...current, businessType: value }))}
-          />
-          <SelectField
-            id="restaurant-branches"
-            label="How many operating branches?"
-            value={qualification.branches}
-            options={branches}
-            onChange={(value) => setQualification((current) => ({ ...current, branches: value }))}
-          />
-          <SelectField
-            id="restaurant-orders"
-            label="Approximately how many orders per day?"
-            value={qualification.dailyOrders}
-            options={dailyOrders}
-            onChange={(value) => setQualification((current) => ({ ...current, dailyOrders: value }))}
-          />
-          <SelectField
-            id="restaurant-role"
-            label="What is your role in the business?"
-            value={qualification.role}
-            options={roles}
-            onChange={(value) => setQualification((current) => ({ ...current, role: value }))}
-          />
-          <SelectField
-            id="restaurant-system"
-            label="Are you considering the complete Restrova system?"
-            value={qualification.completeSystem}
-            options={[
-              { value: "yes", label: "Yes, I need the complete system" },
-              { value: "no", label: "No, I am only researching individual tools" },
-            ]}
-            onChange={(value) => setQualification((current) => ({ ...current, completeSystem: value }))}
-          />
-          <SelectField
-            id="restaurant-budget"
-            label="Are you comfortable with the onboarding and monthly fees?"
-            value={qualification.onboardingBudget}
-            options={budgetOptions}
-            onChange={(value) => setQualification((current) => ({ ...current, onboardingBudget: value }))}
-          />
-        </div>
-        <SelectField
-          id="restaurant-timeline"
-          label="When are you planning to implement a new system?"
-          value={qualification.timeline}
-          options={timelines}
-          onChange={(value) => setQualification((current) => ({ ...current, timeline: value }))}
-        />
-
-        {qualificationComplete && !eligible ? (
-          <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm leading-6 text-amber-950" role="status">
-            Based on your answers, our personalized demos may not be the best fit right now.
-            Restrova currently prioritizes operating restaurants evaluating a complete system with
-            an implementation plan, the PKR 10,000 onboarding fee, and the monthly service fee (minimum PKR 5,000 or 1% of sales through Restrova).
-            You can review your answers or explore the website meanwhile.
-          </div>
-        ) : null}
-
-        <button
-          type="button"
-          disabled={!eligible}
-          onClick={() => {
-            setError(null);
-            setStage("contact");
-          }}
-          className="group inline-flex min-h-14 w-full items-center justify-center gap-2 rounded-full bg-[#ff6247] px-7 text-base font-black text-white transition hover:bg-[#e45239] disabled:cursor-not-allowed disabled:opacity-50"
-        >
-          Continue to Demo Request
-          <ArrowRight className="h-5 w-5" aria-hidden="true" />
-        </button>
-      </section>
-    );
-  }
-
+  // Single-page form: qualification and contact details appear together.
+  // Unqualified visitors cannot submit; the backend API and Meta Lead event
+  // remain unchanged.
   return (
-    <form onSubmit={onSubmit} className="space-y-5">
-      <PricingSummary compact />
-      <div className="rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-950">
-        Thanks — your restaurant appears to fit our initial criteria. Our team will confirm your business needs during the demo process.
+    <form onSubmit={onSubmit} className="space-y-6" aria-label="Restrova demo request">
+      <PricingSummary />
+
+      <div className="space-y-1">
+        <h3 className="text-lg font-black text-[#171816]">Tell us about your restaurant</h3>
+        <p className="text-sm leading-6 text-black/65">
+          Complete this single form to request a personalized Restrova demo.
+        </p>
+      </div>
+
+      <div className="grid gap-5 sm:grid-cols-2">
+        <SelectField
+          id="restaurant-type"
+          label="What type of food business do you operate?"
+          value={qualification.businessType}
+          options={businessTypes}
+          onChange={(value) => setQualification((current) => ({ ...current, businessType: value }))}
+        />
+        <SelectField
+          id="restaurant-branches"
+          label="How many operating branches?"
+          value={qualification.branches}
+          options={branches}
+          onChange={(value) => setQualification((current) => ({ ...current, branches: value }))}
+        />
+        <SelectField
+          id="restaurant-orders"
+          label="Approximately how many orders per day?"
+          value={qualification.dailyOrders}
+          options={dailyOrders}
+          onChange={(value) => setQualification((current) => ({ ...current, dailyOrders: value }))}
+        />
+        <SelectField
+          id="restaurant-role"
+          label="What is your role in the business?"
+          value={qualification.role}
+          options={roles}
+          onChange={(value) => setQualification((current) => ({ ...current, role: value }))}
+        />
+        <SelectField
+          id="restaurant-system"
+          label="Are you considering the complete Restrova system?"
+          value={qualification.completeSystem}
+          options={[
+            { value: "yes", label: "Yes, I need the complete system" },
+            { value: "no", label: "No, I am only researching individual tools" },
+          ]}
+          onChange={(value) => setQualification((current) => ({ ...current, completeSystem: value }))}
+        />
+        <SelectField
+          id="restaurant-budget"
+          label="Are you comfortable with the onboarding and monthly fees?"
+          value={qualification.onboardingBudget}
+          options={budgetOptions}
+          onChange={(value) => setQualification((current) => ({ ...current, onboardingBudget: value }))}
+        />
+      </div>
+      <SelectField
+        id="restaurant-timeline"
+        label="When are you planning to implement a new system?"
+        value={qualification.timeline}
+        options={timelines}
+        onChange={(value) => setQualification((current) => ({ ...current, timeline: value }))}
+      />
+
+      {qualificationComplete && !eligible ? (
+        <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm leading-6 text-amber-950" role="status">
+          Based on your answers, a personalized Restrova demo may not be the best fit right now.
+          We prioritize operating restaurants considering the complete system and its
+          onboarding and monthly fees, with a plan to get started. You can update your answers
+          or explore the website in the meantime.
+        </div>
+      ) : null}
+
+      <div className="space-y-1 border-t border-black/10 pt-5">
+        <h3 className="text-lg font-black text-[#171816]">Your contact details</h3>
+        <p className="text-sm leading-6 text-black/65">So our team can get in touch about your demo.</p>
       </div>
       <div className="grid gap-5 sm:grid-cols-2">
         <Field
@@ -462,23 +450,6 @@ export default function ContactForm() {
         </div>
       ) : null}
 
-      <div className="flex flex-wrap items-center justify-between gap-3">
-        <button
-          type="button"
-          onClick={() => {
-            setStage("qualification");
-            setStatus("idle");
-            setError(null);
-          }}
-          className="text-sm font-bold text-[#171816] underline underline-offset-4"
-        >
-          Edit restaurant details
-        </button>
-        <span className="text-xs text-black/60">
-          PKR 10,000 onboarding + monthly fee (PKR 5,000 minimum or 1% of Restrova sales, whichever is higher)
-        </span>
-      </div>
-
       <button
         type="submit"
         disabled={!canSubmit || status === "submitting"}
@@ -489,8 +460,8 @@ export default function ContactForm() {
           <ArrowRight className="h-5 w-5 transition group-hover:translate-x-1" aria-hidden="true" />
         ) : null}
       </button>
-      <p className="text-center text-xs leading-5 text-black/45">
-        We’ll use your submitted details to respond to your Restrova demo enquiry.
+      <p className="text-center text-xs leading-5 text-black/55">
+        One form, one submission. No payment is taken here. We’ll use your details only to follow up about your demo request.
       </p>
     </form>
   );
