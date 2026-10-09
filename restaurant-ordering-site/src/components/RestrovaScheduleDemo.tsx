@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { CalendarDays, ArrowRight } from "lucide-react";
+import { meetingPlatforms } from "@/lib/restrova-demo";
 
 function localToday(): string {
   const parts = new Intl.DateTimeFormat("en-US", {
@@ -28,10 +29,9 @@ export default function RestrovaScheduleDemo() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    setToday(localToday());
     let active = true;
     fetch("/api/demo/session", { cache: "no-store", credentials: "same-origin" })
-      .then((result) => { if (active) setAvailable(result.ok); })
+      .then((result) => { if (active) { setAvailable(result.ok); setToday(localToday()); } })
       .catch(() => { if (active) setAvailable(false); })
       .finally(() => { if (active) setChecking(false); });
     return () => { active = false; };
@@ -100,11 +100,7 @@ export default function RestrovaScheduleDemo() {
         <label htmlFor="demo-platform" className="text-sm font-bold text-[#171816]">Preferred Meeting Platform</label>
         <select id="demo-platform" required value={platform} onChange={(event) => setPlatform(event.target.value)} className={fieldClass}>
           <option value="" disabled>Select your meeting platform</option>
-          <option value="WhatsApp">WhatsApp</option>
-          <option value="Zoom Meeting">Zoom Meeting</option>
-          <option value="Google Meet">Google Meet</option>
-          <option value="Phone Call">Phone Call</option>
-          <option value="Other">Other</option>
+          {meetingPlatforms.map((option) => <option key={option} value={option}>{option}</option>)}
         </select>
       </div>
       {platform === "Other" && (

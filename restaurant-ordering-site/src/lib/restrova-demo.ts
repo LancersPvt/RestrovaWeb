@@ -25,6 +25,23 @@ export type Intake = {
   attribution?: string;
 };
 
+export const meetingPlatforms = ["WhatsApp", "Zoom Meeting", "Google Meet", "Phone Call", "Other"] as const;
+export type RequestedDemo = { day: string; time: string; platform: string };
+
+/** Validate the actual calendar date and future time in Pakistan, on the server. */
+export function parseSchedule(payload: unknown, now = Date.now()): RequestedDemo | null {
+  if (!isRecord(payload)) return null;
+  const { day, time, platform, otherPlatform } = payload;
+  if (typeof day !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(day) ||
+      typeof time !== "string" || !/^([01]\d|2[0-3]):[0-5]\d$/.test(time) ||
+      typeof platform !== "string" || !meetingPlatforms.some((option) => option === platform)) return null;
+  const calendarDay = new Date(`${day}T00:00:00Z`);
+  if (!Number.isFinite(calendarDay.getTime()) || calendarDay.toISOString().slice(0, 10) !== day ||
+      new Date(`${day}T${time}:00+05:00`).getTime() <= now) return null;
+  if (platform === "Other" && (!requiredText(otherPlatform, 70) || /[\r\n]/.test(otherPlatform))) return null;
+  return { day, time, platform: platform === "Other" ? `Other: ${(otherPlatform as string).trim()}` : platform };
+}
+
 export const businessTypes = [
   { value: "established", label: "Restaurant / dine-in" },
   { value: "takeaway", label: "Takeaway / fast food" },

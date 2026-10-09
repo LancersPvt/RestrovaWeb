@@ -7,6 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "test:demo": "node src/tests/test_funnel.cjs && node src/tests/test_api.cjs && node src/tests/test_apps_script.cjs",
+    "setup:demo": "node scripts/setup-demo.cjs",
     "sync-tenants": "node scripts/syncTenants.js"
   },
   "dependencies": {

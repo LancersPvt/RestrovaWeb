@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import {
@@ -82,17 +82,9 @@ export default function ContactForm() {
   const router = useRouter();
   const [qualification, setQualification] = useState<Qualification>(initialQualification);
   const [contact, setContact] = useState<ContactDetails>(initialContact);
-  const [attribution, setAttribution] = useState("");
   const [website, setWebsite] = useState(""); // Honeypot; real users never see it.
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const keys = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_id", "adset_id", "ad_id", "fbclid"];
-    const values = keys.filter((key) => params.has(key)).map((key) => `${key}=${params.get(key) ?? ""}`);
-    setAttribution(values.join("; ").slice(0, 1000));
-  }, []);
 
   const availableBranches = useMemo(
     () => qualification.businessType === "chain" ? allBranches.filter((item) => item.value !== "1") : allBranches,
@@ -113,6 +105,10 @@ export default function ContactForm() {
     setError(null);
     setBusy(true);
     try {
+      const params = new URLSearchParams(window.location.search);
+      const keys = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_id", "adset_id", "ad_id", "fbclid"];
+      const attribution = keys.filter((key) => params.has(key))
+        .map((key) => `${key}=${params.get(key) ?? ""}`).join("; ").slice(0, 1000);
       const response = await fetch("/api/demo/intake", {
         method: "POST", headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ qualification, contact, attribution, website }),
