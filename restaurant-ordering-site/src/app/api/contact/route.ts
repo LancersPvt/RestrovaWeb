@@ -1,5 +1,8 @@
 import { NextResponse } from "next/server";
 
+// This route runs on the server. Never put the shared secret in client-side code.
+export const runtime = "nodejs";
+
 const DELIVERY_TIMEOUT_MS = 12_000;
 
 type ContactPayload = {
@@ -11,15 +14,13 @@ type ContactPayload = {
   message?: string;
 };
 
-function isTrustedGoogleRedirect(location: string | null) {
-  if (!location) return false;
-
+function isGoogleAppsScriptUrl(raw: string): boolean {
   try {
-    const url = new URL(location);
+    const url = new URL(raw);
     return (
       url.protocol === "https:" &&
-      (url.hostname === "script.googleusercontent.com" ||
-        url.hostname.endsWith(".script.googleusercontent.com"))
+      url.hostname === "script.google.com" &&
+      /^\/macros\/s\/[^/]+\/exec$/.test(url.pathname)
     );
   } catch {
     return false;
@@ -29,52 +30,32 @@ function isTrustedGoogleRedirect(location: string | null) {
 export async function POST(req: Request) {
   const body = (await req.json().catch(() => null)) as ContactPayload | null;
 
-  if (!body) {
-    return NextResponse.json(
-      { ok: false, error: "Invalid JSON payload." },
-      { status: 400 }
-    );
+  if (!body || typeof body !== "object" || Array.isArray(body)) {
+    return NextResponse.json({ ok: false, error: "Invalid JSON payload." }, { status: 400 });
   }
 
-  const name = body.name?.trim() ?? "";
-  const restaurant = body.restaurant?.trim() ?? "";
-  const city = body.city?.trim() ?? "";
-  const email = body.email?.trim() ?? "";
-  const phone = body.phone?.trim() ?? "";
-  const message = body.message?.trim() ?? "";
+  const name = typeof body.name === "string" ? body.name.trim() : "";
+  const restaurant = typeof body.restaurant === "string" ? body.restaurant.trim() : "";
+  const city = typeof body.city === "string" ? body.city.trim() : "";
+  const email = typeof body.email === "string" ? body.email.trim() : "";
+  const phone = typeof body.phone === "string" ? body.phone.trim() : "";
+  const message = typeof body.message === "string" ? body.message.trim() : "";
 
-  if (!name || !message || (!email && !phone)) {
+  // Restrova's qualification form requires a phone number and a restaurant.
+  if (!name || !restaurant || !phone || !message) {
     return NextResponse.json(
-      {
-        ok: false,
-        error: "Please include name, message, and at least email or phone.",
-      },
-      { status: 400 }
+      { ok: false, error: "Please include your name, restaurant, phone and form answers." },
+      { status: 400 },
     );
   }
-
-  const lead = {
-    name,
-    restaurant,
-    city,
-    email,
-    phone,
-    message,
-    at: new Date().toISOString(),
-  };
 
   const sheetsUrl = process.env.GOOGLE_SHEETS_URL;
-
-  if (!sheetsUrl) {
-    console.error("[contact] GOOGLE_SHEETS_URL is missing");
-
+  const secret = process.env.RESTROVA_SHEETS_SHARED_SECRET;
+  if (!sheetsUrl || !isGoogleAppsScriptUrl(sheetsUrl) || !secret) {
+    console.error("[contact] Google Sheets URL or secret missing/invalid");
     return NextResponse.json(
-      {
-        ok: false,
-        error:
-          "We could not send your request right now. Please try again or email us directly.",
-      },
-      { status: 503 }
+      { ok: false, error: "The demo form is temporarily unavailable. Please try again later." },
+      { status: 503 },
     );
   }
 
@@ -85,58 +66,51 @@ export async function POST(req: Request) {
     const sheetsResponse = await fetch(sheetsUrl, {
       method: "POST",
       headers: {
-        // The Apps Script integration was built for JSON. Sending text/plain
-        // can make strict doPost handlers reject an otherwise valid lead.
         "Content-Type": "application/json",
-        Accept: "application/json, text/plain, */*",
+        Accept: "application/json",
       },
-      body: JSON.stringify(lead),
-      // Google Apps Script commonly confirms a successful doPost with a
-      // redirect to script.googleusercontent.com. Keep that response visible
-      // so a failing redirected GET cannot turn a successful POST into a 500.
-      redirect: "manual",
+      // This request happens on the Next.js server, not in the browser.
+      body: JSON.stringify({
+        name,
+        restaurant,
+        city,
+        email,
+        phone,
+        message,
+        at: new Date().toISOString(),
+        secret,
+      }),
+      // Apps Script ContentService redirects to a Google-served JSON response.
+      // Follow the redirect so we can read its explicit storage acknowledgement.
+      redirect: "follow",
       cache: "no-store",
       signal: controller.signal,
     });
 
-    const acceptedRedirect =
-      sheetsResponse.status >= 300 &&
-      sheetsResponse.status < 400 &&
-      isTrustedGoogleRedirect(sheetsResponse.headers.get("location"));
+    const result = (await sheetsResponse.json().catch(() => null)) as
+      | { ok?: boolean; stored?: boolean; error?: string }
+      | null;
 
-    if (!sheetsResponse.ok && !acceptedRedirect) {
-      const responseText = (await sheetsResponse.text()).slice(0, 500);
-      console.error("[contact] Lead delivery rejected", {
+    if (!sheetsResponse.ok || result?.ok !== true || result?.stored !== true) {
+      console.error("[contact] New CRM did not confirm saving the lead", {
         status: sheetsResponse.status,
-        response: responseText,
       });
-
       return NextResponse.json(
-        {
-          ok: false,
-          error:
-            "We could not send your request right now. Please try again or email us directly.",
-        },
-        { status: 502 }
+        { ok: false, error: "We could not save your request. Please try again." },
+        { status: 502 },
       );
     }
 
-    console.log("[contact] Lead delivered", {
-      status: sheetsResponse.status,
-      viaRedirect: acceptedRedirect,
-    });
-
+    // Your ContactForm.tsx fires Meta Pixel's Lead event only when ok=true.
     return NextResponse.json({ ok: true });
   } catch (error) {
-    console.error("[contact] Lead delivery failed", error);
-
+    console.error(
+      "[contact] CRM request failed",
+      error instanceof Error ? error.message : "Unknown error",
+    );
     return NextResponse.json(
-      {
-        ok: false,
-        error:
-          "We could not send your request right now. Please try again or email us directly.",
-      },
-      { status: 502 }
+      { ok: false, error: "We could not send your request. Please try again." },
+      { status: 502 },
     );
   } finally {
     clearTimeout(timeout);
