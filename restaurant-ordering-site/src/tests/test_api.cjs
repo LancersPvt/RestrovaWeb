@@ -1,0 +1,62 @@
+const fs=require('node:fs'),path=require('node:path'),ts=require('typescript'),assert=require('node:assert/strict');
+const project=path.resolve(__dirname,'..');
+process.env.RESTROVA_SHEETS_SHARED_SECRET='test_secret_only_32_bytes_long_abcdefg';
+process.env.GOOGLE_SHEETS_URL='https://script.google.com/macros/s/EXAMPLE/exec';
+const cached=new Map();
+const fakeNext={NextResponse:{json(body,init={}){const jar=[];return {body,status:init.status||200,headers:new Headers(init.headers||{}),cookies:{set:v=>jar.push(v),delete:n=>jar.push({name:n,value:'',maxAge:0})},jar};}}};
+function load(file){
+  file=path.resolve(file);
+  if(cached.has(file))return cached.get(file).exports;
+  const module={exports:{}};cached.set(file,module);
+  const source=fs.readFileSync(file,'utf8');
+  const js=ts.transpileModule(source,{fileName:file,compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.CommonJS}}).outputText;
+  const req=(name)=>{
+    if(name==='next/server')return fakeNext;
+    if(name.startsWith('@/lib/'))return load(path.join(project,'src/lib',name.slice('@/lib/'.length)+'.ts'));
+    return require(name);
+  };
+  new Function('require','module','exports',js)(req,module,module.exports);
+  return module.exports;
+}
+const intakeApi=load(path.join(project,'src/app/api/demo/intake/route.ts'));
+const sessionApi=load(path.join(project,'src/app/api/demo/session/route.ts'));
+const scheduleApi=load(path.join(project,'src/app/api/demo/schedule/route.ts'));
+const q={businessType:'established',branches:'2',dailyOrders:'30_99',role:'owner',completeSystem:'yes',onboardingBudget:'ready',timeline:'10_days'};
+const c={name:'Ali Example',restaurant:'Demo Example',phone:'+923001234567',city:'Karachi'};
+const calls=[];
+global.fetch=async (url,opts)=>{const payload=JSON.parse(opts.body);calls.push(payload);return {ok:true,status:200,json:async()=>({ok:true,stored:true})};};
+async function test(){
+ let res=await intakeApi.POST({json:async()=>({qualification:q,contact:c})});
+ assert.equal(res.status,200);assert.equal(res.body.next,'schedule');
+ assert.equal(calls.length,0,'No sheet write before scheduling');
+ assert.equal(res.jar.length,1);assert.equal(res.jar[0].httpOnly,true);assert.equal(res.jar[0].path,'/api/demo');
+ const cookie=res.jar[0].value;
+ let s=await sessionApi.GET({cookies:{get:()=>({value:cookie})}});
+ assert.equal(s.body.ok,true);
+ let bad=await sessionApi.GET({cookies:{get:()=>({value:cookie.slice(0,-3)+'xxx'})}});
+ assert.equal(bad.body.ok,false);
+ const missing=await scheduleApi.POST({cookies:{get:()=>null},json:async()=>({day:'2030-01-01',time:'14:00',platform:'Zoom Meeting'})});
+ assert.equal(missing.status,401);
+ const date=new Date(Date.now()+3*86400000).toLocaleDateString('en-CA',{timeZone:'Asia/Karachi',year:'numeric',month:'2-digit',day:'2-digit'});
+ const scheduleInput={day:date,time:'13:30',platform:'Google Meet'};
+ let booked=await scheduleApi.POST({cookies:{get:()=>({value:cookie})},json:async()=>scheduleInput});
+ assert.equal(booked.status,200);assert.equal(booked.body.ok,true);
+ assert.equal(calls.length,1);assert.equal(calls[0].type,'qualified_demo');
+ assert(calls[0].message.includes('PREFERRED PLATFORM: Google Meet'));
+ assert.equal(booked.jar.at(-1).maxAge,0);
+ let other={...q,businessType:'home',onboardingBudget:'no',timeline:'researching'};
+ let low=await intakeApi.POST({json:async()=>({qualification:other,contact:c})});
+ assert.equal(low.status,200);assert.equal(low.body.next,'thank-you');
+ assert.equal(calls.length,2);assert.equal(calls[1].type,'other_enquiry');
+ assert(!calls[1].message.includes('PREFERRED DAY:'));
+ let notEnough=await intakeApi.POST({json:async()=>({qualification:{...q,businessType:'chain',branches:'1'},contact:c})});
+ assert.equal(notEnough.status,400);
+ const invalidSchedule=await scheduleApi.POST({cookies:{get:()=>({value:cookie})},json:async()=>({day:date,time:'13:30',platform:'Random App'})});
+ assert.equal(invalidSchedule.status,400);
+ assert.equal(calls.length,2);
+ console.log('PASS: suitable intake creates secure session but writes NO lead');
+ console.log('PASS: scheduling creates exactly one qualified CRM write');
+ console.log('PASS: other enquiry uses a separate CRM write, not Leads');
+ console.log('PASS: stale/missing/tampered sessions and invalid options are rejected');
+}
+test().catch(e=>{console.error(e);process.exit(1)});
