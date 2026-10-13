@@ -43,6 +43,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
   ];
 
+  // The draft remains noindex until approved; prepare its public route in the sitemap.
+  staticPages.push({
+    url: `${siteConfig.url}/privacy-policy`,
+    changeFrequency: "yearly",
+    priority: 0.3,
+  });
+
   /* ── Blog pages ── */
   const blogPages: MetadataRoute.Sitemap = blogPosts.map((post) => ({
     url: `${siteConfig.url}/blog/${post.slug}`,

@@ -30,6 +30,7 @@ export default function SiteFooter() {
               <li><Link href="/#platform" className="transition hover:text-white">Platform</Link></li>
               <li><Link href="/#restaurants" className="transition hover:text-white">Restaurants</Link></li>
               <li><Link href="/services" className="transition hover:text-white">All services</Link></li>
+              <li><Link href="/privacy-policy" className="transition hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">Privacy Policy</Link></li>
             </ul>
           </div>
 

@@ -1,0 +1,45 @@
+RESTROVA PRIVACY POLICY — PRE-PUBLICATION REVIEW
+
+Status: Draft requiring business approval. Do not deploy this policy without approval.
+Route: /privacy-policy
+Intended public URL: https://www.restrova.com/privacy-policy
+Meta Instant Form link text: Restrova Privacy Policy
+
+INFORMATION STILL REQUIRED
+- Registered legal business name.
+- Verified business address.
+- Approved effective date. The page deliberately displays a pending date rather than inventing one.
+- The owner agreed to use the existing support@lancers.dev contact for privacy enquiries during implementation. Confirm the mailbox is monitored and privacy requests have an owner before publication.
+
+IMPLEMENTATION
+- src/app/(main)/privacy-policy/page.tsx: public server-rendered page, 17 sections, table of contents, contact links, metadata, draft notice.
+- src/app/(main)/privacy-policy/privacy-policy.module.css: scoped responsive styles.
+- src/components/SiteFooter.tsx: one internal Privacy Policy link in the existing global footer.
+- src/app/sitemap.ts: privacy-policy entry alongside other static routes.
+- No new packages, global styling changes, authentication changes, or deployment.
+- Canonical and Open Graph URLs explicitly use the required HTTPS production URL.
+- Draft metadata is noindex, follow; this does not restrict direct access. After approval, replace the pending fields/date, remove the draft notice, and remove the robots override so the root index/follow metadata applies. Inclusion in the sitemap is already prepared.
+
+SOURCE-VERIFIED WEBSITE BEHAVIOR
+- src/app/layout.tsx loads Meta Pixel globally after interaction readiness and tracks PageView. It also includes a no-JavaScript tracking image. This is not a consent gate.
+- src/components/RestrovaScheduleDemo.tsx sends a Meta Lead event after successful storage of a qualified demo request.
+- src/components/ContactForm.tsx collects campaign parameters, ad identifiers, and fbclid from the page URL for enquiry attribution.
+- src/lib/restrova-demo-session.ts and src/app/api/demo/* use the restrova_demo_draft_v6 cookie during scheduling.
+- src/lib/restrova-demo.ts applies automatic business qualification; results influence scheduling availability and lead categorization. The policy discloses this rather than claiming there is no automated processing.
+- src/lib/restrova-sheets.ts forwards enquiry/scheduling data to Google Sheets through Google Apps Script.
+- src/lib/site.ts contains the existing support@lancers.dev contact.
+- No separate Google Analytics integration or cookie preference manager was found in the inspected application source. Google Sheets is described as an enquiry system, not website analytics.
+
+BUSINESS / LEGAL REVIEW REQUIRED BEFORE DEPLOYMENT
+- Confirm actual data collection across the customer apps, Admin, Fleet, and restaurant websites, especially rider location (including foreground/background behavior), payment handling, and any additional analytics/advertising SDKs outside this repository.
+- Confirm which Meta Instant Form, Make, CRM, scheduling, and Google Workspace workflows are active and the data each provider receives. Make and other optional services are described conditionally from the task brief, not as independently verified integrations.
+- Confirm the respective responsibilities of Restrova, the legal operating entity, restaurants, and providers, and the jurisdictions served. Obtain any needed jurisdiction-specific legal bases, rights, regulator details, response periods, or additional notices.
+- Confirm marketing consent and opt-out procedures, and who handles access, correction, deletion, consent withdrawal, and restaurant-routed requests.
+- Existing Meta Pixel runs without a source-level consent gate, including its noscript image. Review applicable requirements and implement any necessary consent mechanism before relevant production use; a privacy policy alone is not consent. Tracking behavior has not been changed by this task.
+- Confirm retention/deletion/backup practices, organizational safeguards, security response procedures, provider locations, and any required international transfer arrangements. No retention period, security certification, or international compliance guarantee has been invented.
+- Confirm children's-data practices for restaurant ordering and workforce use.
+- Recheck the final production URL over HTTPS without authentication, the mobile layout, footer link, sitemap, and final metadata after deployment is separately approved.
+
+Review reference: ICO, "What privacy information should we provide?"
+https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/the-right-to-be-informed/what-privacy-information-should-we-provide/
+This guidance identifies common notice topics; it does not establish that UK law applies to Restrova or certify this draft's legal sufficiency.
