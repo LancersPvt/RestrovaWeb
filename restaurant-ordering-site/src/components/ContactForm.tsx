@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import {
@@ -15,7 +16,7 @@ const initialQualification: Qualification = {
 const initialContact: ContactDetails = { name: "", restaurant: "", phone: "", city: "" };
 
 const selectClass = "mt-2 h-13 w-full rounded-xl border border-black/15 bg-white px-4 py-3 text-sm font-medium text-[#171816] outline-none focus:border-[#ff6247] focus:ring-4 focus:ring-[#ff6247]/10";
-const buttonClass = "flex min-h-14 w-full items-center justify-center gap-2 rounded-full bg-[#ff6247] px-7 py-3 text-base font-black text-white transition hover:bg-[#e45239] disabled:cursor-not-allowed disabled:opacity-50";
+const buttonClass = "flex min-h-14 w-full items-center justify-center gap-2 rounded-full bg-[#c2412d] px-7 py-3 text-base font-black text-white transition hover:bg-[#e45239] disabled:cursor-not-allowed disabled:opacity-50";
 
 type Option = { readonly value: string; readonly label: string };
 function SelectField({ id, label, value, options, onChange }: {
@@ -72,7 +73,7 @@ function PricingSummary() {
       </div>
       <p className="mt-3 text-xs leading-5 text-black/70">
         The 1% applies only to monthly sales through Restrova, not other restaurant sales.
-        Monthly fees are separate from the one-time onboarding fee.
+        Monthly fees are separate from the one-time onboarding fee. <Link href="/pricing" className="font-bold underline">See worked examples and charges to confirm.</Link>
       </p>
     </div>
   );
@@ -129,7 +130,7 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={submit} className="space-y-7" aria-label="Restrova restaurant and contact information">
+    <form aria-busy={busy} onSubmit={submit} className="space-y-7" aria-label="Restrova restaurant and contact information">
       <PricingSummary />
       <section className="space-y-4">
         <div>
@@ -188,12 +189,13 @@ export default function ContactForm() {
           value={website} onChange={(event) => setWebsite(event.target.value)} />
       </div>
       {error && <p role="alert" className="rounded-xl border border-red-200 bg-red-50 p-4 text-sm text-red-800">{error}</p>}
+      <p className="sr-only" role="status" aria-live="polite">{busy ? "Submitting your restaurant details. Please wait." : ""}</p>
       <button className={buttonClass} type="submit" disabled={busy}>
         {busy ? "Submitting…" : "Submit Details"}
         {!busy && <ArrowRight className="h-5 w-5" aria-hidden="true" />}
       </button>
-      <p className="text-center text-xs leading-5 text-black/55">
-        We use your details to process your enquiry and contact you where appropriate.
+      <p className="text-center text-xs leading-5 text-black/70">
+        We use your details to process your enquiry and contact you about it. Read the <Link href="/privacy-policy" className="underline underline-offset-2">privacy notice (draft under review)</Link>.
       </p>
     </form>
   );

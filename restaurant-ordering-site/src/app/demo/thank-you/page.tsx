@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { CheckCircle2 } from "lucide-react";
 export const metadata: Metadata = {
-  title: "Thank You | Restrova",
+  title: "Thank You",
+  description: "Your Restrova demo enquiry workflow.",
+  alternates: { canonical: "https://www.restrova.com/demo/thank-you" },
   robots: { index: false, follow: false },
 };
 export default function ThankYouPage() {

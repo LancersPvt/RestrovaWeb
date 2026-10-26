@@ -1,25 +1,23 @@
-import type { Metadata } from "next";
+import { staticMetadata } from "@/lib/seo";
+import { Breadcrumbs } from "@/components/MarketingPage";
 import { Check } from "lucide-react";
 
 import ContactForm from "@/components/ContactForm";
 
-export const metadata: Metadata = {
-  title: "Contact",
-  description:
-    "Request a free Restrova demo and get a tailored recommendation for your restaurant’s direct ordering website, apps, and operations tools.",
-};
+export const metadata = staticMetadata("/contact");
 
 export default function ContactPage() {
   return (
-    <main className="bg-[#fffaf4] text-[#171816]">
+    <main id="main-content" className="bg-[#fffaf4] text-[#171816]">
       <section className="py-16 sm:py-24">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-[.85fr_1.15fr] lg:items-center">
           <div>
-            <p className="text-sm font-black uppercase tracking-[.2em] text-[#e45239]">
+            <Breadcrumbs items={[{ label: "Free demo", href: "/contact" }]} />
+            <p className="text-sm font-black uppercase tracking-[.2em] text-[#b83d29]">
               Talk to the Restrova team
             </p>
             <h1 className="mt-4 text-balance text-4xl font-black leading-tight tracking-[-0.04em] sm:text-6xl">
-              Let’s plan a better direct ordering channel.
+              Book a free restaurant software demo.
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-8 text-black/60">
               Tell us a little about your restaurant. We’ll show you the most
@@ -35,7 +33,7 @@ export default function ContactPage() {
                   "A clear scope, cost, and next step",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#ffebe4] text-[#e45239]">
+                    <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#ffebe4] text-[#b83d29]">
                       <Check className="h-3.5 w-3.5" aria-hidden="true" />
                     </span>
                     {item}
@@ -47,7 +45,7 @@ export default function ContactPage() {
 
           <div className="rounded-[2rem] border border-black/8 bg-white p-6 shadow-2xl sm:p-9">
             <div className="mb-7">
-              <p className="text-2xl font-black tracking-tight">Request your free demo</p>
+              <h2 className="text-2xl font-black tracking-tight">Request your free demo</h2>
               <p className="mt-2 text-sm leading-6 text-black/55">
                 Share a few details and we’ll get in touch to arrange a convenient time.
               </p>

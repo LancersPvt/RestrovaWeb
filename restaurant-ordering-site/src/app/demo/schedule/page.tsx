@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import RestrovaScheduleDemo from "@/components/RestrovaScheduleDemo";
 export const metadata: Metadata = {
-  title: "Request a Restrova Demo",
+  title: "Choose a Demo Time",
+  description: "Your Restrova demo enquiry workflow.",
+  alternates: { canonical: "https://www.restrova.com/demo/schedule" },
   robots: { index: false, follow: false },
 };
 export default function SchedulePage() {

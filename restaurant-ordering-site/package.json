@@ -9,7 +9,9 @@
     "lint": "eslint",
     "test:demo": "node src/tests/test_funnel.cjs && node src/tests/test_api.cjs && node src/tests/test_apps_script.cjs",
     "setup:demo": "node scripts/setup-demo.cjs",
-    "sync-tenants": "node scripts/syncTenants.js"
+    "sync-tenants": "node scripts/syncTenants.js",
+    "test:seo": "node src/tests/test_seo.mjs",
+    "check:seo": "node scripts/check-seo.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.563.0",

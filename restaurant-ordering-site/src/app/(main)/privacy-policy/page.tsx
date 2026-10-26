@@ -252,7 +252,7 @@ const sections: { id: string; title: string; content: ReactNode }[] = [
 
 export default function PrivacyPolicyPage() {
   return (
-    <main id="privacy-policy" className={`${styles.page} bg-[#fffaf4] text-[#171816]`}>
+    <main id="main-content" className={`${styles.page} bg-[#fffaf4] text-[#171816]`}>
       <header className="border-b border-black/8">
         <div className="mx-auto max-w-7xl px-6 py-14 sm:py-20">
           <p className="text-xs font-black uppercase tracking-[.2em] text-[#b9402b]">Restrova</p>
@@ -290,7 +290,7 @@ export default function PrivacyPolicyPage() {
               <div className={styles.copy}>{section.content}</div>
             </section>
           ))}
-          <a href="#privacy-policy" className="mt-8 inline-flex min-h-11 items-center gap-2 text-sm font-bold text-[#a63725] underline underline-offset-4">Back to top <ArrowUpRight className="h-4 w-4" aria-hidden="true" /></a>
+          <a href="#main-content" className="mt-8 inline-flex min-h-11 items-center gap-2 text-sm font-bold text-[#a63725] underline underline-offset-4">Back to top <ArrowUpRight className="h-4 w-4" aria-hidden="true" /></a>
         </article>
       </div>
     </main>

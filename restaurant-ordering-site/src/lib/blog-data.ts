@@ -1,272 +1,53 @@
 export interface BlogPost {
-    id: string;
-    slug: string;
-    title: string;
-    excerpt: string;
-    content: string;
-    category: string;
-    author: string;
-    authorExpertise: string; // E-A-T: Author expertise/credentials
-    date: string;
-    readTime: string;
-    image: string;
+  id: string; slug: string; title: string; excerpt: string; content: string; category: string;
+  author: string; authorExpertise: string; date: string; updated?: string; readTime: string; image: string; relatedSolution: string;
 }
-
 export const blogPosts: BlogPost[] = [
-    {
-        id: "1",
-        slug: "why-direct-ordering-beats-third-party-marketplaces",
-        title: "Why Direct Ordering Beats Third-Party Marketplaces",
-        excerpt: "Explore how a direct ordering channel can strengthen margins, branding, and customer relationships.",
-        content: `Online ordering has become essential for restaurants, but each channel plays a different role. Marketplaces can help with discovery, while a direct ordering channel gives regular customers a branded way to return.
-
-## The Hidden Costs of Marketplaces
-
-When you rely on third-party platforms, you're not just paying commission fees. You're also:
-
-- **Losing customer data**: You don't own the relationship with your customers
-- **Competing on price**: Customers compare you directly with competitors
-- **Sacrificing brand identity**: Your restaurant becomes just another listing
-- **Paying for delivery**: Additional fees for their delivery network
-
-## The Direct Ordering Advantage
-
-Building your own ordering platform with Restrova gives you complete control:
-
-### 1. Keep More Control Over Direct-Order Economics
-A direct channel gives you a clearer view of platform, payment, marketing, and delivery costs. Compare the full cost of each channel using your own order mix before deciding where to invest.
-
-### 2. Own Your Customer Data
-Build a database of customer preferences, order history, and contact information. Use this data to:
-- Send targeted promotions
-- Create personalized recommendations
-- Build loyalty programs that actually work
-
-### 3. Strengthen Your Brand
-Your ordering platform reflects your brand identity. Custom colors, logo, and messaging create a cohesive experience that builds brand recognition and loyalty.
-
-### 4. Control the Customer Experience
-From menu presentation to checkout flow, you decide how customers interact with your brand. Optimize for conversions without platform restrictions.
-
-## Real Results
-
-Restaurants use direct ordering to improve:
-- **Control over the ordering journey and channel costs**
-- **Average order value opportunities** through relevant add-ons
-- **Repeat ordering** through loyalty and direct communication
-
-## Making the Switch
-
-Transitioning from marketplaces to direct ordering doesn't mean abandoning them entirely. The smart strategy is:
-
-1. **Build your direct channel** with a branded app and website
-2. **Promote it heavily** to existing customers
-3. **Offer exclusive deals** on your direct platform
-4. **Gradually reduce** marketplace dependency
-
-## Conclusion
-
-Third-party marketplaces served a purpose in getting restaurants online quickly. But for long-term success and profitability, owning your ordering platform is essential. The question isn't whether to make the switch—it's how soon you can start.
-
-Ready to take control of your online ordering? Contact us to learn how Restrova can help you build a profitable direct ordering system.`,
-        category: "Business Strategy",
-        author: "Restrova Team",
-        authorExpertise: "Restaurant ordering, product, and operations guidance from the Restrova team.",
-        date: "2026-02-01",
-        readTime: "5 min read",
-        image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&q=80",
-    },
-    {
-        id: "2",
-        slug: "5-features-every-restaurant-app-must-have-in-2026",
-        title: "5 Features Every Restaurant App Must Have in 2026",
-        excerpt: "From contactless payments to AI-powered recommendations, here are the essential features modern diners expect.",
-        content: `The restaurant app landscape has evolved dramatically. Customers now expect seamless, personalized experiences that rival the best e-commerce platforms. Here are the must-have features for any restaurant app in 2026.
-
-## 1. Contactless Everything
-
-The pandemic permanently changed customer expectations around hygiene and convenience.
-
-### Essential Contactless Features:
-- **QR code ordering**: Customers scan and order from their table
-- **Digital payments**: Apple Pay, Google Pay, card on file
-- **Digital receipts**: Email or SMS confirmations
-- **Contactless pickup**: Curbside and locker systems
-
-**Why it matters**: Contactless options can make ordering and payment faster and more convenient when they fit the restaurant’s service model.
-
-## 2. AI-Powered Personalization
-
-Generic menus are dead. Modern apps use AI to personalize the experience.
-
-### Smart Personalization:
-- **Order history recommendations**: "Your usual?" prompts
-- **Dietary preference filters**: Vegan, gluten-free, halal options
-- **Time-based suggestions**: Breakfast items in morning, dinner at night
-- **Upsell intelligence**: Relevant add-ons based on cart contents
-
-**Practical value**: Relevant recommendations can make a large menu easier to navigate and surface useful add-ons without overwhelming the customer.
-
-## 3. Loyalty & Rewards Integration
-
-Loyalty programs drive repeat business, but they need to be seamless.
-
-### Modern Loyalty Features:
-- **Points on every order**: Automatic tracking, no cards needed
-- **Tiered rewards**: Bronze, Silver, Gold status levels
-- **Birthday bonuses**: Automated special offers
-- **Referral programs**: Reward customers for bringing friends
-- **Gamification**: Challenges and achievements
-
-**The opportunity**: A well-designed loyalty program can give regular customers a clear reason to choose your direct channel again.
-
-## 4. Real-Time Order Tracking
-
-Transparency builds trust. Customers want to know exactly where their order is.
-
-### Tracking Features:
-- **Live status updates**: Preparing → Ready → Out for delivery
-- **Estimated time**: Dynamic ETAs that update in real-time
-- **Driver location**: Live map for delivery orders
-- **Push notifications**: Updates at each stage
-
-**Customer value**: Clear status updates can reduce uncertainty and unnecessary “where is my order?” calls.
-
-## 5. Flexible Ordering Options
-
-One size doesn't fit all. Give customers choice in how they receive their food.
-
-### Multi-Channel Ordering:
-- **Delivery**: Third-party or in-house fleet
-- **Pickup**: Curbside, counter, or locker
-- **Dine-in**: Pre-order for table service
-- **Catering**: Large orders with advance scheduling
-- **Scheduled orders**: Order now, receive later
-
-**Business benefit**: Offering the right mix of delivery, pickup, dine-in, and scheduled ordering can serve more customer occasions.
-
-## Conclusion
-
-The restaurant app market is competitive, but the right features can set you apart. Focus on what your customers actually use, measure everything, and iterate based on data.
-
-At Restrova, we build all these features into our restaurant ordering platforms. Get in touch to see how we can create a custom app that drives real results for your business.`,
-        category: "Technology",
-        author: "Restrova Team",
-        authorExpertise: "Restaurant ordering, product, and operations guidance from the Restrova team.",
-        date: "2026-01-28",
-        readTime: "7 min read",
-        image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop&q=80",
-    },
-    {
-        id: "3",
-        slug: "how-to-boost-customer-loyalty-with-digital-rewards",
-        title: "How to Boost Customer Loyalty with Digital Rewards",
-        excerpt: "Learn proven strategies to increase repeat orders and customer lifetime value through smart loyalty programs.",
-        content: `Customer acquisition costs are rising, but your most profitable customers are the ones you already have. A well-designed digital rewards program can transform one-time buyers into loyal advocates.
-
-## The Loyalty Crisis in Restaurants
-
-Many first-time customers order once and never build a direct habit with the restaurant. Why?
-
-- **No relationship building**: Transaction ends at payment
-- **Easy to forget**: Hundreds of restaurant options available
-- **No incentive to return**: Competitors offer similar food
-- **Lack of personalization**: Generic experience every time
-
-Digital rewards programs solve all of these problems.
-
-## The Psychology of Loyalty
-
-Effective loyalty programs tap into fundamental human psychology:
-
-### 1. The Endowment Effect
-People value things more once they own them. When customers have points in your system, they're psychologically invested in your brand.
-
-### 2. Progress Motivation
-Seeing progress toward a reward (8/10 coffees purchased) can motivate completion and make the value of returning easier to understand.
-
-### 3. Variable Rewards
-Surprise bonuses (double points days, random free items) create excitement and anticipation, similar to slot machines.
-
-### 4. Status & Recognition
-Tiered programs (Bronze/Silver/Gold) give customers status to maintain, increasing engagement.
-
-## Building Your Digital Rewards Program
-
-### Step 1: Choose Your Reward Structure
-
-**Points-Based (Recommended)**
-- Earn 1 point per $1 spent
-- Redeem 100 points for $10 off
-- Simple, flexible, easy to understand
-
-**Punch Card Digital**
-- Buy 9 items, get 10th free
-- Works well for coffee shops, fast casual
-- Easy to visualize progress
-
-**Tiered Membership**
-- Bronze: 5% off all orders
-- Silver: 10% off + free delivery
-- Gold: 15% off + exclusive items
-- Creates aspirational goals
-
-### Step 2: Make Enrollment Effortless
-
-**Automatic Enrollment**
-- Join on first order, no forms needed
-- Points start accumulating immediately
-- Removes extra signup friction compared with a separate manual form
-
-**Social Login**
-- Sign up with Google/Facebook
-- Reduces friction, increases completion
-- Captures valuable customer data
-
-### Step 3: Communicate Value Constantly
-
-**In-App Notifications**
-- "You earned 50 points!" after each order
-- "You're 2 orders away from a free meal!"
-- "Double points today only!"
-
-**Email Campaigns**
-- Monthly points balance updates
-- Expiring points reminders
-- Exclusive member-only offers
-
-**SMS Alerts**
-- "Your reward is ready to redeem!"
-- "Flash sale: 3x points for the next 2 hours"
-- Reserve SMS for genuinely useful, consent-based, time-sensitive updates
-
-## What to Measure
-
-Measure the program against your own baseline instead of relying on generic benchmarks:
-- Enrollment and active-member rate
-- Reward redemption rate
-- Repeat-order frequency
-- Average order value for members and non-members
-- Cost of rewards compared with incremental gross profit
-
-## Conclusion
-
-Digital loyalty programs aren't just nice-to-have anymore—they're essential for restaurant survival. The restaurants winning in 2026 are the ones that turn every transaction into a relationship.
-
-Ready to build a loyalty program that actually drives results? Contact Restrova to see how we integrate powerful rewards systems into our restaurant platforms.`,
-        category: "Marketing",
-        author: "Restrova Team",
-        authorExpertise: "Restaurant ordering, product, and operations guidance from the Restrova team.",
-        date: "2026-01-25",
-        readTime: "6 min read",
-        image: "https://images.unsplash.com/photo-1556742111-a301076d9d18?w=800&h=600&fit=crop&q=80",
-    },
+  {
+    "id": "1",
+    "slug": "why-direct-ordering-beats-third-party-marketplaces",
+    "title": "Direct Ordering and Marketplaces: A Pakistan Restaurant Guide",
+    "excerpt": "Compare channel costs, customer relationships and delivery responsibilities using your own restaurant numbers before investing in direct ordering.",
+    "category": "Business Strategy",
+    "date": "2026-02-01",
+    "readTime": "4 min read",
+    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&q=80",
+    "relatedSolution": "restaurant-ordering-websites",
+    "content": "A restaurant in Pakistan can use a marketplace and a direct ordering channel for different jobs. A marketplace may introduce new customers. Your own website or app gives people who already know the restaurant another way to return. The useful question is which mix your team can operate well.\n\n## Compare a complete month of costs\n\nStart with your actual marketplace agreement and order records. List commissions, delivery costs, promotions, payment charges and adjustments. For direct orders, include software, payment processing, packaging, rider costs and the work needed to attract customers. Do not compare only two headline percentages.\n\nRestrova charges PKR 10,000 for onboarding. The monthly service fee is the higher of PKR 5,000 and 1% of sales processed through Restrova. For PKR 800,000 of processed sales, that monthly fee is PKR 8,000. Taxes, other charges and exclusions require confirmation. Use the [pricing examples](/pricing) to estimate the software component.\n\n## Choose a starting audience\n\nA direct channel needs a reason for customers to use it. Begin with customers who already visit or follow your restaurant. Make the official ordering link easy to recognize on your own website and approved promotional materials. Any use of marketplace customer information or promotional inserts should respect the relevant agreement and customer permissions.\n\n## Rehearse the operating work\n\n- Place a demonstration order on a mobile phone and check the menu options.\n- Confirm which branch receives it and who starts preparation.\n- Follow the dispatch handoff and customer updates.\n- Review the finished order and any rider settlement.\n\nIf your team runs its own riders, review [delivery management](/services/delivery-management) before promising delivery coverage. If you need imports from a marketplace, ask for that exact integration to be demonstrated; a direct channel alone does not imply one exists.\n\n## Measure without assuming the result\n\nTrack completed orders, cancellations, average order value and the cost of acquiring a direct customer. Compare similar periods and account for promotions or seasonality. An increase in direct orders may be a shift from another channel rather than new revenue. Neither a branded app nor a lower platform charge guarantees profit.\n\n## Decide the next step\n\nKeep channels that serve a useful purpose and improve the parts your team can control. Review the [channel comparison](/compare-marketplaces), then bring your menu and current order mix to a [free demo](/contact).",
+    "author": "Restrova Team",
+    "authorExpertise": "Product and operations guidance from the Restrova team.",
+    "updated": "2026-10-26"
+  },
+  {
+    "id": "2",
+    "slug": "5-features-every-restaurant-app-must-have-in-2026",
+    "title": "Five Checks Before Choosing a Restaurant Ordering App",
+    "excerpt": "A practical checklist for Pakistani restaurant owners: menu clarity, order handoffs, delivery, repeat ordering and app ownership.",
+    "category": "Technology",
+    "date": "2026-01-28",
+    "readTime": "4 min read",
+    "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop&q=80",
+    "relatedSolution": "restaurant-ordering-apps",
+    "content": "Choosing a restaurant app is easier when you test real tasks. Bring a small menu, your branch details and the phones your team expects customers to use. The following checks help compare vendors without assuming that every advertised feature is included.\n\n## 1. Can customers understand the menu?\n\nOpen a familiar item and check the price, available options and any required choices. Try an unavailable item and review what happens. Use a phone with an ordinary connection, not only the device used for the sales presentation. The app should make the next step clear without relying on staff to explain it.\n\n## 2. Does the order reach the right team?\n\nFollow an example order from the app into restaurant administration. Check how staff identify the branch, item options and current preparation status. Compare this with a walk-in order using the [POS workflow](/services/restaurant-pos). Clear handoffs matter more than the number of screens in the app.\n\n## 3. Is fulfilment clear?\n\nReview the delivery or pickup process you intend to offer. Confirm delivery coverage, how riders receive assignments and what customers can see after dispatch. Test location permissions and device requirements. Payment gateways, wallet support, offline behavior and precise arrival-time estimates need explicit verification for your setup.\n\n## 4. Is there a useful reason to return?\n\nA branded app can make your restaurant easier to recognize, but customers still need a useful experience. Review the available loyalty and promotional tools, then agree a simple offer your staff can explain. Do not assume AI recommendations, subscriptions, birthday automation or every reward model is included.\n\n## 5. Who owns the launch and maintenance work?\n\n- Confirm the developer accounts and app-store listing owner.\n- Agree who supplies branding, screenshots and support details.\n- Review how menu changes and app updates are handled.\n- Confirm any account charges and store-review dependencies.\n\nStore publication and availability are specific to each app. The [app directory](/apps) distinguishes published customer apps from Restrova Admin and Fleet. A public store listing does not mean an administration app can be used without an authorized account.\n\n## Put the checks into your buying decision\n\nAsk the vendor to demonstrate each required workflow and record any gaps in the proposed scope. Review [Restrova branded ordering applications](/services/restaurant-ordering-apps) and [pricing](/pricing), then arrange a [free demo](/contact) with the person who manages your daily service.",
+    "author": "Restrova Team",
+    "authorExpertise": "Product and operations guidance from the Restrova team.",
+    "updated": "2026-10-26"
+  },
+  {
+    "id": "3",
+    "slug": "how-to-boost-customer-loyalty-with-digital-rewards",
+    "title": "Plan Restaurant Loyalty Rewards Without Guessing the Return",
+    "excerpt": "Set a clear reward, check its cost in PKR, explain the terms and measure repeat orders before expanding a restaurant loyalty programme.",
+    "category": "Marketing",
+    "date": "2026-01-25",
+    "readTime": "4 min read",
+    "image": "https://images.unsplash.com/photo-1556742111-a301076d9d18?w=800&h=600&fit=crop&q=80",
+    "relatedSolution": "restaurant-ordering-apps",
+    "content": "A loyalty programme should be easy for customers to understand and affordable for the restaurant to operate. Start with one objective, such as encouraging a second direct order. A reward does not guarantee loyalty, and a busy promotion does not necessarily create profitable repeat business.\n\n## Calculate the reward cost first\n\nUse your own menu costs and normal order values. For example, a hypothetical PKR 100 discount on a PKR 1,000 basket reduces the amount collected by PKR 100 before any payment or delivery costs. The example is a planning calculation, not a recommended offer or a promise about Restrova configuration.\n\nCompare the cost of the offer with the contribution the order would otherwise make. Include packaging, delivery and any discount already applied. Set a budget and review the result before increasing it.\n\n## Keep the terms understandable\n\n- State which orders or items qualify.\n- Explain any minimum spend and expiry date.\n- Clarify whether offers can be combined.\n- Give staff a consistent answer for cancelled or refunded orders.\n\nAsk to see your proposed rule in the software before advertising it. Restrova's current website describes loyalty, discounts and coupon tools. Specialist rules, tiered rewards, subscriptions and automated messages need to be demonstrated and agreed separately.\n\n## Make the direct journey work\n\nAn offer cannot compensate for an unclear menu or a missed order. Check the [ordering website](/services/restaurant-ordering-websites), app and restaurant handoff first. Give regular customers a clear route to the official channel and explain the reward in plain language. Contact customers through channels and permissions appropriate to the relationship; avoid assuming an order is consent to every marketing message.\n\n## Measure the second order\n\nChoose a review period and compare similar customer groups where your records allow. Count eligible customers, redemptions, repeat orders, cancellations and the total reward cost. Review average order value alongside margin. A discount used by an already regular customer may reward existing behavior without creating an extra order.\n\n## Keep, adjust or stop\n\nContinue only if the programme supports the goal and remains manageable for staff. If customers misunderstand the terms, simplify them. If the cost is too high, revise the offer before scaling it. Review the available [reporting tools](/services/reporting-analytics) and bring your intended reward to a [Restrova demo](/contact).",
+    "author": "Restrova Team",
+    "authorExpertise": "Product and operations guidance from the Restrova team.",
+    "updated": "2026-10-26"
+  }
 ];
-
-export function getBlogPostBySlug(slug: string): BlogPost | undefined {
-    return blogPosts.find((post) => post.slug === slug);
-}
-
-export function getAllBlogSlugs(): string[] {
-    return blogPosts.map((post) => post.slug);
-}
+export const getBlogPostBySlug = (slug: string) => blogPosts.find((post) => post.slug === slug);
+export const getAllBlogSlugs = () => blogPosts.map((post) => post.slug);

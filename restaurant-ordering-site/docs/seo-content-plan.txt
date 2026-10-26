@@ -1,0 +1,34 @@
+RESTROVA — 90-DAY CONTENT PLAN (unpublished editorial backlog)
+Prepared 26 October 2026. Publish only after product review; no scheduled publishing is configured.
+
+Days 1–15: Restaurant software buying checklist for Pakistan.
+Intent: restaurant management software selection. Link: /services, /pricing, /contact.
+Evidence: record an approved product walkthrough, a sample order flow and agreed pricing scope.
+Outline: operational requirements; staff/device fit; data and migration; costs; demo scorecard.
+
+Days 16–30: Direct ordering costs worksheet.
+Intent: compare ordering channels. Improve the existing direct-ordering article instead of duplicating it.
+Evidence: anonymized owner-approved contract examples; label every hypothetical calculation.
+Outline: software; payment fees; delivery; acquisition; refunds; repeat-order measurement.
+
+Days 31–45: Branded app launch checklist.
+Intent: restaurant app development Pakistan. Link: /services/restaurant-ordering-apps, /apps.
+Evidence: current Android/iOS screenshots, actual store ownership and launch requirements.
+Outline: menu; devices; listing assets; privacy/support; store review; first customers.
+
+Days 46–60: A practical restaurant stock-count routine.
+Intent: restaurant inventory management. Link: /services/inventory-management.
+Evidence: product-owner confirmation of tracked units and available reports; sample non-customer data.
+Outline: opening count; receipts and adjustments; availability; variance review; responsibility.
+
+Days 61–75: Dispatch and rider settlement checklist.
+Intent: restaurant delivery management. Link: /services/delivery-management.
+Evidence: verified Fleet screens and supported status/settlement workflow; no rider personal data.
+Outline: assignment; handoff; delivery status; cash records; exceptions; end-of-shift reconciliation.
+
+Days 76–90: Daily restaurant reporting guide.
+Intent: restaurant reporting and operations. Link: /services/reporting-analytics.
+Evidence: approved report fields, filters and definitions; confirm refund/cancellation handling.
+Outline: sales versus profit; reporting periods; branch comparisons; delivery; weekly review.
+
+All articles: owner review, accurate dates, one H1, original useful examples in PKR, internal solution/demo links, accessible images, descriptive metadata, self canonical and truthful Organization authorship. Add new pages to the sitemap only after publication. Measure qualified demo completions and useful Search Console queries, not promised rankings.

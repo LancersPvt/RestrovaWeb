@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import Script from "next/script";
+import JsonLd from "@/components/JsonLd";
 import type { Metadata } from "next";
 
 import { getTenantBySlug, fetchActiveTenants } from "@/data/tenantsData";
@@ -135,29 +135,21 @@ export default async function BranchPage({ params }: BranchPageProps) {
         "@type": "Restaurant",
         "@id": `${siteConfig.url}/restaurants/${tenantSlug}/${branchSlug}#restaurant`,
         "name": `${tenant.name} - ${branch.name}`,
-        "image": activeCategories[0]?.imageUrl || siteConfig.url + "/flogo.png",
+        "image": activeCategories[0]?.imageUrl || undefined,
         "telephone": branch.phone,
         "email": branch.email,
         "url": `${siteConfig.url}/restaurants/${tenantSlug}/${branchSlug}`,
         "address": {
             "@type": "PostalAddress",
             "streetAddress": branch.address,
-            "addressLocality": branch.address.split(",").slice(-2, -1)[0]?.trim() || "Local",
-            "addressCountry": "PK"
+            "addressLocality": branch.address.split(",").slice(-2, -1)[0]?.trim() || undefined
         },
         "geo": {
             "@type": "GeoCoordinates",
             "latitude": branch.latitude,
             "longitude": branch.longitude
         },
-        "priceRange": "$$",
-        "servesCuisine": cuisineTags,
-        "openingHoursSpecification": Object.entries(branch.openingHours).map(([day, hours]) => ({
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": day.charAt(0).toUpperCase() + day.slice(1),
-            "opens": hours?.split("-")[0]?.trim() || "11:00",
-            "closes": hours?.split("-")[1]?.trim() || "23:00"
-        }))
+        "servesCuisine": cuisineTags
     };
 
     /* ── JSON-LD: Food Menu Schema ── */
@@ -175,11 +167,6 @@ export default async function BranchPage({ params }: BranchPageProps) {
                 "@type": "MenuItem",
                 "name": item.name,
                 "description": item.description || item.name,
-                "offers": {
-                    "@type": "Offer",
-                    "price": item.basePrice ? item.basePrice.toString() : "0.00",
-                    "priceCurrency": "PKR"
-                }
             }))
         }))
     };
@@ -199,7 +186,7 @@ export default async function BranchPage({ params }: BranchPageProps) {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Restaurants",
-                "item": `${siteConfig.url}/restaurants`
+                "item": `${siteConfig.url}/#restaurants`
             },
             {
                 "@type": "ListItem",
@@ -217,23 +204,11 @@ export default async function BranchPage({ params }: BranchPageProps) {
     };
 
     return (
-        <main className="bg-slate-50 min-h-screen text-slate-800 pb-20">
+        <main id="main-content" className="bg-slate-50 min-h-screen text-slate-800 pb-20">
             {/* SEO JSON-LD Scripts */}
-            <Script
-                id="ld-branch-restaurant"
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(restaurantJsonLd) }}
-            />
-            <Script
-                id="ld-branch-menu"
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(foodMenuJsonLd) }}
-            />
-            <Script
-                id="ld-branch-breadcrumb"
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
-            />
+            <JsonLd data={restaurantJsonLd} />
+            <JsonLd data={foodMenuJsonLd} />
+            <JsonLd data={breadcrumbJsonLd} />
 
             {/* ── Hero Section ── */}
             <section className="relative overflow-hidden bg-gradient-to-br from-[#FFF5E6] via-[#F8E9D0] to-[#FFE5D9] py-16 sm:py-20 border-b border-orange-100">

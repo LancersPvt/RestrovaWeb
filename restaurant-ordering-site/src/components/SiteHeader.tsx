@@ -1,15 +1,14 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Menu, X } from "lucide-react";
+import MobileNavigation from "@/components/MobileNavigation";
+import { ArrowRight } from "lucide-react";
 
 const nav = [
-  { label: "Why direct", href: "/#outcomes" },
-  { label: "Platform", href: "/#platform" },
-  { label: "Restaurants", href: "/#restaurants" },
-  { label: "How it works", href: "/#how" },
-  { label: "FAQ", href: "/#faq" },
+  { label: "Solutions", href: "/services" },
+  { label: "Pricing", href: "/pricing" },
+  { label: "Apps", href: "/apps" },
+  { label: "Guides", href: "/blog" },
+  { label: "FAQ", href: "/faq" },
 ];
 
 export default function SiteHeader() {
@@ -31,7 +30,7 @@ export default function SiteHeader() {
 
         <nav className="hidden items-center gap-7 text-sm font-bold text-black/65 lg:flex" aria-label="Main navigation">
           {nav.map((item) => (
-            <Link key={item.href} href={item.href} className="transition hover:text-[#e45239]">
+            <Link key={item.href} href={item.href} className="transition hover:text-[#b83d29]">
               {item.label}
             </Link>
           ))}
@@ -45,33 +44,7 @@ export default function SiteHeader() {
           <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
         </Link>
 
-        <details className="group relative lg:hidden">
-          <summary className="flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-full border border-black/10 bg-white text-[#171816] [&::-webkit-details-marker]:hidden">
-            <Menu className="h-5 w-5 group-open:hidden" aria-hidden="true" />
-            <X className="hidden h-5 w-5 group-open:block" aria-hidden="true" />
-            <span className="sr-only">Open navigation</span>
-          </summary>
-          <div className="absolute right-0 mt-3 w-[min(20rem,calc(100vw-3rem))] rounded-2xl border border-black/10 bg-white p-3 shadow-2xl">
-            <nav className="flex flex-col" aria-label="Mobile navigation">
-              {nav.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="rounded-xl px-4 py-3 text-sm font-bold text-black/70 transition hover:bg-[#fff4e7] hover:text-[#e45239]"
-                >
-                  {item.label}
-                </Link>
-              ))}
-              <Link
-                href="/#contact"
-                className="mt-2 inline-flex items-center justify-center gap-2 rounded-xl bg-[#ff6247] px-4 py-3 text-sm font-black text-white"
-              >
-                Get a free demo
-                <ArrowRight className="h-4 w-4" aria-hidden="true" />
-              </Link>
-            </nav>
-          </div>
-        </details>
+        <MobileNavigation items={nav} />
       </div>
     </header>
   );

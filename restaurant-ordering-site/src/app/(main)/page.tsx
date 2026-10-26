@@ -1,5 +1,7 @@
 import Image from "next/image";
-import Script from "next/script";
+import Link from "next/link";
+import { staticMetadata } from "@/lib/seo";
+import { solutions } from "@/data/solutions";
 import {
   ArrowRight,
   Bike,
@@ -22,7 +24,7 @@ import {
 
 import ContactForm from "@/components/ContactForm";
 import { clientTestimonials } from "@/lib/client-data";
-import { siteConfig } from "@/lib/site";
+export const metadata = staticMetadata("/");
 
 const outcomes = [
   {
@@ -154,44 +156,27 @@ const faqs = [
   {
     question: "How much does it cost?",
     answer:
-      "The right setup depends on your branches, ordering flow, apps, and integrations. After a short demo, we will recommend a clear scope and cost for your restaurant.",
+      "Onboarding is PKR 10,000 once. The monthly fee is PKR 5,000 or 1% of sales processed through Restrova, whichever is higher. Confirm taxes, payment charges and any exclusions in your proposal.",
   },
 ];
 
 export default function Home() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    name: siteConfig.name,
-    url: siteConfig.url,
-    logo: `${siteConfig.url}/logo.png`,
-    description: siteConfig.description,
-    contactPoint: {
-      "@type": "ContactPoint",
-      contactType: "sales",
-      email: siteConfig.contact.email,
-    },
-  };
 
   return (
-    <main className="bg-[#fffaf4] text-[#171816]">
-      <Script
-        id="restrova-organization"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+    <main id="main-content" className="bg-[#fffaf4] text-[#171816]">
+
 
       <section className="relative overflow-hidden border-b border-black/5 bg-[#171816] text-white">
         <div className="pointer-events-none absolute inset-0 opacity-70 [background-image:radial-gradient(circle_at_15%_15%,rgba(255,98,71,.24),transparent_28%),radial-gradient(circle_at_90%_80%,rgba(244,162,97,.18),transparent_30%)]" />
         <div className="relative mx-auto grid max-w-7xl items-center gap-14 px-6 py-16 sm:py-20 lg:grid-cols-[.9fr_1.1fr] lg:py-24">
-          <div className="max-w-2xl">
+          <div className="min-w-0 max-w-2xl">
             <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-semibold text-[#ffd5c7] backdrop-blur">
               <Zap className="h-4 w-4" aria-hidden="true" />
               Direct ordering for independent restaurants
             </div>
 
-            <h1 className="mt-7 text-balance text-5xl font-black leading-[.98] tracking-[-0.055em] sm:text-6xl lg:text-7xl">
-              Make every direct order worth more.
+            <h1 className="mt-7 break-words text-balance text-4xl font-black leading-[.98] tracking-[-0.055em] sm:text-6xl lg:text-7xl">
+              Restaurant management software for Pakistan.
             </h1>
 
             <p className="mt-7 max-w-xl text-lg leading-8 text-white/70 sm:text-xl">
@@ -203,7 +188,7 @@ export default function Home() {
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <a
                 href="#contact"
-                className="group inline-flex min-h-14 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-[#ff6247] px-7 text-base font-bold text-white shadow-[0_14px_40px_rgba(255,98,71,.3)] transition hover:-translate-y-0.5 hover:bg-[#ff735b] focus:outline-none focus:ring-4 focus:ring-[#ff6247]/30"
+                className="group inline-flex min-h-14 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-[#c2412d] px-7 text-base font-bold text-white shadow-[0_14px_40px_rgba(255,98,71,.3)] transition hover:-translate-y-0.5 hover:bg-[#a73524] focus:outline-none focus:ring-4 focus:ring-[#ff6247]/30"
               >
                 Book my free demo
                 <ArrowRight
@@ -219,6 +204,7 @@ export default function Home() {
               </a>
             </div>
 
+            <p className="mt-5 text-sm text-white/80"><Link href="/pricing" className="underline underline-offset-4">View pricing: PKR 10,000 onboarding; PKR 5,000 or 1% monthly, whichever is higher.</Link></p>
             <div className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-sm text-white/60">
               {["15-minute walkthrough", "No pressure", "Launch guidance included"].map(
                 (item) => (
@@ -240,11 +226,12 @@ export default function Home() {
                 width={1536}
                 height={1024}
                 className="h-auto w-full rounded-[1.55rem]"
-                priority
+                sizes="(max-width: 1023px) 100vw, 55vw"
+                preload
               />
             </div>
             <div className="absolute -bottom-6 left-5 rounded-2xl border border-black/10 bg-white px-5 py-4 text-[#171816] shadow-xl sm:left-8">
-              <p className="text-xs font-bold uppercase tracking-[.2em] text-[#e45239]">
+              <p className="text-xs font-bold uppercase tracking-[.2em] text-[#b83d29]">
                 One platform
               </p>
               <p className="mt-1 text-sm font-bold sm:text-base">
@@ -257,7 +244,7 @@ export default function Home() {
 
       <section id="restaurants" className="scroll-mt-24 border-b border-black/5 bg-white py-9" aria-label="Restaurant partners">
         <div className="mx-auto max-w-7xl px-6">
-          <p className="text-center text-xs font-bold uppercase tracking-[.22em] text-black/45">
+          <p className="text-center text-xs font-bold uppercase tracking-[.22em] text-black/65">
             Restaurant teams building direct with Restrova
           </p>
           <div className="mt-7 grid grid-cols-3 items-center gap-5 sm:grid-cols-6">
@@ -279,11 +266,20 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="border-y border-black/10 bg-[#fff4e7] py-16" aria-labelledby="solutions-heading">
+        <div className="mx-auto max-w-7xl px-6">
+          <h2 id="solutions-heading" className="text-3xl font-black">Explore the restaurant software behind your direct channel</h2>
+          <p className="mt-4 max-w-3xl leading-7 text-black/70">For restaurant owners, cafés, fast-food teams, cloud kitchens and chains. Review the workflow you need, then see it in a free demo.</p>
+          <ul className="mt-7 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{solutions.map((solution) => <li key={solution.slug}><Link className="flex min-h-14 items-center rounded-xl border border-black/15 bg-white px-5 py-4 font-bold underline underline-offset-4" href={`/services/${solution.slug}`}>{solution.label}</Link></li>)}</ul>
+          <p className="mt-7 leading-7">Planning a setup in Islamabad, Rawalpindi, Lahore, Karachi, Peshawar, Chakwal, Talagang, Fateh Jang or Jhelum? Read our <Link className="font-bold underline" href="/locations">Pakistan planning guide</Link> and <Link className="font-bold underline" href="/blog">restaurant owner resources</Link>.</p>
+        </div>
+      </section>
+
       <section id="outcomes" className="scroll-mt-24 py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-8 lg:grid-cols-[.75fr_1.25fr] lg:items-end">
             <div>
-              <p className="text-sm font-black uppercase tracking-[.2em] text-[#e45239]">
+              <p className="text-sm font-black uppercase tracking-[.2em] text-[#b83d29]">
                 Built for the order after the first order
               </p>
               <h2 className="mt-4 text-balance text-4xl font-black leading-tight tracking-[-0.04em] sm:text-5xl">
@@ -306,7 +302,7 @@ export default function Home() {
                   className="rounded-[1.75rem] border border-black/8 bg-white p-7 shadow-[0_18px_60px_rgba(30,24,18,.07)]"
                 >
                   <div className="flex items-center justify-between">
-                    <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#ffebe4] text-[#e45239]">
+                    <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#ffebe4] text-[#b83d29]">
                       <Icon className="h-6 w-6" aria-hidden="true" />
                     </span>
                     <span className="text-sm font-black text-black/20">0{index + 1}</span>
@@ -323,12 +319,12 @@ export default function Home() {
       <section className="bg-[#f3ede4] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="overflow-hidden rounded-[2rem] bg-[#171816] text-white shadow-2xl">
-            <div className="grid lg:grid-cols-[.8fr_1.2fr]">
-              <div className="border-b border-white/10 p-8 sm:p-12 lg:border-b-0 lg:border-r">
+            <div className="grid min-w-0 lg:grid-cols-[.8fr_1.2fr]">
+              <div className="min-w-0 border-b border-white/10 p-6 sm:p-12 lg:border-b-0 lg:border-r">
                 <p className="text-sm font-black uppercase tracking-[.2em] text-[#ff8d75]">
                   Discovery is not loyalty
                 </p>
-                <h2 className="mt-5 text-4xl font-black leading-tight tracking-[-0.04em] sm:text-5xl">
+                <h2 className="mt-5 break-words text-3xl font-black leading-tight tracking-[-0.04em] sm:text-5xl">
                   Keep marketplaces. Build your direct channel too.
                 </h2>
                 <p className="mt-6 leading-7 text-white/65">
@@ -344,7 +340,7 @@ export default function Home() {
                 </a>
               </div>
 
-              <div className="grid gap-px bg-white/10 sm:grid-cols-2">
+              <div className="grid min-w-0 gap-px bg-white/10 sm:grid-cols-2">
                 <div className="bg-[#20211f] p-8 sm:p-10">
                   <p className="text-sm font-bold text-white/45">A marketplace journey</p>
                   <ul className="mt-6 space-y-5 text-sm leading-6 text-white/60">
@@ -359,12 +355,12 @@ export default function Home() {
                   </ul>
                 </div>
                 <div className="bg-[#fff4e7] p-8 text-[#171816] sm:p-10">
-                  <p className="text-sm font-black text-[#e45239]">Your Restrova channel</p>
+                  <p className="text-sm font-black text-[#b83d29]">Your Restrova channel</p>
                   <ul className="mt-6 space-y-5 text-sm font-semibold leading-6">
                     {["Your restaurant stays front and center", "You shape the ordering experience", "Regulars get a direct way back"].map(
                       (item) => (
                         <li key={item} className="flex gap-3">
-                          <Check className="mt-0.5 h-5 w-5 shrink-0 text-[#e45239]" aria-hidden="true" />
+                          <Check className="mt-0.5 h-5 w-5 shrink-0 text-[#b83d29]" aria-hidden="true" />
                           {item}
                         </li>
                       ),
@@ -380,7 +376,7 @@ export default function Home() {
       <section id="platform" className="scroll-mt-24 bg-white py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-black uppercase tracking-[.2em] text-[#e45239]">
+            <p className="text-sm font-black uppercase tracking-[.2em] text-[#b83d29]">
               From checkout to the next order
             </p>
             <h2 className="mt-4 text-balance text-4xl font-black tracking-[-0.04em] sm:text-5xl">
@@ -406,7 +402,7 @@ export default function Home() {
                     <Icon className="h-5 w-5" aria-hidden="true" />
                   </div>
                   <div className="sm:mt-5">
-                    <p className="text-xs font-black uppercase tracking-[.18em] text-white/35">
+                    <p className="text-xs font-black uppercase tracking-[.18em] text-white/65">
                       0{index + 1}
                     </p>
                     <p className="mt-1 font-black">{step.label}</p>
@@ -427,10 +423,10 @@ export default function Home() {
                   className="group flex flex-col rounded-[1.75rem] border border-black/8 bg-[#fffaf4] p-7 transition duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-[0_20px_55px_rgba(30,24,18,.09)] sm:p-8"
                 >
                   <div className="flex items-start justify-between gap-4">
-                    <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#ffebe4] text-[#e45239] transition group-hover:bg-[#ff6247] group-hover:text-white">
+                    <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#ffebe4] text-[#b83d29] transition group-hover:bg-[#c2412d] group-hover:text-white">
                       <Icon className="h-6 w-6" strokeWidth={2.2} aria-hidden="true" />
                     </span>
-                    <p className="pt-1 text-right text-[.68rem] font-black uppercase tracking-[.17em] text-[#e45239]">
+                    <p className="pt-1 text-right text-[.68rem] font-black uppercase tracking-[.17em] text-[#b83d29]">
                       {feature.eyebrow}
                     </p>
                   </div>
@@ -439,7 +435,7 @@ export default function Home() {
                   <ul className="mt-6 space-y-3 border-t border-black/8 pt-5 text-sm font-semibold text-black/65">
                     {feature.features.map((item) => (
                       <li key={item} className="flex items-start gap-3">
-                        <Check className="mt-0.5 h-4 w-4 shrink-0 text-[#e45239]" aria-hidden="true" />
+                        <Check className="mt-0.5 h-4 w-4 shrink-0 text-[#b83d29]" aria-hidden="true" />
                         {item}
                       </li>
                     ))}
@@ -471,7 +467,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-14 lg:grid-cols-[.8fr_1.2fr]">
             <div>
-              <p className="text-sm font-black uppercase tracking-[.2em] text-[#e45239]">
+              <p className="text-sm font-black uppercase tracking-[.2em] text-[#b83d29]">
                 From demo to direct orders
               </p>
               <h2 className="mt-4 text-4xl font-black tracking-[-0.04em] sm:text-5xl">
@@ -511,7 +507,7 @@ export default function Home() {
                       <Icon className="h-6 w-6" aria-hidden="true" />
                     </span>
                     <div>
-                      <p className="text-xs font-black uppercase tracking-[.18em] text-[#e45239]">Step {index + 1}</p>
+                      <p className="text-xs font-black uppercase tracking-[.18em] text-[#b83d29]">Step {index + 1}</p>
                       <h3 className="mt-1 text-xl font-black">{step.title}</h3>
                       <p className="mt-2 leading-7 text-black/60">{step.description}</p>
                     </div>
@@ -526,7 +522,7 @@ export default function Home() {
       <section id="faq" className="scroll-mt-24 bg-[#f3ede4] py-20 sm:py-28">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-[.65fr_1.35fr]">
           <div>
-            <p className="text-sm font-black uppercase tracking-[.2em] text-[#e45239]">Questions owners ask</p>
+            <p className="text-sm font-black uppercase tracking-[.2em] text-[#b83d29]">Questions owners ask</p>
             <h2 className="mt-4 text-4xl font-black tracking-[-0.04em] sm:text-5xl">Clear answers before you commit.</h2>
           </div>
           <div className="space-y-3">
@@ -534,7 +530,7 @@ export default function Home() {
               <details key={faq.question} className="group rounded-2xl border border-black/8 bg-white p-6 open:shadow-lg">
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-lg font-black">
                   {faq.question}
-                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#ffebe4] text-[#e45239] transition group-open:rotate-45">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#ffebe4] text-[#b83d29] transition group-open:rotate-45">
                     +
                   </span>
                 </summary>

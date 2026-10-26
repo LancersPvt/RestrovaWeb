@@ -1,25 +1,14 @@
-function stripTrailingSlash(url: string) {
-  return url.replace(/\/+$/, "");
-}
-
-function getSiteUrl() {
-  const explicit = process.env.NEXT_PUBLIC_SITE_URL;
-  if (explicit) return stripTrailingSlash(explicit);
-
-  const vercel = process.env.VERCEL_URL;
-  if (vercel) return `https://${vercel}`;
-
-  return "https://www.restrova.com";
-}
-
+// Marketing URLs must never depend on a preview/development environment.
 export const siteConfig = {
   name: "Restrova",
   description:
-    "Restrova helps restaurants grow direct orders with branded web, app, and POS ordering plus inventory, live rider tracking, loyalty, promotions, and connected operations.",
-  url: getSiteUrl(),
+    "Restaurant management software in Pakistan for branded ordering apps, websites, POS orders, inventory and rider management. Book a free Restrova demo.",
+  url: "https://www.restrova.com",
   contact: {
     email: "support@lancers.dev",
     whatsapp: "923231543394",
   },
 } as const;
+
+export const isPreviewDeployment = Boolean(process.env.VERCEL_ENV && process.env.VERCEL_ENV !== "production");
 

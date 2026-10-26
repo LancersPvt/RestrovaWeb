@@ -1,0 +1,17 @@
+RESTROVA — RELEASE CHECKLIST
+
+Code remains local until the owner separately approves deployment.
+1. Review the Git diff against b22e4ad2f39c459c2e30dfac8bdf5f3fca02547d. Keep .env files and customer data out of commits.
+2. Review docs/privacy-policy-review.txt. Approve legal entity, contact/address details and effective date before publicly treating the policy as final. Keep it noindex and out of the sitemap until approved.
+3. Confirm taxes, payment charges, branch scope, app-store account charges, refunds/cancellations and exclusions in the commercial proposal. The implemented fee is max(5000, processed monthly sales * 0.01), plus PKR 10000 onboarding once.
+4. Export Search Console page/query performance (at least 3–6 months), indexed pages and external links for the legacy city/service and consumer URLs. No backlink/performance dataset was available for this implementation. Legacy pages remain reachable with noindex rather than blanket redirects or deletion. Review any traffic-bearing URLs before release; create a genuinely useful replacement and a relevant permanent redirect only when justified.
+5. Run npm run test:demo; npm run test:seo; npx tsc --noEmit; npm run lint; npm run build. Record any pre-existing lint exceptions separately rather than weakening the rules.
+6. Review a preview deployment with VERCEL_ENV=preview: every response must include X-Robots-Tag noindex, nofollow. Canonicals must still use https://www.restrova.com. Keep preview access controlled by the host.
+7. In the preview, test demo qualification, input errors, scheduling, draft expiry and failed-save retries using an approved test destination. Confirm a qualified Lead occurs only after acknowledged schedule storage. Do not send test leads to production Sheets or Meta without approval.
+8. Obtain the owner's separate approval, then deploy through the existing hosting/repository workflow. No hosting or external service was modified by this task.
+9. Ensure the hosting project accepts both restrova.com and www.restrova.com and enforces HTTPS. The source provides 308 permanent redirects from the apex host and from HTTP forwarded by the hosting proxy, preserving the path/query. Verify real response chains and avoid proxy loops. A 308 is Next.js's permanent, method-preserving redirect.
+10. Fetch robots.txt and sitemap.xml; check only approved production canonical URLs. Crawl every sitemap route for HTTP 200, one H1, unique metadata, matching canonical, index/follow and valid JSON-LD. Check a legacy location page is reachable/noindex and a random invalid URL is 404/noindex.
+11. Verify /pricing, /blog, /contact, /apps and the six /services/* pages on mobile and desktop. Recheck the pricing threshold at PKR 500000, invalid input and all demo/WhatsApp links.
+12. In Search Console, submit https://www.restrova.com/sitemap.xml and inspect priority pages. Validate supported markup with Google's Rich Results Test and Schema.org validator; valid SoftwareApplication markup without ratings/offers is not a promise of a Google rich result.
+13. Monitor indexing, query relevance and successful qualified demos after launch. Use PageSpeed Insights and Search Console Core Web Vitals for production field data; local layout checks are not field-performance measurements.
+14. Roll back through the previous hosting deployment if there is a regression. Keep the prior Git revision and deployment available; never restore secrets from an SEO patch.

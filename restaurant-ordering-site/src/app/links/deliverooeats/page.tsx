@@ -31,11 +31,11 @@ const LINKS = {
   // Replace with real Deliveroo Eats links
   playStore: "https://play.google.com/store/apps/details?id=com.restrova.deliverooeats",
 
-  facebook: "https://facebook.com/YOUR_PAGE",
-  instagram: "https://instagram.com/YOUR_PAGE",
+  facebook: "",
+  instagram: "",
 
-  googleMaps: "https://maps.app.goo.gl/YOUR_MAP_LINK",
-  whatsapp: "https://wa.me/923000000000",
+  googleMaps: "",
+  whatsapp: "",
 };
 
 type ButtonVariant = "red" | "black" | "white" | "pizza" | "green";
@@ -67,6 +67,7 @@ function LinkButton({
 
   const isLight = variant === "white" || variant === "pizza";
 
+  if (!href) return null;
   return (
     <a
       href={href}

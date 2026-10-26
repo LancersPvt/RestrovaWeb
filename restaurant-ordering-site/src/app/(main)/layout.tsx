@@ -9,6 +9,7 @@ export default function MainLayout({
 }>) {
     return (
         <div className="min-h-dvh bg-background text-foreground">
+            <a href="#main-content" className="skip-link">Skip to main content</a>
             <SiteHeader />
             {children}
             <SiteFooter />

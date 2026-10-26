@@ -15,10 +15,10 @@ IMPLEMENTATION
 - src/app/(main)/privacy-policy/page.tsx: public server-rendered page, 17 sections, table of contents, contact links, metadata, draft notice.
 - src/app/(main)/privacy-policy/privacy-policy.module.css: scoped responsive styles.
 - src/components/SiteFooter.tsx: one internal Privacy Policy link in the existing global footer.
-- src/app/sitemap.ts: privacy-policy entry alongside other static routes.
+- src/app/sitemap.ts: the draft privacy policy is excluded until business/legal approval.
 - No new packages, global styling changes, authentication changes, or deployment.
 - Canonical and Open Graph URLs explicitly use the required HTTPS production URL.
-- Draft metadata is noindex, follow; this does not restrict direct access. After approval, replace the pending fields/date, remove the draft notice, and remove the robots override so the root index/follow metadata applies. Inclusion in the sitemap is already prepared.
+- Draft metadata is noindex, follow; this does not restrict direct access. After approval, replace the pending fields/date, remove the draft notice, and remove the robots override so the root index/follow metadata applies. After approval, explicitly add /privacy-policy to the curated sitemap; it is excluded while noindex.
 
 SOURCE-VERIFIED WEBSITE BEHAVIOR
 - src/app/layout.tsx loads Meta Pixel globally after interaction readiness and tracks PageView. It also includes a no-JavaScript tracking image. This is not a consent gate.

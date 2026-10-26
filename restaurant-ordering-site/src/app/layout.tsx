@@ -3,7 +3,8 @@ import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 
-import { siteConfig } from "@/lib/site";
+import JsonLd from "@/components/JsonLd";
+import { isPreviewDeployment, siteConfig } from "@/lib/site";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -15,14 +16,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Restrova | Direct Online Ordering for Restaurants",
+    default: "Restaurant Management Software Pakistan | Restrova",
     template: "%s | Restrova",
   },
   description: siteConfig.description,
   applicationName: "Restrova",
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
     type: "website",
     url: siteConfig.url,
@@ -45,7 +43,7 @@ export const metadata: Metadata = {
     images: ["/og.png"],
   },
   robots: {
-    index: true,
+    index: !isPreviewDeployment,
     follow: true,
   },
   icons: {
@@ -70,6 +68,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} antialiased`}>
+        <JsonLd data={[
+          { "@context": "https://schema.org", "@type": "Organization", "@id": `${siteConfig.url}/#organization`, name: siteConfig.name,
+            url: siteConfig.url, logo: `${siteConfig.url}/logo.png`, description: siteConfig.description,
+            contactPoint: { "@type": "ContactPoint", contactType: "sales", email: siteConfig.contact.email }, areaServed: { "@type": "Country", name: "Pakistan" } },
+          { "@context": "https://schema.org", "@type": "WebSite", "@id": `${siteConfig.url}/#website`, name: siteConfig.name,
+            url: siteConfig.url, inLanguage: "en-PK", publisher: { "@id": `${siteConfig.url}/#organization` } },
+        ]} />
         {children}
 
         {/* Meta Pixel: base code provided in Events Manager. */}
