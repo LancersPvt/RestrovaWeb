@@ -50,7 +50,7 @@ function TextField({ id, name, label, value, onChange, placeholder, autoComplete
 function PricingSummary() {
   return (
     <div className="rounded-2xl border-2 border-[#ff6247]/30 bg-[#ff6247]/5 p-5">
-      <p className="text-xs font-black uppercase tracking-wide text-[#c84931]">Restrova Complete Restaurant System</p>
+      <p className="text-xs font-black uppercase tracking-wide text-[#a73524]">Restrova Complete Restaurant System</p>
       <h3 className="mt-2 text-xl font-black text-[#171816]">Everything your restaurant needs — one package</h3>
       <ul className="mt-4 grid gap-2 text-sm font-semibold text-[#171816] sm:grid-cols-2">
         {includedFeatures.map((feature) => (

@@ -222,7 +222,7 @@ export default function Home() {
             <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-[#fff4e7] p-2 shadow-2xl shadow-black/30 sm:p-3">
               <Image
                 src="/hero-mockup.png"
-                alt="Restrova restaurant order management dashboard on mobile and tablet"
+                alt="Illustrative Restrova administration overview on mobile and tablet"
                 width={1536}
                 height={1024}
                 className="h-auto w-full rounded-[1.55rem]"
@@ -237,6 +237,7 @@ export default function Home() {
               <p className="mt-1 text-sm font-bold sm:text-base">
                 Orders, stock, riders, and growth—together.
               </p>
+              <p className="mt-1 text-xs text-black/70">Illustrative overview · See current screens in a demo</p>
             </div>
           </div>
         </div>
@@ -256,9 +257,10 @@ export default function Home() {
                 <Image
                   src={restaurant.logo}
                   alt={`${restaurant.company} logo`}
-                  width={130}
-                  height={60}
-                  className="max-h-10 w-auto max-w-full object-contain"
+                  width={40}
+                  height={40}
+                  sizes="40px"
+                  className="h-10 w-10 max-w-full object-contain"
                 />
               </div>
             ))}
@@ -272,6 +274,7 @@ export default function Home() {
           <p className="mt-4 max-w-3xl leading-7 text-black/70">For restaurant owners, cafés, fast-food teams, cloud kitchens and chains. Review the workflow you need, then see it in a free demo.</p>
           <ul className="mt-7 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{solutions.map((solution) => <li key={solution.slug}><Link className="flex min-h-14 items-center rounded-xl border border-black/15 bg-white px-5 py-4 font-bold underline underline-offset-4" href={`/services/${solution.slug}`}>{solution.label}</Link></li>)}</ul>
           <p className="mt-7 leading-7">Planning a setup in Islamabad, Rawalpindi, Lahore, Karachi, Peshawar, Chakwal, Talagang, Fateh Jang or Jhelum? Read our <Link className="font-bold underline" href="/locations">Pakistan planning guide</Link> and <Link className="font-bold underline" href="/blog">restaurant owner resources</Link>.</p>
+          <p className="mt-4 leading-7">Comparing your options? Use the <Link className="font-bold underline" href="/blog/how-to-choose-restaurant-pos-software-pakistan">restaurant POS buying checklist for Pakistan</Link> to test orders, devices, reporting and the complete cost.</p>
         </div>
       </section>
 
@@ -305,7 +308,7 @@ export default function Home() {
                     <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#ffebe4] text-[#b83d29]">
                       <Icon className="h-6 w-6" aria-hidden="true" />
                     </span>
-                    <span className="text-sm font-black text-black/20">0{index + 1}</span>
+                    <span className="text-sm font-black text-black/65">0{index + 1}</span>
                   </div>
                   <h3 className="mt-8 text-xl font-black tracking-tight">{outcome.title}</h3>
                   <p className="mt-3 leading-7 text-black/60">{outcome.description}</p>
@@ -342,7 +345,7 @@ export default function Home() {
 
               <div className="grid min-w-0 gap-px bg-white/10 sm:grid-cols-2">
                 <div className="bg-[#20211f] p-8 sm:p-10">
-                  <p className="text-sm font-bold text-white/45">A marketplace journey</p>
+                  <p className="text-sm font-bold text-white/75">A marketplace journey</p>
                   <ul className="mt-6 space-y-5 text-sm leading-6 text-white/60">
                     {["Your brand competes for attention", "The marketplace shapes the experience", "Regulars return through someone else’s channel"].map(
                       (item) => (

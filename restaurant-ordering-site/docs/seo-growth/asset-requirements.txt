@@ -1,0 +1,24 @@
+RESTROVA — PRODUCT EVIDENCE AND ASSET REQUIREMENTS
+27 October 2026. No operational screenshot was fabricated or generated.
+
+REPOSITORY REVIEW
+The available public assets are logos, client logos, the hero overview composite, a promotional chart and generic framework icons. hero-mockup.png was visually inspected. It is a composed product overview, not sufficient evidence of a current operational flow. It remains labeled illustrative. Logos and public app listings are evidence of brand/app presence, not verified revenue results or testimonials.
+Published customer examples reused: Ash & Beans, Yum Zone and Top Spice. The existing public store URLs are shared through src/data/customerApps.ts and a server-rendered component. App listings provide publicly maintained store screenshots without copying them into an unsupported product demonstration.
+
+CAPTURE BRIEF — OWNER/PRODUCT TEAM
+Use the current supported product build and a dedicated demonstration account. Remove customer names, phones, addresses, access tokens, precise rider locations and private financial data. Use clearly labeled sample data. Obtain restaurant permission before showing its identity, operational screens or quotes. Keep an original unedited reference for approval.
+
+1. POS (/services/restaurant-pos): counter order with item/modifier, order reference, channel and branch visible; second image of preparation state. Show only verified printer/KDS behaviour. Caption must describe what the screen actually shows.
+2. Website (/services/restaurant-ordering-websites): mobile menu, basket and fulfilment choice, order acknowledgment, corresponding Admin order. Capture pickup/delivery/payment options only if enabled in that demonstration.
+3. Branded app (/services/restaurant-ordering-apps): approved Android and iOS screens, menu/item choice and order status. Record app name, version, capture date, platform and customer's permission. Do not imply feature parity without checking.
+4. Inventory (/services/inventory-management): opening stock/unit, a recorded adjustment and item availability. Recipe deduction/expiry/branch transfer screens only after capability is confirmed.
+5. Fleet (/services/delivery-management): assignment, a sample status change, tracking with fictional/obscured location, and a settlement record. Confirm permissions and distribution method; do not invent a public Fleet store link.
+6. Reporting (/services/reporting-analytics): report period/branch scope and sample order reconciliation. Document the metric definitions and which filters/exports are supported.
+
+DELIVERY SPECIFICATION
+Capture desktop screens at least 1440px wide and mobile screens at their natural device resolution. Supply lossless originals; export WebP/AVIF derivatives after approval. Keep UI text legible at mobile layout sizes, with a click-to-open original only if useful. Prefer 150–250KB per derivative as a working budget, not a quality guarantee. Reserve aspect ratio, use next/image, set accurate sizes and descriptive alt text, lazy-load below the fold. Avoid a heavy video embed on initial load; use a poster and user-initiated player. Include a transcript/captions for demo videos. Caption sample data and capture date.
+
+PROOF REQUIREMENTS
+Case study: approved client name, location, implementation scope, dates, baseline, measurement method, comparable outcome window, source records, quote consent and final approval. If no defensible numeric outcome exists, publish an approved workflow story without numbers. Never convert a logo into a testimonial.
+Company identity: confirm whether the legal publisher shown in the Admin store listing (LANCERS SOFTWARE (PRIVATE) LIMITED) is the contracting/data-controller entity for this website. Do not automatically reuse its listed address as a customer-facing Restrova office. Approve privacy contact and effective date.
+Product scope: confirm exact printer, payment-provider, fiscal, offline, recipe/expiry, courier and accounting integrations before adding claims.

@@ -1,7 +1,6 @@
 import {
   Facebook,
   TicketIcon,
-  Store,
   Smartphone,
   BadgePercent,
   ArrowRight,

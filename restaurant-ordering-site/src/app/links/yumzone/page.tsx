@@ -4,13 +4,9 @@ import {
   Download,
   BadgePercent,
   ArrowRight,
-  MapPin,
   MessageCircle,
   Sparkles,
   Navigation,
-  Pizza,
-  Star,
-  Flame,
 } from "lucide-react";
 
 import Image from "next/image";

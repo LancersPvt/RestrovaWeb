@@ -18,7 +18,7 @@ export default function SiteFooter() {
               href="/#contact"
               className="mt-5 inline-flex items-center gap-2 text-sm font-black text-[#ff9b84] transition hover:text-white"
             >
-              Request a free demo
+              Request a Free Demo
               <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
             </Link>
           </div>
@@ -27,6 +27,7 @@ export default function SiteFooter() {
             <p className="text-xs font-black uppercase tracking-[.18em] text-white/65">Explore</p>
             <ul className="mt-4 space-y-3 text-sm font-semibold text-white/60">
               <li><Link href="/#outcomes" className="transition hover:text-white">Why direct ordering</Link></li>
+              <li><Link href="/about" className="transition hover:text-white">About Restrova</Link></li>
               <li><Link href="/services" className="transition hover:text-white">Solutions</Link></li>
               <li><Link href="/#restaurants" className="transition hover:text-white">Restaurants</Link></li>
               <li><Link href="/pricing" className="transition hover:text-white">Pricing</Link></li>

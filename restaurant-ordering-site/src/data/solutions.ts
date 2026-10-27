@@ -8,7 +8,7 @@ export const solutions: Solution[] = [
   {
     slug: "restaurant-ordering-apps", label: "Branded ordering apps", title: "Branded Restaurant Ordering Apps in Pakistan",
     description: "Give regular customers your own Android and iOS restaurant ordering apps. Connect branded mobile ordering with Restrova Admin, menus and delivery workflows.",
-    heading: "Your restaurant. Your own ordering app.",
+    heading: "Branded Restaurant Ordering Apps in Pakistan",
     intro: "Restrova provides branded Android and iOS ordering applications for restaurants in Pakistan. Give customers who already know your food a direct route back to your menu, with orders managed by your team.",
     sections: [
       { heading: "Make repeat ordering part of your brand", text: "A restaurant app is useful when regular customers have a reason to return. Start with a menu that is easy to browse, clear item options and an ordering flow your staff can support. Your logo and brand should help customers recognize the restaurant they trust.", points: ["Branded Android and iOS customer applications", "Menu items, modifiers and availability", "Orders connected to Restrova Admin"] },
@@ -21,7 +21,7 @@ export const solutions: Solution[] = [
   {
     slug: "restaurant-ordering-websites", label: "Ordering websites", title: "Restaurant Websites with Online Ordering Pakistan",
     description: "Build a branded restaurant website with online ordering in Pakistan. Connect your menu and customer orders with Restrova Admin and your delivery workflow.",
-    heading: "A restaurant website that takes direct orders.",
+    heading: "Restaurant Websites with Online Ordering in Pakistan",
     intro: "Give customers a link to your own menu and ordering experience. Restrova connects a branded restaurant ordering website to the admin tools your team uses to manage incoming orders.",
     sections: [
       { heading: "Turn interest into a clear ordering journey", text: "A customer arriving from a social post or your restaurant profile needs to understand the menu, available choices and how the order will be fulfilled. Keep that journey focused on your restaurant, especially on a small mobile screen.", points: ["A website presented under your restaurant brand", "Menu items, prices, modifiers and availability", "Online orders connected with restaurant administration"] },
@@ -34,8 +34,8 @@ export const solutions: Solution[] = [
   {
     slug: "restaurant-pos", label: "POS and order management", title: "Restaurant POS and Order Management Pakistan",
     description: "Manage online, app, walk-in and POS orders with Restrova restaurant software in Pakistan. Review your counter and preparation workflow in a free demo.",
-    heading: "Keep online and counter orders in view.",
-    intro: "Restrova brings online, app, walk-in and POS order management into your restaurant administration workflow. Give your team a clear way to follow service as orders arrive through different channels.",
+    heading: "Restaurant POS & Order Management Software in Pakistan",
+    intro: "Keep online and counter orders in view. Restrova brings online, app, walk-in and POS order management into your restaurant administration workflow, so your team can follow service across channels.",
     sections: [
       { heading: "Start with the way your team takes orders", text: "A fast-food counter, café and restaurant with delivery have different handoffs. Show how staff take a walk-in or phone order today, who checks item options and when preparation starts. Use those steps to evaluate the POS instead of comparing screen counts.", points: ["Walk-in and POS order entry", "Website and customer-app orders", "Order and preparation statuses in Admin"] },
       { heading: "Review a busy service, not just one sale", text: "During the demo, ask the team to work through several orders from different channels. Review how they identify each order, update its status and pass it to delivery. Bring the branch structure and staff responsibilities so the proposed setup matches the way you operate." },
@@ -47,7 +47,7 @@ export const solutions: Solution[] = [
   {
     slug: "inventory-management", label: "Inventory management", title: "Restaurant Inventory Management Software Pakistan",
     description: "Manage restaurant stock and menu availability with Restrova in Pakistan. Review inventory workflows alongside POS, online orders and branch operations.",
-    heading: "Keep stock and menu availability connected.",
+    heading: "Restaurant Inventory Management Software in Pakistan",
     intro: "Restrova includes inventory and stock management for restaurant operations. Bring your stock records and menu to a walkthrough of how your team can track availability alongside incoming orders.",
     sections: [
       { heading: "Begin with a reliable opening stock record", text: "Software cannot correct an inaccurate starting count. Decide which ingredients or items your team will track, agree their units and identify who records changes. For a café, a clear daily count of frequently used items may be a more useful starting point than a complicated reporting setup.", points: ["Inventory and stock management", "Item availability controls", "Stock visibility alongside restaurant operations"] },
@@ -60,7 +60,7 @@ export const solutions: Solution[] = [
   {
     slug: "delivery-management", label: "Delivery and rider management", title: "Restaurant Delivery and Rider Management Pakistan",
     description: "Coordinate restaurant deliveries with Restrova Fleet: rider assignment, live tracking, delivery statuses and rider settlement workflows. Request a demo.",
-    heading: "Give your delivery team a clearer handoff.",
+    heading: "Restaurant Delivery & Rider Management in Pakistan",
     intro: "Restrova Fleet supports restaurant delivery and rider management. Connect order dispatch with rider assignment, live tracking and delivery status so your team can follow an order beyond the kitchen.",
     sections: [
       { heading: "Know who is handling each delivery", text: "The handoff from preparation to dispatch should identify the order and the rider responsible for it. Review how your team assigns riders and follows status changes. Live tracking helps the restaurant and customer follow delivery where the configured service and device permissions support it.", points: ["Rider assignment and delivery statuses", "Live rider tracking for administrators and customers", "Rider performance statistics and payment reconciliation"] },
@@ -73,7 +73,7 @@ export const solutions: Solution[] = [
   {
     slug: "reporting-analytics", label: "Reporting and analytics", title: "Restaurant Reporting and Analytics Pakistan",
     description: "Review restaurant sales, orders and delivery activity with Restrova reporting in Pakistan. Turn operational records into useful daily review questions.",
-    heading: "Use restaurant reports to guide the next shift.",
+    heading: "Restaurant Reporting & Analytics in Pakistan",
     intro: "Restrova includes reporting and business analytics alongside order and delivery operations. Start with the decisions your restaurant needs to make, then review the available reports in a free demo.",
     sections: [
       { heading: "Agree what each number means", text: "A sales total needs context: which branch, which period and which order statuses are included. Before relying on a report, ask how cancellations, discounts and other adjustments appear. Restrova-processed sales are also the basis for the percentage component of your monthly service fee.", points: ["Restaurant order and sales reporting", "Rider performance statistics", "Delivery activity and payment reconciliation"] },

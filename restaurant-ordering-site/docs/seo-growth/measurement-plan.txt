@@ -1,0 +1,51 @@
+RESTROVA — SEARCH AND CONVERSION MEASUREMENT
+Reviewed 27 October 2026. Status: implementation specification; no new analytics tags installed.
+
+WHAT EXISTS
+- src/app/layout.tsx initializes the existing Meta Pixel and PageView after interaction. It has been preserved.
+- ContactForm posts qualification/contact information to /api/demo/intake. Intake is not the qualified Meta Lead event.
+- RestrovaScheduleDemo sends one Meta Lead with the server event ID only after the scheduling API acknowledges the saved request. Existing retry/idempotency tests must remain green.
+- The booking flow records a preferred future time in Pakistan Time. A saved scheduling preference is not a confirmed meeting. Do not label the current Meta Lead as a confirmed appointment or sale.
+- No GA4 measurement ID, GTM container or Search Console verification tag was found in the inspected source. DNS-based Search Console verification cannot be inferred from source; no authenticated account was available. No .env values were printed or changed.
+
+ACCESS AND DECISIONS
+Owner: provide read access to the correct Search Console domain property and GA4 property, and approved access to GTM if it is the chosen implementation path. Use account invitations; do not share passwords in files or chat. Identify the CRM owner and the authoritative fields for lead status, confirmed meeting, customer and invoice.
+Choose exactly one GA4 installation path (direct or GTM), approve the privacy/consent configuration, review retention and reporting access, and specify the production measurement ID. Source inspection alone does not authorize creating an account or silently loading an extra tracking vendor.
+
+EVENT CONTRACT
+1. page_view: one event per initial page and completed client-side route change. Use GA4 session attribution for source/medium. If enhanced measurement already handles route changes, do not add a second router listener. Strip query strings/fragments from page_location unless a separately reviewed allowlist requires a parameter.
+2. solution_engaged: once per solution route per page session, after 30 seconds of active visible time AND at least 50% main-content depth. Stop the timer while the tab is hidden. Allowed parameters: solution_slug, page_path. This is engagement, not a lead.
+3. demo_cta_click: once per actual CTA activation, before navigation. Allowed: page_path, placement from a fixed enum (header/hero/body/footer), destination_path. Do not mark it as a key conversion.
+4. demo_form_start: once per form instance on the first user interaction with a qualification/contact control. Never attach the field value. Allowed: form_id='restaurant_demo', page_path.
+5. demo_intake_saved: only after /api/demo/intake confirms a persisted successful result. A button click, request initiation, validation error or failed save must not fire it. Keep this separate from the qualified scheduling event.
+6. demo_schedule_request_saved: only after /api/demo/schedule acknowledges storage. Use server idempotency to identify a single successful request across retries. The existing Meta Lead remains at this boundary. This event means requested time saved, not booked/confirmed.
+7. demo_booking_confirmed: CRM-only transition after staff/customer confirmation. Do not fire it from the scheduling or thank-you page. Owner must define confirmation evidence and unique meeting key.
+8. sales_qualified_lead: CRM-only transition based on agreed commercial criteria. The form's qualification gate is not automatically a sales team's qualification decision.
+9. organic_customer_won: CRM/invoice-side event/report after agreed customer-won and payment criteria. Use an internal join to the acquired lead; count a customer once, separate from repeat invoices.
+
+DE-DUPLICATION AND ATTRIBUTION
+- Preserve existing server event IDs and scheduling idempotency. Add analytics instrumentation in a future isolated change with tests for success, failure, retry, double click, remount, back/forward and reload.
+- Do not assume GA4 automatically deduplicates arbitrary custom events because an event_id parameter was sent. Maintain the acknowledged-event ledger at the event emitter; handle client and server delivery through one defined owner.
+- Disable duplicate GA enhanced-measurement form events if the agreed custom form lifecycle is used. Verify actual network events in DebugView and browser inspection before release.
+- Agree first-touch and session conversion attribution separately. Keep consented source/medium/campaign and landing path in CRM through an approved, explicitly reviewed implementation; the current task did not modify the lead payload or add cookies.
+- Retain a privacy-reviewed pseudonymous join only where lawful and needed. Keep raw lead/meeting/customer IDs and contact details in CRM, not public URLs or GA dimensions. Do not hash contact information and assume that makes it acceptable for standard Analytics fields.
+- Count organic wins from the CRM cohort with source/medium='google / organic' (or the agreed organic channel rule), not from a thank-you-page total. Document the lookback window and unattributed/declined-consent bucket.
+
+ALLOWED / FORBIDDEN DATA
+Allowed low-cardinality fields: static page path, solution slug, placement enum, form ID, boolean success state. PII is excluded: name, email, phone, restaurant contact details, messages, street address, entered field values, booking notes and user-entered URL/campaign strings. Sanitize page_location, page_referrer and page_title before collection. Free-text fields and raw payloads must never be forwarded to GA.
+See Google's PII policy: https://support.google.com/analytics/answer/6366371
+Consent implementation must follow the owner's applicable requirements; consent mode is not a substitute for the required consent: https://support.google.com/analytics/answer/13802165
+Recommended/custom-event choice: https://support.google.com/analytics/answer/12229021
+
+REPORTING SPECIFICATION
+Weekly Search Console (search type Web, country Pakistan, consistent comparison period):
+- Branded: reviewed regex (?i)restrova, with typo variants added only from actual query evidence. Keep any unrelated similarly named product out of interpretation.
+- Non-branded commercial: exclude brand; group restaurant/POS/software/management/ordering/app/inventory/rider queries by mapped landing page. Do not treat consumer meal-order queries as success.
+- Report clicks, impressions, CTR and average position with query/page/country/device context. Compare equal periods and note small samples; position is not a universal rank.
+- Indexed target pages: inspect the 20 intended URLs after release, sitemap processing, canonical selection and excluded legacy URLs. Inspect priority URLs manually; do not infer indexing from a successful HTTP fetch.
+Monthly GA4 after approved setup: organic landing sessions, engaged solution sessions, CTA rate, form-start rate, successful intake rate and saved scheduling-request rate. Explicit denominators: starts / eligible organic landing sessions; saved intakes / starts; saved requests / saved qualified intakes.
+Monthly CRM: sales-qualified leads, confirmed demos, attended demos, organic-attributed customers and associated collected revenue. Report cohort date and attribution window. Distinguish unique leads/customers from event counts.
+Dashboard owner: growth lead; CRM reconciliation: sales operations; event QA: developer. Record missing or unavailable data as unavailable, not zero.
+
+ACCEPTANCE BEFORE ENABLING
+Approve identity/privacy, property and consent choices; test against an approved test destination; verify zero PII in outgoing payloads; verify failed saves emit no success event; verify retries emit once; compare one acknowledged test record with CRM and DebugView; check client navigation produces one PageView; preserve Meta Lead timing; document deployment and rollback. No live test lead was submitted by this task.

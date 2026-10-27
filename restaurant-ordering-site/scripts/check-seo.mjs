@@ -6,7 +6,7 @@ function attributes(tag) { return Object.fromEntries([...tag.matchAll(/([\w-]+)=
 async function get(route) { const res = await fetch(new URL(route, base), { headers: { "User-Agent": "Googlebot" }, signal: AbortSignal.timeout(45000) }); return { status: res.status, html: await res.text() }; }
 const sitemap = await get("/sitemap.xml"); assert.equal(sitemap.status, 200);
 const urls = [...sitemap.html.matchAll(/<loc>(.*?)<\/loc>/g)].map((m) => decode(m[1]));
-assert.equal(urls.length, 19); assert.equal(new Set(urls).size, urls.length);
+assert.equal(urls.length, 22); assert.equal(new Set(urls).size, urls.length);
 const rows = []; const titles = new Set(); const descriptions = new Set(); const allLinks = new Set(); const pageIds = new Map();
 for (const url of urls) {
   assert.equal(new URL(url).origin, origin);
@@ -23,6 +23,12 @@ for (const url of urls) {
   assert.equal((html.match(/<h1\b/g) || []).length, 1, `${route}: one H1`);
   const schemas = [...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)].flatMap((m) => JSON.parse(m[1]));
   assert.ok(schemas.some((s) => s["@type"] === "Organization")); assert.ok(schemas.some((s) => s["@type"] === "WebSite"));
+  for (const type of ["Organization", "WebSite"]) assert.equal(schemas.filter((s) => s["@type"] === type).length, 1, `${route}: single ${type} definition`);
+  const schemaIds = schemas.filter((s) => s["@id"]).map((s) => s["@id"]);
+  assert.equal(new Set(schemaIds).size, schemaIds.length, `${route}: unique schema IDs`);
+  if (route === "/about") assert.ok(schemas.some((s) => s["@type"] === "AboutPage" && s.mainEntity["@id"] === `${origin}/#organization`));
+  if (route === "/services" || route.startsWith("/services/")) assert.ok(schemas.some((s) => s["@type"] === "SoftwareApplication" && s["@id"] === `${url}#software` && s.provider["@id"] === `${origin}/#organization` && !s.offers));
+  if (route.startsWith("/blog/")) assert.ok(schemas.some((s) => s["@type"] === "BlogPosting" && s.mainEntityOfPage === url && s.datePublished <= s.dateModified && s.author.name === "Restrova Team"));
   if (route !== "/" && route !== "/download") assert.ok(schemas.some((s) => s["@type"] === "BreadcrumbList"), `${route}: breadcrumbs`);
   assert.ok(!schemas.some((s) => s.aggregateRating || s.review || s["@type"] === "FAQPage"));
   pageIds.set(route, new Set([...html.matchAll(/\bid="([^"]+)"/g)].map((m) => m[1])));

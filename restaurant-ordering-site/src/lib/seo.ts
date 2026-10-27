@@ -18,12 +18,13 @@ export function pageMetadata(path: string, title: string, description: string, i
 }
 
 export const staticSeoPages = [
+  { path: "/about", title: "About Restrova | Restaurant Technology for Pakistan", description: "Learn how Restrova helps restaurants in Pakistan run branded ordering apps, websites, POS orders, inventory and delivery operations in one connected platform." },
   { path: "/", title: "Restaurant Management Software Pakistan", description: siteConfig.description },
   { path: "/services", title: "Restaurant Software Solutions in Pakistan", description: "Explore Restrova restaurant apps, ordering websites, POS, inventory, delivery management and reporting. Find the right workflow for your restaurant." },
   { path: "/pricing", title: "Restaurant Software Pricing in Pakistan", description: "Restrova costs PKR 10,000 to onboard, then PKR 5,000 or 1% of Restrova-processed monthly sales, whichever is higher. See examples and calculate your fee." },
   { path: "/contact", title: "Book a Free Restaurant Software Demo", description: "See Restrova apps, ordering websites, POS, inventory and delivery tools in a free demo for your restaurant in Pakistan. Review pricing and your workflow." },
   { path: "/faq", title: "Restaurant Software and Pricing FAQs", description: "Answers for restaurant owners in Pakistan about Restrova pricing, branded apps, online ordering, POS, inventory, riders and arranging a free demo." },
-  { path: "/blog", title: "Restaurant Software Guides for Pakistan", description: "Practical guides for Pakistani restaurant owners on direct ordering, branded apps, loyalty and choosing restaurant software. Read the Restrova resources." },
+  { path: "/blog", title: "Restaurant Software Guides for Pakistan", description: "Practical guides for Pakistani restaurant owners on choosing management software, POS, direct ordering, branded apps and loyalty. Plan your next software demo." },
   { path: "/compare-marketplaces", title: "Direct Ordering vs Food Delivery Marketplaces", description: "Compare direct restaurant ordering with delivery marketplaces in Pakistan. Review costs, customer relationships and operations before choosing your mix." },
   { path: "/locations", title: "Restaurant Software for Teams Across Pakistan", description: "Plan restaurant software for Islamabad, Rawalpindi, Lahore, Karachi and other Pakistan cities. Review branch, menu and delivery needs with Restrova." },
   { path: "/apps", title: "Restrova Apps: Customer, Admin and Fleet", description: "Understand Restrova customer ordering apps, Admin software and Fleet rider management. Browse verified client app examples and desktop Admin downloads." },

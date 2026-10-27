@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ClientTestimonial } from "@/lib/client-data";
 
 interface ClientCardProps {
@@ -10,8 +11,11 @@ export default function ClientCard({ testimonial }: ClientCardProps) {
       {/* Logo + Restaurant Info */}
       <div className="mb-6 flex items-center gap-4">
         <div className="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-full border border-gray-200 bg-white p-2 shadow-sm">
-          <img
+          <Image
             src={testimonial.logo}
+            width={64}
+            height={64}
+            sizes="64px"
             alt={`${testimonial.company} logo`}
             className="h-full w-full object-contain"
           />

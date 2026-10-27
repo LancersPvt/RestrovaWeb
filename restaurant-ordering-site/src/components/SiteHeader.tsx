@@ -4,6 +4,7 @@ import MobileNavigation from "@/components/MobileNavigation";
 import { ArrowRight } from "lucide-react";
 
 const nav = [
+  { label: "About", href: "/about" },
   { label: "Solutions", href: "/services" },
   { label: "Pricing", href: "/pricing" },
   { label: "Apps", href: "/apps" },
@@ -40,7 +41,7 @@ export default function SiteHeader() {
           href="/#contact"
           className="group hidden min-h-11 items-center gap-2 rounded-full bg-[#171816] px-5 text-sm font-black text-white transition hover:bg-[#e45239] focus:outline-none focus:ring-4 focus:ring-[#ff6247]/15 lg:inline-flex"
         >
-          Get a free demo
+          Request a Free Demo
           <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
         </Link>
 

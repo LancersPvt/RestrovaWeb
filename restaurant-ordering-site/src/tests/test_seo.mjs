@@ -39,7 +39,7 @@ try {
   const { pageMetadata, staticSeoPages } = load("src/lib/seo.ts");
   const { solutions } = load("src/data/solutions.ts");
   const sitemap = load("src/app/sitemap.ts").default();
-  assert.equal(sitemap.length, 19);
+  assert.equal(sitemap.length, 22);
   assert.equal(new Set(sitemap.map(({ url }) => url)).size, sitemap.length);
   for (const item of sitemap) {
     assert.equal(new URL(item.url).origin, siteConfig.url);
@@ -53,6 +53,16 @@ try {
     assert.ok(meta.description.length > 50 && meta.description.length < 180);
   }
   for (const solution of solutions) for (const slug of solution.related) assert.ok(solutions.some((item) => item.slug === slug));
+  const { solutionGuides } = load("src/data/solutionGuides.ts");
+  assert.deepEqual(Object.keys(solutionGuides).sort(), solutions.map((s) => s.slug).sort());
+  for (const solution of solutions) {
+    const guide = solutionGuides[solution.slug];
+    assert.equal(guide.steps.length, 4);
+    assert.ok(guide.faqs.length >= 3);
+    assert.equal(new Set(guide.faqs.map((f) => f.question)).size, guide.faqs.length);
+    assert.match(solution.heading, /Pakistan/);
+  }
+  assert.equal(solutions.find((s) => s.slug === "restaurant-pos").heading, "Restaurant POS & Order Management Software in Pakistan");
   const { locationData } = load("src/data/locationData.ts");
   const { services } = load("src/data/services.ts");
   const { createSlug } = load("src/lib/slugUtils.ts");
@@ -94,4 +104,10 @@ const ArticleBody = load("src/components/ArticleBody.tsx").default;
 const article = renderToStaticMarkup(createElement(ArticleBody, { content: "## Test\n\n- One\n- Two\n\n<script>alert(1)</script>" }));
 assert.ok(article.includes("<ul")); assert.ok(article.includes("<li")); assert.ok(article.includes("&lt;script&gt;"));
 assert.ok(!article.includes("<h1"));
-console.log("PASS: pricing boundaries/invalid input, production canonicals, preview noindex, 19 curated sitemap URLs, metadata, related links and safe JSON-LD/article rendering");
+const { articleSections } = load("src/components/ArticleBody.tsx");
+const content = "## Same heading\n\nText\n\n## Same heading";
+const sections = articleSections(content);
+const rendered = renderToStaticMarkup(createElement(ArticleBody, { content }));
+assert.equal(new Set(sections.map((s) => s.id)).size, 2);
+for (const section of sections) assert.ok(rendered.includes(`id="${section.id}"`));
+console.log("PASS: pricing, production canonicals, preview noindex, 22 curated sitemap URLs, six solution guides, metadata, related links, safe JSON-LD and unique article anchors");

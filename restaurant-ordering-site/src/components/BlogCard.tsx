@@ -13,11 +13,11 @@ export default function BlogCard({ post }: BlogCardProps) {
         >
             <div className="relative h-48 overflow-hidden bg-gradient-to-br from-coral-100 to-amber-100">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                {post.image && <img
                     src={post.image}
                     alt={post.title}
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                />
+                />}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                 <div className="absolute top-4 left-4">
                     <span className="inline-block rounded-full bg-white/90 backdrop-blur px-4 py-1.5 text-xs font-semibold text-gray-700 shadow-md">

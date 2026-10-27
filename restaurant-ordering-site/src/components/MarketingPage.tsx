@@ -23,7 +23,7 @@ export function DemoCta({ title = "See how it fits your restaurant" }: { title?:
     <h2 className="text-3xl font-black tracking-tight">{title}</h2>
     <p className="mt-4 max-w-2xl leading-7 text-white/80">Bring your menu, branch count and current order workflow. We will walk through the relevant tools and agree the scope before you commit.</p>
     <div className="mt-6 flex flex-wrap gap-4">
-      <Link href="/contact" className="seo-button">Book a free demo</Link>
+      <Link href="/contact" className="seo-button">Request a Free Demo</Link>
       <Link href="/pricing" className="inline-flex min-h-12 items-center font-bold underline underline-offset-4">See pricing and examples</Link>
     </div>
   </section>;
@@ -39,7 +39,7 @@ export default function MarketingPage({ path, label, title, intro, children, par
         <p className="text-sm font-bold uppercase tracking-[.16em] text-[#ffb09b]">Restrova · For restaurant owners</p>
         <h1 className="mt-4 max-w-4xl text-balance text-4xl font-black leading-tight tracking-[-.04em] sm:text-6xl">{title}</h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-white/80">{intro}</p>
-        <Link href="/contact" className="seo-button mt-7">Book a free demo</Link>
+        <Link href="/contact" className="seo-button mt-7">Request a Free Demo</Link>
       </div>
     </section>
     <div className="seo-content mx-auto max-w-6xl space-y-14 px-6 py-14 sm:py-20">{children}</div>

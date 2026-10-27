@@ -30,30 +30,29 @@ class FakeSheet {
   }
   setName(name) { this.name = name; return this; }
   getRange(row, col, height = 1, width = 1) {
-    const sheet = this;
     const cells = callback => Array.from({ length: height }, (_, i) => Array.from({ length: width }, (_, j) => callback(row + i, col + j)));
     const range = {
       row, col, height, width,
       getRow: () => row,
-      getValues: () => cells((r, c) => sheet.rows[r-1]?.[c-1] ?? ''),
-      getDisplayValues: () => cells((r, c) => String(sheet.rows[r-1]?.[c-1] ?? '')),
-      getFormulas: () => cells((r, c) => sheet.formulas[sheet.key(r,c)] || ''),
-      getDataValidations: () => cells((r, c) => sheet.rules[sheet.key(r,c)] || null),
-      setDataValidations: values => { values.forEach((r,i) => r.forEach((rule,j) => { sheet.rules[sheet.key(row+i,col+j)] = rule; })); return range; },
+      getValues: () => cells((r, c) => this.rows[r-1]?.[c-1] ?? ''),
+      getDisplayValues: () => cells((r, c) => String(this.rows[r-1]?.[c-1] ?? '')),
+      getFormulas: () => cells((r, c) => this.formulas[this.key(r,c)] || ''),
+      getDataValidations: () => cells((r, c) => this.rules[this.key(r,c)] || null),
+      setDataValidations: values => { values.forEach((r,i) => r.forEach((rule,j) => { this.rules[this.key(row+i,col+j)] = rule; })); return range; },
       setValues: values => {
         values.forEach((r,i) => r.forEach((value,j) => {
-          const rule = sheet.rules[sheet.key(row+i,col+j)];
+          const rule = this.rules[this.key(row+i,col+j)];
           if (value !== '' && rule && !rule.options.includes(value)) throw Error('Invalid dropdown input');
         }));
-        values.forEach((r,i) => { sheet.rows[row+i-1] ||= []; r.forEach((value,j) => { sheet.rows[row+i-1][col+j-1] = value; }); });
+        values.forEach((r,i) => { this.rows[row+i-1] ||= []; r.forEach((value,j) => { this.rows[row+i-1][col+j-1] = value; }); });
         return range;
       },
       setValue: value => range.setValues([[value]]),
-      setNumberFormat: format => { cells((r,c) => { sheet.formats[sheet.key(r,c)] = format; }); return range; },
+      setNumberFormat: format => { cells((r,c) => { this.formats[this.key(r,c)] = format; }); return range; },
       copyTo: () => range, setBackground: () => range, setFontColor: () => range, setFontWeight: () => range,
       createTextFinder: id => ({ matchEntireCell: () => ({ findNext: () => {
-        const offset = sheet.rows.slice(row-1, row-1+height).findIndex(r => r[col-1] === id);
-        return offset < 0 ? null : sheet.getRange(row+offset,col);
+        const offset = this.rows.slice(row-1, row-1+height).findIndex(r => r[col-1] === id);
+        return offset < 0 ? null : this.getRange(row+offset,col);
       } }) })
     };
     return range;

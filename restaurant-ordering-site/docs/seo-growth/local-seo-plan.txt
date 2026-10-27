@@ -1,0 +1,28 @@
+RESTROVA — LOCAL SEO FOR PAKISTAN
+27 October 2026. Status: useful /locations enhancements implemented locally; external profile work pending.
+
+IMPLEMENTED
+Keep one /locations planning resource for nine priority cities. Islamabad now has an address-to-branch test exercise; Rawalpindi has a counter/dispatch/settlement exercise. A branch worksheet connects menu differences, staff, rider coverage, devices and reports. The examples are explicitly planning exercises, not fictional client results. No city offices, addresses or new doorway pages were added. Existing 552 legacy routes remain reachable/noindex and outside the sitemap.
+
+KEYWORD / EVIDENCE PLAN
+Islamabad: restaurant management software Islamabad; restaurant POS Islamabad; branch delivery setup. Rawalpindi: restaurant software Rawalpindi; restaurant POS Rawalpindi; restaurant rider management. Lahore: branded restaurant ordering app Lahore. Karachi: restaurant POS and online ordering system Karachi. Peshawar, Chakwal, Talagang, Fateh Jang and Jhelum: restaurant software + city, paired with actual setup questions rather than near-me food searches.
+These are intent hypotheses based on the business brief, language used on competitor pages and actual product coverage, not verified search volumes or rankings. Use Search Console Pakistan query/page exports and an owner-provided Keyword Planner account to validate demand, variations and relevant landing pages. Do not treat an autocomplete suggestion as search volume.
+
+CITY PAGE GATE
+Create a dedicated city page only if (1) query/lead evidence supports the intent, (2) Restrova has real service relevance, (3) there is original material such as an approved local implementation or onboarding account, (4) it answers needs beyond replacing a city name, and (5) its CTA and scope are truthful. Otherwise strengthen /locations. A restaurant in a city does not prove Restrova has an office there.
+
+LEGACY URL REVIEW
+Search Console owner: export 3–6 months of pages/queries/clicks/impressions and external links, plus CRM landing-page conversions where available. Make a row per legacy URL: response, current canonical/noindex, traffic, inbound links, topic, decision, target if any, evidence and owner. Keep noindex for unsupported thin pages; rewrite valuable pages where a real use exists. Redirect only to a closely equivalent replacement, not the homepage. Use 404/410 only after a specific retirement decision. The earlier noindex policy is already live; do not restore the entire generator to indexable status or guess that all legacy URLs were worthless.
+
+GOOGLE BUSINESS PROFILE ELIGIBILITY
+The owner confirmed during this task that staff visit restaurant customers AND customers visit a permanently staffed Restrova office. This supports a HYBRID business model and potential eligibility, subject to verification of the actual office, signage, public hours and authorized business identity. No profile was created or edited.
+Google requires in-person customer contact during stated hours. For the owner-confirmed hybrid model, use the real customer-facing office and genuine service area after checking the representation rules. Verify permanent signage and the hours when customers can actually be received. Do not substitute the app-store publisher address without confirmation, and do not create a separate profile for every city served. A rented mailing address or a city keyword in a page is insufficient.
+Official eligibility: https://support.google.com/business/answer/13763036
+Representation/address guidelines: https://support.google.com/business/answer/3038177
+
+ONLY IF ELIGIBLE AND OWNER-APPROVED
+Owner controls the profile and completes verification. Use the actual business name (no city/keyword stuffing), the most accurate available software category, approved phone/site and actual hours/service area. Use https://www.restrova.com and a reviewed demo link with no PII in tracking parameters. Add approved office/team/product photos and a concise factual description. Request feedback from genuine customers without rewards, review gating or suggested positive ratings. Keep name/contact details consistent with the approved website identity. Add managers through invitations, not shared passwords. Monitor inaccurate suggested edits and answer relevant questions.
+Current local-ranking guidance: https://support.google.com/business/answer/7091
+
+NEXT TWO MONTHS
+Owner + customer success: obtain one approved Islamabad/Rawalpindi implementation account, including actual delivery/branch problems and supported workflow. Growth: validate city query demand and map to /locations or the matching solution. Developer: retain crawlable noindex legacy URLs and verify canonical/redirect behaviour. Content: publish only approved local evidence; no invented local counts, testimonial or SLA.

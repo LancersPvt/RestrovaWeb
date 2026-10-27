@@ -7,8 +7,6 @@ import {
   MessageCircle,
   Sparkles,
   Navigation,
-  Flame,
-  Pizza,
 } from "lucide-react";
 
 import Image from "next/image";

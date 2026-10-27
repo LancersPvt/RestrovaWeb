@@ -1,7 +1,5 @@
 import {
   Facebook,
-  Instagram,
-  Store,
   Smartphone,
   BadgePercent,
   ArrowRight,

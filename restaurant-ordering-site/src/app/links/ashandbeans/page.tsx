@@ -1,14 +1,11 @@
 import {
-  Facebook,
   Instagram,
   Store,
   Download,
   BadgePercent,
   ArrowRight,
-  MapPin,
   MessageCircle,
   Sparkles,
-  Coffee,
   Navigation,
 } from "lucide-react";
 

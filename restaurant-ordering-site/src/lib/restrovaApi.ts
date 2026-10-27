@@ -36,18 +36,40 @@ export interface Category {
     tenantId: string;
     name: string;
     description: string | null;
-    imageUrl: string | null;
+    imageUrl: string | null | undefined;
     displayOrder: number;
     isActive: boolean;
     items: MenuItem[];
 }
 
+// Transport types describe the existing API response and its legacy aliases.
+interface OpeningSlot {
+    active: boolean;
+    dayOfWeek: number;
+    opensAt: string;
+    closesAt: string;
+}
+interface ApiBranch extends Omit<Branch, "openingHours" | "isActive"> {
+    active?: boolean;
+    isActive?: boolean;
+    openingSlots?: OpeningSlot[] | null;
+}
+interface ApiMenuItem extends Omit<MenuItem, "isActive"> {
+    active?: boolean;
+    isActive?: boolean;
+}
+interface ApiCategory extends Omit<Category, "items" | "isActive"> {
+    active?: boolean;
+    isActive?: boolean;
+    imageKey?: string;
+}
+
 const BASE_URL = process.env.HYPERADMIN_BASE_URL || process.env.NEXT_PUBLIC_API_URL || "https://dev.restrova.com/api/v1";
 
-const DAYS = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
+const DAYS: (keyof Branch["openingHours"])[] = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
 
-function formatOpeningSlots(slots: any[]): Record<string, string> {
-    const hours: Record<string, string> = {
+function formatOpeningSlots(slots: OpeningSlot[] | null | undefined): Branch["openingHours"] {
+    const hours: Branch["openingHours"] = {
         monday: "Closed",
         tuesday: "Closed",
         wednesday: "Closed",
@@ -60,7 +82,7 @@ function formatOpeningSlots(slots: any[]): Record<string, string> {
     if (!slots || !Array.isArray(slots)) return hours;
 
     // Group active slots by dayOfWeek
-    const grouped: Record<number, any[]> = {};
+    const grouped: Record<number, OpeningSlot[]> = {};
     slots.forEach(slot => {
         if (slot.active) {
             if (!grouped[slot.dayOfWeek]) {
@@ -106,9 +128,9 @@ export async function fetchBranches(tenantId: string): Promise<Branch[]> {
         }
 
         const data = await res.json();
-        const content = data && Array.isArray(data.content) ? data.content : Array.isArray(data) ? data : [];
+        const content: ApiBranch[] = data && Array.isArray(data.content) ? data.content : Array.isArray(data) ? data : [];
         
-        return content.map((b: any) => ({
+        return content.map((b) => ({
             id: b.id,
             tenantId: b.tenantId,
             name: b.name,
@@ -159,13 +181,13 @@ export async function fetchMenuCategories(tenantId: string): Promise<Category[]>
         const catData = await catRes.json();
         const itemData = await itemRes.json();
 
-        const categories = catData.categories || [];
-        const items = itemData.content || [];
+        const categories: ApiCategory[] = catData.categories || [];
+        const items: ApiMenuItem[] = itemData.content || [];
 
-        return categories.map((cat: any) => {
+        return categories.map((cat) => {
             const categoryItems = items
-                .filter((item: any) => item.categoryId === cat.id && (item.active ?? item.isActive ?? true))
-                .map((item: any) => ({
+                .filter((item) => item.categoryId === cat.id && (item.active ?? item.isActive ?? true))
+                .map((item) => ({
                     id: item.id,
                     categoryId: item.categoryId,
                     name: item.name,

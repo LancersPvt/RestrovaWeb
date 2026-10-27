@@ -11,15 +11,15 @@ const fakeNext = { NextResponse: { json(body, init = {}) {
 function load(relative) {
   const file = path.resolve(project, relative);
   if (cache.has(file)) return cache.get(file).exports;
-  const module = { exports: {} };
-  cache.set(file, module);
+  const loadedModule = { exports: {} };
+  cache.set(file, loadedModule);
   const source = fs.readFileSync(file, 'utf8');
   const js = ts.transpileModule(source, { fileName: file,
     compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.CommonJS } }).outputText;
   const localRequire = name => name === 'next/server' ? fakeNext : name.startsWith('@/lib/')
     ? load(`src/lib/${name.slice('@/lib/'.length)}.ts`) : require(name);
-  new Function('require', 'module', 'exports', js)(localRequire, module, module.exports);
-  return module.exports;
+  new Function('require', 'module', 'exports', js)(localRequire, loadedModule, loadedModule.exports);
+  return loadedModule.exports;
 }
 const qualification = { businessType: 'established', branches: '2', dailyOrders: '30_99', role: 'owner',
   completeSystem: 'yes', onboardingBudget: 'ready', timeline: '10_days' };

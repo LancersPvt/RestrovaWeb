@@ -1,0 +1,46 @@
+RESTROVA GEO RELEASE AND MEASUREMENT HANDOFF
+Prepared 27 October 2026. This file documents pending work; it does not publish, submit, schedule or verify external accounts.
+
+Release status
+The user requested no push or deployment. Source changes are local on main, alongside the previous SEO changes. Preserve and review both sets before committing. Production remains on the earlier release: /about and both new buying-guide routes return 404, and the public sitemap contains 19 entries. The reviewed local build has 22 entries.
+The new articles use 2026-10-27 as the preparation/review release date. If first publication happens later, set their date and updated fields to the actual publication date before release; do not backdate them.
+
+Legal identity and privacy release blocker
+The owner identified themself as the owner, but did not supply the legal operating-company name, legal-notice address, privacy email or the exact relationship to the app-store publisher LANCERS SOFTWARE (PRIVATE) LIMITED. Do not infer those from a listing. Obtain these facts and owner/legal approval of the complete policy. Update About, privacy and Organization consistently only after approval. Keep the draft policy noindex and outside the sitemap until a separate indexing decision is approved. Existing privacy obligations have not been silently rewritten.
+
+Public evidence
+Five restaurant-app links plus the Restrova Admin Android and iOS links return 200 and identify the expected apps. This proves listing reachability, not permission to promote customer logos or outcomes. The existing hero mockup remains explicitly illustrative. Obtain a permission-approved 45–90-second sample-order walkthrough and redacted Admin/order, stock, delivery and reporting screenshots. Capture only sample or approved anonymized records. Use case-study-evidence-template.json; never publish blank or invented case studies.
+
+Search accounts after release
+No authenticated Search Console or Bing Webmaster connection was available for account verification. The website is configured to be crawlable; that is not proof of indexing.
+1. Verify the domain property using approved DNS ownership access. Submit https://www.restrova.com/sitemap.xml in Google Search Console and Bing Webmaster Tools.
+2. Inspect /, /about, /pricing, /services/restaurant-ordering-apps, the new management guide and all six service URLs. Record live-test status, rendered HTML, user-declared and selected canonical, indexing decision, date and evidence link.
+3. The host currently sends apex-to-www as 307 even though repository redirects are permanent. Change the hosting/domain redirect to 308 or 301 after release authorization, preserving path and query. Confirm HTTP-to-HTTPS plus www behavior.
+4. Generic robots allows public marketing and blocks /api/. GPTBot policy is unchanged. Simulated Googlebot/OAI-SearchBot user-agent requests returned 200 for /services; real crawler IP/CDN access and search inclusion require account/log evidence.
+5. Preview Vercel deployments retain noindex headers and production canonicals. Do not submit preview URLs. Keep the 552 legacy geography/service templates noindex and outside the sitemap.
+6. IndexNow remains optional and unconfigured; generate and verify an authorized key only when the account and publishing workflow are available.
+
+Analytics implementation dependency
+No approved GA4 property, measurement ID, consent policy or test destination was supplied. No GA4 tag was guessed or activated. Existing Meta Pixel and qualified Lead timing are preserved.
+Once those are supplied, configure generate_lead only after the scheduling API returns HTTP success AND ok:true (the CRM has acknowledged persistence). Do not count the first qualification form or a CTA click as this conversion. Deduplicate by the stable non-personal submission/event reference, including retries; never include names, phone, restaurant/contact details or free text in analytics parameters. Use page path without query strings, a controlled source/channel classification and qualified status. Do not send full URLs that might contain personal data. Preserve failure/retry behavior and never let blocked analytics prevent navigation to the success page.
+Test with the owner's approved test CRM destination: one valid qualified request, duplicate/retry, rejected payload and failed storage. Confirm exactly one successful generate_lead in GA4 DebugView and one CRM record; none for failures. Existing automated tests already cover CRM acknowledgement and idempotency using offline fixtures. A real GA4/CRM test was not sent.
+Track ChatGPT referrals and utm_source=chatgpt.com where present, organic demos and qualified rate. Unattributed direct traffic remains possible. Google documentation checked for this task reports AI-feature traffic within the Web performance report; use a separate AI breakdown only if it is actually available in the account.
+
+Performance evidence
+The same-day live mobile PageSpeed baseline from the previous SEO work is retained: Performance 98, Accessibility 97, Best Practices 100, SEO 100; FCP 1.2 s, LCP 2.3 s, TBT 90 ms, CLS 0, Speed Index 2.2 s. Lighthouse 13.5.0, Moto G Power, slow 4G, initial load; 27 October 2026 17:17 Pakistan Time. https://pagespeed.web.dev/analysis/https-www-restrova-com/jl1cx6drcg?form_factor=mobile
+CrUX had insufficient data, so field LCP/INP/CLS and INP are not established. This baseline precedes the unpushed changes. No post-deployment performance improvement is claimed. Recheck the same setup after release and compare both new routes; monitor field data when available.
+
+AI visibility
+ai-visibility-log.json contains the specification's 20 exact prompts and empty evidence fields. Zero prompts answered: rates are undefined, not zero. A signed-out ChatGPT screen was inspected; a controlled Search-enabled account session was not available. No new account or terms acceptance was performed. Run the baseline in an authorized session, one fresh conversation per prompt, then repeat monthly with the same method. No automation was created.
+
+Next 14 days after owner review
+Days 1–2: confirm legal facts, privacy text, customer promotion rights, article publication dates and authentic demo assets. Review the complete local diff; authorize release separately.
+Days 3–5: once released, verify the official domain, 22 sitemap URLs, permanent host redirects, metadata/schema, mobile ordering links and demo form. Run the rich-results test on deployed URLs and store evidence.
+Days 5–7: verify Search Console/Bing ownership; submit sitemap and inspect key URLs. Provide GA4 property/consent/test configuration and complete the authorized end-to-end conversion test.
+Days 8–14: run the 20-prompt baseline, collect the first approved case study, assess directory fit, and approve one factual profile or editorial pitch. Nothing is sent automatically. Compare qualified demos and organic queries, not just mentions.
+
+References
+https://developers.google.com/search/docs/appearance/ai-features
+https://developers.google.com/search/docs/appearance/structured-data/software-app
+https://schema.org/SoftwareApplication
+https://validator.schema.org/

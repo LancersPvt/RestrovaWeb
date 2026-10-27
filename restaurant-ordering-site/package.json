@@ -11,7 +11,8 @@
     "setup:demo": "node scripts/setup-demo.cjs",
     "sync-tenants": "node scripts/syncTenants.js",
     "test:seo": "node src/tests/test_seo.mjs",
-    "check:seo": "node scripts/check-seo.mjs"
+    "check:seo": "node scripts/check-seo.mjs",
+    "test:integrations": "node src/tests/test_integrations.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.563.0",

@@ -1,3 +1,5 @@
+import JsonLd from "@/components/JsonLd";
+import { siteConfig } from "@/lib/site";
 import { staticMetadata } from "@/lib/seo";
 import { Breadcrumbs } from "@/components/MarketingPage";
 import Link from "next/link";
@@ -63,6 +65,10 @@ const services = [
 export default function ServicesPage() {
   return (
     <main id="main-content" className="bg-[#fffaf4] text-[#171816]">
+      <JsonLd data={{ "@context": "https://schema.org", "@type": "SoftwareApplication", "@id": `${siteConfig.url}/services#software`,
+        name: "Restrova", url: `${siteConfig.url}/services`, applicationCategory: "BusinessApplication",
+        description: "Restaurant technology platform with branded ordering websites and customer apps, order management, inventory, delivery and reporting workflows.",
+        provider: { "@id": `${siteConfig.url}/#organization` } }} />
       <section className="border-b border-black/5 bg-[#171816] py-16 text-white sm:py-24">
         <div className="mx-auto max-w-7xl px-6">
           <Breadcrumbs items={[{ label: "Solutions", href: "/services" }]} />
@@ -75,7 +81,7 @@ export default function ServicesPage() {
             bring customers back—all through a setup shaped around your team.
           </p>
           <Link href="/#contact" className="mt-8 inline-flex min-h-14 items-center gap-2 rounded-full bg-[#c2412d] px-7 font-black text-white transition hover:bg-[#a73524]">
-            Plan my Restrova setup
+            Request a Free Demo
             <ArrowRight className="h-5 w-5" aria-hidden="true" />
           </Link>
         </div>
@@ -85,6 +91,7 @@ export default function ServicesPage() {
         <h2 id="solution-links" className="text-3xl font-black">Choose a workflow to explore</h2>
         <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{solutions.map((solution) => <li key={solution.slug}><Link className="block rounded-2xl border border-black/15 bg-white p-6 font-bold underline underline-offset-4" href={`/services/${solution.slug}`}>{solution.label}</Link></li>)}</ul>
         <p className="mt-6 leading-7">Compare the <Link href="/pricing" className="font-bold underline">pricing and fee examples</Link>, or read the <Link href="/faq" className="font-bold underline">common questions</Link> before your demo.</p>
+        <p className="mt-4 leading-7">Read <Link href="/about" className="font-bold underline">about Restrova</Link> and use the <Link href="/blog/how-to-choose-restaurant-management-software-pakistan" className="font-bold underline">restaurant management software buying guide</Link> to turn your requirements into a practical demonstration checklist.</p>
       </section>
       <section className="py-16 sm:py-24">
         <div className="mx-auto grid max-w-7xl gap-5 px-6 md:grid-cols-2 lg:grid-cols-3">
