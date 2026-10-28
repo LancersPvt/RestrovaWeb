@@ -28,6 +28,28 @@ const { monthlyFee } = load("src/lib/pricing.ts");
 for (const [sales, expected] of [[0, 5000], [200000, 5000], [499999, 5000], [500000, 5000], [500100, 5001], [800000, 8000], [1500000, 15000]]) assert.equal(monthlyFee(sales), expected);
 for (const invalid of [-1, NaN, Infinity]) assert.throws(() => monthlyFee(invalid), RangeError);
 
+const { businessIdentity, siteIdentitySchema } = load("src/lib/business-identity.ts");
+const legalName = "LANCERS SOFTWARE (PRIVATE) LIMITED";
+const approvedAddress = "Plot No. 70/5, Faizan Street, Range Road, Shalley Valley, Rawalpindi, 46000, Pakistan";
+assert.equal(businessIdentity.legalName, legalName);
+assert.equal(businessIdentity.address, approvedAddress);
+assert.equal(businessIdentity.companyUrl, "https://www.lancers.dev/");
+assert.equal(new Set(siteIdentitySchema.map(s => s["@id"])).size, 3);
+const operator = siteIdentitySchema.find(s => s["@type"] === "Organization");
+const brand = siteIdentitySchema.find(s => s["@type"] === "Brand");
+const website = siteIdentitySchema.find(s => s["@type"] === "WebSite");
+assert.equal(operator.name, legalName); assert.equal(operator.legalName, legalName);
+assert.equal(operator["@id"], "https://www.restrova.com/#organization", "preserve existing provider/publisher references");
+assert.deepEqual(operator.address, { "@type": "PostalAddress", streetAddress: "Plot No. 70/5, Faizan Street, Range Road, Shalley Valley", addressLocality: "Rawalpindi", postalCode: "46000", addressCountry: "PK" });
+assert.equal(operator.brand["@id"], brand["@id"]);
+assert.equal(brand.name, "Restrova"); assert.equal(brand.logo, "https://www.restrova.com/logo.png");
+assert.equal(website.publisher["@id"], operator["@id"]);
+assert.equal(website.about["@id"], brand["@id"]);
+assert.equal(website.url, "https://www.restrova.com/");
+assert.ok(!operator.logo, "the product logo must not be labelled as a company logo");
+assert.ok(!JSON.stringify(siteIdentitySchema).match(/aggregateRating|"review"|taxID|vatID|foundingDate/));
+console.log("PASS: confirmed legal operator, Restrova Brand, PostalAddress and stable website/provider identity links");
+
 const originalEnv = { VERCEL_ENV: process.env.VERCEL_ENV, VERCEL_URL: process.env.VERCEL_URL, NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL };
 try {
   process.env.VERCEL_ENV = "production";

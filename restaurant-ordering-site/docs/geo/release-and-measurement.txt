@@ -2,11 +2,11 @@ RESTROVA GEO RELEASE AND MEASUREMENT HANDOFF
 Prepared 27 October 2026. This file documents pending work; it does not publish, submit, schedule or verify external accounts.
 
 Release status
-The user requested no push or deployment. Source changes are local on main, alongside the previous SEO changes. Preserve and review both sets before committing. Production remains on the earlier release: /about and both new buying-guide routes return 404, and the public sitemap contains 19 entries. The reviewed local build has 22 entries.
+The user requested no push or deployment. The earlier SEO/GEO work has since been committed (1146d2491cd9ded10bdcdc1efda3b41abed16a4b). The business identity changes are local and uncommitted. The reviewed sitemap still has 22 entries; recheck the live deployment separately before making production claims.
 The new articles use 2026-10-27 as the preparation/review release date. If first publication happens later, set their date and updated fields to the actual publication date before release; do not backdate them.
 
 Legal identity and privacy release blocker
-The owner identified themself as the owner, but did not supply the legal operating-company name, legal-notice address, privacy email or the exact relationship to the app-store publisher LANCERS SOFTWARE (PRIVATE) LIMITED. Do not infer those from a listing. Obtain these facts and owner/legal approval of the complete policy. Update About, privacy and Organization consistently only after approval. Keep the draft policy noindex and outside the sitemap until a separate indexing decision is approved. Existing privacy obligations have not been silently rewritten.
+The owner has confirmed Restrova is operated by LANCERS SOFTWARE (PRIVATE) LIMITED, with business address Plot No. 70/5, Faizan Street, Range Road, Shalley Valley, Rawalpindi, 46000, Pakistan. The official company website is https://www.lancers.dev/. These facts now appear consistently in About, Contact, privacy, the footer and structured data. The existing support@lancers.dev privacy contact is preserved. The effective date and full policy still need owner/legal approval. Keep the draft policy noindex and outside the sitemap until a separate indexing decision is approved. No registration number, new privacy promise or legal compliance claim has been added.
 
 Public evidence
 Five restaurant-app links plus the Restrova Admin Android and iOS links return 200 and identify the expected apps. This proves listing reachability, not permission to promote customer logos or outcomes. The existing hero mockup remains explicitly illustrative. Obtain a permission-approved 45–90-second sample-order walkthrough and redacted Admin/order, stock, delivery and reporting screenshots. Capture only sample or approved anonymized records. Use case-study-evidence-template.json; never publish blank or invented case studies.
@@ -34,7 +34,7 @@ AI visibility
 ai-visibility-log.json contains the specification's 20 exact prompts and empty evidence fields. Zero prompts answered: rates are undefined, not zero. A signed-out ChatGPT screen was inspected; a controlled Search-enabled account session was not available. No new account or terms acceptance was performed. Run the baseline in an authorized session, one fresh conversation per prompt, then repeat monthly with the same method. No automation was created.
 
 Next 14 days after owner review
-Days 1–2: confirm legal facts, privacy text, customer promotion rights, article publication dates and authentic demo assets. Review the complete local diff; authorize release separately.
+Days 1–2: approve the full privacy text and effective date, customer promotion rights, article publication dates and authentic demo assets. Review the complete local diff; authorize release separately.
 Days 3–5: once released, verify the official domain, 22 sitemap URLs, permanent host redirects, metadata/schema, mobile ordering links and demo form. Run the rich-results test on deployed URLs and store evidence.
 Days 5–7: verify Search Console/Bing ownership; submit sitemap and inspect key URLs. Provide GA4 property/consent/test configuration and complete the authorized end-to-end conversion test.
 Days 8–14: run the 20-prompt baseline, collect the first approved case study, assess directory fit, and approve one factual profile or editorial pitch. Nothing is sent automatically. Compare qualified demos and organic queries, not just mentions.

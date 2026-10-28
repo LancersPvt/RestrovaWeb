@@ -5,9 +5,13 @@ Route: /privacy-policy
 Intended public URL: https://www.restrova.com/privacy-policy
 Meta Instant Form link text: Restrova Privacy Policy
 
+OWNER-CONFIRMED BUSINESS IDENTITY — 27 OCTOBER 2026
+- Brand: Restrova, operated by LANCERS SOFTWARE (PRIVATE) LIMITED.
+- Business address: Plot No. 70/5, Faizan Street, Range Road, Shalley Valley, Rawalpindi, 46000, Pakistan.
+- Official websites: https://www.restrova.com/ and https://www.lancers.dev/.
+- These confirmed facts replace the two identity placeholders. They do not constitute approval of the full privacy policy.
+
 INFORMATION STILL REQUIRED
-- Registered legal business name.
-- Verified business address.
 - Approved effective date. The page deliberately displays a pending date rather than inventing one.
 - The owner agreed to use the existing support@lancers.dev contact for privacy enquiries during implementation. Confirm the mailbox is monitored and privacy requests have an owner before publication.
 
@@ -18,7 +22,7 @@ IMPLEMENTATION
 - src/app/sitemap.ts: the draft privacy policy is excluded until business/legal approval.
 - No new packages, global styling changes, authentication changes, or deployment.
 - Canonical and Open Graph URLs explicitly use the required HTTPS production URL.
-- Draft metadata is noindex, follow; this does not restrict direct access. After approval, replace the pending fields/date, remove the draft notice, and remove the robots override so the root index/follow metadata applies. After approval, explicitly add /privacy-policy to the curated sitemap; it is excluded while noindex.
+- Draft metadata is noindex, follow; this does not restrict direct access. After full owner/legal approval, set the approved effective date and remove the draft notice. Decide separately whether to index the policy. Only if indexing is approved, remove the robots override and add /privacy-policy to the curated sitemap; it is excluded while noindex.
 
 SOURCE-VERIFIED WEBSITE BEHAVIOR
 - src/app/layout.tsx loads Meta Pixel globally after interaction readiness and tracks PageView. It also includes a no-JavaScript tracking image. This is not a consent gate.

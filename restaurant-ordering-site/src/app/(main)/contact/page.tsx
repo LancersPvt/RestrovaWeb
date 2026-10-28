@@ -3,6 +3,7 @@ import { Breadcrumbs } from "@/components/MarketingPage";
 import { Check } from "lucide-react";
 import Link from "next/link";
 
+import CompanyInformation from "@/components/CompanyInformation";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata = staticMetadata("/contact");
@@ -59,6 +60,7 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      <div className="mx-auto max-w-7xl px-6 pb-16 sm:pb-24"><CompanyInformation /></div>
     </main>
   );
 }

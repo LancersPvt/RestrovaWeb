@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 
+import { siteIdentitySchema } from "@/lib/business-identity";
 import JsonLd from "@/components/JsonLd";
 import { isPreviewDeployment, siteConfig } from "@/lib/site";
 
@@ -68,14 +69,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} antialiased`}>
-        <JsonLd data={[
-          { "@context": "https://schema.org", "@type": "Organization", "@id": `${siteConfig.url}/#organization`, name: siteConfig.name,
-            url: siteConfig.url, logo: `${siteConfig.url}/logo.png`, description: siteConfig.description,
-            brand: { "@type": "Brand", name: "Restrova" },
-            contactPoint: { "@type": "ContactPoint", contactType: "sales", email: siteConfig.contact.email }, areaServed: { "@type": "Country", name: "Pakistan" } },
-          { "@context": "https://schema.org", "@type": "WebSite", "@id": `${siteConfig.url}/#website`, name: siteConfig.name,
-            url: siteConfig.url, inLanguage: "en-PK", publisher: { "@id": `${siteConfig.url}/#organization` } },
-        ]} />
+        <JsonLd data={siteIdentitySchema} />
         {children}
 
         {/* Meta Pixel: base code provided in Events Manager. */}

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
+import { businessIdentity } from "@/lib/business-identity";
 import { siteConfig } from "@/lib/site";
 
 export default function SiteFooter() {
@@ -47,6 +48,11 @@ export default function SiteFooter() {
               <li><a href={`mailto:${siteConfig.contact.email}`} className="transition hover:text-white">Email Restrova</a></li>
             </ul>
           </div>
+        </div>
+
+        <div className="border-b border-white/10 py-7 text-sm leading-7 text-white/75">
+          <p>Restrova is operated by <a href={businessIdentity.companyUrl} className="font-semibold underline underline-offset-4 hover:text-white">{businessIdentity.legalName}</a>.</p>
+          <address className="mt-2 max-w-3xl not-italic">{businessIdentity.address}</address>
         </div>
 
         <div className="flex flex-col gap-3 pt-7 text-xs text-white/65 sm:flex-row sm:items-center sm:justify-between">

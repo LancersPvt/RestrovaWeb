@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { ArrowUpRight, Mail } from "lucide-react";
 
+import { businessIdentity } from "@/lib/business-identity";
 import { siteConfig } from "@/lib/site";
 import styles from "./privacy-policy.module.css";
 
@@ -41,6 +42,7 @@ const sections: { id: string; title: string; content: ReactNode }[] = [
     id: "introduction",
     title: "Introduction",
     content: <>
+      <p>Restrova is operated by {businessIdentity.legalName}.</p>
       <p>Restrova provides a restaurant operating system that connects branded customer ordering applications for iOS and Android, restaurant websites and direct ordering, Restrova Admin, live online and walk-in orders, menu and inventory management, sales analytics, and Restrova Fleet delivery management.</p>
       <p>This Privacy Policy explains how personal information is collected, used, shared, stored, and protected in connection with these services, our website, business enquiries, demonstrations, and onboarding. The information involved depends on the service you use, your role, and the restaurant&apos;s configuration.</p>
     </>,
@@ -241,9 +243,10 @@ const sections: { id: string; title: string; content: ReactNode }[] = [
         <p className={styles.contactName}>Restrova</p>
         <dl>
           <div><dt>Website</dt><dd><a href="https://www.restrova.com">www.restrova.com</a></dd></div>
+          <div><dt>Company website</dt><dd><a href={businessIdentity.companyUrl}>www.lancers.dev</a></dd></div>
           <div><dt>Privacy enquiries</dt><dd><a href={`mailto:${siteConfig.contact.email}`}>{siteConfig.contact.email}</a></dd></div>
-          <div><dt>Legal business name</dt><dd className={styles.pending}>Awaiting business confirmation</dd></div>
-          <div><dt>Business address</dt><dd className={styles.pending}>Awaiting business confirmation</dd></div>
+          <div><dt>Legal business name</dt><dd>{businessIdentity.legalName}</dd></div>
+          <div><dt>Business address</dt><dd><address className="not-italic">{businessIdentity.address}</address></dd></div>
         </dl>
       </div>
     </>,
@@ -261,7 +264,7 @@ export default function PrivacyPolicyPage() {
           <p className="mt-6 text-sm text-black/65"><span className="font-bold text-[#171816]">Effective date:</span> To be confirmed before publication</p>
           <aside aria-label="Draft policy notice" className="mt-8 max-w-3xl rounded-2xl border border-[#e9c4ad] bg-[#fff0e5] px-5 py-4 text-sm leading-6 text-[#713c27]">
             <p className="font-bold">Draft for review — pending approval</p>
-            <p className="mt-1">The legal business name, business address, and effective date require confirmation. This policy must be approved before public deployment.</p>
+            <p className="mt-1">The legal operating company and business address are confirmed. The effective date and complete privacy policy still require owner/legal approval before this policy is marked final.</p>
           </aside>
         </div>
       </header>
