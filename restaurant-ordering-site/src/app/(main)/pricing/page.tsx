@@ -23,6 +23,7 @@ export default function PricingPage() {
       <p className="mt-4">Taxes, payment gateway or transaction charges, app-store account charges, hardware, custom work and other exclusions need confirmation. Ask how returns, cancellations and refunds affect processed sales, whether pricing covers your planned branches and when billing begins. These terms must be agreed in writing before onboarding.</p>
       <p className="mt-4" lang="ur-Latn">Mahina ki fee PKR 5,000 ya Restrova se process honay wali sales ka 1%, jo zyada ho. Onboarding PKR 10,000 aik dafa hai.</p>
     </section>
+    <section><h2>Comparing more than one quote?</h2><p className="mt-4">Use the <Link href="/blog/restaurant-software-pricing-pakistan-guide">restaurant software cost checklist</Link> to compare setup, hardware, payments, support and branch scope. For branded apps, review <Link href="/blog/restaurant-app-cost-pakistan">app publishing and maintenance costs</Link>.</p></section>
     <DemoCta title="Review pricing against your restaurant workflow" />
   </MarketingPage>;
 }

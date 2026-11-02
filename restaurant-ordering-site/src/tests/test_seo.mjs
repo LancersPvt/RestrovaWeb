@@ -60,14 +60,18 @@ try {
   assert.equal(siteConfig.url, "https://www.restrova.com");
   const { pageMetadata, staticSeoPages } = load("src/lib/seo.ts");
   const { solutions } = load("src/data/solutions.ts");
+  const { businessTypes } = load("src/data/businessTypes.ts");
+  const { blogPosts } = load("src/lib/blog-data.ts");
   const sitemap = load("src/app/sitemap.ts").default();
-  assert.equal(sitemap.length, 22);
+  assert.equal(sitemap.length, staticSeoPages.length + solutions.length + businessTypes.length + blogPosts.length);
+  const expectedPaths = [...staticSeoPages.map(p => p.path), ...solutions.map(p => `/services/${p.slug}`), ...businessTypes.map(p => `/solutions/${p.slug}`), ...blogPosts.map(p => `/blog/${p.slug}`)];
+  assert.deepEqual(sitemap.map(p => new URL(p.url).pathname).sort(), expectedPaths.sort());
   assert.equal(new Set(sitemap.map(({ url }) => url)).size, sitemap.length);
   for (const item of sitemap) {
     assert.equal(new URL(item.url).origin, siteConfig.url);
     assert.doesNotMatch(item.url, /privacy-policy|\/demo\/|software-in-|best-restaurants|\/links\//);
   }
-  for (const item of [...staticSeoPages, ...solutions.map((s) => ({ ...s, path: `/services/${s.slug}` }))]) {
+  for (const item of [...staticSeoPages, ...solutions.map((s) => ({ ...s, path: `/services/${s.slug}` })), ...businessTypes.map((s) => ({ ...s, path: `/solutions/${s.slug}` }))]) {
     const meta = pageMetadata(item.path, item.title, item.description);
     assert.equal(meta.alternates.canonical, new URL(item.path, siteConfig.url).href);
     assert.equal(meta.openGraph.url, meta.alternates.canonical);
@@ -75,6 +79,32 @@ try {
     assert.ok(meta.description.length > 50 && meta.description.length < 180);
   }
   for (const solution of solutions) for (const slug of solution.related) assert.ok(solutions.some((item) => item.slug === slug));
+  for (const business of businessTypes) {
+    assert.ok(business.sections.length >= 3);
+    assert.ok(business.faqs.length >= 2);
+    for (const slug of business.services) assert.ok(solutions.some(s => s.slug === slug));
+    assert.ok(blogPosts.some(p => p.slug === business.guide.slug));
+  }
+  assert.equal(new Set(blogPosts.map(p => p.slug)).size, blogPosts.length);
+  assert.equal(new Set(blogPosts.map(p => p.seoTitle || p.title)).size, blogPosts.length);
+  assert.equal(new Set(blogPosts.map(p => p.excerpt)).size, blogPosts.length);
+  for (const post of blogPosts) {
+    assert.ok(post.date <= (post.updated || post.date));
+    assert.ok(!Number.isNaN(Date.parse(post.date)));
+    assert.ok(post.excerpt.length >= 70 && post.excerpt.length <= 180, `${post.slug}: useful description`);
+    assert.ok(solutions.some(s => s.slug === post.relatedSolution));
+    assert.doesNotMatch(post.content, /^# /m, `${post.slug}: no second H1`);
+    for (const [, href] of post.content.matchAll(/\]\((\/(?!\/)[^\s)]+)\)/g)) {
+      assert.ok(expectedPaths.includes(href.split("#")[0]), `${post.slug}: unknown internal target ${href}`);
+    }
+  }
+  const requiredArticles = ["how-to-choose-restaurant-management-software-pakistan", "how-to-choose-restaurant-pos-software-pakistan", "restaurant-app-cost-pakistan", "why-direct-ordering-beats-third-party-marketplaces", "restaurant-inventory-management-guide-pakistan", "restaurant-rider-management-tracking-settlement", "start-online-ordering-small-restaurant-pakistan", "restaurant-pos-vs-manual-billing", "manage-multiple-restaurant-branches", "restaurant-software-pricing-pakistan-guide", "launch-restaurant-ordering-app", "compare-restaurant-ordering-systems"];
+  for (const slug of requiredArticles) {
+    const post = blogPosts.find(p => p.slug === slug);
+    assert.ok(post, `required article ${slug}`);
+    assert.ok(post.content.includes("/contact"), `${slug}: demo CTA`);
+    assert.ok(post.content.split("\n\n").filter(b => b.startsWith("## ")).length >= 4, `${slug}: complete guide`);
+  }
   const { solutionGuides } = load("src/data/solutionGuides.ts");
   assert.deepEqual(Object.keys(solutionGuides).sort(), solutions.map((s) => s.slug).sort());
   for (const solution of solutions) {
@@ -85,6 +115,38 @@ try {
     assert.match(solution.heading, /Pakistan/);
   }
   assert.equal(solutions.find((s) => s.slug === "restaurant-pos").heading, "Restaurant POS & Order Management Software in Pakistan");
+  const servicePage = load("src/app/(main)/services/[service]/page.tsx");
+  const connectedSlugs = ["restaurant-pos", "inventory-management", "delivery-management"];
+  for (const solution of solutions) {
+    const params = Promise.resolve({ service: solution.slug });
+    const markup = renderToStaticMarkup(await servicePage.default({ params }));
+    const visibleMarkup = markup.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g, "");
+    const software = [...markup.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)]
+      .map(match => JSON.parse(match[1])).find(schema => schema["@type"] === "SoftwareApplication");
+    assert.equal(software.url, `${siteConfig.url}/services/${solution.slug}`);
+    const metadata = await servicePage.generateMetadata({ params });
+    assert.equal(metadata.alternates.canonical, software.url, "service canonicals remain unchanged");
+    if (connectedSlugs.includes(solution.slug)) {
+      for (const id of ["connected-workflow", "operational-checks", "workflow", "buying-checklist", "solution-faq"]) {
+        assert.ok(visibleMarkup.includes(`id="${id}"`), `${solution.slug}: server-rendered ${id}`);
+        assert.ok(visibleMarkup.includes(`href="#${id}"`), `${solution.slug}: accessible section link`);
+      }
+      for (const href of [...connectedSlugs.filter(slug => slug !== solution.slug).map(slug => `/services/${slug}`), "/pricing", "/faq", "/apps", "/about", "/contact"]) {
+        assert.ok(visibleMarkup.includes(`href="${href}"`), `${solution.slug}: contextual destination ${href}`);
+      }
+      assert.ok(Array.isArray(software.featureList) && software.featureList.length > 0);
+      for (const feature of software.featureList) {
+        assert.equal(typeof feature, "string", "Schema.org featureList accepts Text");
+        assert.ok(visibleMarkup.includes(feature), `${solution.slug}: structured feature must also be visible`);
+      }
+      assert.ok(!software.offers && !software.aggregateRating && !software.screenshot && !software.video);
+      assert.ok(visibleMarkup.includes("Verify in the demo"));
+    } else {
+      assert.equal(software.featureList, undefined, "other service schemas are preserved");
+      assert.ok(!visibleMarkup.includes('id="connected-workflow"'), "other service layouts are preserved");
+    }
+  }
+  console.log("PASS: six service routes render on the server; three connected workflows, demo checks, contextual links, visible schema features and preserved canonicals");
   const { locationData } = load("src/data/locationData.ts");
   const { services } = load("src/data/services.ts");
   const { createSlug } = load("src/lib/slugUtils.ts");
@@ -126,10 +188,19 @@ const ArticleBody = load("src/components/ArticleBody.tsx").default;
 const article = renderToStaticMarkup(createElement(ArticleBody, { content: "## Test\n\n- One\n- Two\n\n<script>alert(1)</script>" }));
 assert.ok(article.includes("<ul")); assert.ok(article.includes("<li")); assert.ok(article.includes("&lt;script&gt;"));
 assert.ok(!article.includes("<h1"));
+const linkedArticle = renderToStaticMarkup(createElement(ArticleBody, { content: "[Internal](/pricing) [Source](https://example.com/help?a=1&b=2) [Unsafe](javascript:alert) [Protocol relative](//example.com)" }));
+assert.ok(linkedArticle.includes('href="/pricing"'));
+assert.ok(linkedArticle.includes('href="https://example.com/help?a=1&amp;b=2"'));
+assert.ok(!linkedArticle.includes('href="javascript:'));
+assert.ok(!linkedArticle.includes('href="//'));
 const { articleSections } = load("src/components/ArticleBody.tsx");
 const content = "## Same heading\n\nText\n\n## Same heading";
 const sections = articleSections(content);
 const rendered = renderToStaticMarkup(createElement(ArticleBody, { content }));
 assert.equal(new Set(sections.map((s) => s.id)).size, 2);
 for (const section of sections) assert.ok(rendered.includes(`id="${section.id}"`));
-console.log("PASS: pricing, production canonicals, preview noindex, 22 curated sitemap URLs, six solution guides, metadata, related links, safe JSON-LD and unique article anchors");
+const splitContent = "Opening answer.\n\n## First heading\n\nBody\n\n## Second heading";
+const splitSections = articleSections(splitContent);
+const splitRendered = renderToStaticMarkup(createElement(ArticleBody, { content: splitContent.split("\n\n").slice(1).join("\n\n"), startIndex: 1 }));
+for (const section of splitSections) assert.ok(splitRendered.includes(`id="${section.id}"`), "intro-before-contents preserves anchors");
+console.log("PASS: pricing, canonicals, preview noindex, curated sitemap, 12 required articles, business workflows, internal/source links, escaped JSON-LD and unique article anchors");

@@ -41,6 +41,7 @@ export default function SiteFooter() {
             <p className="text-xs font-black uppercase tracking-[.18em] text-white/65">For restaurants</p>
             <ul className="mt-4 space-y-3 text-sm font-semibold text-white/60">
               <li><Link href="/compare-marketplaces" className="transition hover:text-white">Restrova vs marketplaces</Link></li>
+              <li><Link href="/services#business-type-heading" className="transition hover:text-white">By restaurant type</Link></li>
               <li><Link href="/blog" className="transition hover:text-white">Restaurant guides</Link></li>
               <li><Link href="/locations" className="transition hover:text-white">Restrova in Pakistan</Link></li>
               <li><Link href="/#how" className="transition hover:text-white">How it works</Link></li>

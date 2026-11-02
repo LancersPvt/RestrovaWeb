@@ -1,3 +1,4 @@
+import BusinessTypeLinks from "@/components/BusinessTypeLinks";
 import Image from "next/image";
 import Link from "next/link";
 import { staticMetadata } from "@/lib/seo";
@@ -581,6 +582,7 @@ export default function Home() {
         </div>
       </section>
 
+      <BusinessTypeLinks />
     </main>
   );
 }

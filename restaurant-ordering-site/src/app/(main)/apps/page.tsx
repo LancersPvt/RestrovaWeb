@@ -14,6 +14,7 @@ export default function AppsPage() {
     <CustomerAppExamples />
     <p><Link href="/services/restaurant-ordering-apps">Plan your own branded Android and iOS ordering app</Link>.</p>
     <figure><Image src="/hero-mockup.png" width={1536} height={1024} sizes="(max-width: 1152px) 100vw, 1104px" alt="Illustrative Restrova product overview on mobile and tablet" className="h-auto w-full rounded-3xl" /><figcaption className="mt-3 text-sm">Illustrative product overview. Request a live walkthrough to see the current screens for your role.</figcaption></figure>
+    <section><h2>Prepare your restaurant app launch</h2><p className="mt-4">Review <Link href="/blog/restaurant-app-cost-pakistan">app costs and account ownership</Link>, then use the <Link href="/blog/launch-restaurant-ordering-app">Android and iOS launch checklist</Link> to plan branding, testing and store responsibilities.</p></section>
     <DemoCta title="See the customer and staff experiences together" />
   </MarketingPage>;
 }

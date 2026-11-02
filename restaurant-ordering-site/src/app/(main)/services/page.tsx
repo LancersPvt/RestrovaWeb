@@ -1,3 +1,4 @@
+import BusinessTypeLinks from "@/components/BusinessTypeLinks";
 import JsonLd from "@/components/JsonLd";
 import { siteConfig } from "@/lib/site";
 import { staticMetadata } from "@/lib/seo";
@@ -126,6 +127,7 @@ export default function ServicesPage() {
           </Link>
         </div>
       </section>
+      <BusinessTypeLinks />
     </main>
   );
 }

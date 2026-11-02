@@ -32,8 +32,8 @@ export const solutions: Solution[] = [
     related: ["restaurant-ordering-apps", "restaurant-pos", "inventory-management"],
   },
   {
-    slug: "restaurant-pos", label: "POS and order management", title: "Restaurant POS and Order Management Pakistan",
-    description: "Manage online, app, walk-in and POS orders with Restrova restaurant software in Pakistan. Review your counter and preparation workflow in a free demo.",
+    slug: "restaurant-pos", label: "POS and order management", title: "Restaurant POS with Inventory & Delivery in Pakistan",
+    description: "Connect counter and online orders with inventory checks, preparation and live rider tracking in Restrova. Explore the workflow and book a demo in Pakistan.",
     heading: "Restaurant POS & Order Management Software in Pakistan",
     intro: "Keep online and counter orders in view. Restrova brings online, app, walk-in and POS order management into your restaurant administration workflow, so your team can follow service across channels.",
     sections: [
@@ -46,7 +46,7 @@ export const solutions: Solution[] = [
   },
   {
     slug: "inventory-management", label: "Inventory management", title: "Restaurant Inventory Management Software Pakistan",
-    description: "Manage restaurant stock and menu availability with Restrova in Pakistan. Review inventory workflows alongside POS, online orders and branch operations.",
+    description: "Manage restaurant stock and menu availability alongside POS orders and delivery in Restrova. See inventory handoffs and what to test in a live demo.",
     heading: "Restaurant Inventory Management Software in Pakistan",
     intro: "Restrova includes inventory and stock management for restaurant operations. Bring your stock records and menu to a walkthrough of how your team can track availability alongside incoming orders.",
     sections: [
@@ -58,8 +58,8 @@ export const solutions: Solution[] = [
     related: ["restaurant-pos", "restaurant-ordering-websites", "reporting-analytics"],
   },
   {
-    slug: "delivery-management", label: "Delivery and rider management", title: "Restaurant Delivery and Rider Management Pakistan",
-    description: "Coordinate restaurant deliveries with Restrova Fleet: rider assignment, live tracking, delivery statuses and rider settlement workflows. Request a demo.",
+    slug: "delivery-management", label: "Delivery and rider management", title: "Restaurant Delivery & Live Rider Tracking Pakistan",
+    description: "Follow restaurant orders from preparation to rider assignment, live tracking and settlement with Restrova Fleet in Pakistan. Review the delivery demo checklist.",
     heading: "Restaurant Delivery & Rider Management in Pakistan",
     intro: "Restrova Fleet supports restaurant delivery and rider management. Connect order dispatch with rider assignment, live tracking and delivery status so your team can follow an order beyond the kitchen.",
     sections: [

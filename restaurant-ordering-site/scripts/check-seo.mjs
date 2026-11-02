@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { loadSeoSource } from "./load-seo-source.mjs";
 const base = process.env.SEO_BASE_URL || "http://localhost:3100";
 const origin = "https://www.restrova.com";
 const legalName = "LANCERS SOFTWARE (PRIVATE) LIMITED";
@@ -20,7 +21,9 @@ function attributes(tag) { return Object.fromEntries([...tag.matchAll(/([\w-]+)=
 async function get(route) { const res = await fetch(new URL(route, base), { headers: { "User-Agent": "Googlebot" }, signal: AbortSignal.timeout(45000) }); return { status: res.status, html: await res.text() }; }
 const sitemap = await get("/sitemap.xml"); assert.equal(sitemap.status, 200);
 const urls = [...sitemap.html.matchAll(/<loc>(.*?)<\/loc>/g)].map((m) => decode(m[1]));
-assert.equal(urls.length, 22); assert.equal(new Set(urls).size, urls.length);
+const expectedUrls = loadSeoSource("src/app/sitemap.ts").default().map(item => item.url);
+assert.deepEqual([...urls].sort(), [...expectedUrls].sort(), "sitemap matches curated source routes");
+assert.equal(new Set(urls).size, urls.length);
 const rows = []; const titles = new Set(); const descriptions = new Set(); const allLinks = new Set(); const pageIds = new Map();
 for (const url of urls) {
   assert.equal(new URL(url).origin, origin);
@@ -43,6 +46,17 @@ for (const url of urls) {
   assert.equal(new Set(schemaIds).size, schemaIds.length, `${route}: unique schema IDs`);
   if (route === "/about") assert.ok(schemas.some((s) => s["@type"] === "AboutPage" && s.mainEntity["@id"] === `${origin}/#brand` && s.publisher["@id"] === `${origin}/#organization`));
   if (route === "/services" || route.startsWith("/services/")) assert.ok(schemas.some((s) => s["@type"] === "SoftwareApplication" && s["@id"] === `${url}#software` && s.provider["@id"] === `${origin}/#organization` && !s.offers));
+  const connectedRoutes = ["/services/restaurant-pos", "/services/inventory-management", "/services/delivery-management"];
+  if (connectedRoutes.includes(route)) {
+    const main = html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/)?.[1].replace(/<script\b[^>]*>[\s\S]*?<\/script>/g, "") || "";
+    const visibleText = decode(main.replace(/<[^>]*>/g, " "));
+    for (const id of ["connected-workflow", "operational-checks"]) assert.ok(main.includes(`id="${id}"`), `${route}: crawler receives ${id}`);
+    for (const href of [...connectedRoutes.filter(target => target !== route), "/pricing", "/faq", "/apps", "/about", "/contact"]) assert.ok(main.includes(`href="${href}"`), `${route}: main-content link ${href}`);
+    const software = schemas.find(schema => schema["@type"] === "SoftwareApplication");
+    assert.ok(Array.isArray(software.featureList) && software.featureList.length > 0);
+    for (const feature of software.featureList) assert.ok(typeof feature === "string" && visibleText.includes(feature), `${route}: schema feature is visible text`);
+    assert.ok(!software.screenshot && !software.video, `${route}: no unapproved product media`);
+  }
   if (route.startsWith("/blog/")) assert.ok(schemas.some((s) => s["@type"] === "BlogPosting" && s.mainEntityOfPage === url && s.datePublished <= s.dateModified && s.author.name === "Restrova Team"));
   if (route !== "/" && route !== "/download") assert.ok(schemas.some((s) => s["@type"] === "BreadcrumbList"), `${route}: breadcrumbs`);
   assert.ok(!schemas.some((s) => s.aggregateRating || s.review || s["@type"] === "FAQPage"));
@@ -72,5 +86,5 @@ for (const route of ["/privacy-policy", "/demo/schedule", "/demo/thank-you", "/r
 }
 const missing = await get("/this-route-does-not-exist-seo-check"); assert.equal(missing.status, 404); assert.match(missing.html, /noindex/);
 const robots = await get("/robots.txt"); assert.ok(robots.html.includes(`${origin}/sitemap.xml`)); assert.ok(!robots.html.includes("vercel.app"));
-console.log(JSON.stringify(rows, null, 2));
+if (process.env.SEO_VERBOSE === "1") console.log(JSON.stringify(rows, null, 2));
 console.log(`PASS: ${rows.length} production-rendered routes; unique metadata, canonical, H1, schema, ${allLinks.size} internal links/anchors, noindex utilities and 404`);

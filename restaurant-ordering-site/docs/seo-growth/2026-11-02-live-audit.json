@@ -1,0 +1,108 @@
+{
+  "date": "2026-11-02",
+  "checks": [
+    {
+      "url": "https://www.restrova.com/",
+      "status": 200,
+      "finalUrl": "https://www.restrova.com/",
+      "title": "Restaurant Management Software Pakistan | Restrova",
+      "canonical": "https://www.restrova.com",
+      "h1Count": 1
+    },
+    {
+      "url": "https://www.restrova.com/robots.txt",
+      "status": 200,
+      "finalUrl": "https://www.restrova.com/robots.txt",
+      "body": "User-Agent: *\nAllow: /\nDisallow: /api/\n\nSitemap: https://www.restrova.com/sitemap.xml\n",
+      "h1Count": 0
+    },
+    {
+      "url": "https://www.restrova.com/sitemap.xml",
+      "status": 200,
+      "finalUrl": "https://www.restrova.com/sitemap.xml",
+      "urls": [
+        "https://www.restrova.com/about",
+        "https://www.restrova.com/",
+        "https://www.restrova.com/services",
+        "https://www.restrova.com/pricing",
+        "https://www.restrova.com/contact",
+        "https://www.restrova.com/faq",
+        "https://www.restrova.com/blog",
+        "https://www.restrova.com/compare-marketplaces",
+        "https://www.restrova.com/locations",
+        "https://www.restrova.com/apps",
+        "https://www.restrova.com/download",
+        "https://www.restrova.com/services/restaurant-ordering-apps",
+        "https://www.restrova.com/services/restaurant-ordering-websites",
+        "https://www.restrova.com/services/restaurant-pos",
+        "https://www.restrova.com/services/inventory-management",
+        "https://www.restrova.com/services/delivery-management",
+        "https://www.restrova.com/services/reporting-analytics",
+        "https://www.restrova.com/blog/how-to-choose-restaurant-management-software-pakistan",
+        "https://www.restrova.com/blog/how-to-choose-restaurant-pos-software-pakistan",
+        "https://www.restrova.com/blog/why-direct-ordering-beats-third-party-marketplaces",
+        "https://www.restrova.com/blog/5-features-every-restaurant-app-must-have-in-2026",
+        "https://www.restrova.com/blog/how-to-boost-customer-loyalty-with-digital-rewards"
+      ],
+      "h1Count": 0
+    },
+    {
+      "url": "https://www.restrova.com/pricing",
+      "status": 200,
+      "finalUrl": "https://www.restrova.com/pricing",
+      "title": "Restaurant Software Pricing in Pakistan | Restrova",
+      "canonical": "https://www.restrova.com/pricing",
+      "h1Count": 1
+    },
+    {
+      "url": "https://www.restrova.com/blog",
+      "status": 200,
+      "finalUrl": "https://www.restrova.com/blog",
+      "title": "Restaurant Software Guides for Pakistan | Restrova",
+      "canonical": "https://www.restrova.com/blog",
+      "h1Count": 1
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.restrova.ashandbeans",
+      "status": 200,
+      "finalUrl": "https://play.google.com/store/apps/details?id=com.restrova.ashandbeans",
+      "title": "Ash &amp; Beans - Apps on Google Play"
+    },
+    {
+      "url": "https://apps.apple.com/pk/app/ash-beans/id6759486466",
+      "status": 200,
+      "finalUrl": "https://apps.apple.com/pk/app/ash-beans/id6759486466",
+      "title": "‎Ash &amp; Beans App - App Store"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.restrova.yumzone",
+      "status": 200,
+      "finalUrl": "https://play.google.com/store/apps/details?id=com.restrova.yumzone",
+      "title": "Yum Zone - Apps on Google Play"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.restrova.topspice",
+      "status": 200,
+      "finalUrl": "https://play.google.com/store/apps/details?id=com.restrova.topspice",
+      "title": "Top Spice - Apps on Google Play"
+    },
+    {
+      "url": "https://apps.apple.com/pk/app/top-spice-pakistan/id6796204717",
+      "status": 200,
+      "finalUrl": "https://apps.apple.com/pk/app/top-spice-pakistan/id6796204717",
+      "title": "‎Top Spice Pakistan App - App Store"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.restrova.admin",
+      "status": 200,
+      "finalUrl": "https://play.google.com/store/apps/details?id=com.restrova.admin",
+      "title": "Restrova - Apps on Google Play"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/restrova-admin/id6814471120",
+      "status": 200,
+      "finalUrl": "https://apps.apple.com/us/app/restrova-admin/id6814471120",
+      "title": "‎Restrova Admin App - App Store"
+    }
+  ]
+}

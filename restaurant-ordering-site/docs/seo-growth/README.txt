@@ -1,3 +1,6 @@
+CURRENT UPDATE — 2 NOVEMBER 2026
+See 2026-11-02-release-and-growth-plan.txt, publication-manifest.json and keyword-page-map.json for the implemented articles and current status. The dated notes below are retained as history; their draft/pending article statuses are superseded by the new manifest. The legal operator/address were already confirmed in business-identity.ts.
+
 RESTROVA SEO GROWTH IMPLEMENTATION — 27 OCTOBER 2026
 
 This handoff extends the existing SEO implementation without rebuilding it. Changes are local until explicitly approved for deployment. The starting working tree was clean at aac4eb4958de722c8c649a3031cbb3a4c8268592.
