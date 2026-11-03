@@ -4,7 +4,7 @@ import { siteConfig } from "@/lib/site";
 import { staticMetadata } from "@/lib/seo";
 import { Breadcrumbs } from "@/components/MarketingPage";
 import Link from "next/link";
-import { solutions } from "@/data/solutions";
+import BuyerTopicDirectory from "@/components/BuyerTopicDirectory";
 import {
   ArrowRight,
   Bike,
@@ -88,12 +88,20 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 pt-12" aria-labelledby="solution-links">
-        <h2 id="solution-links" className="text-3xl font-black">Choose a workflow to explore</h2>
-        <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{solutions.map((solution) => <li key={solution.slug}><Link className="block rounded-2xl border border-black/15 bg-white p-6 font-bold underline underline-offset-4" href={`/services/${solution.slug}`}>{solution.label}</Link></li>)}</ul>
-        <p className="mt-6 leading-7">Compare the <Link href="/pricing" className="font-bold underline">pricing and fee examples</Link>, or read the <Link href="/faq" className="font-bold underline">common questions</Link> before your demo.</p>
-        <p className="mt-4 leading-7">Read <Link href="/about" className="font-bold underline">about Restrova</Link> and use the <Link href="/blog/how-to-choose-restaurant-management-software-pakistan" className="font-bold underline">restaurant management software buying guide</Link> to turn your requirements into a practical demonstration checklist.</p>
-      </section>
+      <div className="seo-content mx-auto max-w-7xl space-y-14 px-6 pt-12">
+        <BuyerTopicDirectory />
+        <section id="daily-operations" className="scroll-mt-28">
+          <h2>Follow one order through the restaurant</h2>
+          <p className="mt-4 max-w-3xl">Restaurant management software connects the tools customers see with the work staff do. Restrova provides customer ordering channels, Admin for restaurant operations and Fleet for delivery. Use your menu and staff roles to evaluate the complete setup.</p>
+          <ol className="mt-6 grid gap-5 md:grid-cols-2">
+            <li className="seo-card"><h3>1. Receive the order</h3><p className="mt-3">A customer orders through your <Link href="/services/restaurant-ordering-websites">website</Link> or <Link href="/services/restaurant-ordering-apps">branded app</Link>, or staff enter a counter order using <Link href="/services/restaurant-pos">POS</Link>. Check the branch, items and fulfilment choice.</p></li>
+            <li className="seo-card"><h3>2. Check availability and prepare</h3><p className="mt-3">The team reviews <Link href="/services/inventory-management">stock and menu availability</Link>, follows preparation and resolves changes with the customer. Demonstrate which stock updates are automatic and which need staff action.</p></li>
+            <li className="seo-card"><h3>3. Complete pickup or delivery</h3><p className="mt-3">Confirm the packed items and the collection handoff. For delivery, use <Link href="/services/delivery-management">Fleet assignment, status and tracking</Link>; test the rider&apos;s actual phone and connection.</p></li>
+            <li className="seo-card"><h3>4. Review the shift and the next branch</h3><p className="mt-3">Compare order records with <Link href="/services/reporting-analytics">sales and delivery reports</Link>. For <Link href="/solutions/multi-branch-restaurants">several branches</Link>, repeat the example with different menus, staff access and delivery boundaries.</p></li>
+          </ol>
+          <p className="mt-6">Compare the <Link href="/pricing">pricing and fee examples</Link>, read <Link href="/about">about Restrova</Link>, and use the <Link href="/faq">English and Roman Urdu buyer questions</Link> to prepare for a <Link href="/contact">live demonstration</Link>.</p>
+        </section>
+      </div>
       <section className="py-16 sm:py-24">
         <div className="mx-auto grid max-w-7xl gap-5 px-6 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (

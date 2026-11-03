@@ -11,6 +11,7 @@ export default function BlogPage() {
       <p className="mt-4">{post.excerpt}</p><p className="mt-5 text-sm">{post.readTime} · Updated <time dateTime={post.updated || post.date}>{post.updated || post.date}</time></p>
     </article>)}</div></section>)}
     <section><h2>Buying restaurant software?</h2><p className="mt-4">Explore the <Link href="/services">solutions</Link>, compare <Link href="/compare-marketplaces">direct ordering and marketplaces</Link>, and use the <Link href="/pricing">pricing calculator</Link> before arranging a walkthrough.</p></section>
+    <p>For product scope and practical demonstrations, <Link href="/services#buyer-topics">choose the restaurant workflow you need</Link>. The guides explain evaluation and planning; the service pages describe the Restrova offering.</p>
     <DemoCta />
   </MarketingPage>;
 }

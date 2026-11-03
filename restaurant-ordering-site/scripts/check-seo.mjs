@@ -46,6 +46,18 @@ for (const url of urls) {
   assert.equal(new Set(schemaIds).size, schemaIds.length, `${route}: unique schema IDs`);
   if (route === "/about") assert.ok(schemas.some((s) => s["@type"] === "AboutPage" && s.mainEntity["@id"] === `${origin}/#brand` && s.publisher["@id"] === `${origin}/#organization`));
   if (route === "/services" || route.startsWith("/services/")) assert.ok(schemas.some((s) => s["@type"] === "SoftwareApplication" && s["@id"] === `${url}#software` && s.provider["@id"] === `${origin}/#organization` && !s.offers));
+  if (route === "/services") {
+    const { buyerTopics } = loadSeoSource("src/data/buyerTopics.ts");
+    const list = schemas.find(schema => schema["@type"] === "ItemList");
+    assert.equal(list.numberOfItems, buyerTopics.length);
+    assert.equal(list.itemListOrder, "https://schema.org/ItemListUnordered");
+    assert.deepEqual(list.itemListElement.map(item => item.name), buyerTopics.map(topic => topic.label));
+    for (const topic of buyerTopics) assert.ok(html.includes(`href="${topic.href}"`) && html.includes(`href="${topic.guide}"`));
+  }
+  if (route === "/faq") {
+    assert.ok(html.includes('lang="ur-Latn"'));
+    for (const question of loadSeoSource("src/data/romanUrduQuestions.ts").romanUrduQuestions) assert.ok(html.includes(`id="roman-urdu-${question.id}"`) && html.includes(`href="${question.href}"`));
+  }
   const connectedRoutes = ["/services/restaurant-pos", "/services/inventory-management", "/services/delivery-management"];
   if (connectedRoutes.includes(route)) {
     const main = html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/)?.[1].replace(/<script\b[^>]*>[\s\S]*?<\/script>/g, "") || "";

@@ -24,6 +24,7 @@ export default function PricingPage() {
       <p className="mt-4" lang="ur-Latn">Mahina ki fee PKR 5,000 ya Restrova se process honay wali sales ka 1%, jo zyada ho. Onboarding PKR 10,000 aik dafa hai.</p>
     </section>
     <section><h2>Comparing more than one quote?</h2><p className="mt-4">Use the <Link href="/blog/restaurant-software-pricing-pakistan-guide">restaurant software cost checklist</Link> to compare setup, hardware, payments, support and branch scope. For branded apps, review <Link href="/blog/restaurant-app-cost-pakistan">app publishing and maintenance costs</Link>.</p></section>
+    <section id="pricing-scope-links"><h2>Match the price to the workflow you will use</h2><p className="mt-4">Review <Link href="/services/restaurant-ordering-websites">direct website ordering</Link> and <Link href="/services/restaurant-ordering-apps">branded apps</Link> alongside <Link href="/services/restaurant-pos">counter orders</Link>, <Link href="/services/inventory-management">inventory</Link> and <Link href="/services/delivery-management">rider operations</Link>. For <Link href="/solutions/multi-branch-restaurants">more than one branch</Link>, agree the branch and account scope before treating two quotes as comparable.</p><p className="mt-4">Use the <Link href="/faq#roman-urdu-pricing">Roman Urdu pricing answer</Link> or the <Link href="/faq">full buyer FAQ</Link> when reviewing the proposal with your team.</p></section>
     <DemoCta title="Review pricing against your restaurant workflow" />
   </MarketingPage>;
 }

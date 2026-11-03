@@ -19,8 +19,8 @@ export const solutions: Solution[] = [
     related: ["restaurant-ordering-websites", "restaurant-pos", "delivery-management"],
   },
   {
-    slug: "restaurant-ordering-websites", label: "Ordering websites", title: "Restaurant Websites with Online Ordering Pakistan",
-    description: "Build a branded restaurant website with online ordering in Pakistan. Connect your menu and customer orders with Restrova Admin and your delivery workflow.",
+    slug: "restaurant-ordering-websites", label: "Ordering websites", title: "Direct Online Ordering for Restaurants in Pakistan",
+    description: "Start direct restaurant orders with a branded website in Pakistan. Compare website and app journeys, preparation, delivery and the full software cost.",
     heading: "Restaurant Websites with Online Ordering in Pakistan",
     intro: "Give customers a link to your own menu and ordering experience. Restrova connects a branded restaurant ordering website to the admin tools your team uses to manage incoming orders.",
     sections: [

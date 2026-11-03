@@ -12,7 +12,10 @@
     "sync-tenants": "node scripts/syncTenants.js",
     "test:seo": "node src/tests/test_seo.mjs",
     "check:seo": "node scripts/check-seo.mjs",
-    "test:integrations": "node src/tests/test_integrations.mjs"
+    "test:integrations": "node src/tests/test_integrations.mjs",
+    "test:geo": "node src/tests/test_geo.mjs",
+    "check:geo-release": "node scripts/check-geo-release.mjs",
+    "report:geo": "node scripts/geo-measurement.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.563.0",

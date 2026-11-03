@@ -1,0 +1,6 @@
+{
+  "protocolVersion": "2026-11-03-v1",
+  "status": "not_run",
+  "note": "No independent AI Search observations have been collected for this release. Do not infer zero visibility from an empty log. Add only actual captured answers following topic-discovery-protocol.txt.",
+  "observations": []
+}

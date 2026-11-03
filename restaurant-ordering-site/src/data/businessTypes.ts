@@ -89,7 +89,7 @@ export const businessTypes: BusinessType[] = [
       { question: "Can we transfer stock or orders between branches?", answer: "Bring the exact transfer process to the demo. Branch management alone does not establish automatic stock transfers or order reassignment between locations." },
       { question: "Will the owner see consolidated accounts?", answer: "Review the reports and exports you require. Sales reporting does not imply consolidated accounting or a complete profit-and-loss statement." },
     ],
-    services: ["restaurant-pos", "inventory-management", "reporting-analytics"],
+    services: ["restaurant-ordering-websites", "restaurant-ordering-apps", "restaurant-pos", "inventory-management", "delivery-management", "reporting-analytics"],
     guide: { slug: "manage-multiple-restaurant-branches", label: "Prepare a multi-branch implementation worksheet" },
   },
 ];

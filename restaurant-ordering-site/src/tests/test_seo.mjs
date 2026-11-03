@@ -147,6 +147,38 @@ try {
     }
   }
   console.log("PASS: six service routes render on the server; three connected workflows, demo checks, contextual links, visible schema features and preserved canonicals");
+  const { buyerTopics } = load("src/data/buyerTopics.ts");
+  assert.equal(buyerTopics.length, 8);
+  assert.equal(new Set(buyerTopics.map(topic => topic.href.split("#")[0])).size, 8, "one main destination per buyer topic");
+  const directory = renderToStaticMarkup(createElement(load("src/components/BuyerTopicDirectory.tsx").default));
+  const directorySchema = JSON.parse(directory.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1]);
+  assert.equal(directorySchema["@type"], "ItemList");
+  assert.equal(directorySchema.numberOfItems, buyerTopics.length);
+  assert.equal(directorySchema.itemListOrder, "https://schema.org/ItemListUnordered");
+  for (const [index, topic] of buyerTopics.entries()) {
+    for (const href of [topic.href, topic.guide]) {
+      assert.ok(expectedPaths.includes(href.split("#")[0]), `existing route for topic ${topic.id}`);
+      assert.ok(directory.includes(`href="${href}"`), "topic and guide links in server HTML");
+    }
+    assert.deepEqual(directorySchema.itemListElement[index], { "@type": "ListItem", position: index + 1, name: topic.label, url: new URL(topic.href, siteConfig.url).href });
+  }
+  const faqPage = renderToStaticMarkup(createElement(load("src/app/(main)/faq/page.tsx").default));
+  assert.ok(faqPage.includes('lang="ur-Latn"'));
+  const { romanUrduQuestions } = load("src/data/romanUrduQuestions.ts");
+  assert.equal(romanUrduQuestions.length, 7);
+  for (const question of romanUrduQuestions) {
+    assert.ok(faqPage.includes(`id="roman-urdu-${question.id}"`));
+    assert.ok(faqPage.includes(`href="${question.href}"`));
+  }
+  const romanPricing = romanUrduQuestions.find(question => question.id === "pricing").answer;
+  assert.ok(romanPricing.includes("PKR 10,000") && romanPricing.includes("PKR 5,000") && romanPricing.includes("1%") && romanPricing.includes("jo zyada ho") && romanPricing.includes("Dono jama nahin hote"));
+  for (const slug of ["restaurant-ordering-websites", "restaurant-ordering-apps"]) {
+    const markup = renderToStaticMarkup(await servicePage.default({ params: Promise.resolve({ service: slug }) }));
+    assert.ok(markup.includes('id="direct-ordering-guide"'));
+    assert.ok(markup.includes('href="/services#buyer-topics"'));
+    assert.ok(markup.includes('href="/solutions/multi-branch-restaurants"'));
+  }
+  console.log("PASS: 8 topic destinations use existing URLs; visible ItemList, 7 server-rendered Roman Urdu answers, accurate pricing and connected ordering channels");
   const { locationData } = load("src/data/locationData.ts");
   const { services } = load("src/data/services.ts");
   const { createSlug } = load("src/lib/slugUtils.ts");
