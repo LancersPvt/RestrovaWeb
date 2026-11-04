@@ -1,0 +1,1169 @@
+{
+  "date": "2026-11-04",
+  "publicationStatus": "Local implementation, not deployed by agent",
+  "curatedRoutesBefore": [
+    "/about",
+    "/",
+    "/services",
+    "/pricing",
+    "/contact",
+    "/faq",
+    "/blog",
+    "/compare-marketplaces",
+    "/locations",
+    "/apps",
+    "/download",
+    "/services/restaurant-ordering-apps",
+    "/services/restaurant-ordering-websites",
+    "/services/restaurant-pos",
+    "/services/inventory-management",
+    "/services/delivery-management",
+    "/services/reporting-analytics",
+    "/solutions/cafes",
+    "/solutions/cloud-kitchens",
+    "/solutions/fast-food-restaurants",
+    "/solutions/multi-branch-restaurants",
+    "/blog/how-to-choose-restaurant-management-software-pakistan",
+    "/blog/how-to-choose-restaurant-pos-software-pakistan",
+    "/blog/why-direct-ordering-beats-third-party-marketplaces",
+    "/blog/5-features-every-restaurant-app-must-have-in-2026",
+    "/blog/how-to-boost-customer-loyalty-with-digital-rewards",
+    "/blog/restaurant-app-cost-pakistan",
+    "/blog/restaurant-inventory-management-guide-pakistan",
+    "/blog/restaurant-rider-management-tracking-settlement",
+    "/blog/start-online-ordering-small-restaurant-pakistan",
+    "/blog/restaurant-pos-vs-manual-billing",
+    "/blog/manage-multiple-restaurant-branches",
+    "/blog/restaurant-software-pricing-pakistan-guide",
+    "/blog/launch-restaurant-ordering-app",
+    "/blog/compare-restaurant-ordering-systems"
+  ],
+  "curatedRoutesAfter": [
+    "/about",
+    "/",
+    "/services",
+    "/pricing",
+    "/contact",
+    "/faq",
+    "/blog",
+    "/compare-marketplaces",
+    "/locations",
+    "/apps",
+    "/download",
+    "/services/restaurant-ordering-apps",
+    "/services/restaurant-ordering-websites",
+    "/services/restaurant-pos",
+    "/services/inventory-management",
+    "/services/delivery-management",
+    "/services/reporting-analytics",
+    "/solutions/cafes",
+    "/solutions/cloud-kitchens",
+    "/solutions/fast-food-restaurants",
+    "/solutions/multi-branch-restaurants",
+    "/blog/how-to-choose-restaurant-management-software-pakistan",
+    "/blog/how-to-choose-restaurant-pos-software-pakistan",
+    "/blog/why-direct-ordering-beats-third-party-marketplaces",
+    "/blog/5-features-every-restaurant-app-must-have-in-2026",
+    "/blog/how-to-boost-customer-loyalty-with-digital-rewards",
+    "/blog/restaurant-app-cost-pakistan",
+    "/blog/restaurant-inventory-management-guide-pakistan",
+    "/blog/restaurant-rider-management-tracking-settlement",
+    "/blog/start-online-ordering-small-restaurant-pakistan",
+    "/blog/restaurant-pos-vs-manual-billing",
+    "/blog/manage-multiple-restaurant-branches",
+    "/blog/restaurant-software-pricing-pakistan-guide",
+    "/blog/launch-restaurant-ordering-app",
+    "/blog/compare-restaurant-ordering-systems",
+    "/blog/restaurant-online-ordering-system-cost-pakistan",
+    "/blog/restaurant-pos-software-cost-pakistan"
+  ],
+  "newRoutes": [
+    "/blog/restaurant-online-ordering-system-cost-pakistan",
+    "/blog/restaurant-pos-software-cost-pakistan"
+  ],
+  "routeTemplatesAudited": [
+    "src/app/(main)/about/page.tsx",
+    "src/app/(main)/apps/page.tsx",
+    "src/app/(main)/blog/page.tsx",
+    "src/app/(main)/blog/[slug]/page.tsx",
+    "src/app/(main)/compare-marketplaces/page.tsx",
+    "src/app/(main)/contact/page.tsx",
+    "src/app/(main)/faq/page.tsx",
+    "src/app/(main)/industries/[slug]/page.tsx",
+    "src/app/(main)/locations/page.tsx",
+    "src/app/(main)/page.tsx",
+    "src/app/(main)/pricing/page.tsx",
+    "src/app/(main)/privacy-policy/page.tsx",
+    "src/app/(main)/restaurants/[tenantSlug]/page.tsx",
+    "src/app/(main)/restaurants/[tenantSlug]/[branchSlug]/page.tsx",
+    "src/app/(main)/services/page.tsx",
+    "src/app/(main)/services/[service]/page.tsx",
+    "src/app/(main)/solutions/[businessType]/page.tsx",
+    "src/app/(main)/[slug]/page.tsx",
+    "src/app/(main)/[slug]/[areaSlug]/page.tsx",
+    "src/app/api/contact/route.ts",
+    "src/app/api/demo/intake/route.ts",
+    "src/app/api/demo/schedule/route.ts",
+    "src/app/api/demo/session/route.ts",
+    "src/app/api/revalidate/route.ts",
+    "src/app/demo/schedule/page.tsx",
+    "src/app/demo/thank-you/page.tsx",
+    "src/app/download/page.tsx",
+    "src/app/links/ashandbeans/page.tsx",
+    "src/app/links/basmafood/page.tsx",
+    "src/app/links/deliverooeats/page.tsx",
+    "src/app/links/fruitninjapakistan/page.tsx",
+    "src/app/links/mccafe/page.tsx",
+    "src/app/links/mirchandspicy/page.tsx",
+    "src/app/links/mods/page.tsx",
+    "src/app/links/thespanishpizza/page.tsx",
+    "src/app/links/topspice/page.tsx",
+    "src/app/links/wokandgrill/page.tsx",
+    "src/app/links/yumzone/page.tsx",
+    "src/app/robots.ts",
+    "src/app/sitemap.ts"
+  ],
+  "articles": [
+    {
+      "route": "/blog/how-to-choose-restaurant-management-software-pakistan",
+      "status": "retained",
+      "requestedTopic": false,
+      "title": "How to Choose Restaurant Management Software in Pakistan",
+      "seoTitle": "Choose Restaurant Management Software in Pakistan",
+      "description": "Compare restaurant software in Pakistan using a practical checklist for POS, branded ordering apps, inventory, riders, pricing, support and branches.",
+      "canonical": "https://www.restrova.com/blog/how-to-choose-restaurant-management-software-pakistan",
+      "relatedSolution": "/services/restaurant-pos",
+      "datePublished": "2026-10-27",
+      "dateModified": "2026-11-02",
+      "words": 890,
+      "originalBodyPreserved": true,
+      "originalHeadingAnchorsPreserved": true,
+      "headings": [
+        "1. Decide which orders the system must handle",
+        "2. Decide whether you need your own restaurant app and website",
+        "3. Test inventory against an actual menu",
+        "4. Verify delivery and rider responsibilities",
+        "5. Compare prices using your own sales volume",
+        "6. Ask how multi-branch operations are configured",
+        "7. Evaluate launch and support, not just features",
+        "Restaurant software demo checklist",
+        "Turn the shortlist into a decision"
+      ],
+      "contextualLinks": [
+        "/services/restaurant-pos",
+        "/services/restaurant-ordering-apps",
+        "/services/inventory-management",
+        "/services/delivery-management",
+        "/services",
+        "/pricing",
+        "/faq",
+        "/contact",
+        "/blog/how-to-choose-restaurant-pos-software-pakistan",
+        "/about",
+        "/apps",
+        "/blog/compare-restaurant-ordering-systems",
+        "/blog/restaurant-software-pricing-pakistan-guide",
+        "/blog/manage-multiple-restaurant-branches"
+      ]
+    },
+    {
+      "route": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+      "status": "expanded at existing URL",
+      "requestedTopic": true,
+      "title": "Best Restaurant POS Software in Pakistan: Buying Checklist",
+      "seoTitle": "Best Restaurant POS Software Pakistan: Buying Checklist",
+      "description": "Choose restaurant POS software in Pakistan with a practical checklist for billing, devices, online orders, stock, riders, branch reporting and complete costs.",
+      "canonical": "https://www.restrova.com/blog/how-to-choose-restaurant-pos-software-pakistan",
+      "relatedSolution": "/services/restaurant-pos",
+      "datePublished": "2026-10-27",
+      "dateModified": "2026-11-04",
+      "words": 1280,
+      "originalBodyPreserved": true,
+      "originalHeadingAnchorsPreserved": true,
+      "headings": [
+        "1. Write a one-page operating brief",
+        "2. Run the same demonstration with each vendor",
+        "3. Verify devices and integrations explicitly",
+        "4. Include stock, riders and branches in the review",
+        "5. Compare the complete cost over a useful period",
+        "6. Check reporting before you rely on it",
+        "7. Agree a controlled rollout",
+        "Bring a concrete checklist to your free demo",
+        "Prepare the people and records for a trial",
+        "Choose a POS around the service you actually run"
+      ],
+      "contextualLinks": [
+        "/services/inventory-management",
+        "/services/delivery-management",
+        "/locations",
+        "/pricing",
+        "/services/reporting-analytics",
+        "/services/restaurant-pos",
+        "/contact",
+        "/blog/restaurant-pos-vs-manual-billing",
+        "/blog/restaurant-inventory-management-guide-pakistan",
+        "/blog/restaurant-software-pricing-pakistan-guide",
+        "/blog/restaurant-pos-software-cost-pakistan"
+      ]
+    },
+    {
+      "route": "/blog/why-direct-ordering-beats-third-party-marketplaces",
+      "status": "expanded at existing URL",
+      "requestedTopic": true,
+      "title": "Restaurant Website vs Third-Party Delivery Marketplace in Pakistan",
+      "seoTitle": "Restaurant Website vs Delivery Marketplace in Pakistan",
+      "description": "Compare a restaurant website with delivery marketplaces in Pakistan using complete channel costs, discovery, rider responsibilities and a fair worked example.",
+      "canonical": "https://www.restrova.com/blog/why-direct-ordering-beats-third-party-marketplaces",
+      "relatedSolution": "/services/restaurant-ordering-websites",
+      "datePublished": "2026-02-01",
+      "dateModified": "2026-11-04",
+      "words": 1057,
+      "originalBodyPreserved": true,
+      "originalHeadingAnchorsPreserved": true,
+      "headings": [
+        "Start with discovery and repeat ordering",
+        "Check the actual marketplace package",
+        "List the direct-channel responsibilities",
+        "Worked example: compare the same 400 orders",
+        "Manage customer relationships responsibly",
+        "Decide what to test next",
+        "Compare responsibilities alongside the fee"
+      ],
+      "contextualLinks": [
+        "/services/restaurant-ordering-websites",
+        "/services/delivery-management",
+        "/compare-marketplaces",
+        "/pricing",
+        "/contact",
+        "/blog/restaurant-online-ordering-system-cost-pakistan"
+      ]
+    },
+    {
+      "route": "/blog/5-features-every-restaurant-app-must-have-in-2026",
+      "status": "retained",
+      "requestedTopic": false,
+      "title": "Five Checks Before Choosing a Restaurant Ordering App",
+      "seoTitle": "Five Checks Before Choosing a Restaurant Ordering App",
+      "description": "A practical checklist for Pakistani restaurant owners: menu clarity, order handoffs, delivery, repeat ordering and app ownership.",
+      "canonical": "https://www.restrova.com/blog/5-features-every-restaurant-app-must-have-in-2026",
+      "relatedSolution": "/services/restaurant-ordering-apps",
+      "datePublished": "2026-01-28",
+      "dateModified": "2026-10-26",
+      "words": 388,
+      "originalBodyPreserved": true,
+      "originalHeadingAnchorsPreserved": true,
+      "headings": [
+        "1. Can customers understand the menu?",
+        "2. Does the order reach the right team?",
+        "3. Is fulfilment clear?",
+        "4. Is there a useful reason to return?",
+        "5. Who owns the launch and maintenance work?",
+        "Put the checks into your buying decision"
+      ],
+      "contextualLinks": [
+        "/services/restaurant-pos",
+        "/apps",
+        "/services/restaurant-ordering-apps",
+        "/pricing",
+        "/contact"
+      ]
+    },
+    {
+      "route": "/blog/how-to-boost-customer-loyalty-with-digital-rewards",
+      "status": "retained",
+      "requestedTopic": false,
+      "title": "Plan Restaurant Loyalty Rewards Without Guessing the Return",
+      "seoTitle": "Plan Restaurant Loyalty Rewards Without Guessing the Return",
+      "description": "Set a clear reward, check its cost in PKR, explain the terms and measure repeat orders before expanding a restaurant loyalty programme.",
+      "canonical": "https://www.restrova.com/blog/how-to-boost-customer-loyalty-with-digital-rewards",
+      "relatedSolution": "/services/restaurant-ordering-apps",
+      "datePublished": "2026-01-25",
+      "dateModified": "2026-10-26",
+      "words": 375,
+      "originalBodyPreserved": true,
+      "originalHeadingAnchorsPreserved": true,
+      "headings": [
+        "Calculate the reward cost first",
+        "Keep the terms understandable",
+        "Make the direct journey work",
+        "Measure the second order",
+        "Keep, adjust or stop"
+      ],
+      "contextualLinks": [
+        "/services/restaurant-ordering-websites",
+        "/services/reporting-analytics",
+        "/contact"
+      ]
+    },
+    {
+      "route": "/blog/restaurant-app-cost-pakistan",
+      "status": "expanded at existing URL",
+      "requestedTopic": true,
+      "title": "Restaurant Ordering App Development Cost in Pakistan",
+      "seoTitle": "Restaurant Ordering App Development Cost in Pakistan",
+      "description": "Plan restaurant app costs in Pakistan: platform pricing, custom development scope, Android and iOS accounts, launch work, maintenance and ownership.",
+      "canonical": "https://www.restrova.com/blog/restaurant-app-cost-pakistan",
+      "relatedSolution": "/services/restaurant-ordering-apps",
+      "datePublished": "2026-11-02",
+      "dateModified": "2026-11-04",
+      "words": 1026,
+      "originalBodyPreserved": true,
+      "originalHeadingAnchorsPreserved": true,
+      "headings": [
+        "Define what the app needs to do",
+        "Separate branding from custom development",
+        "Budget for publishing and account ownership",
+        "Compare a full year using one sales assumption",
+        "Include maintenance and operational ownership",
+        "Questions to resolve before accepting the quote",
+        "Separate a platform configuration from a custom development quote"
+      ],
+      "contextualLinks": [
+        "/pricing",
+        "/services/restaurant-ordering-apps",
+        "/apps",
+        "/contact",
+        "/blog/launch-restaurant-ordering-app",
+        "/blog/restaurant-online-ordering-system-cost-pakistan"
+      ]
+    },
+    {
+      "route": "/blog/restaurant-inventory-management-guide-pakistan",
+      "status": "expanded at existing URL",
+      "requestedTopic": true,
+      "title": "Restaurant Inventory Management Software Buying Guide",
+      "seoTitle": "Restaurant Inventory Software Buying Guide Pakistan",
+      "description": "Evaluate restaurant inventory software in Pakistan with sample counts, units, adjustments, item availability, staff roles and a practical vendor demo checklist.",
+      "canonical": "https://www.restrova.com/blog/restaurant-inventory-management-guide-pakistan",
+      "relatedSolution": "/services/inventory-management",
+      "datePublished": "2026-11-02",
+      "dateModified": "2026-11-04",
+      "words": 1007,
+      "originalBodyPreserved": true,
+      "originalHeadingAnchorsPreserved": true,
+      "headings": [
+        "Set an opening stock position",
+        "Record movements in the same units",
+        "Keep menu availability accurate",
+        "Use a repeatable daily routine",
+        "Investigate common errors before drawing conclusions",
+        "Evaluate inventory software with your own examples",
+        "Make the first week useful",
+        "Turn the stock routine into a software acceptance test"
+      ],
+      "contextualLinks": [
+        "/services/restaurant-ordering-websites",
+        "/services/inventory-management",
+        "/services/reporting-analytics",
+        "/contact",
+        "/pricing",
+        "/blog/how-to-choose-restaurant-pos-software-pakistan"
+      ]
+    },
+    {
+      "route": "/blog/restaurant-rider-management-tracking-settlement",
+      "status": "expanded at existing URL",
+      "requestedTopic": true,
+      "title": "Restaurant Rider and Delivery Management Guide",
+      "seoTitle": "Restaurant Rider & Delivery Management Guide Pakistan",
+      "description": "Plan restaurant delivery in Pakistan: dispatch, rider assignment, live tracking, connection failures, cash reconciliation and a complete shift demonstration.",
+      "canonical": "https://www.restrova.com/blog/restaurant-rider-management-tracking-settlement",
+      "relatedSolution": "/services/delivery-management",
+      "datePublished": "2026-11-02",
+      "dateModified": "2026-11-04",
+      "words": 970,
+      "originalBodyPreserved": true,
+      "originalHeadingAnchorsPreserved": true,
+      "headings": [
+        "Make the order ready for dispatch",
+        "Assign a rider and handle changes",
+        "Define delivery statuses consistently",
+        "Test live tracking and customer visibility",
+        "Reconcile cash and settlement at closing",
+        "Review a complete delivery shift in the demo",
+        "Agree an exception handoff before the first busy shift"
+      ],
+      "contextualLinks": [
+        "/services/delivery-management",
+        "/services/reporting-analytics",
+        "/locations",
+        "/contact",
+        "/pricing",
+        "/blog/start-online-ordering-small-restaurant-pakistan"
+      ]
+    },
+    {
+      "route": "/blog/start-online-ordering-small-restaurant-pakistan",
+      "status": "expanded at existing URL",
+      "requestedTopic": true,
+      "title": "How to Start Online Ordering for a Restaurant in Pakistan",
+      "seoTitle": "Start Online Ordering for Your Restaurant in Pakistan",
+      "description": "Launch direct restaurant ordering in Pakistan: prepare the menu, checkout, delivery area, staff handoffs, budget and a practical go-live checklist.",
+      "canonical": "https://www.restrova.com/blog/start-online-ordering-small-restaurant-pakistan",
+      "relatedSolution": "/services/restaurant-ordering-websites",
+      "datePublished": "2026-11-02",
+      "dateModified": "2026-11-04",
+      "words": 1018,
+      "originalBodyPreserved": true,
+      "originalHeadingAnchorsPreserved": true,
+      "headings": [
+        "Choose a website, an app or both",
+        "Prepare a menu that can be maintained",
+        "Set fulfilment and payment expectations",
+        "Give each handoff an owner",
+        "Rehearse a complete service before promotion",
+        "Help existing customers find the official channel",
+        "Review cost and adoption together",
+        "Use a launch decision sheet before sharing the link"
+      ],
+      "contextualLinks": [
+        "/services/restaurant-ordering-websites",
+        "/services/restaurant-ordering-apps",
+        "/blog/restaurant-rider-management-tracking-settlement",
+        "/contact",
+        "/pricing",
+        "/blog/restaurant-online-ordering-system-cost-pakistan"
+      ]
+    },
+    {
+      "route": "/blog/restaurant-pos-vs-manual-billing",
+      "status": "retained",
+      "requestedTopic": false,
+      "title": "Restaurant POS vs Manual Billing: What Changes in Daily Operations?",
+      "seoTitle": "Restaurant POS vs Manual Billing: Daily Operations",
+      "description": "Compare manual restaurant billing with a POS through order accuracy, handoffs, sales records, reporting, training and the full cost of changing systems.",
+      "canonical": "https://www.restrova.com/blog/restaurant-pos-vs-manual-billing",
+      "relatedSolution": "/services/restaurant-pos",
+      "datePublished": "2026-11-02",
+      "dateModified": "2026-11-02",
+      "words": 730,
+      "originalBodyPreserved": true,
+      "originalHeadingAnchorsPreserved": true,
+      "headings": [
+        "Follow one order through both methods",
+        "Compare accuracy without inventing error rates",
+        "Review kitchen and delivery visibility",
+        "Check sales records and end-of-shift reporting",
+        "Include training and interruptions",
+        "Compare the full cost of changing",
+        "Run a small, fair evaluation"
+      ],
+      "contextualLinks": [
+        "/services/reporting-analytics",
+        "/pricing",
+        "/blog/how-to-choose-restaurant-pos-software-pakistan",
+        "/contact"
+      ]
+    },
+    {
+      "route": "/blog/manage-multiple-restaurant-branches",
+      "status": "retained",
+      "requestedTopic": false,
+      "title": "How to Manage Multiple Restaurant Branches With Connected Software",
+      "seoTitle": "Managing Multiple Restaurant Branches With Software",
+      "description": "Plan branch menus, staff responsibilities, order destinations, stock visibility, delivery boundaries and reporting before a multi-branch software rollout.",
+      "canonical": "https://www.restrova.com/blog/manage-multiple-restaurant-branches",
+      "relatedSolution": "/services/reporting-analytics",
+      "datePublished": "2026-11-02",
+      "dateModified": "2026-11-02",
+      "words": 694,
+      "originalBodyPreserved": true,
+      "originalHeadingAnchorsPreserved": true,
+      "headings": [
+        "Build a branch worksheet",
+        "Decide how menus and availability change",
+        "Test where orders arrive",
+        "Match staff access to responsibility",
+        "Keep stock visibility tied to location",
+        "Compare reports on consistent definitions",
+        "Roll out in stages with clear acceptance checks"
+      ],
+      "contextualLinks": [
+        "/blog/restaurant-inventory-management-guide-pakistan",
+        "/solutions/multi-branch-restaurants",
+        "/services/restaurant-pos",
+        "/services/reporting-analytics",
+        "/contact",
+        "/pricing"
+      ]
+    },
+    {
+      "route": "/blog/restaurant-software-pricing-pakistan-guide",
+      "status": "expanded at existing URL",
+      "requestedTopic": false,
+      "title": "Restaurant Software Pricing in Pakistan: A Practical Buying Guide",
+      "seoTitle": "Restaurant Software Pricing Pakistan: Buying Guide",
+      "description": "Compare restaurant software costs in Pakistan across setup, subscriptions, sales-based fees, hardware, payments, app accounts, support and branches.",
+      "canonical": "https://www.restrova.com/blog/restaurant-software-pricing-pakistan-guide",
+      "relatedSolution": "/services/restaurant-pos",
+      "datePublished": "2026-11-02",
+      "dateModified": "2026-11-04",
+      "words": 812,
+      "originalBodyPreserved": true,
+      "originalHeadingAnchorsPreserved": true,
+      "headings": [
+        "Separate the setup work",
+        "Understand the recurring model",
+        "Calculate changing months separately",
+        "Include hardware and payment costs",
+        "Review app-store and maintenance responsibilities",
+        "Make branch scope explicit",
+        "Build a total-cost worksheet",
+        "Choose the fit, then verify the price",
+        "Use a focused worksheet for the channel you are adding"
+      ],
+      "contextualLinks": [
+        "/pricing",
+        "/blog/restaurant-app-cost-pakistan",
+        "/blog/manage-multiple-restaurant-branches",
+        "/blog/compare-restaurant-ordering-systems",
+        "/contact",
+        "/blog/restaurant-online-ordering-system-cost-pakistan",
+        "/blog/restaurant-pos-software-cost-pakistan"
+      ]
+    },
+    {
+      "route": "/blog/launch-restaurant-ordering-app",
+      "status": "expanded at existing URL",
+      "requestedTopic": true,
+      "title": "How to Launch a Branded Restaurant Ordering App",
+      "seoTitle": "Launch a Branded Restaurant Ordering App in Pakistan",
+      "description": "Prepare a branded restaurant app launch in Pakistan with account ownership, approved assets, Android and iOS testing, store review and staff readiness.",
+      "canonical": "https://www.restrova.com/blog/launch-restaurant-ordering-app",
+      "relatedSolution": "/services/restaurant-ordering-apps",
+      "datePublished": "2026-11-02",
+      "dateModified": "2026-11-04",
+      "words": 981,
+      "originalBodyPreserved": true,
+      "originalHeadingAnchorsPreserved": true,
+      "headings": [
+        "Prepare the brand and menu",
+        "Agree developer-account ownership early",
+        "Prepare the listing and support information",
+        "Test the customer journey on Android and iOS",
+        "Test the staff journey after checkout",
+        "Submit, review and verify the published links",
+        "Introduce the app to customers and maintain it",
+        "Keep a release checklist with named owners"
+      ],
+      "contextualLinks": [
+        "/services/restaurant-pos",
+        "/apps",
+        "/blog/restaurant-app-cost-pakistan",
+        "/contact",
+        "/services/restaurant-ordering-websites",
+        "/pricing"
+      ]
+    },
+    {
+      "route": "/blog/compare-restaurant-ordering-systems",
+      "status": "expanded at existing URL",
+      "requestedTopic": true,
+      "title": "Best Online Ordering Systems for Restaurants in Pakistan: What to Compare",
+      "seoTitle": "Best Restaurant Online Ordering Systems: Pakistan Guide",
+      "description": "Compare restaurant ordering systems in Pakistan by checkout, staff workflow, delivery, ownership and full costs. Use the same demo checklist for each vendor.",
+      "canonical": "https://www.restrova.com/blog/compare-restaurant-ordering-systems",
+      "relatedSolution": "/services/restaurant-ordering-websites",
+      "datePublished": "2026-11-02",
+      "dateModified": "2026-11-04",
+      "words": 1049,
+      "originalBodyPreserved": true,
+      "originalHeadingAnchorsPreserved": true,
+      "headings": [
+        "Write a short requirements sheet",
+        "Run the same order through every demonstration",
+        "Record evidence instead of checkmarks alone",
+        "Examine reliability and support",
+        "Confirm data access and the exit process",
+        "Normalize the commercial comparison",
+        "Use a practical vendor comparison checklist",
+        "Compare the type of system before comparing vendors"
+      ],
+      "contextualLinks": [
+        "/blog/restaurant-software-pricing-pakistan-guide",
+        "/services/restaurant-ordering-websites",
+        "/services/restaurant-pos",
+        "/pricing",
+        "/contact",
+        "/blog/why-direct-ordering-beats-third-party-marketplaces",
+        "/blog/restaurant-online-ordering-system-cost-pakistan"
+      ]
+    },
+    {
+      "route": "/blog/restaurant-online-ordering-system-cost-pakistan",
+      "status": "new",
+      "requestedTopic": true,
+      "title": "Restaurant Online Ordering System Cost in Pakistan",
+      "seoTitle": "Restaurant Online Ordering System Cost in Pakistan",
+      "description": "Budget for restaurant online ordering in Pakistan: Restrova software fees, setup, payment charges, delivery, domain ownership and a practical cost worksheet.",
+      "canonical": "https://www.restrova.com/blog/restaurant-online-ordering-system-cost-pakistan",
+      "relatedSolution": "/services/restaurant-ordering-websites",
+      "datePublished": "2026-11-04",
+      "dateModified": "2026-11-04",
+      "words": 1052,
+      "originalBodyPreserved": null,
+      "originalHeadingAnchorsPreserved": null,
+      "headings": [
+        "Define the ordering service before asking for a price",
+        "Separate launch costs from recurring costs",
+        "Calculate the software fee using the correct sales base",
+        "Work through one order-volume example",
+        "Compare proposals over quiet and busy months",
+        "Verify the paid scope with a demonstration",
+        "Common cost questions"
+      ],
+      "contextualLinks": [
+        "/pricing",
+        "/services/restaurant-ordering-websites",
+        "/blog/why-direct-ordering-beats-third-party-marketplaces",
+        "/blog/restaurant-software-pricing-pakistan-guide",
+        "/blog/compare-restaurant-ordering-systems",
+        "/blog/restaurant-app-cost-pakistan",
+        "/blog/start-online-ordering-small-restaurant-pakistan",
+        "/contact"
+      ]
+    },
+    {
+      "route": "/blog/restaurant-pos-software-cost-pakistan",
+      "status": "new",
+      "requestedTopic": true,
+      "title": "Restaurant POS Software Cost in Pakistan",
+      "seoTitle": "Restaurant POS Software Cost in Pakistan: Budget Guide",
+      "description": "Compare restaurant POS costs in Pakistan: software, terminals, printers, setup, training and branch scope. See Restrova fee examples and a buying worksheet.",
+      "canonical": "https://www.restrova.com/blog/restaurant-pos-software-cost-pakistan",
+      "relatedSolution": "/services/restaurant-pos",
+      "datePublished": "2026-11-04",
+      "dateModified": "2026-11-04",
+      "words": 1027,
+      "originalBodyPreserved": null,
+      "originalHeadingAnchorsPreserved": null,
+      "headings": [
+        "Start with the service and device list",
+        "Build an itemized POS budget",
+        "Understand Restrova's monthly calculation",
+        "Include connected orders in the sales discussion",
+        "Check costly assumptions before signing",
+        "Budget for switching and training",
+        "Common POS price questions"
+      ],
+      "contextualLinks": [
+        "/services/restaurant-pos",
+        "/pricing",
+        "/blog/restaurant-online-ordering-system-cost-pakistan",
+        "/services/inventory-management",
+        "/services/delivery-management",
+        "/blog/restaurant-pos-vs-manual-billing",
+        "/blog/restaurant-software-pricing-pakistan-guide",
+        "/blog/how-to-choose-restaurant-pos-software-pakistan",
+        "/contact"
+      ]
+    }
+  ],
+  "metadata": [
+    {
+      "route": "/about",
+      "title": "About Restrova | Restaurant Technology for Pakistan",
+      "description": "Learn how Restrova helps restaurants in Pakistan run branded ordering apps, websites, POS orders, inventory and delivery operations in one connected platform.",
+      "canonical": "https://www.restrova.com/about",
+      "h1": "About Restrova: Restaurant Technology Built Around Your Brand",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BreadcrumbList",
+        "AboutPage"
+      ]
+    },
+    {
+      "route": "/",
+      "title": "Restaurant Management Software Pakistan | Restrova",
+      "description": "Restaurant management software in Pakistan for branded ordering apps, websites, POS orders, inventory and rider management. Book a free Restrova demo.",
+      "canonical": "https://www.restrova.com",
+      "h1": "Restaurant management software for Pakistan.",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite"
+      ]
+    },
+    {
+      "route": "/services",
+      "title": "Restaurant Software Solutions & Workflows Pakistan | Restrova",
+      "description": "Explore direct ordering, branded apps, POS, inventory, rider tracking and branch operations. Find the Restrova workflow and pricing questions for your restaurant.",
+      "canonical": "https://www.restrova.com/services",
+      "h1": "Restaurant software solutions for Pakistan.",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "SoftwareApplication",
+        "BreadcrumbList",
+        "ItemList"
+      ]
+    },
+    {
+      "route": "/pricing",
+      "title": "Restaurant Software Pricing in Pakistan | Restrova",
+      "description": "Restrova costs PKR 10,000 to onboard, then PKR 5,000 or 1% of Restrova-processed monthly sales, whichever is higher. See examples and calculate your fee.",
+      "canonical": "https://www.restrova.com/pricing",
+      "h1": "Restaurant software pricing, explained.",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/contact",
+      "title": "Book a Free Restaurant Software Demo | Restrova",
+      "description": "See Restrova apps, ordering websites, POS, inventory and delivery tools in a free demo for your restaurant in Pakistan. Review pricing and your workflow.",
+      "canonical": "https://www.restrova.com/contact",
+      "h1": "Book a free restaurant software demo.",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/faq",
+      "title": "Restaurant Software FAQs: English & Roman Urdu | Restrova",
+      "description": "Answers in English and Roman Urdu about direct ordering, restaurant apps, POS, inventory, rider tracking, branches and Restrova's published pricing in Pakistan.",
+      "canonical": "https://www.restrova.com/faq",
+      "h1": "Answers before you choose restaurant software.",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/blog",
+      "title": "Restaurant Software Guides for Pakistan | Restrova",
+      "description": "Buying guides for Pakistani restaurant owners: compare POS, online ordering, branded apps, inventory and rider workflows, with software cost and launch checklists.",
+      "canonical": "https://www.restrova.com/blog",
+      "h1": "Practical guides for restaurant owners in Pakistan.",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/compare-marketplaces",
+      "title": "Direct Ordering vs Food Delivery Marketplaces | Restrova",
+      "description": "Compare direct restaurant ordering with delivery marketplaces in Pakistan. Review costs, customer relationships and operations before choosing your mix.",
+      "canonical": "https://www.restrova.com/compare-marketplaces",
+      "h1": "Marketplaces help with discovery. Restrova helps with the next order.",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/locations",
+      "title": "Restaurant Software for Teams Across Pakistan | Restrova",
+      "description": "Plan restaurant software for Islamabad, Rawalpindi, Lahore, Karachi and other Pakistan cities. Review branch, menu and delivery needs with Restrova.",
+      "canonical": "https://www.restrova.com/locations",
+      "h1": "Restaurant software for teams across Pakistan.",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/apps",
+      "title": "Restrova Apps: Customer, Admin and Fleet | Restrova",
+      "description": "Understand Restrova customer ordering apps, Admin software and Fleet rider management. Browse verified client app examples and desktop Admin downloads.",
+      "canonical": "https://www.restrova.com/apps",
+      "h1": "The right app for each restaurant role.",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/download",
+      "title": "Download Restrova Admin for Windows and Mac | Restrova",
+      "description": "Get the existing Restrova Admin desktop installers for Windows and Mac. Choose the right platform and ask Restrova about your restaurant account setup.",
+      "canonical": "https://www.restrova.com/download",
+      "h1": "Get Restrova Admin for your computer",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/services/restaurant-ordering-apps",
+      "title": "Branded Restaurant Ordering Apps in Pakistan | Restrova",
+      "description": "Give regular customers your own Android and iOS restaurant ordering apps. Connect branded mobile ordering with Restrova Admin, menus and delivery workflows.",
+      "canonical": "https://www.restrova.com/services/restaurant-ordering-apps",
+      "h1": "Branded Restaurant Ordering Apps in Pakistan",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "route": "/services/restaurant-ordering-websites",
+      "title": "Direct Online Ordering for Restaurants in Pakistan | Restrova",
+      "description": "Start direct restaurant orders with a branded website in Pakistan. Compare website and app journeys, preparation, delivery and the full software cost.",
+      "canonical": "https://www.restrova.com/services/restaurant-ordering-websites",
+      "h1": "Restaurant Websites with Online Ordering in Pakistan",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "route": "/services/restaurant-pos",
+      "title": "Restaurant POS with Inventory & Delivery in Pakistan | Restrova",
+      "description": "Connect counter and online orders with inventory checks, preparation and live rider tracking in Restrova. Explore the workflow and book a demo in Pakistan.",
+      "canonical": "https://www.restrova.com/services/restaurant-pos",
+      "h1": "Restaurant POS & Order Management Software in Pakistan",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "route": "/services/inventory-management",
+      "title": "Restaurant Inventory Management Software Pakistan | Restrova",
+      "description": "Manage restaurant stock and menu availability alongside POS orders and delivery in Restrova. See inventory handoffs and what to test in a live demo.",
+      "canonical": "https://www.restrova.com/services/inventory-management",
+      "h1": "Restaurant Inventory Management Software in Pakistan",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "route": "/services/delivery-management",
+      "title": "Restaurant Delivery & Live Rider Tracking Pakistan | Restrova",
+      "description": "Follow restaurant orders from preparation to rider assignment, live tracking and settlement with Restrova Fleet in Pakistan. Review the delivery demo checklist.",
+      "canonical": "https://www.restrova.com/services/delivery-management",
+      "h1": "Restaurant Delivery & Rider Management in Pakistan",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "route": "/services/reporting-analytics",
+      "title": "Restaurant Reporting and Analytics Pakistan | Restrova",
+      "description": "Review restaurant sales, orders and delivery activity with Restrova reporting in Pakistan. Turn operational records into useful daily review questions.",
+      "canonical": "https://www.restrova.com/services/reporting-analytics",
+      "h1": "Restaurant Reporting & Analytics in Pakistan",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BreadcrumbList",
+        "SoftwareApplication"
+      ]
+    },
+    {
+      "route": "/solutions/cafes",
+      "title": "Café POS and Ordering Software in Pakistan | Restrova",
+      "description": "Connect café counter orders, drink choices, pickup ordering and menu availability. Explore Restrova with a practical coffee-shop workflow and free demo.",
+      "canonical": "https://www.restrova.com/solutions/cafes",
+      "h1": "Café POS and Ordering Software in Pakistan",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/solutions/cloud-kitchens",
+      "title": "Cloud Kitchen Ordering Software in Pakistan | Restrova",
+      "description": "Plan direct orders for a cloud kitchen with branded ordering, preparation statuses, menu availability and rider dispatch. Review the workflow in a demo.",
+      "canonical": "https://www.restrova.com/solutions/cloud-kitchens",
+      "h1": "Cloud Kitchen Ordering Software in Pakistan",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/solutions/fast-food-restaurants",
+      "title": "Fast-Food Restaurant POS Software in Pakistan | Restrova",
+      "description": "Review fast-food counter and online orders, item choices, preparation handoffs, takeaway and rider dispatch with Restrova POS and ordering software.",
+      "canonical": "https://www.restrova.com/solutions/fast-food-restaurants",
+      "h1": "Fast-Food Restaurant POS Software in Pakistan",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/solutions/multi-branch-restaurants",
+      "title": "Multi-Branch Restaurant Software in Pakistan | Restrova",
+      "description": "Evaluate branch menus, order destinations, staff responsibilities, delivery coverage and reporting with Restrova. Plan a clear multi-branch rollout.",
+      "canonical": "https://www.restrova.com/solutions/multi-branch-restaurants",
+      "h1": "Multi-Branch Restaurant Software in Pakistan",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/blog/how-to-choose-restaurant-management-software-pakistan",
+      "title": "Choose Restaurant Management Software in Pakistan | Restrova",
+      "description": "Compare restaurant software in Pakistan using a practical checklist for POS, branded ordering apps, inventory, riders, pricing, support and branches.",
+      "canonical": "https://www.restrova.com/blog/how-to-choose-restaurant-management-software-pakistan",
+      "h1": "How to Choose Restaurant Management Software in Pakistan",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+      "title": "Best Restaurant POS Software Pakistan: Buying Checklist | Restrova",
+      "description": "Choose restaurant POS software in Pakistan with a practical checklist for billing, devices, online orders, stock, riders, branch reporting and complete costs.",
+      "canonical": "https://www.restrova.com/blog/how-to-choose-restaurant-pos-software-pakistan",
+      "h1": "Best Restaurant POS Software in Pakistan: Buying Checklist",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/blog/why-direct-ordering-beats-third-party-marketplaces",
+      "title": "Restaurant Website vs Delivery Marketplace in Pakistan | Restrova",
+      "description": "Compare a restaurant website with delivery marketplaces in Pakistan using complete channel costs, discovery, rider responsibilities and a fair worked example.",
+      "canonical": "https://www.restrova.com/blog/why-direct-ordering-beats-third-party-marketplaces",
+      "h1": "Restaurant Website vs Third-Party Delivery Marketplace in Pakistan",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/blog/5-features-every-restaurant-app-must-have-in-2026",
+      "title": "Five Checks Before Choosing a Restaurant Ordering App | Restrova",
+      "description": "A practical checklist for Pakistani restaurant owners: menu clarity, order handoffs, delivery, repeat ordering and app ownership.",
+      "canonical": "https://www.restrova.com/blog/5-features-every-restaurant-app-must-have-in-2026",
+      "h1": "Five Checks Before Choosing a Restaurant Ordering App",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/blog/how-to-boost-customer-loyalty-with-digital-rewards",
+      "title": "Plan Restaurant Loyalty Rewards Without Guessing the Return | Restrova",
+      "description": "Set a clear reward, check its cost in PKR, explain the terms and measure repeat orders before expanding a restaurant loyalty programme.",
+      "canonical": "https://www.restrova.com/blog/how-to-boost-customer-loyalty-with-digital-rewards",
+      "h1": "Plan Restaurant Loyalty Rewards Without Guessing the Return",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/blog/restaurant-app-cost-pakistan",
+      "title": "Restaurant Ordering App Development Cost in Pakistan | Restrova",
+      "description": "Plan restaurant app costs in Pakistan: platform pricing, custom development scope, Android and iOS accounts, launch work, maintenance and ownership.",
+      "canonical": "https://www.restrova.com/blog/restaurant-app-cost-pakistan",
+      "h1": "Restaurant Ordering App Development Cost in Pakistan",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/blog/restaurant-inventory-management-guide-pakistan",
+      "title": "Restaurant Inventory Software Buying Guide Pakistan | Restrova",
+      "description": "Evaluate restaurant inventory software in Pakistan with sample counts, units, adjustments, item availability, staff roles and a practical vendor demo checklist.",
+      "canonical": "https://www.restrova.com/blog/restaurant-inventory-management-guide-pakistan",
+      "h1": "Restaurant Inventory Management Software Buying Guide",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/blog/restaurant-rider-management-tracking-settlement",
+      "title": "Restaurant Rider & Delivery Management Guide Pakistan | Restrova",
+      "description": "Plan restaurant delivery in Pakistan: dispatch, rider assignment, live tracking, connection failures, cash reconciliation and a complete shift demonstration.",
+      "canonical": "https://www.restrova.com/blog/restaurant-rider-management-tracking-settlement",
+      "h1": "Restaurant Rider and Delivery Management Guide",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/blog/start-online-ordering-small-restaurant-pakistan",
+      "title": "Start Online Ordering for Your Restaurant in Pakistan | Restrova",
+      "description": "Launch direct restaurant ordering in Pakistan: prepare the menu, checkout, delivery area, staff handoffs, budget and a practical go-live checklist.",
+      "canonical": "https://www.restrova.com/blog/start-online-ordering-small-restaurant-pakistan",
+      "h1": "How to Start Online Ordering for a Restaurant in Pakistan",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/blog/restaurant-pos-vs-manual-billing",
+      "title": "Restaurant POS vs Manual Billing: Daily Operations | Restrova",
+      "description": "Compare manual restaurant billing with a POS through order accuracy, handoffs, sales records, reporting, training and the full cost of changing systems.",
+      "canonical": "https://www.restrova.com/blog/restaurant-pos-vs-manual-billing",
+      "h1": "Restaurant POS vs Manual Billing: What Changes in Daily Operations?",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/blog/manage-multiple-restaurant-branches",
+      "title": "Managing Multiple Restaurant Branches With Software | Restrova",
+      "description": "Plan branch menus, staff responsibilities, order destinations, stock visibility, delivery boundaries and reporting before a multi-branch software rollout.",
+      "canonical": "https://www.restrova.com/blog/manage-multiple-restaurant-branches",
+      "h1": "How to Manage Multiple Restaurant Branches With Connected Software",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/blog/restaurant-software-pricing-pakistan-guide",
+      "title": "Restaurant Software Pricing Pakistan: Buying Guide | Restrova",
+      "description": "Compare restaurant software costs in Pakistan across setup, subscriptions, sales-based fees, hardware, payments, app accounts, support and branches.",
+      "canonical": "https://www.restrova.com/blog/restaurant-software-pricing-pakistan-guide",
+      "h1": "Restaurant Software Pricing in Pakistan: A Practical Buying Guide",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/blog/launch-restaurant-ordering-app",
+      "title": "Launch a Branded Restaurant Ordering App in Pakistan | Restrova",
+      "description": "Prepare a branded restaurant app launch in Pakistan with account ownership, approved assets, Android and iOS testing, store review and staff readiness.",
+      "canonical": "https://www.restrova.com/blog/launch-restaurant-ordering-app",
+      "h1": "How to Launch a Branded Restaurant Ordering App",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/blog/compare-restaurant-ordering-systems",
+      "title": "Best Restaurant Online Ordering Systems: Pakistan Guide | Restrova",
+      "description": "Compare restaurant ordering systems in Pakistan by checkout, staff workflow, delivery, ownership and full costs. Use the same demo checklist for each vendor.",
+      "canonical": "https://www.restrova.com/blog/compare-restaurant-ordering-systems",
+      "h1": "Best Online Ordering Systems for Restaurants in Pakistan: What to Compare",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/blog/restaurant-online-ordering-system-cost-pakistan",
+      "title": "Restaurant Online Ordering System Cost in Pakistan | Restrova",
+      "description": "Budget for restaurant online ordering in Pakistan: Restrova software fees, setup, payment charges, delivery, domain ownership and a practical cost worksheet.",
+      "canonical": "https://www.restrova.com/blog/restaurant-online-ordering-system-cost-pakistan",
+      "h1": "Restaurant Online Ordering System Cost in Pakistan",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/blog/restaurant-pos-software-cost-pakistan",
+      "title": "Restaurant POS Software Cost in Pakistan: Budget Guide | Restrova",
+      "description": "Compare restaurant POS costs in Pakistan: software, terminals, printers, setup, training and branch scope. See Restrova fee examples and a buying worksheet.",
+      "canonical": "https://www.restrova.com/blog/restaurant-pos-software-cost-pakistan",
+      "h1": "Restaurant POS Software Cost in Pakistan",
+      "schemas": [
+        "Organization",
+        "Brand",
+        "WebSite",
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    }
+  ]
+}

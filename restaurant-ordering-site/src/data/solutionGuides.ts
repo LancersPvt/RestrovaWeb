@@ -26,7 +26,7 @@ export const solutionGuides: Record<string, SolutionGuide> = {
       { question: "What should a multi-branch restaurant test?", answer: "Test the same item at two branches, including any price or availability differences. Review which staff can see each branch, where online orders arrive and what the manager can report. Confirm the branch configuration and commercial scope in your proposal." },
       { question: "What does the POS cost?", answer: "The published Restrova model is PKR 10,000 onboarding once, then the higher of PKR 5,000 and 1% of monthly sales processed through Restrova. Confirm hardware, branch scope, taxes and specialist development separately." },
     ],
-    reading: [{ href: "/blog/how-to-choose-restaurant-pos-software-pakistan", label: "Use the restaurant POS buying guide" }, { href: "/locations", label: "Plan branches and delivery coverage in Pakistan" }],
+    reading: [{ href: "/blog/restaurant-pos-software-cost-pakistan", label: "Budget for POS software, devices and training" }, { href: "/blog/restaurant-pos-vs-manual-billing", label: "Compare a POS workflow with manual billing" }, { href: "/blog/how-to-choose-restaurant-pos-software-pakistan", label: "Use the restaurant POS buying guide" }, { href: "/locations", label: "Plan branches and delivery coverage in Pakistan" }],
   },
   "restaurant-ordering-apps": {
     workflowTitle: "Plan a branded app from menu to first order",
@@ -44,7 +44,7 @@ export const solutionGuides: Record<string, SolutionGuide> = {
       { question: "Does an app replace the ordering website?", answer: "They serve different entry points. A website lets a customer open a menu link, while a branded app gives customers another route back to the restaurant. Review both journeys and the shared order handling in Admin." },
       { question: "Is app-store approval or a launch date guaranteed?", answer: "No. Store review, account readiness, branding, privacy information and testing affect publication. Agree responsibilities and the launch scope with Restrova; confirm account charges and maintenance terms before committing." },
     ],
-    reading: [{ href: "/blog/5-features-every-restaurant-app-must-have-in-2026", label: "Five checks before choosing a restaurant app" }, { href: "/apps", label: "Choose between customer apps, Admin and Fleet" }],
+    reading: [{ href: "/blog/restaurant-app-cost-pakistan", label: "Compare app development, publishing and maintenance costs" }, { href: "/blog/launch-restaurant-ordering-app", label: "Prepare a branded restaurant app launch" }, { href: "/blog/5-features-every-restaurant-app-must-have-in-2026", label: "Five checks before choosing a restaurant app" }, { href: "/apps", label: "Choose between customer apps, Admin and Fleet" }],
   },
   "restaurant-ordering-websites": {
     workflowTitle: "Follow a mobile order from menu to restaurant",
@@ -62,7 +62,7 @@ export const solutionGuides: Record<string, SolutionGuide> = {
       { question: "Are delivery and pickup both available?", answer: "The existing Restrova offering includes delivery and pickup flows. Confirm which options, service areas and branch rules will be enabled for your restaurant before advertising them." },
       { question: "Will it import orders from a delivery marketplace?", answer: "A branded ordering website receives your direct orders. Automatic marketplace imports require an explicitly supported integration; confirm the exact provider and workflow separately." },
     ],
-    reading: [{ href: "/compare-marketplaces", label: "Compare direct ordering with marketplaces" }, { href: "/blog/why-direct-ordering-beats-third-party-marketplaces", label: "Evaluate channel costs and responsibilities" }],
+    reading: [{ href: "/blog/compare-restaurant-ordering-systems", label: "Compare ordering systems using the same buyer checklist" }, { href: "/blog/restaurant-online-ordering-system-cost-pakistan", label: "Build an online ordering cost worksheet" }, { href: "/blog/start-online-ordering-small-restaurant-pakistan", label: "Prepare your restaurant for direct online orders" }, { href: "/compare-marketplaces", label: "Compare direct ordering with marketplaces" }, { href: "/blog/why-direct-ordering-beats-third-party-marketplaces", label: "Evaluate channel costs and responsibilities" }],
   },
   "inventory-management": {
     workflowTitle: "Build a stock routine your team can maintain",
@@ -80,7 +80,7 @@ export const solutionGuides: Record<string, SolutionGuide> = {
       { question: "How should we handle an unavailable item?", answer: "Agree who updates the item's availability and checks the customer and counter experience. Test this across the ordering channels used by your restaurant, including any branch-specific menu." },
       { question: "Can inventory records tell me my profit?", answer: "Stock records are one input. Profit also depends on costs such as wages, rent and delivery. Confirm the available valuation and reporting functions rather than assuming inventory management is a complete accounting system." },
     ],
-    reading: [{ href: "/services/reporting-analytics", label: "Connect stock questions with your management review" }, { href: "/blog/how-to-choose-restaurant-pos-software-pakistan", label: "Include inventory in your software buying checklist" }],
+    reading: [{ href: "/blog/restaurant-inventory-management-guide-pakistan", label: "Evaluate inventory software with sample counts and units" }, { href: "/services/reporting-analytics", label: "Connect stock questions with your management review" }, { href: "/blog/how-to-choose-restaurant-pos-software-pakistan", label: "Include inventory in your software buying checklist" }],
   },
   "delivery-management": {
     workflowTitle: "Connect dispatch, delivery status and rider settlement",
@@ -98,7 +98,7 @@ export const solutionGuides: Record<string, SolutionGuide> = {
       { question: "Does Restrova provide delivery riders?", answer: "Fleet is the software for managing restaurant delivery and rider operations. It does not establish that riders, a courier service or a third-party courier integration are included in your agreement." },
       { question: "Where do riders download Fleet?", answer: "Ask Restrova to confirm the distribution method and account setup for your team. A public Fleet store listing has not been verified here, so this page does not provide an assumed download link." },
     ],
-    reading: [{ href: "/services/reporting-analytics", label: "Review delivery activity and settlement reports" }, { href: "/locations", label: "Plan delivery boundaries across your branches" }],
+    reading: [{ href: "/blog/restaurant-rider-management-tracking-settlement", label: "Plan dispatch, live tracking and rider settlement" }, { href: "/services/reporting-analytics", label: "Review delivery activity and settlement reports" }, { href: "/locations", label: "Plan delivery boundaries across your branches" }],
   },
   "reporting-analytics": {
     workflowTitle: "Turn an end-of-shift report into a useful review",

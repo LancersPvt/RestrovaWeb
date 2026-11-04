@@ -1,18 +1,18 @@
 RESTROVA — TOPIC DISCOVERY RELEASE AND MEASUREMENT PROTOCOL
-Version 2026-11-03-v1. Market: Pakistan. Implementation date: 3 November 2026.
+Version 2026-11-04-v2. Market: Pakistan. Commercial content update: 4 November 2026.
 
 PURPOSE
 Evaluate discoverability across related restaurant-owner questions. A page, structured-data object, successful crawl or one answer is not a guarantee of future AI inclusion. This protocol does not claim rankings, endorsements or business outcomes.
 
 CURRENT STATUS
-Implementation and local validation are separate from production publication. The public baseline on 3 November returned 22 sitemap URLs; /solutions/multi-branch-restaurants returned 404. The current repository contains 35 curated URLs, including that page. Publish the current repository as a complete release rather than only copying a few visible pages.
+Implementation and local validation are separate from production publication. A read-only public check on 4 November verified the prior 35-URL release, including /solutions/multi-branch-restaurants. The new commercial content update contains 37 curated URLs, adding two focused educational cost guides while preserving the existing ordering pillar. This new update has not been deployed by the implementation agent. The owner handles Git and publication.
 No independent AI Search observations have been entered for this release. topic-discovery-observations.json is intentionally empty. Zero completed observations means unmeasured, not a zero mention or citation rate.
-Vercel is the observed public hosting provider. Its connector was offered but no connection was confirmed during implementation. No Search Console/Bing URL inspection access was available. Deployment, account-level indexing and post-deployment AI observations remain pending.
+Vercel is the observed public hosting provider. No Search Console/Bing URL inspection access was available. Publication of the new commercial content update, account-level indexing and post-deployment AI observations remain pending.
 
 1. VERIFY THE RELEASE
 From the project directory after publication:
   npm run check:geo-release -- docs/geo/release-verification.json
-Ensure GEO_BASE_URL is unset, or explicitly https://www.restrova.com. The resulting base must be the production origin, not localhost or a preview deployment. This read-only check verifies HTTP responses, expected content and metadata, production canonicals, robots rules, indexability directives, JSON-LD parsing and the expected 35-URL sitemap.
+Ensure GEO_BASE_URL is unset, or explicitly https://www.restrova.com. The resulting base must be the production origin, not localhost or a preview deployment. This read-only check verifies HTTP responses, expected content and metadata, production canonicals, robots rules, indexability directives, JSON-LD parsing and the expected 37-URL sitemap.
 Exit 1 / PENDING means the expected release is not fully verified. Inspect the failed checks; do not record a post-deployment lift using an older release. The multi-branch page must return 200 with the intended content, and the broad ordering page must keep its existing /services/restaurant-ordering-websites URL.
 Also run the full crawl against production:
   $env:SEO_BASE_URL='https://www.restrova.com'

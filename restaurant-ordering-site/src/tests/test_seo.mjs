@@ -106,6 +106,33 @@ try {
     assert.ok(post.content.split("\n\n").filter(b => b.startsWith("## ")).length >= 4, `${slug}: complete guide`);
   }
   const { solutionGuides } = load("src/data/solutionGuides.ts");
+  const articlePage = load("src/app/(main)/blog/[slug]/page.tsx");
+  const { ONBOARDING_FEE } = load("src/lib/pricing.ts");
+  for (const slug of ["restaurant-online-ordering-system-cost-pakistan", "restaurant-pos-software-cost-pakistan"]) {
+    const post = blogPosts.find(item => item.slug === slug);
+    assert.ok(post, `dedicated cost guide: ${slug}`);
+    for (const href of ["/pricing", "/contact", `/services/${post.relatedSolution}`]) assert.ok(post.content.includes(`](${href})`), `${slug}: contextual ${href}`);
+    assert.ok(solutionGuides[post.relatedSolution].reading.some(link => link.href === `/blog/${slug}`), `${slug}: linked from its commercial pillar`);
+    const examples = [...post.content.matchAll(/^\| PKR ([\d,]+) \| PKR ([\d,]+) \| PKR ([\d,]+) \|$/gm)];
+    assert.ok(examples.length >= 3, `${slug}: fee examples`);
+    for (const example of examples) {
+      const [sales, fee, firstMonth] = example.slice(1).map(value => Number(value.replaceAll(",", "")));
+      assert.equal(fee, monthlyFee(sales), `${slug}: example matches pricing formula`);
+      assert.equal(firstMonth, ONBOARDING_FEE + fee, `${slug}: onboarding is separate`);
+    }
+  }
+  // Image-bearing legacy articles are checked in the production crawl, where Next's image configuration is available.
+  for (const post of blogPosts.filter(item => !item.image)) {
+    const params = Promise.resolve({ slug: post.slug });
+    const markup = renderToStaticMarkup(await articlePage.default({ params }));
+    const metadata = await articlePage.generateMetadata({ params });
+    const schema = [...markup.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)].map(match => JSON.parse(match[1])).find(item => item["@type"] === "BlogPosting");
+    assert.equal(schema.headline, post.title);
+    assert.equal(schema.mainEntityOfPage, metadata.alternates.canonical);
+    assert.equal(schema.image, post.image, "only a visible article image belongs in article schema");
+    assert.ok([...markup.matchAll(/<time\b[^>]*datetime="([^"]+)"/gi)].some(match => match[1] === schema.dateModified), "schema date is visible in a time element");
+    assert.ok(markup.includes(`<h1 `) && (markup.match(/<h1\b/g) || []).length === 1);
+  }
   assert.deepEqual(Object.keys(solutionGuides).sort(), solutions.map((s) => s.slug).sort());
   for (const solution of solutions) {
     const guide = solutionGuides[solution.slug];
@@ -235,4 +262,13 @@ const splitContent = "Opening answer.\n\n## First heading\n\nBody\n\n## Second h
 const splitSections = articleSections(splitContent);
 const splitRendered = renderToStaticMarkup(createElement(ArticleBody, { content: splitContent.split("\n\n").slice(1).join("\n\n"), startIndex: 1 }));
 for (const section of splitSections) assert.ok(splitRendered.includes(`id="${section.id}"`), "intro-before-contents preserves anchors");
-console.log("PASS: pricing, canonicals, preview noindex, curated sitemap, 12 required articles, business workflows, internal/source links, escaped JSON-LD and unique article anchors");
+const table = renderToStaticMarkup(createElement(ArticleBody, { content: "## Compare costs\n\n| Item | Evidence |\n| --- | --- |\n| Software | [Pricing](/pricing) |\n| <script> | [Unsafe](javascript:alert) |", startIndex: 2 }));
+assert.ok(table.includes('<caption id="article-table-3" class="sr-only">Compare costs</caption>'));
+assert.ok(table.includes('role="region" aria-labelledby="article-table-3" tabindex="0"'));
+assert.equal((table.match(/scope="col"/g) || []).length, 2);
+assert.equal((table.match(/scope="row"/g) || []).length, 2);
+assert.ok(table.includes('href="/pricing"') && table.includes('&lt;script&gt;'));
+assert.ok(!table.includes('href="javascript:') && !table.includes('<script>'));
+for (const malformed of ["| A | B |\n| --- | --- |\n| missing cell |", "| A | B |\n| not a separator | B |\n| C | D |"])
+  assert.ok(!renderToStaticMarkup(createElement(ArticleBody, { content: malformed })).includes('<table'), "malformed tables remain text");
+console.log("PASS: pricing, canonicals, sitemap, article schema/visible images, cost examples, contextual links, escaped tables and stable article anchors");

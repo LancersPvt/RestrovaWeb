@@ -1,0 +1,45 @@
+RESTROVA COMMERCIAL SEO IMPLEMENTATION — VALIDATION
+4 November 2026. Baseline commit 5153103. Owner handles commit, push and deployment.
+
+RESULT
+Eight existing requested articles expanded; two focused educational cost guides added; one broad pricing article cross-linked. All 14 prior article bodies and H2 anchor positions were checked for preservation. Existing 35 curated routes remain; the new sitemap has 37. No duplicate commercial ordering, city or phrase pages added. The ordering pillar remains /services/restaurant-ordering-websites.
+
+MODIFIED FILES
+- src/app/(main)/blog/[slug]/page.tsx
+- src/app/(main)/pricing/page.tsx
+- src/components/ArticleBody.tsx
+- src/data/solutionGuides.ts
+- src/lib/blog-data.ts
+- src/lib/seo.ts
+- src/tests/test_seo.mjs
+- docs/geo/topic-discovery-protocol.txt
+- docs/commercial-seo/keyword-map.json
+- docs/commercial-seo/release-and-monitoring.txt
+- docs/commercial-seo/content-inventory.json
+- docs/commercial-seo/internal-link-map.json
+- docs/commercial-seo/validation.txt
+
+USER-VISIBLE ROUTE CHANGES
+Expanded at existing URLs: /blog/compare-restaurant-ordering-systems; /blog/how-to-choose-restaurant-pos-software-pakistan; /blog/why-direct-ordering-beats-third-party-marketplaces; /blog/start-online-ordering-small-restaurant-pakistan; /blog/restaurant-app-cost-pakistan; /blog/launch-restaurant-ordering-app; /blog/restaurant-inventory-management-guide-pakistan; /blog/restaurant-rider-management-tracking-settlement.
+New: /blog/restaurant-online-ordering-system-cost-pakistan and /blog/restaurant-pos-software-cost-pakistan.
+Supporting links: /pricing, /blog/restaurant-software-pricing-pakistan-guide and the existing ordering-website, ordering-app, POS, inventory and delivery service pages. /blog reflects the new inventory and revised description. Shared article renderer supports server-rendered accessible comparison tables. Article schema uses image only when actually visible in the article.
+Full metadata, content inventory and main-content link graph are in the adjacent JSON files. All existing canonical destinations are preserved. Dates are real edit/preparation dates, with the release-date review described in release-and-monitoring.txt.
+
+CHECKS COMPLETED
+PASS npm run lint (ESLint).
+PASS npm run build: Next.js 16.1.6 production Turbopack build, TypeScript check and 72 generated pages; 37 curated sitemap URLs, not 72 index-target pages.
+PASS npm run test:seo: fee boundaries, metadata and sitemap, 552 legacy noindex metadata combinations, service workflows, topic links, Roman Urdu answers, article/schema alignment, table escaping/headers/malformed-input fallback, anchors and new cost-example arithmetic.
+PASS npm run test:demo: qualification, intake/scheduling, sessions, retries and Apps Script handling, using offline test fixtures.
+PASS npm run test:integrations: existing branch/menu/tenant and revalidation contracts with offline fixtures.
+PASS npm run test:geo: eight intents / 24 prompts, measurement missing-data handling and evidence guards.
+PASS npm run check:seo against local production build: 37 HTTP 200 pages, unique title/description, one H1, self-canonical, indexable directives, JSON-LD, 240 internal links/anchors, sampled noindex utilities and 404 handling.
+PASS check:geo-release against local production build: 11 topic/support pages and 37/37 expected sitemap entries. Indexing remains unverified.
+PASS local Schema.org vocabulary check on all 37 pages: type/property existence, inherited domains, value ranges, publisher reference resolution, visible article headlines and dates, image alignment. Official vocabulary downloaded 2 November; BlogPosting documentation rechecked 4 November. This is local validation, not a remote Schema.org validator or Google Rich Results Test.
+PASS Chrome responsive review: all 10 requested articles at 360px, 390px and 1440px, plus seven supporting pages at 390px and 1440px (44 page checks). No document horizontal overflow; comparison tables scroll within keyboard-focusable regions. Contents links, calculator (800000 -> 8000) and mobile navigation passed. All 10 requested articles, pricing links and demo paths are readable with JavaScript disabled at 360px. No browser page errors. Representative mobile and desktop screenshots visually reviewed.
+PASS preservation audit: 40 route templates inventoried; 35 old curated URLs, 14 old article bodies and existing H2 anchor positions retained. No package, pricing-constant, demo-form, API, analytics or integration changes.
+
+LIMITS AND REMAINING EVIDENCE
+Build and browser validation used a local staging copy with the same package/lock/config/source baseline; copied changes are hash-verified against that tested source. Browser widths are emulated Chrome, not physical phones or field Core Web Vitals. No new client component, runtime dependency, tracking script or product-media payload was added. Build success is not proof of a real-world performance improvement.
+The demo tests deliberately exercise failure paths, so simulated submission failures in their output are expected; no live form/CRM submission occurred. The existing integration test emits a Node url.parse deprecation warning while passing; unrelated integration code was preserved.
+The public 4 November baseline passed the prior 35-URL release. It is not evidence that this new 37-URL update is deployed. No commit, push or deployment was made. Search Console/Bing indexing data and independent AI Search observations were unavailable; no rank, volume, traffic, citation or revenue improvement is claimed.
+Approved operational screenshots/video, detailed integrations/hardware/stock automation proof, account/branch scope and commercial exclusions remain evidence gaps. These are described as demo questions, not fabricated capabilities. Review release-and-monitoring.txt for the owner's post-publication crawl, indexing and performance review.

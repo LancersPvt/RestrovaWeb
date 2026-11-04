@@ -19,7 +19,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   const firstHeading = blocks.findIndex((block) => block.startsWith("## "));
   const introductionLength = firstHeading < 0 ? blocks.length : firstHeading;
   return <main id="main-content" className="bg-[#fffaf4] text-[#171816]">
-    <JsonLd data={{ "@context": "https://schema.org", "@type": "BlogPosting", "@id": `${siteConfig.url}/blog/${post.slug}#article`, headline: post.title, description: post.excerpt, image: post.image || `${siteConfig.url}/og.png`,
+    <JsonLd data={{ "@context": "https://schema.org", "@type": "BlogPosting", "@id": `${siteConfig.url}/blog/${post.slug}#article`, headline: post.title, description: post.excerpt, ...(post.image ? { image: post.image } : {}),
       datePublished: post.date, dateModified: post.updated || post.date, author: { "@type": "Organization", name: post.author, url: `${siteConfig.url}/about` },
       publisher: { "@id": `${siteConfig.url}/#organization` }, mainEntityOfPage: `${siteConfig.url}/blog/${post.slug}` }} />
     <article className="seo-content mx-auto max-w-4xl px-6 py-12 sm:py-20">
