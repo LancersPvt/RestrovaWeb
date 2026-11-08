@@ -10,20 +10,17 @@ import {
 } from "lucide-react";
 
 import Image from "next/image";
-import { Bangers, Nunito_Sans } from "next/font/google";
 import logo from "./logo.png"; // change to ./logo.jpeg if your file is jpeg
 
-const headingFont = Bangers({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-heading",
-});
+const headingFont = {
+  className: "deliveroo-heading",
+  variable: "",
+};
 
-const bodyFont = Nunito_Sans({
-  subsets: ["latin"],
-  weight: ["400", "600", "700", "800", "900"],
-  variable: "--font-body",
-});
+const bodyFont = {
+  className: "deliveroo-body",
+  variable: "",
+};
 
 const LINKS = {
   // Replace with real Deliveroo Eats links

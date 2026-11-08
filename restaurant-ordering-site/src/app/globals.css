@@ -1,5 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Nunito+Sans:wght@400;600;700;800;900&display=swap");
 @import "tailwindcss";
-
 :root {
   /* Premium Food & Restaurant Palette - Softer, More Appetizing */
   --brand-coral: #FF6B6B;
@@ -450,4 +450,13 @@ body {
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
   .scroll-fade-in, .scroll-slide-left, .scroll-slide-right { opacity: 1; transform: none; }
+}
+
+
+.deliveroo-heading {
+  font-family: "Bangers", Impact, sans-serif;
+}
+
+.deliveroo-body {
+  font-family: "Nunito Sans", Arial, sans-serif;
 }
