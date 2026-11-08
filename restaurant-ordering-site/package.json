@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build --webpack",
     "start": "next start",
     "lint": "eslint",
     "test:demo": "node src/tests/test_funnel.cjs && node src/tests/test_api.cjs && node src/tests/test_apps_script.cjs",
