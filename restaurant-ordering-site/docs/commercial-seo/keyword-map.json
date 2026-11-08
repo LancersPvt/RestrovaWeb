@@ -1,0 +1,463 @@
+{
+  "version": "2026-11-04-v1",
+  "market": "Pakistan",
+  "status": "Implemented locally; owner handles commit, push and deployment. Not a rankings report.",
+  "method": "Current route/content audit plus qualitative web-search results observed 4 November 2026. Search-tool locale is not a controlled Pakistani Google session. Phrases are planning hypotheses, not measured search terms. Business priorities reflect product fit and buyer intent, not fabricated volume.",
+  "searchQueries": [
+    "restaurant online ordering system Pakistan restaurant owners software pricing",
+    "restaurant POS software Pakistan billing price",
+    "restaurant branded mobile app development Pakistan restaurant ordering",
+    "restaurant inventory rider tracking software Pakistan",
+    "\"online ordering system\" Pakistan restaurants software",
+    "\"restaurant POS\" Pakistan \"pricing\"",
+    "Pakistan restaurant branded apps online ordering Blink Foodnerd pricing",
+    "Pakistan restaurant inventory stock rider management software multi branch cafe cloud kitchen"
+  ],
+  "searchFindings": [
+    "Commercial software/pricing and buyer guides occur together; separate the commercial destination from educational decision support.",
+    "Broad online-ordering searches can include consumer food-delivery results; identify the restaurant-owner audience clearly.",
+    "Hardware, billing, stock, delivery and branch questions extend beyond a single exact phrase.",
+    "Provider self-rankings and prices were not treated as independent endorsements or market benchmarks."
+  ],
+  "clusters": [
+    {
+      "id": "management",
+      "primaryKeyword": "restaurant management software Pakistan",
+      "secondaryKeywords": [
+        "restaurant software Pakistan",
+        "restaurant management system",
+        "restaurant operations software"
+      ],
+      "longTailKeywords": [
+        "restaurant software for counter and online orders in Pakistan",
+        "POS inventory and live rider tracking in one restaurant system"
+      ],
+      "intent": "Commercial investigation: understand the connected system and shortlist a demo.",
+      "targetPage": "/",
+      "secondaryDestination": "/services#daily-operations",
+      "pakistanSearches": [
+        "restaurant management software Pakistan",
+        "restaurant ka POS stock aur riders aik system mein"
+      ],
+      "buyerQuestions": [
+        "How do counter, website and app orders reach the same team?",
+        "Which stock and delivery functions can staff demonstrate?"
+      ],
+      "supportingArticles": [
+        "/blog/how-to-choose-restaurant-management-software-pakistan",
+        "/blog/how-to-choose-restaurant-pos-software-pakistan"
+      ],
+      "internalLinkTargets": [
+        "/services",
+        "/pricing",
+        "/faq",
+        "/apps",
+        "/about",
+        "/contact"
+      ],
+      "priority": "P1",
+      "rationale": "Broad product fit; homepage introduces the whole offer while services explains operations. Avoid another competing management pillar.",
+      "metrics": {
+        "searchVolume": null,
+        "keywordDifficulty": null,
+        "currentRank": null,
+        "impressions": null,
+        "clicks": null,
+        "reason": "No keyword export or authorized Search Console data supplied; null means unmeasured."
+      }
+    },
+    {
+      "id": "pos",
+      "primaryKeyword": "restaurant POS software Pakistan",
+      "secondaryKeywords": [
+        "restaurant billing software",
+        "restaurant point of sale system",
+        "cafe POS Pakistan"
+      ],
+      "longTailKeywords": [
+        "best restaurant POS software in Pakistan buying checklist",
+        "restaurant POS software cost Pakistan",
+        "POS with online ordering inventory and rider management"
+      ],
+      "intent": "Commercial comparison and pricing, with operational buying questions.",
+      "targetPage": "/services/restaurant-pos",
+      "pakistanSearches": [
+        "restaurant POS Pakistan price",
+        "restaurant billing software Pakistan",
+        "restaurant billing aur online orders kaise manage karein"
+      ],
+      "buyerQuestions": [
+        "Will our actual printer and counter setup work?",
+        "What happens to corrections and interrupted orders?",
+        "Which sales and devices does the price cover?"
+      ],
+      "supportingArticles": [
+        "/blog/how-to-choose-restaurant-pos-software-pakistan",
+        "/blog/restaurant-pos-software-cost-pakistan",
+        "/blog/restaurant-pos-vs-manual-billing"
+      ],
+      "internalLinkTargets": [
+        "/services/inventory-management",
+        "/services/delivery-management",
+        "/services/restaurant-ordering-websites",
+        "/pricing",
+        "/contact"
+      ],
+      "priority": "P1",
+      "rationale": "Direct buying intent and a missing dedicated cost worksheet; keep the current commercial URL.",
+      "metrics": {
+        "searchVolume": null,
+        "keywordDifficulty": null,
+        "currentRank": null,
+        "impressions": null,
+        "clicks": null,
+        "reason": "No keyword export or authorized Search Console data supplied; null means unmeasured."
+      }
+    },
+    {
+      "id": "online-ordering",
+      "primaryKeyword": "restaurant online ordering system Pakistan",
+      "secondaryKeywords": [
+        "direct restaurant ordering website",
+        "online ordering website for restaurants",
+        "restaurant website with ordering"
+      ],
+      "longTailKeywords": [
+        "best online ordering system in Pakistan for restaurants",
+        "restaurant online ordering system cost in Pakistan",
+        "how to start online ordering for a small restaurant in Pakistan",
+        "restaurant website vs third party delivery marketplace"
+      ],
+      "intent": "Commercial evaluation plus cost and launch research; distinguish restaurant owners from consumers ordering food.",
+      "targetPage": "/services/restaurant-ordering-websites",
+      "pakistanSearches": [
+        "online ordering system Pakistan restaurants",
+        "apne restaurant ki website se orders kaise lein"
+      ],
+      "buyerQuestions": [
+        "Can customers order without downloading an app?",
+        "Who receives and fulfils a direct order?",
+        "How do complete channel costs compare?"
+      ],
+      "supportingArticles": [
+        "/blog/compare-restaurant-ordering-systems",
+        "/blog/restaurant-online-ordering-system-cost-pakistan",
+        "/blog/start-online-ordering-small-restaurant-pakistan",
+        "/blog/why-direct-ordering-beats-third-party-marketplaces"
+      ],
+      "internalLinkTargets": [
+        "/services/restaurant-ordering-apps",
+        "/services/restaurant-pos",
+        "/services/delivery-management",
+        "/compare-marketplaces",
+        "/pricing",
+        "/contact"
+      ],
+      "priority": "P1",
+      "rationale": "Fixed commercial pillar required by the brief; two existing launch/comparison guides plus a genuinely distinct channel-cost worksheet.",
+      "metrics": {
+        "searchVolume": null,
+        "keywordDifficulty": null,
+        "currentRank": null,
+        "impressions": null,
+        "clicks": null,
+        "reason": "No keyword export or authorized Search Console data supplied; null means unmeasured."
+      }
+    },
+    {
+      "id": "branded-apps",
+      "primaryKeyword": "branded restaurant ordering app Pakistan",
+      "secondaryKeywords": [
+        "restaurant mobile app Pakistan",
+        "Android restaurant ordering app",
+        "iOS restaurant ordering app"
+      ],
+      "longTailKeywords": [
+        "restaurant ordering app development cost in Pakistan",
+        "how to launch a branded restaurant ordering app",
+        "restaurant website and mobile app ordering together"
+      ],
+      "intent": "Commercial scope, development-cost clarification and app launch planning.",
+      "targetPage": "/services/restaurant-ordering-apps",
+      "pakistanSearches": [
+        "restaurant ordering app Pakistan",
+        "restaurant apni Android iPhone app kaise launch kare"
+      ],
+      "buyerQuestions": [
+        "Platform configuration or custom development: what are we buying?",
+        "Who owns the developer accounts and handles updates?",
+        "Can we see actual published app listings?"
+      ],
+      "supportingArticles": [
+        "/blog/restaurant-app-cost-pakistan",
+        "/blog/launch-restaurant-ordering-app",
+        "/blog/5-features-every-restaurant-app-must-have-in-2026"
+      ],
+      "internalLinkTargets": [
+        "/apps",
+        "/services/restaurant-ordering-websites",
+        "/services/restaurant-pos",
+        "/pricing",
+        "/about",
+        "/contact"
+      ],
+      "priority": "P1",
+      "rationale": "Existing product evidence through published listings; clarify that platform fees are not a universal custom-development price.",
+      "metrics": {
+        "searchVolume": null,
+        "keywordDifficulty": null,
+        "currentRank": null,
+        "impressions": null,
+        "clicks": null,
+        "reason": "No keyword export or authorized Search Console data supplied; null means unmeasured."
+      }
+    },
+    {
+      "id": "inventory",
+      "primaryKeyword": "restaurant inventory management software Pakistan",
+      "secondaryKeywords": [
+        "restaurant stock management software",
+        "restaurant stock control",
+        "POS inventory management"
+      ],
+      "longTailKeywords": [
+        "restaurant inventory software buying guide Pakistan",
+        "how to compare restaurant stock units and adjustments",
+        "POS inventory and menu availability Pakistan"
+      ],
+      "intent": "Commercial evaluation supported by practical stock-control education.",
+      "targetPage": "/services/inventory-management",
+      "pakistanSearches": [
+        "restaurant inventory software Pakistan",
+        "restaurant ka stock aur item availability kaise manage karein"
+      ],
+      "buyerQuestions": [
+        "How are purchase and counting units handled?",
+        "Does a sale deduct ingredients or only change an item record?",
+        "Who corrects a difference and updates menu availability?"
+      ],
+      "supportingArticles": [
+        "/blog/restaurant-inventory-management-guide-pakistan",
+        "/blog/how-to-choose-restaurant-pos-software-pakistan"
+      ],
+      "internalLinkTargets": [
+        "/services/restaurant-pos",
+        "/services/restaurant-ordering-websites",
+        "/services/reporting-analytics",
+        "/pricing",
+        "/contact"
+      ],
+      "priority": "P1",
+      "rationale": "Matches the connected-operations evidence gap; show evaluation tasks without inventing recipe, expiry or purchase-order automation.",
+      "metrics": {
+        "searchVolume": null,
+        "keywordDifficulty": null,
+        "currentRank": null,
+        "impressions": null,
+        "clicks": null,
+        "reason": "No keyword export or authorized Search Console data supplied; null means unmeasured."
+      }
+    },
+    {
+      "id": "delivery",
+      "primaryKeyword": "restaurant delivery management software Pakistan",
+      "secondaryKeywords": [
+        "restaurant rider tracking software",
+        "live rider tracking",
+        "restaurant rider management"
+      ],
+      "longTailKeywords": [
+        "restaurant rider assignment live tracking and cash settlement",
+        "restaurant delivery tracking with POS in Pakistan",
+        "how to manage restaurant rider payments"
+      ],
+      "intent": "Commercial evaluation and operational delivery troubleshooting.",
+      "targetPage": "/services/delivery-management",
+      "pakistanSearches": [
+        "restaurant rider tracking Pakistan",
+        "restaurant rider ki location aur cash hisaab kaise dekhein"
+      ],
+      "buyerQuestions": [
+        "Who owns dispatch, reassignment and failed deliveries?",
+        "What happens when location updates stop?",
+        "How do prepaid and cash deliveries reach settlement?"
+      ],
+      "supportingArticles": [
+        "/blog/restaurant-rider-management-tracking-settlement",
+        "/blog/start-online-ordering-small-restaurant-pakistan"
+      ],
+      "internalLinkTargets": [
+        "/services/restaurant-pos",
+        "/services/restaurant-ordering-websites",
+        "/services/reporting-analytics",
+        "/apps",
+        "/pricing",
+        "/contact"
+      ],
+      "priority": "P1",
+      "rationale": "Live tracking alone does not explain the handoff or cash workflow; keep supported Fleet claims and demonstrate conditions.",
+      "metrics": {
+        "searchVolume": null,
+        "keywordDifficulty": null,
+        "currentRank": null,
+        "impressions": null,
+        "clicks": null,
+        "reason": "No keyword export or authorized Search Console data supplied; null means unmeasured."
+      }
+    },
+    {
+      "id": "pricing",
+      "primaryKeyword": "restaurant software pricing Pakistan",
+      "secondaryKeywords": [
+        "restaurant software cost Pakistan",
+        "affordable restaurant software Pakistan",
+        "restaurant management software price"
+      ],
+      "longTailKeywords": [
+        "restaurant software setup and monthly fee Pakistan",
+        "restaurant software fixed minimum vs sales percentage",
+        "restaurant app POS and website total cost Pakistan"
+      ],
+      "intent": "High-intent commercial budgeting and quote comparison.",
+      "targetPage": "/pricing",
+      "pakistanSearches": [
+        "restaurant software Pakistan price",
+        "restaurant software ki mahana fee kitni hai"
+      ],
+      "buyerQuestions": [
+        "Is PKR 5,000 added to 1% or compared with it?",
+        "What counts as processed sales?",
+        "Are hardware, taxes, payments and branch scope included?"
+      ],
+      "supportingArticles": [
+        "/blog/restaurant-software-pricing-pakistan-guide",
+        "/blog/restaurant-online-ordering-system-cost-pakistan",
+        "/blog/restaurant-pos-software-cost-pakistan",
+        "/blog/restaurant-app-cost-pakistan"
+      ],
+      "internalLinkTargets": [
+        "/services",
+        "/faq#roman-urdu-pricing",
+        "/solutions/multi-branch-restaurants",
+        "/contact"
+      ],
+      "priority": "P1",
+      "rationale": "Keep pricing as the authoritative product fee page. Guide costs are explanatory examples, not separate packages or unsupported cheapness claims.",
+      "metrics": {
+        "searchVolume": null,
+        "keywordDifficulty": null,
+        "currentRank": null,
+        "impressions": null,
+        "clicks": null,
+        "reason": "No keyword export or authorized Search Console data supplied; null means unmeasured."
+      }
+    },
+    {
+      "id": "operating-models",
+      "primaryKeyword": "multi branch restaurant software Pakistan",
+      "secondaryKeywords": [
+        "cafe software Pakistan",
+        "cloud kitchen ordering software Pakistan",
+        "fast food restaurant software"
+      ],
+      "longTailKeywords": [
+        "software for restaurant branch menus and delivery areas",
+        "cafe POS with drink choices and pickup ordering",
+        "cloud kitchen ordering and rider dispatch Pakistan"
+      ],
+      "intent": "Commercial fit by operating model; distinct workflows justify the existing pages.",
+      "targetPage": "/solutions/multi-branch-restaurants",
+      "relatedExistingPages": [
+        "/solutions/cafes",
+        "/solutions/cloud-kitchens",
+        "/solutions/fast-food-restaurants"
+      ],
+      "pakistanSearches": [
+        "multi branch restaurant software Pakistan",
+        "cafe POS Pakistan",
+        "cloud kitchen software Pakistan",
+        "restaurant ki branches aik jagah kaise manage karein"
+      ],
+      "buyerQuestions": [
+        "Which branch receives the order and controls availability?",
+        "Can a café pass required drink choices to preparation?",
+        "Who handles dispatch in a delivery-only kitchen?"
+      ],
+      "supportingArticles": [
+        "/blog/manage-multiple-restaurant-branches",
+        "/blog/start-online-ordering-small-restaurant-pakistan",
+        "/blog/how-to-choose-restaurant-pos-software-pakistan",
+        "/blog/restaurant-rider-management-tracking-settlement"
+      ],
+      "internalLinkTargets": [
+        "/services/restaurant-pos",
+        "/services/restaurant-ordering-websites",
+        "/services/inventory-management",
+        "/services/delivery-management",
+        "/pricing",
+        "/locations",
+        "/contact"
+      ],
+      "priority": "P2",
+      "rationale": "Retain four differentiated operating-model pages; no phrase, city or industry-template expansion. Branch visibility is a demo/scope question, not unlimited-branch pricing.",
+      "metrics": {
+        "searchVolume": null,
+        "keywordDifficulty": null,
+        "currentRank": null,
+        "impressions": null,
+        "clicks": null,
+        "reason": "No keyword export or authorized Search Console data supplied; null means unmeasured."
+      }
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://karobar.com.pk/pricing",
+      "use": "Observed Pakistan POS pricing result; intent evidence only, not an independent price benchmark."
+    },
+    {
+      "url": "https://pos.ecomsmartify.com/pricing",
+      "use": "Observed local POS pricing page; supports examining pricing intent, no competitor price copied."
+    },
+    {
+      "url": "https://www.blinkco.io/help-center/faq-why-blink/",
+      "use": "Provider page surfaced for branded website/app questions. No exclusivity or ranking claims adopted."
+    },
+    {
+      "url": "https://bhookly.com/",
+      "use": "Provider result surfaced for POS, inventory, riders and branches. No product claims or prices transferred to Restrova."
+    },
+    {
+      "url": "https://candelafood.com/",
+      "use": "Provider result surfaced for restaurant operations. Qualitative topic coverage, not rank/volume evidence."
+    },
+    {
+      "url": "https://kliovo.com/dine/solutions/for-cloud-kitchens",
+      "use": "Observed operating-model page; helps distinguish cloud-kitchen workflow intent."
+    },
+    {
+      "url": "https://partner.foodpanda.pk/en",
+      "use": "Primary marketplace source for the existing fair channel comparison; actual packages remain contract-specific."
+    },
+    {
+      "url": "https://developer.apple.com/programs/enroll/",
+      "use": "Primary source for developer-account ownership and enrolment requirements."
+    },
+    {
+      "url": "https://support.google.com/googleplay/android-developer/answer/6112435",
+      "use": "Primary source for developer accounts, identity and applicable testing requirements."
+    },
+    {
+      "url": "https://schema.org/BlogPosting",
+      "use": "Applicable Schema.org type and inherited properties."
+    },
+    {
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/article",
+      "use": "Google Article markup guidance; no guaranteed rich result."
+    },
+    {
+      "url": "https://developers.google.com/search/docs/monitor-debug/search-console-start",
+      "use": "Indexing and performance monitoring guidance."
+    }
+  ]
+}

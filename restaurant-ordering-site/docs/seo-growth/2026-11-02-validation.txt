@@ -1,0 +1,27 @@
+RESTROVA VALIDATION — 2 NOVEMBER 2026
+
+FINAL SOURCE CHECKS
+PASS npm run build: Next.js 16.1.6 default production build, TypeScript and 70 generated routes including utilities/consumer pages. Build used installed locked dependencies; no package or lockfile changes. A restricted first attempt stalled; the successful build had access to the Google fonts already used by the site. No font workaround or hidden source modification was used.
+PASS npm run lint: no errors or warnings.
+PASS npm run test:seo: price boundaries/invalid amounts, legal identity, production canonicals, preview noindex, 552 legacy URL metadata checks, curated sitemap membership, all 12 requested articles, business-page targets, external-link safety, escaped JSON-LD and article anchors (including introduction before contents).
+PASS npm run test:demo: qualification, API/session/security, acknowledged scheduling, failures/retries/idempotency and Apps Script/CRM fixture tests. Logged simulated failures are expected negative test cases, not live submissions.
+PASS npm run test:integrations: branch/menu/tenant/revalidation contract tests with offline fixtures. Node emitted the existing url.parse deprecation warning; tests passed.
+PASS npm run check:seo against final local production build: 35 canonical indexable pages, unique titles/descriptions, Open Graph/Twitter metadata, one H1, expected schema, 198 internal links/anchors, noindex utilities and missing-route 404. This is a rendered HTTP crawl, not Google indexing confirmation.
+PASS browser checks: 11 routes at 390px and 1440px (22 page checks); no horizontal document overflow or runtime/hydration exceptions. Pricing: PKR 800,000 sales -> PKR 8,000 fee; negative sales invalid. Chain qualification excludes one branch. Mobile menu navigates and closes correctly. Third-party analytics blocked and no form submitted. A first automation attempt targeted the hidden accessible label rather than its visible summary control; the corrected control test passed. A network-idle wait was replaced with document/font and explicit interaction readiness because route prefetching does not define UI readiness.
+Visual review: mobile article and cafe page; desktop blog and cafe page. Existing palette, typography, spacing and responsive component system retained. Article opening answers moved above contents navigation after the mobile review.
+
+PUBLIC LIVE CHECKS
+Homepage, pricing and blog returned HTTP 200 with production canonical and one H1. robots.txt references https://www.restrova.com/sitemap.xml and blocks /api/ only. Live sitemap contains the 22 pre-deployment URLs; the local 35-URL result is not yet deployed. All seven existing Google Play/Apple client/Admin URLs returned HTTP 200. No new Fleet link was invented. Details in 2026-11-02-live-audit.json.
+
+PERFORMANCE MEASUREMENTS — SINGLE MOBILE LAB RUNS, LIGHTHOUSE 13.6.0
+Public production homepage, normal third-party loading, 2026-11-02T13:03:46Z (18:03 Pakistan): performance 76, accessibility 100, SEO 100; LCP 1.4 s, CLS 0, TBT 1,190 ms, FCP 1.4 s, speed index 2.4 s.
+Local production homepage with Meta domains blocked, 2026-11-02T13:07:09Z (18:07 Pakistan): performance 86, accessibility 100, SEO 100; LCP 1.6 s, CLS 0, TBT 410 ms, FCP 1.6 s, speed index 4.5 s.
+These environments differ. The scores are diagnostic samples, not a measured before/after improvement, field Core Web Vitals, or a promise about production. The later article-only introduction placement does not affect the homepage measurement. Concurrent local verification work and the host's load can affect lab timings.
+Live audit identified roughly 1.1 s of Meta script processing plus first-party work. Local audit flagged unattributed forced reflow, framework JavaScript/polyfills and about 4 KiB of potential logo compression savings. Existing next/image sizing, hero preload, font swap and fixed image dimensions are retained. New content/business pages remain server-rendered; no new client library or analytics vendor was introduced.
+Follow-up: inspect real-user INP and long tasks with the authorized Search Console/CrUX or approved RUM source. TBT is not INP. Review Meta loading/consent timing in an isolated change with event/attribution testing before delaying the existing tracker. Do not remove framework compatibility code or replace assets merely to chase a lab score. Field INP and real-user LCP/CLS remain unavailable.
+
+SCOPE LIMITS
+No production deployment, Search Console submission, GA4 installation, Business Profile edit, outreach, live demo lead or customer-record mutation occurred. Confirm privacy text, pricing exclusions, screenshots/customer permissions and account access as listed in the release plan. Article dates are source publication fields: align new posts with the actual release date if deployment is later.
+
+REPRODUCE
+Use the project's existing locked dependencies, then npm run test:seo, npm run test:demo, npm run test:integrations, npm run lint and npm run build. Start the production server locally and run npm run check:seo with SEO_BASE_URL set to that origin. The checker derives its expected route list from the source sitemap rather than a fixed numeric total.

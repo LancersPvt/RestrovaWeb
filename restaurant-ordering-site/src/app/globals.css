@@ -436,3 +436,18 @@ body {
   color: var(--brand-amber);
   text-decoration-color: var(--brand-coral);
 }
+/* Shared commercial pages retain the existing coral, cream and charcoal palette. */
+.seo-content { line-height: 1.8; }
+.seo-content h2 { font-size: clamp(1.4rem, 2.5vw, 2rem); font-weight: 800; line-height: 1.25; letter-spacing: -.025em; }
+.seo-content h3 { font-size: 1.2rem; font-weight: 750; line-height: 1.4; }
+.seo-content a:not(.seo-button) { text-decoration: underline; text-underline-offset: .22em; font-weight: 650; }
+.seo-card { padding: clamp(1.25rem, 3vw, 2rem); border: 1px solid #17181624; border-radius: 1.75rem; background: white; }
+.seo-button { display: inline-flex; align-items: center; justify-content: center; min-height: 3rem; padding: .8rem 1.6rem; border-radius: 9999px; background: #c2412d; color: white; font-weight: 800; line-height: 1.5; text-align: center; }
+.seo-button:hover { background: #a73524; }
+:where(a, button, input, select, textarea, summary):focus-visible { outline: 3px solid #a73524; outline-offset: 4px; }
+.skip-link { position: fixed; top: .5rem; left: .5rem; z-index: 100; padding: .8rem 1rem; background: #fff; color: #171816; border: 2px solid #171816; transform: translateY(-200%); }
+.skip-link:focus { transform: translateY(0); }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+  .scroll-fade-in, .scroll-slide-left, .scroll-slide-right { opacity: 1; transform: none; }
+}

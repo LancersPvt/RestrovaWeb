@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-02",
+  "pages": {
+    "/": "Preserved primary restaurant-management intent and current layout; added useful business-type links.",
+    "/about": "Preserved approved operator/address, AboutPage schema and absolute title override. No invented company history.",
+    "/services": "Preserved six-product overview and SoftwareApplication; linked four distinct restaurant-type workflows.",
+    "/services/restaurant-pos": "Preserved counter/online workflow, buyer FAQs and device caveats; linked new operations/cost guides and relevant business pages.",
+    "/services/restaurant-ordering-apps": "Preserved app scope and public examples; linked cost, launch and app-evaluation articles.",
+    "/services/restaurant-ordering-websites": "Preserved mobile ordering and scope questions; linked channel comparison, first-launch and vendor-comparison guides.",
+    "/services/inventory-management": "Preserved stock/availability scope; linked complete inventory routine and business workflows.",
+    "/services/delivery-management": "Preserved Fleet/assignment/tracking/settlement scope; linked full rider guide and delivery business workflows.",
+    "/services/reporting-analytics": "Preserved sales/reporting limitations; linked multi-branch planning and relevant business pages.",
+    "/pricing": "Preserved calculator and fee formula; linked broader total-cost and app-budget guides.",
+    "/apps": "Preserved customer/Admin/Fleet distinction, checked seven store URLs; linked launch/ownership/cost guides.",
+    "/faq": "Existing helpful questions and demo CTA retained; no duplicate FAQ article or fabricated rich-result eligibility.",
+    "/blog": "Integrated 14 articles, grouped navigation, descriptive metadata and complete required-topic coverage.",
+    "/locations": "Retained nine-city planning resource; added branch guide links without new doorway URLs.",
+    "/compare-marketplaces": "Retained commercial overview; linked in-depth Foodpanda example at its existing article URL.",
+    "/contact": "Preserved form, company identity, qualification and demo-request semantics; tested existing flow offline.",
+    "/solutions/cafes": "New: drink choices, counter/pickup handoffs, availability and repeat ordering.",
+    "/solutions/cloud-kitchens": "New: direct demand, preparation/dispatch boundaries, availability and settlement; multi-brand not assumed.",
+    "/solutions/fast-food-restaurants": "New: simultaneous channels, item choices, takeaway/dispatch and closing; no speed guarantee.",
+    "/solutions/multi-branch-restaurants": "New: menu differences, destination, access/stock questions, reporting and staged rollout.",
+    "/customers": "Evaluated and deferred; /apps already holds evidence. Need consented case studies/outcomes for a distinct customer page."
+  }
+}

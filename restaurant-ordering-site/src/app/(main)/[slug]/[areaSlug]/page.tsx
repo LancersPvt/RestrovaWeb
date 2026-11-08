@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import Script from "next/script";
+import JsonLd from "@/components/JsonLd";
 import type { Metadata } from "next";
 
 import { fetchActiveTenants, TenantConfig } from "@/data/tenantsData";
@@ -9,13 +9,7 @@ import { siteConfig } from "@/lib/site";
 
 export const revalidate = 3600; // Revalidate cache every hour
 
-function cleanSlug(text: string): string {
-    return text
-        .toLowerCase()
-        .replace(/[^a-z0-9\s-]/g, "")
-        .trim()
-        .replace(/\s+/g, "-");
-}
+
 
 interface ListingPageProps {
     params: Promise<{ slug: string; areaSlug: string }>;
@@ -69,74 +63,13 @@ function generateRestaurantSeoText(
     let cuisineStr = categoryNames.slice(0, 3).join(", ");
     if (!cuisineStr) cuisineStr = "quality food specialties";
 
-    return `Looking to order food online from ${name} in ${areaLabel}? Get fresh ${cuisineStr} delivered directly to your doorstep from their branch at ${address}. By ordering directly through the Restrova network, you support local businesses, skip high third-party marketplace commissions, and enjoy faster delivery within a ${deliveryRadius || 3}km service radius.`;
+    return `Looking to order food online from ${name} in ${areaLabel}? Get fresh ${cuisineStr} delivered directly to your doorstep from their branch at ${address}. Check the restaurant’s current service area and ordering arrangements before placing an order${deliveryRadius > 0 ? `; the published delivery radius is ${deliveryRadius}km` : ""}.`;
 }
 
 /* ─────────────────────────────────────────────────────────────
    Static Params
    ───────────────────────────────────────────────────────────── */
-export async function generateStaticParams() {
-    const paths: { slug: string; areaSlug: string }[] = [];
-
-    try {
-        const tenants = await fetchActiveTenants();
-        for (const tenant of tenants) {
-            const [branches, categories] = await Promise.all([
-                fetchBranches(tenant.id),
-                fetchMenuCategories(tenant.id)
-            ]);
-
-            for (const branch of branches) {
-                if (!branch.isActive) continue;
-
-                const addressLower = branch.address.toLowerCase();
-                const nameLower = branch.name.toLowerCase();
-                
-                // Extract city
-                let city = "rawalpindi"; // default fallback
-                const cities = ["lahore", "karachi", "rawalpindi", "islamabad", "singapore", "central"];
-                for (const c of cities) {
-                    if (addressLower.includes(c) || nameLower.includes(c)) {
-                        city = c;
-                        break;
-                    }
-                }
-
-                // Extract area
-                let area = "commercial-market"; // default fallback
-                const areas = ["gulberg", "clifton", "dha", "johar-town", "bahria-town", "commercial-market", "range-road"];
-                for (const a of areas) {
-                    const normArea = a.replace("-", " ");
-                    if (addressLower.includes(a) || addressLower.includes(normArea) || nameLower.includes(a) || nameLower.includes(normArea)) {
-                        area = a;
-                        break;
-                    }
-                }
-
-                // Push general area route path
-                paths.push({
-                    slug: city,
-                    areaSlug: `best-restaurants-in-${area}`,
-                });
-
-                // Push cuisine-specific route paths
-                for (const cat of categories) {
-                    if (cat.isActive && cat.items && cat.items.length > 0) {
-                        const cuisine = cleanSlug(cat.name);
-                        paths.push({
-                            slug: city,
-                            areaSlug: `best-${cuisine}-restaurants-in-${area}`,
-                        });
-                    }
-                }
-            }
-        }
-    } catch (error) {
-        console.error("[SEO Engine] Error generating dynamic static params:", error);
-    }
-
-    return paths;
-}
+export async function generateStaticParams() { return []; }
 
 /* ─────────────────────────────────────────────────────────────
    Metadata Generation (SEO Optimized)
@@ -154,12 +87,12 @@ export async function generateMetadata({ params }: ListingPageProps): Promise<Me
     const cuisineLabel = parsed.cuisine ? formatSlugLabel(parsed.cuisine) : "";
 
     const title = parsed.cuisine
-        ? `Order Online: Best ${cuisineLabel} Restaurants in ${areaLabel}, ${cityLabel}`
-        : `Order Online: Best Restaurants in ${areaLabel}, ${cityLabel} | Direct Delivery`;
+        ? `Order Online: ${cuisineLabel} Restaurants in ${areaLabel}, ${cityLabel}`
+        : `Order Online: Restaurants in ${areaLabel}, ${cityLabel} | Direct Delivery`;
 
     const description = parsed.cuisine
-        ? `Order food online from the best ${cuisineLabel.toLowerCase()} restaurants in ${areaLabel}, ${cityLabel}. View direct menus, addresses, contact details, and save on fees.`
-        : `Find and order online from top-rated local restaurants in ${areaLabel}, ${cityLabel}. Skip third-party app commissions and order direct for swift delivery.`;
+        ? `Order food online from the ${cuisineLabel.toLowerCase()} restaurants in ${areaLabel}, ${cityLabel}. View direct menus, addresses, contact details, and check the restaurant details.`
+        : `Find and order online from restaurants with published information in ${areaLabel}, ${cityLabel}. Review the published branch and menu details before ordering.`;
 
     const canonicalUrl = `${siteConfig.url}/${slug}/${areaSlug}`;
 
@@ -182,7 +115,7 @@ export async function generateMetadata({ params }: ListingPageProps): Promise<Me
             description,
         },
         robots: {
-            index: true,
+            index: false,
             follow: true,
         },
     };
@@ -233,13 +166,9 @@ export default async function ListingPage({ params }: ListingPageProps) {
             const cityLower = slug.toLowerCase();
             const areaLower = parsed.area.toLowerCase();
 
-            // Check if address or branch name contains city name, or use default fallback for Islamabad/Rawalpindi tests
-            const matchesCity = addressLower.includes(cityLower) || 
-                                nameLower.includes(cityLower) ||
-                                cityLower.includes("singapore") || 
-                                cityLower.includes("central") ||
-                                (cityLower === "rawalpindi" && (addressLower.includes("jazeera") || addressLower.includes("shalley") || addressLower.includes("range") || nameLower.includes("commercial")));
-                                
+            // Only match a location actually present in the published data.
+            const matchesCity = addressLower.includes(cityLower) || nameLower.includes(cityLower);
+
             // Check if address or branch name contains area name
             const matchesArea = addressLower.includes(areaLower) || 
                                 addressLower.includes(areaLower.replace("-", " ")) ||
@@ -308,9 +237,9 @@ export default async function ListingPage({ params }: ListingPageProps) {
         "@context": "https://schema.org",
         "@type": "ItemList",
         "name": cuisineLabel
-            ? `Best ${cuisineLabel} Restaurants in ${areaLabel}, ${cityLabel}`
-            : `Best Restaurants in ${areaLabel}, ${cityLabel}`,
-        "description": `List of top vetted restaurants in ${areaLabel}, ${cityLabel}.`,
+            ? `${cuisineLabel} Restaurants in ${areaLabel}, ${cityLabel}`
+            : `Restaurants in ${areaLabel}, ${cityLabel}`,
+        "description": `List of restaurants with published information in ${areaLabel}, ${cityLabel}.`,
         "numberOfItems": matchedRestaurants.length,
         "itemListElement": matchedRestaurants.map((item, index) => ({
             "@type": "ListItem",
@@ -347,18 +276,10 @@ export default async function ListingPage({ params }: ListingPageProps) {
     };
 
     return (
-        <main className="bg-slate-50 min-h-screen text-slate-800 pb-20">
+        <main id="main-content" className="bg-slate-50 min-h-screen text-slate-800 pb-20">
             {/* JSON-LD Schemas */}
-            <Script
-                id="ld-item-list"
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
-            />
-            <Script
-                id="ld-breadcrumb-list"
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
-            />
+            <JsonLd data={itemListJsonLd} />
+            <JsonLd data={breadcrumbJsonLd} />
 
             {/* ── Transactional Hero ── */}
             <section className="relative overflow-hidden bg-gradient-to-br from-[#FFF5E6] via-[#F8E9D0] to-[#FFE5D9] py-16 sm:py-20 border-b border-orange-100">
@@ -380,14 +301,14 @@ export default async function ListingPage({ params }: ListingPageProps) {
 
                     <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl leading-tight">
                         {cuisineLabel ? (
-                            <>Order Online: Best <span className="text-[#FF6B6B]">{cuisineLabel}</span> in {areaLabel}</>
+                            <>Order Online: <span className="text-[#FF6B6B]">{cuisineLabel}</span> in {areaLabel}</>
                         ) : (
-                            <>Best Restaurants for Delivery in <span className="text-[#FF6B6B]">{areaLabel}</span></>
+                            <>Restaurants for Delivery in <span className="text-[#FF6B6B]">{areaLabel}</span></>
                         )}
                     </h1>
                     
                     <p className="mx-auto mt-6 max-w-3xl text-base sm:text-lg text-gray-600 leading-relaxed font-medium">
-                        Order food directly from the best kitchens in {areaLabel}, {cityLabel}. Browse live menus, check active delivery coverage, get exact branch locations, and order online without middleman markups.
+                        Order food directly from the kitchens in {areaLabel}, {cityLabel}. Browse live menus, check active delivery coverage, get exact branch locations, and order online without middleman markups.
                     </p>
                 </div>
             </section>

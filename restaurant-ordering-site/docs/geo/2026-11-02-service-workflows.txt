@@ -1,0 +1,78 @@
+RESTROVA — POS, INVENTORY AND DELIVERY SERVICE UPDATE
+Reviewed 2 November 2026. Local repository implementation; not deployed.
+
+SCOPE AND AUDIT
+The existing six-service route is statically generated. The three requested pages already had distinct H1s, introductory product descriptions, four-step workflows, feature sections, buying checklists, demo questions, FAQs, pricing and related links. They used self-canonical production URLs, SoftwareApplication and BreadcrumbList JSON-LD, plus the site's shared identity graph.
+The missing detail was the operational handoff between ordering, stock decisions, preparation, dispatch and settlement. Inventory lacked a contextual delivery link, and delivery lacked a contextual inventory link. The new content fills those gaps without replacing existing sections.
+Public service-page retrieval through the browsing tool was unavailable during this review; the audit and validation use the current repository and its local production build. User-reported ChatGPT Search results are context, not independently reproduced measurements.
+
+IMPLEMENTATION
+1. POS: concurrent pickup/app order example, availability check, kitchen handoff, dispatch, unavailable-item exception and three problem/evaluation/demo checks.
+2. Inventory: shortage during service, stock-to-menu decision, accepted-order response, packing handoff, cancellation/stock correction exception and three evaluation checks.
+3. Delivery: preparation-to-packing-to-rider workflow, ownership at each handoff, interrupted tracking/permissions scenario, and assignment/tracking/settlement evaluation checks.
+4. All three: links among the requested service pages and to pricing, FAQ, apps, About and Contact; affordability framed through the existing sales-based fee and agreed operating scope.
+5. POS only: one practical paragraph asking a Chakwal restaurant to bring its real branch address, delivery areas, connectivity and devices. No new city page or local-office/customer claim.
+6. Server components and plain links/HTML. No client bundle, dependency, form, pricing logic, global style or route changes. Existing content objects are identical except the intended title and description fields.
+
+MODIFIED FILES FOR THIS INCREMENT
+src/app/(main)/services/[service]/page.tsx — render the additions on three routes, add section navigation and visible-feature schema.
+src/data/solutions.ts — two titles and three descriptions revised; existing inventory title retained after review.
+src/data/serviceOperations.ts — new typed, page-specific handoffs and evaluation content.
+src/components/ServiceOperations.tsx — new server-rendered workflow and evaluation sections using existing design classes.
+src/tests/test_seo.mjs — service server-rendering, contextual links, canonical preservation and visible schema-feature regression checks.
+scripts/check-seo.mjs — built-page crawler checks for new sections, main-content links and schema/content consistency.
+docs/geo/2026-11-02-service-workflows.txt — this audit, release and evidence handoff.
+Earlier uncommitted SEO work is preserved. This increment is not a replacement for the earlier implementation report.
+
+METADATA (FINAL HTML TITLE INCLUDES THE EXISTING RESTROVA SUFFIX)
+/services/restaurant-pos
+Title: Restaurant POS with Inventory & Delivery in Pakistan | Restrova
+Description: Connect counter and online orders with inventory checks, preparation and live rider tracking in Restrova. Explore the workflow and book a demo in Pakistan.
+Canonical unchanged: https://www.restrova.com/services/restaurant-pos
+
+/services/inventory-management
+Title: Restaurant Inventory Management Software Pakistan | Restrova
+Description: Manage restaurant stock and menu availability alongside POS orders and delivery in Restrova. See inventory handoffs and what to test in a live demo.
+Canonical unchanged: https://www.restrova.com/services/inventory-management
+
+/services/delivery-management
+Title: Restaurant Delivery & Live Rider Tracking Pakistan | Restrova
+Description: Follow restaurant orders from preparation to rider assignment, live tracking and settlement with Restrova Fleet in Pakistan. Review the delivery demo checklist.
+Canonical unchanged: https://www.restrova.com/services/delivery-management
+
+Open Graph and Twitter inherit the revised titles/descriptions through the existing helper. Existing social images, indexing rules, H1s, canonical origin and sitemap membership are preserved.
+
+STRUCTURED DATA
+Existing SoftwareApplication IDs, names, URLs, descriptions, BusinessApplication category and provider references remain unchanged. Only featureList is added on these three pages; values are derived directly from the existing visible feature bullets:
+POS: Walk-in and POS order entry; Website and customer-app orders; Order and preparation statuses in Admin.
+Inventory: Inventory and stock management; Item availability controls; Stock visibility alongside restaurant operations.
+Delivery: Rider assignment and delivery statuses; Live rider tracking for administrators and customers; Rider performance statistics and payment reconciliation.
+No reviews, aggregateRating, screenshots, videos, offers or artificial FAQ rich-result markup added.
+Validation: JSON parsing, property domain/range checks against the official downloaded Schema.org vocabulary, inherited SoftwareApplication/CreativeWork/Thing properties, provider reference resolution, unique IDs and matching visible text all passed. Existing BreadcrumbList and shared Organization/Brand/WebSite checks passed in the built-site crawl.
+This is a vocabulary/content validation, not a remote Schema.org Validator or Google Rich Results Test result. Valid Schema.org markup does not establish rich-result eligibility or indexing.
+Sources reviewed:
+https://schema.org/SoftwareApplication
+https://schema.org/featureList
+https://schema.org/provider
+Vocabulary used: https://schema.org/version/latest/schemaorg-current-https.jsonld
+
+VALIDATION
+PASS npm run lint.
+PASS npm run test:seo, including the new service rendering checks and all 552 existing geography/service URL metadata cases.
+PASS npm run test:demo, using offline fixtures for qualification, session, scheduling acknowledgement and CRM behavior. Expected simulated error logs were part of negative tests; no live enquiry was submitted.
+PASS npm run test:integrations, using offline fixtures. Existing Node url.parse deprecation warning remains.
+PASS npm run build -- --webpack: compilation, TypeScript and all 70 generated pages.
+BUILD LIMITATION: the initial npm run build (Turbopack) failed in the pre-existing /links/topspice next/font Cormorant Garamond import: "next/font/google queries have exactly one entry" when processing a Google font URL with query parameters. The Webpack production compiler passed without changing the fonts, page or build script. The default Turbopack failure remains a build-environment/compiler issue to verify before deployment; use the passing command above for this release if needed.
+PASS npm run check:seo against that production build: 35 curated routes, 204 internal links/anchors, unique metadata, production canonicals, one H1, JSON-LD, noindex utilities and 404 behavior.
+PASS nine responsive checks: each target page at 360, 390 and 1440 CSS pixels in desktop Chrome, no horizontal overflow or browser runtime/hydration errors; section navigation and native FAQs work; mobile menu opens/closes.
+PASS three pages with JavaScript disabled; both new sections and contact links remain available.
+PASS nine local HTTP requests using Googlebot, OAI-SearchBot and bingbot user agents; new content appears in the HTML. These do not verify production CDN rules or access from real crawler IPs.
+Visual review: existing cream/charcoal/coral styling, cards and typography retained. Actual viewport captures checked; full-page screenshots can show offscreen fixed elements, so viewport captures are the review evidence. Screenshots depict the marketing website, not the restaurant product.
+Tests ran on a protected staging copy with the same dependency/configuration inputs. Only the seven reviewed files are copied into the requested repository after conflict and hash checks. Pricing and demo form source files are unchanged by this increment.
+
+REMAINING EVIDENCE AND POST-DEPLOYMENT WORK
+No approved operational screenshots or video demonstrations were available. None were fabricated or added. Capture an approved, anonymized sample order across POS, stock, dispatch, tracking and settlement; retain product version/date and permission records before publication.
+Detailed automatic stock deductions/reversals, recipes, expiry, transfers, printers/KDS, offline behavior, tax/payment/accounting integrations, tracking freshness and permission behavior still need product demonstrations. New text presents these as evaluation questions, not included capabilities or guaranteed outcomes.
+Confirm Chakwal onboarding/support and actual coverage for the requesting restaurant. No verified Chakwal deployment/customer story was supplied. Existing national positioning does not prove every local operating arrangement.
+No independent post-deployment Search Console, Bing, server-log or ChatGPT Search testing was performed. No ranking, citation, traffic, lead or sales improvement is claimed.
+After deployment: inspect these exact URLs and canonicals in the available search tools; confirm production HTML and crawler access; run the same four query groups (branded apps; POS + inventory + live rider tracking; Chakwal restaurant software; affordable restaurant software) in fresh Search-enabled conversations with the same locale and wording. Save exact prompts, dates, complete answers and cited URLs. Distinguish brand mention from citation and a useful relevant citation from a mere mention. Repeat on comparable dates before attributing any change to this release.

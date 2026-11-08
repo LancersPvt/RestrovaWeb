@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-02",
+  "evidence": [
+    {
+      "claim": "Restrova pricing and core product scope",
+      "source": "User-supplied SEO brief; src/lib/pricing.ts; src/data/solutions.ts; src/data/solutionGuides.ts",
+      "status": "Confirmed in supplied material and current repository; live homepage consistent"
+    },
+    {
+      "claim": "Legal operator and Rawalpindi postal address",
+      "source": "src/lib/business-identity.ts (owner confirmation recorded 27 Oct 2026)",
+      "status": "Retained; privacy policy still requires separate approval"
+    },
+    {
+      "claim": "Customer/Admin app listing reachability",
+      "source": "2026-11-02-live-audit.json",
+      "status": "All seven existing Google/Apple listing URLs returned HTTP 200; reachability does not prove every feature or customer outcome"
+    },
+    {
+      "claim": "Foodpanda fee packages vary; quote shown during registration",
+      "source": "https://partner.foodpanda.pk/en",
+      "status": "Official source checked 2 Nov 2026; no numeric Foodpanda fee asserted"
+    },
+    {
+      "claim": "Apple account enrolment, identity and membership responsibilities",
+      "source": "https://developer.apple.com/programs/enroll/",
+      "status": "Official source checked 2 Nov 2026; no fixed PKR account price asserted"
+    },
+    {
+      "claim": "Google account setup, verification and applicable testing requirements",
+      "source": "https://support.google.com/googleplay/android-developer/answer/6112435",
+      "status": "Official source checked 2 Nov 2026; no launch timing guarantee"
+    },
+    {
+      "claim": "Store completeness and accurate release information",
+      "source": "https://developer.apple.com/app-store/review/guidelines/",
+      "status": "Official source checked 2 Nov 2026; approval never guaranteed"
+    },
+    {
+      "claim": "Article schema should represent actual article metadata",
+      "source": "https://developers.google.com/search/docs/appearance/structured-data/article",
+      "status": "Official guidance checked; generic social image retained, no fabricated product screenshots"
+    },
+    {
+      "claim": "Lighthouse is a lab audit; INP covers actual interactions over a visit",
+      "source": "https://developer.chrome.com/docs/lighthouse/overview/ ; https://web.dev/articles/inp",
+      "status": "Measured lab results must not be represented as field Core Web Vitals"
+    }
+  ],
+  "unverified": [
+    "Tax treatment and exclusions",
+    "Payment and app-account fees in Restrova proposals",
+    "Unlimited branches or specialist access/transfer functions",
+    "Hardware/offline/fiscal integrations",
+    "Live product screenshots and approved customer outcomes",
+    "Keyword volumes/difficulty/CPC/current rankings",
+    "GSC/GA4/CRM account metrics"
+  ]
+}

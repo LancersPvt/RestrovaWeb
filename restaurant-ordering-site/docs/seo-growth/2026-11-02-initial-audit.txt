@@ -1,0 +1,61 @@
+RESTROVA INITIAL SEO AUDIT — 2 NOVEMBER 2026 (Pakistan)
+Scope: user-supplied complete SEO brief; attachment ends mid-sentence after the article-draft instruction. No later requirements were assumed.
+Repository: D:\Project\Restrova\Website\RestrovaWeb\restaurant-ordering-site
+Baseline: 4cfe733, clean Git working tree. Inspection performed before implementation. A source-only working copy is used for validation; secrets and generated files are excluded.
+
+ALREADY IMPLEMENTED AND WORKING IN SOURCE
+- Next.js 16.1.6, React 19.2.3, TypeScript, App Router with (main) marketing layout. Existing design, components and dependency versions are suitable for extending.
+- Central Metadata API helpers force https://www.restrova.com. Host/protocol redirects, Vercel preview noindex headers, production robots/sitemap references and escaped JSON-LD already exist.
+- 22 curated sitemap URLs: 11 static pages, six product solutions and five articles. Dates come from article records, not build time.
+- Six product pages have distinct workflows, FAQs, related links, demo CTAs and SoftwareApplication schema without fabricated offers/reviews. Organization, Brand, WebSite, BreadcrumbList and BlogPosting are present.
+- Pricing helper uses max(5000, processed sales * 0.01), separate PKR 10,000 onboarding; calculator and boundary tests exist.
+- 552 legacy service/location combinations remain crawlable, self-canonical and noindex; they are not prebuilt or included in sitemap. Consumer listings, tenant/branch pages, industry stubs, app-link utilities and demo pages are also excluded.
+- General software and POS buying guides already cover required topics 1 and 2. Marketplace article addresses topic 4 but needs a fuller comparison and explicit cost assumptions. Two additional articles cover app evaluation and loyalty.
+- Homepage, About, Services, six solutions, Pricing, Apps, FAQ, Blog, Locations, comparison and Contact already cover their core buying intents. Improve internal discovery rather than replacing useful copy.
+- Owner-confirmed legal operator and Rawalpindi postal address live in business-identity.ts. Footer/About/Contact use this identity. Existing documents record the hybrid office/customer-visit business model; do not repeat that question.
+- Demo intake -> qualification -> scheduling preference -> thank-you is implemented. Meta Lead is emitted only after acknowledged scheduling storage. Requested time is not a confirmed meeting. Offline regression tests cover funnel/API/Apps Script behavior.
+- Native details mobile navigation, image dimensions, responsive image sizes and next/font display swap already exist.
+
+EXISTING BUT REQUIRING IMPROVEMENT
+- ArticleBody only renders internal Markdown links: authoritative external references would appear as literal text. Add strictly allowed HTTPS links while preserving React escaping.
+- The shared About entry includes the brand, but the About route already overrides it with an absolute title; rendered metadata must be checked before treating this as a duplicate-title defect. Preserve the current override.
+- test:seo and check:seo hard-code 22 sitemap entries. Replace with actual curated expected routes and validate new article/business-page contracts.
+- Existing comparison article is 385 words and lacks Foodpanda-specific source verification and worked full-cost examples. Keep its existing URL and improve it.
+- Related article lists show every post; as the library grows, select a small relevant group. Blog hub needs categories and meaningful entry points.
+- Historical growth docs describe planned drafts as unpublished. Preserve the dated documents, add a current status manifest and clearly point readers to it.
+- Older client-data includes unsupported numeric ratings; the homepage only uses logos, but an unused ClientCard can render stars. Remove unsupported rating data and presentation so it cannot accidentally be reused as social proof.
+
+MISSING AND READY TO IMPLEMENT
+- Complete articles for app cost, inventory routines, rider management, starting online ordering, POS/manual billing, multi-branch operations, software cost comparison, app launch and ordering-system comparison.
+- Four differentiated business workflows: cafes, delivery-only kitchens, fast-food counters and multi-branch management. Existing industry stubs stay noindex; new pages must contain distinct practical evaluation tasks.
+- Central keyword/intent map with unknown metrics explicitly null, authoritative source ledger, publication manifest, current page-by-page disposition and verification handoff.
+- /customers evaluated: defer. Existing /apps already provides public examples, while an outcome/case-study page needs permission and real evidence. Do not duplicate the directory.
+
+REQUIRING EXTERNAL ACCESS
+- Search Console verification/indexing/canonical selection, query/page exports and sitemap submission; GA4/GTM property and consent configuration; CRM attribution and confirmed-demo/customer outcomes.
+- Actual Pakistan keyword volume/KD/CPC from an authenticated database/export. No such data is available. GSC impressions cannot substitute for market volume.
+- Business Profile ownership/verification, authorized directory/profile changes and outreach. No messages or submissions are authorized by this repository task.
+- Production deployment and post-release field monitoring. Source changes are not proof of indexing or ranking.
+
+REQUIRING BUSINESS-OWNER CONFIRMATION
+- Taxes, payment-provider charges, store-account costs, branch pricing scope, refund/cancellation sales treatment, billing start, support commitments and exclusions.
+- Real current product screenshots and permission to publish; hero-mockup.png is explicitly illustrative, not product evidence. Existing logo/app examples can be retained without inventing outcomes.
+- Privacy policy remains visibly draft/noindex. Confirm actual processors, retention, data rights and practices before finalizing; confirmed legal identity alone does not approve policy text.
+- Printer/offline/fiscal integration, recipe-level deduction, advanced permissions, inter-branch stock transfers and specialist automation remain demonstration/scope questions.
+
+LIVE COMPARISON AND MEASUREMENT LIMITS
+- Live homepage retrieved on 2 Nov 2026; its pricing, capabilities, identity, direct-ordering positioning and draft privacy notice match inspected source. This is marketing evidence, not an authenticated product test.
+- Browser search fetch could not retrieve sitemap.xml, robots.txt or blog. A direct HTTP crawl will be attempted separately and failures recorded rather than treated as site defects.
+- No current Lighthouse, CrUX, INP or ranking measurements claimed at this audit stage. Run available performance tooling after the production build.
+
+ROUTE INVENTORY
+- Static marketing: /, /about, /services, /pricing, /apps, /faq, /blog, /locations, /compare-marketplaces, /contact.
+- Product: /services/[service] for six entries in src/data/solutions.ts.
+- Articles: /blog/[slug] for five baseline blogPosts.
+- Download: /download (indexable); /privacy-policy (draft/noindex).
+- Legacy: /[slug] recognizes 552 service/city/country combinations; /[slug]/[areaSlug] resolves consumer area listings (noindex).
+- Consumer: /restaurants/[tenantSlug], /restaurants/[tenantSlug]/[branchSlug] (noindex).
+- Industry stubs: /industries/{pizza-italian,fast-food-qsr,fine-dining,bakery-cafe} (noindex).
+- App-link utilities: /links/{ashandbeans,basmafood,deliverooeats,fruitninjapakistan,mccafe,mirchandspicy,mods,thespanishpizza,topspice,wokandgrill,yumzone} (noindex).
+- Session pages: /demo/schedule, /demo/thank-you (noindex).
+- Metadata: /sitemap.xml, /robots.txt, /favicon.ico. API: /api/{contact,revalidate,demo/intake,demo/session,demo/schedule}; never in sitemap.

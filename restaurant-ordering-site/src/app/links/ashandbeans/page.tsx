@@ -1,14 +1,11 @@
 import {
-  Facebook,
   Instagram,
   Store,
   Download,
   BadgePercent,
   ArrowRight,
-  MapPin,
   MessageCircle,
   Sparkles,
-  Coffee,
   Navigation,
 } from "lucide-react";
 
@@ -32,7 +29,7 @@ const LINKS = {
   playStore:
     "https://play.google.com/store/apps/details?id=com.restrova.ashandbeans",
   appStore: "https://apps.apple.com/pk/app/ash-beans/id6759486466",
-  facebook: "https://facebook.com/YOUR_PAGE",
+  facebook: "",
   instagram: "https://instagram.com/ash_beans",
   googleMaps: "https://share.google/LmWOjk85C8nZY3Oz9",
   whatsapp: "https://wa.me/923318226835",
@@ -63,6 +60,7 @@ function LinkButton({
 
   const isLight = variant === "cream";
 
+  if (!href) return null;
   return (
     <a
       href={href}

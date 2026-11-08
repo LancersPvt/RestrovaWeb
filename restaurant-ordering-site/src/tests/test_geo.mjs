@@ -1,0 +1,42 @@
+import assert from "node:assert/strict";
+import fs from "node:fs";
+import { summarizeObservations } from "../../scripts/geo-measurement.mjs";
+import { loadSeoSource } from "../../scripts/load-seo-source.mjs";
+import { robotsAllows } from "../../scripts/check-geo-release.mjs";
+const protocol = JSON.parse(fs.readFileSync(new URL("../../docs/geo/topic-discovery-prompts.json", import.meta.url), "utf8"));
+const { buyerTopics } = loadSeoSource("src/data/buyerTopics.ts");
+assert.deepEqual(protocol.groups.map(group => group.id).sort(), buyerTopics.map(topic => topic.id).sort());
+assert.equal(new Set(protocol.groups.map(group => group.primaryUrl)).size, 8);
+const prompts = protocol.groups.flatMap(group => group.prompts);
+assert.equal(prompts.length, 24);
+assert.equal(new Set(prompts.map(prompt => prompt.id)).size, 24);
+for (const group of protocol.groups) {
+  assert.equal(group.prompts.length, 3);
+  assert.equal(group.prompts.filter(prompt => prompt.language === "ur-Latn").length, 1);
+  for (const prompt of group.prompts) assert.doesNotMatch(prompt.text, /restrova/i, "Unbranded prompt cohort");
+}
+const empty = summarizeObservations(protocol, []);
+assert.equal(empty.completedObservations, 0);
+assert.ok(empty.unmeasured.every(group => group.mentionRate === null && group.citationRate === null));
+// Synthetic fixtures test measurement behavior; these are not visibility results.
+const fixture = { roundId: "synthetic-test", phase: "baseline", promptId: prompts[0].id, prompt: prompts[0].text, repeat: 1, engine: "Synthetic test engine", model: null, locale: "Pakistan", observedAt: "2026-11-03T10:00:00+05:00", searchEnabled: true, freshConversation: true, answerText: "Test only: Restrova is mentioned.", evidence: "synthetic-fixture-not-a-search-result", citations: [] };
+assert.equal(summarizeObservations(protocol, [fixture]).rounds[0].mentionRate, 1);
+assert.equal(summarizeObservations(protocol, [fixture]).rounds[0].citationRate, 0);
+const citeOnly = { ...fixture, answerText: "Test only: https://www.restrova.com/pricing", citations: [{ url: "https://www.restrova.com/pricing", relevance: "relevant", claimSupport: "supported" }] };
+const citationMetrics = summarizeObservations(protocol, [citeOnly]).rounds[0];
+assert.equal(citationMetrics.mentionRate, 0); assert.equal(citationMetrics.citationRate, 1); assert.equal(citationMetrics.supportedRelevantCitationRate, 1);
+assert.equal(summarizeObservations(protocol, [{ ...citeOnly, citations: [{ ...citeOnly.citations[0], url: "https://www.restrova.com.example.org/pricing" }] }]).rounds[0].citationRate, 0);
+assert.equal(summarizeObservations(protocol, [{ ...citeOnly, citations: [{ ...citeOnly.citations[0], claimSupport: "unreviewed" }] }]).rounds[0].supportedRelevantCitationRate, 0);
+assert.throws(() => summarizeObservations(protocol, [fixture, fixture]), /Duplicate/);
+assert.throws(() => summarizeObservations(protocol, [{ ...fixture, searchEnabled: false }]), /Search-enabled/);
+assert.throws(() => summarizeObservations(protocol, [{ ...fixture, prompt: "A different prompt" }]), /exact recorded prompt/);
+assert.throws(() => summarizeObservations(protocol, [{ ...fixture, phase: "post-deployment" }]), /release, crawl and indexing/);
+assert.equal(summarizeObservations(protocol, [fixture, { ...fixture, engine: "Another synthetic engine" }]).rounds.length, 2, "Do not pool different engines");
+assert.equal(robotsAllows("User-agent: *\nDisallow: /api/\nAllow: /", "OAI-SearchBot", "/services"), true);
+assert.equal(robotsAllows("User-agent: *\nDisallow: /", "Googlebot", "/services"), false);
+assert.equal(robotsAllows("User-agent: *\nDisallow: /\nUser-agent: OAI-SearchBot\nAllow: /services", "OAI-SearchBot", "/services/restaurant-pos"), true);
+assert.equal(robotsAllows("User-agent: *\nDisallow: /services\nAllow: /services", "bingbot", "/services"), true);
+assert.equal(robotsAllows("User-agent: Googlebot\nDisallow:\nUser-agent: *\nDisallow: /", "Googlebot", "/services"), true);
+assert.equal(robotsAllows("User-agent: *\nDisallow: /*?preview=", "Googlebot", "/services?preview=1"), false);
+assert.equal(robotsAllows("User-agent: *\nDisallow: /services$", "Googlebot", "/services/restaurant-pos"), true);
+console.log("PASS: 8 intents, 24 unbranded prompts; missing-data handling, mention/citation separation, citation review, duplicate guards and release-evidence gates");

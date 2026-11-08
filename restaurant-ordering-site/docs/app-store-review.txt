@@ -1,0 +1,34 @@
+RESTROVA — APP STORE REVIEW AND PROPOSED METADATA
+Prepared 26 October 2026. No store listing was edited.
+
+Verified public Admin listing:
+https://play.google.com/store/apps/details?id=com.restrova.admin
+The listing describes an internal, role-based restaurant administration app. Public download availability does not grant account access.
+
+Suggested Google Play title: Restrova Admin
+Suggested short description: Manage restaurant orders, menus and branches with authorized staff access.
+Suggested full description:
+Restrova Admin helps restaurant owners and authorized staff manage daily operations.
+Use the tools available to your role to manage orders and status updates, maintain menus and prices, and work with branch operations. Access is restricted to authorized accounts, and the experience varies by role.
+Ask your restaurant administrator or Restrova to arrange access. This is an operations app for restaurant teams; customers should use their restaurant's branded ordering application.
+
+Access required: the existing Google Play Console app with permission to edit store presence. Publishing changes requires the owner's separate approval. Confirm screenshots, current functionality, privacy policy URL and Data Safety declarations with the product owner before submitting changes. Do not copy the website's draft policy into a final compliance statement.
+
+Client-branded app examples checked against public store pages:
+- Ash & Beans: Google Play com.restrova.ashandbeans; Apple ID 6759486466.
+- Fruit Ninja Pakistan: Google Play com.restrova.fruitninjapakistan; Apple ID 6783385415.
+- Top Spice: Google Play com.restrova.topspice; Apple ID 6796204717.
+- Other existing Google Play links verified: com.restrova.basmafood, com.restrova.deliverooeats, com.restrova.mccafe, com.restrova.mirchnspicy, com.restrova.spanishpizza, com.restrova.yumzone.
+Keep each restaurant's brand, support contact and verified service area specific to that listing. Do not use a client ordering app as the Admin or Fleet download. Placeholder Wok & Grill app links and copied Ash & Beans contact targets were removed; the real links require owner confirmation.
+
+Restrova Fleet:
+No verified public Fleet store listing was found in the website source or targeted public search. Its product capability is confirmed by the owner, but public app distribution remains unverified. The website links to the delivery solution and onboarding, not an invented store URL.
+Candidate title, only after a real listing is confirmed: Restrova Fleet
+Candidate short description, subject to a current product walkthrough: Rider assignments, delivery updates and restaurant delivery coordination.
+Required before a store submission: actual package/app ID, release/account owner, current screenshots, supported devices, precise background/foreground location behavior and approved privacy/data disclosures. App Store Connect or Google Play Console access is needed for the corresponding platform. No Admin iOS or Fleet availability was invented.
+
+Desktop Admin:
+The three existing Windows/macOS download URLs responded HTTP 200 to HEAD requests. No executable was downloaded or run. Signing, installer integrity, installation and OS compatibility were not validated here.
+
+Screenshots:
+The website reuses its existing product overview with explicit descriptive alt text and dimensions. No fabricated product UI or unverified screenshots were generated. Replace or extend it with current owner-approved in-app screenshots after a product walkthrough.

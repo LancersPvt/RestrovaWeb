@@ -1,0 +1,78 @@
+RESTROVA — TOPIC-LEVEL GEO AUDIT AND IMPLEMENTATION
+3 November 2026. Repository baseline: commit 6af8ad7. Local changes; no deployment performed.
+
+AUDIT BEFORE IMPLEMENTATION
+The repository already contained 35 curated sitemap URLs: 11 general pages, six service pages, four business-type pages and 14 guides. Existing service pages had distinct canonicals, server-rendered content and FAQs. The previous POS/inventory/delivery handoff work was present and has been retained.
+The broad management, app, website, POS, inventory, rider, multi-branch and pricing intents already had useful destinations. The main gap was orientation and the relationship between these destinations, especially choosing website versus app, connecting branch operations to customer channels, and answering common questions in Roman Urdu.
+Decision: no new online-ordering page. Expand /services/restaurant-ordering-websites as the commercial direct-ordering destination. No new route, phrase page or city page was created. The sitemap stays at 35 URLs; the 552 legacy geography/service combinations stay noindex.
+Preserve the earlier keyword-map role of / as the broad restaurant-management overview. /services is the workflow directory and operational walkthrough. /services/restaurant-ordering-apps handles app buying/launch scope; /apps handles roles, access and listing evidence. /pricing owns the fee formula, while the existing cost guides explain comparison and planning. /compare-marketplaces covers channel trade-offs. These distinct roles avoid creating competing versions of the same answer.
+
+LIVE BASELINE AND DEPLOYMENT GAP
+Direct public HTTP checks returned 200 for the homepage, Services, six relevant commercial/support pages, FAQ, Apps, robots.txt and sitemap.xml. The live sitemap had 22 entries. /solutions/multi-branch-restaurants returned 404, although it exists in the repository and local build. The live pages did not contain the prior connected-workflow sections or the new topic directory. Public headers identified Vercel.
+The final release checker also reports PENDING for production (22/35 sitemap entries and missing release content), while passing against the local production build (35/35). This is a deployment gap, not evidence of a search ranking decline. No production release, search-account indexing result or post-deployment AI answer was claimed.
+
+CONTENT IMPLEMENTED
+- An eight-topic directory on /services, linking existing primary/support pages and one existing guide per topic.
+- A four-stage order walkthrough on /services, linking customer channels, POS, stock, Fleet, reporting and branches.
+- Website/app choice guidance on both existing ordering pages, with realistic launch and operational scope questions.
+- Seven Roman Urdu answers on /faq, tagged ur-Latn, alongside all existing English answers and a new website-versus-app answer. The Roman Urdu price answer uses the existing pricing constants.
+- Contextual links between pricing, branch setup, ordering channels, the FAQ and the buyer-topic directory. The multi-branch page now links website, app and delivery pages as well as POS, stock and reporting.
+- Clear instructions on /apps for evaluating the existing public app listings and checking current workflows in a demo.
+- Metadata revised only for /services, /faq and /services/restaurant-ordering-websites. Existing canonical URLs, page H1s, price formula, forms, integrations and business identity remain intact.
+- No new dependency, generated product screenshot, testimonial, ranking, endorsement, integration claim or customer outcome.
+
+METADATA
+/services
+Title: Restaurant Software Solutions & Workflows Pakistan | Restrova
+Description: Explore direct ordering, branded apps, POS, inventory, rider tracking and branch operations. Find the Restrova workflow and pricing questions for your restaurant.
+Canonical: https://www.restrova.com/services
+
+/services/restaurant-ordering-websites
+Title: Direct Online Ordering for Restaurants in Pakistan | Restrova
+Description: Start direct restaurant orders with a branded website in Pakistan. Compare website and app journeys, preparation, delivery and the full software cost.
+Canonical: https://www.restrova.com/services/restaurant-ordering-websites
+
+/faq
+Title: Restaurant Software FAQs: English & Roman Urdu | Restrova
+Description: Answers in English and Roman Urdu about direct ordering, restaurant apps, POS, inventory, rider tracking, branches and Restrova's published pricing in Pakistan.
+Canonical: https://www.restrova.com/faq
+
+Open Graph and Twitter use the same updated title/description values through the existing helper. No translated URL or hreflang alternate was invented for the same-page Roman Urdu answers.
+
+STRUCTURED DATA
+Added one ItemList on /services matching the eight visible topic entries, with ListItem names, positions and destination URLs. It is explicitly unordered rather than a software ranking. Existing SoftwareApplication, BreadcrumbList and Organization/Brand/WebSite objects remain in place.
+Passed official Schema.org vocabulary checks for property domains, inherited properties, value ranges, ListItem values and provider references; topic labels/URLs match visible links. The built-site crawl also checks JSON parsing, unique IDs and the earlier visible featureList values. This was a local vocabulary/content check, not a remote validator or rich-result eligibility claim. No FAQPage, rating or review markup was added.
+
+PRODUCT EVIDENCE
+All five existing app-store links for Ash & Beans, Yum Zone and Top Spice returned HTTP 200 on 3 November. Public Google Play listings for Ash & Beans and Yum Zone were also reviewed; Apple page titles identified the Ash & Beans and Top Spice listings. These show published apps/listing reachability, not universal feature support, endorsements or sales outcomes. Existing store screenshots remain accessible through the official listings; no product media was fabricated or copied into the website.
+An approved, anonymized current POS-to-stock-to-Fleet demonstration is still needed before adding operational screenshots or video. Detailed stock automation, integration, device, offline, branch-scope and tracking-behavior questions remain explicitly subject to demonstration and agreement.
+
+VALIDATION
+PASS standard npm run build (Next.js 16.1.6 Turbopack): compilation, TypeScript and 70 generated pages. The font error observed on 2 November did not recur on this run; no font or build-compiler workaround was committed.
+PASS npm run lint after correcting three JSX apostrophes without changing displayed wording.
+PASS npm run test:seo, including existing pricing/identity/552 legacy URL checks, plus eight topic destinations, visible ItemList, seven Roman Urdu answers and connected ordering pages.
+PASS npm run test:geo: 24 unbranded prompts in eight groups, missing-data handling, mention/citation separation, citation review, duplicate guards, cohort separation, release-evidence gates and robots-rule checks.
+PASS npm run test:demo and npm run test:integrations using offline fixtures. Expected simulated failure logs belong to negative tests. The existing url.parse deprecation warning remains. No live enquiry or CRM record was submitted.
+PASS npm run check:seo against the final production build: 35 routes, 212 internal links/anchors, unique metadata, canonicals, single H1, JSON-LD, noindex utilities and 404 behavior.
+PASS check:geo-release against local production: 11 primary/support pages and the 35-entry sitemap match the expected release. Indexing remains explicitly unverified.
+PASS 30 responsive checks: 15 pages at 390 and 1440 CSS pixels; no horizontal overflow or browser runtime/hydration errors. Three key pages also passed at 360 pixels with JavaScript disabled. Native FAQ disclosures, mobile navigation and the 800,000 sales -> 8,000 monthly-fee calculator behavior passed.
+Browser checks use desktop Chrome viewport emulation, not physical devices; external tracking is blocked. Screenshots show the marketing website, not product software demonstrations.
+The tested staging source is copied to the requested repository only after current-file hash/conflict checks. Pricing logic, form/API source, sitemap generation and deployment configuration are unchanged.
+
+REPRODUCIBLE FOLLOW-UP
+topic-architecture.json records primary pages, workflow entry points and supporting guides.
+topic-discovery-prompts.json freezes 24 unbranded prompts: two English and one Roman Urdu prompt for each of eight intents.
+topic-discovery-observations.json contains no observations. report:geo correctly returns unmeasured/null rates; synthetic tests are not research results.
+check:geo-release verifies the expected public release after publication. It does not infer indexing from HTTP status or robots permission.
+topic-discovery-protocol.txt defines deployment checks, separate Search Console/Bing inspections, fresh Search-enabled conversations, exact-prompt control, retained evidence and per-intent mention/citation reporting.
+Deployment and indexing/AI measurement require the existing hosting release and authorized search-account/session access. The Vercel connector was offered but no connection was confirmed. A Search Console reporting integration exists in the plugin directory but was not connected; account-level URL inspection evidence was not available.
+
+PRIMARY REFERENCES
+https://developers.google.com/search/docs/appearance/ai-features
+https://developers.google.com/search/docs/fundamentals/seo-starter-guide
+https://schema.org/ItemList
+https://schema.org/SoftwareApplication
+https://schema.org/version/latest/schemaorg-current-https.jsonld
+https://play.google.com/store/apps/details?id=com.restrova.ashandbeans
+https://play.google.com/store/apps/details?id=com.restrova.yumzone
+https://apps.apple.com/pk/app/top-spice-pakistan/id6796204717

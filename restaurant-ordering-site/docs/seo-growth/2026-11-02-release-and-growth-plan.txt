@@ -1,0 +1,46 @@
+RESTROVA RELEASE AND ORGANIC GROWTH PLAN — 2 NOVEMBER 2026
+
+CURRENT REPOSITORY DELIVERABLES
+All 12 requested article topics are complete: nine new articles, three existing articles improved in place. Two unrelated useful guides remain, for 14 total. Four business-type pages cover distinct workflows. /customers is deliberately deferred because a second app directory would add little; customer outcomes need evidence and permission.
+The curated sitemap contains 35 URLs. Existing canonical, robots, preview noindex, six product solutions, pricing formula and demo/Meta Lead behavior are preserved. The article renderer supports HTTPS references with escaped text; no raw HTML is enabled. Unsupported stars and quote styling were removed from the unused client card.
+
+AUTHORITATIVE CURRENT RECORDS
+2026-11-02-initial-audit.txt — baseline and inventory before implementation.
+keyword-page-map.json — all A–J keyword groups, intent owners, secondary phrases and explicitly unavailable metrics.
+publication-manifest.json — each required topic, title, description, canonical, dates and local implementation status.
+2026-11-02-evidence-ledger.json — sources and unsupported claim boundaries.
+2026-11-02-page-review.json — disposition of every requested page and new business page.
+2026-11-02-live-audit.json — public robots/sitemap/page and existing app-link checks.
+2026-11-02-validation.txt — final build, regression, crawl and browser/performance evidence.
+
+BEFORE DEPLOYMENT
+Review the prepared diff. Deploy from the project's normal release process; this task does not push, merge or deploy. If the deployment date changes, align the nine new article publication dates with their actual first release. Preserve original dates on existing articles. Existing draft privacy policy remains draft/noindex; obtain owner/legal approval of real practices separately.
+Check production hosting variables and demo integration configuration using existing setup documentation. Never print or commit secrets. Use the approved test destination for a live enquiry, since test submissions can create CRM rows and messages; offline regression tests are used in this change.
+
+DAY 0–7: RELEASE VERIFICATION — DEVELOPER + SITE OWNER
+After deployment, run the crawl check with SEO_BASE_URL=https://www.restrova.com. Verify all 35 approved URLs return 200 with their own production canonical, unique metadata and one H1. Inspect redirects, utility noindex and missing-page 404 behavior. Use Google Rich Results Test/Schema validator on representative article and product pages; valid markup is not a rich-result guarantee.
+In the authorized Search Console property, submit the canonical sitemap and inspect priority URLs. Check Google-selected canonicals and indexing status rather than equating a successful fetch with indexing. Preserve legacy noindex until URL-specific link/traffic evidence justifies replacement or retirement.
+
+DAY 7–30: MEASURE DEMAND AND QUALIFIED INTEREST — GROWTH + SALES
+Obtain Pakistan keyword data from Keyword Planner or a licensed database/export, with date, location and match type. Fill the null volume/KD/CPC cells only where supported. Export Search Console Web data filtered to Pakistan, by query/page/device, for equal comparison periods. Separate branded queries, commercial software queries and consumer food searches.
+Verify GA4/GTM ownership, property ID and consent configuration before installing tracking. Follow measurement-plan.txt for the distinction between form start, acknowledged intake, saved scheduling request, confirmed meeting and customer won. Existing Meta Lead means a saved scheduling request, not a confirmed demo or sale. Do not add personal information to analytics payloads.
+Review impressions, clicks, CTR, indexed target pages and qualified enquiries by landing page. Record missing data as unavailable. No ranking, traffic or customer target is stated as guaranteed.
+
+DAY 15–45: ADD GENUINE PRODUCT EVIDENCE — PRODUCT + CUSTOMER SUCCESS
+Capture approved current screens for POS, app ordering, availability, dispatch/tracking, reporting and branch differences. Use demonstration records and document permission. Replace illustrative images only with faithful, approved evidence. Obtain one consented implementation account with the starting problem, configured workflow, observation period and measurable result if available. Publish /customers only when it has original evidence beyond existing app listings.
+Confirm taxes, payment/account charges, support scope, branch coverage, billing start and refund treatment before expanding pricing claims. Specialist features remain demo questions until demonstrated.
+
+DAY 15–60: LOCAL PRESENCE — OWNER + GROWTH
+Prior documents record an owner-confirmed hybrid office/customer-visit model and legal identity. Preserve those confirmations. Verify public hours, permanent signage, actual service area and profile ownership against current Google Business Profile guidance before any profile submission. One genuine business does not need a profile or thin page for every served city.
+Prioritize useful local proof for Islamabad/Rawalpindi, then the remaining named cities when evidence exists. Validate city demand using actual queries/leads; keep /locations as the central planning page while separate city pages lack unique evidence.
+
+DAY 30–90: EARN RELEVANT REFERENCES — GROWTH + PARTNERSHIPS
+Use the existing off-page-plan.txt and case-study evidence template. Prioritize approved customer implementation stories, actual restaurant technology partners, relevant Pakistan business communities and software directories that accurately describe the product. Customize outreach around a useful published guide or consented result. Record prospect, relevance, approval, destination and outcome. Nothing has been sent or submitted by this task.
+Do not buy ranking links, post fake reviews, invent partnerships or mass-submit the same copy. Ask real customers for honest feedback without incentives or positive-rating conditions. Keep business identity and links consistent across approved profiles.
+
+MONTHLY MAINTENANCE
+Review the keyword map for cannibalization before adding an article. Update the existing intent owner rather than publishing a near duplicate. Recheck app-store links, price wording and authoritative references when terms change. Keep dates tied to substantive edits. Review mobile navigation, form responsiveness and measured LCP/CLS; obtain field INP from CrUX/Search Console or an approved real-user measurement setup. Lighthouse TBT is not INP.
+Compare 28-day periods with seasonality and sample size in view. Join organic enquiries to confirmed demos and customers in the authorized CRM; page views alone do not demonstrate revenue. Revisit the roadmap based on observed gaps, not invented search volumes.
+
+ROLLBACK
+Use the change manifest to reverse only this task's edits through the normal Git workflow, preserving later user changes. Do not reset the working tree wholesale. The project dependencies and lockfile are unchanged. No live profile, CRM or analytics configuration was mutated.

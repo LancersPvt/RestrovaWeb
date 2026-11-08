@@ -1,0 +1,21 @@
+import Image from "next/image";
+import Link from "next/link";
+import MarketingPage, { DemoCta } from "@/components/MarketingPage";
+import { staticMetadata } from "@/lib/seo";
+import CustomerAppExamples from "@/components/CustomerAppExamples";
+export const metadata = staticMetadata("/apps");
+
+export default function AppsPage() {
+  return <MarketingPage path="/apps" label="Apps" title="The right app for each restaurant role." intro="Customer ordering apps, restaurant administration and rider operations serve different users. Choose the right product before downloading or requesting access.">
+    <section className="grid gap-6 md:grid-cols-2">
+      <div className="seo-card"><h2>Restrova Admin</h2><p className="mt-4">For authorized restaurant owners and staff managing orders, menus and branches. The Android and iOS listings are public; using the administration tools requires an authorized account and the appropriate role. Check device and regional availability in each store.</p><p className="mt-4"><a href="https://play.google.com/store/apps/details?id=com.restrova.admin">View Restrova Admin on Google Play</a></p><p className="mt-3"><a href="https://apps.apple.com/us/app/restrova-admin/id6814471120">View Restrova Admin on the Apple App Store</a></p><p className="mt-3"><Link href="/download">Download desktop Admin for Windows or Mac</Link></p></div>
+      <div className="seo-card"><h2>Restrova Fleet</h2><p className="mt-4">For restaurant delivery and rider workflows. Ask Restrova to confirm device setup and access for your team during onboarding.</p><p className="mt-4"><Link href="/services/delivery-management">Explore Fleet delivery and rider management</Link></p></div>
+    </section>
+    <CustomerAppExamples />
+    <section id="check-published-evidence"><h2>What the published examples can help you check</h2><p className="mt-4">Open an official listing to review the app name, publisher, store screenshots, supported devices and current description. Listings show that the named restaurant has a published customer app; they do not verify sales results or every feature in another restaurant&apos;s setup.</p><p className="mt-4">In a <Link href="/contact">live demonstration</Link>, follow a sample customer order into Admin, then review stock availability and delivery with the team who will use them. Compare the <Link href="/services/restaurant-ordering-websites">website ordering journey</Link> and <Link href="/services/restaurant-ordering-apps">branded-app setup</Link> before agreeing the launch scope.</p></section>
+    <p><Link href="/services/restaurant-ordering-apps">Plan your own branded Android and iOS ordering app</Link>.</p>
+    <figure><Image src="/hero-mockup.png" width={1536} height={1024} sizes="(max-width: 1152px) 100vw, 1104px" alt="Illustrative Restrova product overview on mobile and tablet" className="h-auto w-full rounded-3xl" /><figcaption className="mt-3 text-sm">Illustrative product overview. Request a live walkthrough to see the current screens for your role.</figcaption></figure>
+    <section><h2>Prepare your restaurant app launch</h2><p className="mt-4">Review <Link href="/blog/restaurant-app-cost-pakistan">app costs and account ownership</Link>, then use the <Link href="/blog/launch-restaurant-ordering-app">Android and iOS launch checklist</Link> to plan branding, testing and store responsibilities.</p></section>
+    <DemoCta title="See the customer and staff experiences together" />
+  </MarketingPage>;
+}

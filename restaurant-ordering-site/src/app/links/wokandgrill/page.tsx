@@ -14,14 +14,14 @@ import logo from "./logo.jpeg"; // <-- update if your filename differs
 
 const LINKS = {
   // Replace these with real URLs:
-  playStore: "https://play.google.com/store/apps/details?id=YOUR_APP_ID",
-  appStore: "https://apps.apple.com/app/idYOUR_APP_ID",
-  facebook: "https://facebook.com/YOUR_PAGE",
-  instagram: "https://instagram.com/ash_beans",
+  playStore: "",
+  appStore: "",
+  facebook: "",
+  instagram: "",
 
   // NEW:
-  googleMaps: "https://share.google/LmWOjk85C8nZY3Oz9", // or your full Google Maps share link
-  whatsapp: "https://wa.me/923318226835", // use country code, no +, no spaces
+  googleMaps: "", // or your full Google Maps share link
+  whatsapp: "", // use country code, no +, no spaces
 };
 
 function LinkButton({
@@ -35,6 +35,7 @@ function LinkButton({
   label: string;
   sublabel?: string;
 }) {
+  if (!href) return null;
   return (
     <a
       href={href}
@@ -98,6 +99,8 @@ export default function WokAndGrillLinktree() {
             Exclusive deals & discounts in the app
           </div>
         </div>
+
+<p className="mt-6 rounded-xl border border-white/15 p-4 text-sm leading-6 text-white/80">Public app and contact links for Wok &amp; Grill are being confirmed. Please use the restaurant&apos;s own verified channels.</p>
 
         {/* Buttons */}
         <div className="mt-8 space-y-3">

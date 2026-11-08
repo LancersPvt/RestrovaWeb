@@ -1,3 +1,6 @@
+import { staticMetadata } from "@/lib/seo";
+import { Breadcrumbs } from "@/components/MarketingPage";
+export const metadata = staticMetadata("/download");
 import {
   ArrowLeft,
   CheckCircle2,
@@ -63,6 +66,7 @@ export default function DownloadPage() {
       </div>
 
       <div className="relative mx-auto max-w-7xl px-5 py-6 sm:px-8 lg:px-10">
+        <Breadcrumbs items={[{ label: "Apps", href: "/apps" }, { label: "Desktop downloads", href: "/download" }]} />
         <nav className="flex items-center justify-between" aria-label="Download page navigation">
           <Link
             href="/"

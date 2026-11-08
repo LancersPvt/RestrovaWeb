@@ -1,0 +1,2931 @@
+{
+  "date": "2026-11-04",
+  "scope": "Server-rendered main-content links from all 37 curated pages. Excludes shared header/footer navigation; may include app/example download links. No new destinations outside the existing architecture except two educational cost guides.",
+  "pages": [
+    {
+      "route": "/about",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/contact",
+          "anchor": "Request a Free Demo"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "pricing page"
+        },
+        {
+          "href": "/services",
+          "anchor": "Restrova's restaurant software"
+        },
+        {
+          "href": "/apps",
+          "anchor": "published application examples"
+        },
+        {
+          "href": "/contact",
+          "anchor": "request a free demo"
+        },
+        {
+          "href": "/services/restaurant-ordering-apps",
+          "anchor": "branded restaurant ordering apps"
+        },
+        {
+          "href": "/services/restaurant-pos",
+          "anchor": "POS and order management"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-management-software-pakistan",
+          "anchor": "restaurant management software buyer’s guide"
+        },
+        {
+          "href": "/privacy-policy",
+          "anchor": "privacy policy"
+        },
+        {
+          "href": "/contact",
+          "anchor": "contact Restrova"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "See pricing and examples"
+        }
+      ]
+    },
+    {
+      "route": "/",
+      "links": [
+        {
+          "href": "/pricing",
+          "anchor": "View pricing: PKR 10,000 onboarding; PKR 5,000 or 1% monthly, whichever is higher."
+        },
+        {
+          "href": "/services/restaurant-ordering-apps",
+          "anchor": "Branded ordering apps"
+        },
+        {
+          "href": "/services/restaurant-ordering-websites",
+          "anchor": "Ordering websites"
+        },
+        {
+          "href": "/services/restaurant-pos",
+          "anchor": "POS and order management"
+        },
+        {
+          "href": "/services/inventory-management",
+          "anchor": "Inventory management"
+        },
+        {
+          "href": "/services/delivery-management",
+          "anchor": "Delivery and rider management"
+        },
+        {
+          "href": "/services/reporting-analytics",
+          "anchor": "Reporting and analytics"
+        },
+        {
+          "href": "/locations",
+          "anchor": "Pakistan planning guide"
+        },
+        {
+          "href": "/blog",
+          "anchor": "restaurant owner resources"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+          "anchor": "restaurant POS buying checklist for Pakistan"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "See worked examples and charges to confirm."
+        },
+        {
+          "href": "/privacy-policy",
+          "anchor": "privacy notice (draft under review)"
+        },
+        {
+          "href": "/solutions/cafes",
+          "anchor": "Cafés and coffee shops"
+        },
+        {
+          "href": "/solutions/cloud-kitchens",
+          "anchor": "Cloud kitchens"
+        },
+        {
+          "href": "/solutions/fast-food-restaurants",
+          "anchor": "Fast-food restaurants"
+        },
+        {
+          "href": "/solutions/multi-branch-restaurants",
+          "anchor": "Multi-branch restaurants"
+        }
+      ]
+    },
+    {
+      "route": "/services",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/#contact",
+          "anchor": "Request a Free Demo"
+        },
+        {
+          "href": "/services/restaurant-ordering-websites",
+          "anchor": "Direct online ordering"
+        },
+        {
+          "href": "/blog/start-online-ordering-small-restaurant-pakistan",
+          "anchor": "Plan your first online ordering service"
+        },
+        {
+          "href": "/services/restaurant-ordering-apps",
+          "anchor": "Branded restaurant mobile apps"
+        },
+        {
+          "href": "/blog/launch-restaurant-ordering-app",
+          "anchor": "Prepare an app launch"
+        },
+        {
+          "href": "/services#daily-operations",
+          "anchor": "Restaurant management software"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-management-software-pakistan",
+          "anchor": "Use the software buying guide"
+        },
+        {
+          "href": "/services/restaurant-pos",
+          "anchor": "POS and order management"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+          "anchor": "Prepare a POS comparison"
+        },
+        {
+          "href": "/services/inventory-management",
+          "anchor": "Inventory and menu availability"
+        },
+        {
+          "href": "/blog/restaurant-inventory-management-guide-pakistan",
+          "anchor": "Plan the stock routine"
+        },
+        {
+          "href": "/services/delivery-management",
+          "anchor": "Delivery and rider tracking"
+        },
+        {
+          "href": "/blog/restaurant-rider-management-tracking-settlement",
+          "anchor": "Review dispatch and settlement"
+        },
+        {
+          "href": "/solutions/multi-branch-restaurants",
+          "anchor": "Multi-branch operations"
+        },
+        {
+          "href": "/blog/manage-multiple-restaurant-branches",
+          "anchor": "Prepare a branch worksheet"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "Transparent software pricing"
+        },
+        {
+          "href": "/blog/restaurant-software-pricing-pakistan-guide",
+          "anchor": "Compare the full operating cost"
+        },
+        {
+          "href": "/services/restaurant-ordering-websites",
+          "anchor": "website"
+        },
+        {
+          "href": "/services/restaurant-ordering-apps",
+          "anchor": "branded app"
+        },
+        {
+          "href": "/services/restaurant-pos",
+          "anchor": "POS"
+        },
+        {
+          "href": "/services/inventory-management",
+          "anchor": "stock and menu availability"
+        },
+        {
+          "href": "/services/delivery-management",
+          "anchor": "Fleet assignment, status and tracking"
+        },
+        {
+          "href": "/services/reporting-analytics",
+          "anchor": "sales and delivery reports"
+        },
+        {
+          "href": "/solutions/multi-branch-restaurants",
+          "anchor": "several branches"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "pricing and fee examples"
+        },
+        {
+          "href": "/about",
+          "anchor": "about Restrova"
+        },
+        {
+          "href": "/faq",
+          "anchor": "English and Roman Urdu buyer questions"
+        },
+        {
+          "href": "/contact",
+          "anchor": "live demonstration"
+        },
+        {
+          "href": "/#contact",
+          "anchor": "Request a free demo"
+        },
+        {
+          "href": "/solutions/cafes",
+          "anchor": "Cafés and coffee shops"
+        },
+        {
+          "href": "/solutions/cloud-kitchens",
+          "anchor": "Cloud kitchens"
+        },
+        {
+          "href": "/solutions/fast-food-restaurants",
+          "anchor": "Fast-food restaurants"
+        },
+        {
+          "href": "/solutions/multi-branch-restaurants",
+          "anchor": "Multi-branch restaurants"
+        }
+      ]
+    },
+    {
+      "route": "/pricing",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/contact",
+          "anchor": "Request a Free Demo"
+        },
+        {
+          "href": "/services",
+          "anchor": "solutions"
+        },
+        {
+          "href": "/blog/restaurant-software-pricing-pakistan-guide",
+          "anchor": "restaurant software cost checklist"
+        },
+        {
+          "href": "/blog/restaurant-app-cost-pakistan",
+          "anchor": "app publishing and maintenance costs"
+        },
+        {
+          "href": "/blog/restaurant-online-ordering-system-cost-pakistan",
+          "anchor": "online ordering budget worksheet"
+        },
+        {
+          "href": "/blog/restaurant-pos-software-cost-pakistan",
+          "anchor": "POS devices, setup and training costs"
+        },
+        {
+          "href": "/services/restaurant-ordering-websites",
+          "anchor": "direct website ordering"
+        },
+        {
+          "href": "/services/restaurant-ordering-apps",
+          "anchor": "branded apps"
+        },
+        {
+          "href": "/services/restaurant-pos",
+          "anchor": "counter orders"
+        },
+        {
+          "href": "/services/inventory-management",
+          "anchor": "inventory"
+        },
+        {
+          "href": "/services/delivery-management",
+          "anchor": "rider operations"
+        },
+        {
+          "href": "/solutions/multi-branch-restaurants",
+          "anchor": "more than one branch"
+        },
+        {
+          "href": "/faq#roman-urdu-pricing",
+          "anchor": "Roman Urdu pricing answer"
+        },
+        {
+          "href": "/faq",
+          "anchor": "full buyer FAQ"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "See pricing and examples"
+        }
+      ]
+    },
+    {
+      "route": "/contact",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "pricing examples"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "See worked examples and charges to confirm."
+        },
+        {
+          "href": "/privacy-policy",
+          "anchor": "privacy notice (draft under review)"
+        }
+      ]
+    },
+    {
+      "route": "/faq",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/contact",
+          "anchor": "Request a Free Demo"
+        },
+        {
+          "href": "/services#buyer-topics",
+          "anchor": "Explore by restaurant need"
+        },
+        {
+          "href": "/services/restaurant-ordering-websites",
+          "anchor": "restaurant ordering website"
+        },
+        {
+          "href": "/services/restaurant-ordering-apps",
+          "anchor": "branded mobile app"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "pricing and publishing responsibilities"
+        },
+        {
+          "href": "/services/restaurant-ordering-websites",
+          "anchor": "Website aur direct ordering ki tafseel"
+        },
+        {
+          "href": "/services/restaurant-ordering-apps",
+          "anchor": "Branded app aur launch ki tafseel"
+        },
+        {
+          "href": "/services/restaurant-pos",
+          "anchor": "POS aur order workflow"
+        },
+        {
+          "href": "/services/inventory-management",
+          "anchor": "Stock aur menu availability"
+        },
+        {
+          "href": "/services/delivery-management",
+          "anchor": "Rider tracking aur settlement"
+        },
+        {
+          "href": "/solutions/multi-branch-restaurants",
+          "anchor": "Multi-branch setup ki tafseel"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "Fee calculator aur misaalein"
+        },
+        {
+          "href": "/services/restaurant-ordering-apps#solution-faq",
+          "anchor": "Branded ordering apps : setup questions and scope"
+        },
+        {
+          "href": "/services/restaurant-ordering-websites#solution-faq",
+          "anchor": "Ordering websites : setup questions and scope"
+        },
+        {
+          "href": "/services/restaurant-pos#solution-faq",
+          "anchor": "POS and order management : setup questions and scope"
+        },
+        {
+          "href": "/services/inventory-management#solution-faq",
+          "anchor": "Inventory management : setup questions and scope"
+        },
+        {
+          "href": "/services/delivery-management#solution-faq",
+          "anchor": "Delivery and rider management : setup questions and scope"
+        },
+        {
+          "href": "/services/reporting-analytics#solution-faq",
+          "anchor": "Reporting and analytics : setup questions and scope"
+        },
+        {
+          "href": "/about",
+          "anchor": "about Restrova"
+        },
+        {
+          "href": "/services",
+          "anchor": "restaurant software solutions"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "pricing calculator"
+        },
+        {
+          "href": "/blog",
+          "anchor": "restaurant owner guides"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "See pricing and examples"
+        }
+      ]
+    },
+    {
+      "route": "/blog",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/contact",
+          "anchor": "Request a Free Demo"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-management-software-pakistan",
+          "anchor": "How to Choose Restaurant Management Software in Pakistan"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+          "anchor": "Best Restaurant POS Software in Pakistan: Buying Checklist"
+        },
+        {
+          "href": "/blog/compare-restaurant-ordering-systems",
+          "anchor": "Best Online Ordering Systems for Restaurants in Pakistan: What to Compare"
+        },
+        {
+          "href": "/blog/why-direct-ordering-beats-third-party-marketplaces",
+          "anchor": "Restaurant Website vs Third-Party Delivery Marketplace in Pakistan"
+        },
+        {
+          "href": "/blog/5-features-every-restaurant-app-must-have-in-2026",
+          "anchor": "Five Checks Before Choosing a Restaurant Ordering App"
+        },
+        {
+          "href": "/blog/how-to-boost-customer-loyalty-with-digital-rewards",
+          "anchor": "Plan Restaurant Loyalty Rewards Without Guessing the Return"
+        },
+        {
+          "href": "/blog/restaurant-app-cost-pakistan",
+          "anchor": "Restaurant Ordering App Development Cost in Pakistan"
+        },
+        {
+          "href": "/blog/restaurant-pos-vs-manual-billing",
+          "anchor": "Restaurant POS vs Manual Billing: What Changes in Daily Operations?"
+        },
+        {
+          "href": "/blog/restaurant-software-pricing-pakistan-guide",
+          "anchor": "Restaurant Software Pricing in Pakistan: A Practical Buying Guide"
+        },
+        {
+          "href": "/blog/restaurant-inventory-management-guide-pakistan",
+          "anchor": "Restaurant Inventory Management Software Buying Guide"
+        },
+        {
+          "href": "/blog/restaurant-rider-management-tracking-settlement",
+          "anchor": "Restaurant Rider and Delivery Management Guide"
+        },
+        {
+          "href": "/blog/manage-multiple-restaurant-branches",
+          "anchor": "How to Manage Multiple Restaurant Branches With Connected Software"
+        },
+        {
+          "href": "/blog/start-online-ordering-small-restaurant-pakistan",
+          "anchor": "How to Start Online Ordering for a Restaurant in Pakistan"
+        },
+        {
+          "href": "/blog/launch-restaurant-ordering-app",
+          "anchor": "How to Launch a Branded Restaurant Ordering App"
+        },
+        {
+          "href": "/blog/restaurant-online-ordering-system-cost-pakistan",
+          "anchor": "Restaurant Online Ordering System Cost in Pakistan"
+        },
+        {
+          "href": "/blog/restaurant-pos-software-cost-pakistan",
+          "anchor": "Restaurant POS Software Cost in Pakistan"
+        },
+        {
+          "href": "/services",
+          "anchor": "solutions"
+        },
+        {
+          "href": "/compare-marketplaces",
+          "anchor": "direct ordering and marketplaces"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "pricing calculator"
+        },
+        {
+          "href": "/services#buyer-topics",
+          "anchor": "choose the restaurant workflow you need"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "See pricing and examples"
+        }
+      ]
+    },
+    {
+      "route": "/compare-marketplaces",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/#contact",
+          "anchor": "Plan my direct channel"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "pricing calculator"
+        },
+        {
+          "href": "/services/delivery-management",
+          "anchor": "rider management"
+        },
+        {
+          "href": "/services/restaurant-ordering-websites",
+          "anchor": "ordering websites"
+        },
+        {
+          "href": "/blog/why-direct-ordering-beats-third-party-marketplaces",
+          "anchor": "restaurant website vs Foodpanda guide"
+        },
+        {
+          "href": "/#contact",
+          "anchor": "Request a free walkthrough"
+        }
+      ]
+    },
+    {
+      "route": "/locations",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/contact",
+          "anchor": "Request a Free Demo"
+        },
+        {
+          "href": "/services/restaurant-pos",
+          "anchor": "POS and order-management demo"
+        },
+        {
+          "href": "/services/restaurant-ordering-websites",
+          "anchor": "Review the mobile ordering journey"
+        },
+        {
+          "href": "/services/delivery-management",
+          "anchor": "Review rider assignment and settlement"
+        },
+        {
+          "href": "/services/restaurant-ordering-apps",
+          "anchor": "branded ordering app"
+        },
+        {
+          "href": "/services/restaurant-ordering-websites",
+          "anchor": "ordering website"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "pricing formula"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+          "anchor": "restaurant software buying checklist"
+        },
+        {
+          "href": "/solutions/multi-branch-restaurants",
+          "anchor": "multi-branch workflow"
+        },
+        {
+          "href": "/blog/manage-multiple-restaurant-branches",
+          "anchor": "branch implementation guide"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "See pricing and examples"
+        }
+      ]
+    },
+    {
+      "route": "/apps",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/contact",
+          "anchor": "Request a Free Demo"
+        },
+        {
+          "href": "/download",
+          "anchor": "Download desktop Admin for Windows or Mac"
+        },
+        {
+          "href": "/services/delivery-management",
+          "anchor": "Explore Fleet delivery and rider management"
+        },
+        {
+          "href": "/contact",
+          "anchor": "live demonstration"
+        },
+        {
+          "href": "/services/restaurant-ordering-websites",
+          "anchor": "website ordering journey"
+        },
+        {
+          "href": "/services/restaurant-ordering-apps",
+          "anchor": "branded-app setup"
+        },
+        {
+          "href": "/services/restaurant-ordering-apps",
+          "anchor": "Plan your own branded Android and iOS ordering app"
+        },
+        {
+          "href": "/blog/restaurant-app-cost-pakistan",
+          "anchor": "app costs and account ownership"
+        },
+        {
+          "href": "/blog/launch-restaurant-ordering-app",
+          "anchor": "Android and iOS launch checklist"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "See pricing and examples"
+        }
+      ]
+    },
+    {
+      "route": "/download",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/apps",
+          "anchor": "Apps"
+        },
+        {
+          "href": "/",
+          "anchor": "Back to home"
+        }
+      ]
+    },
+    {
+      "route": "/services/restaurant-ordering-apps",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/services",
+          "anchor": "Solutions"
+        },
+        {
+          "href": "/contact",
+          "anchor": "Request a Free Demo"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "Pricing"
+        },
+        {
+          "href": "/apps#customer-app-examples",
+          "anchor": "Review published customer-app examples"
+        },
+        {
+          "href": "/services/restaurant-ordering-websites",
+          "anchor": "Explore browser-based direct ordering"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "Review pricing and exclusions"
+        },
+        {
+          "href": "/services/restaurant-pos",
+          "anchor": "order and preparation handling"
+        },
+        {
+          "href": "/services/inventory-management",
+          "anchor": "stock and availability checks"
+        },
+        {
+          "href": "/services/delivery-management",
+          "anchor": "delivery dispatch where needed"
+        },
+        {
+          "href": "/solutions/multi-branch-restaurants",
+          "anchor": "branch menus, order destinations and staff access"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "pricing examples and scope questions"
+        },
+        {
+          "href": "/services/restaurant-ordering-websites",
+          "anchor": "Ordering websites"
+        },
+        {
+          "href": "/services/restaurant-pos",
+          "anchor": "POS and order management"
+        },
+        {
+          "href": "/services/delivery-management",
+          "anchor": "Delivery and rider management"
+        },
+        {
+          "href": "/about",
+          "anchor": "about Restrova"
+        },
+        {
+          "href": "/apps",
+          "anchor": "the available apps"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-management-software-pakistan",
+          "anchor": "software buyer’s guide"
+        },
+        {
+          "href": "/faq",
+          "anchor": "general FAQ"
+        },
+        {
+          "href": "/services#buyer-topics",
+          "anchor": "explore the restaurant owner topics"
+        },
+        {
+          "href": "/solutions/multi-branch-restaurants",
+          "anchor": "how to evaluate a multi-branch setup"
+        },
+        {
+          "href": "/blog/restaurant-app-cost-pakistan",
+          "anchor": "Compare app development, publishing and maintenance costs"
+        },
+        {
+          "href": "/blog/launch-restaurant-ordering-app",
+          "anchor": "Prepare a branded restaurant app launch"
+        },
+        {
+          "href": "/blog/5-features-every-restaurant-app-must-have-in-2026",
+          "anchor": "Five checks before choosing a restaurant app"
+        },
+        {
+          "href": "/apps",
+          "anchor": "Choose between customer apps, Admin and Fleet"
+        },
+        {
+          "href": "/blog/5-features-every-restaurant-app-must-have-in-2026",
+          "anchor": "Five Checks Before Choosing a Restaurant Ordering App"
+        },
+        {
+          "href": "/blog/how-to-boost-customer-loyalty-with-digital-rewards",
+          "anchor": "Plan Restaurant Loyalty Rewards Without Guessing the Return"
+        },
+        {
+          "href": "/blog/restaurant-app-cost-pakistan",
+          "anchor": "Restaurant Ordering App Development Cost in Pakistan"
+        },
+        {
+          "href": "/blog/launch-restaurant-ordering-app",
+          "anchor": "How to Launch a Branded Restaurant Ordering App"
+        },
+        {
+          "href": "/solutions/cafes",
+          "anchor": "Cafés and coffee shops"
+        },
+        {
+          "href": "/solutions/cloud-kitchens",
+          "anchor": "Cloud kitchens"
+        },
+        {
+          "href": "/solutions/multi-branch-restaurants",
+          "anchor": "Multi-branch restaurants"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "See pricing and examples"
+        }
+      ]
+    },
+    {
+      "route": "/services/restaurant-ordering-websites",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/services",
+          "anchor": "Solutions"
+        },
+        {
+          "href": "/contact",
+          "anchor": "Request a Free Demo"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "Pricing"
+        },
+        {
+          "href": "/blog/start-online-ordering-small-restaurant-pakistan",
+          "anchor": "Prepare your first direct-ordering launch"
+        },
+        {
+          "href": "/services/restaurant-ordering-apps",
+          "anchor": "Plan a branded Android and iOS app"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "Review pricing and exclusions"
+        },
+        {
+          "href": "/services/restaurant-pos",
+          "anchor": "order and preparation handling"
+        },
+        {
+          "href": "/services/inventory-management",
+          "anchor": "stock and availability checks"
+        },
+        {
+          "href": "/services/delivery-management",
+          "anchor": "delivery dispatch where needed"
+        },
+        {
+          "href": "/solutions/multi-branch-restaurants",
+          "anchor": "branch menus, order destinations and staff access"
+        },
+        {
+          "href": "/compare-marketplaces",
+          "anchor": "channel responsibilities and costs"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "pricing examples and scope questions"
+        },
+        {
+          "href": "/services/restaurant-ordering-apps",
+          "anchor": "Branded ordering apps"
+        },
+        {
+          "href": "/services/restaurant-pos",
+          "anchor": "POS and order management"
+        },
+        {
+          "href": "/services/inventory-management",
+          "anchor": "Inventory management"
+        },
+        {
+          "href": "/about",
+          "anchor": "about Restrova"
+        },
+        {
+          "href": "/apps",
+          "anchor": "the available apps"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-management-software-pakistan",
+          "anchor": "software buyer’s guide"
+        },
+        {
+          "href": "/faq",
+          "anchor": "general FAQ"
+        },
+        {
+          "href": "/services#buyer-topics",
+          "anchor": "explore the restaurant owner topics"
+        },
+        {
+          "href": "/solutions/multi-branch-restaurants",
+          "anchor": "how to evaluate a multi-branch setup"
+        },
+        {
+          "href": "/blog/compare-restaurant-ordering-systems",
+          "anchor": "Compare ordering systems using the same buyer checklist"
+        },
+        {
+          "href": "/blog/restaurant-online-ordering-system-cost-pakistan",
+          "anchor": "Build an online ordering cost worksheet"
+        },
+        {
+          "href": "/blog/start-online-ordering-small-restaurant-pakistan",
+          "anchor": "Prepare your restaurant for direct online orders"
+        },
+        {
+          "href": "/compare-marketplaces",
+          "anchor": "Compare direct ordering with marketplaces"
+        },
+        {
+          "href": "/blog/why-direct-ordering-beats-third-party-marketplaces",
+          "anchor": "Evaluate channel costs and responsibilities"
+        },
+        {
+          "href": "/blog/why-direct-ordering-beats-third-party-marketplaces",
+          "anchor": "Restaurant Website vs Third-Party Delivery Marketplace in Pakistan"
+        },
+        {
+          "href": "/blog/start-online-ordering-small-restaurant-pakistan",
+          "anchor": "How to Start Online Ordering for a Restaurant in Pakistan"
+        },
+        {
+          "href": "/blog/compare-restaurant-ordering-systems",
+          "anchor": "Best Online Ordering Systems for Restaurants in Pakistan: What to Compare"
+        },
+        {
+          "href": "/blog/restaurant-online-ordering-system-cost-pakistan",
+          "anchor": "Restaurant Online Ordering System Cost in Pakistan"
+        },
+        {
+          "href": "/solutions/cafes",
+          "anchor": "Cafés and coffee shops"
+        },
+        {
+          "href": "/solutions/cloud-kitchens",
+          "anchor": "Cloud kitchens"
+        },
+        {
+          "href": "/solutions/multi-branch-restaurants",
+          "anchor": "Multi-branch restaurants"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "See pricing and examples"
+        }
+      ]
+    },
+    {
+      "route": "/services/restaurant-pos",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/services",
+          "anchor": "Solutions"
+        },
+        {
+          "href": "/contact",
+          "anchor": "Request a Free Demo"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "Pricing"
+        },
+        {
+          "href": "/services/inventory-management",
+          "anchor": "Stock and menu availability"
+        },
+        {
+          "href": "/apps",
+          "anchor": "Customer, Admin and Fleet app roles"
+        },
+        {
+          "href": "/services/delivery-management",
+          "anchor": "Dispatch, live tracking and settlement"
+        },
+        {
+          "href": "/contact",
+          "anchor": "live Restrova demonstration"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "the fee at your expected sales volume"
+        },
+        {
+          "href": "/faq",
+          "anchor": "setup FAQ"
+        },
+        {
+          "href": "/about",
+          "anchor": "who operates Restrova"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "pricing examples and scope questions"
+        },
+        {
+          "href": "/services/inventory-management",
+          "anchor": "Inventory management"
+        },
+        {
+          "href": "/services/reporting-analytics",
+          "anchor": "Reporting and analytics"
+        },
+        {
+          "href": "/services/delivery-management",
+          "anchor": "Delivery and rider management"
+        },
+        {
+          "href": "/about",
+          "anchor": "about Restrova"
+        },
+        {
+          "href": "/apps",
+          "anchor": "the available apps"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-management-software-pakistan",
+          "anchor": "software buyer’s guide"
+        },
+        {
+          "href": "/faq",
+          "anchor": "general FAQ"
+        },
+        {
+          "href": "/services#buyer-topics",
+          "anchor": "explore the restaurant owner topics"
+        },
+        {
+          "href": "/solutions/multi-branch-restaurants",
+          "anchor": "how to evaluate a multi-branch setup"
+        },
+        {
+          "href": "/blog/restaurant-pos-software-cost-pakistan",
+          "anchor": "Budget for POS software, devices and training"
+        },
+        {
+          "href": "/blog/restaurant-pos-vs-manual-billing",
+          "anchor": "Compare a POS workflow with manual billing"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+          "anchor": "Use the restaurant POS buying guide"
+        },
+        {
+          "href": "/locations",
+          "anchor": "Plan branches and delivery coverage in Pakistan"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-management-software-pakistan",
+          "anchor": "How to Choose Restaurant Management Software in Pakistan"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+          "anchor": "Best Restaurant POS Software in Pakistan: Buying Checklist"
+        },
+        {
+          "href": "/blog/restaurant-pos-vs-manual-billing",
+          "anchor": "Restaurant POS vs Manual Billing: What Changes in Daily Operations?"
+        },
+        {
+          "href": "/blog/restaurant-software-pricing-pakistan-guide",
+          "anchor": "Restaurant Software Pricing in Pakistan: A Practical Buying Guide"
+        },
+        {
+          "href": "/blog/restaurant-pos-software-cost-pakistan",
+          "anchor": "Restaurant POS Software Cost in Pakistan"
+        },
+        {
+          "href": "/solutions/cafes",
+          "anchor": "Cafés and coffee shops"
+        },
+        {
+          "href": "/solutions/fast-food-restaurants",
+          "anchor": "Fast-food restaurants"
+        },
+        {
+          "href": "/solutions/multi-branch-restaurants",
+          "anchor": "Multi-branch restaurants"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "See pricing and examples"
+        }
+      ]
+    },
+    {
+      "route": "/services/inventory-management",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/services",
+          "anchor": "Solutions"
+        },
+        {
+          "href": "/contact",
+          "anchor": "Request a Free Demo"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "Pricing"
+        },
+        {
+          "href": "/faq",
+          "anchor": "Product and setup questions"
+        },
+        {
+          "href": "/services/restaurant-pos",
+          "anchor": "POS and order handling"
+        },
+        {
+          "href": "/services/delivery-management",
+          "anchor": "Delivery handoffs and rider tracking"
+        },
+        {
+          "href": "/contact",
+          "anchor": "live Restrova demonstration"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "the fee at your expected sales volume"
+        },
+        {
+          "href": "/faq",
+          "anchor": "setup FAQ"
+        },
+        {
+          "href": "/about",
+          "anchor": "who operates Restrova"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "pricing examples and scope questions"
+        },
+        {
+          "href": "/services/restaurant-pos",
+          "anchor": "POS and order management"
+        },
+        {
+          "href": "/services/restaurant-ordering-websites",
+          "anchor": "Ordering websites"
+        },
+        {
+          "href": "/services/reporting-analytics",
+          "anchor": "Reporting and analytics"
+        },
+        {
+          "href": "/about",
+          "anchor": "about Restrova"
+        },
+        {
+          "href": "/apps",
+          "anchor": "the available apps"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-management-software-pakistan",
+          "anchor": "software buyer’s guide"
+        },
+        {
+          "href": "/faq",
+          "anchor": "general FAQ"
+        },
+        {
+          "href": "/services#buyer-topics",
+          "anchor": "explore the restaurant owner topics"
+        },
+        {
+          "href": "/solutions/multi-branch-restaurants",
+          "anchor": "how to evaluate a multi-branch setup"
+        },
+        {
+          "href": "/blog/restaurant-inventory-management-guide-pakistan",
+          "anchor": "Evaluate inventory software with sample counts and units"
+        },
+        {
+          "href": "/services/reporting-analytics",
+          "anchor": "Connect stock questions with your management review"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+          "anchor": "Include inventory in your software buying checklist"
+        },
+        {
+          "href": "/blog/restaurant-inventory-management-guide-pakistan",
+          "anchor": "Restaurant Inventory Management Software Buying Guide"
+        },
+        {
+          "href": "/solutions/cafes",
+          "anchor": "Cafés and coffee shops"
+        },
+        {
+          "href": "/solutions/cloud-kitchens",
+          "anchor": "Cloud kitchens"
+        },
+        {
+          "href": "/solutions/multi-branch-restaurants",
+          "anchor": "Multi-branch restaurants"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "See pricing and examples"
+        }
+      ]
+    },
+    {
+      "route": "/services/delivery-management",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/services",
+          "anchor": "Solutions"
+        },
+        {
+          "href": "/contact",
+          "anchor": "Request a Free Demo"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "Pricing"
+        },
+        {
+          "href": "/services/restaurant-pos",
+          "anchor": "POS and preparation workflow"
+        },
+        {
+          "href": "/services/inventory-management",
+          "anchor": "Stock and availability handoffs"
+        },
+        {
+          "href": "/apps",
+          "anchor": "Fleet and Admin setup"
+        },
+        {
+          "href": "/contact",
+          "anchor": "live Restrova demonstration"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "the fee at your expected sales volume"
+        },
+        {
+          "href": "/faq",
+          "anchor": "setup FAQ"
+        },
+        {
+          "href": "/about",
+          "anchor": "who operates Restrova"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "pricing examples and scope questions"
+        },
+        {
+          "href": "/services/restaurant-pos",
+          "anchor": "POS and order management"
+        },
+        {
+          "href": "/services/reporting-analytics",
+          "anchor": "Reporting and analytics"
+        },
+        {
+          "href": "/services/restaurant-ordering-apps",
+          "anchor": "Branded ordering apps"
+        },
+        {
+          "href": "/about",
+          "anchor": "about Restrova"
+        },
+        {
+          "href": "/apps",
+          "anchor": "the available apps"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-management-software-pakistan",
+          "anchor": "software buyer’s guide"
+        },
+        {
+          "href": "/faq",
+          "anchor": "general FAQ"
+        },
+        {
+          "href": "/services#buyer-topics",
+          "anchor": "explore the restaurant owner topics"
+        },
+        {
+          "href": "/solutions/multi-branch-restaurants",
+          "anchor": "how to evaluate a multi-branch setup"
+        },
+        {
+          "href": "/blog/restaurant-rider-management-tracking-settlement",
+          "anchor": "Plan dispatch, live tracking and rider settlement"
+        },
+        {
+          "href": "/services/reporting-analytics",
+          "anchor": "Review delivery activity and settlement reports"
+        },
+        {
+          "href": "/locations",
+          "anchor": "Plan delivery boundaries across your branches"
+        },
+        {
+          "href": "/blog/restaurant-rider-management-tracking-settlement",
+          "anchor": "Restaurant Rider and Delivery Management Guide"
+        },
+        {
+          "href": "/solutions/cloud-kitchens",
+          "anchor": "Cloud kitchens"
+        },
+        {
+          "href": "/solutions/fast-food-restaurants",
+          "anchor": "Fast-food restaurants"
+        },
+        {
+          "href": "/solutions/multi-branch-restaurants",
+          "anchor": "Multi-branch restaurants"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "See pricing and examples"
+        }
+      ]
+    },
+    {
+      "route": "/services/reporting-analytics",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/services",
+          "anchor": "Solutions"
+        },
+        {
+          "href": "/contact",
+          "anchor": "Request a Free Demo"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "Pricing"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "pricing examples and scope questions"
+        },
+        {
+          "href": "/services/restaurant-pos",
+          "anchor": "POS and order management"
+        },
+        {
+          "href": "/services/inventory-management",
+          "anchor": "Inventory management"
+        },
+        {
+          "href": "/services/delivery-management",
+          "anchor": "Delivery and rider management"
+        },
+        {
+          "href": "/about",
+          "anchor": "about Restrova"
+        },
+        {
+          "href": "/apps",
+          "anchor": "the available apps"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-management-software-pakistan",
+          "anchor": "software buyer’s guide"
+        },
+        {
+          "href": "/faq",
+          "anchor": "general FAQ"
+        },
+        {
+          "href": "/services#buyer-topics",
+          "anchor": "explore the restaurant owner topics"
+        },
+        {
+          "href": "/solutions/multi-branch-restaurants",
+          "anchor": "how to evaluate a multi-branch setup"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "Understand the monthly fee calculation"
+        },
+        {
+          "href": "/services/restaurant-pos",
+          "anchor": "Review the order records behind your reports"
+        },
+        {
+          "href": "/blog/manage-multiple-restaurant-branches",
+          "anchor": "How to Manage Multiple Restaurant Branches With Connected Software"
+        },
+        {
+          "href": "/solutions/fast-food-restaurants",
+          "anchor": "Fast-food restaurants"
+        },
+        {
+          "href": "/solutions/multi-branch-restaurants",
+          "anchor": "Multi-branch restaurants"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "See pricing and examples"
+        }
+      ]
+    },
+    {
+      "route": "/solutions/cafes",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/services",
+          "anchor": "Solutions"
+        },
+        {
+          "href": "/contact",
+          "anchor": "Request a Free Demo"
+        },
+        {
+          "href": "/services/restaurant-pos",
+          "anchor": "POS and order management"
+        },
+        {
+          "href": "/services/restaurant-ordering-websites",
+          "anchor": "Ordering websites"
+        },
+        {
+          "href": "/services/restaurant-ordering-apps",
+          "anchor": "Branded ordering apps"
+        },
+        {
+          "href": "/services/inventory-management",
+          "anchor": "Inventory management"
+        },
+        {
+          "href": "/blog/start-online-ordering-small-restaurant-pakistan",
+          "anchor": "Plan your first online ordering service"
+        },
+        {
+          "href": "/services#buyer-topics",
+          "anchor": "the connected restaurant workflows"
+        },
+        {
+          "href": "/faq",
+          "anchor": "English and Roman Urdu buyer questions"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "pricing calculator"
+        },
+        {
+          "href": "/blog/restaurant-software-pricing-pakistan-guide",
+          "anchor": "software cost checklist"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "See pricing and examples"
+        }
+      ]
+    },
+    {
+      "route": "/solutions/cloud-kitchens",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/services",
+          "anchor": "Solutions"
+        },
+        {
+          "href": "/contact",
+          "anchor": "Request a Free Demo"
+        },
+        {
+          "href": "/services/restaurant-ordering-websites",
+          "anchor": "Ordering websites"
+        },
+        {
+          "href": "/services/restaurant-ordering-apps",
+          "anchor": "Branded ordering apps"
+        },
+        {
+          "href": "/services/delivery-management",
+          "anchor": "Delivery and rider management"
+        },
+        {
+          "href": "/services/inventory-management",
+          "anchor": "Inventory management"
+        },
+        {
+          "href": "/blog/restaurant-rider-management-tracking-settlement",
+          "anchor": "Plan dispatch, tracking and rider settlement"
+        },
+        {
+          "href": "/services#buyer-topics",
+          "anchor": "the connected restaurant workflows"
+        },
+        {
+          "href": "/faq",
+          "anchor": "English and Roman Urdu buyer questions"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "pricing calculator"
+        },
+        {
+          "href": "/blog/restaurant-software-pricing-pakistan-guide",
+          "anchor": "software cost checklist"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "See pricing and examples"
+        }
+      ]
+    },
+    {
+      "route": "/solutions/fast-food-restaurants",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/services",
+          "anchor": "Solutions"
+        },
+        {
+          "href": "/contact",
+          "anchor": "Request a Free Demo"
+        },
+        {
+          "href": "/services/restaurant-pos",
+          "anchor": "POS and order management"
+        },
+        {
+          "href": "/services/delivery-management",
+          "anchor": "Delivery and rider management"
+        },
+        {
+          "href": "/services/reporting-analytics",
+          "anchor": "Reporting and analytics"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+          "anchor": "Use the restaurant POS buying checklist"
+        },
+        {
+          "href": "/services#buyer-topics",
+          "anchor": "the connected restaurant workflows"
+        },
+        {
+          "href": "/faq",
+          "anchor": "English and Roman Urdu buyer questions"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "pricing calculator"
+        },
+        {
+          "href": "/blog/restaurant-software-pricing-pakistan-guide",
+          "anchor": "software cost checklist"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "See pricing and examples"
+        }
+      ]
+    },
+    {
+      "route": "/solutions/multi-branch-restaurants",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/services",
+          "anchor": "Solutions"
+        },
+        {
+          "href": "/contact",
+          "anchor": "Request a Free Demo"
+        },
+        {
+          "href": "/services/restaurant-ordering-websites",
+          "anchor": "Ordering websites"
+        },
+        {
+          "href": "/services/restaurant-ordering-apps",
+          "anchor": "Branded ordering apps"
+        },
+        {
+          "href": "/services/restaurant-pos",
+          "anchor": "POS and order management"
+        },
+        {
+          "href": "/services/inventory-management",
+          "anchor": "Inventory management"
+        },
+        {
+          "href": "/services/delivery-management",
+          "anchor": "Delivery and rider management"
+        },
+        {
+          "href": "/services/reporting-analytics",
+          "anchor": "Reporting and analytics"
+        },
+        {
+          "href": "/blog/manage-multiple-restaurant-branches",
+          "anchor": "Prepare a multi-branch implementation worksheet"
+        },
+        {
+          "href": "/services#buyer-topics",
+          "anchor": "the connected restaurant workflows"
+        },
+        {
+          "href": "/faq",
+          "anchor": "English and Roman Urdu buyer questions"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "pricing calculator"
+        },
+        {
+          "href": "/blog/restaurant-software-pricing-pakistan-guide",
+          "anchor": "software cost checklist"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "See pricing and examples"
+        }
+      ]
+    },
+    {
+      "route": "/blog/how-to-choose-restaurant-management-software-pakistan",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/blog",
+          "anchor": "Guides"
+        },
+        {
+          "href": "/services/restaurant-pos",
+          "anchor": "point-of-sale system"
+        },
+        {
+          "href": "/services/restaurant-ordering-apps",
+          "anchor": "branded Android/iOS app"
+        },
+        {
+          "href": "/services/inventory-management",
+          "anchor": "Inventory"
+        },
+        {
+          "href": "/services/delivery-management",
+          "anchor": "your own team makes deliveries"
+        },
+        {
+          "href": "/services",
+          "anchor": "Restrova's services"
+        },
+        {
+          "href": "/services/restaurant-ordering-apps",
+          "anchor": "ordering app capabilities"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "pricing"
+        },
+        {
+          "href": "/faq",
+          "anchor": "FAQ"
+        },
+        {
+          "href": "/contact",
+          "anchor": "request a free demo"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+          "anchor": "POS demonstration checklist"
+        },
+        {
+          "href": "/about",
+          "anchor": "about Restrova"
+        },
+        {
+          "href": "/apps",
+          "anchor": "published app examples"
+        },
+        {
+          "href": "/blog/compare-restaurant-ordering-systems",
+          "anchor": "ordering-system comparison worksheet"
+        },
+        {
+          "href": "/blog/restaurant-software-pricing-pakistan-guide",
+          "anchor": "the complete cost of restaurant software"
+        },
+        {
+          "href": "/blog/manage-multiple-restaurant-branches",
+          "anchor": "branch rollout worksheet"
+        },
+        {
+          "href": "/services/restaurant-pos",
+          "anchor": "the related Restrova solution"
+        },
+        {
+          "href": "/contact",
+          "anchor": "Request a Free Demo"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "See pricing and examples"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+          "anchor": "Best Restaurant POS Software in Pakistan: Buying Checklist"
+        },
+        {
+          "href": "/blog/restaurant-pos-vs-manual-billing",
+          "anchor": "Restaurant POS vs Manual Billing: What Changes in Daily Operations?"
+        },
+        {
+          "href": "/blog/restaurant-software-pricing-pakistan-guide",
+          "anchor": "Restaurant Software Pricing in Pakistan: A Practical Buying Guide"
+        },
+        {
+          "href": "/blog/restaurant-pos-software-cost-pakistan",
+          "anchor": "Restaurant POS Software Cost in Pakistan"
+        },
+        {
+          "href": "/blog",
+          "anchor": "Browse all restaurant guides"
+        }
+      ]
+    },
+    {
+      "route": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/blog",
+          "anchor": "Guides"
+        },
+        {
+          "href": "/services/inventory-management",
+          "anchor": "inventory management"
+        },
+        {
+          "href": "/services/delivery-management",
+          "anchor": "delivery management"
+        },
+        {
+          "href": "/locations",
+          "anchor": "Pakistan setup discussion"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "pricing calculator"
+        },
+        {
+          "href": "/services/reporting-analytics",
+          "anchor": "reporting and export requirements"
+        },
+        {
+          "href": "/services/restaurant-pos",
+          "anchor": "POS solution"
+        },
+        {
+          "href": "/contact",
+          "anchor": "request a free demo"
+        },
+        {
+          "href": "/blog/restaurant-pos-vs-manual-billing",
+          "anchor": "POS with manual billing"
+        },
+        {
+          "href": "/blog/restaurant-inventory-management-guide-pakistan",
+          "anchor": "sample stock routine"
+        },
+        {
+          "href": "/blog/restaurant-software-pricing-pakistan-guide",
+          "anchor": "full pricing checklist"
+        },
+        {
+          "href": "/blog/restaurant-pos-software-cost-pakistan",
+          "anchor": "POS cost worksheet"
+        },
+        {
+          "href": "/about",
+          "anchor": "about Restrova"
+        },
+        {
+          "href": "/services/restaurant-pos",
+          "anchor": "the related Restrova solution"
+        },
+        {
+          "href": "/contact",
+          "anchor": "Request a Free Demo"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "See pricing and examples"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-management-software-pakistan",
+          "anchor": "How to Choose Restaurant Management Software in Pakistan"
+        },
+        {
+          "href": "/blog/restaurant-pos-vs-manual-billing",
+          "anchor": "Restaurant POS vs Manual Billing: What Changes in Daily Operations?"
+        },
+        {
+          "href": "/blog/restaurant-software-pricing-pakistan-guide",
+          "anchor": "Restaurant Software Pricing in Pakistan: A Practical Buying Guide"
+        },
+        {
+          "href": "/blog/restaurant-pos-software-cost-pakistan",
+          "anchor": "Restaurant POS Software Cost in Pakistan"
+        },
+        {
+          "href": "/blog",
+          "anchor": "Browse all restaurant guides"
+        }
+      ]
+    },
+    {
+      "route": "/blog/why-direct-ordering-beats-third-party-marketplaces",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/blog",
+          "anchor": "Guides"
+        },
+        {
+          "href": "/services/restaurant-ordering-websites",
+          "anchor": "restaurant ordering website"
+        },
+        {
+          "href": "/services/delivery-management",
+          "anchor": "dispatch and settlement"
+        },
+        {
+          "href": "/compare-marketplaces",
+          "anchor": "channel overview"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "pricing calculator"
+        },
+        {
+          "href": "/contact",
+          "anchor": "free Restrova demo"
+        },
+        {
+          "href": "/blog/restaurant-online-ordering-system-cost-pakistan",
+          "anchor": "online ordering budget guide"
+        },
+        {
+          "href": "/about",
+          "anchor": "about Restrova"
+        },
+        {
+          "href": "/services/restaurant-ordering-websites",
+          "anchor": "the related Restrova solution"
+        },
+        {
+          "href": "/contact",
+          "anchor": "Request a Free Demo"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "See pricing and examples"
+        },
+        {
+          "href": "/blog/start-online-ordering-small-restaurant-pakistan",
+          "anchor": "How to Start Online Ordering for a Restaurant in Pakistan"
+        },
+        {
+          "href": "/blog/compare-restaurant-ordering-systems",
+          "anchor": "Best Online Ordering Systems for Restaurants in Pakistan: What to Compare"
+        },
+        {
+          "href": "/blog/restaurant-online-ordering-system-cost-pakistan",
+          "anchor": "Restaurant Online Ordering System Cost in Pakistan"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-management-software-pakistan",
+          "anchor": "How to Choose Restaurant Management Software in Pakistan"
+        },
+        {
+          "href": "/blog",
+          "anchor": "Browse all restaurant guides"
+        }
+      ]
+    },
+    {
+      "route": "/blog/5-features-every-restaurant-app-must-have-in-2026",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/blog",
+          "anchor": "Guides"
+        },
+        {
+          "href": "/services/restaurant-pos",
+          "anchor": "POS workflow"
+        },
+        {
+          "href": "/apps",
+          "anchor": "app directory"
+        },
+        {
+          "href": "/services/restaurant-ordering-apps",
+          "anchor": "Restrova branded ordering applications"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "pricing"
+        },
+        {
+          "href": "/contact",
+          "anchor": "free demo"
+        },
+        {
+          "href": "/about",
+          "anchor": "about Restrova"
+        },
+        {
+          "href": "/services/restaurant-ordering-apps",
+          "anchor": "the related Restrova solution"
+        },
+        {
+          "href": "/contact",
+          "anchor": "Request a Free Demo"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "See pricing and examples"
+        },
+        {
+          "href": "/blog/how-to-boost-customer-loyalty-with-digital-rewards",
+          "anchor": "Plan Restaurant Loyalty Rewards Without Guessing the Return"
+        },
+        {
+          "href": "/blog/restaurant-app-cost-pakistan",
+          "anchor": "Restaurant Ordering App Development Cost in Pakistan"
+        },
+        {
+          "href": "/blog/launch-restaurant-ordering-app",
+          "anchor": "How to Launch a Branded Restaurant Ordering App"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-management-software-pakistan",
+          "anchor": "How to Choose Restaurant Management Software in Pakistan"
+        },
+        {
+          "href": "/blog",
+          "anchor": "Browse all restaurant guides"
+        }
+      ]
+    },
+    {
+      "route": "/blog/how-to-boost-customer-loyalty-with-digital-rewards",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/blog",
+          "anchor": "Guides"
+        },
+        {
+          "href": "/services/restaurant-ordering-websites",
+          "anchor": "ordering website"
+        },
+        {
+          "href": "/services/reporting-analytics",
+          "anchor": "reporting tools"
+        },
+        {
+          "href": "/contact",
+          "anchor": "Restrova demo"
+        },
+        {
+          "href": "/about",
+          "anchor": "about Restrova"
+        },
+        {
+          "href": "/services/restaurant-ordering-apps",
+          "anchor": "the related Restrova solution"
+        },
+        {
+          "href": "/contact",
+          "anchor": "Request a Free Demo"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "See pricing and examples"
+        },
+        {
+          "href": "/blog/5-features-every-restaurant-app-must-have-in-2026",
+          "anchor": "Five Checks Before Choosing a Restaurant Ordering App"
+        },
+        {
+          "href": "/blog/restaurant-app-cost-pakistan",
+          "anchor": "Restaurant Ordering App Development Cost in Pakistan"
+        },
+        {
+          "href": "/blog/launch-restaurant-ordering-app",
+          "anchor": "How to Launch a Branded Restaurant Ordering App"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-management-software-pakistan",
+          "anchor": "How to Choose Restaurant Management Software in Pakistan"
+        },
+        {
+          "href": "/blog",
+          "anchor": "Browse all restaurant guides"
+        }
+      ]
+    },
+    {
+      "route": "/blog/restaurant-app-cost-pakistan",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/blog",
+          "anchor": "Guides"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "live pricing calculator"
+        },
+        {
+          "href": "/services/restaurant-ordering-apps",
+          "anchor": "branded app solution"
+        },
+        {
+          "href": "/apps",
+          "anchor": "published app examples"
+        },
+        {
+          "href": "/contact",
+          "anchor": "free demo"
+        },
+        {
+          "href": "/blog/launch-restaurant-ordering-app",
+          "anchor": "restaurant app launch guide"
+        },
+        {
+          "href": "/apps",
+          "anchor": "published restaurant app examples"
+        },
+        {
+          "href": "/blog/restaurant-online-ordering-system-cost-pakistan",
+          "anchor": "website ordering cost guide"
+        },
+        {
+          "href": "/about",
+          "anchor": "about Restrova"
+        },
+        {
+          "href": "/services/restaurant-ordering-apps",
+          "anchor": "the related Restrova solution"
+        },
+        {
+          "href": "/contact",
+          "anchor": "Request a Free Demo"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "See pricing and examples"
+        },
+        {
+          "href": "/blog/5-features-every-restaurant-app-must-have-in-2026",
+          "anchor": "Five Checks Before Choosing a Restaurant Ordering App"
+        },
+        {
+          "href": "/blog/how-to-boost-customer-loyalty-with-digital-rewards",
+          "anchor": "Plan Restaurant Loyalty Rewards Without Guessing the Return"
+        },
+        {
+          "href": "/blog/launch-restaurant-ordering-app",
+          "anchor": "How to Launch a Branded Restaurant Ordering App"
+        },
+        {
+          "href": "/blog/restaurant-pos-vs-manual-billing",
+          "anchor": "Restaurant POS vs Manual Billing: What Changes in Daily Operations?"
+        },
+        {
+          "href": "/blog",
+          "anchor": "Browse all restaurant guides"
+        }
+      ]
+    },
+    {
+      "route": "/blog/restaurant-inventory-management-guide-pakistan",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/blog",
+          "anchor": "Guides"
+        },
+        {
+          "href": "/services/restaurant-ordering-websites",
+          "anchor": "ordering website"
+        },
+        {
+          "href": "/services/inventory-management",
+          "anchor": "inventory and stock management"
+        },
+        {
+          "href": "/services/reporting-analytics",
+          "anchor": "reporting solution"
+        },
+        {
+          "href": "/contact",
+          "anchor": "free Restrova demo"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "published pricing"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "Restrova pricing"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+          "anchor": "POS buying checklist"
+        },
+        {
+          "href": "/about",
+          "anchor": "about Restrova"
+        },
+        {
+          "href": "/services/inventory-management",
+          "anchor": "the related Restrova solution"
+        },
+        {
+          "href": "/contact",
+          "anchor": "Request a Free Demo"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "See pricing and examples"
+        },
+        {
+          "href": "/blog/restaurant-rider-management-tracking-settlement",
+          "anchor": "Restaurant Rider and Delivery Management Guide"
+        },
+        {
+          "href": "/blog/manage-multiple-restaurant-branches",
+          "anchor": "How to Manage Multiple Restaurant Branches With Connected Software"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-management-software-pakistan",
+          "anchor": "How to Choose Restaurant Management Software in Pakistan"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+          "anchor": "Best Restaurant POS Software in Pakistan: Buying Checklist"
+        },
+        {
+          "href": "/blog",
+          "anchor": "Browse all restaurant guides"
+        }
+      ]
+    },
+    {
+      "route": "/blog/restaurant-rider-management-tracking-settlement",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/blog",
+          "anchor": "Guides"
+        },
+        {
+          "href": "/services/delivery-management",
+          "anchor": "delivery management solution"
+        },
+        {
+          "href": "/services/reporting-analytics",
+          "anchor": "reporting tools"
+        },
+        {
+          "href": "/locations",
+          "anchor": "Pakistan planning guide"
+        },
+        {
+          "href": "/contact",
+          "anchor": "free demo"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "published Restrova pricing"
+        },
+        {
+          "href": "/blog/start-online-ordering-small-restaurant-pakistan",
+          "anchor": "ordering launch checklist"
+        },
+        {
+          "href": "/about",
+          "anchor": "about Restrova"
+        },
+        {
+          "href": "/services/delivery-management",
+          "anchor": "the related Restrova solution"
+        },
+        {
+          "href": "/contact",
+          "anchor": "Request a Free Demo"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "See pricing and examples"
+        },
+        {
+          "href": "/blog/restaurant-inventory-management-guide-pakistan",
+          "anchor": "Restaurant Inventory Management Software Buying Guide"
+        },
+        {
+          "href": "/blog/manage-multiple-restaurant-branches",
+          "anchor": "How to Manage Multiple Restaurant Branches With Connected Software"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-management-software-pakistan",
+          "anchor": "How to Choose Restaurant Management Software in Pakistan"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+          "anchor": "Best Restaurant POS Software in Pakistan: Buying Checklist"
+        },
+        {
+          "href": "/blog",
+          "anchor": "Browse all restaurant guides"
+        }
+      ]
+    },
+    {
+      "route": "/blog/start-online-ordering-small-restaurant-pakistan",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/blog",
+          "anchor": "Guides"
+        },
+        {
+          "href": "/services/restaurant-ordering-websites",
+          "anchor": "direct ordering website"
+        },
+        {
+          "href": "/services/restaurant-ordering-apps",
+          "anchor": "Android and iOS workflow"
+        },
+        {
+          "href": "/blog/restaurant-rider-management-tracking-settlement",
+          "anchor": "rider-management checklist"
+        },
+        {
+          "href": "/contact",
+          "anchor": "free demo"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "pricing"
+        },
+        {
+          "href": "/services/restaurant-ordering-websites",
+          "anchor": "browser-based ordering website"
+        },
+        {
+          "href": "/blog/restaurant-online-ordering-system-cost-pakistan",
+          "anchor": "online ordering cost worksheet"
+        },
+        {
+          "href": "/about",
+          "anchor": "about Restrova"
+        },
+        {
+          "href": "/services/restaurant-ordering-websites",
+          "anchor": "the related Restrova solution"
+        },
+        {
+          "href": "/contact",
+          "anchor": "Request a Free Demo"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "See pricing and examples"
+        },
+        {
+          "href": "/blog/why-direct-ordering-beats-third-party-marketplaces",
+          "anchor": "Restaurant Website vs Third-Party Delivery Marketplace in Pakistan"
+        },
+        {
+          "href": "/blog/compare-restaurant-ordering-systems",
+          "anchor": "Best Online Ordering Systems for Restaurants in Pakistan: What to Compare"
+        },
+        {
+          "href": "/blog/restaurant-online-ordering-system-cost-pakistan",
+          "anchor": "Restaurant Online Ordering System Cost in Pakistan"
+        },
+        {
+          "href": "/blog/launch-restaurant-ordering-app",
+          "anchor": "How to Launch a Branded Restaurant Ordering App"
+        },
+        {
+          "href": "/blog",
+          "anchor": "Browse all restaurant guides"
+        }
+      ]
+    },
+    {
+      "route": "/blog/restaurant-pos-vs-manual-billing",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/blog",
+          "anchor": "Guides"
+        },
+        {
+          "href": "/services/reporting-analytics",
+          "anchor": "reporting checklist"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "pricing examples"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+          "anchor": "restaurant POS buying guide"
+        },
+        {
+          "href": "/contact",
+          "anchor": "free Restrova demo"
+        },
+        {
+          "href": "/about",
+          "anchor": "about Restrova"
+        },
+        {
+          "href": "/services/restaurant-pos",
+          "anchor": "the related Restrova solution"
+        },
+        {
+          "href": "/contact",
+          "anchor": "Request a Free Demo"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "See pricing and examples"
+        },
+        {
+          "href": "/blog/restaurant-software-pricing-pakistan-guide",
+          "anchor": "Restaurant Software Pricing in Pakistan: A Practical Buying Guide"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-management-software-pakistan",
+          "anchor": "How to Choose Restaurant Management Software in Pakistan"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+          "anchor": "Best Restaurant POS Software in Pakistan: Buying Checklist"
+        },
+        {
+          "href": "/blog/restaurant-pos-software-cost-pakistan",
+          "anchor": "Restaurant POS Software Cost in Pakistan"
+        },
+        {
+          "href": "/blog",
+          "anchor": "Browse all restaurant guides"
+        }
+      ]
+    },
+    {
+      "route": "/blog/manage-multiple-restaurant-branches",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/blog",
+          "anchor": "Guides"
+        },
+        {
+          "href": "/blog/restaurant-inventory-management-guide-pakistan",
+          "anchor": "inventory guide"
+        },
+        {
+          "href": "/solutions/multi-branch-restaurants",
+          "anchor": "multi-branch solution"
+        },
+        {
+          "href": "/services/restaurant-pos",
+          "anchor": "POS workflow"
+        },
+        {
+          "href": "/services/reporting-analytics",
+          "anchor": "reporting tools"
+        },
+        {
+          "href": "/contact",
+          "anchor": "free demo"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "pricing"
+        },
+        {
+          "href": "/about",
+          "anchor": "about Restrova"
+        },
+        {
+          "href": "/services/reporting-analytics",
+          "anchor": "the related Restrova solution"
+        },
+        {
+          "href": "/contact",
+          "anchor": "Request a Free Demo"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "See pricing and examples"
+        },
+        {
+          "href": "/blog/restaurant-inventory-management-guide-pakistan",
+          "anchor": "Restaurant Inventory Management Software Buying Guide"
+        },
+        {
+          "href": "/blog/restaurant-rider-management-tracking-settlement",
+          "anchor": "Restaurant Rider and Delivery Management Guide"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-management-software-pakistan",
+          "anchor": "How to Choose Restaurant Management Software in Pakistan"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+          "anchor": "Best Restaurant POS Software in Pakistan: Buying Checklist"
+        },
+        {
+          "href": "/blog",
+          "anchor": "Browse all restaurant guides"
+        }
+      ]
+    },
+    {
+      "route": "/blog/restaurant-software-pricing-pakistan-guide",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/blog",
+          "anchor": "Guides"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "pricing page"
+        },
+        {
+          "href": "/blog/restaurant-app-cost-pakistan",
+          "anchor": "app cost guide"
+        },
+        {
+          "href": "/blog/manage-multiple-restaurant-branches",
+          "anchor": "multi-branch planning guide"
+        },
+        {
+          "href": "/blog/compare-restaurant-ordering-systems",
+          "anchor": "repeatable ordering-system comparison"
+        },
+        {
+          "href": "/contact",
+          "anchor": "free Restrova demo"
+        },
+        {
+          "href": "/blog/restaurant-online-ordering-system-cost-pakistan",
+          "anchor": "online ordering system cost worksheet"
+        },
+        {
+          "href": "/blog/restaurant-pos-software-cost-pakistan",
+          "anchor": "POS software cost guide"
+        },
+        {
+          "href": "/about",
+          "anchor": "about Restrova"
+        },
+        {
+          "href": "/services/restaurant-pos",
+          "anchor": "the related Restrova solution"
+        },
+        {
+          "href": "/contact",
+          "anchor": "Request a Free Demo"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "See pricing and examples"
+        },
+        {
+          "href": "/blog/restaurant-pos-vs-manual-billing",
+          "anchor": "Restaurant POS vs Manual Billing: What Changes in Daily Operations?"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-management-software-pakistan",
+          "anchor": "How to Choose Restaurant Management Software in Pakistan"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+          "anchor": "Best Restaurant POS Software in Pakistan: Buying Checklist"
+        },
+        {
+          "href": "/blog/restaurant-pos-software-cost-pakistan",
+          "anchor": "Restaurant POS Software Cost in Pakistan"
+        },
+        {
+          "href": "/blog",
+          "anchor": "Browse all restaurant guides"
+        }
+      ]
+    },
+    {
+      "route": "/blog/launch-restaurant-ordering-app",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/blog",
+          "anchor": "Guides"
+        },
+        {
+          "href": "/services/restaurant-pos",
+          "anchor": "POS and order management"
+        },
+        {
+          "href": "/apps",
+          "anchor": "Restrova app directory"
+        },
+        {
+          "href": "/blog/restaurant-app-cost-pakistan",
+          "anchor": "app costs and ownership"
+        },
+        {
+          "href": "/contact",
+          "anchor": "free Restrova demo"
+        },
+        {
+          "href": "/services/restaurant-ordering-websites",
+          "anchor": "ordering website"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "published software pricing"
+        },
+        {
+          "href": "/blog/restaurant-app-cost-pakistan",
+          "anchor": "app development cost questions"
+        },
+        {
+          "href": "/about",
+          "anchor": "about Restrova"
+        },
+        {
+          "href": "/services/restaurant-ordering-apps",
+          "anchor": "the related Restrova solution"
+        },
+        {
+          "href": "/contact",
+          "anchor": "Request a Free Demo"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "See pricing and examples"
+        },
+        {
+          "href": "/blog/5-features-every-restaurant-app-must-have-in-2026",
+          "anchor": "Five Checks Before Choosing a Restaurant Ordering App"
+        },
+        {
+          "href": "/blog/how-to-boost-customer-loyalty-with-digital-rewards",
+          "anchor": "Plan Restaurant Loyalty Rewards Without Guessing the Return"
+        },
+        {
+          "href": "/blog/restaurant-app-cost-pakistan",
+          "anchor": "Restaurant Ordering App Development Cost in Pakistan"
+        },
+        {
+          "href": "/blog/start-online-ordering-small-restaurant-pakistan",
+          "anchor": "How to Start Online Ordering for a Restaurant in Pakistan"
+        },
+        {
+          "href": "/blog",
+          "anchor": "Browse all restaurant guides"
+        }
+      ]
+    },
+    {
+      "route": "/blog/compare-restaurant-ordering-systems",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/blog",
+          "anchor": "Guides"
+        },
+        {
+          "href": "/blog/restaurant-software-pricing-pakistan-guide",
+          "anchor": "software pricing buying guide"
+        },
+        {
+          "href": "/services/restaurant-ordering-websites",
+          "anchor": "Restrova's ordering website"
+        },
+        {
+          "href": "/services/restaurant-pos",
+          "anchor": "POS workflow"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "pricing"
+        },
+        {
+          "href": "/contact",
+          "anchor": "free demo"
+        },
+        {
+          "href": "/blog/why-direct-ordering-beats-third-party-marketplaces",
+          "anchor": "channel responsibilities"
+        },
+        {
+          "href": "/blog/restaurant-online-ordering-system-cost-pakistan",
+          "anchor": "online ordering cost guide"
+        },
+        {
+          "href": "/about",
+          "anchor": "about Restrova"
+        },
+        {
+          "href": "/services/restaurant-ordering-websites",
+          "anchor": "the related Restrova solution"
+        },
+        {
+          "href": "/contact",
+          "anchor": "Request a Free Demo"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "See pricing and examples"
+        },
+        {
+          "href": "/blog/why-direct-ordering-beats-third-party-marketplaces",
+          "anchor": "Restaurant Website vs Third-Party Delivery Marketplace in Pakistan"
+        },
+        {
+          "href": "/blog/start-online-ordering-small-restaurant-pakistan",
+          "anchor": "How to Start Online Ordering for a Restaurant in Pakistan"
+        },
+        {
+          "href": "/blog/restaurant-online-ordering-system-cost-pakistan",
+          "anchor": "Restaurant Online Ordering System Cost in Pakistan"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-management-software-pakistan",
+          "anchor": "How to Choose Restaurant Management Software in Pakistan"
+        },
+        {
+          "href": "/blog",
+          "anchor": "Browse all restaurant guides"
+        }
+      ]
+    },
+    {
+      "route": "/blog/restaurant-online-ordering-system-cost-pakistan",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/blog",
+          "anchor": "Guides"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "published pricing and calculator"
+        },
+        {
+          "href": "/services/restaurant-ordering-websites",
+          "anchor": "Restrova ordering website workflow"
+        },
+        {
+          "href": "/blog/why-direct-ordering-beats-third-party-marketplaces",
+          "anchor": "website-versus-marketplace comparison"
+        },
+        {
+          "href": "/blog/restaurant-software-pricing-pakistan-guide",
+          "anchor": "broader software pricing guide"
+        },
+        {
+          "href": "/blog/compare-restaurant-ordering-systems",
+          "anchor": "ordering system comparison checklist"
+        },
+        {
+          "href": "/blog/restaurant-app-cost-pakistan",
+          "anchor": "app development cost guide"
+        },
+        {
+          "href": "/blog/start-online-ordering-small-restaurant-pakistan",
+          "anchor": "online ordering launch checklist"
+        },
+        {
+          "href": "/contact",
+          "anchor": "book a free Restrova demo"
+        },
+        {
+          "href": "/about",
+          "anchor": "about Restrova"
+        },
+        {
+          "href": "/services/restaurant-ordering-websites",
+          "anchor": "the related Restrova solution"
+        },
+        {
+          "href": "/contact",
+          "anchor": "Request a Free Demo"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "See pricing and examples"
+        },
+        {
+          "href": "/blog/why-direct-ordering-beats-third-party-marketplaces",
+          "anchor": "Restaurant Website vs Third-Party Delivery Marketplace in Pakistan"
+        },
+        {
+          "href": "/blog/start-online-ordering-small-restaurant-pakistan",
+          "anchor": "How to Start Online Ordering for a Restaurant in Pakistan"
+        },
+        {
+          "href": "/blog/compare-restaurant-ordering-systems",
+          "anchor": "Best Online Ordering Systems for Restaurants in Pakistan: What to Compare"
+        },
+        {
+          "href": "/blog/restaurant-pos-software-cost-pakistan",
+          "anchor": "Restaurant POS Software Cost in Pakistan"
+        },
+        {
+          "href": "/blog",
+          "anchor": "Browse all restaurant guides"
+        }
+      ]
+    },
+    {
+      "route": "/blog/restaurant-pos-software-cost-pakistan",
+      "links": [
+        {
+          "href": "/",
+          "anchor": "Home"
+        },
+        {
+          "href": "/blog",
+          "anchor": "Guides"
+        },
+        {
+          "href": "/services/restaurant-pos",
+          "anchor": "restaurant POS workflow"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "current pricing page"
+        },
+        {
+          "href": "/blog/restaurant-online-ordering-system-cost-pakistan",
+          "anchor": "online ordering cost guide"
+        },
+        {
+          "href": "/services/inventory-management",
+          "anchor": "stock management"
+        },
+        {
+          "href": "/services/delivery-management",
+          "anchor": "rider reconciliation"
+        },
+        {
+          "href": "/blog/restaurant-pos-vs-manual-billing",
+          "anchor": "POS-versus-manual-billing guide"
+        },
+        {
+          "href": "/blog/restaurant-software-pricing-pakistan-guide",
+          "anchor": "general pricing guide"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+          "anchor": "POS buying checklist"
+        },
+        {
+          "href": "/contact",
+          "anchor": "request a free Restrova demo"
+        },
+        {
+          "href": "/about",
+          "anchor": "about Restrova"
+        },
+        {
+          "href": "/services/restaurant-pos",
+          "anchor": "the related Restrova solution"
+        },
+        {
+          "href": "/contact",
+          "anchor": "Request a Free Demo"
+        },
+        {
+          "href": "/pricing",
+          "anchor": "See pricing and examples"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-management-software-pakistan",
+          "anchor": "How to Choose Restaurant Management Software in Pakistan"
+        },
+        {
+          "href": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+          "anchor": "Best Restaurant POS Software in Pakistan: Buying Checklist"
+        },
+        {
+          "href": "/blog/restaurant-pos-vs-manual-billing",
+          "anchor": "Restaurant POS vs Manual Billing: What Changes in Daily Operations?"
+        },
+        {
+          "href": "/blog/restaurant-software-pricing-pakistan-guide",
+          "anchor": "Restaurant Software Pricing in Pakistan: A Practical Buying Guide"
+        },
+        {
+          "href": "/blog",
+          "anchor": "Browse all restaurant guides"
+        }
+      ]
+    }
+  ]
+}

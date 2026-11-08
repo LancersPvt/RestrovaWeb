@@ -1,0 +1,48 @@
+Restrova Google Sheet repair
+
+What caused the problem
+The earlier receiver matched header text exactly. Your sheet uses Branches,
+Daily Orders, Decision-Maker Role and Complete System Interest. The receiver
+used different names and appended extra columns, leaving the original columns
+blank. It also wrote a pricing label outside your existing dropdown choices.
+Scheduling values were sent in Preferred Day, Preferred Time and Meeting
+Platform, which were added to the right of the existing CRM columns.
+
+Apply the repair
+1. Open the existing Google Apps Script project connected to your Sheet.
+2. Replace the previous Restrova receiver with the accompanying Code.gs and save.
+   Preserve unrelated functions if that project contains other automations.
+3. Keep the existing Script properties unchanged:
+   RESTROVA_SHEETS_SHARED_SECRET and RESTROVA_SPREADSHEET_ID, if already set.
+4. In the function selector next to Run, choose repairRestrovaSheet and click Run.
+   This runs directly from the editor; deployment is not needed for this step.
+5. Read the Execution log. repairedRows gives the number of repaired rows.
+   missingScheduleRows lists rows for which no complete schedule was recorded.
+   dropdownIssues lists any answer the script could not match safely; those
+   values are preserved for review, never replaced with an arbitrary choice.
+6. Open the Google Sheet. The repair focuses the scheduling columns and makes
+   them visible, with times labelled PKT. You can also run showDemoSchedule later
+   to focus those columns.
+7. Deploy > Manage deployments > pencil icon > New version > Deploy on the
+   existing deployment so future submissions use the corrected receiver.
+8. Reply 'Repaired and redeployed' for live verification.
+
+What the repair preserves
+Before editing, it creates backup copies of Leads and Other Enquiries (if present).
+It fills blank original columns from the extra columns or saved form message,
+normalizes recognized pricing answers to your real dropdown options, and displays
+recorded dates/times in readable formats. It keeps existing sales notes, nonempty
+sales statuses, formulas, customer answers, and original/extra columns. It does
+not delete customer rows or invent dates/times absent from the stored information.
+Running it again does not create another backup or overwrite completed repairs.
+
+No Vercel/environment-variable changes are needed for this receiver-only fix.
+Your current web-app URL remains the same when you update the existing deployment.
+
+Verification completed locally
+Tests cover your original header names, previously appended duplicate columns,
+dropdowns sourced from lists and ranges, recovery from stored messages, visible
+schedule columns, typed dates/times, preserving sales entries/formulas, backups,
+rerun safety, duplicate protection and rejection of invalid/unqualified requests.
+The Google Sheet itself has not been changed from this chat because this browser
+session requires Google sign-in. The repair must be run in your Apps Script editor.

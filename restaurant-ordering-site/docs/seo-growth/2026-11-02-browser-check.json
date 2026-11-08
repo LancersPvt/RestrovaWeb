@@ -1,0 +1,144 @@
+{
+  "date": "2026-11-02",
+  "results": [
+    {
+      "width": 390,
+      "route": "/",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "route": "/services",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "route": "/blog",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "route": "/blog/restaurant-app-cost-pakistan",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "route": "/blog/why-direct-ordering-beats-third-party-marketplaces",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "route": "/solutions/cafes",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "route": "/solutions/cloud-kitchens",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "route": "/solutions/fast-food-restaurants",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "route": "/solutions/multi-branch-restaurants",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "route": "/pricing",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "route": "/contact",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "route": "/",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "route": "/services",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "route": "/blog",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "route": "/blog/restaurant-app-cost-pakistan",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "route": "/blog/why-direct-ordering-beats-third-party-marketplaces",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "route": "/solutions/cafes",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "route": "/solutions/cloud-kitchens",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "route": "/solutions/fast-food-restaurants",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "route": "/solutions/multi-branch-restaurants",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "route": "/pricing",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "route": "/contact",
+      "status": 200,
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "checks": [
+    "Mobile menu navigation closes after navigation",
+    "Pricing 800000 -> 8000; negative input rejected",
+    "Chain qualification excludes one branch"
+  ],
+  "networkPolicy": "Local pages only; third-party analytics blocked; no form submissions"
+}

@@ -1,0 +1,48 @@
+{
+  "version": "2026-11-03-v1",
+  "market": "Pakistan",
+  "cohort": "unbranded",
+  "note": "Freeze wording for comparable rounds. These are research prompts, not website copy or measured demand. Two English prompts and one Roman Urdu prompt per intent.",
+  "groups": [
+    { "id": "direct-ordering", "primaryUrl": "/services/restaurant-ordering-websites", "prompts": [
+      { "id": "direct-ordering-en-1", "language": "en", "text": "How can a small restaurant in Pakistan start taking orders directly online without making customers install an app?" },
+      { "id": "direct-ordering-en-2", "language": "en", "text": "Compare ways for a Pakistani restaurant to run its own ordering website alongside delivery marketplaces. What costs and operational responsibilities should I check? Cite sources." },
+      { "id": "direct-ordering-ur-1", "language": "ur-Latn", "text": "Pakistan mein apne restaurant ke liye direct online orders kaise shuru karun? Website, menu aur delivery ke liye kya chahiye?" }
+    ]},
+    { "id": "branded-apps", "primaryUrl": "/services/restaurant-ordering-apps", "prompts": [
+      { "id": "branded-apps-en-1", "language": "en", "text": "Which providers offer restaurant-branded Android and iOS ordering apps in Pakistan, and what should I verify before choosing one?" },
+      { "id": "branded-apps-en-2", "language": "en", "text": "Should a restaurant in Pakistan launch its own mobile ordering app or start with a website? Compare account ownership, maintenance and customer use, with sources." },
+      { "id": "branded-apps-ur-1", "language": "ur-Latn", "text": "Mujhe Pakistan mein restaurant ke naam ki Android aur iPhone ordering app chahiye. Provider choose karte waqt kin cheezon aur charges ko check karun?" }
+    ]},
+    { "id": "management", "primaryUrl": "/", "prompts": [
+      { "id": "management-en-1", "language": "en", "text": "What restaurant management software options in Pakistan connect direct online orders, POS, inventory and delivery operations? Compare their documented scope." },
+      { "id": "management-en-2", "language": "en", "text": "I run a restaurant in Pakistan and want to replace separate order, stock and rider records. What should I look for in a connected system and a live demo?" },
+      { "id": "management-ur-1", "language": "ur-Latn", "text": "Pakistan mein restaurant ke online orders, counter, stock aur riders aik system se manage karne ke liye kaun se software dekhun aur demo mein kya check karun?" }
+    ]},
+    { "id": "pos", "primaryUrl": "/services/restaurant-pos", "prompts": [
+      { "id": "pos-en-1", "language": "en", "text": "Which restaurant POS systems in Pakistan can handle counter and direct online orders? What evidence should I ask for before choosing?" },
+      { "id": "pos-en-2", "language": "en", "text": "How should a Pakistani restaurant evaluate POS software for a busy takeaway and delivery shift, including preparation handoffs and hardware compatibility?" },
+      { "id": "pos-ur-1", "language": "ur-Latn", "text": "Restaurant ke counter aur online orders saath manage karne ke liye Pakistan mein POS software kaise choose karun? Printer aur tax integration kaise verify karun?" }
+    ]},
+    { "id": "inventory", "primaryUrl": "/services/inventory-management", "prompts": [
+      { "id": "inventory-en-1", "language": "en", "text": "What restaurant inventory software is available in Pakistan, and how can I verify its relationship with POS orders and menu availability?" },
+      { "id": "inventory-en-2", "language": "en", "text": "My restaurant keeps accepting orders for items that are out of stock. How should I evaluate stock and menu management software in Pakistan without assuming recipe automation?" },
+      { "id": "inventory-ur-1", "language": "ur-Latn", "text": "Pakistan mein restaurant ka stock aur menu availability manage karne ke liye software chahiye. Recipe deduction aur cancelled order ka stock demo mein kaise check karun?" }
+    ]},
+    { "id": "delivery", "primaryUrl": "/services/delivery-management", "prompts": [
+      { "id": "delivery-en-1", "language": "en", "text": "Which software options in Pakistan help restaurants assign delivery riders, show live tracking and reconcile rider payments? Cite product sources." },
+      { "id": "delivery-en-2", "language": "en", "text": "What should a restaurant test before choosing live rider tracking software in Pakistan, including weak connectivity, customer visibility and failed deliveries?" },
+      { "id": "delivery-ur-1", "language": "ur-Latn", "text": "Restaurant ke delivery riders ki live tracking aur payment settlement ke liye Pakistan mein kya software options hain? Owner aur customer ki tracking ka demo kaise check karun?" }
+    ]},
+    { "id": "branches", "primaryUrl": "/solutions/multi-branch-restaurants", "prompts": [
+      { "id": "branches-en-1", "language": "en", "text": "What software should a restaurant with three branches in Pakistan evaluate for separate menus, online orders, stock and delivery areas?" },
+      { "id": "branches-en-2", "language": "en", "text": "How should I compare multi-branch restaurant software in Pakistan for staff access, order destinations, reporting and branch pricing? Include questions to verify in a demo." },
+      { "id": "branches-ur-1", "language": "ur-Latn", "text": "Mere restaurant ki do branches hain. Pakistan mein menus, online orders, staff access aur riders manage karne ke liye software choose karte waqt kya check karun?" }
+    ]},
+    { "id": "pricing", "primaryUrl": "/pricing", "prompts": [
+      { "id": "pricing-en-1", "language": "en", "text": "Which restaurant software providers in Pakistan publish clear setup and monthly pricing? Compare minimum fees, sales-based charges and exclusions using current sources." },
+      { "id": "pricing-en-2", "language": "en", "text": "How can a small restaurant in Pakistan compare affordable ordering and management software when one quote uses a monthly minimum and a percentage of sales?" },
+      { "id": "pricing-ur-1", "language": "ur-Latn", "text": "Pakistan mein restaurant ordering aur management software ka total kharcha kaise compare karun? Monthly fee, sales percentage, setup aur extra charges samjha dein." }
+    ]}
+  ]
+}

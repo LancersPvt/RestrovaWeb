@@ -1,0 +1,25 @@
+{
+  "status": "Internal template only. Do not publish blanks or unapproved evidence.",
+  "permissionRecord": {
+    "restaurant": null,
+    "authorizingPerson": null,
+    "date": null,
+    "approvedQuote": null,
+    "approvedMediaScope": null
+  },
+  "title": null,
+  "locationAndBranchContext": null,
+  "serviceModel": null,
+  "beforeWorkflow": null,
+  "implementedModules": null,
+  "implementationDates": null,
+  "integrationLimitations": null,
+  "observedAfterWorkflow": null,
+  "measuredFiguresAndSourceRecords": null,
+  "measurementPeriod": null,
+  "unmeasuredLimitations": null,
+  "approvedAttribution": null,
+  "redactedAssetPaths": [],
+  "cta": "Request a Free Demo \u2014 https://www.restrova.com/contact",
+  "publicationGate": "Owner and restaurant approve the exact text, quote, media and any before/after figures. If figures are unavailable, describe the documented workflow without numeric outcomes."
+}

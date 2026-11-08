@@ -1,0 +1,93 @@
+{
+  "date": "2026-11-03",
+  "auditedCommit": "6af8ad7",
+  "existingCuratedUrls": 35,
+  "newUrls": 0,
+  "decision": "Expand existing pages. No new online-ordering or phrase-specific pages.",
+  "roles": {
+    "/": "Primary broad restaurant-management overview; preserves the earlier keyword-page map.",
+    "/services": "Buyer-topic directory and connected operational walkthrough; supports the primary pages.",
+    "/services/restaurant-ordering-websites": "Primary direct-online-ordering commercial page, expanded in place.",
+    "/services/restaurant-ordering-apps": "Commercial app planning, ownership and launch scope.",
+    "/apps": "Role-specific app access and public listing evidence, not a second app sales landing page.",
+    "/pricing": "Authoritative fee formula, calculator, examples and exclusions.",
+    "/faq": "English and Roman Urdu buyer answers that link to deeper pages.",
+    "/compare-marketplaces": "Channel trade-offs and operating responsibilities.",
+    "/blog": "Supporting evaluation and implementation guides; not additional product landing pages."
+  },
+  "legacy": "552 geography/service combinations remain noindex and outside the curated sitemap. No new city or phrase pages.",
+  "topics": [
+    {
+      "intent": "direct-ordering",
+      "label": "Direct online ordering",
+      "primaryUrl": "/services/restaurant-ordering-websites",
+      "workflowEntry": "/services/restaurant-ordering-websites",
+      "guide": "/blog/start-online-ordering-small-restaurant-pakistan",
+      "buyerQuestion": "How can customers order directly from my restaurant?",
+      "romanUrduAnswer": "/faq#roman-urdu-direct-ordering"
+    },
+    {
+      "intent": "branded-apps",
+      "label": "Branded restaurant mobile apps",
+      "primaryUrl": "/services/restaurant-ordering-apps",
+      "workflowEntry": "/services/restaurant-ordering-apps",
+      "guide": "/blog/launch-restaurant-ordering-app",
+      "buyerQuestion": "When does my restaurant need its own app?",
+      "romanUrduAnswer": "/faq#roman-urdu-branded-apps"
+    },
+    {
+      "intent": "management",
+      "label": "Restaurant management software",
+      "primaryUrl": "/",
+      "workflowEntry": "/services#daily-operations",
+      "guide": "/blog/how-to-choose-restaurant-management-software-pakistan",
+      "buyerQuestion": "How do the customer and staff tools fit together?",
+      "romanUrduAnswer": null
+    },
+    {
+      "intent": "pos",
+      "label": "POS and order management",
+      "primaryUrl": "/services/restaurant-pos",
+      "workflowEntry": "/services/restaurant-pos",
+      "guide": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+      "buyerQuestion": "How can staff follow counter and online orders?",
+      "romanUrduAnswer": "/faq#roman-urdu-pos"
+    },
+    {
+      "intent": "inventory",
+      "label": "Inventory and menu availability",
+      "primaryUrl": "/services/inventory-management",
+      "workflowEntry": "/services/inventory-management",
+      "guide": "/blog/restaurant-inventory-management-guide-pakistan",
+      "buyerQuestion": "How should stock decisions affect what we sell?",
+      "romanUrduAnswer": "/faq#roman-urdu-inventory"
+    },
+    {
+      "intent": "delivery",
+      "label": "Delivery and rider tracking",
+      "primaryUrl": "/services/delivery-management",
+      "workflowEntry": "/services/delivery-management",
+      "guide": "/blog/restaurant-rider-management-tracking-settlement",
+      "buyerQuestion": "How can we follow delivery after food leaves the kitchen?",
+      "romanUrduAnswer": "/faq#roman-urdu-delivery"
+    },
+    {
+      "intent": "branches",
+      "label": "Multi-branch operations",
+      "primaryUrl": "/solutions/multi-branch-restaurants",
+      "workflowEntry": "/solutions/multi-branch-restaurants",
+      "guide": "/blog/manage-multiple-restaurant-branches",
+      "buyerQuestion": "What should we check before adding another branch?",
+      "romanUrduAnswer": "/faq#roman-urdu-branches"
+    },
+    {
+      "intent": "pricing",
+      "label": "Transparent software pricing",
+      "primaryUrl": "/pricing",
+      "workflowEntry": "/pricing",
+      "guide": "/blog/restaurant-software-pricing-pakistan-guide",
+      "buyerQuestion": "What will we pay as processed sales change?",
+      "romanUrduAnswer": "/faq#roman-urdu-pricing"
+    }
+  ]
+}

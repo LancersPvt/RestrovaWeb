@@ -1,5 +1,10 @@
-import type { Metadata } from "next";
+import BusinessTypeLinks from "@/components/BusinessTypeLinks";
+import JsonLd from "@/components/JsonLd";
+import { siteConfig } from "@/lib/site";
+import { staticMetadata } from "@/lib/seo";
+import { Breadcrumbs } from "@/components/MarketingPage";
 import Link from "next/link";
+import BuyerTopicDirectory from "@/components/BuyerTopicDirectory";
 import {
   ArrowRight,
   Bike,
@@ -11,11 +16,7 @@ import {
   Palette,
 } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "Restaurant Ordering and Operations Services",
-  description:
-    "Explore Restrova’s online and POS ordering, inventory, live rider tracking, rider reconciliation, loyalty, discounts, and branded admin tools.",
-};
+export const metadata = staticMetadata("/services");
 
 const services = [
   {
@@ -64,38 +65,57 @@ const services = [
 
 export default function ServicesPage() {
   return (
-    <main className="bg-[#fffaf4] text-[#171816]">
+    <main id="main-content" className="bg-[#fffaf4] text-[#171816]">
+      <JsonLd data={{ "@context": "https://schema.org", "@type": "SoftwareApplication", "@id": `${siteConfig.url}/services#software`,
+        name: "Restrova", url: `${siteConfig.url}/services`, applicationCategory: "BusinessApplication",
+        description: "Restaurant technology platform with branded ordering websites and customer apps, order management, inventory, delivery and reporting workflows.",
+        provider: { "@id": `${siteConfig.url}/#organization` } }} />
       <section className="border-b border-black/5 bg-[#171816] py-16 text-white sm:py-24">
         <div className="mx-auto max-w-7xl px-6">
+          <Breadcrumbs items={[{ label: "Solutions", href: "/services" }]} />
           <p className="text-sm font-black uppercase tracking-[.2em] text-[#ff8d75]">Restrova capabilities</p>
           <h1 className="mt-4 max-w-4xl text-balance text-4xl font-black leading-tight tracking-[-0.04em] sm:text-6xl">
-            Build the direct ordering system your restaurant actually needs.
+            Restaurant software solutions for Pakistan.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-white/65">
             Take orders online and at POS, manage stock, coordinate riders, and
             bring customers back—all through a setup shaped around your team.
           </p>
-          <Link href="/#contact" className="mt-8 inline-flex min-h-14 items-center gap-2 rounded-full bg-[#ff6247] px-7 font-black text-white transition hover:bg-[#ff735b]">
-            Plan my Restrova setup
+          <Link href="/#contact" className="mt-8 inline-flex min-h-14 items-center gap-2 rounded-full bg-[#c2412d] px-7 font-black text-white transition hover:bg-[#a73524]">
+            Request a Free Demo
             <ArrowRight className="h-5 w-5" aria-hidden="true" />
           </Link>
         </div>
       </section>
 
+      <div className="seo-content mx-auto max-w-7xl space-y-14 px-6 pt-12">
+        <BuyerTopicDirectory />
+        <section id="daily-operations" className="scroll-mt-28">
+          <h2>Follow one order through the restaurant</h2>
+          <p className="mt-4 max-w-3xl">Restaurant management software connects the tools customers see with the work staff do. Restrova provides customer ordering channels, Admin for restaurant operations and Fleet for delivery. Use your menu and staff roles to evaluate the complete setup.</p>
+          <ol className="mt-6 grid gap-5 md:grid-cols-2">
+            <li className="seo-card"><h3>1. Receive the order</h3><p className="mt-3">A customer orders through your <Link href="/services/restaurant-ordering-websites">website</Link> or <Link href="/services/restaurant-ordering-apps">branded app</Link>, or staff enter a counter order using <Link href="/services/restaurant-pos">POS</Link>. Check the branch, items and fulfilment choice.</p></li>
+            <li className="seo-card"><h3>2. Check availability and prepare</h3><p className="mt-3">The team reviews <Link href="/services/inventory-management">stock and menu availability</Link>, follows preparation and resolves changes with the customer. Demonstrate which stock updates are automatic and which need staff action.</p></li>
+            <li className="seo-card"><h3>3. Complete pickup or delivery</h3><p className="mt-3">Confirm the packed items and the collection handoff. For delivery, use <Link href="/services/delivery-management">Fleet assignment, status and tracking</Link>; test the rider&apos;s actual phone and connection.</p></li>
+            <li className="seo-card"><h3>4. Review the shift and the next branch</h3><p className="mt-3">Compare order records with <Link href="/services/reporting-analytics">sales and delivery reports</Link>. For <Link href="/solutions/multi-branch-restaurants">several branches</Link>, repeat the example with different menus, staff access and delivery boundaries.</p></li>
+          </ol>
+          <p className="mt-6">Compare the <Link href="/pricing">pricing and fee examples</Link>, read <Link href="/about">about Restrova</Link>, and use the <Link href="/faq">English and Roman Urdu buyer questions</Link> to prepare for a <Link href="/contact">live demonstration</Link>.</p>
+        </section>
+      </div>
       <section className="py-16 sm:py-24">
         <div className="mx-auto grid max-w-7xl gap-5 px-6 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
             <article key={service.title} className="rounded-[1.75rem] border border-black/8 bg-white p-7 shadow-[0_16px_50px_rgba(30,24,18,.06)]">
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#ffebe4] text-[#e45239]">
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#ffebe4] text-[#b83d29]">
                 <service.icon className="h-6 w-6" aria-hidden="true" />
               </div>
-              <p className="mt-7 text-xs font-black uppercase tracking-[.17em] text-[#e45239]">{service.value}</p>
+              <p className="mt-7 text-xs font-black uppercase tracking-[.17em] text-[#b83d29]">{service.value}</p>
               <h2 className="mt-2 text-xl font-black tracking-tight">{service.title}</h2>
               <p className="mt-3 leading-7 text-black/60">{service.description}</p>
               <ul className="mt-6 space-y-3 border-t border-black/8 pt-5 text-sm text-black/60">
                 {service.points.map((point) => (
                   <li key={point} className="flex items-start gap-3">
-                    <Check className="mt-0.5 h-4 w-4 shrink-0 text-[#e45239]" aria-hidden="true" />
+                    <Check className="mt-0.5 h-4 w-4 shrink-0 text-[#b83d29]" aria-hidden="true" />
                     {point}
                   </li>
                 ))}
@@ -115,6 +135,7 @@ export default function ServicesPage() {
           </Link>
         </div>
       </section>
+      <BusinessTypeLinks />
     </main>
   );
 }

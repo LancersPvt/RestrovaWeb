@@ -38,9 +38,9 @@ export async function GET(request: NextRequest) {
             path: path,
             timestamp: Date.now()
         });
-    } catch (err: any) {
+    } catch (err: unknown) {
         return NextResponse.json(
-            { error: "Error revalidating path", message: err.message },
+            { error: "Error revalidating path", message: err instanceof Error ? err.message : "Unknown revalidation error" },
             { status: 500 }
         );
     }
@@ -70,7 +70,7 @@ export async function POST(request: NextRequest) {
     try {
         const body = await request.json();
         path = body.path;
-    } catch (err) {
+    } catch {
         // Fallback to query param
         path = request.nextUrl.searchParams.get("path") || "";
     }
@@ -90,9 +90,9 @@ export async function POST(request: NextRequest) {
             path: path,
             timestamp: Date.now()
         });
-    } catch (err: any) {
+    } catch (err: unknown) {
         return NextResponse.json(
-            { error: "Error revalidating path", message: err.message },
+            { error: "Error revalidating path", message: err instanceof Error ? err.message : "Unknown revalidation error" },
             { status: 500 }
         );
     }

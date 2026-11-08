@@ -1,0 +1,69 @@
+RESTROVA — OFF-PAGE AUTHORITY AND OUTREACH KIT
+27 October 2026. Preparation only: no outreach sent, profiles created, links bought or publication commitments obtained.
+
+VERIFIED PUBLIC EXAMPLES AND LIMITS
+Blink has public coverage in Profit by Pakistan Today and an adviser announcement from Collyer Law. These are verifiable examples of editorial/business mentions, not proof of backlink volume, ranking impact or availability to Restrova:
+https://profit.pakistantoday.com.pk/2023/12/08/blink-successfully-closes-2-1mn-seed-funding-round-but-what-are-their-plans-for-the-restaurant-business
+https://www.collyerlaw.com/single-post/advised-500-startups-on-investment-in-blink
+Restrova's public Admin Google Play listing is discoverable. Search also surfaced restrova.app, which presents a Nepal-focused product; ownership/relationship is unverified. Treat this as a brand-disambiguation review item, not a claim of infringement or affiliation. Keep approved company identity and www.restrova.com consistent.
+No authenticated backlink dataset was available. Search-result presence does not establish a followed link, domain authority, organic traffic or competitor market share.
+Indolj is also named in Startup Syndicate's own restaurant-technology event account: https://startupsyndicate.pk/news-updates/funl-02-restaurant-tech-and-q-commerce/ . This is a verified industry mention, not a current invitation or backlink guarantee.
+
+PROSPECT CATEGORIES / QUALIFICATION
+1. Existing restaurant customers: approved implementation stories on their own site or a joint case study. Start with the account owner; public logos alone do not establish permission to contact or publish a result.
+2. Pakistani business/technology editors: a newsworthy release, documented restaurant workflow finding or independently useful research. Profit's existing industry coverage shows topical fit; editorial interest must be earned. Verify the current editor and submission rules before contact.
+3. Restaurant/hospitality trade groups and events: offer an educational demo or operations workshop with a clear audience and transparent sponsorship. Confirm membership and eligibility from the current official organization page.
+4. Relevant software/company directories: a truthful, owner-controlled profile with the approved entity, website, category and product scope. Check audience relevance and editorial moderation before paying any listing fee. Do not create hundreds of near-empty profiles.
+5. Integrations/technology partners: a joint setup guide only for a working, approved integration. Obtain both sides' review; a planned integration is not a partnership.
+6. Original research: interview consenting restaurant operators about a narrowly defined workflow, publish the methodology and limitations, and offer an aggregate resource editors can cite. Do not invent survey responses or infer national averages from a convenience sample.
+
+OUTREACH TEMPLATE — CUSTOMER STORY (DRAFT; DO NOT SEND WITHOUT APPROVAL)
+Subject: Documenting your restaurant's ordering workflow
+Hello [approved customer contact],
+We would like to document how your team uses Restrova for [verified workflow]. Could we arrange a short interview about the process before setup, what changed, and what still needs improvement?
+We will share the complete draft, screenshots and any proposed figures for your approval before publication. We can keep the story qualitative if the records do not support a fair numerical comparison. Participation and a link are optional.
+Thank you,
+[authorized sender]
+
+OUTREACH TEMPLATE — EDITORIAL RESOURCE
+Subject: A practical restaurant operations resource for your readers
+Hello [verified editor],
+Your coverage of [specific relevant article] prompted us to prepare [original resource]. It addresses [restaurant-owner question] using [verified evidence/methodology], with the limits stated clearly.
+If it fits your coverage, we can share the resource and a product expert for factual questions. There is no requirement to publish or link, and we are happy to correct any technical ambiguity.
+[authorized sender and business contact]
+
+OUTREACH TEMPLATE — PARTNER ACKNOWLEDGMENT
+Hello [approved partner contact],
+We are updating the description of our work together on [verified project]. Would you review the attached wording and confirm whether a short technology acknowledgment is useful on your site?
+Any acknowledgment should describe the actual relationship, use your preferred editorial wording, and be optional. We will not add claims, logos or links without the relevant approval.
+[authorized sender]
+
+CASE STUDY TEMPLATE
+Working title: [restaurant + specific workflow, no unverified outcome]
+Identity/permission: approved brand, city, contact, approver, approved media scope.
+Context: business format, branches in scope, order channels, period covered.
+Problem: observed operating difficulty and source of evidence.
+Before: documented steps and baseline dates; distinguish measured data from recollection.
+Implementation: actual Restrova components, configuration, training and go-live dates.
+After: same definitions and comparable period; explain promotions, seasonality and other changes.
+Outcome: validated records and limitations; no causal claim that the software alone caused revenue changes without appropriate evidence.
+Quote: exact approved words, role and consent; optional.
+Screens: sample/redacted data, release version, owner approval.
+Review: customer sign-off, Restrova product review, publication date, review date.
+CTA: relevant solution and free demo. Link attribution optional; no review incentive.
+
+PARTNER LINK GUIDELINES
+Use a normal brand or descriptive link to the genuinely relevant page. Do not demand keyword-rich exact-match anchors, reciprocal sitewide footers or mandatory customer links. Disclose paid placements and use appropriate rel='sponsored' (or nofollow where appropriate). Do not buy ranking credit, hide links, use private blog networks or fake reviews. A useful referral is valuable even when nofollow.
+Google link-spam policies: https://developers.google.com/search/docs/essentials/spam-policies#link-spam
+
+QUALITY CHECKLIST BEFORE OUTREACH
+Does the page have a relevant real audience and an identifiable publisher? Is the relationship/editorial reason truthful? Is the resource useful without the link? Is the destination live/canonical and relevant? Are commercial terms disclosed? Does the publisher avoid unrelated mass guest posts and guaranteed-rank offers? Is permission documented for logos, quotes and metrics? Can the team maintain the resource? Record the final URL and actual rel attribute only after publication; never predict it.
+
+MONTHLY PRIORITIES
+Month 1: confirm identity and customer permissions; prepare one case-study interview; review 8–12 manually qualified prospects as a workload target, not a promise of placements. Create a prospect log with source URL, relevance, contact-verification date, owner, status and approval.
+Month 2: complete one approved workflow story and one captioned product demo; offer the relevant resource to a small approved list. Follow up once after an appropriate interval; respect refusals and stop requests.
+Month 3: improve resources from actual buyer questions, run one small original research project if participation is available, and pursue editorial/partner opportunities supported by the resulting evidence.
+
+BRAND MONITORING / METRICS
+Weekly manual review: searches for Restrova, www.restrova.com and approved legal-name variants; inspect relevance before logging a mention. Check Search Console external links monthly and an authorized backlink tool if supplied. No recurring automation has been scheduled.
+Track qualified prospects, approved contacts, responses, interviews, customer-approved stories, editorial mentions, live referring pages, referral visits, qualified leads and won customers. Separate a workload goal from observed results. Record rel attributes and first-seen dates, but do not treat a proprietary authority score as a business outcome. Escalate incorrect affiliation claims to the owner; do not send accusations or takedown requests automatically.

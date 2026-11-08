@@ -4,6 +4,16 @@ export interface TenantConfig {
     name: string;
 }
 
+interface ApiTenant {
+    id: string;
+    slug: string;
+    displayName?: string;
+    name?: string;
+    legalName?: string;
+    isActive?: boolean;
+    active?: boolean;
+}
+
 import https from "https";
 import http from "http";
 import urlModule from "url";
@@ -185,11 +195,11 @@ export async function fetchActiveTenants(): Promise<TenantConfig[]> {
         }
 
         const data = JSON.parse(res.body);
-        const content = Array.isArray(data) ? data : data.content || [];
+        const content: ApiTenant[] = Array.isArray(data) ? data : data.content || [];
         
         return content
-            .filter((t: any) => t.isActive ?? t.active ?? true)
-            .map((t: any) => ({
+            .filter((t) => t.isActive ?? t.active ?? true)
+            .map((t) => ({
                 id: t.id,
                 slug: t.slug,
                 name: t.displayName || t.name || t.legalName || t.slug,

@@ -1,5 +1,9 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Restrova lead forms
+
+See [the demo setup guide](docs/demo-setup.md) for the required secrets, Google Sheets deployment, and verification. Run `npm run setup:demo` to create the local secrets and `npm run test:demo` to test the workflow.
+
 ## Getting Started
 
 First, run the development server:
@@ -13,6 +17,8 @@ pnpm dev
 # or
 bun dev
 ```
+
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 

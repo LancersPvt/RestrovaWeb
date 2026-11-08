@@ -1,0 +1,63 @@
+RESTROVA — TOPIC DISCOVERY RELEASE AND MEASUREMENT PROTOCOL
+Version 2026-11-04-v2. Market: Pakistan. Commercial content update: 4 November 2026.
+
+PURPOSE
+Evaluate discoverability across related restaurant-owner questions. A page, structured-data object, successful crawl or one answer is not a guarantee of future AI inclusion. This protocol does not claim rankings, endorsements or business outcomes.
+
+CURRENT STATUS
+Implementation and local validation are separate from production publication. A read-only public check on 4 November verified the prior 35-URL release, including /solutions/multi-branch-restaurants. The new commercial content update contains 37 curated URLs, adding two focused educational cost guides while preserving the existing ordering pillar. This new update has not been deployed by the implementation agent. The owner handles Git and publication.
+No independent AI Search observations have been entered for this release. topic-discovery-observations.json is intentionally empty. Zero completed observations means unmeasured, not a zero mention or citation rate.
+Vercel is the observed public hosting provider. No Search Console/Bing URL inspection access was available. Publication of the new commercial content update, account-level indexing and post-deployment AI observations remain pending.
+
+1. VERIFY THE RELEASE
+From the project directory after publication:
+  npm run check:geo-release -- docs/geo/release-verification.json
+Ensure GEO_BASE_URL is unset, or explicitly https://www.restrova.com. The resulting base must be the production origin, not localhost or a preview deployment. This read-only check verifies HTTP responses, expected content and metadata, production canonicals, robots rules, indexability directives, JSON-LD parsing and the expected 37-URL sitemap.
+Exit 1 / PENDING means the expected release is not fully verified. Inspect the failed checks; do not record a post-deployment lift using an older release. The multi-branch page must return 200 with the intended content, and the broad ordering page must keep its existing /services/restaurant-ordering-websites URL.
+Also run the full crawl against production:
+  $env:SEO_BASE_URL='https://www.restrova.com'
+  npm run check:seo
+The HTTP user agents are simulations. Check CDN/server logs or the host's crawler controls for access from genuine crawler IPs. Do not infer that robots.txt permission proves successful visits by a search engine.
+
+2. VERIFY INDEXING SEPARATELY
+In authorized Google Search Console and Bing Webmaster accounts, inspect the eight primary URLs in topic-discovery-prompts.json, plus /faq and /apps. Record the inspection date, indexed/not-indexed/pending state, last crawl, robots outcome and selected canonical where the tool exposes them. Confirm the verified property and submitted sitemap, and save exports or inspection screenshots without account secrets.
+Use the exact self-canonical production URLs. Keep the 552 existing legacy geography/service URLs noindex and outside the curated sitemap; do not bulk-request indexing for those templates. A public search or site: query is not a complete index inventory. No account-level evidence is manufactured from HTTP 200 responses.
+If a URL is not indexed, record that result and investigate before interpreting missing AI citations. Store the indexing evidence with the release ID; do not silently treat pending as indexed.
+
+3. COLLECT COMPARABLE AI SEARCH OBSERVATIONS
+Use the 24 frozen, unbranded prompts in topic-discovery-prompts.json: eight intent groups, each with two English prompts and one Roman Urdu prompt. Do not insert Restrova into the prompt, seed it with a prior answer, or use one long conversation for the whole cohort.
+For each engine/surface under review, use a fresh conversation with search enabled, consistent Pakistan locale and the exact wording. Record the engine, visible model (null if not displayed), account/session conditions, date/time, full answer text, source-panel URLs and a retained answer URL or screenshot/export path. Do not substitute ordinary web-search rankings for a Search-enabled AI answer.
+Run at least one complete 24-prompt round. If repeating, repeat every prompt equally, with repeat values 1, 2, 3 rather than selectively retesting successes. Use separate round IDs for baseline and post-deployment rounds and keep different engines, models and locales separate. Record relevant service changes and elapsed time since release/indexing; avoid treating a single volatile result as a durable change.
+Suggested comparable observations: a baseline before release if access is available, then a complete round after deployment and indexing review, with later rounds at consistent intervals. No scheduled automation was created.
+
+4. RECORD EVIDENCE WITHOUT INVENTING RESULTS
+Append real observations to topic-discovery-observations.json. Required fields per observation:
+- roundId: stable name for the collection round.
+- phase: baseline or post-deployment.
+- promptId and prompt: ID and exact text from the frozen protocol.
+- repeat: positive integer, normally 1 for the first run.
+- engine, model (string or null), locale, observedAt (ISO date/time with offset).
+- searchEnabled: true; freshConversation: true.
+- answerText: complete answer body, with the citation panel recorded separately.
+- evidence: retained answer URL or local screenshot/export reference.
+- citations: array of objects with url, relevance (relevant/not-relevant/unreviewed), claimSupport (supported/unsupported/unreviewed).
+- For post-deployment: releaseId, crawlEvidence and indexingEvidence are also required. These reference actual check results; they are not placeholder labels or assurances of indexing.
+Do not store account tokens, private customer data or restaurant demo-form submissions in this log. The automated tests use clearly synthetic fixtures; those fixtures must never be copied into the observation log.
+
+5. SUMMARIZE BY INTENT
+  npm run report:geo
+Or summarize a separate retained log:
+  npm run report:geo -- path/to/observations.json
+The report separates rounds by engine, model, locale, phase and release. Within each round and intent it reports observation count, distinct-prompt coverage, mention rate, owned-site citation rate, supported relevant citation rate and unreviewed citations. The denominator is completed observations in that group; confirm full, balanced prompt/repeat coverage before comparing percentages.
+A mention means the brand appears in answer prose; a bare source URL alone is not counted as a prose mention. An owned-site citation must resolve to restrova.com or www.restrova.com, not a lookalike hostname. Relevance and claim support require a human review of the cited page and the answer. An unreviewed citation is not treated as verified support. Missing groups have null rates.
+Retain inaccurate product, pricing or integration descriptions as findings even if the brand was cited. Fix the documented source or supply evidence where appropriate; do not publish artificial AI endorsements on the site.
+
+EVIDENCE PRIORITIES
+Existing customer-app listings are public product evidence only. Recheck the listing name, publisher and platform; do not infer sales lift, universal feature parity or customer endorsement. Obtain approved, anonymized screenshots/video of current ordering, Admin, inventory and Fleet flows before adding operational demonstrations.
+Detailed recipe/stock automation, offline behavior, hardware, tax/payment/accounting integrations, branch scope and tracking conditions remain demo/scope questions unless demonstrated and agreed. Preserve the published price: PKR 10,000 once, then the higher of PKR 5,000 and 1% of Restrova-processed monthly sales, with exclusions confirmed separately.
+
+REFERENCES
+Google Search Central, AI features and your website: https://developers.google.com/search/docs/appearance/ai-features
+Google Search Central, SEO Starter Guide: https://developers.google.com/search/docs/fundamentals/seo-starter-guide
+Schema.org ItemList: https://schema.org/ItemList
+Schema.org SoftwareApplication: https://schema.org/SoftwareApplication

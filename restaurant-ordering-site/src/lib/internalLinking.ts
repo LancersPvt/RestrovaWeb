@@ -4,7 +4,6 @@
  * to improve SEO and distribute link juice across the site.
  */
 
-import { services } from "@/data/services";
 import { createSlug } from "./slugUtils";
 
 export interface RelatedService {
@@ -175,8 +174,7 @@ export function getOtherCityLinks(
     serviceSlug: string,
     currentCitySlug: string,
     currentCountrySlug: string,
-    allCities: Array<{ slug: string; label: string }>,
-    currentCountryLabel: string
+    allCities: Array<{ slug: string; label: string }>
 ): Array<{
     citySlug: string;
     cityLabel: string;
