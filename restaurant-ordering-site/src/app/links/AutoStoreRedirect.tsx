@@ -52,7 +52,12 @@ export default function AutoStoreRedirect() {
   const pathname = usePathname();
 
   useEffect(() => {
-    const links = STORE_LINKS[pathname.replace(/\/$/, "")];
+    const currentPath = pathname.replace(/\/$/, "");
+
+    // Disable auto redirect for Fruit Ninja Pakistan only
+    if (currentPath === "/links/fruitninjapakistan") return;
+
+    const links = STORE_LINKS[currentPath];
     if (!links) return;
 
     const userAgent = navigator.userAgent;
