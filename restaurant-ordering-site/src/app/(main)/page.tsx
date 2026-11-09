@@ -1,3 +1,4 @@
+import CustomerPortfolioLink from "@/components/CustomerPortfolioLink";
 import BusinessTypeLinks from "@/components/BusinessTypeLinks";
 import Image from "next/image";
 import Link from "next/link";
@@ -131,7 +132,7 @@ const connectedJourney = [
   { label: "Retain", detail: "Loyalty and offers", icon: Repeat2 },
 ];
 
-const restaurantPartners = clientTestimonials;
+const restaurantPartners = clientTestimonials.filter(customer => !["Yum Zone", "Yumzone", "Ash & Beans", "Top Spice", "Fruit Ninja", "Eat Oyee"].includes(customer.company));
 
 const faqs = [
   {
@@ -582,6 +583,7 @@ export default function Home() {
         </div>
       </section>
 
+      <div className="mx-auto max-w-6xl px-6 py-12"><CustomerPortfolioLink /></div>
       <BusinessTypeLinks />
     </main>
   );

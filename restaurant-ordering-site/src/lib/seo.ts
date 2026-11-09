@@ -1,3 +1,4 @@
+import { approvedCustomers } from "@/data/customers";
 import type { Metadata } from "next";
 import { isPreviewDeployment, siteConfig } from "@/lib/site";
 
@@ -18,6 +19,8 @@ export function pageMetadata(path: string, title: string, description: string, i
 }
 
 export const staticSeoPages = [
+  { path: "/customers", title: "Restaurant Ordering Apps & Customer Stories | Restrova Pakistan", description: "Explore approved restaurant implementations using Restrova branded ordering apps, websites, POS, inventory and delivery management tools in Pakistan." },
+  ...approvedCustomers.map(c => ({ path: `/customers/${c.slug}`, title: `${c.name} Technology Case Study`, description: c.summary })),
   { path: "/about", title: "About Restrova | Restaurant Technology for Pakistan", description: "Learn how Restrova helps restaurants in Pakistan run branded ordering apps, websites, POS orders, inventory and delivery operations in one connected platform." },
   { path: "/", title: "Restaurant Management Software Pakistan", description: siteConfig.description },
   { path: "/services", title: "Restaurant Software Solutions & Workflows Pakistan", description: "Explore direct ordering, branded apps, POS, inventory, rider tracking and branch operations. Find the Restrova workflow and pricing questions for your restaurant." },

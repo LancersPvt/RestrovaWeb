@@ -1,3 +1,4 @@
+import ProductVideos from "@/components/ProductVideos";
 import BusinessTypeLinks from "@/components/BusinessTypeLinks";
 import JsonLd from "@/components/JsonLd";
 import { siteConfig } from "@/lib/site";
@@ -135,6 +136,7 @@ export default function ServicesPage() {
           </Link>
         </div>
       </section>
+      <div className="mx-auto max-w-6xl px-6 py-16"><ProductVideos page="services" /></div>
       <BusinessTypeLinks />
     </main>
   );

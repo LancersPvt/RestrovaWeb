@@ -1,0 +1,148 @@
+[
+  {
+    "name": "Yumzone",
+    "slug": "yumzone",
+    "publicationStatus": "pending_approval",
+    "contentStatus": "draft",
+    "relationshipSource": "Restrova owner brief, 2026-11-09",
+    "candidateLinks": [
+      "https://play.google.com/store/apps/details?id=com.restrova.yumzone"
+    ],
+    "confirmedServices": [],
+    "pending": [
+      "Public case-study approval",
+      "Implementation scope",
+      "Official identity and links",
+      "Approved logo/screenshots",
+      "Any measurable results with source and period"
+    ],
+    "verificationDate": "2026-11-09",
+    "evidence": [
+      {
+        "status": "verified",
+        "url": "https://play.google.com/store/apps/details?id=com.restrova.yumzone",
+        "finding": "Public Android listing has matching restaurant branding and Lancers Dev publisher."
+      }
+    ]
+  },
+  {
+    "name": "Top Spice",
+    "slug": "top-spice",
+    "publicationStatus": "pending_approval",
+    "contentStatus": "draft",
+    "relationshipSource": "Restrova owner brief, 2026-11-09",
+    "candidateLinks": [
+      "https://play.google.com/store/apps/details?id=com.restrova.topspice",
+      "https://apps.apple.com/pk/app/top-spice-pakistan/id6796204717"
+    ],
+    "confirmedServices": [],
+    "pending": [
+      "Public case-study approval",
+      "Implementation scope",
+      "Official identity and links",
+      "Approved logo/screenshots",
+      "Any measurable results with source and period"
+    ],
+    "verificationDate": "2026-11-09",
+    "evidence": [
+      {
+        "status": "verified",
+        "url": "https://play.google.com/store/apps/details?id=com.restrova.topspice",
+        "finding": "Public Android listing has matching restaurant branding and Lancers Dev publisher."
+      },
+      {
+        "status": "draft",
+        "url": "https://apps.apple.com/pk/app/top-spice-pakistan/id6796204717",
+        "finding": "Referenced from official developer app list, but direct page unavailable to verification tool. Recheck before publishing."
+      }
+    ]
+  },
+  {
+    "name": "Ash & Beans",
+    "slug": "ash-and-beans",
+    "publicationStatus": "pending_approval",
+    "contentStatus": "draft",
+    "relationshipSource": "Restrova owner brief, 2026-11-09",
+    "candidateLinks": [
+      "https://play.google.com/store/apps/details?id=com.restrova.ashandbeans",
+      "https://apps.apple.com/pk/app/ash-beans/id6759486466"
+    ],
+    "confirmedServices": [],
+    "pending": [
+      "Public case-study approval",
+      "Implementation scope",
+      "Official identity and links",
+      "Approved logo/screenshots",
+      "Any measurable results with source and period"
+    ],
+    "verificationDate": "2026-11-09",
+    "evidence": [
+      {
+        "status": "verified",
+        "url": "https://play.google.com/store/apps/details?id=com.restrova.ashandbeans",
+        "finding": "Public Android listing has matching restaurant branding and Lancers Dev publisher."
+      },
+      {
+        "status": "verified",
+        "url": "https://apps.apple.com/pk/app/ash-beans/id6759486466",
+        "finding": "Public iOS listing matches Ash & Beans; Lancers Software (Private) Limited publisher."
+      }
+    ]
+  },
+  {
+    "name": "Fruit Ninja",
+    "slug": "fruit-ninja",
+    "publicationStatus": "pending_approval",
+    "contentStatus": "draft",
+    "relationshipSource": "Restrova owner brief, 2026-11-09",
+    "candidateLinks": [
+      "https://fruitninjapakistan.com",
+      "https://play.google.com/store/apps/details?id=com.restrova.fruitninjapakistan"
+    ],
+    "confirmedServices": [],
+    "pending": [
+      "Public case-study approval",
+      "Implementation scope",
+      "Official identity and links",
+      "Approved logo/screenshots",
+      "Any measurable results with source and period"
+    ],
+    "verificationDate": "2026-11-09",
+    "evidence": [
+      {
+        "status": "verified",
+        "url": "https://apps.apple.com/pk/app/fruit-ninja-pakistan/id6783385415",
+        "finding": "Fruit Ninja Pakistan food/juice ordering listing, Lancers Software publisher; unrelated game excluded."
+      },
+      {
+        "status": "draft",
+        "url": "https://fruitninjapakistan.com",
+        "finding": "Existing repository link resolves with matching title; body unavailable to text verification. Android listing not verified."
+      }
+    ]
+  },
+  {
+    "name": "Eat Oyee",
+    "slug": "eat-oyee",
+    "publicationStatus": "pending_approval",
+    "contentStatus": "draft",
+    "relationshipSource": "Restrova owner brief, 2026-11-09",
+    "candidateLinks": [],
+    "confirmedServices": [],
+    "pending": [
+      "Public case-study approval",
+      "Implementation scope",
+      "Official identity and links",
+      "Approved logo/screenshots",
+      "Any measurable results with source and period"
+    ],
+    "verificationDate": "2026-11-09",
+    "evidence": [
+      {
+        "status": "draft",
+        "url": "https://apps.apple.com/pk/app/eat-oye/id6795950424",
+        "finding": "Eat Oye link found in official developer related-app list; direct page unavailable. Confirm association with owner-supplied Eat Oyee spelling."
+      }
+    ]
+  }
+]

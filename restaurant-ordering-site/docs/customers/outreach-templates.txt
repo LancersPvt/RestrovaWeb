@@ -1,0 +1,34 @@
+DRAFT OUTREACH ASSETS — REVIEW BEFORE SENDING
+Use only after the case study is deployed. No messages sent. Replace bracketed fields with verified information. Do not assert approval for other clients.
+
+1. CUSTOMER CASE-STUDY ANNOUNCEMENT
+We have published a Mandi Valley implementation story covering its use of Restrova for branded Android and iOS ordering apps, an ordering website, POS/Admin, inventory and Fleet delivery tools. Explore the confirmed setup and the public iOS listing: https://www.restrova.com/customers/mandi-valley. The story documents implementation scope without attributing unverified business results.
+
+2. TECHNOLOGY IMPLEMENTATION SUMMARY
+Mandi Valley uses customer-facing mobile and website ordering alongside Restrova administration, inventory and delivery tools. Its public app describes fresh produce and everyday essentials. The implementation offers a concrete example of how ordering channels and staff tools can sit within one platform. Specialist configuration and measurable outcomes are not claimed in the account.
+
+3. OPTIONAL PARTNER WEBSITE ACKNOWLEDGMENT
+Our digital ordering experience is supported by Restrova.
+Optional link: https://www.restrova.com/customers/mandi-valley
+Use only if the partner approves the exact statement and destination. Placement is voluntary, with no service condition or reciprocal-link requirement.
+
+4. PAKISTANI RESTAURANT-INDUSTRY EMAIL
+Subject: A documented ordering-platform implementation for your restaurant technology coverage
+Hello [editor name],
+We have prepared an owner-approved account of Mandi Valley's use of Restrova ordering apps, website, POS/Admin, inventory and Fleet. The public app serves a food/produce business, so the story may fit coverage of technology used across food retail and restaurants. It explains the connected scope without invented growth or savings figures.
+If relevant to your readers, the source is https://www.restrova.com/customers/mandi-valley. We can answer product questions and arrange an authorized demonstration. Any mention or link is entirely your editorial choice.
+[Sender name and role]
+
+5. TECHNOLOGY PUBLICATION PITCH
+Subject: Ordering channels and operational tools in a real Restrova implementation
+Hello [editor name],
+Would a factual implementation walkthrough be useful for your food-business software coverage? Our approved Mandi Valley account connects public ordering-app evidence with owner-confirmed POS/Admin, inventory and delivery scope. We can discuss the boundary between a published app listing, a demonstrated capability and a verified customer outcome.
+Source after publication: https://www.restrova.com/customers/mandi-valley. We are not offering an independent product ranking or a measured-results study. Please assess relevance on its merits; no backlink is required.
+[Sender name and role]
+
+6. CUSTOMER APPROVAL REQUEST
+Subject: Permission to prepare a factual [restaurant name] implementation story
+Hello [authorized contact],
+May we publish a customer portfolio entry describing your use of Restrova? Please confirm the official name, website/store links and services actually in use. We will send the exact draft and any proposed logo or screenshots for approval before publication. No private records, locations of riders, contact details or performance claims will be included without separate review and evidence.
+You may approve text only, request edits, withhold assets or decline. An optional website acknowledgment is separate and does not affect your service. Please identify the person authorized to approve publication and any restrictions.
+[Sender name and role]
