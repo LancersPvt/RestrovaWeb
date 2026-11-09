@@ -1,3 +1,5 @@
+UPDATE: the later GTM integration now supplies an explicit consent UI and transport for this adapter. See ../../analytics/gtm-ga4-setup.md. The original Phase 4 status below is historical.
+
 # Analytics event contract
 
 Status: hooks implemented; adapter DISABLED by default. No GA4 ID, gtag/GTM script, event queue, cookie or network transport installed. Existing Meta behavior preserved. No production property changes made.

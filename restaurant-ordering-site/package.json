@@ -17,7 +17,8 @@
     "check:geo-release": "node scripts/check-geo-release.mjs",
     "report:geo": "node scripts/geo-measurement.mjs",
     "test:customers": "node src/tests/test_customers.mjs",
-    "test:growth": "node src/tests/test_growth.mjs"
+    "test:growth": "node src/tests/test_growth.mjs",
+    "test:tracking": "node src/tests/test_tracking.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.563.0",

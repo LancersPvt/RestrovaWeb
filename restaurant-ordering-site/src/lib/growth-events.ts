@@ -1,3 +1,5 @@
+import { trackingPaths } from "@/lib/tracking-paths";
+const publicPaths = new Set<string>(trackingPaths);
 export type GrowthEvent = "demo_cta_click" | "demo_form_start" | "generate_lead" | "pricing_view" | "customer_case_study_view";
 export type GrowthLocation = "header" | "footer" | "content" | "intake" | "schedule";
 export type GrowthPayload = { page_path: string; cta_location?: GrowthLocation };
@@ -11,15 +13,15 @@ export function configureGrowthAnalytics(config: { consent: boolean; send?: Send
   sender = config.consent ? config.send : undefined;
   if (!config.consent) seen.clear();
 }
-function safePath(raw: string) {
+export function safeGrowthPath(raw: string) {
   const path = raw.split(/[?#]/)[0];
-  return /^\/(?:|pricing|contact|apps|about|services(?:\/(?:restaurant-pos|restaurant-ordering-apps|restaurant-ordering-websites|inventory-management|delivery-management|reporting-analytics))?|customers(?:\/(?:yum-zone|ash-and-beans|top-spice|fruit-ninja-pakistan|mandi-valley))?|demo\/(?:schedule|thank-you))$/.test(path) ? path : "/other";
+  return publicPaths.has(path) ? path : "/other";
 }
 export function trackGrowthEvent(name: GrowthEvent, input: { pagePath: string; location?: GrowthLocation }, dedupeKey?: string): boolean {
   if (!sender || !events.has(name)) return false;
   const key = dedupeKey ? `${name}:${dedupeKey}` : undefined;
   if (key && seen.has(key)) return false;
-  const payload: GrowthPayload = { page_path: safePath(input.pagePath) };
+  const payload: GrowthPayload = { page_path: safeGrowthPath(input.pagePath) };
   if (input.location && locations.has(input.location)) payload.cta_location = input.location;
   try {
     sender(name, payload);

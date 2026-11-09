@@ -1,3 +1,5 @@
+CURRENT TRACKING UPDATE: GTM implementation now has separate, default-off Google analytics and Meta marketing choices. The former unconditional Meta script and noscript pixel were removed. See docs/analytics/gtm-ga4-setup.md for the current implementation and owner configuration requirements. The historical audit below predates this change; policy approval/indexing status is unchanged.
+
 RESTROVA PRIVACY POLICY — PRE-PUBLICATION REVIEW
 
 Status: Draft requiring business approval. Do not deploy this policy without approval.

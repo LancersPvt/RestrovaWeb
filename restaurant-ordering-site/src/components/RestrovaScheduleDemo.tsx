@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { CalendarDays, ArrowRight } from "lucide-react";
+import { trackMetaLead } from "@/lib/tracking-consent";
 import { trackGrowthEvent } from "@/lib/growth-events";
 import { meetingPlatforms } from "@/lib/restrova-demo";
 
@@ -56,12 +57,7 @@ export default function RestrovaScheduleDemo() {
       }
       // One qualified Lead event, only AFTER the CRM reports that demo scheduling
       // data and contact details have been stored. No raw PII is sent to Pixel.
-      try {
-        const win = window as Window & {
-          fbq?: (command: string, eventName: string, params?: Record<string, unknown>, options?: { eventID: string }) => void;
-        };
-        if (win.fbq) win.fbq("track", "Lead", {}, { eventID: result.eventId ?? "" });
-      } catch { /* Pixel blockers must not interrupt the successful CRM submission. */ }
+      if (result.eventId) trackMetaLead(result.eventId);
       if (result.eventId) trackGrowthEvent("generate_lead", { pagePath: "/demo/schedule", location: "schedule" }, result.eventId);
       router.replace("/demo/thank-you");
     } catch (err) {
