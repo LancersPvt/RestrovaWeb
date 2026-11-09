@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-09",
+  "deployment": "Not deployed or pushed",
+  "productionBuild": "PASS; Next.js 16.1.6 webpack build including TypeScript",
+  "lint": "PASS",
+  "testSuites": [
+    "test:customers",
+    "test:growth",
+    "test:seo",
+    "test:demo",
+    "test:integrations",
+    "test:geo"
+  ],
+  "crawl": {
+    "pages": 43,
+    "internalLinksAndAnchors": 252,
+    "result": "PASS"
+  },
+  "mobile": {
+    "widths": [
+      360,
+      390,
+      1440
+    ],
+    "pageViewportChecks": 39,
+    "result": "PASS; horizontal overflow, status, H1, canonical, customer schema, no-JavaScript rendering"
+  },
+  "accessibility": {
+    "pages": 8,
+    "axeViolations": 0,
+    "scope": "Automated WCAG 2 A/AA and 2.1 AA; not a manual accessibility certification"
+  },
+  "schemaOrgValidator": [
+    {
+      "page": "ash-and-beans",
+      "errors": 0,
+      "warnings": 0,
+      "objects": 3
+    },
+    {
+      "page": "customers",
+      "errors": 0,
+      "warnings": 0,
+      "objects": 3
+    },
+    {
+      "page": "fruit-ninja-pakistan",
+      "errors": 0,
+      "warnings": 0,
+      "objects": 3
+    },
+    {
+      "page": "mandi-valley",
+      "errors": 0,
+      "warnings": 0,
+      "objects": 3
+    },
+    {
+      "page": "top-spice",
+      "errors": 0,
+      "warnings": 0,
+      "objects": 3
+    },
+    {
+      "page": "yum-zone",
+      "errors": 0,
+      "warnings": 0,
+      "objects": 3
+    }
+  ],
+  "schemaVocabulary": {
+    "pages": 43,
+    "result": "PASS; types, domains, ranges and article alignment"
+  },
+  "lighthouse": {
+    "scope": "One simulated mobile local /customers run, before final link-wording correction; not production field data or a before/after comparison",
+    "scores": {
+      "performance": 85,
+      "accessibility": 100,
+      "best-practices": 77,
+      "seo": 100
+    },
+    "fcpSeconds": 2.4,
+    "lcpSeconds": 2.4,
+    "cls": 0,
+    "tbtMilliseconds": 340,
+    "limitation": "Best-practices warnings concern cookies from the preserved Meta installation."
+  },
+  "geo": "Release checks pass locally; report has zero observations and null rates, not zero visibility. 24 prompts across 8 intents ready for later measurement.",
+  "liveLeadDelivery": "Not tested with real submissions; backend/CRM offline fixtures passed."
+}

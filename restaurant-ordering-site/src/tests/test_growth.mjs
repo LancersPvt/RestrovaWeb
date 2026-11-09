@@ -1,0 +1,15 @@
+import assert from "node:assert/strict";
+import {loadSeoSource} from "../../scripts/load-seo-source.mjs";
+const {configureGrowthAnalytics,trackGrowthEvent}=loadSeoSource("src/lib/growth-events.ts");
+const calls=[];const send=(...args)=>calls.push(args);
+assert.equal(trackGrowthEvent("generate_lead",{pagePath:"/demo/schedule"},"one"),false);
+configureGrowthAnalytics({consent:false,send});trackGrowthEvent("pricing_view",{pagePath:"/pricing"});assert.equal(calls.length,0);
+configureGrowthAnalytics({consent:true,send});
+trackGrowthEvent("generate_lead",{pagePath:"/demo/schedule?email=private@example.com",location:"schedule",phone:"private"},"one");
+trackGrowthEvent("generate_lead",{pagePath:"/demo/schedule"},"one");assert.equal(calls.length,1);
+assert.deepEqual(calls[0],["generate_lead",{page_path:"/demo/schedule",cta_location:"schedule"}]);
+trackGrowthEvent("demo_cta_click",{pagePath:"/private-person",location:"private-person"});assert.deepEqual(calls[1][1],{page_path:"/other"});
+trackGrowthEvent("unknown",{pagePath:"/"});assert.equal(calls.length,2);
+configureGrowthAnalytics({consent:true,send:()=>{throw Error("blocked")}});assert.equal(trackGrowthEvent("pricing_view",{pagePath:"/pricing"}),false);
+configureGrowthAnalytics({consent:false});assert.equal(trackGrowthEvent("pricing_view",{pagePath:"/pricing"}),false);
+console.log("PASS disabled-by-default analytics, consent gating, allowlisted payloads, PII stripping, deduplication and failure isolation");

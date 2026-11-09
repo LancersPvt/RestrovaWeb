@@ -63,7 +63,7 @@ export default async function SolutionPage({ params }: { params: Promise<{ servi
     <section><h2>Continue planning your setup</h2><p className="mt-4">Read <Link href="/about">about Restrova</Link>, compare <Link href="/apps">the available apps</Link>, and use our <Link href="/blog/how-to-choose-restaurant-management-software-pakistan">software buyer’s guide</Link> and <Link href="/faq">general FAQ</Link> to prepare your questions.</p><p className="mt-4">For another part of the operation, <Link href="/services#buyer-topics">explore the restaurant owner topics</Link> or review <Link href="/solutions/multi-branch-restaurants">how to evaluate a multi-branch setup</Link>.</p><ul className="mt-5 space-y-3">{guide.reading.map((link) => <li key={link.href}><Link href={link.href}>{link.label}</Link></li>)}</ul></section>
     <section><h2>Guides for this workflow</h2><ul className="mt-5 space-y-3">{blogPosts.filter((post) => post.relatedSolution === solution.slug).slice(0, 5).map((post) => <li key={post.slug}><Link href={`/blog/${post.slug}`}>{post.title}</Link></li>)}</ul></section>
     <section><h2>Apply it to your restaurant</h2><ul className="mt-5 flex flex-wrap gap-5">{businessTypes.filter((item) => item.services.includes(solution.slug)).map((item) => <li key={item.slug}><Link href={`/solutions/${item.slug}`}>{item.label}</Link></li>)}</ul></section>
-    <CustomerPortfolioLink />
+    <CustomerPortfolioLink service={solution.slug} />
     <DemoCta />
   </MarketingPage>;
 }

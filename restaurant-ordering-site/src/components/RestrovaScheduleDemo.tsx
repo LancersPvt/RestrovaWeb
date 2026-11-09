@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { CalendarDays, ArrowRight } from "lucide-react";
+import { trackGrowthEvent } from "@/lib/growth-events";
 import { meetingPlatforms } from "@/lib/restrova-demo";
 
 function localToday(): string {
@@ -61,6 +62,7 @@ export default function RestrovaScheduleDemo() {
         };
         if (win.fbq) win.fbq("track", "Lead", {}, { eventID: result.eventId ?? "" });
       } catch { /* Pixel blockers must not interrupt the successful CRM submission. */ }
+      if (result.eventId) trackGrowthEvent("generate_lead", { pagePath: "/demo/schedule", location: "schedule" }, result.eventId);
       router.replace("/demo/thank-you");
     } catch (err) {
       setBusy(false);
@@ -78,7 +80,7 @@ export default function RestrovaScheduleDemo() {
   );
 
   return (
-    <form onSubmit={submit} className="mx-auto max-w-xl space-y-6 rounded-2xl border border-black/10 bg-white p-6 shadow-sm sm:p-8">
+    <form data-demo-form onSubmit={submit} className="mx-auto max-w-xl space-y-6 rounded-2xl border border-black/10 bg-white p-6 shadow-sm sm:p-8">
       <div>
         <CalendarDays className="h-9 w-9 text-[#ff6247]" aria-hidden="true" />
         <h1 className="mt-3 text-2xl font-black text-[#171816]">Request Your Restrova Demo</h1>

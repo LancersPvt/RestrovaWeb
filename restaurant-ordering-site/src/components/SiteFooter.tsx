@@ -30,7 +30,7 @@ export default function SiteFooter() {
               <li><Link href="/#outcomes" className="transition hover:text-white">Why direct ordering</Link></li>
               <li><Link href="/about" className="transition hover:text-white">About Restrova</Link></li>
               <li><Link href="/services" className="transition hover:text-white">Solutions</Link></li>
-              <li><Link href="/#restaurants" className="transition hover:text-white">Restaurants</Link></li>
+              <li><Link href="/customers" className="transition hover:text-white">Customer stories</Link></li>
               <li><Link href="/pricing" className="transition hover:text-white">Pricing</Link></li>
               <li><Link href="/apps" className="transition hover:text-white">Apps and downloads</Link></li>
               <li><Link href="/privacy-policy" className="transition hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">Privacy Policy</Link></li>

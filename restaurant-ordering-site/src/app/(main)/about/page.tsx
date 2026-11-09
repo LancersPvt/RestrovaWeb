@@ -1,3 +1,4 @@
+import CustomerPortfolioLink from "@/components/CustomerPortfolioLink";
 import MarketingPage, { DemoCta } from "@/components/MarketingPage";
 import CompanyInformation from "@/components/CompanyInformation";
 import { businessIdentity } from "@/lib/business-identity";
@@ -27,6 +28,6 @@ export default function AboutPage() {
       <p className="mb-8 text-xl font-bold">Your Restaurant. Your Brand. Your Ordering App. One Connected System.</p>
       <ArticleBody content={aboutContent} />
     </section>
-    <DemoCta />
+    <CustomerPortfolioLink /><DemoCta />
   </MarketingPage>;
 }

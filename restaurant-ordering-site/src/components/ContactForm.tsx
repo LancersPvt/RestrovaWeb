@@ -130,7 +130,7 @@ export default function ContactForm() {
   }
 
   return (
-    <form aria-busy={busy} onSubmit={submit} className="space-y-7" aria-label="Restrova restaurant and contact information">
+    <form data-demo-form aria-busy={busy} onSubmit={submit} className="space-y-7" aria-label="Restrova restaurant and contact information">
       <PricingSummary />
       <section className="space-y-4">
         <div>

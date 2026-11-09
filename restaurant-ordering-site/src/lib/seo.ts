@@ -19,7 +19,7 @@ export function pageMetadata(path: string, title: string, description: string, i
 }
 
 export const staticSeoPages = [
-  { path: "/customers", title: "Restaurant Ordering Apps & Customer Stories | Restrova Pakistan", description: "Explore approved restaurant implementations using Restrova branded ordering apps, websites, POS, inventory and delivery management tools in Pakistan." },
+  { path: "/customers", title: "Restrova Customers & Restaurant Software Case Studies | Pakistan", description: "Explore real businesses using Restrova for branded ordering apps, online ordering, POS, inventory and delivery operations in Pakistan." },
   ...approvedCustomers.map(c => ({ path: `/customers/${c.slug}`, title: `${c.name} Technology Case Study`, description: c.summary })),
   { path: "/about", title: "About Restrova | Restaurant Technology for Pakistan", description: "Learn how Restrova helps restaurants in Pakistan run branded ordering apps, websites, POS orders, inventory and delivery operations in one connected platform." },
   { path: "/", title: "Restaurant Management Software Pakistan", description: siteConfig.description },

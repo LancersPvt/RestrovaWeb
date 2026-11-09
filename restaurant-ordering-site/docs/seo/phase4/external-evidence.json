@@ -1,0 +1,30 @@
+[
+  {
+    "url": "https://mandivalley.com/",
+    "status": 200,
+    "finalUrl": "https://mandivalley.com/",
+    "title": "Mandi Valley",
+    "brandText": true
+  },
+  {
+    "url": "https://fruitninjapakistan.com/",
+    "status": 200,
+    "finalUrl": "https://fruitninjapakistan.com/",
+    "title": "Fruit Ninja Pakistan",
+    "brandText": true
+  },
+  {
+    "url": "https://apps.apple.com/pk/app/top-spice-pakistan/id6796204717",
+    "status": 200,
+    "finalUrl": "https://apps.apple.com/pk/app/top-spice-pakistan/id6796204717",
+    "title": "\u200eTop Spice Pakistan App - App Store",
+    "brandText": true
+  },
+  {
+    "url": "https://apps.apple.com/pk/app/ash-beans/id6759486466",
+    "status": 200,
+    "finalUrl": "https://apps.apple.com/pk/app/ash-beans/id6759486466",
+    "title": "\u200eAsh &amp; Beans App - App Store",
+    "brandText": true
+  }
+]

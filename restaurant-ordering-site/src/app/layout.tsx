@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
+import GrowthAnalytics from "@/components/GrowthAnalytics";
 import Script from "next/script";
 import "./globals.css";
 
@@ -71,6 +72,7 @@ export default function RootLayout({
       <body className={`${inter.variable} antialiased`}>
         <JsonLd data={siteIdentitySchema} />
         {children}
+        <GrowthAnalytics />
 
         {/* Meta Pixel: base code provided in Events Manager. */}
         <Script id="restrova-meta-pixel" strategy="afterInteractive">

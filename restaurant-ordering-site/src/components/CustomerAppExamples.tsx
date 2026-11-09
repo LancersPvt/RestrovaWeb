@@ -1,4 +1,3 @@
 import Link from "next/link";
-export default function CustomerAppExamples() {
- return <section aria-labelledby="customer-app-examples"><h2 id="customer-app-examples">Explore a published ordering app</h2><p className="mt-4">The Mandi Valley case study links to its public iOS listing and explains the confirmed Restrova services behind its ordering experience.</p><p className="mt-4"><Link href="/customers/mandi-valley">View Mandi Valley&apos;s ordering implementation</Link></p></section>;
-}
+import { approvedCustomers } from "@/data/customers";
+export default function CustomerAppExamples() { return <section aria-labelledby="customer-app-examples"><h2 id="customer-app-examples">Explore published customer ordering apps</h2><p className="mt-4">Compare the official listings with the confirmed implementation scope. App availability varies by platform and region.</p><ul className="mt-5 space-y-4">{approvedCustomers.map(c=><li key={c.slug}><Link href={`/customers/${c.slug}`}>{c.name} implementation and public references</Link></li>)}</ul></section>; }
