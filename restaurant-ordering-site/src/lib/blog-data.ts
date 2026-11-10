@@ -1,8 +1,9 @@
+import {editorialArticles,articleIsPublished} from "@/lib/editorial";
 export interface BlogPost {
   id: string; slug: string; title: string; seoTitle?: string; excerpt: string; content: string; category: string;
   author: string; authorExpertise: string; date: string; updated?: string; readTime: string; image?: string; relatedSolution: string;
 }
-export const blogPosts: BlogPost[] = [
+export const legacyBlogPosts: BlogPost[] = [
   {
     "id": "5",
     "slug": "how-to-choose-restaurant-management-software-pakistan",
@@ -245,5 +246,6 @@ export const blogPosts: BlogPost[] = [
     "readTime": "5 min read"
   }
 ];
+export const blogPosts: BlogPost[] = [...legacyBlogPosts,...editorialArticles.filter(articleIsPublished).map(p=>({id:p.id,slug:p.slug,title:p.title,seoTitle:p.metaTitle,excerpt:p.metaDescription,content:p.body,category:p.category,author:p.author,authorExpertise:"Editorial guidance from the Restrova team. Confirm product configuration and commercial scope in a demonstration.",date:p.publishedAt,updated:p.updatedAt,readTime:`${Math.max(1,Math.ceil(p.body.split(/\s+/).length/200))} min read`,relatedSolution:p.productLinks.find(h=>h.startsWith("/services/"))?.split("/").pop() || "restaurant-pos"}))];
 export const getBlogPostBySlug = (slug: string) => blogPosts.find((post) => post.slug === slug);
 export const getAllBlogSlugs = () => blogPosts.map((post) => post.slug);

@@ -35,8 +35,24 @@
     "pageType": "article",
     "verificationStatus": "research_required",
     "overlapTarget": "/blog/compare-restaurant-ordering-systems",
-    "reviewNote": "Research current provider evidence and define fair comparison criteria; do not invent a ranking.",
-    "sources": []
+    "reviewNote": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise.",
+    "sources": [
+      "https://www.indolj.pk/frequently-asked-questions.php",
+      "https://www.blinkco.io/help-center/faq-why-blink/"
+    ],
+    "category": "Restaurant operations",
+    "tags": [
+      "1"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+    ],
+    "draftDisposition": "research_hold"
   },
   {
     "id": "editorial-1-2",
@@ -75,8 +91,21 @@
     "pageType": "article",
     "verificationStatus": "overlap_review",
     "overlapTarget": "/blog/compare-restaurant-ordering-systems",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "1"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-1-3",
@@ -115,8 +144,21 @@
     "pageType": "article",
     "verificationStatus": "overlap_review",
     "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Overlapping launch process; merge supported setup steps into the existing launch guide, with a separate technical draft only where explicitly differentiated.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "1"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping launch process; merge supported setup steps into the existing launch guide, with a separate technical draft only where explicitly differentiated."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-1-4",
@@ -154,9 +196,22 @@
     "url": "/blog/7-benefits-of-an-online-ordering-system-for-small-restaurants",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+    "reviewNote": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "1"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-1-5",
@@ -194,9 +249,22 @@
     "url": "/blog/how-online-ordering-systems-help-restaurants-increase-direct-sales",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+    "reviewNote": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "1"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-1-6",
@@ -235,8 +303,21 @@
     "pageType": "article",
     "verificationStatus": "overlap_review",
     "overlapTarget": "/blog/why-direct-ordering-beats-third-party-marketplaces",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Same channel-choice intent; add verified cost or migration detail to the existing direct-versus-marketplace guide.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "1"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Same channel-choice intent; add verified cost or migration detail to the existing direct-versus-marketplace guide."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-1-7",
@@ -275,8 +356,21 @@
     "pageType": "article",
     "verificationStatus": "overlap_review",
     "overlapTarget": "/blog/restaurant-online-ordering-system-cost-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Same cost-evaluation question; merge the requested angle into the existing cost guide instead of another price page.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "1"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Same cost-evaluation question; merge the requested angle into the existing cost guide instead of another price page."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-1-8",
@@ -292,10 +386,10 @@
     "cluster": "1",
     "searchIntent": "Informational evaluation",
     "metaTitle": "10 Must-Have Features of a Restaurant Online Ordering System",
-    "metaDescription": "Evaluate online ordering system for restaurants with practical workflow questions, transparent costs and evidence to check before booking a restaurant software demonstration.",
+    "metaDescription": "A restaurant ordering specification should describe what happens to an order, not just name ten features.",
     "h1": "10 Must-Have Features of a Restaurant Online Ordering System",
-    "excerpt": "Editorial candidate requiring differentiation and review before publication.",
-    "body": "",
+    "excerpt": "A restaurant ordering specification should describe what happens to an order, not just name ten features. A long feature list can conceal the absence of a clear handoff between the customer, staff and rider. Use the following acceptance checks with your own menu before choosing a system.",
+    "body": "A restaurant ordering specification should describe what happens to an order, not just name ten features. A long feature list can conceal the absence of a clear handoff between the customer, staff and rider. Use the following acceptance checks with your own menu before choosing a system.\n\n## Ten acceptance checks\n\n1. Menu accuracy: compare the displayed name, price and availability with the approved menu.\n2. Item options: select required and optional choices and verify the final total.\n3. Fulfilment: test each offered pickup or delivery path.\n4. Customer information: confirm which details are necessary to fulfil that order.\n5. Staff receipt: identify who notices and accepts the order.\n6. Kitchen handoff: verify how preparation instructions reach the responsible person.\n7. Stock exception: try an item that has become unavailable.\n8. Delivery responsibility: identify the person assigning and closing a delivery.\n9. Correction: demonstrate a cancellation or mistaken item.\n10. Closing record: locate the completed transaction in the relevant report.\n\n## Run one order through every handoff\n\nChoose a realistic test basket with an option, an unavailable item and a pickup alternative. Ask the demonstrator to use the same order throughout. Switching to another example at each screen can hide manual re-entry. Record each action, responsible role and visible result. An automated handoff and a staff procedure can both be workable, but they need different training and staffing.\n\n## Turn observations into requirements\n\nUse three columns: demonstrated, requires configuration, and not established. Do not treat an icon or menu label as proof of an integration. Record the exact device or external service tested. Repeat the test after a connection interruption using the vendor’s supported recovery procedure. Ask how staff identify the authoritative order record when a customer retries checkout.\n\n## Decide what matters first\n\nA single counter may value a clear acceptance queue more than advanced campaign tools. A delivery team may need assignment and settlement controls before a complex loyalty programme. Separate launch requirements from later improvements and obtain written scope. Restrova has existing [ordering website](/services/restaurant-ordering-websites), [POS](/services/restaurant-pos) and [delivery](/services/delivery-management) pages; use these to structure a demonstration rather than assuming every option is included.\n\n## What should the owner keep?\n\nKeep the test basket, results and unresolved questions with the proposal. Confirm pricing through the [published pricing page](/pricing). A feature that cannot be demonstrated should remain a question, not a reason to claim a complete fit. Bring the acceptance sheet to a [demo](/contact) and use it again before launch.",
     "faq": [],
     "relatedArticleIds": [
       "9"
@@ -309,14 +403,30 @@
     "author": "Restrova Team",
     "createdAt": "2026-11-10",
     "updatedAt": "2026-11-10",
-    "publicationStatus": "needs_review",
+    "publicationStatus": "draft",
     "canonicalUrl": "https://www.restrova.com/blog/10-must-have-features-of-a-restaurant-online-ordering-system",
     "url": "/blog/10-must-have-features-of-a-restaurant-online-ordering-system",
     "pageType": "article",
-    "verificationStatus": "overlap_review",
+    "verificationStatus": "needs_review",
     "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Complete focused draft; not approved. Preserve the original requested title while reviewing whether it promises an unsupported outcome.",
+    "sources": [
+      "https://www.restrova.com/pricing",
+      "https://www.restrova.com/services"
+    ],
+    "category": "Restaurant operations",
+    "tags": [
+      "1"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Owner/editor must confirm claims, differentiation and final title before approval."
+    ],
+    "draftDisposition": "complete_draft"
   },
   {
     "id": "editorial-1-9",
@@ -355,8 +465,24 @@
     "pageType": "article",
     "verificationStatus": "research_required",
     "overlapTarget": "/blog/compare-restaurant-ordering-systems",
-    "reviewNote": "Research current provider evidence and define fair comparison criteria; do not invent a ranking.",
-    "sources": []
+    "reviewNote": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise.",
+    "sources": [
+      "https://www.indolj.pk/frequently-asked-questions.php",
+      "https://www.blinkco.io/help-center/faq-why-blink/"
+    ],
+    "category": "Restaurant operations",
+    "tags": [
+      "1"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+    ],
+    "draftDisposition": "research_hold"
   },
   {
     "id": "editorial-1-10",
@@ -394,9 +520,22 @@
     "url": "/blog/why-every-restaurant-needs-its-own-online-ordering-system-in-2026",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+    "reviewNote": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "1"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-2-1",
@@ -434,8 +573,24 @@
     "pageType": "article",
     "verificationStatus": "research_required",
     "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
-    "reviewNote": "Research current provider evidence and define fair comparison criteria; do not invent a ranking.",
-    "sources": []
+    "reviewNote": "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise.",
+    "sources": [
+      "https://www.indolj.pk/frequently-asked-questions.php",
+      "https://www.blinkco.io/help-center/faq-why-blink/"
+    ],
+    "category": "Restaurant operations",
+    "tags": [
+      "2"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+    ],
+    "draftDisposition": "research_hold"
   },
   {
     "id": "editorial-2-2",
@@ -474,8 +629,21 @@
     "pageType": "article",
     "verificationStatus": "overlap_review",
     "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "2"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-2-3",
@@ -491,10 +659,10 @@
     "cluster": "2",
     "searchIntent": "Informational evaluation",
     "metaTitle": "How Restaurant Management Software Can Reduce Operational Costs",
-    "metaDescription": "Evaluate restaurant management software with practical workflow questions, transparent costs and evidence to check before booking a restaurant software demonstration.",
+    "metaDescription": "Software can reduce avoidable work, but a subscription alone does not prove a saving.",
     "h1": "How Restaurant Management Software Can Reduce Operational Costs",
-    "excerpt": "Editorial candidate requiring differentiation and review before publication.",
-    "body": "",
+    "excerpt": "Software can reduce avoidable work, but a subscription alone does not prove a saving. Evaluate the costs of a specific operational problem before assigning a financial benefit to its solution. This guide uses a measurement exercise, not a claim about customer results.",
+    "body": "Software can reduce avoidable work, but a subscription alone does not prove a saving. Evaluate the costs of a specific operational problem before assigning a financial benefit to its solution. This guide uses a measurement exercise, not a claim about customer results.\n\n## Choose a measurable problem\n\nStart with one recurring issue: duplicate order entry, missed stock checks or time spent reconciling a shift. Define what counts as an occurrence and who records it. Use a consistent observation period. A busy Friday and a quiet Tuesday are not interchangeable baselines.\n\n## Separate time from cash\n\nSuppose a hypothetical team saves 20 minutes per shift. That does not necessarily reduce payroll: the same staff may remain scheduled. Record the time as capacity unless hours or another expense actually change. Value extra capacity only when it supports useful work that would otherwise be delayed or outsourced.\n\n## Calculate a conservative comparison\n\nList subscription, onboarding, training time, replacement devices, connectivity and any separately quoted services. Compare recurring benefits with recurring costs; show one-time costs separately. A hypothetical PKR 8,000 monthly saving against PKR 6,000 of additional monthly costs leaves PKR 2,000 before recovering setup expenditure. These figures illustrate arithmetic and are not Restrova pricing.\n\n## Avoid double counting\n\nIf fewer order corrections save ingredients and staff time, check that your estimate does not include the same cost again under reduced refunds. Count a saved delivery only when the delivery expense was actually avoided. Reducing waste has no cash effect if purchases remain unchanged and the surplus simply moves elsewhere.\n\n## Run a small operational trial\n\nAgree an observation method with staff, then test the proposed workflow on a manageable shift. Compare similar periods and document changes in menu, staffing or order mix. Keep customer-identifying information out of the evaluation report. Review exceptions as well as averages; an improvement that creates difficult recovery work may not be worthwhile.\n\n## Make the buying decision\n\nUse the [reporting page](/services/reporting-analytics) to identify records you can verify. Restrova’s stated monthly fee is the higher of PKR 5,000 or 1% of processed sales, plus PKR 10,000 one-time onboarding. Confirm other scope separately through [pricing](/pricing). Ask for a [demo](/contact) around the problem you measured, and retain the baseline even if the result is that a process change should come before software.",
     "faq": [],
     "relatedArticleIds": [
       "5"
@@ -508,14 +676,30 @@
     "author": "Restrova Team",
     "createdAt": "2026-11-10",
     "updatedAt": "2026-11-10",
-    "publicationStatus": "needs_review",
+    "publicationStatus": "draft",
     "canonicalUrl": "https://www.restrova.com/blog/how-restaurant-management-software-can-reduce-operational-costs",
     "url": "/blog/how-restaurant-management-software-can-reduce-operational-costs",
     "pageType": "article",
-    "verificationStatus": "overlap_review",
+    "verificationStatus": "needs_review",
     "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Complete focused draft; not approved. Preserve the original requested title while reviewing whether it promises an unsupported outcome.",
+    "sources": [
+      "https://www.restrova.com/pricing",
+      "https://www.restrova.com/services"
+    ],
+    "category": "Restaurant operations",
+    "tags": [
+      "2"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Owner/editor must confirm claims, differentiation and final title before approval."
+    ],
+    "draftDisposition": "complete_draft"
   },
   {
     "id": "editorial-2-4",
@@ -553,9 +737,22 @@
     "url": "/blog/restaurant-management-software-for-small-businesses-complete-guide",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/restaurant-inventory-management-guide-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
+    "reviewNote": "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "2"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-2-5",
@@ -594,8 +791,21 @@
     "pageType": "article",
     "verificationStatus": "overlap_review",
     "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "2"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-2-6",
@@ -634,8 +844,21 @@
     "pageType": "article",
     "verificationStatus": "overlap_review",
     "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "2"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-2-7",
@@ -673,9 +896,22 @@
     "url": "/blog/restaurant-management-software-vs-pos-what-s-the-difference",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/restaurant-pos-vs-manual-billing",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+    "reviewNote": "Overlapping POS selection intent; add supported distinctions to the established POS buying checklist.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "2"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping POS selection intent; add supported distinctions to the established POS buying checklist."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-2-8",
@@ -714,8 +950,21 @@
     "pageType": "article",
     "verificationStatus": "overlap_review",
     "overlapTarget": "/blog/manage-multiple-restaurant-branches",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Same branch-management decision; consolidate role, menu and reporting requirements in the existing branch guide.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "2"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Same branch-management decision; consolidate role, menu and reporting requirements in the existing branch guide."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-2-9",
@@ -754,8 +1003,21 @@
     "pageType": "article",
     "verificationStatus": "overlap_review",
     "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "2"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-2-10",
@@ -794,8 +1056,21 @@
     "pageType": "article",
     "verificationStatus": "overlap_review",
     "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "2"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-3-1",
@@ -834,8 +1109,24 @@
     "pageType": "article",
     "verificationStatus": "research_required",
     "overlapTarget": "/blog/compare-restaurant-ordering-systems",
-    "reviewNote": "Research current provider evidence and define fair comparison criteria; do not invent a ranking.",
-    "sources": []
+    "reviewNote": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise.",
+    "sources": [
+      "https://www.indolj.pk/frequently-asked-questions.php",
+      "https://www.blinkco.io/help-center/faq-why-blink/"
+    ],
+    "category": "Restaurant operations",
+    "tags": [
+      "3"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+    ],
+    "draftDisposition": "research_hold"
   },
   {
     "id": "editorial-3-2",
@@ -874,8 +1165,21 @@
     "pageType": "article",
     "verificationStatus": "overlap_review",
     "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Overlapping launch process; merge supported setup steps into the existing launch guide, with a separate technical draft only where explicitly differentiated.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "3"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping launch process; merge supported setup steps into the existing launch guide, with a separate technical draft only where explicitly differentiated."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-3-3",
@@ -913,9 +1217,22 @@
     "url": "/blog/restaurant-online-ordering-system-in-pakistan-features-costs-benefits",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/restaurant-online-ordering-system-cost-pakistan",
+    "reviewNote": "Same cost-evaluation question; merge the requested angle into the existing cost guide instead of another price page.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "3"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Same cost-evaluation question; merge the requested angle into the existing cost guide instead of another price page."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-3-4",
@@ -953,9 +1270,25 @@
     "url": "/blog/how-pakistani-restaurants-can-accept-online-orders-without-foodpanda",
     "pageType": "article",
     "verificationStatus": "research_required",
-    "overlapTarget": "/blog/how-to-boost-customer-loyalty-with-digital-rewards",
-    "reviewNote": "Research current provider evidence and define fair comparison criteria; do not invent a ranking.",
-    "sources": []
+    "overlapTarget": "/blog/why-direct-ordering-beats-third-party-marketplaces",
+    "reviewNote": "Same channel-choice intent; add verified cost or migration detail to the existing direct-versus-marketplace guide. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise.",
+    "sources": [
+      "https://www.indolj.pk/frequently-asked-questions.php",
+      "https://www.blinkco.io/help-center/faq-why-blink/"
+    ],
+    "category": "Restaurant operations",
+    "tags": [
+      "3"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Same channel-choice intent; add verified cost or migration detail to the existing direct-versus-marketplace guide. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+    ],
+    "draftDisposition": "research_hold"
   },
   {
     "id": "editorial-3-5",
@@ -994,8 +1327,24 @@
     "pageType": "article",
     "verificationStatus": "research_required",
     "overlapTarget": "/blog/compare-restaurant-ordering-systems",
-    "reviewNote": "Research current provider evidence and define fair comparison criteria; do not invent a ranking.",
-    "sources": []
+    "reviewNote": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise.",
+    "sources": [
+      "https://www.indolj.pk/frequently-asked-questions.php",
+      "https://www.blinkco.io/help-center/faq-why-blink/"
+    ],
+    "category": "Restaurant operations",
+    "tags": [
+      "3"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+    ],
+    "draftDisposition": "research_hold"
   },
   {
     "id": "editorial-3-6",
@@ -1034,8 +1383,21 @@
     "pageType": "article",
     "verificationStatus": "overlap_review",
     "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Overlapping launch process; merge supported setup steps into the existing launch guide, with a separate technical draft only where explicitly differentiated.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "3"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping launch process; merge supported setup steps into the existing launch guide, with a separate technical draft only where explicitly differentiated."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-3-7",
@@ -1073,9 +1435,22 @@
     "url": "/blog/why-pakistani-restaurants-are-investing-in-direct-online-ordering",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+    "reviewNote": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "3"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-3-8",
@@ -1113,9 +1488,22 @@
     "url": "/blog/online-ordering-system-for-small-restaurants-in-pakistan-complete-guide",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+    "reviewNote": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "3"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-3-9",
@@ -1152,9 +1540,22 @@
     "url": "/blog/how-to-choose-a-restaurant-online-ordering-system-in-pakistan",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+    "reviewNote": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "3"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-3-10",
@@ -1170,10 +1571,10 @@
     "cluster": "3",
     "searchIntent": "Informational evaluation",
     "metaTitle": "Restaurant Online Ordering System Pakistan: Common Mistakes to Avoid",
-    "metaDescription": "Evaluate restaurant online ordering system Pakistan with practical workflow questions, transparent costs and evidence to check before booking a restaurant software demonstration.",
+    "metaDescription": "Launching direct ordering is an operational change as well as a website project.",
     "h1": "Restaurant Online Ordering System Pakistan: Common Mistakes to Avoid",
-    "excerpt": "Editorial candidate requiring differentiation and review before publication.",
-    "body": "",
+    "excerpt": "Launching direct ordering is an operational change as well as a website project. The most useful review asks whether an ordinary customer can order and whether staff can complete that order correctly. These checks concern launch preparation in Pakistan without assuming a particular payment provider or integration.",
+    "body": "Launching direct ordering is an operational change as well as a website project. The most useful review asks whether an ordinary customer can order and whether staff can complete that order correctly. These checks concern launch preparation in Pakistan without assuming a particular payment provider or integration.\n\n## Mistake: approving appearance before ordering\n\nReview photographs and typography, but test the complete basket first. Compare prices and item availability on a phone. Check how required choices, special instructions and sold-out items behave. Ask a colleague unfamiliar with the setup to complete a test; the person who configured it already knows where everything is.\n\n## Mistake: leaving fulfilment ownership unclear\n\nName the person who accepts an order, informs preparation staff and coordinates fulfilment. Decide who covers that role during breaks. For pickup, agree how staff recognize the customer’s order. For delivery, agree how assignment and unsuccessful delivery are recorded. A displayed order status does not itself establish that someone acted on it.\n\n## Mistake: treating a payment screen as proof\n\nUse only payment methods that have been confirmed for the actual setup. Demonstrate the customer and staff view of a successful, failed and interrupted payment attempt. Agree who checks settlement and handles a discrepancy. Do not infer support for every Pakistani bank or wallet from a generic online-payment label.\n\n## Mistake: announcing a channel before testing capacity\n\nA small launch lets staff find confusing steps before a larger promotion. Agree a practical response if the kitchen cannot accept more orders. Avoid promising delivery times that have not been tested against the team’s actual capacity and area. Keep the customer-facing hours and contact instructions accurate.\n\n## Mistake: overlooking ongoing ownership\n\nSomeone must update menu prices, availability, opening hours and public contact information. Record who can make each change and how it is checked. Agree how to report a software issue and which arrangements are covered by the proposal. Domain access, app-store accounts and operational access are different responsibilities.\n\n## A final launch review\n\nFollow one test order from the [ordering website](/services/restaurant-ordering-websites) to staff handling and closing records. Keep a short exception list rather than declaring every unresolved item a launch blocker. Resolve essentials, assign owners to the remainder, and confirm scope and [pricing](/pricing) in writing. A [demo](/contact) should answer those specific questions before a public launch date is chosen.",
     "faq": [],
     "relatedArticleIds": [
       "9"
@@ -1187,14 +1588,30 @@
     "author": "Restrova Team",
     "createdAt": "2026-11-10",
     "updatedAt": "2026-11-10",
-    "publicationStatus": "needs_review",
+    "publicationStatus": "draft",
     "canonicalUrl": "https://www.restrova.com/blog/restaurant-online-ordering-system-pakistan-common-mistakes-to-avoid",
     "url": "/blog/restaurant-online-ordering-system-pakistan-common-mistakes-to-avoid",
     "pageType": "article",
-    "verificationStatus": "overlap_review",
+    "verificationStatus": "needs_review",
     "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Complete focused draft; not approved. Preserve the original requested title while reviewing whether it promises an unsupported outcome.",
+    "sources": [
+      "https://www.restrova.com/pricing",
+      "https://www.restrova.com/services"
+    ],
+    "category": "Restaurant operations",
+    "tags": [
+      "3"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Owner/editor must confirm claims, differentiation and final title before approval."
+    ],
+    "draftDisposition": "complete_draft"
   },
   {
     "id": "editorial-4-1",
@@ -1232,8 +1649,24 @@
     "pageType": "article",
     "verificationStatus": "research_required",
     "overlapTarget": "/blog/how-to-choose-restaurant-pos-software-pakistan",
-    "reviewNote": "Research current provider evidence and define fair comparison criteria; do not invent a ranking.",
-    "sources": []
+    "reviewNote": "Overlapping POS selection intent; add supported distinctions to the established POS buying checklist. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise.",
+    "sources": [
+      "https://www.indolj.pk/frequently-asked-questions.php",
+      "https://www.blinkco.io/help-center/faq-why-blink/"
+    ],
+    "category": "Restaurant operations",
+    "tags": [
+      "4"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping POS selection intent; add supported distinctions to the established POS buying checklist. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+    ],
+    "draftDisposition": "research_hold"
   },
   {
     "id": "editorial-4-2",
@@ -1272,8 +1705,21 @@
     "pageType": "article",
     "verificationStatus": "overlap_review",
     "overlapTarget": "/blog/how-to-choose-restaurant-pos-software-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Overlapping POS selection intent; add supported distinctions to the established POS buying checklist.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "4"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping POS selection intent; add supported distinctions to the established POS buying checklist."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-4-3",
@@ -1312,8 +1758,21 @@
     "pageType": "article",
     "verificationStatus": "overlap_review",
     "overlapTarget": "/blog/restaurant-pos-software-cost-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Same cost-evaluation question; merge the requested angle into the existing cost guide instead of another price page.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "4"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Same cost-evaluation question; merge the requested angle into the existing cost guide instead of another price page."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-4-4",
@@ -1352,8 +1811,24 @@
     "pageType": "article",
     "verificationStatus": "research_required",
     "overlapTarget": "/blog/how-to-choose-restaurant-pos-software-pakistan",
-    "reviewNote": "Research current provider evidence and define fair comparison criteria; do not invent a ranking.",
-    "sources": []
+    "reviewNote": "Overlapping POS selection intent; add supported distinctions to the established POS buying checklist. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise.",
+    "sources": [
+      "https://www.indolj.pk/frequently-asked-questions.php",
+      "https://www.blinkco.io/help-center/faq-why-blink/"
+    ],
+    "category": "Restaurant operations",
+    "tags": [
+      "4"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping POS selection intent; add supported distinctions to the established POS buying checklist. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+    ],
+    "draftDisposition": "research_hold"
   },
   {
     "id": "editorial-4-5",
@@ -1369,10 +1844,10 @@
     "cluster": "4",
     "searchIntent": "Informational evaluation",
     "metaTitle": "Cloud-Based vs Offline Restaurant POS Software: Which Is Better?",
-    "metaDescription": "Evaluate restaurant POS software Pakistan with practical workflow questions, transparent costs and evidence to check before booking a restaurant software demonstration.",
+    "metaDescription": "Cloud-based and offline-capable are not complete descriptions of a restaurant POS.",
     "h1": "Cloud-Based vs Offline Restaurant POS Software: Which Is Better?",
-    "excerpt": "Editorial candidate requiring differentiation and review before publication.",
-    "body": "",
+    "excerpt": "Cloud-based and offline-capable are not complete descriptions of a restaurant POS. A product can use cloud services while allowing some local actions, or it can stop particular operations when connectivity is lost. Evaluate each action separately rather than choosing from labels.",
+    "body": "Cloud-based and offline-capable are not complete descriptions of a restaurant POS. A product can use cloud services while allowing some local actions, or it can stop particular operations when connectivity is lost. Evaluate each action separately rather than choosing from labels.\n\n## Define what must continue\n\nList order entry, printing, payment confirmation, menu changes, inventory updates and closing reports. Mark which actions the restaurant must perform during an outage. Ask the supplier to distinguish functions available locally from those that require a server connection. This guide does not claim offline operation for Restrova.\n\n## Test a controlled interruption\n\nArrange an approved demonstration; do not interrupt a live restaurant’s network without permission. Enter a test order before the interruption, another during it if supported, and inspect both after recovery. Check what staff see at each stage. A device showing a saved screen is not proof that the order was accepted elsewhere.\n\n## Check payment and reconciliation separately\n\nA locally stored order and an authorized payment are different records. Ask how staff avoid charging a customer twice after an uncertain response. Confirm which party resolves a payment discrepancy and whether the POS displays a pending state. Never assume that card or wallet transactions work offline because order entry does.\n\n## Understand recovery conflicts\n\nTwo devices might receive changes at different times. Ask how the software resolves revised prices, stock availability and order edits after reconnection. Look for a clear record of what changed. Staff should know which view is authoritative and when a manual check is required.\n\n## Compare the full operating setup\n\nConnectivity redundancy, power backup, device maintenance and training may matter as much as the software design. Obtain quotes for the actual equipment and support scope. Do not buy hardware from a general compatibility statement; test the exact model. Consider where backups are held and how access is recovered if a device is replaced.\n\n## Choose from demonstrated behavior\n\nRecord results for each required action and outage length. Review the [POS buyer guidance](/services/restaurant-pos), then request a [demo](/contact) that addresses connectivity explicitly. A system whose limitations are understood can be a better operational fit than one chosen on an undocumented promise.",
     "faq": [],
     "relatedArticleIds": [
       "10"
@@ -1386,14 +1861,30 @@
     "author": "Restrova Team",
     "createdAt": "2026-11-10",
     "updatedAt": "2026-11-10",
-    "publicationStatus": "needs_review",
+    "publicationStatus": "draft",
     "canonicalUrl": "https://www.restrova.com/blog/cloud-based-vs-offline-restaurant-pos-software-which-is-better",
     "url": "/blog/cloud-based-vs-offline-restaurant-pos-software-which-is-better",
     "pageType": "article",
-    "verificationStatus": "overlap_review",
+    "verificationStatus": "needs_review",
     "overlapTarget": "/blog/restaurant-pos-vs-manual-billing",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Complete focused draft; not approved. Preserve the original requested title while reviewing whether it promises an unsupported outcome.",
+    "sources": [
+      "https://www.restrova.com/pricing",
+      "https://www.restrova.com/services"
+    ],
+    "category": "Restaurant operations",
+    "tags": [
+      "4"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Owner/editor must confirm claims, differentiation and final title before approval."
+    ],
+    "draftDisposition": "complete_draft"
   },
   {
     "id": "editorial-4-6",
@@ -1432,8 +1923,21 @@
     "pageType": "article",
     "verificationStatus": "overlap_review",
     "overlapTarget": "/blog/how-to-choose-restaurant-pos-software-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Overlapping POS selection intent; add supported distinctions to the established POS buying checklist.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "4"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping POS selection intent; add supported distinctions to the established POS buying checklist."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-4-7",
@@ -1472,8 +1976,24 @@
     "pageType": "article",
     "verificationStatus": "research_required",
     "overlapTarget": "/blog/how-to-choose-restaurant-pos-software-pakistan",
-    "reviewNote": "Research current provider evidence and define fair comparison criteria; do not invent a ranking.",
-    "sources": []
+    "reviewNote": "Overlapping POS selection intent; add supported distinctions to the established POS buying checklist. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise.",
+    "sources": [
+      "https://www.indolj.pk/frequently-asked-questions.php",
+      "https://www.blinkco.io/help-center/faq-why-blink/"
+    ],
+    "category": "Restaurant operations",
+    "tags": [
+      "4"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping POS selection intent; add supported distinctions to the established POS buying checklist. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+    ],
+    "draftDisposition": "research_hold"
   },
   {
     "id": "editorial-4-8",
@@ -1512,8 +2032,21 @@
     "pageType": "article",
     "verificationStatus": "overlap_review",
     "overlapTarget": "/blog/restaurant-pos-vs-manual-billing",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Same manual-versus-software evaluation; consolidate rather than publish a second comparison.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "4"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Same manual-versus-software evaluation; consolidate rather than publish a second comparison."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-4-9",
@@ -1551,9 +2084,22 @@
     "url": "/blog/how-restaurant-pos-software-simplifies-billing-and-order-management",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/restaurant-pos-vs-manual-billing",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+    "reviewNote": "Overlapping POS selection intent; add supported distinctions to the established POS buying checklist.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "4"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping POS selection intent; add supported distinctions to the established POS buying checklist."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-4-10",
@@ -1591,9 +2137,25 @@
     "url": "/blog/best-restaurant-pos-software-for-multi-branch-restaurants-in-pakistan",
     "pageType": "article",
     "verificationStatus": "research_required",
-    "overlapTarget": "/blog/how-to-choose-restaurant-pos-software-pakistan",
-    "reviewNote": "Research current provider evidence and define fair comparison criteria; do not invent a ranking.",
-    "sources": []
+    "overlapTarget": "/blog/manage-multiple-restaurant-branches",
+    "reviewNote": "Same branch-management decision; consolidate role, menu and reporting requirements in the existing branch guide. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise.",
+    "sources": [
+      "https://www.indolj.pk/frequently-asked-questions.php",
+      "https://www.blinkco.io/help-center/faq-why-blink/"
+    ],
+    "category": "Restaurant operations",
+    "tags": [
+      "4"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Same branch-management decision; consolidate role, menu and reporting requirements in the existing branch guide. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+    ],
+    "draftDisposition": "research_hold"
   },
   {
     "id": "editorial-5-1",
@@ -1632,8 +2194,24 @@
     "pageType": "article",
     "verificationStatus": "research_required",
     "overlapTarget": "/blog/compare-restaurant-ordering-systems",
-    "reviewNote": "Research current provider evidence and define fair comparison criteria; do not invent a ranking.",
-    "sources": []
+    "reviewNote": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise.",
+    "sources": [
+      "https://www.indolj.pk/frequently-asked-questions.php",
+      "https://www.blinkco.io/help-center/faq-why-blink/"
+    ],
+    "category": "Restaurant operations",
+    "tags": [
+      "5"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+    ],
+    "draftDisposition": "research_hold"
   },
   {
     "id": "editorial-5-2",
@@ -1672,8 +2250,21 @@
     "pageType": "article",
     "verificationStatus": "overlap_review",
     "overlapTarget": "/blog/compare-restaurant-ordering-systems",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "5"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-5-3",
@@ -1689,10 +2280,10 @@
     "cluster": "5",
     "searchIntent": "Informational evaluation",
     "metaTitle": "How Restaurant Ordering Software Improves Order Accuracy",
-    "metaDescription": "Evaluate restaurant ordering software with practical workflow questions, transparent costs and evidence to check before booking a restaurant software demonstration.",
+    "metaDescription": "Order accuracy depends on how information is captured, checked and handed over.",
     "h1": "How Restaurant Ordering Software Improves Order Accuracy",
-    "excerpt": "Editorial candidate requiring differentiation and review before publication.",
-    "body": "",
+    "excerpt": "Order accuracy depends on how information is captured, checked and handed over. Software can make those steps more consistent, but it cannot prevent every misunderstanding or preparation error. Start by locating the point where a specific mistake enters the workflow.",
+    "body": "Order accuracy depends on how information is captured, checked and handed over. Software can make those steps more consistent, but it cannot prevent every misunderstanding or preparation error. Start by locating the point where a specific mistake enters the workflow.\n\n## Classify errors before changing the process\n\nSeparate wrong item, missing option, incorrect quantity, misunderstood instruction and wrong fulfilment destination. Record the category and stage without copying customer personal information into a public report. The same complaint can have different causes: a missing drink might originate at ordering, preparation or packing.\n\n## Make the menu unambiguous\n\nUse distinguishable item names and clear option labels. Check whether the displayed price includes selected extras. Required choices should be genuinely necessary; unnecessary questions slow ordering without improving accuracy. Review the menu with the person preparing the food, not only the person managing the website.\n\n## Check the handoff representation\n\nCompare what the customer chose with what the receiving team sees. A shorthand that makes sense to a cashier may be unclear in the kitchen. Demonstrate long instructions, repeated items with different options and changes made after acceptance. Agree how corrections are communicated and acknowledged.\n\n## Use a packing check matched to the basket\n\nA final check can compare item count, options and accessories with the authoritative order. It should not depend on staff remembering the customer’s original conversation. For delivery, separate checking the food from assigning the package to the right rider. Decide how a correction affects the order’s status and record.\n\n## Measure without promising perfection\n\nUse error counts relative to comparable order volumes. Record which errors required refunds, remakes or additional delivery. A fall in reported complaints can also reflect a change in reporting behavior, so inspect a sample of orders. Do not attribute every improvement to software when staffing or menu changes happened simultaneously.\n\n## Evaluate a system with difficult examples\n\nBring two similar dishes, an optional extra and an amended order to a [POS demonstration](/services/restaurant-pos). Review the [ordering website](/services/restaurant-ordering-websites) and staff views together. Ask which steps are automated and which remain staff checks. Keep the process that catches the mistake, rather than assuming an additional screen is the solution.",
     "faq": [],
     "relatedArticleIds": [
       "2"
@@ -1706,14 +2297,30 @@
     "author": "Restrova Team",
     "createdAt": "2026-11-10",
     "updatedAt": "2026-11-10",
-    "publicationStatus": "needs_review",
+    "publicationStatus": "draft",
     "canonicalUrl": "https://www.restrova.com/blog/how-restaurant-ordering-software-improves-order-accuracy",
     "url": "/blog/how-restaurant-ordering-software-improves-order-accuracy",
     "pageType": "article",
-    "verificationStatus": "overlap_review",
+    "verificationStatus": "needs_review",
     "overlapTarget": "/blog/5-features-every-restaurant-app-must-have-in-2026",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Complete focused draft; not approved. Preserve the original requested title while reviewing whether it promises an unsupported outcome.",
+    "sources": [
+      "https://www.restrova.com/pricing",
+      "https://www.restrova.com/services"
+    ],
+    "category": "Restaurant operations",
+    "tags": [
+      "5"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Owner/editor must confirm claims, differentiation and final title before approval."
+    ],
+    "draftDisposition": "complete_draft"
   },
   {
     "id": "editorial-5-4",
@@ -1750,9 +2357,22 @@
     "url": "/blog/10-features-to-look-for-in-restaurant-ordering-software",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/5-features-every-restaurant-app-must-have-in-2026",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+    "reviewNote": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "5"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-5-5",
@@ -1791,8 +2411,24 @@
     "pageType": "article",
     "verificationStatus": "research_required",
     "overlapTarget": "/blog/restaurant-pos-vs-manual-billing",
-    "reviewNote": "Research current provider evidence and define fair comparison criteria; do not invent a ranking.",
-    "sources": []
+    "reviewNote": "Same manual-versus-software evaluation; consolidate rather than publish a second comparison. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise.",
+    "sources": [
+      "https://www.indolj.pk/frequently-asked-questions.php",
+      "https://www.blinkco.io/help-center/faq-why-blink/"
+    ],
+    "category": "Restaurant operations",
+    "tags": [
+      "5"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Same manual-versus-software evaluation; consolidate rather than publish a second comparison. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+    ],
+    "draftDisposition": "research_hold"
   },
   {
     "id": "editorial-5-6",
@@ -1830,9 +2466,22 @@
     "url": "/blog/how-to-automate-restaurant-orders-with-online-ordering-software",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+    "reviewNote": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "5"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-5-7",
@@ -1870,9 +2519,22 @@
     "url": "/blog/restaurant-ordering-software-for-takeaway-and-delivery-businesses",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/why-direct-ordering-beats-third-party-marketplaces",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+    "reviewNote": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "5"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-5-8",
@@ -1910,9 +2572,22 @@
     "url": "/blog/how-restaurant-ordering-software-connects-online-orders-with-your-kitchen",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+    "reviewNote": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "5"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-5-9",
@@ -1950,9 +2625,22 @@
     "url": "/blog/restaurant-ordering-software-pricing-what-should-you-expect",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/compare-restaurant-ordering-systems",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/restaurant-online-ordering-system-cost-pakistan",
+    "reviewNote": "Same cost-evaluation question; merge the requested angle into the existing cost guide instead of another price page.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "5"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Same cost-evaluation question; merge the requested angle into the existing cost guide instead of another price page."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-5-10",
@@ -1990,9 +2678,22 @@
     "url": "/blog/how-to-choose-restaurant-ordering-software-for-multiple-locations",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/manage-multiple-restaurant-branches",
+    "reviewNote": "Same branch-management decision; consolidate role, menu and reporting requirements in the existing branch guide.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "5"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Same branch-management decision; consolidate role, menu and reporting requirements in the existing branch guide."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-6-1",
@@ -2030,9 +2731,25 @@
     "url": "/blog/best-commission-free-online-ordering-systems-for-restaurants-in-pakistan",
     "pageType": "article",
     "verificationStatus": "research_required",
-    "overlapTarget": "/blog/compare-restaurant-ordering-systems",
-    "reviewNote": "Research current provider evidence and define fair comparison criteria; do not invent a ranking.",
-    "sources": []
+    "overlapTarget": "/blog/why-direct-ordering-beats-third-party-marketplaces",
+    "reviewNote": "Same channel-choice intent; add verified cost or migration detail to the existing direct-versus-marketplace guide. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise.",
+    "sources": [
+      "https://www.indolj.pk/frequently-asked-questions.php",
+      "https://www.blinkco.io/help-center/faq-why-blink/"
+    ],
+    "category": "Restaurant operations",
+    "tags": [
+      "6"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Same channel-choice intent; add verified cost or migration detail to the existing direct-versus-marketplace guide. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+    ],
+    "draftDisposition": "research_hold"
   },
   {
     "id": "editorial-6-2",
@@ -2070,9 +2787,22 @@
     "url": "/blog/what-is-a-commission-free-online-ordering-system",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/compare-restaurant-ordering-systems",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/why-direct-ordering-beats-third-party-marketplaces",
+    "reviewNote": "Same channel-choice intent; add verified cost or migration detail to the existing direct-versus-marketplace guide.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "6"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Same channel-choice intent; add verified cost or migration detail to the existing direct-versus-marketplace guide."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-6-3",
@@ -2111,8 +2841,21 @@
     "pageType": "article",
     "verificationStatus": "overlap_review",
     "overlapTarget": "/blog/why-direct-ordering-beats-third-party-marketplaces",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Same channel-choice intent; add verified cost or migration detail to the existing direct-versus-marketplace guide.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "6"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Same channel-choice intent; add verified cost or migration detail to the existing direct-versus-marketplace guide."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-6-4",
@@ -2151,8 +2894,24 @@
     "pageType": "article",
     "verificationStatus": "research_required",
     "overlapTarget": "/blog/restaurant-online-ordering-system-cost-pakistan",
-    "reviewNote": "Research current provider evidence and define fair comparison criteria; do not invent a ranking.",
-    "sources": []
+    "reviewNote": "Same cost-evaluation question; merge the requested angle into the existing cost guide instead of another price page. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise.",
+    "sources": [
+      "https://www.indolj.pk/frequently-asked-questions.php",
+      "https://www.blinkco.io/help-center/faq-why-blink/"
+    ],
+    "category": "Restaurant operations",
+    "tags": [
+      "6"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Same cost-evaluation question; merge the requested angle into the existing cost guide instead of another price page. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+    ],
+    "draftDisposition": "research_hold"
   },
   {
     "id": "editorial-6-5",
@@ -2190,9 +2949,22 @@
     "url": "/blog/how-much-can-restaurants-save-with-commission-free-online-ordering",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/restaurant-online-ordering-system-cost-pakistan",
+    "reviewNote": "Same cost-evaluation question; merge the requested angle into the existing cost guide instead of another price page.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "6"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Same cost-evaluation question; merge the requested angle into the existing cost guide instead of another price page."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-6-6",
@@ -2230,9 +3002,22 @@
     "url": "/blog/how-to-set-up-a-commission-free-online-ordering-website",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/why-direct-ordering-beats-third-party-marketplaces",
+    "reviewNote": "Same channel-choice intent; add verified cost or migration detail to the existing direct-versus-marketplace guide.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "6"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Same channel-choice intent; add verified cost or migration detail to the existing direct-versus-marketplace guide."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-6-7",
@@ -2270,9 +3055,22 @@
     "url": "/blog/7-benefits-of-commission-free-online-ordering-for-restaurants",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/why-direct-ordering-beats-third-party-marketplaces",
+    "reviewNote": "Same channel-choice intent; add verified cost or migration detail to the existing direct-versus-marketplace guide.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "6"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Same channel-choice intent; add verified cost or migration detail to the existing direct-versus-marketplace guide."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-6-8",
@@ -2288,10 +3086,10 @@
     "cluster": "6",
     "searchIntent": "Informational evaluation",
     "metaTitle": "Is Commission-Free Online Ordering Really Free? Hidden Costs Explained",
-    "metaDescription": "Evaluate commission free online ordering system with practical workflow questions, transparent costs and evidence to check before booking a restaurant software demonstration.",
+    "metaDescription": "Commission-free describes one kind of charge; it does not mean running a direct ordering channel has no cost.",
     "h1": "Is Commission-Free Online Ordering Really Free? Hidden Costs Explained",
-    "excerpt": "Editorial candidate requiring differentiation and review before publication.",
-    "body": "",
+    "excerpt": "Commission-free describes one kind of charge; it does not mean running a direct ordering channel has no cost. Read the commercial agreement before comparing labels. Restrova’s published pricing includes a percentage-of-processed-sales component and should not be described as commission-free.",
+    "body": "Commission-free describes one kind of charge; it does not mean running a direct ordering channel has no cost. Read the commercial agreement before comparing labels. Restrova’s published pricing includes a percentage-of-processed-sales component and should not be described as commission-free.\n\n## Separate the charges\n\nA marketplace may charge for access to its channel under a commercial agreement. Direct ordering can involve software, payment processing, delivery, marketing and staff time. A supplier might waive an order commission while charging a subscription or transaction fee. Compare the total relevant costs for the same sales and order assumptions.\n\n## Build a like-for-like worksheet\n\nUse monthly orders and average order value to calculate sales. Enter the actual contracted percentage for each channel instead of copying an unsupported industry average. Add costs paid by the restaurant, distinguishing customer-paid delivery charges from restaurant expenses. Include refunds, discounts and marketing only once.\n\n## Use Restrova’s actual formula\n\nRestrova states PKR 10,000 one-time onboarding and a monthly fee equal to max(PKR 5,000, 1% of sales processed through Restrova). At hypothetical processed sales of PKR 300,000, 1% is PKR 3,000, so the monthly fee is PKR 5,000. At PKR 800,000, it is PKR 8,000. The two monthly amounts are not added together. Taxes, hardware and external services must be confirmed separately.\n\n## Do not equate channel costs with profit\n\nA channel-cost comparison can exclude food production costs only when those costs are equivalent in both scenarios. Packaging or menu differences can break that assumption. Direct ordering may require customer acquisition that the marketplace previously supplied. Savings on one line can be offset by a new expense elsewhere.\n\n## Ask about ownership and exit\n\nConfirm domain access, app publishing responsibilities, maintenance and data-export arrangements. Ask what happens if the subscription ends. These terms affect operating flexibility even when the monthly price appears attractive. Do not assume that a branded website includes source-code ownership.\n\n## Make a decision from a written scope\n\nUse the [pricing page](/pricing) and [marketplace comparison guide](/compare-marketplaces) as starting points. Bring actual contract figures to a [demo](/contact) and compare costs at more than one order volume. The result may support a mix of channels rather than moving every order immediately.",
     "faq": [],
     "relatedArticleIds": [
       "9"
@@ -2305,14 +3103,30 @@
     "author": "Restrova Team",
     "createdAt": "2026-11-10",
     "updatedAt": "2026-11-10",
-    "publicationStatus": "needs_review",
+    "publicationStatus": "draft",
     "canonicalUrl": "https://www.restrova.com/blog/is-commission-free-online-ordering-really-free-hidden-costs-explained",
     "url": "/blog/is-commission-free-online-ordering-really-free-hidden-costs-explained",
     "pageType": "article",
-    "verificationStatus": "overlap_review",
+    "verificationStatus": "needs_review",
     "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Complete focused draft; not approved. Preserve the original requested title while reviewing whether it promises an unsupported outcome.",
+    "sources": [
+      "https://www.restrova.com/pricing",
+      "https://www.restrova.com/services"
+    ],
+    "category": "Restaurant operations",
+    "tags": [
+      "6"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Owner/editor must confirm claims, differentiation and final title before approval."
+    ],
+    "draftDisposition": "complete_draft"
   },
   {
     "id": "editorial-6-9",
@@ -2351,8 +3165,21 @@
     "pageType": "article",
     "verificationStatus": "overlap_review",
     "overlapTarget": "/blog/why-direct-ordering-beats-third-party-marketplaces",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Same channel-choice intent; add verified cost or migration detail to the existing direct-versus-marketplace guide.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "6"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Same channel-choice intent; add verified cost or migration detail to the existing direct-versus-marketplace guide."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-6-10",
@@ -2390,9 +3217,22 @@
     "url": "/blog/commission-free-online-ordering-for-small-restaurants-complete-guide",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/why-direct-ordering-beats-third-party-marketplaces",
+    "reviewNote": "Same channel-choice intent; add verified cost or migration detail to the existing direct-versus-marketplace guide.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "6"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Same channel-choice intent; add verified cost or migration detail to the existing direct-versus-marketplace guide."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-7-1",
@@ -2429,8 +3269,24 @@
     "pageType": "article",
     "verificationStatus": "research_required",
     "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
-    "reviewNote": "Research current provider evidence and define fair comparison criteria; do not invent a ranking.",
-    "sources": []
+    "reviewNote": "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise.",
+    "sources": [
+      "https://www.indolj.pk/frequently-asked-questions.php",
+      "https://www.blinkco.io/help-center/faq-why-blink/"
+    ],
+    "category": "Restaurant operations",
+    "tags": [
+      "7"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+    ],
+    "draftDisposition": "research_hold"
   },
   {
     "id": "editorial-7-2",
@@ -2468,9 +3324,22 @@
     "url": "/blog/restaurant-management-system-in-pakistan-complete-guide-for-owners",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/restaurant-inventory-management-guide-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
+    "reviewNote": "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "7"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-7-3",
@@ -2507,8 +3376,21 @@
     "pageType": "article",
     "verificationStatus": "overlap_review",
     "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "7"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-7-4",
@@ -2546,9 +3428,22 @@
     "url": "/blog/restaurant-management-system-cost-in-pakistan-pricing-explained",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/restaurant-software-pricing-pakistan-guide",
+    "reviewNote": "Same cost-evaluation question; merge the requested angle into the existing cost guide instead of another price page.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "7"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Same cost-evaluation question; merge the requested angle into the existing cost guide instead of another price page."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-7-5",
@@ -2586,8 +3481,21 @@
     "pageType": "article",
     "verificationStatus": "overlap_review",
     "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "7"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-7-6",
@@ -2626,8 +3534,24 @@
     "pageType": "article",
     "verificationStatus": "research_required",
     "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
-    "reviewNote": "Research current provider evidence and define fair comparison criteria; do not invent a ranking.",
-    "sources": []
+    "reviewNote": "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise.",
+    "sources": [
+      "https://www.indolj.pk/frequently-asked-questions.php",
+      "https://www.blinkco.io/help-center/faq-why-blink/"
+    ],
+    "category": "Restaurant operations",
+    "tags": [
+      "7"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+    ],
+    "draftDisposition": "research_hold"
   },
   {
     "id": "editorial-7-7",
@@ -2666,8 +3590,21 @@
     "pageType": "article",
     "verificationStatus": "overlap_review",
     "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "7"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-7-8",
@@ -2706,8 +3643,21 @@
     "pageType": "article",
     "verificationStatus": "overlap_review",
     "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "7"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-7-9",
@@ -2745,9 +3695,22 @@
     "url": "/blog/restaurant-management-system-vs-pos-software-which-do-you-need",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/restaurant-pos-vs-manual-billing",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+    "reviewNote": "Overlapping POS selection intent; add supported distinctions to the established POS buying checklist.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "7"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping POS selection intent; add supported distinctions to the established POS buying checklist."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-7-10",
@@ -2763,10 +3726,10 @@
     "cluster": "7",
     "searchIntent": "Informational evaluation",
     "metaTitle": "How to Implement a Restaurant Management System Without Disrupting Operations",
-    "metaDescription": "Evaluate restaurant management system Pakistan with practical workflow questions, transparent costs and evidence to check before booking a restaurant software demonstration.",
+    "metaDescription": "A restaurant management system should be introduced through a controlled operational change.",
     "h1": "How to Implement a Restaurant Management System Without Disrupting Operations",
-    "excerpt": "Editorial candidate requiring differentiation and review before publication.",
-    "body": "",
+    "excerpt": "A restaurant management system should be introduced through a controlled operational change. Replacing a familiar routine during a busy service without clear ownership creates avoidable risk. Plan the transition around staff tasks, accurate starting information and a way to stop the rollout if essentials fail.",
+    "body": "A restaurant management system should be introduced through a controlled operational change. Replacing a familiar routine during a busy service without clear ownership creates avoidable risk. Plan the transition around staff tasks, accurate starting information and a way to stop the rollout if essentials fail.\n\n## Define the first usable scope\n\nChoose the functions required for the initial shift. A launch need not activate every optional feature. Identify the owner of menu information, order handling, stock and delivery processes. Separate mandatory acceptance criteria from improvements that can follow after the team becomes comfortable.\n\n## Prepare starting data\n\nCheck menu names, prices, options, availability and opening information. If stock records are in scope, agree the starting quantities and units with the responsible staff member. Decide how historical orders remain accessible. Do not imply that a migration tool exists until it has been demonstrated for the actual source data.\n\n## Train by role\n\nA cashier needs practice receiving and correcting an order; a manager needs to understand exceptions and closing records. Give each role a short set of exercises. Use realistic menu examples and allow staff to explain what they would do if an expected response does not appear. Training should produce an observable task result, not merely attendance.\n\n## Rehearse before taking live orders\n\nFollow a sample order through the complete workflow, including cancellation, unavailable items and delivery handoff. Check devices and connectivity. If parallel running is planned, clearly distinguish test records from real transactions so revenue and stock are not counted twice.\n\n## Agree rollback and support\n\nName the person authorized to pause the rollout and the temporary process staff will follow. Record how any orders accepted during the transition are reconciled. Confirm support arrangements and escalation contacts in the proposal rather than assuming a particular response time.\n\n## Review the first shifts\n\nCheck unresolved orders and closing discrepancies promptly. Keep a short issue log with severity, owner and next action. Change one process at a time where possible. Review the [restaurant software workflows](/services) and [pricing scope](/pricing), then request a [demonstration](/contact) using the transition plan. A successful launch is a team that can handle both the ordinary order and the exception.",
     "faq": [],
     "relatedArticleIds": [
       "5"
@@ -2780,14 +3743,30 @@
     "author": "Restrova Team",
     "createdAt": "2026-11-10",
     "updatedAt": "2026-11-10",
-    "publicationStatus": "needs_review",
+    "publicationStatus": "draft",
     "canonicalUrl": "https://www.restrova.com/blog/how-to-implement-a-restaurant-management-system-without-disrupting-operations",
     "url": "/blog/how-to-implement-a-restaurant-management-system-without-disrupting-operations",
     "pageType": "article",
-    "verificationStatus": "overlap_review",
+    "verificationStatus": "needs_review",
     "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Complete focused draft; not approved. Preserve the original requested title while reviewing whether it promises an unsupported outcome.",
+    "sources": [
+      "https://www.restrova.com/pricing",
+      "https://www.restrova.com/services"
+    ],
+    "category": "Restaurant operations",
+    "tags": [
+      "7"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Owner/editor must confirm claims, differentiation and final title before approval."
+    ],
+    "draftDisposition": "complete_draft"
   },
   {
     "id": "editorial-8-1",
@@ -2826,8 +3805,24 @@
     "pageType": "article",
     "verificationStatus": "research_required",
     "overlapTarget": "/blog/compare-restaurant-ordering-systems",
-    "reviewNote": "Research current provider evidence and define fair comparison criteria; do not invent a ranking.",
-    "sources": []
+    "reviewNote": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise.",
+    "sources": [
+      "https://www.indolj.pk/frequently-asked-questions.php",
+      "https://www.blinkco.io/help-center/faq-why-blink/"
+    ],
+    "category": "Restaurant operations",
+    "tags": [
+      "8"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+    ],
+    "draftDisposition": "research_hold"
   },
   {
     "id": "editorial-8-2",
@@ -2865,9 +3860,22 @@
     "url": "/blog/how-does-an-online-food-ordering-system-for-restaurants-work",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+    "reviewNote": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "8"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-8-3",
@@ -2906,8 +3914,21 @@
     "pageType": "article",
     "verificationStatus": "overlap_review",
     "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Overlapping launch process; merge supported setup steps into the existing launch guide, with a separate technical draft only where explicitly differentiated.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "8"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping launch process; merge supported setup steps into the existing launch guide, with a separate technical draft only where explicitly differentiated."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-8-4",
@@ -2945,9 +3966,22 @@
     "url": "/blog/online-food-ordering-system-for-restaurants-features-and-pricing",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/restaurant-online-ordering-system-cost-pakistan",
+    "reviewNote": "Same cost-evaluation question; merge the requested angle into the existing cost guide instead of another price page.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "8"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Same cost-evaluation question; merge the requested angle into the existing cost guide instead of another price page."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-8-5",
@@ -2985,9 +4019,22 @@
     "url": "/blog/how-online-food-ordering-systems-help-restaurants-grow-delivery-sales",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+    "reviewNote": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "8"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-8-6",
@@ -3026,8 +4073,21 @@
     "pageType": "article",
     "verificationStatus": "overlap_review",
     "overlapTarget": "/blog/why-direct-ordering-beats-third-party-marketplaces",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Same channel-choice intent; add verified cost or migration detail to the existing direct-versus-marketplace guide.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "8"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Same channel-choice intent; add verified cost or migration detail to the existing direct-versus-marketplace guide."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-8-7",
@@ -3065,9 +4125,22 @@
     "url": "/blog/how-to-integrate-an-online-food-ordering-system-with-restaurant-pos",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+    "reviewNote": "Overlapping POS selection intent; add supported distinctions to the established POS buying checklist.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "8"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping POS selection intent; add supported distinctions to the established POS buying checklist."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-8-8",
@@ -3105,9 +4178,22 @@
     "url": "/blog/online-food-ordering-systems-for-cloud-kitchens-complete-guide",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+    "reviewNote": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "8"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-8-9",
@@ -3123,10 +4209,10 @@
     "cluster": "8",
     "searchIntent": "Informational evaluation",
     "metaTitle": "How to Improve Customer Experience With an Online Food Ordering System",
-    "metaDescription": "Evaluate online food ordering system for restaurants with practical workflow questions, transparent costs and evidence to check before booking a restaurant software demonstration.",
+    "metaDescription": "A good ordering experience helps a customer understand what is available, what it costs and what happens next.",
     "h1": "How to Improve Customer Experience With an Online Food Ordering System",
-    "excerpt": "Editorial candidate requiring differentiation and review before publication.",
-    "body": "",
+    "excerpt": "A good ordering experience helps a customer understand what is available, what it costs and what happens next. Start with clarity before adding promotional features. Test the experience on a real phone and through the restaurant’s operational response.",
+    "body": "A good ordering experience helps a customer understand what is available, what it costs and what happens next. Start with clarity before adding promotional features. Test the experience on a real phone and through the restaurant’s operational response.\n\n## Answer the practical questions early\n\nShow clear menu descriptions, current prices and the supported fulfilment choices. Customers should be able to find business hours and contact information without guessing. Do not promise a delivery area, payment method or turnaround time until the restaurant has confirmed the actual setup.\n\n## Reduce ambiguity at selection\n\nUse meaningful option labels and explain extra charges before the basket is submitted. Distinguish unavailable items from temporarily hidden categories. A customer should not have to infer whether a choice is required. Check text size, contrast and keyboard operation as well as appearance.\n\n## Make the final total understandable\n\nReview the basket total and any charges or discounts. Test what happens when an option changes or an item is removed. A clear total supports an informed decision; it does not establish that every payment provider is supported. Verify the payment methods intended for launch separately.\n\n## Explain acceptance and uncertainty\n\nOrder submission, restaurant acceptance and payment confirmation may be different events. Ask how the customer sees each one. Test slow responses and retries in a controlled demonstration. Give staff a procedure for identifying an uncertain transaction rather than telling a customer to submit repeatedly.\n\n## Keep support connected to the order\n\nThe customer should know how to ask about a problem. Staff need a way to locate the relevant order without requesting unnecessary personal information. Agree how unavailable items, corrections and fulfilment failures are handled. A polite message cannot compensate for an unclear operational owner.\n\n## Review with ordinary customers in mind\n\nAsk someone unfamiliar with the interface to find a dish, customize it and explain the total. Observe where they hesitate before explaining the screen. Compare findings with the [ordering website](/services/restaurant-ordering-websites) and [app](/services/restaurant-ordering-apps) demonstrations. Prioritize clear corrections and useful information over a longer checklist of interface effects.",
     "faq": [],
     "relatedArticleIds": [
       "9"
@@ -3140,14 +4226,30 @@
     "author": "Restrova Team",
     "createdAt": "2026-11-10",
     "updatedAt": "2026-11-10",
-    "publicationStatus": "needs_review",
+    "publicationStatus": "draft",
     "canonicalUrl": "https://www.restrova.com/blog/how-to-improve-customer-experience-with-an-online-food-ordering-system",
     "url": "/blog/how-to-improve-customer-experience-with-an-online-food-ordering-system",
     "pageType": "article",
-    "verificationStatus": "overlap_review",
+    "verificationStatus": "needs_review",
     "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Complete focused draft; not approved. Preserve the original requested title while reviewing whether it promises an unsupported outcome.",
+    "sources": [
+      "https://www.restrova.com/pricing",
+      "https://www.restrova.com/services"
+    ],
+    "category": "Restaurant operations",
+    "tags": [
+      "8"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Owner/editor must confirm claims, differentiation and final title before approval."
+    ],
+    "draftDisposition": "complete_draft"
   },
   {
     "id": "editorial-8-10",
@@ -3185,9 +4287,22 @@
     "url": "/blog/common-online-food-ordering-system-problems-and-how-to-avoid-them",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+    "reviewNote": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "8"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-9-1",
@@ -3226,8 +4341,21 @@
     "pageType": "article",
     "verificationStatus": "overlap_review",
     "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Overlapping launch process; merge supported setup steps into the existing launch guide, with a separate technical draft only where explicitly differentiated.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "9"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping launch process; merge supported setup steps into the existing launch guide, with a separate technical draft only where explicitly differentiated."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-9-2",
@@ -3265,9 +4393,25 @@
     "url": "/blog/best-restaurant-website-builders-with-online-ordering-in-2026",
     "pageType": "article",
     "verificationStatus": "research_required",
-    "overlapTarget": "/blog/compare-restaurant-ordering-systems",
-    "reviewNote": "Research current provider evidence and define fair comparison criteria; do not invent a ranking.",
-    "sources": []
+    "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
+    "reviewNote": "Overlapping launch process; merge supported setup steps into the existing launch guide, with a separate technical draft only where explicitly differentiated. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise.",
+    "sources": [
+      "https://www.indolj.pk/frequently-asked-questions.php",
+      "https://www.blinkco.io/help-center/faq-why-blink/"
+    ],
+    "category": "Restaurant operations",
+    "tags": [
+      "9"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping launch process; merge supported setup steps into the existing launch guide, with a separate technical draft only where explicitly differentiated. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+    ],
+    "draftDisposition": "research_hold"
   },
   {
     "id": "editorial-9-3",
@@ -3306,8 +4450,21 @@
     "pageType": "article",
     "verificationStatus": "overlap_review",
     "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Overlapping launch process; merge supported setup steps into the existing launch guide, with a separate technical draft only where explicitly differentiated.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "9"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping launch process; merge supported setup steps into the existing launch guide, with a separate technical draft only where explicitly differentiated."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-9-4",
@@ -3346,8 +4503,21 @@
     "pageType": "article",
     "verificationStatus": "overlap_review",
     "overlapTarget": "/blog/restaurant-online-ordering-system-cost-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Same cost-evaluation question; merge the requested angle into the existing cost guide instead of another price page.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "9"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Same cost-evaluation question; merge the requested angle into the existing cost guide instead of another price page."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-9-5",
@@ -3385,9 +4555,22 @@
     "url": "/blog/10-must-have-features-of-a-restaurant-website-with-online-ordering",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+    "reviewNote": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "9"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-9-6",
@@ -3425,9 +4608,22 @@
     "url": "/blog/how-to-turn-your-restaurant-website-into-an-online-sales-channel",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/why-direct-ordering-beats-third-party-marketplaces",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+    "reviewNote": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "9"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-9-7",
@@ -3466,8 +4662,21 @@
     "pageType": "article",
     "verificationStatus": "overlap_review",
     "overlapTarget": "/blog/why-direct-ordering-beats-third-party-marketplaces",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Same channel-choice intent; add verified cost or migration detail to the existing direct-versus-marketplace guide.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "9"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Same channel-choice intent; add verified cost or migration detail to the existing direct-versus-marketplace guide."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-9-8",
@@ -3483,10 +4692,10 @@
     "cluster": "9",
     "searchIntent": "Informational evaluation",
     "metaTitle": "How to Add Online Ordering to an Existing Restaurant Website",
-    "metaDescription": "Evaluate restaurant website with online ordering with practical workflow questions, transparent costs and evidence to check before booking a restaurant software demonstration.",
+    "metaDescription": "Adding ordering to an existing restaurant website begins with choosing the relationship between the current site and the ordering channel.",
     "h1": "How to Add Online Ordering to an Existing Restaurant Website",
-    "excerpt": "Editorial candidate requiring differentiation and review before publication.",
-    "body": "",
+    "excerpt": "Adding ordering to an existing restaurant website begins with choosing the relationship between the current site and the ordering channel. A prominent link, a supported integration and a full replacement are different projects. Confirm which is available before changing a working site.",
+    "body": "Adding ordering to an existing restaurant website begins with choosing the relationship between the current site and the ordering channel. A prominent link, a supported integration and a full replacement are different projects. Confirm which is available before changing a working site.\n\n## Inventory the existing setup\n\nRecord who controls the domain, hosting and website editing access. Identify menu pages, contact forms and links customers already use. Keep a copy of important URLs and current content. This is a technical planning record, not a reason to replace a functioning website automatically.\n\n## Choose a supported connection\n\nA link can take a visitor to the restaurant’s branded ordering channel. A subdomain may separate ordering from the main content site. An embedded or API-based integration requires demonstrated compatibility and a defined support boundary. Do not assume a plug-in exists for the current site builder.\n\n## Preserve useful discovery paths\n\nPlace the ordering action where visitors expect it and use descriptive text. Check mobile navigation and the pages receiving existing search traffic. If URLs must change, plan relevant redirects rather than sending every old page to the homepage. Keep ownership of redirects and canonical settings clear.\n\n## Test the journey across the boundary\n\nBegin at the existing homepage, find the menu, follow the ordering action and complete a controlled test. Check whether branding, fulfilment information and contact instructions remain consistent. Review what happens when the visitor returns to the original site or opens the ordering channel in another tab.\n\n## Assign ongoing responsibilities\n\nAgree which team maintains the menu and which maintains editorial pages. Clarify who handles certificates, domain renewal, outages and tracking configuration. Two teams editing the same information can create conflicting prices or opening hours. Choose the authoritative source and document the update process.\n\n## Release carefully\n\nTest without exposing credentials or sending fake live orders. Make the ordering link public only when staff are ready to accept the resulting orders. Review Restrova’s [ordering website scope](/services/restaurant-ordering-websites) and [pricing](/pricing), then bring details of the existing platform to a [demo](/contact). Confirm integration work in writing instead of treating a generic website feature as a promise of compatibility.",
     "faq": [],
     "relatedArticleIds": [
       "9"
@@ -3500,14 +4709,30 @@
     "author": "Restrova Team",
     "createdAt": "2026-11-10",
     "updatedAt": "2026-11-10",
-    "publicationStatus": "needs_review",
+    "publicationStatus": "draft",
     "canonicalUrl": "https://www.restrova.com/blog/how-to-add-online-ordering-to-an-existing-restaurant-website",
     "url": "/blog/how-to-add-online-ordering-to-an-existing-restaurant-website",
     "pageType": "article",
-    "verificationStatus": "overlap_review",
+    "verificationStatus": "needs_review",
     "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Complete focused draft; not approved. Preserve the original requested title while reviewing whether it promises an unsupported outcome.",
+    "sources": [
+      "https://www.restrova.com/pricing",
+      "https://www.restrova.com/services"
+    ],
+    "category": "Restaurant operations",
+    "tags": [
+      "9"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Owner/editor must confirm claims, differentiation and final title before approval."
+    ],
+    "draftDisposition": "complete_draft"
   },
   {
     "id": "editorial-9-9",
@@ -3545,9 +4770,22 @@
     "url": "/blog/restaurant-website-seo-how-to-get-more-direct-online-orders",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/why-direct-ordering-beats-third-party-marketplaces",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+    "reviewNote": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "9"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-9-10",
@@ -3585,9 +4823,22 @@
     "url": "/blog/common-restaurant-website-mistakes-that-reduce-online-orders",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/why-direct-ordering-beats-third-party-marketplaces",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+    "reviewNote": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "9"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-10-1",
@@ -3625,9 +4876,22 @@
     "url": "/blog/what-is-a-restaurant-order-management-system-complete-guide",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/restaurant-inventory-management-guide-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+    "reviewNote": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "10"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-10-2",
@@ -3664,9 +4928,25 @@
     "url": "/blog/best-restaurant-order-management-systems-for-2026",
     "pageType": "article",
     "verificationStatus": "research_required",
-    "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
-    "reviewNote": "Research current provider evidence and define fair comparison criteria; do not invent a ranking.",
-    "sources": []
+    "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+    "reviewNote": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise.",
+    "sources": [
+      "https://www.indolj.pk/frequently-asked-questions.php",
+      "https://www.blinkco.io/help-center/faq-why-blink/"
+    ],
+    "category": "Restaurant operations",
+    "tags": [
+      "10"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+    ],
+    "draftDisposition": "research_hold"
   },
   {
     "id": "editorial-10-3",
@@ -3704,9 +4984,22 @@
     "url": "/blog/how-restaurant-order-management-systems-reduce-order-errors",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+    "reviewNote": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "10"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-10-4",
@@ -3744,9 +5037,22 @@
     "url": "/blog/restaurant-order-management-system-vs-pos-key-differences",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/restaurant-pos-vs-manual-billing",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+    "reviewNote": "Overlapping POS selection intent; add supported distinctions to the established POS buying checklist.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "10"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping POS selection intent; add supported distinctions to the established POS buying checklist."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-10-5",
@@ -3784,9 +5090,22 @@
     "url": "/blog/10-essential-features-of-a-restaurant-order-management-system",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+    "reviewNote": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "10"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-10-6",
@@ -3802,10 +5121,10 @@
     "cluster": "10",
     "searchIntent": "Informational evaluation",
     "metaTitle": "How to Manage Dine-In, Takeaway and Delivery Orders in One Dashboard",
-    "metaDescription": "Evaluate restaurant order management system with practical workflow questions, transparent costs and evidence to check before booking a restaurant software demonstration.",
+    "metaDescription": "Managing dine-in, takeaway and delivery in one operational view requires clear differences between those order types.",
     "h1": "How to Manage Dine-In, Takeaway and Delivery Orders in One Dashboard",
-    "excerpt": "Editorial candidate requiring differentiation and review before publication.",
-    "body": "",
+    "excerpt": "Managing dine-in, takeaway and delivery in one operational view requires clear differences between those order types. A shared dashboard is useful only if staff can identify what action each order needs. Confirm the supported channels and screens in the actual product; this guide is an evaluation procedure.",
+    "body": "Managing dine-in, takeaway and delivery in one operational view requires clear differences between those order types. A shared dashboard is useful only if staff can identify what action each order needs. Confirm the supported channels and screens in the actual product; this guide is an evaluation procedure.\n\n## Define a common order identity\n\nAgree how the team recognizes one order across receipt, preparation, fulfilment and closing. The identifier should remain useful after an edit. Staff should not create a second order merely because the original record is difficult to find. Ask how duplicate submissions are recognized.\n\n## Keep channel-specific information\n\nA dine-in order may require a table workflow, takeaway needs pickup instructions, and delivery requires fulfilment details. These are requirements to verify, not claims that every system supports them. Avoid putting all distinctions into free-text notes when the team needs to filter or act on them reliably.\n\n## Assign the next action\n\nAt each stage, identify the person responsible for moving the order forward. Distinguish customer-facing status from a kitchen task and from rider assignment. Demonstrate what happens when a staff member is unavailable or an order waits longer than expected. A queue that everyone can see can still be a queue nobody owns.\n\n## Handle amendments explicitly\n\nTest an item correction after preparation has started and a change in fulfilment method. Ask what information reaches each role and what remains in the record. Agree who may cancel or edit an accepted order. Do not assume a change on the administration screen automatically updates every connected device.\n\n## Reconcile completed and exceptional orders\n\nAt shift end, review completed, cancelled and unresolved orders separately. Explain any difference between order totals, payment records and delivery settlements. A single dashboard should support reconciliation, not conceal exceptions inside one headline number.\n\n## Choose from your own service pattern\n\nA mostly takeaway business and a dining room with delivery may need different controls. Bring examples from each channel to the [POS](/services/restaurant-pos) and [delivery](/services/delivery-management) demonstration. Confirm devices, staff permissions and integrations through a [demo](/contact), and retain the written workflow with the proposal.",
     "faq": [],
     "relatedArticleIds": [
       "1"
@@ -3819,14 +5138,30 @@
     "author": "Restrova Team",
     "createdAt": "2026-11-10",
     "updatedAt": "2026-11-10",
-    "publicationStatus": "needs_review",
+    "publicationStatus": "draft",
     "canonicalUrl": "https://www.restrova.com/blog/how-to-manage-dine-in-takeaway-and-delivery-orders-in-one-dashboard",
     "url": "/blog/how-to-manage-dine-in-takeaway-and-delivery-orders-in-one-dashboard",
     "pageType": "article",
-    "verificationStatus": "overlap_review",
+    "verificationStatus": "needs_review",
     "overlapTarget": "/blog/why-direct-ordering-beats-third-party-marketplaces",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "reviewNote": "Complete focused draft; not approved. Preserve the original requested title while reviewing whether it promises an unsupported outcome.",
+    "sources": [
+      "https://www.restrova.com/pricing",
+      "https://www.restrova.com/services"
+    ],
+    "category": "Restaurant operations",
+    "tags": [
+      "10"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Owner/editor must confirm claims, differentiation and final title before approval."
+    ],
+    "draftDisposition": "complete_draft"
   },
   {
     "id": "editorial-10-7",
@@ -3864,9 +5199,22 @@
     "url": "/blog/restaurant-order-management-system-for-multi-branch-restaurants",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/manage-multiple-restaurant-branches",
+    "reviewNote": "Same branch-management decision; consolidate role, menu and reporting requirements in the existing branch guide.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "10"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Same branch-management decision; consolidate role, menu and reporting requirements in the existing branch guide."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-10-8",
@@ -3904,9 +5252,22 @@
     "url": "/blog/how-to-automate-restaurant-order-processing-from-website-to-kitchen",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/why-direct-ordering-beats-third-party-marketplaces",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+    "reviewNote": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "10"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-10-9",
@@ -3944,9 +5305,22 @@
     "url": "/blog/how-much-does-a-restaurant-order-management-system-cost",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/restaurant-software-pricing-pakistan-guide",
+    "reviewNote": "Same cost-evaluation question; merge the requested angle into the existing cost guide instead of another price page.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "10"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Same cost-evaluation question; merge the requested angle into the existing cost guide instead of another price page."
+    ],
+    "draftDisposition": "proposed_merge"
   },
   {
     "id": "editorial-10-10",
@@ -3984,8 +5358,21 @@
     "url": "/blog/how-to-choose-the-right-restaurant-order-management-system-for-your-business",
     "pageType": "article",
     "verificationStatus": "overlap_review",
-    "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
-    "reviewNote": "Compare this proposed angle with the linked existing guide before deciding whether to merge or write a distinct draft.",
-    "sources": []
+    "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+    "reviewNote": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar.",
+    "sources": [],
+    "category": "Restaurant operations",
+    "tags": [
+      "10"
+    ],
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "distinctIntent": false,
+    "publishedAt": "",
+    "blockers": [
+      "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+    ],
+    "draftDisposition": "proposed_merge"
   }
 ]

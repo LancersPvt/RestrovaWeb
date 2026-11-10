@@ -1,3 +1,4 @@
+import ArticleShare from "@/components/ArticleShare";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -32,6 +33,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       <ArticleBody content={blocks.slice(introductionLength).join("\n\n")} startIndex={introductionLength} /></>}
       <aside className="my-10 rounded-2xl border border-black/15 bg-white p-6"><h2>About the author</h2><p className="mt-3">{post.authorExpertise}</p><p className="mt-3">Learn <Link href="/about">about Restrova</Link> and explore <Link href={`/services/${post.relatedSolution}`}>the related Restrova solution</Link>.</p></aside>
       <section className="my-10"><h2>Compare the checklist with real implementations</h2><p className="mt-4">Explore <Link href="/customers">Restrova customer stories and public app references</Link>, then bring your own requirements to a demonstration. A customer implementation confirms its stated scope; it does not establish every feature for a new setup.</p></section>
+      <ArticleShare url={`${siteConfig.url}/blog/${post.slug}`} title={post.title}/>
       <DemoCta />
       <section className="mt-12"><h2>Keep reading</h2><ul className="mt-5 space-y-4">{blogPosts.filter((item) => item.slug !== post.slug).sort((a, b) => Number(b.relatedSolution === post.relatedSolution) - Number(a.relatedSolution === post.relatedSolution) || Number(b.category === post.category) - Number(a.category === post.category)).slice(0, 4).map((item) => <li key={item.slug}><Link href={`/blog/${item.slug}`}>{item.title}</Link></li>)}</ul><p className="mt-5"><Link href="/blog">Browse all restaurant guides</Link>.</p></section>
     </article>

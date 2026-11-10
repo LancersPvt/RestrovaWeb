@@ -1,5 +1,5 @@
 export function calculate(kind:string,v:Record<string,number>):Record<string,number|null> {
- if(Object.values(v).some(n=>!Number.isFinite(n)||n<0))throw Error("Enter finite, non-negative amounts in every field.");
+ if(!calculatorFields[kind] || calculatorFields[kind].some(f=>!Number.isFinite(v[f.key])||v[f.key]<0||v[f.key]>1e12))throw Error("Complete every field with a number between 0 and 1,000,000,000,000.");
  const positive=(n:number)=>{if(!(n>0))throw Error("Revenue, sales and target percentages must be greater than zero.");return n;};
  if(kind==="profit")return {"Operating profit (PKR)":v.revenue-v.costs,"Operating margin (%)":100*(v.revenue-v.costs)/positive(v.revenue)};
  if(kind==="food")return {"Ingredient cost per portion (PKR)":v.ingredients/positive(v.portions),"Food cost (%)":100*v.ingredients/positive(v.sales)};

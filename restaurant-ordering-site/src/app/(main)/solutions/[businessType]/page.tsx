@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import ProgrammaticPage,{programmaticMetadata} from "@/components/ProgrammaticPage";
 import MarketingPage, { DemoCta } from "@/components/MarketingPage";
 import { businessTypes, getBusinessType } from "@/data/businessTypes";
 import { getSolution } from "@/data/solutions";
@@ -8,13 +8,13 @@ import { pageMetadata } from "@/lib/seo";
 export function generateStaticParams() { return businessTypes.map(({ slug }) => ({ businessType: slug })); }
 export async function generateMetadata({ params }: { params: Promise<{ businessType: string }> }) {
   const item = getBusinessType((await params).businessType);
-  if (!item) notFound();
+  if (!item) return programmaticMetadata(`/solutions/${(await params).businessType}`);
   return pageMetadata(`/solutions/${item.slug}`, item.title, item.description);
 }
 
 export default async function BusinessTypePage({ params }: { params: Promise<{ businessType: string }> }) {
   const item = getBusinessType((await params).businessType);
-  if (!item) notFound();
+  if (!item) return <ProgrammaticPage path={`/solutions/${(await params).businessType}`}/>;
   return <MarketingPage path={`/solutions/${item.slug}`} label={item.label} title={item.title} intro={item.intro} parent={{ label: "Solutions", href: "/services" }}>
     <div className="grid gap-6 md:grid-cols-2">{item.sections.map((section) => <section className="seo-card" key={section.title}><h2>{section.title}</h2><p className="mt-4">{section.text}</p></section>)}</div>
     <section><h2>Bring these examples to your demo</h2><ul className="mt-5 list-disc space-y-3 pl-6">{item.checklist.map((point) => <li key={point}>{point}</li>)}</ul></section>

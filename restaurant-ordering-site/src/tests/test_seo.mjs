@@ -11,13 +11,15 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..")
 let cache = new Map();
 function load(relative) {
   const file = path.resolve(root, relative);
+  if(relative.endsWith(".json"))return JSON.parse(fs.readFileSync(file,"utf8"));
   if (cache.has(file)) return cache.get(file).exports;
   const result = { exports: {} }; cache.set(file, result);
   const js = ts.transpileModule(fs.readFileSync(file, "utf8"), { fileName: file,
-    compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.CommonJS, jsx: ts.JsxEmit.ReactJSX } }).outputText;
+    compilerOptions: { esModuleInterop: true, target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.CommonJS, jsx: ts.JsxEmit.ReactJSX } }).outputText;
   const localRequire = (name) => {
     if (!name.startsWith("@/")) return require(name);
     const stem = `src/${name.slice(2)}`;
+    if(stem.endsWith(".json"))return load(stem);
     return load(fs.existsSync(path.join(root, `${stem}.ts`)) ? `${stem}.ts` : `${stem}.tsx`);
   };
   new Function("require", "module", "exports", js)(localRequire, result, result.exports);

@@ -19,7 +19,12 @@
     "test:customers": "node src/tests/test_customers.mjs",
     "test:growth": "node src/tests/test_growth.mjs",
     "test:tracking": "node src/tests/test_tracking.mjs",
-    "test:seo-engine": "node scripts/check-seo-engine.mjs"
+    "test:seo-engine": "node scripts/check-seo-engine.mjs",
+    "seo:validate": "node scripts/seo-content.mjs validate",
+    "seo:sync": "node scripts/seo-content.mjs sync",
+    "seo:content": "node scripts/seo-content.mjs",
+    "prebuild": "npm run seo:sync",
+    "seo:preview-server": "node scripts/seo-preview-server.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.563.0",

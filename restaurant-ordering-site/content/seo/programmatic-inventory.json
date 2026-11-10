@@ -21,7 +21,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/locations/lahore/online-ordering-system",
     "reviewNote": "Needs documented city-specific value and availability; no office or customer location inferred.",
-    "mappedTo": null
+    "mappedTo": null,
+    "reviewSignature": ""
   },
   {
     "id": "city-online-ordering-in-karachi",
@@ -45,7 +46,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/locations/karachi/online-ordering-system",
     "reviewNote": "Needs documented city-specific value and availability; no office or customer location inferred.",
-    "mappedTo": null
+    "mappedTo": null,
+    "reviewSignature": ""
   },
   {
     "id": "city-online-ordering-in-islamabad",
@@ -69,7 +71,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/locations/islamabad/online-ordering-system",
     "reviewNote": "Needs documented city-specific value and availability; no office or customer location inferred.",
-    "mappedTo": null
+    "mappedTo": null,
+    "reviewSignature": ""
   },
   {
     "id": "city-online-ordering-in-rawalpindi",
@@ -93,7 +96,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/locations/rawalpindi/online-ordering-system",
     "reviewNote": "Needs documented city-specific value and availability; no office or customer location inferred.",
-    "mappedTo": null
+    "mappedTo": null,
+    "reviewSignature": ""
   },
   {
     "id": "city-online-ordering-in-peshawar",
@@ -117,7 +121,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/locations/peshawar/online-ordering-system",
     "reviewNote": "Needs documented city-specific value and availability; no office or customer location inferred.",
-    "mappedTo": null
+    "mappedTo": null,
+    "reviewSignature": ""
   },
   {
     "id": "city-online-ordering-in-faisalabad",
@@ -141,7 +146,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/locations/faisalabad/online-ordering-system",
     "reviewNote": "Needs documented city-specific value and availability; no office or customer location inferred.",
-    "mappedTo": null
+    "mappedTo": null,
+    "reviewSignature": ""
   },
   {
     "id": "city-online-ordering-in-multan",
@@ -165,7 +171,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/locations/multan/online-ordering-system",
     "reviewNote": "Needs documented city-specific value and availability; no office or customer location inferred.",
-    "mappedTo": null
+    "mappedTo": null,
+    "reviewSignature": ""
   },
   {
     "id": "city-online-ordering-in-gujranwala",
@@ -189,7 +196,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/locations/gujranwala/online-ordering-system",
     "reviewNote": "Needs documented city-specific value and availability; no office or customer location inferred.",
-    "mappedTo": null
+    "mappedTo": null,
+    "reviewSignature": ""
   },
   {
     "id": "city-online-ordering-in-sialkot",
@@ -213,7 +221,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/locations/sialkot/online-ordering-system",
     "reviewNote": "Needs documented city-specific value and availability; no office or customer location inferred.",
-    "mappedTo": null
+    "mappedTo": null,
+    "reviewSignature": ""
   },
   {
     "id": "city-online-ordering-in-hyderabad",
@@ -237,7 +246,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/locations/hyderabad/online-ordering-system",
     "reviewNote": "Needs documented city-specific value and availability; no office or customer location inferred.",
-    "mappedTo": null
+    "mappedTo": null,
+    "reviewSignature": ""
   },
   {
     "id": "restaurant_type-pizza-restaurants",
@@ -261,7 +271,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/solutions/pizza-restaurants",
     "reviewNote": "Differentiate workflow; confirm detailed modifier and fulfilment capabilities. Existing canonical wins where already present.",
-    "mappedTo": null
+    "mappedTo": null,
+    "reviewSignature": ""
   },
   {
     "id": "restaurant_type-burger-restaurants",
@@ -285,7 +296,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/solutions/burger-restaurants",
     "reviewNote": "Differentiate workflow; confirm detailed modifier and fulfilment capabilities. Existing canonical wins where already present.",
-    "mappedTo": null
+    "mappedTo": null,
+    "reviewSignature": ""
   },
   {
     "id": "restaurant_type-fast-food-restaurants",
@@ -309,7 +321,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/solutions/fast-food-restaurants",
     "reviewNote": "Differentiate workflow; confirm detailed modifier and fulfilment capabilities. Existing canonical wins where already present.",
-    "mappedTo": "/solutions/fast-food-restaurants"
+    "mappedTo": "/solutions/fast-food-restaurants",
+    "reviewSignature": ""
   },
   {
     "id": "restaurant_type-cafes",
@@ -333,7 +346,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/solutions/cafes",
     "reviewNote": "Differentiate workflow; confirm detailed modifier and fulfilment capabilities. Existing canonical wins where already present.",
-    "mappedTo": "/solutions/cafes"
+    "mappedTo": "/solutions/cafes",
+    "reviewSignature": ""
   },
   {
     "id": "restaurant_type-coffee-shops",
@@ -357,7 +371,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/solutions/coffee-shops",
     "reviewNote": "Differentiate workflow; confirm detailed modifier and fulfilment capabilities. Existing canonical wins where already present.",
-    "mappedTo": null
+    "mappedTo": null,
+    "reviewSignature": ""
   },
   {
     "id": "restaurant_type-bakeries",
@@ -381,7 +396,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/solutions/bakeries",
     "reviewNote": "Differentiate workflow; confirm detailed modifier and fulfilment capabilities. Existing canonical wins where already present.",
-    "mappedTo": null
+    "mappedTo": null,
+    "reviewSignature": ""
   },
   {
     "id": "restaurant_type-cloud-kitchens",
@@ -405,7 +421,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/solutions/cloud-kitchens",
     "reviewNote": "Differentiate workflow; confirm detailed modifier and fulfilment capabilities. Existing canonical wins where already present.",
-    "mappedTo": "/solutions/cloud-kitchens"
+    "mappedTo": "/solutions/cloud-kitchens",
+    "reviewSignature": ""
   },
   {
     "id": "restaurant_type-fine-dining-restaurants",
@@ -429,7 +446,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/solutions/fine-dining-restaurants",
     "reviewNote": "Differentiate workflow; confirm detailed modifier and fulfilment capabilities. Existing canonical wins where already present.",
-    "mappedTo": null
+    "mappedTo": null,
+    "reviewSignature": ""
   },
   {
     "id": "restaurant_type-casual-dining-restaurants",
@@ -453,7 +471,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/solutions/casual-dining-restaurants",
     "reviewNote": "Differentiate workflow; confirm detailed modifier and fulfilment capabilities. Existing canonical wins where already present.",
-    "mappedTo": null
+    "mappedTo": null,
+    "reviewSignature": ""
   },
   {
     "id": "restaurant_type-ice-cream-shops",
@@ -477,7 +496,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/solutions/ice-cream-shops",
     "reviewNote": "Differentiate workflow; confirm detailed modifier and fulfilment capabilities. Existing canonical wins where already present.",
-    "mappedTo": null
+    "mappedTo": null,
+    "reviewSignature": ""
   },
   {
     "id": "restaurant_type-juice-bars",
@@ -501,7 +521,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/solutions/juice-bars",
     "reviewNote": "Differentiate workflow; confirm detailed modifier and fulfilment capabilities. Existing canonical wins where already present.",
-    "mappedTo": null
+    "mappedTo": null,
+    "reviewSignature": ""
   },
   {
     "id": "restaurant_type-multi-branch-restaurants",
@@ -525,7 +546,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/solutions/multi-branch-restaurants",
     "reviewNote": "Differentiate workflow; confirm detailed modifier and fulfilment capabilities. Existing canonical wins where already present.",
-    "mappedTo": "/solutions/multi-branch-restaurants"
+    "mappedTo": "/solutions/multi-branch-restaurants",
+    "reviewSignature": ""
   },
   {
     "id": "feature-online-ordering",
@@ -549,7 +571,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/features/online-ordering",
     "reviewNote": "Consolidate with the existing service page; otherwise verify feature support before writing.",
-    "mappedTo": "/services/restaurant-ordering-websites"
+    "mappedTo": "/services/restaurant-ordering-websites",
+    "reviewSignature": ""
   },
   {
     "id": "feature-restaurant-pos",
@@ -573,7 +596,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/features/restaurant-pos",
     "reviewNote": "Consolidate with the existing service page; otherwise verify feature support before writing.",
-    "mappedTo": "/services/restaurant-pos"
+    "mappedTo": "/services/restaurant-pos",
+    "reviewSignature": ""
   },
   {
     "id": "feature-delivery-management",
@@ -597,7 +621,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/features/delivery-management",
     "reviewNote": "Consolidate with the existing service page; otherwise verify feature support before writing.",
-    "mappedTo": "/services/delivery-management"
+    "mappedTo": "/services/delivery-management",
+    "reviewSignature": ""
   },
   {
     "id": "feature-branded-mobile-ordering",
@@ -621,7 +646,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/features/branded-mobile-ordering",
     "reviewNote": "Consolidate with the existing service page; otherwise verify feature support before writing.",
-    "mappedTo": "/services/restaurant-ordering-apps"
+    "mappedTo": "/services/restaurant-ordering-apps",
+    "reviewSignature": ""
   },
   {
     "id": "feature-inventory-management",
@@ -645,7 +671,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/features/inventory-management",
     "reviewNote": "Consolidate with the existing service page; otherwise verify feature support before writing.",
-    "mappedTo": "/services/inventory-management"
+    "mappedTo": "/services/inventory-management",
+    "reviewSignature": ""
   },
   {
     "id": "feature-restaurant-analytics",
@@ -669,7 +696,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/features/restaurant-analytics",
     "reviewNote": "Consolidate with the existing service page; otherwise verify feature support before writing.",
-    "mappedTo": "/services/reporting-analytics"
+    "mappedTo": "/services/reporting-analytics",
+    "reviewSignature": ""
   },
   {
     "id": "feature-qr-code-ordering",
@@ -693,7 +721,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/features/qr-code-ordering",
     "reviewNote": "Consolidate with the existing service page; otherwise verify feature support before writing.",
-    "mappedTo": null
+    "mappedTo": null,
+    "reviewSignature": ""
   },
   {
     "id": "feature-whatsapp-ordering",
@@ -717,7 +746,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/features/whatsapp-ordering",
     "reviewNote": "Consolidate with the existing service page; otherwise verify feature support before writing.",
-    "mappedTo": null
+    "mappedTo": null,
+    "reviewSignature": ""
   },
   {
     "id": "comparison-indolj-alternative",
@@ -741,7 +771,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/compare/indolj-alternative",
     "reviewNote": "Needs dated primary-source pricing, capabilities, limitations and fair criteria. No ranking or affiliation implied.",
-    "mappedTo": null
+    "mappedTo": null,
+    "reviewSignature": ""
   },
   {
     "id": "comparison-blink-alternative",
@@ -765,7 +796,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/compare/blink-alternative",
     "reviewNote": "Needs dated primary-source pricing, capabilities, limitations and fair criteria. No ranking or affiliation implied.",
-    "mappedTo": null
+    "mappedTo": null,
+    "reviewSignature": ""
   },
   {
     "id": "comparison-indolj-vs-blink",
@@ -789,7 +821,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/compare/indolj-vs-blink",
     "reviewNote": "Needs dated primary-source pricing, capabilities, limitations and fair criteria. No ranking or affiliation implied.",
-    "mappedTo": null
+    "mappedTo": null,
+    "reviewSignature": ""
   },
   {
     "id": "comparison-indolj-vs-restrova",
@@ -813,7 +846,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/compare/indolj-vs-restrova",
     "reviewNote": "Needs dated primary-source pricing, capabilities, limitations and fair criteria. No ranking or affiliation implied.",
-    "mappedTo": null
+    "mappedTo": null,
+    "reviewSignature": ""
   },
   {
     "id": "comparison-blink-vs-restrova",
@@ -837,7 +871,8 @@
     "sources": [],
     "canonicalUrl": "https://www.restrova.com/compare/blink-vs-restrova",
     "reviewNote": "Needs dated primary-source pricing, capabilities, limitations and fair criteria. No ranking or affiliation implied.",
-    "mappedTo": null
+    "mappedTo": null,
+    "reviewSignature": ""
   },
   {
     "id": "calculator-restaurant-profit-margin-calculator",
@@ -861,7 +896,7 @@
       "/pricing",
       "/contact"
     ],
-    "publicationStatus": "noindex",
+    "publicationStatus": "draft",
     "verificationStatus": "unverified",
     "distinctIntent": false,
     "reviewedBy": "",
@@ -871,7 +906,8 @@
     "canonicalUrl": "https://www.restrova.com/tools/restaurant-profit-margin-calculator",
     "reviewNote": "Functional tool; keep noindex until editorial review and rollout approval.",
     "mappedTo": null,
-    "calculator": "profit"
+    "calculator": "profit",
+    "reviewSignature": ""
   },
   {
     "id": "calculator-food-delivery-commission-calculator",
@@ -895,7 +931,7 @@
       "/pricing",
       "/contact"
     ],
-    "publicationStatus": "noindex",
+    "publicationStatus": "draft",
     "verificationStatus": "unverified",
     "distinctIntent": false,
     "reviewedBy": "",
@@ -905,7 +941,8 @@
     "canonicalUrl": "https://www.restrova.com/tools/food-delivery-commission-calculator",
     "reviewNote": "Functional tool; keep noindex until editorial review and rollout approval.",
     "mappedTo": null,
-    "calculator": "commission"
+    "calculator": "commission",
+    "reviewSignature": ""
   },
   {
     "id": "calculator-restaurant-food-cost-calculator",
@@ -929,7 +966,7 @@
       "/pricing",
       "/contact"
     ],
-    "publicationStatus": "noindex",
+    "publicationStatus": "draft",
     "verificationStatus": "unverified",
     "distinctIntent": false,
     "reviewedBy": "",
@@ -939,7 +976,8 @@
     "canonicalUrl": "https://www.restrova.com/tools/restaurant-food-cost-calculator",
     "reviewNote": "Functional tool; keep noindex until editorial review and rollout approval.",
     "mappedTo": null,
-    "calculator": "food"
+    "calculator": "food",
+    "reviewSignature": ""
   },
   {
     "id": "calculator-restaurant-menu-pricing-calculator",
@@ -963,7 +1001,7 @@
       "/pricing",
       "/contact"
     ],
-    "publicationStatus": "noindex",
+    "publicationStatus": "draft",
     "verificationStatus": "unverified",
     "distinctIntent": false,
     "reviewedBy": "",
@@ -973,7 +1011,8 @@
     "canonicalUrl": "https://www.restrova.com/tools/menu-pricing-calculator",
     "reviewNote": "Functional tool; keep noindex until editorial review and rollout approval.",
     "mappedTo": null,
-    "calculator": "menu"
+    "calculator": "menu",
+    "reviewSignature": ""
   },
   {
     "id": "calculator-restaurant-online-ordering-roi-calculator",
@@ -997,7 +1036,7 @@
       "/pricing",
       "/contact"
     ],
-    "publicationStatus": "noindex",
+    "publicationStatus": "draft",
     "verificationStatus": "unverified",
     "distinctIntent": false,
     "reviewedBy": "",
@@ -1007,6 +1046,762 @@
     "canonicalUrl": "https://www.restrova.com/tools/online-ordering-roi-calculator",
     "reviewNote": "Functional tool; keep noindex until editorial review and rollout approval.",
     "mappedTo": null,
-    "calculator": "roi"
+    "calculator": "roi",
+    "reviewSignature": ""
+  },
+  {
+    "id": "resource-restaurant-inventory-template",
+    "pageType": "resource",
+    "path": "/templates/restaurant-inventory-template",
+    "title": "Restaurant Inventory Template",
+    "description": "Use a printable restaurant inventory template to record responsibilities and review restaurant operations.",
+    "intro": "Fill one row per record. Keep the reporting period and units consistent. These blank working sheets are not customer data or accounting advice. Check totals independently and keep personal information only where necessary. Use your browser Print action to save a completed PDF; data is not transmitted.",
+    "sections": [
+      {
+        "heading": "How to use the resource",
+        "text": "Open the editable sheet, fill the business and period, then enter records in the table. Add rows when needed and print or save a PDF before closing. The worksheet does not upload your information."
+      },
+      {
+        "heading": "Review before relying on the record",
+        "text": "Choose consistent units and record the person responsible for checking the sheet. Reconcile totals with your source records. The template supports a working routine; it does not replace the restaurant’s accounting or operational controls."
+      }
+    ],
+    "relatedLinks": [
+      "/services",
+      "/pricing",
+      "/contact"
+    ],
+    "publicationStatus": "draft",
+    "verificationStatus": "needs_review",
+    "distinctIntent": false,
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "updatedAt": "2026-11-10",
+    "sources": [
+      "https://www.restrova.com/services"
+    ],
+    "canonicalUrl": "https://www.restrova.com/templates/restaurant-inventory-template",
+    "reviewNote": "Usable printable asset created; review field names and instructions before publication.",
+    "mappedTo": null,
+    "resourceFile": "restaurant-inventory-template.html"
+  },
+  {
+    "id": "resource-restaurant-daily-sales-report",
+    "pageType": "resource",
+    "path": "/templates/restaurant-daily-sales-report",
+    "title": "Restaurant Daily Sales Report",
+    "description": "Use a printable restaurant daily sales report to record responsibilities and review restaurant operations.",
+    "intro": "Fill one row per record. Keep the reporting period and units consistent. These blank working sheets are not customer data or accounting advice. Check totals independently and keep personal information only where necessary. Use your browser Print action to save a completed PDF; data is not transmitted.",
+    "sections": [
+      {
+        "heading": "How to use the resource",
+        "text": "Open the editable sheet, fill the business and period, then enter records in the table. Add rows when needed and print or save a PDF before closing. The worksheet does not upload your information."
+      },
+      {
+        "heading": "Review before relying on the record",
+        "text": "Choose consistent units and record the person responsible for checking the sheet. Reconcile totals with your source records. The template supports a working routine; it does not replace the restaurant’s accounting or operational controls."
+      }
+    ],
+    "relatedLinks": [
+      "/services",
+      "/pricing",
+      "/contact"
+    ],
+    "publicationStatus": "draft",
+    "verificationStatus": "needs_review",
+    "distinctIntent": false,
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "updatedAt": "2026-11-10",
+    "sources": [
+      "https://www.restrova.com/services"
+    ],
+    "canonicalUrl": "https://www.restrova.com/templates/restaurant-daily-sales-report",
+    "reviewNote": "Usable printable asset created; review field names and instructions before publication.",
+    "mappedTo": null,
+    "resourceFile": "restaurant-daily-sales-report.html"
+  },
+  {
+    "id": "resource-restaurant-food-costing-template",
+    "pageType": "resource",
+    "path": "/templates/restaurant-food-costing-template",
+    "title": "Restaurant Food Costing Template",
+    "description": "Use a printable restaurant food costing template to record responsibilities and review restaurant operations.",
+    "intro": "Fill one row per record. Keep the reporting period and units consistent. These blank working sheets are not customer data or accounting advice. Check totals independently and keep personal information only where necessary. Use your browser Print action to save a completed PDF; data is not transmitted.",
+    "sections": [
+      {
+        "heading": "How to use the resource",
+        "text": "Open the editable sheet, fill the business and period, then enter records in the table. Add rows when needed and print or save a PDF before closing. The worksheet does not upload your information."
+      },
+      {
+        "heading": "Review before relying on the record",
+        "text": "Choose consistent units and record the person responsible for checking the sheet. Reconcile totals with your source records. The template supports a working routine; it does not replace the restaurant’s accounting or operational controls."
+      }
+    ],
+    "relatedLinks": [
+      "/services",
+      "/pricing",
+      "/contact"
+    ],
+    "publicationStatus": "draft",
+    "verificationStatus": "needs_review",
+    "distinctIntent": false,
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "updatedAt": "2026-11-10",
+    "sources": [
+      "https://www.restrova.com/services"
+    ],
+    "canonicalUrl": "https://www.restrova.com/templates/restaurant-food-costing-template",
+    "reviewNote": "Usable printable asset created; review field names and instructions before publication.",
+    "mappedTo": null,
+    "resourceFile": "restaurant-food-costing-template.html"
+  },
+  {
+    "id": "resource-restaurant-menu-pricing-template",
+    "pageType": "resource",
+    "path": "/templates/restaurant-menu-pricing-template",
+    "title": "Restaurant Menu Pricing Template",
+    "description": "Use a printable restaurant menu pricing template to record responsibilities and review restaurant operations.",
+    "intro": "Fill one row per record. Keep the reporting period and units consistent. These blank working sheets are not customer data or accounting advice. Check totals independently and keep personal information only where necessary. Use your browser Print action to save a completed PDF; data is not transmitted.",
+    "sections": [
+      {
+        "heading": "How to use the resource",
+        "text": "Open the editable sheet, fill the business and period, then enter records in the table. Add rows when needed and print or save a PDF before closing. The worksheet does not upload your information."
+      },
+      {
+        "heading": "Review before relying on the record",
+        "text": "Choose consistent units and record the person responsible for checking the sheet. Reconcile totals with your source records. The template supports a working routine; it does not replace the restaurant’s accounting or operational controls."
+      }
+    ],
+    "relatedLinks": [
+      "/services",
+      "/pricing",
+      "/contact"
+    ],
+    "publicationStatus": "draft",
+    "verificationStatus": "needs_review",
+    "distinctIntent": false,
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "updatedAt": "2026-11-10",
+    "sources": [
+      "https://www.restrova.com/services"
+    ],
+    "canonicalUrl": "https://www.restrova.com/templates/restaurant-menu-pricing-template",
+    "reviewNote": "Usable printable asset created; review field names and instructions before publication.",
+    "mappedTo": null,
+    "resourceFile": "restaurant-menu-pricing-template.html"
+  },
+  {
+    "id": "resource-restaurant-staff-schedule",
+    "pageType": "resource",
+    "path": "/templates/restaurant-staff-schedule",
+    "title": "Restaurant Staff Schedule",
+    "description": "Use a printable restaurant staff schedule to record responsibilities and review restaurant operations.",
+    "intro": "Fill one row per record. Keep the reporting period and units consistent. These blank working sheets are not customer data or accounting advice. Check totals independently and keep personal information only where necessary. Use your browser Print action to save a completed PDF; data is not transmitted.",
+    "sections": [
+      {
+        "heading": "How to use the resource",
+        "text": "Open the editable sheet, fill the business and period, then enter records in the table. Add rows when needed and print or save a PDF before closing. The worksheet does not upload your information."
+      },
+      {
+        "heading": "Review before relying on the record",
+        "text": "Choose consistent units and record the person responsible for checking the sheet. Reconcile totals with your source records. The template supports a working routine; it does not replace the restaurant’s accounting or operational controls."
+      }
+    ],
+    "relatedLinks": [
+      "/services",
+      "/pricing",
+      "/contact"
+    ],
+    "publicationStatus": "draft",
+    "verificationStatus": "needs_review",
+    "distinctIntent": false,
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "updatedAt": "2026-11-10",
+    "sources": [
+      "https://www.restrova.com/services"
+    ],
+    "canonicalUrl": "https://www.restrova.com/templates/restaurant-staff-schedule",
+    "reviewNote": "Usable printable asset created; review field names and instructions before publication.",
+    "mappedTo": null,
+    "resourceFile": "restaurant-staff-schedule.html"
+  },
+  {
+    "id": "resource-restaurant-order-tracking-template",
+    "pageType": "resource",
+    "path": "/templates/restaurant-order-tracking-template",
+    "title": "Restaurant Order Tracking Template",
+    "description": "Use a printable restaurant order tracking template to record responsibilities and review restaurant operations.",
+    "intro": "Fill one row per record. Keep the reporting period and units consistent. These blank working sheets are not customer data or accounting advice. Check totals independently and keep personal information only where necessary. Use your browser Print action to save a completed PDF; data is not transmitted.",
+    "sections": [
+      {
+        "heading": "How to use the resource",
+        "text": "Open the editable sheet, fill the business and period, then enter records in the table. Add rows when needed and print or save a PDF before closing. The worksheet does not upload your information."
+      },
+      {
+        "heading": "Review before relying on the record",
+        "text": "Choose consistent units and record the person responsible for checking the sheet. Reconcile totals with your source records. The template supports a working routine; it does not replace the restaurant’s accounting or operational controls."
+      }
+    ],
+    "relatedLinks": [
+      "/services",
+      "/pricing",
+      "/contact"
+    ],
+    "publicationStatus": "draft",
+    "verificationStatus": "needs_review",
+    "distinctIntent": false,
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "updatedAt": "2026-11-10",
+    "sources": [
+      "https://www.restrova.com/services"
+    ],
+    "canonicalUrl": "https://www.restrova.com/templates/restaurant-order-tracking-template",
+    "reviewNote": "Usable printable asset created; review field names and instructions before publication.",
+    "mappedTo": null,
+    "resourceFile": "restaurant-order-tracking-template.html"
+  },
+  {
+    "id": "resource-restaurant-profit-and-loss-template",
+    "pageType": "resource",
+    "path": "/templates/restaurant-profit-and-loss-template",
+    "title": "Restaurant Profit and Loss Template",
+    "description": "Use a printable restaurant profit and loss template to record responsibilities and review restaurant operations.",
+    "intro": "Fill one row per record. Keep the reporting period and units consistent. These blank working sheets are not customer data or accounting advice. Check totals independently and keep personal information only where necessary. Use your browser Print action to save a completed PDF; data is not transmitted.",
+    "sections": [
+      {
+        "heading": "How to use the resource",
+        "text": "Open the editable sheet, fill the business and period, then enter records in the table. Add rows when needed and print or save a PDF before closing. The worksheet does not upload your information."
+      },
+      {
+        "heading": "Review before relying on the record",
+        "text": "Choose consistent units and record the person responsible for checking the sheet. Reconcile totals with your source records. The template supports a working routine; it does not replace the restaurant’s accounting or operational controls."
+      }
+    ],
+    "relatedLinks": [
+      "/services",
+      "/pricing",
+      "/contact"
+    ],
+    "publicationStatus": "draft",
+    "verificationStatus": "needs_review",
+    "distinctIntent": false,
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "updatedAt": "2026-11-10",
+    "sources": [
+      "https://www.restrova.com/services"
+    ],
+    "canonicalUrl": "https://www.restrova.com/templates/restaurant-profit-and-loss-template",
+    "reviewNote": "Usable printable asset created; review field names and instructions before publication.",
+    "mappedTo": null,
+    "resourceFile": "restaurant-profit-and-loss-template.html"
+  },
+  {
+    "id": "resource-restaurant-opening-checklist",
+    "pageType": "resource",
+    "path": "/templates/restaurant-opening-checklist",
+    "title": "Restaurant Opening Checklist",
+    "description": "Use a printable restaurant opening checklist to record responsibilities and review restaurant operations.",
+    "intro": "Fill one row per record. Keep the reporting period and units consistent. These blank working sheets are not customer data or accounting advice. Check totals independently and keep personal information only where necessary. Use your browser Print action to save a completed PDF; data is not transmitted.",
+    "sections": [
+      {
+        "heading": "How to use the resource",
+        "text": "Open the editable sheet, fill the business and period, then enter records in the table. Add rows when needed and print or save a PDF before closing. The worksheet does not upload your information."
+      },
+      {
+        "heading": "Review before relying on the record",
+        "text": "Choose consistent units and record the person responsible for checking the sheet. Reconcile totals with your source records. The template supports a working routine; it does not replace the restaurant’s accounting or operational controls."
+      }
+    ],
+    "relatedLinks": [
+      "/services",
+      "/pricing",
+      "/contact"
+    ],
+    "publicationStatus": "draft",
+    "verificationStatus": "needs_review",
+    "distinctIntent": false,
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "updatedAt": "2026-11-10",
+    "sources": [
+      "https://www.restrova.com/services"
+    ],
+    "canonicalUrl": "https://www.restrova.com/templates/restaurant-opening-checklist",
+    "reviewNote": "Usable printable asset created; review field names and instructions before publication.",
+    "mappedTo": null,
+    "resourceFile": "restaurant-opening-checklist.html"
+  },
+  {
+    "id": "resource-restaurant-closing-checklist",
+    "pageType": "resource",
+    "path": "/templates/restaurant-closing-checklist",
+    "title": "Restaurant Closing Checklist",
+    "description": "Use a printable restaurant closing checklist to record responsibilities and review restaurant operations.",
+    "intro": "Fill one row per record. Keep the reporting period and units consistent. These blank working sheets are not customer data or accounting advice. Check totals independently and keep personal information only where necessary. Use your browser Print action to save a completed PDF; data is not transmitted.",
+    "sections": [
+      {
+        "heading": "How to use the resource",
+        "text": "Open the editable sheet, fill the business and period, then enter records in the table. Add rows when needed and print or save a PDF before closing. The worksheet does not upload your information."
+      },
+      {
+        "heading": "Review before relying on the record",
+        "text": "Choose consistent units and record the person responsible for checking the sheet. Reconcile totals with your source records. The template supports a working routine; it does not replace the restaurant’s accounting or operational controls."
+      }
+    ],
+    "relatedLinks": [
+      "/services",
+      "/pricing",
+      "/contact"
+    ],
+    "publicationStatus": "draft",
+    "verificationStatus": "needs_review",
+    "distinctIntent": false,
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "updatedAt": "2026-11-10",
+    "sources": [
+      "https://www.restrova.com/services"
+    ],
+    "canonicalUrl": "https://www.restrova.com/templates/restaurant-closing-checklist",
+    "reviewNote": "Usable printable asset created; review field names and instructions before publication.",
+    "mappedTo": null,
+    "resourceFile": "restaurant-closing-checklist.html"
+  },
+  {
+    "id": "resource-restaurant-delivery-checklist",
+    "pageType": "resource",
+    "path": "/templates/restaurant-delivery-checklist",
+    "title": "Restaurant Delivery Checklist",
+    "description": "Use a printable restaurant delivery checklist to record responsibilities and review restaurant operations.",
+    "intro": "Fill one row per record. Keep the reporting period and units consistent. These blank working sheets are not customer data or accounting advice. Check totals independently and keep personal information only where necessary. Use your browser Print action to save a completed PDF; data is not transmitted.",
+    "sections": [
+      {
+        "heading": "How to use the resource",
+        "text": "Open the editable sheet, fill the business and period, then enter records in the table. Add rows when needed and print or save a PDF before closing. The worksheet does not upload your information."
+      },
+      {
+        "heading": "Review before relying on the record",
+        "text": "Choose consistent units and record the person responsible for checking the sheet. Reconcile totals with your source records. The template supports a working routine; it does not replace the restaurant’s accounting or operational controls."
+      }
+    ],
+    "relatedLinks": [
+      "/services",
+      "/pricing",
+      "/contact"
+    ],
+    "publicationStatus": "draft",
+    "verificationStatus": "needs_review",
+    "distinctIntent": false,
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "updatedAt": "2026-11-10",
+    "sources": [
+      "https://www.restrova.com/services"
+    ],
+    "canonicalUrl": "https://www.restrova.com/templates/restaurant-delivery-checklist",
+    "reviewNote": "Usable printable asset created; review field names and instructions before publication.",
+    "mappedTo": null,
+    "resourceFile": "restaurant-delivery-checklist.html"
+  },
+  {
+    "id": "resource-restaurant-customer-feedback-form",
+    "pageType": "resource",
+    "path": "/templates/restaurant-customer-feedback-form",
+    "title": "Restaurant Customer Feedback Form",
+    "description": "Use a printable restaurant customer feedback form to record responsibilities and review restaurant operations.",
+    "intro": "Fill one row per record. Keep the reporting period and units consistent. These blank working sheets are not customer data or accounting advice. Check totals independently and keep personal information only where necessary. Use your browser Print action to save a completed PDF; data is not transmitted.",
+    "sections": [
+      {
+        "heading": "How to use the resource",
+        "text": "Open the editable sheet, fill the business and period, then enter records in the table. Add rows when needed and print or save a PDF before closing. The worksheet does not upload your information."
+      },
+      {
+        "heading": "Review before relying on the record",
+        "text": "Choose consistent units and record the person responsible for checking the sheet. Reconcile totals with your source records. The template supports a working routine; it does not replace the restaurant’s accounting or operational controls."
+      }
+    ],
+    "relatedLinks": [
+      "/services",
+      "/pricing",
+      "/contact"
+    ],
+    "publicationStatus": "draft",
+    "verificationStatus": "needs_review",
+    "distinctIntent": false,
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "updatedAt": "2026-11-10",
+    "sources": [
+      "https://www.restrova.com/services"
+    ],
+    "canonicalUrl": "https://www.restrova.com/templates/restaurant-customer-feedback-form",
+    "reviewNote": "Usable printable asset created; review field names and instructions before publication.",
+    "mappedTo": null,
+    "resourceFile": "restaurant-customer-feedback-form.html"
+  },
+  {
+    "id": "resource-restaurant-purchase-order-template",
+    "pageType": "resource",
+    "path": "/templates/restaurant-purchase-order-template",
+    "title": "Restaurant Purchase Order Template",
+    "description": "Use a printable restaurant purchase order template to record responsibilities and review restaurant operations.",
+    "intro": "Fill one row per record. Keep the reporting period and units consistent. These blank working sheets are not customer data or accounting advice. Check totals independently and keep personal information only where necessary. Use your browser Print action to save a completed PDF; data is not transmitted.",
+    "sections": [
+      {
+        "heading": "How to use the resource",
+        "text": "Open the editable sheet, fill the business and period, then enter records in the table. Add rows when needed and print or save a PDF before closing. The worksheet does not upload your information."
+      },
+      {
+        "heading": "Review before relying on the record",
+        "text": "Choose consistent units and record the person responsible for checking the sheet. Reconcile totals with your source records. The template supports a working routine; it does not replace the restaurant’s accounting or operational controls."
+      }
+    ],
+    "relatedLinks": [
+      "/services",
+      "/pricing",
+      "/contact"
+    ],
+    "publicationStatus": "draft",
+    "verificationStatus": "needs_review",
+    "distinctIntent": false,
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "updatedAt": "2026-11-10",
+    "sources": [
+      "https://www.restrova.com/services"
+    ],
+    "canonicalUrl": "https://www.restrova.com/templates/restaurant-purchase-order-template",
+    "reviewNote": "Usable printable asset created; review field names and instructions before publication.",
+    "mappedTo": null,
+    "resourceFile": "restaurant-purchase-order-template.html"
+  },
+  {
+    "id": "resource-restaurant-expense-tracker",
+    "pageType": "resource",
+    "path": "/templates/restaurant-expense-tracker",
+    "title": "Restaurant Expense Tracker",
+    "description": "Use a printable restaurant expense tracker to record responsibilities and review restaurant operations.",
+    "intro": "Fill one row per record. Keep the reporting period and units consistent. These blank working sheets are not customer data or accounting advice. Check totals independently and keep personal information only where necessary. Use your browser Print action to save a completed PDF; data is not transmitted.",
+    "sections": [
+      {
+        "heading": "How to use the resource",
+        "text": "Open the editable sheet, fill the business and period, then enter records in the table. Add rows when needed and print or save a PDF before closing. The worksheet does not upload your information."
+      },
+      {
+        "heading": "Review before relying on the record",
+        "text": "Choose consistent units and record the person responsible for checking the sheet. Reconcile totals with your source records. The template supports a working routine; it does not replace the restaurant’s accounting or operational controls."
+      }
+    ],
+    "relatedLinks": [
+      "/services",
+      "/pricing",
+      "/contact"
+    ],
+    "publicationStatus": "draft",
+    "verificationStatus": "needs_review",
+    "distinctIntent": false,
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "updatedAt": "2026-11-10",
+    "sources": [
+      "https://www.restrova.com/services"
+    ],
+    "canonicalUrl": "https://www.restrova.com/templates/restaurant-expense-tracker",
+    "reviewNote": "Usable printable asset created; review field names and instructions before publication.",
+    "mappedTo": null,
+    "resourceFile": "restaurant-expense-tracker.html"
+  },
+  {
+    "id": "resource-restaurant-sales-forecast-template",
+    "pageType": "resource",
+    "path": "/templates/restaurant-sales-forecast-template",
+    "title": "Restaurant Sales Forecast Template",
+    "description": "Use a printable restaurant sales forecast template to record responsibilities and review restaurant operations.",
+    "intro": "Fill one row per record. Keep the reporting period and units consistent. These blank working sheets are not customer data or accounting advice. Check totals independently and keep personal information only where necessary. Use your browser Print action to save a completed PDF; data is not transmitted.",
+    "sections": [
+      {
+        "heading": "How to use the resource",
+        "text": "Open the editable sheet, fill the business and period, then enter records in the table. Add rows when needed and print or save a PDF before closing. The worksheet does not upload your information."
+      },
+      {
+        "heading": "Review before relying on the record",
+        "text": "Choose consistent units and record the person responsible for checking the sheet. Reconcile totals with your source records. The template supports a working routine; it does not replace the restaurant’s accounting or operational controls."
+      }
+    ],
+    "relatedLinks": [
+      "/services",
+      "/pricing",
+      "/contact"
+    ],
+    "publicationStatus": "draft",
+    "verificationStatus": "needs_review",
+    "distinctIntent": false,
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "updatedAt": "2026-11-10",
+    "sources": [
+      "https://www.restrova.com/services"
+    ],
+    "canonicalUrl": "https://www.restrova.com/templates/restaurant-sales-forecast-template",
+    "reviewNote": "Usable printable asset created; review field names and instructions before publication.",
+    "mappedTo": null,
+    "resourceFile": "restaurant-sales-forecast-template.html"
+  },
+  {
+    "id": "resource-restaurant-marketing-calendar",
+    "pageType": "resource",
+    "path": "/templates/restaurant-marketing-calendar",
+    "title": "Restaurant Marketing Calendar",
+    "description": "Use a printable restaurant marketing calendar to record responsibilities and review restaurant operations.",
+    "intro": "Fill one row per record. Keep the reporting period and units consistent. These blank working sheets are not customer data or accounting advice. Check totals independently and keep personal information only where necessary. Use your browser Print action to save a completed PDF; data is not transmitted.",
+    "sections": [
+      {
+        "heading": "How to use the resource",
+        "text": "Open the editable sheet, fill the business and period, then enter records in the table. Add rows when needed and print or save a PDF before closing. The worksheet does not upload your information."
+      },
+      {
+        "heading": "Review before relying on the record",
+        "text": "Choose consistent units and record the person responsible for checking the sheet. Reconcile totals with your source records. The template supports a working routine; it does not replace the restaurant’s accounting or operational controls."
+      }
+    ],
+    "relatedLinks": [
+      "/services",
+      "/pricing",
+      "/contact"
+    ],
+    "publicationStatus": "draft",
+    "verificationStatus": "needs_review",
+    "distinctIntent": false,
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "updatedAt": "2026-11-10",
+    "sources": [
+      "https://www.restrova.com/services"
+    ],
+    "canonicalUrl": "https://www.restrova.com/templates/restaurant-marketing-calendar",
+    "reviewNote": "Usable printable asset created; review field names and instructions before publication.",
+    "mappedTo": null,
+    "resourceFile": "restaurant-marketing-calendar.html"
+  },
+  {
+    "id": "website-template-pizza",
+    "pageType": "website_template",
+    "path": "/website-templates/pizza-restaurant-website-templates",
+    "title": "Pizza Website Templates",
+    "description": "Review genuine pizza ordering website demonstrations when approved assets are available.",
+    "intro": "",
+    "sections": [],
+    "relatedLinks": [
+      "/services/restaurant-ordering-websites",
+      "/pricing",
+      "/contact"
+    ],
+    "publicationStatus": "draft",
+    "verificationStatus": "unverified",
+    "distinctIntent": false,
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "updatedAt": "2026-11-10",
+    "sources": [],
+    "canonicalUrl": "https://www.restrova.com/website-templates/pizza-restaurant-website-templates",
+    "reviewNote": "No approved working template supplied. Hold until owner provides a real demonstration and verified scope.",
+    "mappedTo": null
+  },
+  {
+    "id": "website-template-burger",
+    "pageType": "website_template",
+    "path": "/website-templates/burger-restaurant-website-templates",
+    "title": "Burger Website Templates",
+    "description": "Review genuine burger ordering website demonstrations when approved assets are available.",
+    "intro": "",
+    "sections": [],
+    "relatedLinks": [
+      "/services/restaurant-ordering-websites",
+      "/pricing",
+      "/contact"
+    ],
+    "publicationStatus": "draft",
+    "verificationStatus": "unverified",
+    "distinctIntent": false,
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "updatedAt": "2026-11-10",
+    "sources": [],
+    "canonicalUrl": "https://www.restrova.com/website-templates/burger-restaurant-website-templates",
+    "reviewNote": "No approved working template supplied. Hold until owner provides a real demonstration and verified scope.",
+    "mappedTo": null
+  },
+  {
+    "id": "website-template-cafe",
+    "pageType": "website_template",
+    "path": "/website-templates/cafe-restaurant-website-templates",
+    "title": "Cafe Website Templates",
+    "description": "Review genuine cafe ordering website demonstrations when approved assets are available.",
+    "intro": "",
+    "sections": [],
+    "relatedLinks": [
+      "/services/restaurant-ordering-websites",
+      "/pricing",
+      "/contact"
+    ],
+    "publicationStatus": "draft",
+    "verificationStatus": "unverified",
+    "distinctIntent": false,
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "updatedAt": "2026-11-10",
+    "sources": [],
+    "canonicalUrl": "https://www.restrova.com/website-templates/cafe-restaurant-website-templates",
+    "reviewNote": "No approved working template supplied. Hold until owner provides a real demonstration and verified scope.",
+    "mappedTo": null
+  },
+  {
+    "id": "website-template-bakery",
+    "pageType": "website_template",
+    "path": "/website-templates/bakery-restaurant-website-templates",
+    "title": "Bakery Website Templates",
+    "description": "Review genuine bakery ordering website demonstrations when approved assets are available.",
+    "intro": "",
+    "sections": [],
+    "relatedLinks": [
+      "/services/restaurant-ordering-websites",
+      "/pricing",
+      "/contact"
+    ],
+    "publicationStatus": "draft",
+    "verificationStatus": "unverified",
+    "distinctIntent": false,
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "updatedAt": "2026-11-10",
+    "sources": [],
+    "canonicalUrl": "https://www.restrova.com/website-templates/bakery-restaurant-website-templates",
+    "reviewNote": "No approved working template supplied. Hold until owner provides a real demonstration and verified scope.",
+    "mappedTo": null
+  },
+  {
+    "id": "website-template-cloud-kitchen",
+    "pageType": "website_template",
+    "path": "/website-templates/cloud-kitchen-restaurant-website-templates",
+    "title": "Cloud Kitchen Website Templates",
+    "description": "Review genuine cloud kitchen ordering website demonstrations when approved assets are available.",
+    "intro": "",
+    "sections": [],
+    "relatedLinks": [
+      "/services/restaurant-ordering-websites",
+      "/pricing",
+      "/contact"
+    ],
+    "publicationStatus": "draft",
+    "verificationStatus": "unverified",
+    "distinctIntent": false,
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "updatedAt": "2026-11-10",
+    "sources": [],
+    "canonicalUrl": "https://www.restrova.com/website-templates/cloud-kitchen-restaurant-website-templates",
+    "reviewNote": "No approved working template supplied. Hold until owner provides a real demonstration and verified scope.",
+    "mappedTo": null
+  },
+  {
+    "id": "website-template-fast-food",
+    "pageType": "website_template",
+    "path": "/website-templates/fast-food-restaurant-website-templates",
+    "title": "Fast Food Website Templates",
+    "description": "Review genuine fast food ordering website demonstrations when approved assets are available.",
+    "intro": "",
+    "sections": [],
+    "relatedLinks": [
+      "/services/restaurant-ordering-websites",
+      "/pricing",
+      "/contact"
+    ],
+    "publicationStatus": "draft",
+    "verificationStatus": "unverified",
+    "distinctIntent": false,
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "updatedAt": "2026-11-10",
+    "sources": [],
+    "canonicalUrl": "https://www.restrova.com/website-templates/fast-food-restaurant-website-templates",
+    "reviewNote": "No approved working template supplied. Hold until owner provides a real demonstration and verified scope.",
+    "mappedTo": null
+  },
+  {
+    "id": "website-template-fine-dining",
+    "pageType": "website_template",
+    "path": "/website-templates/fine-dining-restaurant-website-templates",
+    "title": "Fine Dining Website Templates",
+    "description": "Review genuine fine dining ordering website demonstrations when approved assets are available.",
+    "intro": "",
+    "sections": [],
+    "relatedLinks": [
+      "/services/restaurant-ordering-websites",
+      "/pricing",
+      "/contact"
+    ],
+    "publicationStatus": "draft",
+    "verificationStatus": "unverified",
+    "distinctIntent": false,
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "updatedAt": "2026-11-10",
+    "sources": [],
+    "canonicalUrl": "https://www.restrova.com/website-templates/fine-dining-restaurant-website-templates",
+    "reviewNote": "No approved working template supplied. Hold until owner provides a real demonstration and verified scope.",
+    "mappedTo": null
+  },
+  {
+    "id": "website-template-dessert-shop",
+    "pageType": "website_template",
+    "path": "/website-templates/dessert-shop-restaurant-website-templates",
+    "title": "Dessert Shop Website Templates",
+    "description": "Review genuine dessert shop ordering website demonstrations when approved assets are available.",
+    "intro": "",
+    "sections": [],
+    "relatedLinks": [
+      "/services/restaurant-ordering-websites",
+      "/pricing",
+      "/contact"
+    ],
+    "publicationStatus": "draft",
+    "verificationStatus": "unverified",
+    "distinctIntent": false,
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "reviewSignature": "",
+    "updatedAt": "2026-11-10",
+    "sources": [],
+    "canonicalUrl": "https://www.restrova.com/website-templates/dessert-shop-restaurant-website-templates",
+    "reviewNote": "No approved working template supplied. Hold until owner provides a real demonstration and verified scope.",
+    "mappedTo": null
   }
 ]
