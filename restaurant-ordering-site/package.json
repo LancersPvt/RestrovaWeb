@@ -24,7 +24,8 @@
     "seo:sync": "node scripts/seo-content.mjs sync",
     "seo:content": "node scripts/seo-content.mjs",
     "prebuild": "npm run seo:sync",
-    "seo:preview-server": "node scripts/seo-preview-server.mjs"
+    "seo:preview-server": "node scripts/seo-preview-server.mjs",
+    "test:content-complete": "node scripts/check-content-complete.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.563.0",

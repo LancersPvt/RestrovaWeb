@@ -1,3 +1,4 @@
+import BlogTopicCards from "@/components/BlogTopicCards";
 import CustomerPortfolioLink from "@/components/CustomerPortfolioLink";
 import BusinessTypeLinks from "@/components/BusinessTypeLinks";
 import Image from "next/image";
@@ -279,6 +280,8 @@ export default function Home() {
           <p className="mt-4 leading-7">Comparing your options? Use the <Link className="font-bold underline" href="/blog/how-to-choose-restaurant-pos-software-pakistan">restaurant POS buying checklist for Pakistan</Link> to test orders, devices, reporting and the complete cost.</p>
         </div>
       </section>
+
+      <section className="bg-[#fff4e7] pb-16"><div className="mx-auto max-w-7xl px-6"><BlogTopicCards/></div></section>
 
       <section id="outcomes" className="scroll-mt-24 py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6">

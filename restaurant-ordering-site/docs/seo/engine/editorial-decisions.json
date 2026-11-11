@@ -1,710 +1,1113 @@
 {
+  "date": "2026-11-11",
   "counts": {
-    "complete_draft": 10,
-    "proposed_merge": 71,
-    "research_hold": 19
+    "complete_draft": 100,
+    "empty_body": 0,
+    "published": 100,
+    "indexable": 10,
+    "public_noindex": 90
   },
-  "note": "Original titles retained. Consolidations are explicit editorial proposals, not claims of verified rankings or completed independent drafts.",
-  "decisions": [
+  "note": "Owner requested all 100 articles publicly readable. Codex editorial review; no human review or independent vendor testing claimed. Topic collections are navigation, not new product landing pages. Existing 63 programmatic records remain private.",
+  "articles": [
     {
       "id": "editorial-1-1",
-      "title": "10 Best Online Ordering Systems for Restaurants in Pakistan (2026)",
-      "disposition": "research_hold",
-      "target": "/blog/compare-restaurant-ordering-systems",
-      "reason": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+      "title": "10 Online Ordering Options for Restaurants: A Pakistan Buyer Checklist",
+      "requestedTitle": "10 Best Online Ordering Systems for Restaurants in Pakistan (2026)",
+      "words": 510,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+      "indexingHoldReason": "Differentiate from /blog/compare-restaurant-ordering-systems and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-1-2",
       "title": "What Is an Online Ordering System for Restaurants? Complete Guide",
-      "disposition": "proposed_merge",
-      "target": "/blog/compare-restaurant-ordering-systems",
-      "reason": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+      "requestedTitle": "What Is an Online Ordering System for Restaurants? Complete Guide",
+      "words": 484,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+      "indexingHoldReason": "Differentiate from /blog/compare-restaurant-ordering-systems and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-1-3",
       "title": "How to Set Up an Online Ordering System for Your Restaurant in Pakistan",
-      "disposition": "proposed_merge",
-      "target": "/blog/start-online-ordering-small-restaurant-pakistan",
-      "reason": "Overlapping launch process; merge supported setup steps into the existing launch guide, with a separate technical draft only where explicitly differentiated."
+      "requestedTitle": "How to Set Up an Online Ordering System for Your Restaurant in Pakistan",
+      "words": 460,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/start-online-ordering-small-restaurant-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-1-4",
       "title": "7 Benefits of an Online Ordering System for Small Restaurants",
-      "disposition": "proposed_merge",
-      "target": "/blog/compare-restaurant-ordering-systems",
-      "reason": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+      "requestedTitle": "7 Benefits of an Online Ordering System for Small Restaurants",
+      "words": 460,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+      "indexingHoldReason": "Differentiate from /blog/compare-restaurant-ordering-systems and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-1-5",
       "title": "How Online Ordering Systems Help Restaurants Increase Direct Sales",
-      "disposition": "proposed_merge",
-      "target": "/blog/compare-restaurant-ordering-systems",
-      "reason": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+      "requestedTitle": "How Online Ordering Systems Help Restaurants Increase Direct Sales",
+      "words": 420,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+      "indexingHoldReason": "Differentiate from /blog/compare-restaurant-ordering-systems and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-1-6",
       "title": "Online Ordering System vs Food Delivery Apps: Which Is Better?",
-      "disposition": "proposed_merge",
-      "target": "/blog/why-direct-ordering-beats-third-party-marketplaces",
-      "reason": "Same channel-choice intent; add verified cost or migration detail to the existing direct-versus-marketplace guide."
+      "requestedTitle": "Online Ordering System vs Food Delivery Apps: Which Is Better?",
+      "words": 456,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/why-direct-ordering-beats-third-party-marketplaces",
+      "indexingHoldReason": "Differentiate from /blog/why-direct-ordering-beats-third-party-marketplaces and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-1-7",
       "title": "How Much Does an Online Ordering System Cost in Pakistan?",
-      "disposition": "proposed_merge",
-      "target": "/blog/restaurant-online-ordering-system-cost-pakistan",
-      "reason": "Same cost-evaluation question; merge the requested angle into the existing cost guide instead of another price page."
+      "requestedTitle": "How Much Does an Online Ordering System Cost in Pakistan?",
+      "words": 423,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/restaurant-online-ordering-system-cost-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/restaurant-online-ordering-system-cost-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-1-8",
       "title": "10 Must-Have Features of a Restaurant Online Ordering System",
-      "disposition": "complete_draft",
-      "target": "/blog/start-online-ordering-small-restaurant-pakistan",
-      "reason": "Complete focused draft; not approved. Preserve the original requested title while reviewing whether it promises an unsupported outcome."
+      "requestedTitle": "10 Must-Have Features of a Restaurant Online Ordering System",
+      "words": 409,
+      "publicationStatus": "published",
+      "indexingStatus": "index",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
+      "indexingHoldReason": ""
     },
     {
       "id": "editorial-1-9",
-      "title": "How to Choose the Best Online Ordering System for Your Restaurant",
-      "disposition": "research_hold",
-      "target": "/blog/compare-restaurant-ordering-systems",
-      "reason": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+      "title": "How to Choose an Online Ordering System for Your Restaurant",
+      "requestedTitle": "How to Choose the Best Online Ordering System for Your Restaurant",
+      "words": 426,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+      "indexingHoldReason": "Differentiate from /blog/compare-restaurant-ordering-systems and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-1-10",
       "title": "Why Every Restaurant Needs Its Own Online Ordering System in 2026",
-      "disposition": "proposed_merge",
-      "target": "/blog/compare-restaurant-ordering-systems",
-      "reason": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+      "requestedTitle": "Why Every Restaurant Needs Its Own Online Ordering System in 2026",
+      "words": 418,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+      "indexingHoldReason": "Differentiate from /blog/compare-restaurant-ordering-systems and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-2-1",
-      "title": "10 Best Restaurant Management Software Solutions in Pakistan (2026)",
-      "disposition": "research_hold",
-      "target": "/blog/how-to-choose-restaurant-management-software-pakistan",
-      "reason": "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+      "title": "10 Restaurant Software Options to Investigate Before Buying in Pakistan",
+      "requestedTitle": "10 Best Restaurant Management Software Solutions in Pakistan (2026)",
+      "words": 459,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/how-to-choose-restaurant-management-software-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-2-2",
       "title": "What Is Restaurant Management Software and How Does It Work?",
-      "disposition": "proposed_merge",
-      "target": "/blog/how-to-choose-restaurant-management-software-pakistan",
-      "reason": "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide."
+      "requestedTitle": "What Is Restaurant Management Software and How Does It Work?",
+      "words": 426,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/how-to-choose-restaurant-management-software-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-2-3",
       "title": "How Restaurant Management Software Can Reduce Operational Costs",
-      "disposition": "complete_draft",
-      "target": "/blog/how-to-choose-restaurant-management-software-pakistan",
-      "reason": "Complete focused draft; not approved. Preserve the original requested title while reviewing whether it promises an unsupported outcome."
+      "requestedTitle": "How Restaurant Management Software Can Reduce Operational Costs",
+      "words": 381,
+      "publicationStatus": "published",
+      "indexingStatus": "index",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
+      "indexingHoldReason": ""
     },
     {
       "id": "editorial-2-4",
       "title": "Restaurant Management Software for Small Businesses: Complete Guide",
-      "disposition": "proposed_merge",
-      "target": "/blog/how-to-choose-restaurant-management-software-pakistan",
-      "reason": "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide."
+      "requestedTitle": "Restaurant Management Software for Small Businesses: Complete Guide",
+      "words": 418,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/how-to-choose-restaurant-management-software-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-2-5",
       "title": "12 Essential Features Every Restaurant Management Software Should Have",
-      "disposition": "proposed_merge",
-      "target": "/blog/how-to-choose-restaurant-management-software-pakistan",
-      "reason": "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide."
+      "requestedTitle": "12 Essential Features Every Restaurant Management Software Should Have",
+      "words": 444,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/how-to-choose-restaurant-management-software-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-2-6",
       "title": "How to Choose Restaurant Management Software for Your Business",
-      "disposition": "proposed_merge",
-      "target": "/blog/how-to-choose-restaurant-management-software-pakistan",
-      "reason": "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide."
+      "requestedTitle": "How to Choose Restaurant Management Software for Your Business",
+      "words": 404,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/how-to-choose-restaurant-management-software-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-2-7",
       "title": "Restaurant Management Software vs POS: What's the Difference?",
-      "disposition": "proposed_merge",
-      "target": "/blog/how-to-choose-restaurant-pos-software-pakistan",
-      "reason": "Overlapping POS selection intent; add supported distinctions to the established POS buying checklist."
+      "requestedTitle": "Restaurant Management Software vs POS: What's the Difference?",
+      "words": 414,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/how-to-choose-restaurant-pos-software-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-2-8",
       "title": "How Restaurant Management Software Helps Manage Multiple Branches",
-      "disposition": "proposed_merge",
-      "target": "/blog/manage-multiple-restaurant-branches",
-      "reason": "Same branch-management decision; consolidate role, menu and reporting requirements in the existing branch guide."
+      "requestedTitle": "How Restaurant Management Software Helps Manage Multiple Branches",
+      "words": 400,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/manage-multiple-restaurant-branches",
+      "indexingHoldReason": "Differentiate from /blog/manage-multiple-restaurant-branches and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-2-9",
       "title": "Common Restaurant Management Problems and How Software Solves Them",
-      "disposition": "proposed_merge",
-      "target": "/blog/how-to-choose-restaurant-management-software-pakistan",
-      "reason": "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide."
+      "requestedTitle": "Common Restaurant Management Problems and How Software Solves Them",
+      "words": 435,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/how-to-choose-restaurant-management-software-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-2-10",
       "title": "Is Restaurant Management Software Worth It for Small Restaurants?",
-      "disposition": "proposed_merge",
-      "target": "/blog/how-to-choose-restaurant-management-software-pakistan",
-      "reason": "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide."
+      "requestedTitle": "Is Restaurant Management Software Worth It for Small Restaurants?",
+      "words": 396,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/how-to-choose-restaurant-management-software-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-3-1",
-      "title": "Best Restaurant Online Ordering Systems in Pakistan: 2026 Comparison",
-      "disposition": "research_hold",
-      "target": "/blog/compare-restaurant-ordering-systems",
-      "reason": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+      "title": "Comparing Restaurant Online Ordering Systems in Pakistan: A 2026 Checklist",
+      "requestedTitle": "Best Restaurant Online Ordering Systems in Pakistan: 2026 Comparison",
+      "words": 422,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+      "indexingHoldReason": "Differentiate from /blog/compare-restaurant-ordering-systems and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-3-2",
       "title": "How to Start Online Food Ordering for Your Restaurant in Pakistan",
-      "disposition": "proposed_merge",
-      "target": "/blog/start-online-ordering-small-restaurant-pakistan",
-      "reason": "Overlapping launch process; merge supported setup steps into the existing launch guide, with a separate technical draft only where explicitly differentiated."
+      "requestedTitle": "How to Start Online Food Ordering for Your Restaurant in Pakistan",
+      "words": 390,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/start-online-ordering-small-restaurant-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-3-3",
       "title": "Restaurant Online Ordering System in Pakistan: Features, Costs & Benefits",
-      "disposition": "proposed_merge",
-      "target": "/blog/restaurant-online-ordering-system-cost-pakistan",
-      "reason": "Same cost-evaluation question; merge the requested angle into the existing cost guide instead of another price page."
+      "requestedTitle": "Restaurant Online Ordering System in Pakistan: Features, Costs & Benefits",
+      "words": 405,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/restaurant-online-ordering-system-cost-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/restaurant-online-ordering-system-cost-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-3-4",
       "title": "How Pakistani Restaurants Can Accept Online Orders Without Foodpanda",
-      "disposition": "research_hold",
-      "target": "/blog/why-direct-ordering-beats-third-party-marketplaces",
-      "reason": "Same channel-choice intent; add verified cost or migration detail to the existing direct-versus-marketplace guide. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+      "requestedTitle": "How Pakistani Restaurants Can Accept Online Orders Without Foodpanda",
+      "words": 386,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/why-direct-ordering-beats-third-party-marketplaces",
+      "indexingHoldReason": "Differentiate from /blog/why-direct-ordering-beats-third-party-marketplaces and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-3-5",
-      "title": "Best Online Ordering Platforms for Restaurants in Lahore, Karachi & Islamabad",
-      "disposition": "research_hold",
-      "target": "/blog/compare-restaurant-ordering-systems",
-      "reason": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+      "title": "Evaluating Online Ordering in Lahore, Karachi and Islamabad",
+      "requestedTitle": "Best Online Ordering Platforms for Restaurants in Lahore, Karachi & Islamabad",
+      "words": 377,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+      "indexingHoldReason": "Differentiate from /blog/compare-restaurant-ordering-systems and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-3-6",
       "title": "How to Create an Online Ordering Website for a Restaurant in Pakistan",
-      "disposition": "proposed_merge",
-      "target": "/blog/start-online-ordering-small-restaurant-pakistan",
-      "reason": "Overlapping launch process; merge supported setup steps into the existing launch guide, with a separate technical draft only where explicitly differentiated."
+      "requestedTitle": "How to Create an Online Ordering Website for a Restaurant in Pakistan",
+      "words": 381,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/start-online-ordering-small-restaurant-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-3-7",
       "title": "Why Pakistani Restaurants Are Investing in Direct Online Ordering",
-      "disposition": "proposed_merge",
-      "target": "/blog/compare-restaurant-ordering-systems",
-      "reason": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+      "requestedTitle": "Why Pakistani Restaurants Are Investing in Direct Online Ordering",
+      "words": 403,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+      "indexingHoldReason": "Differentiate from /blog/compare-restaurant-ordering-systems and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-3-8",
       "title": "Online Ordering System for Small Restaurants in Pakistan: Complete Guide",
-      "disposition": "proposed_merge",
-      "target": "/blog/compare-restaurant-ordering-systems",
-      "reason": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+      "requestedTitle": "Online Ordering System for Small Restaurants in Pakistan: Complete Guide",
+      "words": 390,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+      "indexingHoldReason": "Differentiate from /blog/compare-restaurant-ordering-systems and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-3-9",
       "title": "How to Choose a Restaurant Online Ordering System in Pakistan",
-      "disposition": "proposed_merge",
-      "target": "/blog/compare-restaurant-ordering-systems",
-      "reason": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+      "requestedTitle": "How to Choose a Restaurant Online Ordering System in Pakistan",
+      "words": 397,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+      "indexingHoldReason": "Differentiate from /blog/compare-restaurant-ordering-systems and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-3-10",
       "title": "Restaurant Online Ordering System Pakistan: Common Mistakes to Avoid",
-      "disposition": "complete_draft",
-      "target": "/blog/start-online-ordering-small-restaurant-pakistan",
-      "reason": "Complete focused draft; not approved. Preserve the original requested title while reviewing whether it promises an unsupported outcome."
+      "requestedTitle": "Restaurant Online Ordering System Pakistan: Common Mistakes to Avoid",
+      "words": 386,
+      "publicationStatus": "published",
+      "indexingStatus": "index",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
+      "indexingHoldReason": ""
     },
     {
       "id": "editorial-4-1",
-      "title": "10 Best Restaurant POS Software Solutions in Pakistan (2026)",
-      "disposition": "research_hold",
-      "target": "/blog/how-to-choose-restaurant-pos-software-pakistan",
-      "reason": "Overlapping POS selection intent; add supported distinctions to the established POS buying checklist. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+      "title": "10 Restaurant POS Options: Questions for Buyers in Pakistan",
+      "requestedTitle": "10 Best Restaurant POS Software Solutions in Pakistan (2026)",
+      "words": 421,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/how-to-choose-restaurant-pos-software-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-4-2",
       "title": "Restaurant POS Software in Pakistan: Complete Buyer's Guide",
-      "disposition": "proposed_merge",
-      "target": "/blog/how-to-choose-restaurant-pos-software-pakistan",
-      "reason": "Overlapping POS selection intent; add supported distinctions to the established POS buying checklist."
+      "requestedTitle": "Restaurant POS Software in Pakistan: Complete Buyer's Guide",
+      "words": 389,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/how-to-choose-restaurant-pos-software-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-4-3",
       "title": "How Much Does Restaurant POS Software Cost in Pakistan?",
-      "disposition": "proposed_merge",
-      "target": "/blog/restaurant-pos-software-cost-pakistan",
-      "reason": "Same cost-evaluation question; merge the requested angle into the existing cost guide instead of another price page."
+      "requestedTitle": "How Much Does Restaurant POS Software Cost in Pakistan?",
+      "words": 383,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/restaurant-pos-software-cost-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/restaurant-pos-software-cost-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-4-4",
-      "title": "Best POS Software for Small Restaurants and Cafés in Pakistan",
-      "disposition": "research_hold",
-      "target": "/blog/how-to-choose-restaurant-pos-software-pakistan",
-      "reason": "Overlapping POS selection intent; add supported distinctions to the established POS buying checklist. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+      "title": "Choosing POS Software for Small Restaurants and Cafés in Pakistan",
+      "requestedTitle": "Best POS Software for Small Restaurants and Cafés in Pakistan",
+      "words": 398,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/how-to-choose-restaurant-pos-software-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-4-5",
       "title": "Cloud-Based vs Offline Restaurant POS Software: Which Is Better?",
-      "disposition": "complete_draft",
-      "target": "/blog/restaurant-pos-vs-manual-billing",
-      "reason": "Complete focused draft; not approved. Preserve the original requested title while reviewing whether it promises an unsupported outcome."
+      "requestedTitle": "Cloud-Based vs Offline Restaurant POS Software: Which Is Better?",
+      "words": 360,
+      "publicationStatus": "published",
+      "indexingStatus": "index",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/restaurant-pos-vs-manual-billing",
+      "indexingHoldReason": ""
     },
     {
       "id": "editorial-4-6",
       "title": "Restaurant POS Software Features Every Pakistani Restaurant Needs",
-      "disposition": "proposed_merge",
-      "target": "/blog/how-to-choose-restaurant-pos-software-pakistan",
-      "reason": "Overlapping POS selection intent; add supported distinctions to the established POS buying checklist."
+      "requestedTitle": "Restaurant POS Software Features Every Pakistani Restaurant Needs",
+      "words": 405,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/how-to-choose-restaurant-pos-software-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-4-7",
-      "title": "How to Choose the Best POS System for Your Restaurant in Pakistan",
-      "disposition": "research_hold",
-      "target": "/blog/how-to-choose-restaurant-pos-software-pakistan",
-      "reason": "Overlapping POS selection intent; add supported distinctions to the established POS buying checklist. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+      "title": "How to Select a POS System for Your Restaurant in Pakistan",
+      "requestedTitle": "How to Choose the Best POS System for Your Restaurant in Pakistan",
+      "words": 402,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/how-to-choose-restaurant-pos-software-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-4-8",
       "title": "Restaurant POS vs Traditional Billing Software: Key Differences",
-      "disposition": "proposed_merge",
-      "target": "/blog/restaurant-pos-vs-manual-billing",
-      "reason": "Same manual-versus-software evaluation; consolidate rather than publish a second comparison."
+      "requestedTitle": "Restaurant POS vs Traditional Billing Software: Key Differences",
+      "words": 402,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/restaurant-pos-vs-manual-billing",
+      "indexingHoldReason": "Differentiate from /blog/restaurant-pos-vs-manual-billing and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-4-9",
       "title": "How Restaurant POS Software Simplifies Billing and Order Management",
-      "disposition": "proposed_merge",
-      "target": "/blog/how-to-choose-restaurant-pos-software-pakistan",
-      "reason": "Overlapping POS selection intent; add supported distinctions to the established POS buying checklist."
+      "requestedTitle": "How Restaurant POS Software Simplifies Billing and Order Management",
+      "words": 393,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/how-to-choose-restaurant-pos-software-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-4-10",
-      "title": "Best Restaurant POS Software for Multi-Branch Restaurants in Pakistan",
-      "disposition": "research_hold",
-      "target": "/blog/manage-multiple-restaurant-branches",
-      "reason": "Same branch-management decision; consolidate role, menu and reporting requirements in the existing branch guide. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+      "title": "Evaluating Restaurant POS Software for Multiple Branches in Pakistan",
+      "requestedTitle": "Best Restaurant POS Software for Multi-Branch Restaurants in Pakistan",
+      "words": 381,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/manage-multiple-restaurant-branches",
+      "indexingHoldReason": "Differentiate from /blog/manage-multiple-restaurant-branches and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-5-1",
-      "title": "Best Restaurant Ordering Software for Small and Growing Restaurants",
-      "disposition": "research_hold",
-      "target": "/blog/compare-restaurant-ordering-systems",
-      "reason": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+      "title": "Choosing Ordering Software for Small and Growing Restaurants",
+      "requestedTitle": "Best Restaurant Ordering Software for Small and Growing Restaurants",
+      "words": 392,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+      "indexingHoldReason": "Differentiate from /blog/compare-restaurant-ordering-systems and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-5-2",
       "title": "What Is Restaurant Ordering Software? Features and Benefits Explained",
-      "disposition": "proposed_merge",
-      "target": "/blog/compare-restaurant-ordering-systems",
-      "reason": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+      "requestedTitle": "What Is Restaurant Ordering Software? Features and Benefits Explained",
+      "words": 410,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+      "indexingHoldReason": "Differentiate from /blog/compare-restaurant-ordering-systems and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-5-3",
       "title": "How Restaurant Ordering Software Improves Order Accuracy",
-      "disposition": "complete_draft",
-      "target": "/blog/5-features-every-restaurant-app-must-have-in-2026",
-      "reason": "Complete focused draft; not approved. Preserve the original requested title while reviewing whether it promises an unsupported outcome."
+      "requestedTitle": "How Restaurant Ordering Software Improves Order Accuracy",
+      "words": 376,
+      "publicationStatus": "published",
+      "indexingStatus": "index",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/5-features-every-restaurant-app-must-have-in-2026",
+      "indexingHoldReason": ""
     },
     {
       "id": "editorial-5-4",
       "title": "10 Features to Look for in Restaurant Ordering Software",
-      "disposition": "proposed_merge",
-      "target": "/blog/compare-restaurant-ordering-systems",
-      "reason": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+      "requestedTitle": "10 Features to Look for in Restaurant Ordering Software",
+      "words": 404,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+      "indexingHoldReason": "Differentiate from /blog/compare-restaurant-ordering-systems and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-5-5",
       "title": "Restaurant Ordering Software vs Manual Order Taking: Full Comparison",
-      "disposition": "research_hold",
-      "target": "/blog/restaurant-pos-vs-manual-billing",
-      "reason": "Same manual-versus-software evaluation; consolidate rather than publish a second comparison. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+      "requestedTitle": "Restaurant Ordering Software vs Manual Order Taking: Full Comparison",
+      "words": 396,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/restaurant-pos-vs-manual-billing",
+      "indexingHoldReason": "Differentiate from /blog/restaurant-pos-vs-manual-billing and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-5-6",
       "title": "How to Automate Restaurant Orders With Online Ordering Software",
-      "disposition": "proposed_merge",
-      "target": "/blog/compare-restaurant-ordering-systems",
-      "reason": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+      "requestedTitle": "How to Automate Restaurant Orders With Online Ordering Software",
+      "words": 399,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+      "indexingHoldReason": "Differentiate from /blog/compare-restaurant-ordering-systems and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-5-7",
       "title": "Restaurant Ordering Software for Takeaway and Delivery Businesses",
-      "disposition": "proposed_merge",
-      "target": "/blog/compare-restaurant-ordering-systems",
-      "reason": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+      "requestedTitle": "Restaurant Ordering Software for Takeaway and Delivery Businesses",
+      "words": 400,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+      "indexingHoldReason": "Differentiate from /blog/compare-restaurant-ordering-systems and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-5-8",
       "title": "How Restaurant Ordering Software Connects Online Orders With Your Kitchen",
-      "disposition": "proposed_merge",
-      "target": "/blog/compare-restaurant-ordering-systems",
-      "reason": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+      "requestedTitle": "How Restaurant Ordering Software Connects Online Orders With Your Kitchen",
+      "words": 412,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+      "indexingHoldReason": "Differentiate from /blog/compare-restaurant-ordering-systems and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-5-9",
       "title": "Restaurant Ordering Software Pricing: What Should You Expect?",
-      "disposition": "proposed_merge",
-      "target": "/blog/restaurant-online-ordering-system-cost-pakistan",
-      "reason": "Same cost-evaluation question; merge the requested angle into the existing cost guide instead of another price page."
+      "requestedTitle": "Restaurant Ordering Software Pricing: What Should You Expect?",
+      "words": 388,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/restaurant-online-ordering-system-cost-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/restaurant-online-ordering-system-cost-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-5-10",
       "title": "How to Choose Restaurant Ordering Software for Multiple Locations",
-      "disposition": "proposed_merge",
-      "target": "/blog/manage-multiple-restaurant-branches",
-      "reason": "Same branch-management decision; consolidate role, menu and reporting requirements in the existing branch guide."
+      "requestedTitle": "How to Choose Restaurant Ordering Software for Multiple Locations",
+      "words": 393,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/manage-multiple-restaurant-branches",
+      "indexingHoldReason": "Differentiate from /blog/manage-multiple-restaurant-branches and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-6-1",
-      "title": "Best Commission-Free Online Ordering Systems for Restaurants in Pakistan",
-      "disposition": "research_hold",
-      "target": "/blog/why-direct-ordering-beats-third-party-marketplaces",
-      "reason": "Same channel-choice intent; add verified cost or migration detail to the existing direct-versus-marketplace guide. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+      "title": "Evaluating Commission-Free Ordering Offers for Restaurants in Pakistan",
+      "requestedTitle": "Best Commission-Free Online Ordering Systems for Restaurants in Pakistan",
+      "words": 392,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/why-direct-ordering-beats-third-party-marketplaces",
+      "indexingHoldReason": "Differentiate from /blog/why-direct-ordering-beats-third-party-marketplaces and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-6-2",
       "title": "What Is a Commission-Free Online Ordering System?",
-      "disposition": "proposed_merge",
-      "target": "/blog/why-direct-ordering-beats-third-party-marketplaces",
-      "reason": "Same channel-choice intent; add verified cost or migration detail to the existing direct-versus-marketplace guide."
+      "requestedTitle": "What Is a Commission-Free Online Ordering System?",
+      "words": 397,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/why-direct-ordering-beats-third-party-marketplaces",
+      "indexingHoldReason": "Differentiate from /blog/why-direct-ordering-beats-third-party-marketplaces and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-6-3",
       "title": "How Restaurants Can Accept Online Orders Without Paying Marketplace Commissions",
-      "disposition": "proposed_merge",
-      "target": "/blog/why-direct-ordering-beats-third-party-marketplaces",
-      "reason": "Same channel-choice intent; add verified cost or migration detail to the existing direct-versus-marketplace guide."
+      "requestedTitle": "How Restaurants Can Accept Online Orders Without Paying Marketplace Commissions",
+      "words": 399,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/why-direct-ordering-beats-third-party-marketplaces",
+      "indexingHoldReason": "Differentiate from /blog/why-direct-ordering-beats-third-party-marketplaces and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-6-4",
       "title": "Commission-Free Online Ordering vs Foodpanda: Cost Comparison",
-      "disposition": "research_hold",
-      "target": "/blog/restaurant-online-ordering-system-cost-pakistan",
-      "reason": "Same cost-evaluation question; merge the requested angle into the existing cost guide instead of another price page. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+      "requestedTitle": "Commission-Free Online Ordering vs Foodpanda: Cost Comparison",
+      "words": 396,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/restaurant-online-ordering-system-cost-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/restaurant-online-ordering-system-cost-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-6-5",
       "title": "How Much Can Restaurants Save With Commission-Free Online Ordering?",
-      "disposition": "proposed_merge",
-      "target": "/blog/restaurant-online-ordering-system-cost-pakistan",
-      "reason": "Same cost-evaluation question; merge the requested angle into the existing cost guide instead of another price page."
+      "requestedTitle": "How Much Can Restaurants Save With Commission-Free Online Ordering?",
+      "words": 389,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/restaurant-online-ordering-system-cost-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/restaurant-online-ordering-system-cost-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-6-6",
       "title": "How to Set Up a Commission-Free Online Ordering Website",
-      "disposition": "proposed_merge",
-      "target": "/blog/why-direct-ordering-beats-third-party-marketplaces",
-      "reason": "Same channel-choice intent; add verified cost or migration detail to the existing direct-versus-marketplace guide."
+      "requestedTitle": "How to Set Up a Commission-Free Online Ordering Website",
+      "words": 388,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/why-direct-ordering-beats-third-party-marketplaces",
+      "indexingHoldReason": "Differentiate from /blog/why-direct-ordering-beats-third-party-marketplaces and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-6-7",
       "title": "7 Benefits of Commission-Free Online Ordering for Restaurants",
-      "disposition": "proposed_merge",
-      "target": "/blog/why-direct-ordering-beats-third-party-marketplaces",
-      "reason": "Same channel-choice intent; add verified cost or migration detail to the existing direct-versus-marketplace guide."
+      "requestedTitle": "7 Benefits of Commission-Free Online Ordering for Restaurants",
+      "words": 408,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/why-direct-ordering-beats-third-party-marketplaces",
+      "indexingHoldReason": "Differentiate from /blog/why-direct-ordering-beats-third-party-marketplaces and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-6-8",
       "title": "Is Commission-Free Online Ordering Really Free? Hidden Costs Explained",
-      "disposition": "complete_draft",
-      "target": "/blog/start-online-ordering-small-restaurant-pakistan",
-      "reason": "Complete focused draft; not approved. Preserve the original requested title while reviewing whether it promises an unsupported outcome."
+      "requestedTitle": "Is Commission-Free Online Ordering Really Free? Hidden Costs Explained",
+      "words": 361,
+      "publicationStatus": "published",
+      "indexingStatus": "index",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
+      "indexingHoldReason": ""
     },
     {
       "id": "editorial-6-9",
       "title": "How to Move Customers From Delivery Apps to Your Own Ordering Website",
-      "disposition": "proposed_merge",
-      "target": "/blog/why-direct-ordering-beats-third-party-marketplaces",
-      "reason": "Same channel-choice intent; add verified cost or migration detail to the existing direct-versus-marketplace guide."
+      "requestedTitle": "How to Move Customers From Delivery Apps to Your Own Ordering Website",
+      "words": 394,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/why-direct-ordering-beats-third-party-marketplaces",
+      "indexingHoldReason": "Differentiate from /blog/why-direct-ordering-beats-third-party-marketplaces and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-6-10",
       "title": "Commission-Free Online Ordering for Small Restaurants: Complete Guide",
-      "disposition": "proposed_merge",
-      "target": "/blog/why-direct-ordering-beats-third-party-marketplaces",
-      "reason": "Same channel-choice intent; add verified cost or migration detail to the existing direct-versus-marketplace guide."
+      "requestedTitle": "Commission-Free Online Ordering for Small Restaurants: Complete Guide",
+      "words": 402,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/why-direct-ordering-beats-third-party-marketplaces",
+      "indexingHoldReason": "Differentiate from /blog/why-direct-ordering-beats-third-party-marketplaces and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-7-1",
-      "title": "Best Restaurant Management Systems in Pakistan (2026)",
-      "disposition": "research_hold",
-      "target": "/blog/how-to-choose-restaurant-management-software-pakistan",
-      "reason": "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+      "title": "Comparing Restaurant Management Systems in Pakistan in 2026",
+      "requestedTitle": "Best Restaurant Management Systems in Pakistan (2026)",
+      "words": 372,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/how-to-choose-restaurant-management-software-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-7-2",
       "title": "Restaurant Management System in Pakistan: Complete Guide for Owners",
-      "disposition": "proposed_merge",
-      "target": "/blog/how-to-choose-restaurant-management-software-pakistan",
-      "reason": "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide."
+      "requestedTitle": "Restaurant Management System in Pakistan: Complete Guide for Owners",
+      "words": 391,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/how-to-choose-restaurant-management-software-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-7-3",
       "title": "How to Choose a Restaurant Management System in Pakistan",
-      "disposition": "proposed_merge",
-      "target": "/blog/how-to-choose-restaurant-management-software-pakistan",
-      "reason": "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide."
+      "requestedTitle": "How to Choose a Restaurant Management System in Pakistan",
+      "words": 407,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/how-to-choose-restaurant-management-software-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-7-4",
       "title": "Restaurant Management System Cost in Pakistan: Pricing Explained",
-      "disposition": "proposed_merge",
-      "target": "/blog/restaurant-software-pricing-pakistan-guide",
-      "reason": "Same cost-evaluation question; merge the requested angle into the existing cost guide instead of another price page."
+      "requestedTitle": "Restaurant Management System Cost in Pakistan: Pricing Explained",
+      "words": 378,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/restaurant-software-pricing-pakistan-guide",
+      "indexingHoldReason": "Differentiate from /blog/restaurant-software-pricing-pakistan-guide and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-7-5",
       "title": "10 Features of a Modern Restaurant Management System",
-      "disposition": "proposed_merge",
-      "target": "/blog/how-to-choose-restaurant-management-software-pakistan",
-      "reason": "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide."
+      "requestedTitle": "10 Features of a Modern Restaurant Management System",
+      "words": 403,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/how-to-choose-restaurant-management-software-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-7-6",
-      "title": "Best Restaurant Management Systems for Cafés and Fast Food Restaurants in Pakistan",
-      "disposition": "research_hold",
-      "target": "/blog/how-to-choose-restaurant-management-software-pakistan",
-      "reason": "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+      "title": "Choosing Management Systems for Cafés and Fast Food Restaurants in Pakistan",
+      "requestedTitle": "Best Restaurant Management Systems for Cafés and Fast Food Restaurants in Pakistan",
+      "words": 371,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/how-to-choose-restaurant-management-software-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-7-7",
       "title": "How a Restaurant Management System Helps Reduce Daily Operational Problems",
-      "disposition": "proposed_merge",
-      "target": "/blog/how-to-choose-restaurant-management-software-pakistan",
-      "reason": "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide."
+      "requestedTitle": "How a Restaurant Management System Helps Reduce Daily Operational Problems",
+      "words": 392,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/how-to-choose-restaurant-management-software-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-7-8",
       "title": "Cloud-Based Restaurant Management Systems in Pakistan: Pros and Cons",
-      "disposition": "proposed_merge",
-      "target": "/blog/how-to-choose-restaurant-management-software-pakistan",
-      "reason": "Overlapping restaurant-management evaluation; consolidate definitions, value and selection questions in the established guide."
+      "requestedTitle": "Cloud-Based Restaurant Management Systems in Pakistan: Pros and Cons",
+      "words": 381,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/how-to-choose-restaurant-management-software-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-7-9",
       "title": "Restaurant Management System vs POS Software: Which Do You Need?",
-      "disposition": "proposed_merge",
-      "target": "/blog/how-to-choose-restaurant-pos-software-pakistan",
-      "reason": "Overlapping POS selection intent; add supported distinctions to the established POS buying checklist."
+      "requestedTitle": "Restaurant Management System vs POS Software: Which Do You Need?",
+      "words": 389,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/how-to-choose-restaurant-pos-software-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-7-10",
       "title": "How to Implement a Restaurant Management System Without Disrupting Operations",
-      "disposition": "complete_draft",
-      "target": "/blog/how-to-choose-restaurant-management-software-pakistan",
-      "reason": "Complete focused draft; not approved. Preserve the original requested title while reviewing whether it promises an unsupported outcome."
+      "requestedTitle": "How to Implement a Restaurant Management System Without Disrupting Operations",
+      "words": 361,
+      "publicationStatus": "published",
+      "indexingStatus": "index",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/how-to-choose-restaurant-management-software-pakistan",
+      "indexingHoldReason": ""
     },
     {
       "id": "editorial-8-1",
-      "title": "Best Online Food Ordering Systems for Restaurants in 2026",
-      "disposition": "research_hold",
-      "target": "/blog/compare-restaurant-ordering-systems",
-      "reason": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+      "title": "Online Food Ordering Systems: Product Approaches to Compare in 2026",
+      "requestedTitle": "Best Online Food Ordering Systems for Restaurants in 2026",
+      "words": 369,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+      "indexingHoldReason": "Differentiate from /blog/compare-restaurant-ordering-systems and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-8-2",
       "title": "How Does an Online Food Ordering System for Restaurants Work?",
-      "disposition": "proposed_merge",
-      "target": "/blog/compare-restaurant-ordering-systems",
-      "reason": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+      "requestedTitle": "How Does an Online Food Ordering System for Restaurants Work?",
+      "words": 388,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+      "indexingHoldReason": "Differentiate from /blog/compare-restaurant-ordering-systems and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-8-3",
       "title": "How to Build an Online Food Ordering System for Your Restaurant",
-      "disposition": "proposed_merge",
-      "target": "/blog/start-online-ordering-small-restaurant-pakistan",
-      "reason": "Overlapping launch process; merge supported setup steps into the existing launch guide, with a separate technical draft only where explicitly differentiated."
+      "requestedTitle": "How to Build an Online Food Ordering System for Your Restaurant",
+      "words": 386,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/start-online-ordering-small-restaurant-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-8-4",
       "title": "Online Food Ordering System for Restaurants: Features and Pricing",
-      "disposition": "proposed_merge",
-      "target": "/blog/restaurant-online-ordering-system-cost-pakistan",
-      "reason": "Same cost-evaluation question; merge the requested angle into the existing cost guide instead of another price page."
+      "requestedTitle": "Online Food Ordering System for Restaurants: Features and Pricing",
+      "words": 371,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/restaurant-online-ordering-system-cost-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/restaurant-online-ordering-system-cost-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-8-5",
       "title": "How Online Food Ordering Systems Help Restaurants Grow Delivery Sales",
-      "disposition": "proposed_merge",
-      "target": "/blog/compare-restaurant-ordering-systems",
-      "reason": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+      "requestedTitle": "How Online Food Ordering Systems Help Restaurants Grow Delivery Sales",
+      "words": 392,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+      "indexingHoldReason": "Differentiate from /blog/compare-restaurant-ordering-systems and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-8-6",
       "title": "Online Food Ordering System vs Third-Party Delivery Apps",
-      "disposition": "proposed_merge",
-      "target": "/blog/why-direct-ordering-beats-third-party-marketplaces",
-      "reason": "Same channel-choice intent; add verified cost or migration detail to the existing direct-versus-marketplace guide."
+      "requestedTitle": "Online Food Ordering System vs Third-Party Delivery Apps",
+      "words": 391,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/why-direct-ordering-beats-third-party-marketplaces",
+      "indexingHoldReason": "Differentiate from /blog/why-direct-ordering-beats-third-party-marketplaces and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-8-7",
       "title": "How to Integrate an Online Food Ordering System With Restaurant POS",
-      "disposition": "proposed_merge",
-      "target": "/blog/how-to-choose-restaurant-pos-software-pakistan",
-      "reason": "Overlapping POS selection intent; add supported distinctions to the established POS buying checklist."
+      "requestedTitle": "How to Integrate an Online Food Ordering System With Restaurant POS",
+      "words": 382,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/how-to-choose-restaurant-pos-software-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-8-8",
       "title": "Online Food Ordering Systems for Cloud Kitchens: Complete Guide",
-      "disposition": "proposed_merge",
-      "target": "/blog/compare-restaurant-ordering-systems",
-      "reason": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+      "requestedTitle": "Online Food Ordering Systems for Cloud Kitchens: Complete Guide",
+      "words": 380,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+      "indexingHoldReason": "Differentiate from /blog/compare-restaurant-ordering-systems and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-8-9",
       "title": "How to Improve Customer Experience With an Online Food Ordering System",
-      "disposition": "complete_draft",
-      "target": "/blog/start-online-ordering-small-restaurant-pakistan",
-      "reason": "Complete focused draft; not approved. Preserve the original requested title while reviewing whether it promises an unsupported outcome."
+      "requestedTitle": "How to Improve Customer Experience With an Online Food Ordering System",
+      "words": 356,
+      "publicationStatus": "published",
+      "indexingStatus": "index",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
+      "indexingHoldReason": ""
     },
     {
       "id": "editorial-8-10",
       "title": "Common Online Food Ordering System Problems and How to Avoid Them",
-      "disposition": "proposed_merge",
-      "target": "/blog/compare-restaurant-ordering-systems",
-      "reason": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+      "requestedTitle": "Common Online Food Ordering System Problems and How to Avoid Them",
+      "words": 399,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+      "indexingHoldReason": "Differentiate from /blog/compare-restaurant-ordering-systems and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-9-1",
       "title": "How to Create a Restaurant Website With Online Ordering in Pakistan",
-      "disposition": "proposed_merge",
-      "target": "/blog/start-online-ordering-small-restaurant-pakistan",
-      "reason": "Overlapping launch process; merge supported setup steps into the existing launch guide, with a separate technical draft only where explicitly differentiated."
+      "requestedTitle": "How to Create a Restaurant Website With Online Ordering in Pakistan",
+      "words": 403,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/start-online-ordering-small-restaurant-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-9-2",
-      "title": "Best Restaurant Website Builders With Online Ordering in 2026",
-      "disposition": "research_hold",
-      "target": "/blog/start-online-ordering-small-restaurant-pakistan",
-      "reason": "Overlapping launch process; merge supported setup steps into the existing launch guide, with a separate technical draft only where explicitly differentiated. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+      "title": "Restaurant Website Builders With Ordering: What to Compare in 2026",
+      "requestedTitle": "Best Restaurant Website Builders With Online Ordering in 2026",
+      "words": 391,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/start-online-ordering-small-restaurant-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-9-3",
       "title": "Restaurant Website With Online Ordering: Complete Setup Guide",
-      "disposition": "proposed_merge",
-      "target": "/blog/start-online-ordering-small-restaurant-pakistan",
-      "reason": "Overlapping launch process; merge supported setup steps into the existing launch guide, with a separate technical draft only where explicitly differentiated."
+      "requestedTitle": "Restaurant Website With Online Ordering: Complete Setup Guide",
+      "words": 386,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/start-online-ordering-small-restaurant-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-9-4",
       "title": "How Much Does a Restaurant Website With Online Ordering Cost?",
-      "disposition": "proposed_merge",
-      "target": "/blog/restaurant-online-ordering-system-cost-pakistan",
-      "reason": "Same cost-evaluation question; merge the requested angle into the existing cost guide instead of another price page."
+      "requestedTitle": "How Much Does a Restaurant Website With Online Ordering Cost?",
+      "words": 388,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/restaurant-online-ordering-system-cost-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/restaurant-online-ordering-system-cost-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-9-5",
       "title": "10 Must-Have Features of a Restaurant Website With Online Ordering",
-      "disposition": "proposed_merge",
-      "target": "/blog/compare-restaurant-ordering-systems",
-      "reason": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+      "requestedTitle": "10 Must-Have Features of a Restaurant Website With Online Ordering",
+      "words": 391,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+      "indexingHoldReason": "Differentiate from /blog/compare-restaurant-ordering-systems and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-9-6",
       "title": "How to Turn Your Restaurant Website Into an Online Sales Channel",
-      "disposition": "proposed_merge",
-      "target": "/blog/compare-restaurant-ordering-systems",
-      "reason": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+      "requestedTitle": "How to Turn Your Restaurant Website Into an Online Sales Channel",
+      "words": 390,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+      "indexingHoldReason": "Differentiate from /blog/compare-restaurant-ordering-systems and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-9-7",
       "title": "Restaurant Website vs Food Delivery Apps: Which Generates More Profit?",
-      "disposition": "proposed_merge",
-      "target": "/blog/why-direct-ordering-beats-third-party-marketplaces",
-      "reason": "Same channel-choice intent; add verified cost or migration detail to the existing direct-versus-marketplace guide."
+      "requestedTitle": "Restaurant Website vs Food Delivery Apps: Which Generates More Profit?",
+      "words": 387,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/why-direct-ordering-beats-third-party-marketplaces",
+      "indexingHoldReason": "Differentiate from /blog/why-direct-ordering-beats-third-party-marketplaces and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-9-8",
       "title": "How to Add Online Ordering to an Existing Restaurant Website",
-      "disposition": "complete_draft",
-      "target": "/blog/start-online-ordering-small-restaurant-pakistan",
-      "reason": "Complete focused draft; not approved. Preserve the original requested title while reviewing whether it promises an unsupported outcome."
+      "requestedTitle": "How to Add Online Ordering to an Existing Restaurant Website",
+      "words": 354,
+      "publicationStatus": "published",
+      "indexingStatus": "index",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/start-online-ordering-small-restaurant-pakistan",
+      "indexingHoldReason": ""
     },
     {
       "id": "editorial-9-9",
       "title": "Restaurant Website SEO: How to Get More Direct Online Orders",
-      "disposition": "proposed_merge",
-      "target": "/blog/compare-restaurant-ordering-systems",
-      "reason": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+      "requestedTitle": "Restaurant Website SEO: How to Get More Direct Online Orders",
+      "words": 394,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+      "indexingHoldReason": "Differentiate from /blog/compare-restaurant-ordering-systems and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-9-10",
       "title": "Common Restaurant Website Mistakes That Reduce Online Orders",
-      "disposition": "proposed_merge",
-      "target": "/blog/compare-restaurant-ordering-systems",
-      "reason": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+      "requestedTitle": "Common Restaurant Website Mistakes That Reduce Online Orders",
+      "words": 402,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+      "indexingHoldReason": "Differentiate from /blog/compare-restaurant-ordering-systems and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-10-1",
       "title": "What Is a Restaurant Order Management System? Complete Guide",
-      "disposition": "proposed_merge",
-      "target": "/blog/compare-restaurant-ordering-systems",
-      "reason": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+      "requestedTitle": "What Is a Restaurant Order Management System? Complete Guide",
+      "words": 383,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+      "indexingHoldReason": "Differentiate from /blog/compare-restaurant-ordering-systems and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-10-2",
-      "title": "Best Restaurant Order Management Systems for 2026",
-      "disposition": "research_hold",
-      "target": "/blog/compare-restaurant-ordering-systems",
-      "reason": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar. Supplier rankings and current terms additionally require primary-source research; do not retain an unsupported top-ten promise."
+      "title": "Restaurant Order Management Systems: A 2026 Evaluation Guide",
+      "requestedTitle": "Best Restaurant Order Management Systems for 2026",
+      "words": 364,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+      "indexingHoldReason": "Differentiate from /blog/compare-restaurant-ordering-systems and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-10-3",
       "title": "How Restaurant Order Management Systems Reduce Order Errors",
-      "disposition": "proposed_merge",
-      "target": "/blog/compare-restaurant-ordering-systems",
-      "reason": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+      "requestedTitle": "How Restaurant Order Management Systems Reduce Order Errors",
+      "words": 383,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+      "indexingHoldReason": "Differentiate from /blog/compare-restaurant-ordering-systems and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-10-4",
       "title": "Restaurant Order Management System vs POS: Key Differences",
-      "disposition": "proposed_merge",
-      "target": "/blog/how-to-choose-restaurant-pos-software-pakistan",
-      "reason": "Overlapping POS selection intent; add supported distinctions to the established POS buying checklist."
+      "requestedTitle": "Restaurant Order Management System vs POS: Key Differences",
+      "words": 393,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/how-to-choose-restaurant-pos-software-pakistan",
+      "indexingHoldReason": "Differentiate from /blog/how-to-choose-restaurant-pos-software-pakistan and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-10-5",
       "title": "10 Essential Features of a Restaurant Order Management System",
-      "disposition": "proposed_merge",
-      "target": "/blog/compare-restaurant-ordering-systems",
-      "reason": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+      "requestedTitle": "10 Essential Features of a Restaurant Order Management System",
+      "words": 400,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+      "indexingHoldReason": "Differentiate from /blog/compare-restaurant-ordering-systems and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-10-6",
       "title": "How to Manage Dine-In, Takeaway and Delivery Orders in One Dashboard",
-      "disposition": "complete_draft",
-      "target": "/blog/why-direct-ordering-beats-third-party-marketplaces",
-      "reason": "Complete focused draft; not approved. Preserve the original requested title while reviewing whether it promises an unsupported outcome."
+      "requestedTitle": "How to Manage Dine-In, Takeaway and Delivery Orders in One Dashboard",
+      "words": 346,
+      "publicationStatus": "published",
+      "indexingStatus": "index",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/why-direct-ordering-beats-third-party-marketplaces",
+      "indexingHoldReason": ""
     },
     {
       "id": "editorial-10-7",
       "title": "Restaurant Order Management System for Multi-Branch Restaurants",
-      "disposition": "proposed_merge",
-      "target": "/blog/manage-multiple-restaurant-branches",
-      "reason": "Same branch-management decision; consolidate role, menu and reporting requirements in the existing branch guide."
+      "requestedTitle": "Restaurant Order Management System for Multi-Branch Restaurants",
+      "words": 369,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/manage-multiple-restaurant-branches",
+      "indexingHoldReason": "Differentiate from /blog/manage-multiple-restaurant-branches and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-10-8",
       "title": "How to Automate Restaurant Order Processing From Website to Kitchen",
-      "disposition": "proposed_merge",
-      "target": "/blog/compare-restaurant-ordering-systems",
-      "reason": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+      "requestedTitle": "How to Automate Restaurant Order Processing From Website to Kitchen",
+      "words": 387,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+      "indexingHoldReason": "Differentiate from /blog/compare-restaurant-ordering-systems and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-10-9",
       "title": "How Much Does a Restaurant Order Management System Cost?",
-      "disposition": "proposed_merge",
-      "target": "/blog/restaurant-software-pricing-pakistan-guide",
-      "reason": "Same cost-evaluation question; merge the requested angle into the existing cost guide instead of another price page."
+      "requestedTitle": "How Much Does a Restaurant Order Management System Cost?",
+      "words": 386,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/restaurant-software-pricing-pakistan-guide",
+      "indexingHoldReason": "Differentiate from /blog/restaurant-software-pricing-pakistan-guide and recheck supplier claims before indexing."
     },
     {
       "id": "editorial-10-10",
       "title": "How to Choose the Right Restaurant Order Management System for Your Business",
-      "disposition": "proposed_merge",
-      "target": "/blog/compare-restaurant-ordering-systems",
-      "reason": "Overlapping ordering-system evaluation; consolidate definitions, capabilities and buying criteria instead of creating a near-duplicate pillar."
+      "requestedTitle": "How to Choose the Right Restaurant Order Management System for Your Business",
+      "words": 383,
+      "publicationStatus": "published",
+      "indexingStatus": "noindex",
+      "reviewedBy": "Codex — editorial review",
+      "overlapTarget": "/blog/compare-restaurant-ordering-systems",
+      "indexingHoldReason": "Differentiate from /blog/compare-restaurant-ordering-systems and recheck supplier claims before indexing."
     }
   ]
 }

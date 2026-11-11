@@ -65,9 +65,9 @@ try {
   const { businessTypes } = load("src/data/businessTypes.ts");
   const { blogPosts } = load("src/lib/blog-data.ts");
   const sitemap = load("src/app/sitemap.ts").default();
-  assert.equal(sitemap.length, staticSeoPages.length + solutions.length + businessTypes.length + blogPosts.length);
+  assert.equal(sitemap.length, staticSeoPages.length + solutions.length + businessTypes.length + blogPosts.filter(p => p.indexable !== false).length);
   const expectedPaths = [...staticSeoPages.map(p => p.path), ...solutions.map(p => `/services/${p.slug}`), ...businessTypes.map(p => `/solutions/${p.slug}`), ...blogPosts.map(p => `/blog/${p.slug}`)];
-  assert.deepEqual(sitemap.map(p => new URL(p.url).pathname).sort(), expectedPaths.sort());
+  assert.deepEqual(sitemap.map(p => new URL(p.url).pathname).sort(), expectedPaths.filter(path => !blogPosts.some(p => p.indexable === false && path === `/blog/${p.slug}`)).sort());
   assert.equal(new Set(sitemap.map(({ url }) => url)).size, sitemap.length);
   for (const item of sitemap) {
     assert.equal(new URL(item.url).origin, siteConfig.url);
@@ -129,12 +129,38 @@ try {
     const markup = renderToStaticMarkup(await articlePage.default({ params }));
     const metadata = await articlePage.generateMetadata({ params });
     const schema = [...markup.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)].map(match => JSON.parse(match[1])).find(item => item["@type"] === "BlogPosting");
+    assert.equal(metadata.robots.index, post.indexable !== false);
     assert.equal(schema.headline, post.title);
     assert.equal(schema.mainEntityOfPage, metadata.alternates.canonical);
     assert.equal(schema.image, post.image, "only a visible article image belongs in article schema");
     assert.ok([...markup.matchAll(/<time\b[^>]*datetime="([^"]+)"/gi)].some(match => match[1] === schema.dateModified), "schema date is visible in a time element");
     assert.ok(markup.includes(`<h1 `) && (markup.match(/<h1\b/g) || []).length === 1);
   }
+  const {blogTopics,getTopicArticles} = load("src/lib/blog-topics.ts");
+  const topicPage = load("src/app/(main)/blog/topics/[topic]/page.tsx");
+  assert.equal(blogTopics.length, 10);
+  const allTopicArticles = [];
+  for (const topic of blogTopics) {
+    const posts = getTopicArticles(topic.id);
+    assert.equal(posts.length, 10);
+    allTopicArticles.push(...posts.map(post => post.id));
+    const params = Promise.resolve({topic: topic.slug});
+    const html = renderToStaticMarkup(await topicPage.default({params}));
+    const metadata = await topicPage.generateMetadata({params});
+    assert.equal(metadata.robots.index, false);
+    assert.equal(metadata.alternates.canonical, `https://www.restrova.com/blog/topics/${topic.slug}`);
+    assert.equal((html.match(/<h1(?:\s|>)/g)||[]).length,1);
+    const schema = [...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)].map(m=>JSON.parse(m[1])).find(s=>s['@type']==='CollectionPage');
+    assert.equal(schema.mainEntity.numberOfItems,10);
+    assert.equal(schema.mainEntity.itemListElement.length,10);
+    for(const post of posts)assert.ok(html.includes(`href="/blog/${post.slug}"`));
+  }
+  assert.equal(new Set(allTopicArticles).size,100);
+  const cards = renderToStaticMarkup(createElement(load("src/components/BlogTopicCards.tsx").default));
+  assert.equal((cards.match(/href="\/blog\/topics\//g)||[]).length,10);
+  assert.equal((cards.match(/10 articles/g)||[]).length,10);
+  await assert.rejects(topicPage.default({params:Promise.resolve({topic:'not-a-real-topic'})}), /NEXT_HTTP_ERROR_FALLBACK;404/);
+  console.log("PASS: ten server-rendered topic cards, ten complete articles per topic, collection schema and indexing decisions");
   assert.deepEqual(Object.keys(solutionGuides).sort(), solutions.map((s) => s.slug).sort());
   for (const solution of solutions) {
     const guide = solutionGuides[solution.slug];

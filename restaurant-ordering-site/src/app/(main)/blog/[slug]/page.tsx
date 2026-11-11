@@ -6,16 +6,18 @@ import ArticleBody, { articleSections } from "@/components/ArticleBody";
 import JsonLd from "@/components/JsonLd";
 import { Breadcrumbs, DemoCta } from "@/components/MarketingPage";
 import { blogPosts, getBlogPostBySlug } from "@/lib/blog-data";
+import { blogTopics } from "@/lib/blog-topics";
 import { pageMetadata } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 export function generateStaticParams() { return blogPosts.map(({ slug }) => ({ slug })); }
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const post = getBlogPostBySlug((await params).slug); if (!post) notFound();
-  const metadata = pageMetadata(`/blog/${post.slug}`, post.seoTitle || post.title, post.excerpt);
+  const metadata = pageMetadata(`/blog/${post.slug}`, post.seoTitle || post.title, post.excerpt, post.indexable !== false);
   return { ...metadata, openGraph: { ...metadata.openGraph, type: "article" as const, publishedTime: post.date, modifiedTime: post.updated || post.date, authors: [post.author], ...(post.image ? { images: [{ url: post.image, width: 800, height: 600, alt: post.title }] } : {}) } };
 }
 export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
   const post = getBlogPostBySlug((await params).slug); if (!post) notFound();
+  const topic = blogTopics.find(item => item.id === post.cluster);
   const blocks = post.content.split(/\n\s*\n/);
   const firstHeading = blocks.findIndex((block) => block.startsWith("## "));
   const introductionLength = firstHeading < 0 ? blocks.length : firstHeading;
@@ -24,8 +26,8 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       datePublished: post.date, dateModified: post.updated || post.date, author: { "@type": "Organization", name: post.author, url: `${siteConfig.url}/about` },
       publisher: { "@id": `${siteConfig.url}/#organization` }, mainEntityOfPage: `${siteConfig.url}/blog/${post.slug}` }} />
     <article className="seo-content mx-auto max-w-4xl px-6 py-12 sm:py-20">
-      <Breadcrumbs items={[{ label: "Guides", href: "/blog" }, { label: post.title, href: `/blog/${post.slug}` }]} />
-      <p className="font-bold text-[#a73524]">{post.category}</p><h1 className="mt-4 text-4xl font-black leading-tight tracking-tight sm:text-5xl">{post.title}</h1>
+      <Breadcrumbs items={[{ label: "Guides", href: "/blog" }, ...(topic ? [{label: topic.title, href: `/blog/topics/${topic.slug}`}] : []), { label: post.title, href: `/blog/${post.slug}` }]} />
+      <p className="font-bold text-[#a73524]">{topic ? <Link href={`/blog/topics/${topic.slug}`}>{topic.title}</Link> : post.category}</p><h1 className="mt-4 text-4xl font-black leading-tight tracking-tight sm:text-5xl">{post.title}</h1>
       <p className="mt-5 text-sm">By {post.author} · Published <time dateTime={post.date}>{post.date}</time> · Updated <time dateTime={post.updated || post.date}>{post.updated || post.date}</time> · {post.readTime}</p>
       {post.image && <Image src={post.image} width={800} height={600} sizes="(max-width: 896px) 100vw, 848px" alt={post.title} className="my-10 aspect-[4/3] w-full rounded-3xl object-cover" />}
       <div className="mt-8"><ArticleBody content={blocks.slice(0, introductionLength).join("\n\n")} /></div>
@@ -35,7 +37,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       <section className="my-10"><h2>Compare the checklist with real implementations</h2><p className="mt-4">Explore <Link href="/customers">Restrova customer stories and public app references</Link>, then bring your own requirements to a demonstration. A customer implementation confirms its stated scope; it does not establish every feature for a new setup.</p></section>
       <ArticleShare url={`${siteConfig.url}/blog/${post.slug}`} title={post.title}/>
       <DemoCta />
-      <section className="mt-12"><h2>Keep reading</h2><ul className="mt-5 space-y-4">{blogPosts.filter((item) => item.slug !== post.slug).sort((a, b) => Number(b.relatedSolution === post.relatedSolution) - Number(a.relatedSolution === post.relatedSolution) || Number(b.category === post.category) - Number(a.category === post.category)).slice(0, 4).map((item) => <li key={item.slug}><Link href={`/blog/${item.slug}`}>{item.title}</Link></li>)}</ul><p className="mt-5"><Link href="/blog">Browse all restaurant guides</Link>.</p></section>
+      <section className="mt-12"><h2>Keep reading</h2><ul className="mt-5 space-y-4">{blogPosts.filter((item) => item.slug !== post.slug).sort((a, b) => Number(!!post.cluster && b.cluster === post.cluster) - Number(!!post.cluster && a.cluster === post.cluster) || Number(b.relatedSolution === post.relatedSolution) - Number(a.relatedSolution === post.relatedSolution) || Number(b.category === post.category) - Number(a.category === post.category)).slice(0, 4).map((item) => <li key={item.slug}><Link href={`/blog/${item.slug}`}>{item.title}</Link></li>)}</ul><p className="mt-5"><Link href="/blog">Browse all restaurant guides</Link>.</p></section>
     </article>
   </main>;
 }

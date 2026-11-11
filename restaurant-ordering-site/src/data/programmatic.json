@@ -4,875 +4,1830 @@
     "pageType": "city",
     "path": "/locations/lahore/online-ordering-system",
     "title": "Online ordering in Lahore",
-    "description": "Evaluate online ordering in lahore using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "Planning online ordering for a Lahore restaurant starts with the branch that will fulfil each request.",
+    "intro": "Planning online ordering for a Lahore restaurant starts with the branch that will fulfil each request. This draft uses a hypothetical two-outlet exercise; it does not establish Restrova customer locations, a Lahore office or a city-wide service guarantee.",
+    "sections": [
+      {
+        "heading": "Test the branch boundary",
+        "text": "Choose two actual operating addresses from your business and a customer address near the boundary between their delivery areas. Ask which branch receives the order, which menu and price apply, and what happens if the selected outlet cannot accept it. Keep pickup selection separate from delivery assignment. The acceptance record should contain the chosen branch and responsible team, not simply the word Lahore."
+      },
+      {
+        "heading": "Keep menu changes within their intended scope",
+        "text": "Use an item available at one outlet but sold out at the other. Ask the operator to update availability and inspect the customer journey again. Then test a central price change only where that capability is supported. Do not assume stock transfers, shared recipes or automatic branch reassignment from a multi-branch label."
+      },
+      {
+        "heading": "Review the first service before expanding",
+        "text": "Start with one reviewed ordering flow and a named shift owner. Record misrouted orders, unclear collection instructions and customer questions. Compare actual delivery costs and the published software formula using your processed-sales assumptions. Before this city page is published, add owner-confirmed local availability and a genuine operating example; a hypothetical scenario alone is not evidence of local implementation."
+      }
+    ],
     "relatedLinks": [
-      "/services",
+      "/locations",
+      "/services/restaurant-ordering-websites",
+      "/services/delivery-management",
       "/pricing",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/locations/lahore/online-ordering-system",
     "reviewNote": "Needs documented city-specific value and availability; no office or customer location inferred.",
     "mappedTo": null,
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "online ordering in lahore",
+    "secondaryKeywords": [
+      "Online ordering in Lahore workflow",
+      "Online ordering in Lahore evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "city-online-ordering-in-karachi",
     "pageType": "city",
     "path": "/locations/karachi/online-ordering-system",
     "title": "Online ordering in Karachi",
-    "description": "Evaluate online ordering in karachi using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "A Karachi restaurant evaluating online ordering should define the dispatch operation behind its delivery promise.",
+    "intro": "A Karachi restaurant evaluating online ordering should define the dispatch operation behind its delivery promise. This draft focuses on a hypothetical outlet with several riders and service zones. It makes no claim about Restrova offices, customers or measured delivery times in Karachi.",
+    "sections": [
+      {
+        "heading": "Model a busy dispatch queue",
+        "text": "Use three representative orders: one ready for pickup, one packed for a rider and one awaiting preparation. Ask staff to identify the next action without confusing readiness with delivery completion. If a rider becomes unavailable, establish who reassigns or explains the delay. Do not advertise automatic dispatch rules unless they are demonstrated."
+      },
+      {
+        "heading": "Use measured service boundaries",
+        "text": "Bring routes and address examples from the restaurant's actual operating area. Review packaging, delivery charges and failed-delivery handling against those journeys. A city-wide label should not become a promise to reach every address. Confirm the intended phone permissions and connectivity dependencies before relying on live rider visibility."
+      },
+      {
+        "heading": "Reconcile orders and rider collections",
+        "text": "Trace a cash delivery from the amount due to the recorded outcome, including one unsuccessful delivery. Decide who investigates differences at closing. Review software, rider, packaging and payment costs separately. Publication requires confirmed local service scope and an approved example from the business; this scenario is a planning aid, not proof of local performance or a reason to create many near-identical area pages."
+      }
+    ],
     "relatedLinks": [
-      "/services",
+      "/locations",
+      "/services/restaurant-ordering-websites",
+      "/services/delivery-management",
       "/pricing",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/locations/karachi/online-ordering-system",
     "reviewNote": "Needs documented city-specific value and availability; no office or customer location inferred.",
     "mappedTo": null,
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "online ordering in karachi",
+    "secondaryKeywords": [
+      "Online ordering in Karachi workflow",
+      "Online ordering in Karachi evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "city-online-ordering-in-islamabad",
     "pageType": "city",
     "path": "/locations/islamabad/online-ordering-system",
     "title": "Online ordering in Islamabad",
-    "description": "Evaluate online ordering in islamabad using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "For an Islamabad restaurant combining pickup and delivery, online ordering should make the fulfilment choice unmistakable.",
+    "intro": "For an Islamabad restaurant combining pickup and delivery, online ordering should make the fulfilment choice unmistakable. This draft proposes a collection-versus-delivery test and does not claim local installations, customer results or an Islamabad Restrova office.",
+    "sections": [
+      {
+        "heading": "Separate the two customer promises",
+        "text": "Place the same sample meal once for pickup and once for delivery. The pickup flow should identify the collection branch and instructions. The delivery flow needs the relevant address and agreed charge. Ask the customer-facing screen and the restaurant operator to explain the selected method before the request is accepted."
+      },
+      {
+        "heading": "Review hours and order cut-offs",
+        "text": "A restaurant may stop delivery while continuing to serve customers at the premises. Define the intended policy and verify which controls the proposed setup supports. Test a request near the cut-off and a later attempt when the restaurant cannot fulfil it. Avoid presenting an unverified preparation or arrival estimate as a guarantee."
+      },
+      {
+        "heading": "Compare the handover records",
+        "text": "For pickup, verify the order reference at collection. For delivery, check packing, rider handover and the final outcome separately. If the same owner operates another location, review its settings rather than copying hours and boundaries automatically. Add actual local availability, approved branch context and service evidence before publishing this candidate. Until then, the national product and pricing pages remain the appropriate public explanation of Restrova's offer."
+      }
+    ],
     "relatedLinks": [
-      "/services",
+      "/locations",
+      "/services/restaurant-ordering-websites",
+      "/services/delivery-management",
       "/pricing",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/locations/islamabad/online-ordering-system",
     "reviewNote": "Needs documented city-specific value and availability; no office or customer location inferred.",
     "mappedTo": null,
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "online ordering in islamabad",
+    "secondaryKeywords": [
+      "Online ordering in Islamabad workflow",
+      "Online ordering in Islamabad evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "city-online-ordering-in-rawalpindi",
     "pageType": "city",
     "path": "/locations/rawalpindi/online-ordering-system",
     "title": "Online ordering in Rawalpindi",
-    "description": "Evaluate online ordering in rawalpindi using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "A Rawalpindi restaurant with telephone and website orders needs a consistent record across both entry points.",
+    "intro": "A Rawalpindi restaurant with telephone and website orders needs a consistent record across both entry points. This draft uses that hypothetical workflow to guide a demonstration. It does not assert city-specific Restrova availability, customers or on-site support.",
+    "sections": [
+      {
+        "heading": "Follow one phone order and one website order",
+        "text": "Use the same meal and modification for both requests. Confirm how staff enter the phone order and where the website request arrives. Each should have an identifiable reference and the intended fulfilment method. Verify the actual product capability; a customer ordering website does not automatically prove staff phone-order entry."
+      },
+      {
+        "heading": "Prevent repeated entry from creating repeated preparation",
+        "text": "Ask what happens when a customer calls to confirm a request already submitted online. Staff should investigate the existing reference before creating another kitchen order. Test a correction and a cancellation so that preparation receives the final instruction. Record any manual fallback and how it is reconciled when normal operation returns."
+      },
+      {
+        "heading": "Train the shift backup",
+        "text": "Have a second operator repeat the process using the proposed devices and permissions. Record confusing steps, missed alerts and unanswered customer questions. Compare the setup and recurring fee with the work actually required. This city candidate needs owner-confirmed local scope and genuine evidence before publication; it must not become a duplicate of the national ordering guide with only a place name changed."
+      }
+    ],
     "relatedLinks": [
-      "/services",
+      "/locations",
+      "/services/restaurant-ordering-websites",
+      "/services/delivery-management",
       "/pricing",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/locations/rawalpindi/online-ordering-system",
     "reviewNote": "Needs documented city-specific value and availability; no office or customer location inferred.",
     "mappedTo": null,
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "online ordering in rawalpindi",
+    "secondaryKeywords": [
+      "Online ordering in Rawalpindi workflow",
+      "Online ordering in Rawalpindi evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "city-online-ordering-in-peshawar",
     "pageType": "city",
     "path": "/locations/peshawar/online-ordering-system",
     "title": "Online ordering in Peshawar",
-    "description": "Evaluate online ordering in peshawar using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "For a Peshawar restaurant evaluating an ordering website, clear menu choices and a shared staff understanding are useful demonstration priorities.",
+    "intro": "For a Peshawar restaurant evaluating an ordering website, clear menu choices and a shared staff understanding are useful demonstration priorities. This is a hypothetical menu-and-handoff exercise, not a claim about local customer behaviour or Restrova installations.",
+    "sections": [
+      {
+        "heading": "Approve names, portions and choices",
+        "text": "Select a meal with a portion choice and a paid addition. Ask whether the customer can understand what is included and how the total changes. The kitchen should receive the same meaning even when staff use a different spoken description. Do not claim multilingual product support unless the intended language and display have been demonstrated."
+      },
+      {
+        "heading": "Brief the team in practical language",
+        "text": "A useful operating question is: “Agar customer order change kare to kitchen ko kaun bataye ga?” Name the role responsible for communicating a change, then test the correction in the proposed system. A Roman Urdu training note is not evidence that the application itself supports every requested language."
+      },
+      {
+        "heading": "Inspect the final handover",
+        "text": "Have the packer verify the item, portion and extra against the order reference. Record a cancelled request separately from a completed one and reconcile the final amount. Confirm local support and availability directly with the supplier before using this page publicly. Add genuine restaurant-specific evidence and remove overlap with national content during review; no city-level ranking, office address or customer result is implied by this draft."
+      }
+    ],
     "relatedLinks": [
-      "/services",
+      "/locations",
+      "/services/restaurant-ordering-websites",
+      "/services/delivery-management",
       "/pricing",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/locations/peshawar/online-ordering-system",
     "reviewNote": "Needs documented city-specific value and availability; no office or customer location inferred.",
     "mappedTo": null,
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "online ordering in peshawar",
+    "secondaryKeywords": [
+      "Online ordering in Peshawar workflow",
+      "Online ordering in Peshawar evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "city-online-ordering-in-faisalabad",
     "pageType": "city",
     "path": "/locations/faisalabad/online-ordering-system",
     "title": "Online ordering in Faisalabad",
-    "description": "Evaluate online ordering in faisalabad using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "A Faisalabad restaurant planning online ordering can use a scheduled group-pickup scenario to test its requirements.",
+    "intro": "A Faisalabad restaurant planning online ordering can use a scheduled group-pickup scenario to test its requirements. This draft does not assume that scheduled ordering or bulk-order automation is supported by Restrova; those capabilities must be demonstrated before any public feature claim.",
+    "sections": [
+      {
+        "heading": "Specify the group order precisely",
+        "text": "Prepare a hypothetical request containing several meals, distinct choices and an agreed collection arrangement. Check whether the proposed software can represent the request accurately or whether a documented manual process is required. Avoid treating free-text notes as a reliable substitute for required priced options."
+      },
+      {
+        "heading": "Protect ordinary service capacity",
+        "text": "Discuss how the kitchen will handle the group request alongside normal orders. Identify who accepts the commitment and who can decline an unsupported time or quantity. Do not publish a capacity guarantee based on a successful small demonstration. Use the restaurant's actual preparation and packing evidence when setting its customer promise."
+      },
+      {
+        "heading": "Reconcile the complete handover",
+        "text": "Verify the number of bags, order reference, amount due and collection responsibility. Keep any deposit or partial-payment requirement separate until the actual payment behaviour is verified. Compare software and operating costs for the proposed process. Before publication, this city candidate needs confirmed service availability and a genuine local example; the scenario is a requirements exercise and does not establish local offices, clients or special city-specific product functionality."
+      }
+    ],
     "relatedLinks": [
-      "/services",
+      "/locations",
+      "/services/restaurant-ordering-websites",
+      "/services/delivery-management",
       "/pricing",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/locations/faisalabad/online-ordering-system",
     "reviewNote": "Needs documented city-specific value and availability; no office or customer location inferred.",
     "mappedTo": null,
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "online ordering in faisalabad",
+    "secondaryKeywords": [
+      "Online ordering in Faisalabad workflow",
+      "Online ordering in Faisalabad evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "city-online-ordering-in-multan",
     "pageType": "city",
     "path": "/locations/multan/online-ordering-system",
     "title": "Online ordering in Multan",
-    "description": "Evaluate online ordering in multan using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "A Multan restaurant that changes item availability during service should test how its online menu stays aligned with the kitchen.",
+    "intro": "A Multan restaurant that changes item availability during service should test how its online menu stays aligned with the kitchen. This draft focuses on a hypothetical limited-quantity item and makes no claim about Restrova's local customer base or automatic stock behaviour.",
+    "sections": [
+      {
+        "heading": "Identify the availability owner",
+        "text": "Choose an item that the restaurant may stop serving before closing. Name the person who learns it is unavailable and the person authorized to update the relevant ordering channel. If those are different roles, test the handoff rather than assuming the information travels automatically."
+      },
+      {
+        "heading": "Trace an order near the change",
+        "text": "Place one authorized test request before the item is removed and another afterward. Check what the customer sees, whether the restaurant has accepted the first request and how an unfulfillable order is handled. Do not infer reservation of stock, recipe deduction or automatic menu blocking unless those exact behaviours are demonstrated."
+      },
+      {
+        "heading": "Review corrections and closing records",
+        "text": "If the customer accepts an alternative, verify the final item and amount in the preparation and payment records. If the order is cancelled, inspect its treatment in reporting. Add actual local availability and an approved operational example before publication. The page should remain private if its only differentiator is the city name; national inventory, ordering and pricing content already explains the general product scope without implying local offices or guaranteed outcomes."
+      }
+    ],
     "relatedLinks": [
-      "/services",
+      "/locations",
+      "/services/restaurant-ordering-websites",
+      "/services/delivery-management",
       "/pricing",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/locations/multan/online-ordering-system",
     "reviewNote": "Needs documented city-specific value and availability; no office or customer location inferred.",
     "mappedTo": null,
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "online ordering in multan",
+    "secondaryKeywords": [
+      "Online ordering in Multan workflow",
+      "Online ordering in Multan evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "city-online-ordering-in-gujranwala",
     "pageType": "city",
     "path": "/locations/gujranwala/online-ordering-system",
     "title": "Online ordering in Gujranwala",
-    "description": "Evaluate online ordering in gujranwala using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "A Gujranwala restaurant comparing online ordering can examine how meal bundles and packing checks work together.",
+    "intro": "A Gujranwala restaurant comparing online ordering can examine how meal bundles and packing checks work together. This draft uses a hypothetical shared meal with several components. It does not assert that every bundle configuration is supported or that Restrova has a local installation.",
+    "sections": [
+      {
+        "heading": "Make the bundle unambiguous",
+        "text": "List included items, allowed choices and paid extras. Ask the supplier to configure the actual offer rather than showing a simplified single item. The customer should understand the portion and total, while preparation staff need the selected components in a usable form. Resolve unsupported options before advertising the bundle."
+      },
+      {
+        "heading": "Assign the complete-order check",
+        "text": "Several components may be prepared separately, but one role should verify that the complete order is ready. Test a missing drink or side and identify how the packer finds the current instruction. A preparation status for one item should not be mistaken for a completed customer order."
+      },
+      {
+        "heading": "Verify pickup or dispatch",
+        "text": "Use the order reference at the final handover and distinguish payment due from food readiness. Review one correction and one cancelled request in the closing records. Confirm local service and support arrangements before publishing this candidate, and add genuine owner-approved evidence. The hypothetical bundle exercise provides a review focus; it is not a city-specific performance claim, a customer testimonial or justification for indexing duplicate geographical pages."
+      }
+    ],
     "relatedLinks": [
-      "/services",
+      "/locations",
+      "/services/restaurant-ordering-websites",
+      "/services/delivery-management",
       "/pricing",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/locations/gujranwala/online-ordering-system",
     "reviewNote": "Needs documented city-specific value and availability; no office or customer location inferred.",
     "mappedTo": null,
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "online ordering in gujranwala",
+    "secondaryKeywords": [
+      "Online ordering in Gujranwala workflow",
+      "Online ordering in Gujranwala evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "city-online-ordering-in-sialkot",
     "pageType": "city",
     "path": "/locations/sialkot/online-ordering-system",
     "title": "Online ordering in Sialkot",
-    "description": "Evaluate online ordering in sialkot using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "A Sialkot restaurant with delivery and pickup activity can use rider collection reconciliation as an online-ordering evaluation focus.",
+    "intro": "A Sialkot restaurant with delivery and pickup activity can use rider collection reconciliation as an online-ordering evaluation focus. This draft is a hypothetical operating exercise and does not establish local Restrova customers, offices or guaranteed tracking coverage.",
+    "sections": [
+      {
+        "heading": "Separate dispatch from money collection",
+        "text": "Choose a cash delivery and identify the amount due, rider assignment and order reference. Ask when the system records dispatch, delivery and collection under the proposed workflow. These are different facts and should not be treated as interchangeable simply because one status changes."
+      },
+      {
+        "heading": "Include a failed delivery",
+        "text": "Test an unreachable customer or an address that cannot be completed using an authorized scenario. Decide who contacts the customer, how the food and collection amount are handled and who records the exception. Verify the supported product actions rather than assuming automatic refunds, reassignment or settlement."
+      },
+      {
+        "heading": "Close the shift with evidence",
+        "text": "Compare completed deliveries, outstanding collections and adjustments using known sample orders. Keep pickup payments separate where necessary so the rider is not assigned an amount collected at the counter. Review device permissions and connectivity if location visibility is part of the setup. Publication requires actual local availability and an approved example; without them, keep this city record private and use the national delivery and pricing pages for public claims about Restrova."
+      }
+    ],
     "relatedLinks": [
-      "/services",
+      "/locations",
+      "/services/restaurant-ordering-websites",
+      "/services/delivery-management",
       "/pricing",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/locations/sialkot/online-ordering-system",
     "reviewNote": "Needs documented city-specific value and availability; no office or customer location inferred.",
     "mappedTo": null,
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "online ordering in sialkot",
+    "secondaryKeywords": [
+      "Online ordering in Sialkot workflow",
+      "Online ordering in Sialkot evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "city-online-ordering-in-hyderabad",
     "pageType": "city",
     "path": "/locations/hyderabad/online-ordering-system",
     "title": "Online ordering in Hyderabad",
-    "description": "Evaluate online ordering in hyderabad using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "A Hyderabad restaurant introducing online ordering should know how staff recover when a device or connection is interrupted.",
+    "intro": "A Hyderabad restaurant introducing online ordering should know how staff recover when a device or connection is interrupted. This draft uses a hypothetical continuity test. It does not claim offline capability for Restrova or describe city-wide connectivity conditions.",
+    "sections": [
+      {
+        "heading": "Identify the critical connected tasks",
+        "text": "List order receipt, acceptance, preparation communication and payment confirmation separately. Ask which require connectivity on the actual proposed device. A general cloud or offline label does not establish the behaviour of every task or payment method."
+      },
+      {
+        "heading": "Rehearse an approved interruption",
+        "text": "In an authorized test environment, interrupt the connection after a request is submitted and observe what customer and staff can see. Establish whether any work is queued, rejected or requires investigation. The restaurant should have a simple fallback that preserves the order reference and avoids sending duplicate preparation instructions."
+      },
+      {
+        "heading": "Verify recovery and ownership",
+        "text": "After normal operation returns, reconcile the sample request, payment state and kitchen outcome. Assign the shift supervisor to investigate unresolved items rather than assuming synchronization has corrected everything. Include support responsibilities and device replacement in the proposal. Before publication, add confirmed local service scope and genuine operating evidence. This candidate must not imply a Hyderabad office, local customer success or special connectivity guarantee merely because it is organized under a city route."
+      }
+    ],
     "relatedLinks": [
-      "/services",
+      "/locations",
+      "/services/restaurant-ordering-websites",
+      "/services/delivery-management",
       "/pricing",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/locations/hyderabad/online-ordering-system",
     "reviewNote": "Needs documented city-specific value and availability; no office or customer location inferred.",
     "mappedTo": null,
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "online ordering in hyderabad",
+    "secondaryKeywords": [
+      "Online ordering in Hyderabad workflow",
+      "Online ordering in Hyderabad evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "restaurant_type-pizza-restaurants",
     "pageType": "restaurant_type",
     "path": "/solutions/pizza-restaurants",
     "title": "Pizza Restaurants",
-    "description": "Evaluate pizza restaurants using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "Pizza ordering needs a precise relationship between size, choices and the final preparation instruction.",
+    "intro": "Pizza ordering needs a precise relationship between size, choices and the final preparation instruction. Use a real pizza from your menu to evaluate Restrova's ordering and POS workflow; do not assume that every topping or split-pizza configuration is supported.",
+    "sections": [
+      {
+        "heading": "Configure the choices that change the order",
+        "text": "Ask the supplier to represent the intended size, crust and paid extras. Check required selections, permitted combinations and the resulting total. If half-and-half toppings or complex meal deals are essential, demonstrate them explicitly. A basic modifier example is not proof of every configuration."
+      },
+      {
+        "heading": "Preserve changes through preparation",
+        "text": "Enter an order, change a choice and inspect what the kitchen receives. Decide who communicates a change after preparation has begun. The final instruction should remain attached to the order reference, while staff handle any customer discussion under the restaurant's policy."
+      },
+      {
+        "heading": "Check packing and delivery scope",
+        "text": "Verify the pizza count, sides and drinks before handover. For delivery, distinguish ready, dispatched and completed and confirm the actual rider arrangement. Compare platform, packaging and fulfilment costs using the same order scenario. Bring the menu, device list and a difficult modification to a demonstration. Approval requires evidence that the chosen configuration works and a review of whether this page adds distinct value beyond existing product guidance; no restaurant results or unsupported pizza-specific feature claims are implied."
+      }
+    ],
     "relatedLinks": [
-      "/services",
+      "/services/restaurant-ordering-websites",
+      "/services/restaurant-pos",
+      "/services/delivery-management",
       "/pricing",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/solutions/pizza-restaurants",
     "reviewNote": "Differentiate workflow; confirm detailed modifier and fulfilment capabilities. Existing canonical wins where already present.",
     "mappedTo": null,
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "pizza restaurants",
+    "secondaryKeywords": [
+      "Pizza Restaurants workflow",
+      "Pizza Restaurants evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "restaurant_type-burger-restaurants",
     "pageType": "restaurant_type",
     "path": "/solutions/burger-restaurants",
     "title": "Burger Restaurants",
-    "description": "Evaluate burger restaurants using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "Burger restaurants should evaluate ordering around meal combinations and corrections.",
+    "intro": "Burger restaurants should evaluate ordering around meal combinations and corrections. A menu can be easy for a customer to understand while still producing an unclear preparation instruction if choices are configured badly.",
+    "sections": [
+      {
+        "heading": "Test a complete meal rather than one item",
+        "text": "Use a burger, side and drink with one permitted substitution and one paid addition. Verify what is included, what changes the price and which selections are required. Ask for the actual configuration supported by the proposed software rather than assuming every bundle rule is available."
+      },
+      {
+        "heading": "Handle an unavailable component",
+        "text": "Make the selected side unavailable in an authorized test. Observe the customer flow and the operator's response to an already received request. Define who approves an alternative, how the amount changes and how preparation learns the final choice. Do not assume an automatic substitution policy."
+      },
+      {
+        "heading": "Verify the handover and close",
+        "text": "Have a packer check the completed order against its reference, including drinks and extras. Then trace the order and a cancellation into reporting. Review staff permissions and the responsibility for keeping availability current. Restrova's relevant ordering, POS and delivery scope should be shown with this sample meal before any feature promise is published. Keep the candidate private until editorial review confirms distinct value and the restaurant-specific configuration has genuine evidence."
+      }
+    ],
     "relatedLinks": [
-      "/services",
+      "/services/restaurant-ordering-websites",
+      "/services/restaurant-pos",
+      "/services/delivery-management",
       "/pricing",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/solutions/burger-restaurants",
     "reviewNote": "Differentiate workflow; confirm detailed modifier and fulfilment capabilities. Existing canonical wins where already present.",
     "mappedTo": null,
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "burger restaurants",
+    "secondaryKeywords": [
+      "Burger Restaurants workflow",
+      "Burger Restaurants evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "restaurant_type-fast-food-restaurants",
     "pageType": "restaurant_type",
     "path": "/solutions/fast-food-restaurants",
     "title": "Fast Food Restaurants",
-    "description": "Evaluate fast food restaurants using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "Fast-food operations need a clear sequence from counter or online request to preparation and packing.",
+    "intro": "Fast-food operations need a clear sequence from counter or online request to preparation and packing. This candidate supplies additional evaluation material for the existing fast-food solution page; it should be consolidated there rather than published as a competing URL.",
+    "sections": [
+      {
+        "heading": "Follow simultaneous channels",
+        "text": "Enter a counter order while a website request arrives. Ask the operator to identify which task needs attention and how both requests reach preparation. A single dashboard is useful only if references, choices and responsibilities remain understandable."
+      },
+      {
+        "heading": "Test a rush-period exception",
+        "text": "Use a modified meal and an unavailable component. Check whether staff can correct the request without accidentally creating another kitchen order. If preparation uses several stations, verify the actual routing and final assembly process instead of inferring a kitchen display integration."
+      },
+      {
+        "heading": "Match acceptance with capacity",
+        "text": "Define who can pause or limit an offer using the controls the product actually supports. The restaurant should not promise a preparation time based solely on a quiet demonstration. Review order corrections, packing checks and the closing treatment of cancellations. Use actual devices and intended user permissions in the acceptance test. Keep this content unpublished until it has been reviewed for incorporation into the existing page and the proposed workflow has been demonstrated; no speed improvement or customer outcome is claimed."
+      }
+    ],
     "relatedLinks": [
-      "/services",
+      "/services/restaurant-ordering-websites",
+      "/services/restaurant-pos",
+      "/services/delivery-management",
       "/pricing",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/solutions/fast-food-restaurants",
     "reviewNote": "Differentiate workflow; confirm detailed modifier and fulfilment capabilities. Existing canonical wins where already present.",
     "mappedTo": "/solutions/fast-food-restaurants",
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "fast food restaurants",
+    "secondaryKeywords": [
+      "Fast Food Restaurants workflow",
+      "Fast Food Restaurants evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "restaurant_type-cafes",
     "pageType": "restaurant_type",
     "path": "/solutions/cafes",
     "title": "Cafes",
-    "description": "Evaluate cafes using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "Café software evaluation should start with drink choices, collection and the closing routine.",
+    "intro": "Café software evaluation should start with drink choices, collection and the closing routine. This draft is additional material for the existing café solution page, preserving its URL and avoiding a second competing page.",
+    "sections": [
+      {
+        "heading": "Make beverage choices explicit",
+        "text": "Use a drink with a size and a paid extra, then add a food item. Confirm that required choices are captured and that preparation staff see the final instruction. Do not infer support for every milk, recipe or loyalty configuration from a general café label."
+      },
+      {
+        "heading": "Keep collection understandable",
+        "text": "Ask how the customer and staff identify the same order when several drinks are ready. Test a correction after initial entry and establish who communicates it. A ready state should reflect the restaurant's actual preparation process rather than a convenient button press."
+      },
+      {
+        "heading": "Review the small-team workload",
+        "text": "Assign menu and availability ownership, including a backup during busy periods. Have a staff member repeat the order and closing tasks without the salesperson controlling the screen. Compare software, device and training costs with the scope the café can maintain. If table service or delivery is also required, test those separately. This candidate remains mapped to the existing café page until approved changes are reviewed and merged; it does not establish unverified beverage automation, offline capability or measured service improvements."
+      }
+    ],
     "relatedLinks": [
-      "/services",
+      "/services/restaurant-ordering-websites",
+      "/services/restaurant-pos",
+      "/services/delivery-management",
       "/pricing",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/solutions/cafes",
     "reviewNote": "Differentiate workflow; confirm detailed modifier and fulfilment capabilities. Existing canonical wins where already present.",
     "mappedTo": "/solutions/cafes",
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "cafes",
+    "secondaryKeywords": [
+      "Cafes workflow",
+      "Cafes evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "restaurant_type-coffee-shops",
     "pageType": "restaurant_type",
     "path": "/solutions/coffee-shops",
     "title": "Coffee Shops",
-    "description": "Evaluate coffee shops using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "A coffee shop evaluating online ordering should focus on how a drink specification becomes a clear preparation and collection task.",
+    "intro": "A coffee shop evaluating online ordering should focus on how a drink specification becomes a clear preparation and collection task. Start with the actual menu and staff process rather than a generic catalogue demonstration.",
+    "sections": [
+      {
+        "heading": "Distinguish required options from notes",
+        "text": "Use a size choice and an optional extra that changes the amount. Verify the supported configuration and check the final total. Special requests may need notes, but essential priced choices should not depend on staff interpreting free text where a structured option is available."
+      },
+      {
+        "heading": "Test collection during concurrent service",
+        "text": "Create two similar orders with different choices and confirm that staff can identify the correct one at handover. A customer name alone may be ambiguous. Check how a changed request is communicated after preparation begins and who decides whether the change is still possible."
+      },
+      {
+        "heading": "Keep the launch scope manageable",
+        "text": "Review the device position, readable text and printer or screen arrangement on the actual counter. Assign someone to maintain availability when a component runs out. Test a cancellation and a closing total before expanding to another channel. Restrova's ordering and POS capabilities should be assessed through the sample drink; no loyalty programme, ingredient deduction or specialised drink-builder feature is assumed. Publish only after evidence and distinct-intent review, especially because an existing café page already covers related buying questions."
+      }
+    ],
     "relatedLinks": [
-      "/services",
+      "/services/restaurant-ordering-websites",
+      "/services/restaurant-pos",
+      "/services/delivery-management",
       "/pricing",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/solutions/coffee-shops",
     "reviewNote": "Differentiate workflow; confirm detailed modifier and fulfilment capabilities. Existing canonical wins where already present.",
     "mappedTo": null,
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "coffee shops",
+    "secondaryKeywords": [
+      "Coffee Shops workflow",
+      "Coffee Shops evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "restaurant_type-bakeries",
     "pageType": "restaurant_type",
     "path": "/solutions/bakeries",
     "title": "Bakeries",
-    "description": "Evaluate bakeries using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "Bakery ordering often needs careful separation between immediately available items and requests requiring preparation or prior agreement.",
+    "intro": "Bakery ordering often needs careful separation between immediately available items and requests requiring preparation or prior agreement. Use your own product list to establish which orders the proposed setup can represent accurately.",
+    "sections": [
+      {
+        "heading": "Separate ordinary items from special requests",
+        "text": "Test a ready-to-sell item with quantity and a more complex request with choices. If collection slots, cake inscriptions, deposits or lead-time rules are essential, ask for each capability explicitly. This page does not assume Restrova supports them because it supports restaurant ordering."
+      },
+      {
+        "heading": "Maintain availability with a named owner",
+        "text": "Choose an item that may sell out during service and test the update process. Confirm what happens to a request already received when the remaining quantity changes. Automatic stock reservation or recipe deduction must be demonstrated separately rather than inferred."
+      },
+      {
+        "heading": "Verify collection and the final record",
+        "text": "Agree how staff identify the customer order and check the prepared items at collection. Keep amount due, amount collected and completion understandable. Review the response to a late collection or a changed request using the actual supported workflow. Bring product sizes, preparation requirements and sample exceptions to a demonstration. The candidate requires human review and product evidence before publication, and should not advertise custom-cake automation, guaranteed availability or customer results that have not been verified."
+      }
+    ],
     "relatedLinks": [
-      "/services",
+      "/services/restaurant-ordering-websites",
+      "/services/restaurant-pos",
+      "/services/delivery-management",
       "/pricing",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/solutions/bakeries",
     "reviewNote": "Differentiate workflow; confirm detailed modifier and fulfilment capabilities. Existing canonical wins where already present.",
     "mappedTo": null,
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "bakeries",
+    "secondaryKeywords": [
+      "Bakeries workflow",
+      "Bakeries evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "restaurant_type-cloud-kitchens",
     "pageType": "restaurant_type",
     "path": "/solutions/cloud-kitchens",
     "title": "Cloud Kitchens",
-    "description": "Evaluate cloud kitchens using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "Cloud-kitchen evaluation should connect acceptance, preparation, packing and dispatch.",
+    "intro": "Cloud-kitchen evaluation should connect acceptance, preparation, packing and dispatch. This draft supplies focused material for the existing cloud-kitchen page and remains mapped to that URL to avoid competing content.",
+    "sections": [
+      {
+        "heading": "Identify brand and menu ownership",
+        "text": "List the brands, menus and channels the kitchen operates. Ask which records are shared and which remain separate under the proposed configuration. Multi-brand support should be shown explicitly; it is not established by a general multi-branch feature."
+      },
+      {
+        "heading": "Verify the complete-order handoff",
+        "text": "Use an order with items from different preparation tasks. Identify who confirms that every component is packed before a rider receives it. A ready item is not necessarily a ready order. Test a changed component and a cancellation to see how the final instruction reaches staff."
+      },
+      {
+        "heading": "Review dispatch and contribution",
+        "text": "Trace assignment, amount due and delivery outcome for a sample order, including one failed-delivery scenario. Compare packaging, rider, payment and platform costs before describing channel growth as profit. Train the shift backup and keep an exception log during a controlled pilot. Any new claims should be merged into the existing solution only after evidence and editorial approval; no automatic station routing, multi-brand capability, delivery guarantee or customer outcome is implied by this draft."
+      }
+    ],
     "relatedLinks": [
-      "/services",
+      "/services/restaurant-ordering-websites",
+      "/services/restaurant-pos",
+      "/services/delivery-management",
       "/pricing",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/solutions/cloud-kitchens",
     "reviewNote": "Differentiate workflow; confirm detailed modifier and fulfilment capabilities. Existing canonical wins where already present.",
     "mappedTo": "/solutions/cloud-kitchens",
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "cloud kitchens",
+    "secondaryKeywords": [
+      "Cloud Kitchens workflow",
+      "Cloud Kitchens evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "restaurant_type-fine-dining-restaurants",
     "pageType": "restaurant_type",
     "path": "/solutions/fine-dining-restaurants",
     "title": "Fine Dining Restaurants",
-    "description": "Evaluate fine dining restaurants using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "A fine-dining restaurant considering direct ordering or POS software should define which part of its service it wants to digitize.",
+    "intro": "A fine-dining restaurant considering direct ordering or POS software should define which part of its service it wants to digitize. Takeaway, table service and advance requests can require different workflows and should not be bundled into one unsupported promise.",
+    "sections": [
+      {
+        "heading": "Specify the intended service model",
+        "text": "Use a representative order and identify whether it is for collection, delivery or service at the restaurant. If course timing, table transfers, split bills or reservations are essential, demonstrate those functions individually. Restrova's general POS scope does not establish every fine-dining capability."
+      },
+      {
+        "heading": "Preserve the guest's request through changes",
+        "text": "Check how staff record permitted choices and communicate a correction. Sensitive ingredient or dietary information should be approved by the restaurant rather than invented in menu copy. Decide which requests need a person to confirm them before acceptance."
+      },
+      {
+        "heading": "Agree handover and closing responsibility",
+        "text": "For off-premise orders, review packaging and collection instructions. For on-premise requirements, test the exact proposed workflow with intended devices and permissions. Trace a correction and cancellation into the closing record. Compare implementation effort and support alongside subscription cost. Keep this candidate private until the supported scope is demonstrated and the content has a distinct purpose; it must not imply reservation, course-management or specialist payment features that have not been verified."
+      }
+    ],
     "relatedLinks": [
-      "/services",
+      "/services/restaurant-ordering-websites",
+      "/services/restaurant-pos",
+      "/services/delivery-management",
       "/pricing",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/solutions/fine-dining-restaurants",
     "reviewNote": "Differentiate workflow; confirm detailed modifier and fulfilment capabilities. Existing canonical wins where already present.",
     "mappedTo": null,
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "fine dining restaurants",
+    "secondaryKeywords": [
+      "Fine Dining Restaurants workflow",
+      "Fine Dining Restaurants evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "restaurant_type-casual-dining-restaurants",
     "pageType": "restaurant_type",
     "path": "/solutions/casual-dining-restaurants",
     "title": "Casual Dining Restaurants",
-    "description": "Evaluate casual dining restaurants using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "Casual-dining restaurants may handle table service, takeaway and delivery within the same shift.",
+    "intro": "Casual-dining restaurants may handle table service, takeaway and delivery within the same shift. Software should help staff distinguish these requests while preserving an understandable record of items, changes and payments.",
+    "sections": [
+      {
+        "heading": "Test one order in each relevant mode",
+        "text": "Use the same menu item for dine-in, pickup and delivery where those modes are required. Confirm the operational differences: service responsibility, collection location or delivery details. Verify the exact supported configuration rather than assuming every mode is included in a general restaurant package."
+      },
+      {
+        "heading": "Handle a customer change",
+        "text": "Add or remove an item and inspect what preparation staff receive. If table movement, split payment or transfer between modes is essential, ask for a separate demonstration. Define who can approve the change and how the final amount is explained."
+      },
+      {
+        "heading": "Reconcile the shift without losing distinctions",
+        "text": "Trace known orders into reporting and identify which statuses are included. Keep delivery collections and counter receipts understandable. Assign menu availability and exception review to named roles. Restrova's ordering, POS and delivery scope can be evaluated using these scenarios, but the restaurant should not infer unsupported table-service or payment functions. Publication requires genuine workflow evidence and editorial differentiation from the existing service and restaurant-type pages, with pricing and demo links preserved."
+      }
+    ],
     "relatedLinks": [
-      "/services",
+      "/services/restaurant-ordering-websites",
+      "/services/restaurant-pos",
+      "/services/delivery-management",
       "/pricing",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/solutions/casual-dining-restaurants",
     "reviewNote": "Differentiate workflow; confirm detailed modifier and fulfilment capabilities. Existing canonical wins where already present.",
     "mappedTo": null,
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "casual dining restaurants",
+    "secondaryKeywords": [
+      "Casual Dining Restaurants workflow",
+      "Casual Dining Restaurants evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "restaurant_type-ice-cream-shops",
     "pageType": "restaurant_type",
     "path": "/solutions/ice-cream-shops",
     "title": "Ice Cream Shops",
-    "description": "Evaluate ice cream shops using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "Ice-cream ordering needs clear choices and a realistic fulfilment promise.",
+    "intro": "Ice-cream ordering needs clear choices and a realistic fulfilment promise. A shop should evaluate product combinations, availability and the physical handover rather than assuming that a standard item catalogue covers every serving format.",
+    "sections": [
+      {
+        "heading": "Configure a representative serving",
+        "text": "Use the actual cup or cone sizes, permitted flavours and paid additions from your menu. Verify which choices the proposed software can represent and how they affect the amount. Do not assume mix-and-match flavour rules or ingredient-level deductions without demonstration."
+      },
+      {
+        "heading": "Keep availability and fulfilment aligned",
+        "text": "Choose a flavour that becomes unavailable and inspect both the customer menu and already received requests. Assign the person who updates availability and the person who resolves an affected order. For delivery, use the shop's own packaging and journey evidence rather than promising city-wide suitability."
+      },
+      {
+        "heading": "Verify the final customer handover",
+        "text": "Check quantity, serving choices and extras against the order reference. Distinguish preparation completion from collection or delivery. Review the response to a changed request and any amount correction. Bring the menu, intended devices and fulfilment boundaries to a Restrova demonstration. The page remains a private candidate until product fit and distinct intent are reviewed; it does not claim specialist cold-chain tracking, guaranteed product condition or measured customer results."
+      }
+    ],
     "relatedLinks": [
-      "/services",
+      "/services/restaurant-ordering-websites",
+      "/services/restaurant-pos",
+      "/services/delivery-management",
       "/pricing",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/solutions/ice-cream-shops",
     "reviewNote": "Differentiate workflow; confirm detailed modifier and fulfilment capabilities. Existing canonical wins where already present.",
     "mappedTo": null,
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "ice cream shops",
+    "secondaryKeywords": [
+      "Ice Cream Shops workflow",
+      "Ice Cream Shops evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "restaurant_type-juice-bars",
     "pageType": "restaurant_type",
     "path": "/solutions/juice-bars",
     "title": "Juice Bars",
-    "description": "Evaluate juice bars using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "Juice-bar ordering should make size, permitted additions and availability clear before the request reaches preparation.",
+    "intro": "Juice-bar ordering should make size, permitted additions and availability clear before the request reaches preparation. Use your actual menu to test whether the proposed setup preserves those decisions accurately.",
+    "sections": [
+      {
+        "heading": "Test a drink with meaningful choices",
+        "text": "Choose one item with a required size and an optional paid addition. Confirm the final amount and preparation instruction. If ingredient exclusions or complex combinations are needed, demonstrate the exact configuration instead of relying on a generic modifier example."
+      },
+      {
+        "heading": "Assign ingredient and menu updates",
+        "text": "When a component runs out, decide who updates the ordering offer and how staff handle a request already received. Do not infer automatic ingredient deduction, nutrition calculation or menu blocking from a general inventory feature."
+      },
+      {
+        "heading": "Check collection and delivery separately",
+        "text": "For pickup, verify the reference and the completed set of drinks. For delivery, evaluate packaging, rider handover and the actual service boundary. A location map alone does not establish that the product will arrive in the condition promised. Review a correction, cancellation and closing total with the proposed devices. Restrova's ordering, POS and inventory scope should be assessed in that demonstration; publication remains dependent on product evidence and editorial review, with no unsupported health claims, operational guarantees or invented customer outcomes."
+      }
+    ],
     "relatedLinks": [
-      "/services",
+      "/services/restaurant-ordering-websites",
+      "/services/restaurant-pos",
+      "/services/delivery-management",
       "/pricing",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/solutions/juice-bars",
     "reviewNote": "Differentiate workflow; confirm detailed modifier and fulfilment capabilities. Existing canonical wins where already present.",
     "mappedTo": null,
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "juice bars",
+    "secondaryKeywords": [
+      "Juice Bars workflow",
+      "Juice Bars evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "restaurant_type-multi-branch-restaurants",
     "pageType": "restaurant_type",
     "path": "/solutions/multi-branch-restaurants",
     "title": "Multi Branch Restaurants",
-    "description": "Evaluate multi branch restaurants using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "Multi-branch restaurant software needs central consistency and deliberate local differences.",
+    "intro": "Multi-branch restaurant software needs central consistency and deliberate local differences. This draft adds acceptance material for the existing multi-branch solution and should be consolidated there rather than published as a competing route.",
+    "sections": [
+      {
+        "heading": "Define central and local authority",
+        "text": "Create a matrix for menu names, prices, availability, hours and reporting categories. Mark who can change each item and which branches are affected. Test a local availability change and a central update using the actual supported controls."
+      },
+      {
+        "heading": "Verify record separation",
+        "text": "Place one sample order in two branches and inspect the queues, user permissions and reports. A branch operator should understand the work belonging to that outlet. Do not assume stock transfers, central procurement or franchise accounting merely because the product supports multiple branches."
+      },
+      {
+        "heading": "Pilot and repeat the configuration",
+        "text": "Document the representative branch's setup, training issues and acceptance results. When adding another outlet, review local devices, opening stock, hours and fulfilment boundaries instead of copying them blindly. Compare commercial terms for the intended scope and keep support escalation clear. New material must be reviewed and merged into the existing page with its URL and canonical preserved; no rollout speed, savings, local installation or customer performance claim is established by this draft."
+      }
+    ],
     "relatedLinks": [
-      "/services",
+      "/services/restaurant-ordering-websites",
+      "/services/restaurant-pos",
+      "/services/delivery-management",
       "/pricing",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/solutions/multi-branch-restaurants",
     "reviewNote": "Differentiate workflow; confirm detailed modifier and fulfilment capabilities. Existing canonical wins where already present.",
     "mappedTo": "/solutions/multi-branch-restaurants",
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "multi branch restaurants",
+    "secondaryKeywords": [
+      "Multi Branch Restaurants workflow",
+      "Multi Branch Restaurants evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "feature-online-ordering",
     "pageType": "feature",
     "path": "/features/online-ordering",
     "title": "Online Ordering",
-    "description": "Evaluate online ordering using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "Direct online ordering gives customers a route from the restaurant's own website to a request its team can fulfil.",
+    "intro": "Direct online ordering gives customers a route from the restaurant's own website to a request its team can fulfil. This draft supports the existing ordering website service and remains mapped to that page to avoid a competing explanation of the same feature.",
+    "sections": [
+      {
+        "heading": "Capture the request clearly",
+        "text": "Use a real item with required choices, quantity and a fulfilment method. Check that the customer sees the total before submission and understands whether the restaurant has accepted the request. A menu page alone is not evidence of a complete ordering process."
+      },
+      {
+        "heading": "Verify the restaurant handoff",
+        "text": "Identify who monitors new requests and who takes over during a rush. Trace the same reference through preparation, packing and collection or dispatch. Test an unavailable item and a correction rather than only a normal order."
+      },
+      {
+        "heading": "Review scope and costs",
+        "text": "Confirm which devices, payment methods and external connections are supported in the proposal. Restrova's approved fee is PKR 10,000 onboarding and the higher of PKR 5,000 or 1% of monthly Restrova-processed sales. Delivery and other external costs require separate confirmation. Review this content for consolidation into the existing service page before any publication; no guaranteed sales growth or unsupported integration is claimed."
+      }
+    ],
     "relatedLinks": [
       "/services",
       "/pricing",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/features/online-ordering",
     "reviewNote": "Consolidate with the existing service page; otherwise verify feature support before writing.",
     "mappedTo": "/services/restaurant-ordering-websites",
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "online ordering",
+    "secondaryKeywords": [
+      "Online Ordering workflow",
+      "Online Ordering evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "feature-restaurant-pos",
     "pageType": "feature",
     "path": "/features/restaurant-pos",
     "title": "Restaurant Pos",
-    "description": "Evaluate restaurant pos using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "Restaurant POS evaluation should connect order entry, corrections and closing records.",
+    "intro": "Restaurant POS evaluation should connect order entry, corrections and closing records. This draft is supporting material for the existing POS service page and must not create a second indexable page for the same core intent.",
+    "sections": [
+      {
+        "heading": "Test an actual counter order",
+        "text": "Enter a meal with a choice and a paid extra. Ask the cashier to correct it and locate the final record. Preparation staff should receive the current instruction rather than relying on a verbal explanation detached from the reference."
+      },
+      {
+        "heading": "Examine controls and interruptions",
+        "text": "Verify who can cancel, change prices or approve a refund. Test the intended hardware and ask exactly which tasks remain possible during connection loss. No offline, payment-provider or specialist invoicing capability should be inferred without demonstration."
+      },
+      {
+        "heading": "Close with known records",
+        "text": "Trace an ordinary order, a correction and a cancellation into the selected report. Confirm the period and statuses included. Compare devices, setup, training and support with the published platform pricing. Keep this candidate mapped to the existing service URL until reviewed additions are merged there; it does not establish every printer integration, tax requirement or operational outcome."
+      }
+    ],
     "relatedLinks": [
       "/services",
       "/pricing",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/features/restaurant-pos",
     "reviewNote": "Consolidate with the existing service page; otherwise verify feature support before writing.",
     "mappedTo": "/services/restaurant-pos",
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "restaurant pos",
+    "secondaryKeywords": [
+      "Restaurant Pos workflow",
+      "Restaurant Pos evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "feature-delivery-management",
     "pageType": "feature",
     "path": "/features/delivery-management",
     "title": "Delivery Management",
-    "description": "Evaluate delivery management using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "Delivery management connects restaurant preparation with rider handover and the final order outcome.",
+    "intro": "Delivery management connects restaurant preparation with rider handover and the final order outcome. This material extends the existing delivery service explanation and stays mapped to that page rather than competing with it.",
+    "sections": [
+      {
+        "heading": "Distinguish the operating states",
+        "text": "Use an order that is accepted, prepared, packed and assigned before completion. Ask who acts at each stage and how staff see unresolved work. A ready order is not automatically dispatched, and dispatch is not evidence of successful delivery."
+      },
+      {
+        "heading": "Verify tracking and collection",
+        "text": "Demonstrate the actual rider device, location permissions and connectivity behaviour. Distinguish live location from an order-status update. For cash orders, trace the amount due, collection and any adjustment without assuming automatic settlement."
+      },
+      {
+        "heading": "Include a failed delivery",
+        "text": "Test an unreachable customer or unavailable rider through an authorized scenario. Agree who communicates the exception and how the record is closed. Review fulfilment costs separately from software fees. Only verified functionality and approved demonstrations should be merged into the existing page; no arrival-time guarantee, universal tracking coverage or invented reduction in delivery costs is implied."
+      }
+    ],
     "relatedLinks": [
       "/services",
       "/pricing",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/features/delivery-management",
     "reviewNote": "Consolidate with the existing service page; otherwise verify feature support before writing.",
     "mappedTo": "/services/delivery-management",
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "delivery management",
+    "secondaryKeywords": [
+      "Delivery Management workflow",
+      "Delivery Management evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "feature-branded-mobile-ordering",
     "pageType": "feature",
     "path": "/features/branded-mobile-ordering",
     "title": "Branded Mobile Ordering",
-    "description": "Evaluate branded mobile ordering using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "A branded restaurant app should give customers a dependable way to reach the restaurant's menu and ordering flow.",
+    "intro": "A branded restaurant app should give customers a dependable way to reach the restaurant's menu and ordering flow. This draft supports the existing branded-app service and remains mapped to it to prevent duplicate feature pages.",
+    "sections": [
+      {
+        "heading": "Define the app's customer purpose",
+        "text": "Ask why customers would install and return to the app rather than use the website. Test menu discovery, required choices, fulfilment selection and acceptance on the intended phones. Do not treat an app icon as evidence of a better ordering experience."
+      },
+      {
+        "heading": "Agree publishing and maintenance",
+        "text": "Clarify store accounts, approval responsibilities, updates and support. Use genuine published examples and approved screenshots. Do not infer push notifications, loyalty, payment providers or other capabilities without checking the actual product scope."
+      },
+      {
+        "heading": "Connect the order to operations",
+        "text": "Trace an app request through the same restaurant handoffs used for other channels. Verify availability, corrections and customer support. Compare the app and website responsibilities in the written proposal rather than assuming they have identical maintenance needs. Review this content for the existing service page before publication; no app-store approval deadline, download result or sales improvement is guaranteed."
+      }
+    ],
     "relatedLinks": [
       "/services",
       "/pricing",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/features/branded-mobile-ordering",
     "reviewNote": "Consolidate with the existing service page; otherwise verify feature support before writing.",
     "mappedTo": "/services/restaurant-ordering-apps",
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "branded mobile ordering",
+    "secondaryKeywords": [
+      "Branded Mobile Ordering workflow",
+      "Branded Mobile Ordering evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "feature-inventory-management",
     "pageType": "feature",
     "path": "/features/inventory-management",
     "title": "Inventory Management",
-    "description": "Evaluate inventory management using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "Inventory management is useful when the restaurant can maintain accurate stock records and explain differences.",
+    "intro": "Inventory management is useful when the restaurant can maintain accurate stock records and explain differences. This draft provides additional evaluation material for the existing inventory service page, with no competing publication route.",
+    "sections": [
+      {
+        "heading": "Agree items and units first",
+        "text": "Choose a few important ingredients or products and define how quantities are recorded. A box, kilogram and individual piece are not interchangeable. Review opening balances and assign the person who records receipts and adjustments."
+      },
+      {
+        "heading": "Trace a stock change",
+        "text": "Demonstrate a receipt, a count difference and a documented waste adjustment where supported. If recipe deduction, expiry tracking, transfers or automatic availability changes are required, test each separately. A general inventory label does not establish them."
+      },
+      {
+        "heading": "Reconcile before expanding",
+        "text": "Compare the system balance with a physical count using the same unit. Investigate missing entries and incorrect quantities before blaming the calculation. Use genuine approved demonstrations to explain supported behaviour and link back to POS and reporting scope. Keep this candidate mapped to the current service page until reviewed changes are merged; no waste-reduction percentage, accounting integration or customer outcome is invented."
+      }
+    ],
     "relatedLinks": [
       "/services",
       "/pricing",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/features/inventory-management",
     "reviewNote": "Consolidate with the existing service page; otherwise verify feature support before writing.",
     "mappedTo": "/services/inventory-management",
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "inventory management",
+    "secondaryKeywords": [
+      "Inventory Management workflow",
+      "Inventory Management evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "feature-restaurant-analytics",
     "pageType": "feature",
     "path": "/features/restaurant-analytics",
     "title": "Restaurant Analytics",
-    "description": "Evaluate restaurant analytics using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "Restaurant analytics should help an owner answer a defined operating question using records with known scope.",
+    "intro": "Restaurant analytics should help an owner answer a defined operating question using records with known scope. This draft extends the existing reporting and analytics service rather than creating another indexable page for the same feature.",
+    "sections": [
+      {
+        "heading": "Define the report before trusting the total",
+        "text": "Confirm the period, branches, order statuses and treatment of discounts, cancellations and refunds. Sales, payments collected and profit are different measures. A dashboard should not be described as a complete profit statement unless the necessary costs are actually included."
+      },
+      {
+        "heading": "Trace sample orders",
+        "text": "Use an ordinary order, a cancellation and a correction. Ask the operator to show where each appears in the report and explain the final amount. Verify exports and access controls if they are important to the restaurant."
+      },
+      {
+        "heading": "Connect insight with an action",
+        "text": "Choose one practical question, such as unresolved deliveries or a branch closing difference. Assign someone to investigate the exceptions rather than treating a chart as a decision by itself. Review genuine product evidence before merging this material into the current service page. No revenue improvement, predictive capability or third-party accounting connection is established by this draft."
+      }
+    ],
     "relatedLinks": [
       "/services",
       "/pricing",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/features/restaurant-analytics",
     "reviewNote": "Consolidate with the existing service page; otherwise verify feature support before writing.",
     "mappedTo": "/services/reporting-analytics",
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "restaurant analytics",
+    "secondaryKeywords": [
+      "Restaurant Analytics workflow",
+      "Restaurant Analytics evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "feature-qr-code-ordering",
     "pageType": "feature",
     "path": "/features/qr-code-ordering",
     "title": "Qr Code Ordering",
-    "description": "Evaluate qr code ordering using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "QR-code ordering is a capability to evaluate, not a verified Restrova feature in this draft.",
+    "intro": "QR-code ordering is a capability to evaluate, not a verified Restrova feature in this draft. A QR code can open a menu or website without providing table-aware ordering, payment or kitchen routing. Keep those requirements separate.",
+    "sections": [
+      {
+        "heading": "Distinguish a link from an ordering workflow",
+        "text": "A printed code that opens an existing ordering URL is different from a system that identifies a table and manages its orders. Define the intended customer action and ask the supplier to demonstrate it. Do not label a static link as a complete table-ordering integration."
+      },
+      {
+        "heading": "Test identity and exceptions",
+        "text": "If table identification is required, investigate a customer scanning the wrong code, moving tables or submitting twice. Check how staff see the request and whether payment and preparation remain distinguishable. Confirm the actual supported configuration before making a feature claim."
+      },
+      {
+        "heading": "Keep the public claim blocked",
+        "text": "Restrova's verified website and POS scope can be discussed in a demonstration, but this candidate requires product confirmation and approved evidence before publication. Record devices, setup responsibilities and any integration costs. Until that evidence exists, the page must not advertise QR table ordering, contactless payment or automatic kitchen routing as an available Restrova capability."
+      }
+    ],
     "relatedLinks": [
       "/services",
       "/pricing",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/features/qr-code-ordering",
     "reviewNote": "Consolidate with the existing service page; otherwise verify feature support before writing.",
     "mappedTo": null,
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "qr code ordering",
+    "secondaryKeywords": [
+      "Qr Code Ordering workflow",
+      "Qr Code Ordering evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "feature-whatsapp-ordering",
     "pageType": "feature",
     "path": "/features/whatsapp-ordering",
     "title": "Whatsapp Ordering",
-    "description": "Evaluate whatsapp ordering using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "WhatsApp ordering can mean several different processes, from a customer sending a message to a fully integrated order workflow.",
+    "intro": "WhatsApp ordering can mean several different processes, from a customer sending a message to a fully integrated order workflow. This draft does not establish a Restrova WhatsApp ordering integration and remains blocked pending product evidence.",
+    "sections": [
+      {
+        "heading": "Define the intended process",
+        "text": "Clarify whether the restaurant wants a contact link, staff-assisted order capture or a verified automated integration. A button that opens a conversation does not automatically create an order, calculate a total or update stock."
+      },
+      {
+        "heading": "Review the human handoff",
+        "text": "For a message-assisted process, decide who confirms items, availability, price and fulfilment. Establish how the request receives a reference and reaches preparation. If staff also receive website orders, prevent re-entering an already submitted request as a second kitchen order."
+      },
+      {
+        "heading": "Verify integration and privacy before claims",
+        "text": "Any automated flow needs evidence of the actual provider arrangement, permissions, message behaviour and failure handling. Do not assume customer contact for fulfilment authorizes optional marketing. Discuss the requirements in a Restrova demonstration, but keep this feature page private until support is confirmed and the workflow has approved evidence. No chatbot, payment integration, automatic order parsing or official third-party partnership is implied."
+      }
+    ],
     "relatedLinks": [
       "/services",
       "/pricing",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/features/whatsapp-ordering",
     "reviewNote": "Consolidate with the existing service page; otherwise verify feature support before writing.",
     "mappedTo": null,
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "whatsapp ordering",
+    "secondaryKeywords": [
+      "Whatsapp Ordering workflow",
+      "Whatsapp Ordering evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "comparison-indolj-alternative",
     "pageType": "comparison",
     "path": "/compare/indolj-alternative",
     "title": "Indolj Alternative",
-    "description": "Evaluate indolj alternative using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "An Indolj alternative should be evaluated against the task that prompted the search.",
+    "intro": "An Indolj alternative should be evaluated against the task that prompted the search. A restaurant may need a different order workflow, commercial model or support arrangement. This page is a sourced comparison draft, not a claim that Restrova is universally better or affiliated with Indolj.",
+    "sections": [
+      {
+        "heading": "Establish the current requirement",
+        "text": "Write down the specific problem and the configuration currently in use. [Indolj's official FAQ](https://www.indolj.pk/frequently-asked-questions.php), checked on 10 November 2026, describes online ordering. Do not infer that a feature is absent simply because it is not discussed here; request current confirmation from the supplier."
+      },
+      {
+        "heading": "Compare Restrova using the same order",
+        "text": "Restrova's stated scope includes ordering websites/apps, POS, inventory, delivery and reporting. Demonstrate the actual connection using your menu, a correction and a delivery exception. Record external dependencies rather than assuming every integration is included. The useful advantage is a task that works for your operation, not a larger marketing list."
+      },
+      {
+        "heading": "Normalize price and switching work",
+        "text": "Restrova's approved model is PKR 10,000 onboarding and max(PKR 5,000, 1% of monthly Restrova-processed sales). Obtain a current Indolj quote for the same scope. Include menu migration, devices, training and domain arrangements. A lower headline fee is not proof of lower total cost."
+      },
+      {
+        "heading": "Decide whether switching is necessary",
+        "text": "Ask whether configuration or support can resolve the current issue before replacing a working channel. If switching, pilot the new flow and preserve historical records needed for the business. No competitor weakness, migration deadline or customer result is asserted without evidence."
+      }
+    ],
     "relatedLinks": [
+      "/blog/compare-restaurant-ordering-systems",
       "/services",
       "/pricing",
+      "/about",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.indolj.pk/frequently-asked-questions.php",
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/compare/indolj-alternative",
     "reviewNote": "Needs dated primary-source pricing, capabilities, limitations and fair criteria. No ranking or affiliation implied.",
     "mappedTo": null,
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "indolj alternative",
+    "secondaryKeywords": [
+      "Indolj Alternative workflow",
+      "Indolj Alternative evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "comparison-blink-alternative",
     "pageType": "comparison",
     "path": "/compare/blink-alternative",
     "title": "Blink Alternative",
-    "description": "Evaluate blink alternative using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "A restaurant researching a Blink alternative should define what it needs to change: customer experience, operational handoff, pricing or support.",
+    "intro": "A restaurant researching a Blink alternative should define what it needs to change: customer experience, operational handoff, pricing or support. This draft compares evaluation questions and makes no claim of affiliation or a universal winner.",
+    "sections": [
+      {
+        "heading": "Confirm the current scope",
+        "text": "[Blink's official explanation](https://www.blinkco.io/help-center/faq-why-blink/), checked on 10 November 2026, describes branded website/app offerings. Request the current package and commercial terms directly. An omitted capability in this draft is an evidence gap, not proof that Blink lacks it."
+      },
+      {
+        "heading": "Test the alternative end to end",
+        "text": "Ask Restrova to demonstrate one customer order through its verified restaurant workflows. Include a changed item, an unavailable component and a closing question. Use the intended devices and identify who owns any external connection. A separate screen for inventory or delivery does not by itself prove the required handoff."
+      },
+      {
+        "heading": "Compare ownership and ongoing work",
+        "text": "Clarify domain and app-store arrangements, menu maintenance, support and data export. Restrova's approved fee is PKR 10,000 onboarding plus max(PKR 5,000, 1% of monthly Restrova-processed sales). Compare it with a current Blink proposal on the same assumptions; no competitor price is guessed here."
+      },
+      {
+        "heading": "Pilot before replacing the channel",
+        "text": "Keep the current service operating until the new configuration passes agreed tasks. Review staff training, customer links and historical records. Ask whether the original problem can be resolved without migration. This page remains unreviewed and must not advertise unsupported savings, integrations or comparative performance."
+      }
+    ],
     "relatedLinks": [
+      "/blog/compare-restaurant-ordering-systems",
       "/services",
       "/pricing",
+      "/about",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.blinkco.io/help-center/faq-why-blink/",
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/compare/blink-alternative",
     "reviewNote": "Needs dated primary-source pricing, capabilities, limitations and fair criteria. No ranking or affiliation implied.",
     "mappedTo": null,
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "blink alternative",
+    "secondaryKeywords": [
+      "Blink Alternative workflow",
+      "Blink Alternative evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "comparison-indolj-vs-blink",
     "pageType": "comparison",
     "path": "/compare/indolj-vs-blink",
     "title": "Indolj vs Blink",
-    "description": "Evaluate indolj vs blink using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "Indolj and Blink should be compared using the same restaurant requirements and current written proposals.",
+    "intro": "Indolj and Blink should be compared using the same restaurant requirements and current written proposals. This draft provides a fair assessment process without ranking the suppliers or implying that Restrova is associated with either company.",
+    "sections": [
+      {
+        "heading": "Use narrow, sourced starting facts",
+        "text": "[Indolj's FAQ](https://www.indolj.pk/frequently-asked-questions.php) describes online ordering. [Blink's official page](https://www.blinkco.io/help-center/faq-why-blink/) describes branded website/app options. Both sources were checked on 10 November 2026. These descriptions do not establish identical modules, support or payment arrangements."
+      },
+      {
+        "heading": "Compare one customer journey",
+        "text": "Give both suppliers the same menu item, required option and fulfilment scenario. Test total-price clarity, acceptance and the restaurant handoff. Include a correction and cancellation. Mark each result demonstrated, requires configuration or unresolved rather than assigning a score from marketing text alone."
+      },
+      {
+        "heading": "Compare the commercial scope",
+        "text": "Obtain current quotes covering the same branches, devices, channels and period. Separate setup, recurring charges, payments, delivery, support and optional integration work. This draft intentionally does not publish an unverified competitor price or infer a missing feature."
+      },
+      {
+        "heading": "Choose by operating fit",
+        "text": "Have staff repeat the essential tasks and confirm who supports failures. If considering Restrova alongside them, use the same test and its disclosed pricing formula. A demonstration record and written agreement are stronger decision evidence than an unsupported “best” label. Human review and current supplier confirmation remain required before this comparison page is published."
+      }
+    ],
     "relatedLinks": [
+      "/blog/compare-restaurant-ordering-systems",
       "/services",
       "/pricing",
+      "/about",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.indolj.pk/frequently-asked-questions.php",
+      "https://www.blinkco.io/help-center/faq-why-blink/",
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/compare/indolj-vs-blink",
     "reviewNote": "Needs dated primary-source pricing, capabilities, limitations and fair criteria. No ranking or affiliation implied.",
     "mappedTo": null,
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "indolj vs blink",
+    "secondaryKeywords": [
+      "Indolj vs Blink workflow",
+      "Indolj vs Blink evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "comparison-indolj-vs-restrova",
     "pageType": "comparison",
     "path": "/compare/indolj-vs-restrova",
     "title": "Indolj vs Restrova",
-    "description": "Evaluate indolj vs restrova using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "Compare Indolj and Restrova by the customer order, restaurant handoff and complete cost of the proposed configuration.",
+    "intro": "Compare Indolj and Restrova by the customer order, restaurant handoff and complete cost of the proposed configuration. This is an unreviewed comparison draft, not an independent ranking or a claim of affiliation.",
+    "sections": [
+      {
+        "heading": "Establish supported scope",
+        "text": "[Indolj's official FAQ](https://www.indolj.pk/frequently-asked-questions.php), checked on 10 November 2026, provides its online-ordering starting description. Restrova's existing service pages explain branded ordering, POS, inventory, delivery and reporting. Demonstrate the required functions for both products; do not interpret this page's omissions as competitor limitations."
+      },
+      {
+        "heading": "Verify the same operational sequence",
+        "text": "Use a meal with an extra, an unavailable item and a cancellation. Ask how each request reaches preparation and how the final amount appears in reporting. If a POS or payment connection is needed, identify the exact supported setup and support owner. Neither a logo nor a broad module label proves compatibility."
+      },
+      {
+        "heading": "Compare fees without hiding the basis",
+        "text": "Restrova charges PKR 10,000 onboarding and the higher of PKR 5,000 or 1% of monthly sales processed through Restrova. Obtain Indolj's current written proposal rather than treating a search snippet as a complete quote. Include external services and branch scope in both totals."
+      },
+      {
+        "heading": "Record a conditional decision",
+        "text": "Choose the proposal that passes essential tasks with understandable costs and responsibilities. Keep unresolved requirements visible and pilot any migration. This comparison does not establish a universal winner, measured savings, superior support or a competitor integration gap without further evidence."
+      }
+    ],
     "relatedLinks": [
+      "/blog/compare-restaurant-ordering-systems",
       "/services",
       "/pricing",
+      "/about",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.indolj.pk/frequently-asked-questions.php",
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/compare/indolj-vs-restrova",
     "reviewNote": "Needs dated primary-source pricing, capabilities, limitations and fair criteria. No ranking or affiliation implied.",
     "mappedTo": null,
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "indolj vs restrova",
+    "secondaryKeywords": [
+      "Indolj vs Restrova workflow",
+      "Indolj vs Restrova evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "comparison-blink-vs-restrova",
     "pageType": "comparison",
     "path": "/compare/blink-vs-restrova",
     "title": "Blink vs Restrova",
-    "description": "Evaluate blink vs restrova using your menu, staffing, ordering channels and fulfilment needs before deciding on a software setup.",
-    "intro": "",
-    "sections": [],
+    "description": "Blink and Restrova should be evaluated against the restaurant's intended channels and operating responsibilities.",
+    "intro": "Blink and Restrova should be evaluated against the restaurant's intended channels and operating responsibilities. This draft explains the comparison process without claiming a winner, endorsement or commercial relationship between the companies.",
+    "sections": [
+      {
+        "heading": "Begin with verified product descriptions",
+        "text": "[Blink's official explanation](https://www.blinkco.io/help-center/faq-why-blink/), checked on 10 November 2026, describes branded website/app offerings. Restrova's service pages describe its ordering and connected restaurant workflows. The exact modules and contractual scope must be confirmed in each proposal."
+      },
+      {
+        "heading": "Inspect customer and staff tasks",
+        "text": "Test menu choices, totals and acceptance on a phone, then trace the same order through preparation and fulfilment. Include a customer change and a failed-delivery scenario where relevant. Ask the intended staff member to repeat the task. A successful supplier-led presentation is useful but not complete staff acceptance."
+      },
+      {
+        "heading": "Normalize pricing and ownership",
+        "text": "Restrova's approved formula is PKR 10,000 onboarding and max(PKR 5,000, 1% of monthly Restrova-processed sales). Request current Blink terms for equivalent scope. Compare domain/app ownership, maintenance, payment services, delivery and support rather than only the first monthly amount."
+      },
+      {
+        "heading": "Keep the final decision evidence-based",
+        "text": "Record demonstrated tasks, configuration work and unresolved dependencies. Use a pilot before changing the customer channel and preserve necessary historical records. No unsupported competitor price, absent feature, integration claim or performance result should be added during publication review. The decision depends on the restaurant's actual requirements and the evidence supplied."
+      }
+    ],
     "relatedLinks": [
+      "/blog/compare-restaurant-ordering-systems",
       "/services",
       "/pricing",
+      "/about",
       "/contact"
     ],
     "publicationStatus": "needs_review",
-    "verificationStatus": "unverified",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.blinkco.io/help-center/faq-why-blink/",
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/compare/blink-vs-restrova",
     "reviewNote": "Needs dated primary-source pricing, capabilities, limitations and fair criteria. No ranking or affiliation implied.",
     "mappedTo": null,
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "blink vs restrova",
+    "secondaryKeywords": [
+      "Blink vs Restrova workflow",
+      "Blink vs Restrova evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "calculator-restaurant-profit-margin-calculator",
@@ -902,12 +1857,23 @@
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "Repository formula implementation: src/lib/restaurant-calculators.ts"
+    ],
     "canonicalUrl": "https://www.restrova.com/tools/restaurant-profit-margin-calculator",
     "reviewNote": "Functional tool; keep noindex until editorial review and rollout approval.",
     "mappedTo": null,
     "calculator": "profit",
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "primaryKeyword": "restaurant profit margin calculator",
+    "secondaryKeywords": [
+      "Restaurant Profit Margin Calculator workflow",
+      "Restaurant Profit Margin Calculator evaluation"
+    ],
+    "searchIntent": "Practical resource",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo",
+    "draftStatus": "complete_content_draft"
   },
   {
     "id": "calculator-food-delivery-commission-calculator",
@@ -937,12 +1903,23 @@
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "Repository formula implementation: src/lib/restaurant-calculators.ts"
+    ],
     "canonicalUrl": "https://www.restrova.com/tools/food-delivery-commission-calculator",
     "reviewNote": "Functional tool; keep noindex until editorial review and rollout approval.",
     "mappedTo": null,
     "calculator": "commission",
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "primaryKeyword": "food delivery commission calculator",
+    "secondaryKeywords": [
+      "Food Delivery Commission Calculator workflow",
+      "Food Delivery Commission Calculator evaluation"
+    ],
+    "searchIntent": "Practical resource",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo",
+    "draftStatus": "complete_content_draft"
   },
   {
     "id": "calculator-restaurant-food-cost-calculator",
@@ -972,12 +1949,23 @@
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "Repository formula implementation: src/lib/restaurant-calculators.ts"
+    ],
     "canonicalUrl": "https://www.restrova.com/tools/restaurant-food-cost-calculator",
     "reviewNote": "Functional tool; keep noindex until editorial review and rollout approval.",
     "mappedTo": null,
     "calculator": "food",
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "primaryKeyword": "restaurant food cost calculator",
+    "secondaryKeywords": [
+      "Restaurant Food Cost Calculator workflow",
+      "Restaurant Food Cost Calculator evaluation"
+    ],
+    "searchIntent": "Practical resource",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo",
+    "draftStatus": "complete_content_draft"
   },
   {
     "id": "calculator-restaurant-menu-pricing-calculator",
@@ -1007,12 +1995,23 @@
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "Repository formula implementation: src/lib/restaurant-calculators.ts"
+    ],
     "canonicalUrl": "https://www.restrova.com/tools/menu-pricing-calculator",
     "reviewNote": "Functional tool; keep noindex until editorial review and rollout approval.",
     "mappedTo": null,
     "calculator": "menu",
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "primaryKeyword": "restaurant menu pricing calculator",
+    "secondaryKeywords": [
+      "Restaurant Menu Pricing Calculator workflow",
+      "Restaurant Menu Pricing Calculator evaluation"
+    ],
+    "searchIntent": "Practical resource",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo",
+    "draftStatus": "complete_content_draft"
   },
   {
     "id": "calculator-restaurant-online-ordering-roi-calculator",
@@ -1042,12 +2041,23 @@
     "reviewedBy": "",
     "reviewedAt": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "Repository formula implementation: src/lib/restaurant-calculators.ts"
+    ],
     "canonicalUrl": "https://www.restrova.com/tools/online-ordering-roi-calculator",
     "reviewNote": "Functional tool; keep noindex until editorial review and rollout approval.",
     "mappedTo": null,
     "calculator": "roi",
-    "reviewSignature": ""
+    "reviewSignature": "",
+    "primaryKeyword": "restaurant online ordering roi calculator",
+    "secondaryKeywords": [
+      "Restaurant Online Ordering ROI Calculator workflow",
+      "Restaurant Online Ordering ROI Calculator evaluation"
+    ],
+    "searchIntent": "Practical resource",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo",
+    "draftStatus": "complete_content_draft"
   },
   {
     "id": "resource-restaurant-inventory-template",
@@ -1084,7 +2094,16 @@
     "canonicalUrl": "https://www.restrova.com/templates/restaurant-inventory-template",
     "reviewNote": "Usable printable asset created; review field names and instructions before publication.",
     "mappedTo": null,
-    "resourceFile": "restaurant-inventory-template.html"
+    "resourceFile": "restaurant-inventory-template.html",
+    "primaryKeyword": "restaurant inventory template",
+    "secondaryKeywords": [
+      "Restaurant Inventory Template workflow",
+      "Restaurant Inventory Template evaluation"
+    ],
+    "searchIntent": "Practical resource",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo",
+    "draftStatus": "complete_content_draft"
   },
   {
     "id": "resource-restaurant-daily-sales-report",
@@ -1121,7 +2140,16 @@
     "canonicalUrl": "https://www.restrova.com/templates/restaurant-daily-sales-report",
     "reviewNote": "Usable printable asset created; review field names and instructions before publication.",
     "mappedTo": null,
-    "resourceFile": "restaurant-daily-sales-report.html"
+    "resourceFile": "restaurant-daily-sales-report.html",
+    "primaryKeyword": "restaurant daily sales report",
+    "secondaryKeywords": [
+      "Restaurant Daily Sales Report workflow",
+      "Restaurant Daily Sales Report evaluation"
+    ],
+    "searchIntent": "Practical resource",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo",
+    "draftStatus": "complete_content_draft"
   },
   {
     "id": "resource-restaurant-food-costing-template",
@@ -1158,7 +2186,16 @@
     "canonicalUrl": "https://www.restrova.com/templates/restaurant-food-costing-template",
     "reviewNote": "Usable printable asset created; review field names and instructions before publication.",
     "mappedTo": null,
-    "resourceFile": "restaurant-food-costing-template.html"
+    "resourceFile": "restaurant-food-costing-template.html",
+    "primaryKeyword": "restaurant food costing template",
+    "secondaryKeywords": [
+      "Restaurant Food Costing Template workflow",
+      "Restaurant Food Costing Template evaluation"
+    ],
+    "searchIntent": "Practical resource",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo",
+    "draftStatus": "complete_content_draft"
   },
   {
     "id": "resource-restaurant-menu-pricing-template",
@@ -1195,7 +2232,16 @@
     "canonicalUrl": "https://www.restrova.com/templates/restaurant-menu-pricing-template",
     "reviewNote": "Usable printable asset created; review field names and instructions before publication.",
     "mappedTo": null,
-    "resourceFile": "restaurant-menu-pricing-template.html"
+    "resourceFile": "restaurant-menu-pricing-template.html",
+    "primaryKeyword": "restaurant menu pricing template",
+    "secondaryKeywords": [
+      "Restaurant Menu Pricing Template workflow",
+      "Restaurant Menu Pricing Template evaluation"
+    ],
+    "searchIntent": "Practical resource",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo",
+    "draftStatus": "complete_content_draft"
   },
   {
     "id": "resource-restaurant-staff-schedule",
@@ -1232,7 +2278,16 @@
     "canonicalUrl": "https://www.restrova.com/templates/restaurant-staff-schedule",
     "reviewNote": "Usable printable asset created; review field names and instructions before publication.",
     "mappedTo": null,
-    "resourceFile": "restaurant-staff-schedule.html"
+    "resourceFile": "restaurant-staff-schedule.html",
+    "primaryKeyword": "restaurant staff schedule",
+    "secondaryKeywords": [
+      "Restaurant Staff Schedule workflow",
+      "Restaurant Staff Schedule evaluation"
+    ],
+    "searchIntent": "Practical resource",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo",
+    "draftStatus": "complete_content_draft"
   },
   {
     "id": "resource-restaurant-order-tracking-template",
@@ -1269,7 +2324,16 @@
     "canonicalUrl": "https://www.restrova.com/templates/restaurant-order-tracking-template",
     "reviewNote": "Usable printable asset created; review field names and instructions before publication.",
     "mappedTo": null,
-    "resourceFile": "restaurant-order-tracking-template.html"
+    "resourceFile": "restaurant-order-tracking-template.html",
+    "primaryKeyword": "restaurant order tracking template",
+    "secondaryKeywords": [
+      "Restaurant Order Tracking Template workflow",
+      "Restaurant Order Tracking Template evaluation"
+    ],
+    "searchIntent": "Practical resource",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo",
+    "draftStatus": "complete_content_draft"
   },
   {
     "id": "resource-restaurant-profit-and-loss-template",
@@ -1306,7 +2370,16 @@
     "canonicalUrl": "https://www.restrova.com/templates/restaurant-profit-and-loss-template",
     "reviewNote": "Usable printable asset created; review field names and instructions before publication.",
     "mappedTo": null,
-    "resourceFile": "restaurant-profit-and-loss-template.html"
+    "resourceFile": "restaurant-profit-and-loss-template.html",
+    "primaryKeyword": "restaurant profit and loss template",
+    "secondaryKeywords": [
+      "Restaurant Profit and Loss Template workflow",
+      "Restaurant Profit and Loss Template evaluation"
+    ],
+    "searchIntent": "Practical resource",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo",
+    "draftStatus": "complete_content_draft"
   },
   {
     "id": "resource-restaurant-opening-checklist",
@@ -1343,7 +2416,16 @@
     "canonicalUrl": "https://www.restrova.com/templates/restaurant-opening-checklist",
     "reviewNote": "Usable printable asset created; review field names and instructions before publication.",
     "mappedTo": null,
-    "resourceFile": "restaurant-opening-checklist.html"
+    "resourceFile": "restaurant-opening-checklist.html",
+    "primaryKeyword": "restaurant opening checklist",
+    "secondaryKeywords": [
+      "Restaurant Opening Checklist workflow",
+      "Restaurant Opening Checklist evaluation"
+    ],
+    "searchIntent": "Practical resource",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo",
+    "draftStatus": "complete_content_draft"
   },
   {
     "id": "resource-restaurant-closing-checklist",
@@ -1380,7 +2462,16 @@
     "canonicalUrl": "https://www.restrova.com/templates/restaurant-closing-checklist",
     "reviewNote": "Usable printable asset created; review field names and instructions before publication.",
     "mappedTo": null,
-    "resourceFile": "restaurant-closing-checklist.html"
+    "resourceFile": "restaurant-closing-checklist.html",
+    "primaryKeyword": "restaurant closing checklist",
+    "secondaryKeywords": [
+      "Restaurant Closing Checklist workflow",
+      "Restaurant Closing Checklist evaluation"
+    ],
+    "searchIntent": "Practical resource",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo",
+    "draftStatus": "complete_content_draft"
   },
   {
     "id": "resource-restaurant-delivery-checklist",
@@ -1417,7 +2508,16 @@
     "canonicalUrl": "https://www.restrova.com/templates/restaurant-delivery-checklist",
     "reviewNote": "Usable printable asset created; review field names and instructions before publication.",
     "mappedTo": null,
-    "resourceFile": "restaurant-delivery-checklist.html"
+    "resourceFile": "restaurant-delivery-checklist.html",
+    "primaryKeyword": "restaurant delivery checklist",
+    "secondaryKeywords": [
+      "Restaurant Delivery Checklist workflow",
+      "Restaurant Delivery Checklist evaluation"
+    ],
+    "searchIntent": "Practical resource",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo",
+    "draftStatus": "complete_content_draft"
   },
   {
     "id": "resource-restaurant-customer-feedback-form",
@@ -1454,7 +2554,16 @@
     "canonicalUrl": "https://www.restrova.com/templates/restaurant-customer-feedback-form",
     "reviewNote": "Usable printable asset created; review field names and instructions before publication.",
     "mappedTo": null,
-    "resourceFile": "restaurant-customer-feedback-form.html"
+    "resourceFile": "restaurant-customer-feedback-form.html",
+    "primaryKeyword": "restaurant customer feedback form",
+    "secondaryKeywords": [
+      "Restaurant Customer Feedback Form workflow",
+      "Restaurant Customer Feedback Form evaluation"
+    ],
+    "searchIntent": "Practical resource",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo",
+    "draftStatus": "complete_content_draft"
   },
   {
     "id": "resource-restaurant-purchase-order-template",
@@ -1491,7 +2600,16 @@
     "canonicalUrl": "https://www.restrova.com/templates/restaurant-purchase-order-template",
     "reviewNote": "Usable printable asset created; review field names and instructions before publication.",
     "mappedTo": null,
-    "resourceFile": "restaurant-purchase-order-template.html"
+    "resourceFile": "restaurant-purchase-order-template.html",
+    "primaryKeyword": "restaurant purchase order template",
+    "secondaryKeywords": [
+      "Restaurant Purchase Order Template workflow",
+      "Restaurant Purchase Order Template evaluation"
+    ],
+    "searchIntent": "Practical resource",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo",
+    "draftStatus": "complete_content_draft"
   },
   {
     "id": "resource-restaurant-expense-tracker",
@@ -1528,7 +2646,16 @@
     "canonicalUrl": "https://www.restrova.com/templates/restaurant-expense-tracker",
     "reviewNote": "Usable printable asset created; review field names and instructions before publication.",
     "mappedTo": null,
-    "resourceFile": "restaurant-expense-tracker.html"
+    "resourceFile": "restaurant-expense-tracker.html",
+    "primaryKeyword": "restaurant expense tracker",
+    "secondaryKeywords": [
+      "Restaurant Expense Tracker workflow",
+      "Restaurant Expense Tracker evaluation"
+    ],
+    "searchIntent": "Practical resource",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo",
+    "draftStatus": "complete_content_draft"
   },
   {
     "id": "resource-restaurant-sales-forecast-template",
@@ -1565,7 +2692,16 @@
     "canonicalUrl": "https://www.restrova.com/templates/restaurant-sales-forecast-template",
     "reviewNote": "Usable printable asset created; review field names and instructions before publication.",
     "mappedTo": null,
-    "resourceFile": "restaurant-sales-forecast-template.html"
+    "resourceFile": "restaurant-sales-forecast-template.html",
+    "primaryKeyword": "restaurant sales forecast template",
+    "secondaryKeywords": [
+      "Restaurant Sales Forecast Template workflow",
+      "Restaurant Sales Forecast Template evaluation"
+    ],
+    "searchIntent": "Practical resource",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo",
+    "draftStatus": "complete_content_draft"
   },
   {
     "id": "resource-restaurant-marketing-calendar",
@@ -1602,206 +2738,423 @@
     "canonicalUrl": "https://www.restrova.com/templates/restaurant-marketing-calendar",
     "reviewNote": "Usable printable asset created; review field names and instructions before publication.",
     "mappedTo": null,
-    "resourceFile": "restaurant-marketing-calendar.html"
+    "resourceFile": "restaurant-marketing-calendar.html",
+    "primaryKeyword": "restaurant marketing calendar",
+    "secondaryKeywords": [
+      "Restaurant Marketing Calendar workflow",
+      "Restaurant Marketing Calendar evaluation"
+    ],
+    "searchIntent": "Practical resource",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo",
+    "draftStatus": "complete_content_draft"
   },
   {
     "id": "website-template-pizza",
     "pageType": "website_template",
     "path": "/website-templates/pizza-restaurant-website-templates",
     "title": "Pizza Website Templates",
-    "description": "Review genuine pizza ordering website demonstrations when approved assets are available.",
-    "intro": "",
-    "sections": [],
+    "description": "A pizza ordering website should make size, choices and meal contents clear on a phone.",
+    "intro": "A pizza ordering website should make size, choices and meal contents clear on a phone. This is a template-selection draft; an approved working Restrova pizza demonstration has not been attached, so no screenshot or live preview is fabricated.",
+    "sections": [
+      {
+        "heading": "Evaluate the menu layout",
+        "text": "Inspect a real example with size, crust and extras using the supported configuration. Check whether required choices are clear and the total changes understandably. Complex half-and-half or bundle rules need their own demonstration."
+      },
+      {
+        "heading": "Test ordering beyond the home page",
+        "text": "Follow a modified pizza through checkout, acceptance and the restaurant handoff. Inspect a sold-out component and a correction. A static design cannot establish the operational behaviour behind it."
+      },
+      {
+        "heading": "Prepare the setup pack",
+        "text": "Supply genuine food images, approved names, prices, branch details and fulfilment rules. Confirm domain and maintenance ownership. Keep this candidate private until a genuine working preview and supported feature evidence are approved; an attractive layout must not imply unavailable product functions."
+      }
+    ],
     "relatedLinks": [
       "/services/restaurant-ordering-websites",
+      "/apps",
       "/pricing",
       "/contact"
     ],
-    "publicationStatus": "draft",
-    "verificationStatus": "unverified",
+    "publicationStatus": "needs_review",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "reviewSignature": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/website-templates/pizza-restaurant-website-templates",
     "reviewNote": "No approved working template supplied. Hold until owner provides a real demonstration and verified scope.",
-    "mappedTo": null
+    "mappedTo": null,
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "pizza website templates",
+    "secondaryKeywords": [
+      "Pizza Website Templates workflow",
+      "Pizza Website Templates evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "website-template-burger",
     "pageType": "website_template",
     "path": "/website-templates/burger-restaurant-website-templates",
     "title": "Burger Website Templates",
-    "description": "Review genuine burger ordering website demonstrations when approved assets are available.",
-    "intro": "",
-    "sections": [],
+    "description": "A burger website template should explain meal combinations without making the customer guess what is included.",
+    "intro": "A burger website template should explain meal combinations without making the customer guess what is included. This draft defines selection criteria while an approved working demonstration remains outstanding.",
+    "sections": [
+      {
+        "heading": "Review the meal presentation",
+        "text": "Use a burger, side and drink with a substitution and a paid extra. The layout should distinguish included items from additions and preserve readable prices on small screens. Verify the actual product configuration rather than assuming every deal builder is supported."
+      },
+      {
+        "heading": "Inspect corrections and availability",
+        "text": "Change one choice and make a component unavailable in an authorized test. Confirm the customer and restaurant see the final instruction. A home-page screenshot does not prove these behaviours."
+      },
+      {
+        "heading": "Agree implementation responsibilities",
+        "text": "Prepare genuine menu photography, approved descriptions, prices and collection/delivery details. Identify who maintains the menu and handles customer questions. Do not publish this template candidate until a real responsive preview and verified feature scope are available; no fake checkout, product screen or customer result should be used as evidence."
+      }
+    ],
     "relatedLinks": [
       "/services/restaurant-ordering-websites",
+      "/apps",
       "/pricing",
       "/contact"
     ],
-    "publicationStatus": "draft",
-    "verificationStatus": "unverified",
+    "publicationStatus": "needs_review",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "reviewSignature": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/website-templates/burger-restaurant-website-templates",
     "reviewNote": "No approved working template supplied. Hold until owner provides a real demonstration and verified scope.",
-    "mappedTo": null
+    "mappedTo": null,
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "burger website templates",
+    "secondaryKeywords": [
+      "Burger Website Templates workflow",
+      "Burger Website Templates evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "website-template-cafe",
     "pageType": "website_template",
     "path": "/website-templates/cafe-restaurant-website-templates",
     "title": "Cafe Website Templates",
-    "description": "Review genuine cafe ordering website demonstrations when approved assets are available.",
-    "intro": "",
-    "sections": [],
+    "description": "A café ordering website should make drinks, food and collection information easy to understand.",
+    "intro": "A café ordering website should make drinks, food and collection information easy to understand. This draft is a review brief, not a claim that a specific live café template has already been approved.",
+    "sections": [
+      {
+        "heading": "Check beverage choices on mobile",
+        "text": "Use a drink with a size and an extra, then add a food item. Verify the supported choices, resulting total and readability of the order summary. Do not infer loyalty or dietary-option automation from a visual layout."
+      },
+      {
+        "heading": "Follow the collection journey",
+        "text": "Confirm the branch, hours and pickup instructions before submission. Inspect the acceptance message and the reference staff use at handover. Test a correction after the initial selection."
+      },
+      {
+        "heading": "Prepare genuine evidence",
+        "text": "Provide approved café imagery, menu copy and operating details. Establish who updates sold-out items and maintains the domain. This candidate remains private until a real responsive Restrova demonstration is approved and its features are verified; existing app examples may inform questions but must not be relabelled as an unverified website template."
+      }
+    ],
     "relatedLinks": [
       "/services/restaurant-ordering-websites",
+      "/apps",
       "/pricing",
       "/contact"
     ],
-    "publicationStatus": "draft",
-    "verificationStatus": "unverified",
+    "publicationStatus": "needs_review",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "reviewSignature": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/website-templates/cafe-restaurant-website-templates",
     "reviewNote": "No approved working template supplied. Hold until owner provides a real demonstration and verified scope.",
-    "mappedTo": null
+    "mappedTo": null,
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "cafe website templates",
+    "secondaryKeywords": [
+      "Cafe Website Templates workflow",
+      "Cafe Website Templates evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "website-template-bakery",
     "pageType": "website_template",
     "path": "/website-templates/bakery-restaurant-website-templates",
     "title": "Bakery Website Templates",
-    "description": "Review genuine bakery ordering website demonstrations when approved assets are available.",
-    "intro": "",
-    "sections": [],
+    "description": "A bakery website should distinguish ready-to-sell products from requests requiring extra preparation or agreement.",
+    "intro": "A bakery website should distinguish ready-to-sell products from requests requiring extra preparation or agreement. This template draft does not assume support for custom cakes, deposits or collection scheduling.",
+    "sections": [
+      {
+        "heading": "Separate different product journeys",
+        "text": "Review an ordinary bakery item and a more complex request. Check quantity, size and supported choices. If lead times, inscriptions or slots are essential, ask for actual product evidence before including them in the template's feature list."
+      },
+      {
+        "heading": "Inspect availability and handover",
+        "text": "Test a sold-out item and an order already received when availability changes. Confirm the amount due and how staff identify the correct collection. A visual card layout alone does not establish stock reservation."
+      },
+      {
+        "heading": "Approve assets and scope",
+        "text": "Use genuine product images and restaurant-approved descriptions. Agree menu maintenance and customer support responsibilities. Keep this candidate unpublished until a genuine responsive preview is supplied and reviewed; do not fabricate a working ordering screen or imply specialist bakery capabilities that have not been demonstrated."
+      }
+    ],
     "relatedLinks": [
       "/services/restaurant-ordering-websites",
+      "/apps",
       "/pricing",
       "/contact"
     ],
-    "publicationStatus": "draft",
-    "verificationStatus": "unverified",
+    "publicationStatus": "needs_review",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "reviewSignature": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/website-templates/bakery-restaurant-website-templates",
     "reviewNote": "No approved working template supplied. Hold until owner provides a real demonstration and verified scope.",
-    "mappedTo": null
+    "mappedTo": null,
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "bakery website templates",
+    "secondaryKeywords": [
+      "Bakery Website Templates workflow",
+      "Bakery Website Templates evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "website-template-cloud-kitchen",
     "pageType": "website_template",
     "path": "/website-templates/cloud-kitchen-restaurant-website-templates",
     "title": "Cloud Kitchen Website Templates",
-    "description": "Review genuine cloud kitchen ordering website demonstrations when approved assets are available.",
-    "intro": "",
-    "sections": [],
+    "description": "A cloud-kitchen website should give customers a clear menu and delivery promise while preserving the correct restaurant workflow.",
+    "intro": "A cloud-kitchen website should give customers a clear menu and delivery promise while preserving the correct restaurant workflow. This draft defines the preview requirements and does not establish a live approved template.",
+    "sections": [
+      {
+        "heading": "Clarify brand and fulfilment",
+        "text": "Show which business receives the request and whether pickup, delivery or both are offered. If several brands share a kitchen, verify the proposed product arrangement rather than assuming multi-brand support."
+      },
+      {
+        "heading": "Test the operational journey",
+        "text": "Use an order with several components, a correction and an unavailable item. Inspect acceptance, packing and rider handover through the actual supported workflow. A customer-facing design is not proof of kitchen station routing."
+      },
+      {
+        "heading": "Keep the demonstration genuine",
+        "text": "Prepare approved brand assets, food images, menu data and service boundaries. Confirm domain, support and maintenance ownership. This candidate remains private until a working responsive preview is approved and its functions are documented; no invented delivery result, customer logo or simulated product capability should be presented as evidence."
+      }
+    ],
     "relatedLinks": [
       "/services/restaurant-ordering-websites",
+      "/apps",
       "/pricing",
       "/contact"
     ],
-    "publicationStatus": "draft",
-    "verificationStatus": "unverified",
+    "publicationStatus": "needs_review",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "reviewSignature": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/website-templates/cloud-kitchen-restaurant-website-templates",
     "reviewNote": "No approved working template supplied. Hold until owner provides a real demonstration and verified scope.",
-    "mappedTo": null
+    "mappedTo": null,
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "cloud kitchen website templates",
+    "secondaryKeywords": [
+      "Cloud Kitchen Website Templates workflow",
+      "Cloud Kitchen Website Templates evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "website-template-fast-food",
     "pageType": "website_template",
     "path": "/website-templates/fast-food-restaurant-website-templates",
     "title": "Fast Food Website Templates",
-    "description": "Review genuine fast food ordering website demonstrations when approved assets are available.",
-    "intro": "",
-    "sections": [],
+    "description": "A fast-food ordering website should help customers understand deals quickly while keeping prices and choices accurate.",
+    "intro": "A fast-food ordering website should help customers understand deals quickly while keeping prices and choices accurate. This draft is a template evaluation brief pending an approved working example.",
+    "sections": [
+      {
+        "heading": "Review deal selection",
+        "text": "Use a meal with a substitution and a paid addition. Confirm the included items, required choices and total on a narrow screen. Complex combinations must be supported by the actual system, not merely illustrated in a mockup."
+      },
+      {
+        "heading": "Follow the request into service",
+        "text": "Test acceptance, a correction and a sold-out component. Ask how the kitchen receives the final instruction and how the packer identifies the completed order. Do not infer automatic capacity controls from a ready button."
+      },
+      {
+        "heading": "Prepare the launch content",
+        "text": "Supply genuine food images, approved prices, branch details and fulfilment instructions. Assign menu maintenance and support roles. Keep the template page unpublished until a real responsive preview and verified feature scope are approved; a fabricated screen or untested checkout cannot serve as product evidence."
+      }
+    ],
     "relatedLinks": [
       "/services/restaurant-ordering-websites",
+      "/apps",
       "/pricing",
       "/contact"
     ],
-    "publicationStatus": "draft",
-    "verificationStatus": "unverified",
+    "publicationStatus": "needs_review",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "reviewSignature": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/website-templates/fast-food-restaurant-website-templates",
     "reviewNote": "No approved working template supplied. Hold until owner provides a real demonstration and verified scope.",
-    "mappedTo": null
+    "mappedTo": null,
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "fast food website templates",
+    "secondaryKeywords": [
+      "Fast Food Website Templates workflow",
+      "Fast Food Website Templates evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "website-template-fine-dining",
     "pageType": "website_template",
     "path": "/website-templates/fine-dining-restaurant-website-templates",
     "title": "Fine Dining Website Templates",
-    "description": "Review genuine fine dining ordering website demonstrations when approved assets are available.",
-    "intro": "",
-    "sections": [],
+    "description": "A fine-dining website with ordering should explain the particular off-premise or service journey the restaurant offers.",
+    "intro": "A fine-dining website with ordering should explain the particular off-premise or service journey the restaurant offers. This draft does not establish reservation, course-management or specialist payment capabilities.",
+    "sections": [
+      {
+        "heading": "Separate information from transactions",
+        "text": "Present accurate menu context, branch details and the supported ordering action. If the restaurant also takes reservations, confirm the actual arrangement rather than treating a contact form as a reservation integration."
+      },
+      {
+        "heading": "Test the intended service",
+        "text": "Use a representative pickup or delivery request and inspect choices, acceptance and the final handover. For dine-in requirements, obtain separate evidence of the relevant workflow. Dietary statements and ingredient descriptions need restaurant approval."
+      },
+      {
+        "heading": "Require an approved real preview",
+        "text": "Prepare genuine imagery and brand material, then verify the responsive experience on a phone. Agree domain and content-maintenance responsibilities. This candidate stays private until an actual working demonstration is approved; a polished concept must not be marketed as a supported Restrova template or used to imply unverified operational capabilities."
+      }
+    ],
     "relatedLinks": [
       "/services/restaurant-ordering-websites",
+      "/apps",
       "/pricing",
       "/contact"
     ],
-    "publicationStatus": "draft",
-    "verificationStatus": "unverified",
+    "publicationStatus": "needs_review",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "reviewSignature": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/website-templates/fine-dining-restaurant-website-templates",
     "reviewNote": "No approved working template supplied. Hold until owner provides a real demonstration and verified scope.",
-    "mappedTo": null
+    "mappedTo": null,
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "fine dining website templates",
+    "secondaryKeywords": [
+      "Fine Dining Website Templates workflow",
+      "Fine Dining Website Templates evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   },
   {
     "id": "website-template-dessert-shop",
     "pageType": "website_template",
     "path": "/website-templates/dessert-shop-restaurant-website-templates",
     "title": "Dessert Shop Website Templates",
-    "description": "Review genuine dessert shop ordering website demonstrations when approved assets are available.",
-    "intro": "",
-    "sections": [],
+    "description": "A dessert-shop ordering website should make portions, combinations and fulfilment conditions clear.",
+    "intro": "A dessert-shop ordering website should make portions, combinations and fulfilment conditions clear. This draft sets review criteria while a genuine approved template demonstration is still required.",
+    "sections": [
+      {
+        "heading": "Clarify the product choices",
+        "text": "Use an item with a size or flavour choice and a paid addition. Check required selections and the total. If mixed boxes or custom combinations matter, demonstrate those rules explicitly rather than assuming a standard product card supports them."
+      },
+      {
+        "heading": "Match the offer to fulfilment",
+        "text": "Review pickup instructions and the shop's actual delivery packaging and boundary. Test an unavailable component and a changed request. A map or delivery label is not evidence of a guaranteed product condition on arrival."
+      },
+      {
+        "heading": "Approve content and evidence",
+        "text": "Supply genuine dessert images, accurate descriptions and operating details. Confirm who updates availability and answers customer questions. Keep this candidate unpublished until an actual responsive preview and supported feature evidence are approved; no invented product screen, nutrition claim or customer result should fill the missing evidence."
+      }
+    ],
     "relatedLinks": [
       "/services/restaurant-ordering-websites",
+      "/apps",
       "/pricing",
       "/contact"
     ],
-    "publicationStatus": "draft",
-    "verificationStatus": "unverified",
+    "publicationStatus": "needs_review",
+    "verificationStatus": "needs_editorial_review",
     "distinctIntent": false,
     "reviewedBy": "",
     "reviewedAt": "",
     "reviewSignature": "",
     "updatedAt": "2026-11-10",
-    "sources": [],
+    "sources": [
+      "https://www.restrova.com/services",
+      "https://www.restrova.com/pricing"
+    ],
     "canonicalUrl": "https://www.restrova.com/website-templates/dessert-shop-restaurant-website-templates",
     "reviewNote": "No approved working template supplied. Hold until owner provides a real demonstration and verified scope.",
-    "mappedTo": null
+    "mappedTo": null,
+    "draftStatus": "complete_content_draft",
+    "primaryKeyword": "dessert shop website templates",
+    "secondaryKeywords": [
+      "Dessert Shop Website Templates workflow",
+      "Dessert Shop Website Templates evaluation"
+    ],
+    "searchIntent": "Commercial evaluation",
+    "createdAt": "2026-11-10",
+    "ctaType": "demo"
   }
 ]

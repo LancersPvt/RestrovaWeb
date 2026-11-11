@@ -15,6 +15,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...staticSeoPages.map(({ path }) => ({ url: new URL(path, siteConfig.url).toString() })),
     ...solutions.map(({ slug }) => ({ url: `${siteConfig.url}/services/${slug}` })),
     ...businessTypes.map(({ slug }) => ({ url: `${siteConfig.url}/solutions/${slug}` })),
-    ...blogPosts.map((post) => ({ url: `${siteConfig.url}/blog/${post.slug}`, lastModified: new Date(post.updated || post.date) })),
+    ...blogPosts.filter(post => post.indexable !== false).map((post) => ({ url: `${siteConfig.url}/blog/${post.slug}`, lastModified: new Date(post.updated || post.date) })),
   ];
 }

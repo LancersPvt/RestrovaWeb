@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1",
+    "slug": "online-ordering-essentials",
+    "title": "Online ordering essentials",
+    "description": "Understand ordering systems, compare approaches and plan your first direct channel.",
+    "serviceHref": "/services/restaurant-ordering-websites"
+  },
+  {
+    "id": "2",
+    "slug": "restaurant-management-software",
+    "title": "Restaurant management software",
+    "description": "Connect staff tasks, stock, reporting and branch operations with a practical buying checklist.",
+    "serviceHref": "/services/restaurant-pos"
+  },
+  {
+    "id": "3",
+    "slug": "online-ordering-pakistan",
+    "title": "Online ordering in Pakistan",
+    "description": "Prepare menus, fulfilment responsibilities and a realistic launch plan for your restaurant.",
+    "serviceHref": "/services/restaurant-ordering-websites"
+  },
+  {
+    "id": "4",
+    "slug": "restaurant-pos",
+    "title": "Restaurant POS selection",
+    "description": "Evaluate counter workflows, devices, connectivity, costs and multi-branch requirements.",
+    "serviceHref": "/services/restaurant-pos"
+  },
+  {
+    "id": "5",
+    "slug": "restaurant-ordering-workflows",
+    "title": "Restaurant ordering workflows",
+    "description": "Follow orders from entry to preparation, packing and dispatch, with clear responsibility at each step.",
+    "serviceHref": "/services/delivery-management"
+  },
+  {
+    "id": "6",
+    "slug": "ordering-costs-and-commissions",
+    "title": "Ordering costs and commissions",
+    "description": "Compare fee models and complete operating costs. Restrova has a sales-based fee and is not commission-free.",
+    "serviceHref": "/pricing"
+  },
+  {
+    "id": "7",
+    "slug": "management-systems-pakistan",
+    "title": "Management systems in Pakistan",
+    "description": "Choose and introduce a system around the way your team works, including inventory and branches.",
+    "serviceHref": "/services/inventory-management"
+  },
+  {
+    "id": "8",
+    "slug": "food-ordering-operations",
+    "title": "Food ordering operations",
+    "description": "Improve customer journeys and delivery processes while checking the actual integration scope.",
+    "serviceHref": "/services/delivery-management"
+  },
+  {
+    "id": "9",
+    "slug": "restaurant-ordering-websites",
+    "title": "Restaurant ordering websites",
+    "description": "Plan a website, connect ordering to an existing site and make the customer journey clear.",
+    "serviceHref": "/services/restaurant-ordering-websites"
+  },
+  {
+    "id": "10",
+    "slug": "order-management",
+    "title": "Order management",
+    "description": "Coordinate dine-in, takeaway and delivery, handle amendments and reconcile orders.",
+    "serviceHref": "/services/restaurant-pos"
+  }
+]

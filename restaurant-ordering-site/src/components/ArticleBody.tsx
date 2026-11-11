@@ -17,6 +17,7 @@ export default function ArticleBody({ content, startIndex = 0 }: { content: stri
   return <div className="space-y-6">{blocks.map((block, i) => {
     if (block.startsWith("### ")) return <h3 key={i}>{block.slice(4)}</h3>;
     if (block.startsWith("## ")) return <h2 id={articleHeadingId(block.slice(3), i + startIndex)} className="scroll-mt-28" key={i}>{block.slice(3)}</h2>;
+    if (/^\d+\. /.test(block) && block.split("\n").every(line => /^\d+\. /.test(line))) return <ol key={i} className="list-decimal space-y-3 pl-6">{block.split("\n").map((line, j) => <li key={j}><Inline text={line.replace(/^\d+\. /, "")} /></li>)}</ol>;
     if (block.startsWith("- ")) return <ul key={i} className="list-disc space-y-3 pl-6">{block.split("\n").map((line, j) => <li key={j}><Inline text={line.replace(/^- /, "")} /></li>)}</ul>;
     if (block.startsWith("|")) {
       const lines = block.split("\n");

@@ -1,0 +1,71 @@
+RESTROVA PUBLIC BLOG RELEASE — 11 November 2026
+
+Status: implemented and tested locally. No Git commit/push, deployment or live publication performed.
+The owner requested public access to all 100 articles under ten topic headings.
+
+WHAT VISITORS WILL SEE AFTER DEPLOYMENT
+Homepage: ten topic cards below the existing service cards.
+https://www.restrova.com/blog: ten topic cards plus search and pagination.
+https://www.restrova.com/blog/topics/online-ordering-essentials: example ten-article topic.
+All 100 article URLs serve their complete bodies; 16 existing articles remain unchanged.
+Bodies contain 39,749 words total, 346–510 per guide. These are concise guides, not 1,200-word long-form articles.
+
+PUBLICATION AND SEARCH
+100 published in source; 10 indexable, 90 public noindex/follow pending differentiation or supplier-evidence review.
+Ten topic collections are public noindex/follow navigation, with self-canonicals.
+53 sitemap URLs: 43 existing plus ten selected article additions. Public noindex routes remain in the analytics route allowlist.
+100 original IDs, slugs and canonical URLs preserved. Sixteen ranking-style headlines revised; requestedTitle retains the original brief.
+All descriptions are complete sentences, rather than clipped draft excerpts.
+BlogPosting and CollectionPage/ItemList reflect visible titles, dates and article links; no invented media, customer results or ratings.
+Review attribution: Codex — editorial review. No human review or independent vendor test claimed.
+Existing 63 programmatic records remain private; this request did not establish evidence for publishing them.
+
+VALIDATION
+PASS TypeScript (npx tsc --noEmit); ESLint; final production build (189 generated routes).
+PASS test:seo, test:seo-engine, test:content-complete, test:tracking, test:growth, test:demo, test:integrations, test:geo, test:customers.
+PASS all 100 article HTTP responses: 200, canonical, one H1, visible article content, publication date and indexing decision.
+PASS all ten topic pages: exactly ten article links each, complete 100-ID coverage with no duplicates.
+PASS unknown topic/article and production private-review URLs: 404.
+PASS sitemap crawl: 53 routes and 402 internal links/anchors.
+PASS local Schema.org vocabulary, inherited property domains/ranges and article headline/date alignment: 153 public pages.
+PASS 20 layouts at 360, 390, 768 and 1440 pixels: no horizontal page overflow.
+PASS eight automated WCAG accessibility scans: zero violations in main content on blog, topic and representative table/numbered-step article pages at 390/1440 pixels.
+PASS actual browser navigation: homepage -> topic -> article -> topic breadcrumb.
+PASS baseline comparison: all 16 legacy articles and all 100 article IDs/slugs/canonicals unchanged.
+PASS git diff --check.
+
+Mobile Lighthouse, local new topic page: performance 87, accessibility 100, SEO 69.
+SEO score is reduced by the intentional noindex directive on topic collections; the binary failure was is-crawlable.
+LCP/FCP 2.3s; total blocking time 280ms; CLS 0. Lab result, not field Core Web Vitals or a ranking claim.
+No live lead submitted. Demo and external-service tests used fixtures. No GTM publishing or account changes.
+
+FILES CHANGED FOR THIS RELEASE
+src/components/BlogTopicCards.tsx (new)
+src/data/blog-topics.json (new)
+src/lib/blog-topics.ts (new)
+src/app/(main)/blog/topics/[topic]/page.tsx (new)
+src/app/(main)/page.tsx
+src/app/(main)/blog/page.tsx
+src/app/(main)/blog/[slug]/page.tsx
+src/app/sitemap.ts
+src/app/review-content/page.tsx (wording only on existing private review library)
+src/data/editorial.json
+src/lib/blog-data.ts
+src/lib/editorial.ts
+src/lib/tracking-paths.ts (generated)
+scripts/seo-content.mjs
+scripts/check-seo-engine.mjs
+src/tests/test_seo.mjs
+content/seo/editorial-inventory.json (generated)
+docs/seo/engine/editorial-decisions.json
+docs/seo/engine/IMPLEMENTATION.md
+docs/seo/engine/BLOG-PUBLICATION-VALIDATION.txt (this report)
+Earlier uncommitted content/programmatic work was preserved; it is also present in the working tree.
+
+OWNER HANDOFF
+Push and deploy the full working tree yourself, including the new topic data/component/route files and earlier article bodies.
+Open /blog and the homepage topic cards after deployment. Follow each topic to its ten articles.
+Run the release crawler against production: set SEO_BASE_URL=https://www.restrova.com, then npm run check:seo.
+Use Search Console URL Inspection to check the ten indexable additions and canonical/indexing outcomes.
+Live deployment, live indexing, rich-result eligibility and AI search inclusion remain unverified.
+To index an overlapping guide later, resolve its indexingHoldReason, verify evidence and distinct intent, then obtain a fresh content review signature through the documented CLI.
